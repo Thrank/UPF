@@ -100,15 +100,15 @@
     <RelationshipRole1 id="rel6#role11" name="OrdineToRistorante" maxCard="1"/>
     <RelationshipRole2 id="rel6#role12" name="RistoranteToOrdine" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="1110" gr:y="685" id="ent7" name="Preferenza cucina" duration="persistent"/>
+  <Entity gr:x="1110" gr:y="685" id="ent7" name="Preferenza Cucina" duration="persistent"/>
   <Entity gr:x="665" gr:y="805" id="ent8" name="Preferenza Ristorante" duration="persistent"/>
   <Entity gr:x="15" gr:y="610" id="ent10" name="Tipologia Cucina" duration="persistent" attributeOrder="ent10#att61 ent10#att28">
     <Attribute id="ent10#att28" name="Nome" type="string"/>
     <Attribute id="ent10#att61" name="oid" key="true" type="integer"/>
   </Entity>
-  <Relationship id="rel7" name="Categoria Cucina_Ristorante" sourceEntity="ent10" targetEntity="ent14">
-    <RelationshipRole1 id="rel7#role13" name="Categoria CucinaToRistorante" maxCard="N"/>
-    <RelationshipRole2 id="rel7#role14" name="RistoranteToCategoria Cucina" maxCard="N"/>
+  <Relationship id="rel7" name="Tipologia Cucina_Ristorante" sourceEntity="ent10" targetEntity="ent14">
+    <RelationshipRole1 id="rel7#role13" name="Tipologia CucinaToRistorante" maxCard="N"/>
+    <RelationshipRole2 id="rel7#role14" name="RistoranteToTipologia  Cucina" maxCard="N"/>
   </Relationship>
   <Entity gr:x="610" gr:y="470" id="ent16" name="Indirizzo" duration="persistent" attributeOrder="ent16#att64 ent16#att31 ent16#att32 ent16#att33 ent16#att76">
     <Attribute id="ent16#att31" key="false" name="via/piazza/corso" type="string"/>
@@ -125,9 +125,9 @@
     <RelationshipRole1 id="rel11#role21" name="UtenteToIndirizzo" maxCard="N"/>
     <RelationshipRole2 id="rel11#role22" name="IndirizzoToUtente" maxCard="1"/>
   </Relationship>
-  <Relationship id="rel13" name="Categoria Cucina_Piatto" sourceEntity="ent10" targetEntity="ent1" gr:bendpoints="4,169,-251,-96">
-    <RelationshipRole1 id="rel13#role25" name="Categoria CucinaToPiatto" maxCard="N"/>
-    <RelationshipRole2 id="rel13#role26" name="PiattoToCategoria Cucina" maxCard="1"/>
+  <Relationship id="rel13" name="Tipologia Cucina_Piatto" sourceEntity="ent10" targetEntity="ent1" gr:bendpoints="4,169,-251,-96">
+    <RelationshipRole1 id="rel13#role25" name="Tipologia CucinaToPiatto" maxCard="N"/>
+    <RelationshipRole2 id="rel13#role26" name="PiattoToTipologia Cucina" maxCard="1"/>
   </Relationship>
   <Entity gr:x="-95" gr:y="405" id="ent17" name="Orario" duration="persistent" attributeOrder="ent17#att60 ent17#att34 ent17#att43 ent17#att47">
     <Attribute id="ent17#att34" key="false" name="giorno" type="integer"/>
@@ -139,7 +139,7 @@
     <RelationshipRole1 id="rel14#role27" name="OrarioToRistorante" maxCard="1"/>
     <RelationshipRole2 id="rel14#role28" name="RistoranteToOrario" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="-55" gr:y="860" id="ent18" name="Classificazione Piatto" duration="persistent" attributeOrder="ent18#att62 ent18#att51">
+  <Entity gr:x="-55" gr:y="860" id="ent18" name="Categoria Piatto" duration="persistent" attributeOrder="ent18#att62 ent18#att51">
     <Attribute id="ent18#att51" name="nome" type="string"/>
     <Attribute id="ent18#att62" name="oid" key="true" type="integer"/>
   </Entity>
@@ -156,17 +156,17 @@
     <RelationshipRole2 id="rel16#role32" name="AllergeneToPiatto" maxCard="N"/>
   </Relationship>
   <Property id="prop1" name="Property 1"/>
-  <Entity gr:x="-120" gr:y="190" id="ent21" name="Attivit&#224; Approvate" duration="persistent" attributeOrder="ent21#att81">
+  <Entity gr:x="-120" gr:y="190" id="ent21" name="Attivit&#224; Approvata" duration="persistent" attributeOrder="ent21#att81">
     <Attribute id="ent21#att81" name="data approvazione" type="date"/>
   </Entity>
-  <Entity gr:x="65" gr:y="30" id="ent22" name="Moderatori approvati" duration="persistent" attributeOrder="ent22#att79">
+  <Entity gr:x="65" gr:y="30" id="ent22" name="Moderatore Approvato" duration="persistent" attributeOrder="ent22#att79">
     <Attribute id="ent22#att79" name="data approvazione" type="date"/>
   </Entity>
-  <Entity gr:x="-145" gr:y="-30" id="ent23" name="Moderatori Rimossi" duration="persistent" attributeOrder="ent23#att77 ent23#att78">
-    <Attribute id="ent23#att77" name="data rimozio" type="date"/>
+  <Entity gr:x="-145" gr:y="-30" id="ent23" name="Moderatore Rimosso" duration="persistent" attributeOrder="ent23#att77 ent23#att78">
+    <Attribute id="ent23#att77" name="data rimozione" type="date"/>
     <Attribute id="ent23#att78" name="causa" type="string"/>
   </Entity>
-  <Entity gr:x="270" gr:y="-70" id="ent24" name="Moderazioni Eseguite" duration="persistent" attributeOrder="ent24#att80">
+  <Entity gr:x="270" gr:y="-70" id="ent24" name="Moderazione Eseguita" duration="persistent" attributeOrder="ent24#att80">
     <Attribute id="ent24#att80" name="data esecuzione" type="date"/>
   </Entity>
   <Entity gr:x="1095" gr:y="245" id="ent25" name="Promozione" duration="persistent" attributeOrder="ent25#att69 ent25#att70 ent25#att71">
@@ -193,45 +193,45 @@
     <RelationshipRole1 id="rel23#role45" name="RistoranteToPreferenza Ristorante" maxCard="N"/>
     <RelationshipRole2 id="rel23#role46" name="Preferenza RistoranteToRistorante" maxCard="1"/>
   </Relationship>
-  <Relationship id="rel24" name="Tipologia Cucina_Preferenza cucina" sourceEntity="ent10" targetEntity="ent7" gr:bendpoints="-197,0,-1297,-65;-196,357,-1296,292;1104,345,4,280">
-    <RelationshipRole1 id="rel24#role47" name="Tipologia CucinaToPreferenza cucina" maxCard="N"/>
-    <RelationshipRole2 id="rel24#role48" name="Preferenza cucinaToTipologia Cucina" maxCard="1"/>
+  <Relationship id="rel24" name="Tipologia Cucina_Preferenza Cucina" sourceEntity="ent10" targetEntity="ent7" gr:bendpoints="-197,0,-1297,-65;-196,357,-1296,292;1104,345,4,280">
+    <RelationshipRole1 id="rel24#role47" name="Tipologia CucinaToPreferenza Cucina" maxCard="N"/>
+    <RelationshipRole2 id="rel24#role48" name="Preferenza CucinaToTipologia Cucina" maxCard="1"/>
   </Relationship>
-  <Relationship id="rel25" name="Cliente _Preferenza cucina" sourceEntity="ent4" targetEntity="ent7" gr:bendpoints="224,-2,-1,-337">
-    <RelationshipRole1 id="rel25#role49" name="Cliente ToPreferenza cucina" maxCard="N"/>
-    <RelationshipRole2 id="rel25#role50" name="Preferenza cucinaToCliente " maxCard="1"/>
+  <Relationship id="rel25" name="Cliente _Preferenza Cucina" sourceEntity="ent4" targetEntity="ent7" gr:bendpoints="224,-2,-1,-337">
+    <RelationshipRole1 id="rel25#role49" name="Cliente ToPreferenza Cucina" maxCard="N"/>
+    <RelationshipRole2 id="rel25#role50" name="Preferenza CucinaToCliente " maxCard="1"/>
   </Relationship>
-  <Relationship id="rel26" name="Moderatori approvati_Amministratore" sourceEntity="ent22" targetEntity="ent12">
-    <RelationshipRole1 id="rel26#role51" name="Moderatori approvatiToAmministratore" maxCard="1"/>
-    <RelationshipRole2 id="rel26#role52" name="AmministratoreToModeratori approvati" maxCard="N"/>
+  <Relationship id="rel26" name="Moderatore approvato_Amministratore" sourceEntity="ent22" targetEntity="ent12">
+    <RelationshipRole1 id="rel26#role51" name="Moderatore ApprovatoToAmministratore" maxCard="1"/>
+    <RelationshipRole2 id="rel26#role52" name="AmministratoreToModeratore approvato" maxCard="N"/>
   </Relationship>
-  <Relationship id="rel27" name="Moderatori approvati_Moderatore" sourceEntity="ent22" targetEntity="ent13">
-    <RelationshipRole1 id="rel27#role53" name="Moderatori approvatiToModeratore" maxCard="1"/>
+  <Relationship id="rel27" name="Moderatore approvato_Moderatore" sourceEntity="ent22" targetEntity="ent13">
+    <RelationshipRole1 id="rel27#role53" name="Moderatore approvatoToModeratore" maxCard="1"/>
     <RelationshipRole2 id="rel27#role54" name="ModeratoreToModeratori approvati" maxCard="N"/>
   </Relationship>
-  <Relationship id="rel28" name="Attivit&#224; Approvate_Amministratore" sourceEntity="ent21" targetEntity="ent12">
-    <RelationshipRole1 id="rel28#role55" name="Attivit&#224; ApprovateToAmministratore" maxCard="1"/>
-    <RelationshipRole2 id="rel28#role56" name="AmministratoreToAttivit&#224; Approvate" maxCard="N"/>
+  <Relationship id="rel28" name="Attivit&#224; Approvata_Amministratore" sourceEntity="ent21" targetEntity="ent12">
+    <RelationshipRole1 id="rel28#role55" name="Attivit&#224; ApprovataToAmministratore" maxCard="1"/>
+    <RelationshipRole2 id="rel28#role56" name="AmministratoreToAttivit&#224; Approvata" maxCard="N"/>
   </Relationship>
-  <Relationship id="rel29" name="Ristorante_Attivit&#224; Approvate" sourceEntity="ent14" targetEntity="ent21">
-    <RelationshipRole1 id="rel29#role57" name="RistoranteToAttivit&#224; Approvate" maxCard="N"/>
-    <RelationshipRole2 id="rel29#role58" name="Attivit&#224; ApprovateToRistorante" maxCard="1"/>
+  <Relationship id="rel29" name="Ristorante_Attivit&#224; Approvata" sourceEntity="ent14" targetEntity="ent21">
+    <RelationshipRole1 id="rel29#role57" name="RistoranteToAttivit&#224; Approvata" maxCard="N"/>
+    <RelationshipRole2 id="rel29#role58" name="Attivit&#224; ApprovataToRistorante" maxCard="1"/>
   </Relationship>
-  <Relationship id="rel30" name="Moderatore_Moderazioni Eseguite" sourceEntity="ent13" targetEntity="ent24">
-    <RelationshipRole1 id="rel30#role59" name="ModeratoreToModerazioni Eseguite" maxCard="N"/>
-    <RelationshipRole2 id="rel30#role60" name="Moderazioni EseguiteToModeratore" maxCard="1"/>
+  <Relationship id="rel30" name="Moderatore_Moderazione Eseguita" sourceEntity="ent13" targetEntity="ent24">
+    <RelationshipRole1 id="rel30#role59" name="ModeratoreToModerazione Eseguita" maxCard="N"/>
+    <RelationshipRole2 id="rel30#role60" name="Moderazione EseguitaToModeratore" maxCard="1"/>
   </Relationship>
-  <Relationship id="rel31" name="Moderazioni Eseguite_valutazione" sourceEntity="ent24" targetEntity="ent15" gr:bendpoints="-58,25,-148,-350;-47,282,-137,-93">
-    <RelationshipRole1 id="rel31#role61" name="Moderazioni EseguiteTovalutazione" maxCard="1"/>
-    <RelationshipRole2 id="rel31#role62" name="valutazioneToModerazioni Eseguite" maxCard="N"/>
+  <Relationship id="rel31" name="Moderazione Eseguita_valutazione" sourceEntity="ent24" targetEntity="ent15" gr:bendpoints="-58,25,-148,-350;-47,282,-137,-93">
+    <RelationshipRole1 id="rel31#role61" name="Moderazione EseguitaTovalutazione" maxCard="1"/>
+    <RelationshipRole2 id="rel31#role62" name="valutazioneToModerazione Eseguita" maxCard="N"/>
   </Relationship>
-  <Relationship id="rel32" name="Amministratore_Moderatori Rimossi" sourceEntity="ent12" targetEntity="ent23">
-    <RelationshipRole1 id="rel32#role63" name="AmministratoreToModeratori Rimossi" maxCard="N"/>
-    <RelationshipRole2 id="rel32#role64" name="Moderatori RimossiToAmministratore" maxCard="1"/>
+  <Relationship id="rel32" name="Amministratore_Moderatore Rimosso" sourceEntity="ent12" targetEntity="ent23">
+    <RelationshipRole1 id="rel32#role63" name="AmministratoreToModeratore Rimosso" maxCard="N"/>
+    <RelationshipRole2 id="rel32#role64" name="Moderatore RimossoToAmministratore" maxCard="1"/>
   </Relationship>
-  <Relationship id="rel33" name="Moderatori Rimossi_Moderatore" sourceEntity="ent23" targetEntity="ent13">
-    <RelationshipRole1 id="rel33#role65" name="Moderatori RimossiToModeratore" maxCard="N"/>
-    <RelationshipRole2 id="rel33#role66" name="ModeratoreToModeratori Rimossi" maxCard="1"/>
+  <Relationship id="rel33" name="Moderatore Rimosso_Moderatore" sourceEntity="ent23" targetEntity="ent13">
+    <RelationshipRole1 id="rel33#role65" name="Moderatore RimossoToModeratore" maxCard="N"/>
+    <RelationshipRole2 id="rel33#role66" name="ModeratoreToModeratore Rimosso" maxCard="1"/>
   </Relationship>
   <Relationship id="rel34" name="Indirizzo_Ordine" sourceEntity="ent16" targetEntity="ent3">
     <RelationshipRole1 id="rel34#role67" name="IndirizzoToOrdine" maxCard="1"/>
