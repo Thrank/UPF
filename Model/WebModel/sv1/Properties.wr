@@ -1,0 +1,7 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="SiteViewCliente">
+  <OperationUnits>
+    <LoginUnit gr:x="150" gr:y="255" id="sv1#lgu1" name="Login"/>
+    <LogoutUnit gr:x="290" gr:y="245" id="sv1#lou1" name="Logout" siteView="sv1"/>
+    <CreateUnit gr:x="150" gr:y="405" id="sv1#cru1" name="Create1"/>
+  </OperationUnits>
+</SiteView>
