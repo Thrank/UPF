@@ -1,0 +1,5 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="310" gr:y="345" id="sv1#area2" name="Home" landmark="true" defaultPage="sv1#area2#cru2">
+  <OperationUnits>
+    <CreateUnit gr:x="85" gr:y="80" id="sv1#area2#cru2" name="Create2"/>
+  </OperationUnits>
+</Area>
