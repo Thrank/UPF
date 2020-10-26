@@ -3,5 +3,6 @@
     <LoginUnit gr:x="120" gr:y="310" id="sv1#lgu1" name="Login"/>
     <LogoutUnit gr:x="285" gr:y="245" id="sv1#lou1" name="Logout" siteView="sv1"/>
     <CreateUnit gr:x="150" gr:y="405" id="sv1#cru1" name="Create1"/>
+    <SetUnit gr:x="115" gr:y="175" id="sv1#stu1" name="Set1"/>
   </OperationUnits>
 </SiteView>
