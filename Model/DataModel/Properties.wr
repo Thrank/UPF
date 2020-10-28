@@ -174,10 +174,6 @@
     <Attribute id="ent25#att70" name="codice" type="string"/>
     <Attribute id="ent25#att71" name="data scadenza" type="date"/>
   </Entity>
-  <Relationship id="rel21" name="Cliente _Promozioni" sourceEntity="ent4" targetEntity="ent25">
-    <RelationshipRole1 id="rel21#role41" name="Cliente ToPromozioni" maxCard="N"/>
-    <RelationshipRole2 id="rel21#role42" name="PromozioniToCliente " maxCard="N"/>
-  </Relationship>
   <Entity gr:x="1065" gr:y="125" id="ent26" name="Sconto" duration="persistent" attributeOrder="ent26#att75">
     <Attribute id="ent26#att75" name="% sconto" type="integer"/>
     <Generalization superEntity="ent25"/>
@@ -236,5 +232,9 @@
   <Relationship id="rel34" name="Indirizzo_Ordine" sourceEntity="ent16" targetEntity="ent3">
     <RelationshipRole1 id="rel34#role67" name="IndirizzoToOrdine" maxCard="1"/>
     <RelationshipRole2 id="rel34#role68" name="OrdineToIndirizzo" maxCard="1"/>
+  </Relationship>
+  <Relationship id="rel8" name="Ordine_Promozione" sourceEntity="ent3" targetEntity="ent25" gr:bendpoints="324,6,-236,401">
+    <RelationshipRole1 id="rel8#role15" name="OrdineToPromozione" maxCard="N"/>
+    <RelationshipRole2 id="rel8#role16" name="PromozioneToOrdine" maxCard="N"/>
   </Relationship>
 </DataModel>
