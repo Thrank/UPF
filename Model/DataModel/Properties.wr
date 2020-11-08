@@ -37,7 +37,7 @@
     <Generalization superEntity="User"/>
     <Attribute id="ent4#att12" name="data di nascita" type="date"/>
   </Entity>
-  <Entity gr:x="130" gr:y="225" id="ent6" name="Ristoratore" duration="persistent" attributeOrder="ent6#att18">
+  <Entity gr:x="140" gr:y="250" id="ent6" name="Ristoratore" duration="persistent" attributeOrder="ent6#att18">
     <Attribute id="ent6#att18" name="partita iva" type="string"/>
     <Generalization superEntity="User"/>
   </Entity>
@@ -156,18 +156,22 @@
     <RelationshipRole2 id="rel16#role32" name="AllergeneToPiatto" maxCard="N"/>
   </Relationship>
   <Property id="prop1" name="Property 1"/>
-  <Entity gr:x="-120" gr:y="190" id="ent21" name="Attivit&#224; Approvata" duration="persistent" attributeOrder="ent21#att81">
+  <Entity gr:x="-340" gr:y="270" id="ent21" name="Attivit&#224; Approvata" duration="persistent" attributeOrder="ent21#att5 ent21#att81">
     <Attribute id="ent21#att81" name="data approvazione" type="date"/>
+    <Attribute id="ent21#att5" name="oid" key="true" type="integer"/>
   </Entity>
   <Entity gr:x="65" gr:y="30" id="ent22" name="Moderatore Approvato" duration="persistent" attributeOrder="ent22#att79">
     <Attribute id="ent22#att79" name="data approvazione" type="date"/>
+    <Attribute id="ent22#att13" name="oid" key="true" type="integer"/>
   </Entity>
-  <Entity gr:x="-145" gr:y="-30" id="ent23" name="Moderatore Rimosso" duration="persistent" attributeOrder="ent23#att77 ent23#att78">
+  <Entity gr:x="-145" gr:y="-30" id="ent23" name="Moderatore Rimosso" duration="persistent" attributeOrder="ent23#att9 ent23#att77 ent23#att78">
     <Attribute id="ent23#att77" name="data rimozione" type="date"/>
     <Attribute id="ent23#att78" name="causa" type="string"/>
+    <Attribute id="ent23#att9" name="oid" key="true" type="integer"/>
   </Entity>
-  <Entity gr:x="270" gr:y="-70" id="ent24" name="Moderazione Eseguita" duration="persistent" attributeOrder="ent24#att80">
+  <Entity gr:x="270" gr:y="-70" id="ent24" name="Moderazione Eseguita" duration="persistent" attributeOrder="ent24#att10 ent24#att80">
     <Attribute id="ent24#att80" name="data esecuzione" type="date"/>
+    <Attribute id="ent24#att10" name="oid" key="true" type="integer"/>
   </Entity>
   <Entity gr:x="1095" gr:y="245" id="ent25" name="Promozione" duration="persistent" attributeOrder="ent25#att69 ent25#att70 ent25#att71">
     <Attribute id="ent25#att69" key="true" name="oid" type="integer"/>
@@ -217,7 +221,7 @@
     <RelationshipRole1 id="rel30#role59" name="ModeratoreToModerazione Eseguita" maxCard="N"/>
     <RelationshipRole2 id="rel30#role60" name="Moderazione EseguitaToModeratore" maxCard="1"/>
   </Relationship>
-  <Relationship id="rel31" name="Moderazione Eseguita_valutazione" sourceEntity="ent24" targetEntity="ent15" gr:bendpoints="-58,25,-148,-350;-47,282,-137,-93">
+  <Relationship id="rel31" name="Moderazione Eseguita_valutazione" sourceEntity="ent24" targetEntity="ent15" gr:bendpoints="-39,46,-124,-319;-47,282,-137,-93">
     <RelationshipRole1 id="rel31#role61" name="Moderazione EseguitaTovalutazione" maxCard="1"/>
     <RelationshipRole2 id="rel31#role62" name="valutazioneToModerazione Eseguita" maxCard="N"/>
   </Relationship>
@@ -233,8 +237,32 @@
     <RelationshipRole1 id="rel34#role67" name="IndirizzoToOrdine" maxCard="1"/>
     <RelationshipRole2 id="rel34#role68" name="OrdineToIndirizzo" maxCard="1"/>
   </Relationship>
-  <Relationship id="rel8" name="Ordine_Promozione" sourceEntity="ent3" targetEntity="ent25" gr:bendpoints="324,6,-236,401">
+  <Relationship id="rel8" name="Ordine_Promozione" sourceEntity="ent3" targetEntity="ent25" gr:bendpoints="104,42,-456,437;421,27,-139,422">
     <RelationshipRole1 id="rel8#role15" name="OrdineToPromozione" maxCard="N"/>
     <RelationshipRole2 id="rel8#role16" name="PromozioneToOrdine" maxCard="N"/>
+  </Relationship>
+  <Entity gr:x="-70" gr:y="230" id="ent5" name="Amministratore approvato" duration="persistent">
+    <Attribute id="ent5#att4" key="true" name="oid" type="integer"/>
+    <Attribute id="ent5#att17" name="data approvazione" type="date"/>
+  </Entity>
+  <Entity gr:x="-290" gr:y="100" id="ent9" name="Amministratore rimosso" duration="persistent">
+    <Attribute id="ent9#att14" key="true" name="oid" type="integer"/>
+    <Attribute id="ent9#att16" name="data rimozione" type="date"/>
+  </Entity>
+  <Relationship id="rel9" name="Amministratore_Amministratore rimosso" sourceEntity="ent12" targetEntity="ent9" gr:bendpoints="-167,22,183,22">
+    <RelationshipRole1 id="rel9#role17" name="AmministratoreToAmministratore rimosso" maxCard="N"/>
+    <RelationshipRole2 id="rel9#role18" name="Amministratore rimossoToAmministratore" maxCard="1"/>
+  </Relationship>
+  <Relationship id="rel12" name="Amministratore rimosso_Amministratore" sourceEntity="ent9" targetEntity="ent12" gr:bendpoints="138,-23,-162,-33">
+    <RelationshipRole1 id="rel12#role23" name="Amministratore rimossoToAmministratore_2" maxCard="1"/>
+    <RelationshipRole2 id="rel12#role24" name="AmministratoreToAmministratore rimosso_2" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel17" name="Amministratore_Amministratore approvato" sourceEntity="ent12" targetEntity="ent5">
+    <RelationshipRole1 id="rel17#role33" name="AmministratoreToAmministratore approvato" maxCard="N"/>
+    <RelationshipRole2 id="rel17#role34" name="Amministratore approvatoToAmministratore" maxCard="1"/>
+  </Relationship>
+  <Relationship id="rel18" name="Utente_Amministratore approvato" sourceEntity="User" targetEntity="ent5">
+    <RelationshipRole1 id="rel18#role35" name="UtenteToAmministratore approvato" maxCard="N"/>
+    <RelationshipRole2 id="rel18#role36" name="Amministratore approvatoToUtente" maxCard="1"/>
   </Relationship>
 </DataModel>
