@@ -108,10 +108,9 @@
     <RelationshipRole1 id="rel7#role13" name="Tipologia CucinaToRistorante" maxCard="N"/>
     <RelationshipRole2 id="rel7#role14" name="RistoranteToTipologia  Cucina" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="810" gr:y="415" id="ent16" name="Indirizzo" duration="persistent" attributeOrder="ent16#att64 ent16#att31 ent16#att32 ent16#att33 ent16#att76">
+  <Entity gr:x="810" gr:y="415" id="ent16" name="Indirizzo" duration="persistent" attributeOrder="ent16#att64 ent16#att31 ent16#att32 ent16#att76">
     <Attribute id="ent16#att31" key="false" name="via/piazza/corso" type="string"/>
     <Attribute id="ent16#att32" name="civico" type="string"/>
-    <Attribute id="ent16#att33" name="citt&#224;" type="string"/>
     <Attribute id="ent16#att64" name="oid" key="true" type="integer"/>
     <Attribute id="ent16#att76" name="CAP" type="integer"/>
   </Entity>
@@ -228,5 +227,13 @@
   <Relationship id="rel26" name="Promozione_Tipologia Promozione" sourceEntity="ent25" targetEntity="ent20">
     <RelationshipRole1 id="rel26#role51" name="PromozioneToTipologia Promozione" maxCard="N"/>
     <RelationshipRole2 id="rel26#role52" name="Tipologia PromozioneToPromozione" maxCard="N"/>
+  </Relationship>
+  <Entity gr:x="1050" gr:y="435" id="ent22" name="Citt&#224;" duration="persistent" attributeOrder="ent22#att27 ent22#att29">
+    <Attribute id="ent22#att27" key="true" name="oid" type="integer"/>
+    <Attribute id="ent22#att29" name="nome" type="string"/>
+  </Entity>
+  <Relationship id="rel32" name="Indirizzo_Citt&#224;" sourceEntity="ent16" targetEntity="ent22">
+    <RelationshipRole1 id="rel32#role63" name="IndirizzoToCitt&#224;" maxCard="1"/>
+    <RelationshipRole2 id="rel32#role64" name="Citt&#224;ToIndirizzo" maxCard="N"/>
   </Relationship>
 </DataModel>
