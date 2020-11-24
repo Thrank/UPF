@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area7" name="Personale" defaultPage="sv2#area7#page11" landmarks="sv2#area7#page11 sv2#area7#page19" landmark="true" gr:x="50" gr:y="355">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area7" name="Personale" defaultPage="sv2#area7#page11" landmarks="sv2#area7#page11 sv2#area7#page19" landmark="true" gr:x="75" gr:y="555">
   <OperationUnits>
     <CreateUnit gr:x="160" gr:y="155" id="sv2#area7#cru2" name="Aggiungi Ristorante"/>
     <DeleteUnit gr:x="300" gr:y="155" id="sv2#area7#dlu7" name="Rimuovi Ristorante">

@@ -1,8 +1,10 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area22#page43" name="Principale" landmark="true" gr:x="0" gr:y="0">
   <ContentUnits>
-    <ScrollerUnit id="sv5#area22#page43#scu5" name="Tipologia Cucina" gr:x="0" gr:y="0" useCountQuery="false"/>
-    <IndexUnit id="sv5#area22#page43#inu26" name="Elenco Migliori Ristoranti" gr:x="65" gr:y="90"/>
-    <SelectorUnit id="sv5#area22#page43#seu21" name="Strumento Ricerca" gr:x="160" gr:y="5"/>
+    <ScrollerUnit id="sv5#area22#page43#scu5" name="Tipologia Cucina" gr:x="25" gr:y="0" useCountQuery="false" entity="ent10" linkOrder="sv5#area22#page43#scu5#ln11">
+      <Link id="sv5#area22#page43#scu5#ln11" name="Flow11" to="sv5#area20#page39" automaticCoupling="true" type="normal" validate="true"/>
+    </ScrollerUnit>
+    <IndexUnit id="sv5#area22#page43#inu26" name="Elenco Migliori Ristoranti" gr:x="200" gr:y="175" entity="ent2"/>
+    <EntryUnit gr:x="235" gr:y="10" id="sv5#area22#page43#enu14" name="Ricerca Per Nome"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -45,6 +47,22 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area22#page43#enu14"/>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

@@ -1,7 +1,7 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="400" id="sv1#area4#page6" name="Invio Ordine">
   <ContentUnits>
     <IndexUnit gr:x="0" gr:y="0" id="sv1#area4#page6#inu7" name="Lista Piatti"/>
-    <SelectorUnit gr:x="100" gr:y="5" id="sv1#area4#page6#seu4" name="Filtro Piatto"/>
+    <SelectorUnit gr:x="100" gr:y="0" id="sv1#area4#page6#seu4" name="Filtro Piatto"/>
     <EntryUnit gr:x="0" gr:y="100" id="sv1#area4#page6#enu1" name="Modulo Ordine"/>
   </ContentUnits>
   <layout:Grid containerType="grid">

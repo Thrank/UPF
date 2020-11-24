@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area8#page13" name="Elenco Piatto" landmark="true" gr:x="10" gr:y="0">
   <ContentUnits>
-    <IndexUnit id="sv2#area8#page13#inu9" name="Lista Piatti" gr:x="0" gr:y="0"/>
+    <IndexUnit id="sv2#area8#page13#inu9" name="Lista Piatti" gr:x="0" gr:y="0" entity="ent1"/>
     <SelectorUnit id="sv2#area8#page13#seu7" name="Filtro Piatto" gr:x="120" gr:y="0"/>
   </ContentUnits>
   <layout:Grid containerType="grid">

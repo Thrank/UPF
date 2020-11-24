@@ -6,6 +6,8 @@
       </Selector>
     </DataUnit>
     <MultiDataUnit gr:x="5" gr:y="120" id="sv1#area4#page5#mdu1" name="Lista Valutazioni"/>
+    <EntryUnit gr:x="170" gr:y="5" id="sv1#area4#page5#enu12" name="Modulo Scrittura Valutazione"/>
+    <EntryUnit gr:x="175" gr:y="70" id="sv1#area4#page5#enu13" name="Modulo Modifica Valutazione"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -27,6 +29,38 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#area4#page5#mdu1"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area4#page5#enu12"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area4#page5#enu13"/>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

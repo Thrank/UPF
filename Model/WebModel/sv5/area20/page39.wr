@@ -1,13 +1,21 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area20#page39" name="Elenco Ristoranti" landmark="true" gr:x="20" gr:y="0">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area20#page39" name="Elenco Ristoranti" landmark="true" gr:x="0" gr:y="0">
   <ContentUnits>
-    <IndexUnit id="sv5#area20#page39#inu24" name="Lista Ristoranti" gr:x="0" gr:y="0"/>
+    <IndexUnit id="sv5#area20#page39#inu24" name="Lista Ristoranti" gr:x="0" gr:y="0" entity="ent14" linkOrder="sv5#area20#page39#inu24#ln12" displayAttributes="ent14#att42 ent14#att52">
+      <Link id="sv5#area20#page39#inu24#ln12" name="Flow12" to="sv5#area20#page40" automaticCoupling="true" type="normal" validate="true"/>
+      <SortAttribute attribute="ent14#att52" order="descending"/>
+      <SortAttribute attribute="ent14#att42" order="ascending"/>
+    </IndexUnit>
     <SelectorUnit id="sv5#area20#page39#seu19" name="Filtro Ristorante" gr:x="145" gr:y="0"/>
     <MultiMessageUnit id="sv5#area20#page39#mssu5" name="Messaggio Errore" gr:x="290" gr:y="5"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv5#area20#page39#inu24"/>
+        <layout:Unit unitId="sv5#area20#page39#inu24">
+          <layout:Link link="sv5#area20#page39#inu24#ln12"/>
+          <layout:Attribute attribute="ent14#att42"/>
+          <layout:Attribute attribute="ent14#att52"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

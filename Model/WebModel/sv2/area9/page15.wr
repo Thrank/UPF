@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area9#page15" name="Elenco Ristoranti" landmark="true" gr:x="5" gr:y="0">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area9#page15" name="Elenco Ristoranti" landmark="true" gr:x="0" gr:y="0">
   <ContentUnits>
-    <IndexUnit id="sv2#area9#page15#inu10" name="Lista Ristoranti" gr:x="0" gr:y="0"/>
+    <IndexUnit id="sv2#area9#page15#inu10" name="Lista Ristoranti" gr:x="0" gr:y="0" entity="ent14"/>
     <SelectorUnit id="sv2#area9#page15#seu8" name="Filtro Ristorante" gr:x="145" gr:y="0"/>
     <MultiMessageUnit id="sv2#area9#page15#mssu2" name="Messaggio Errore" gr:x="290" gr:y="5"/>
   </ContentUnits>

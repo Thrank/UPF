@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area10#page18" name="Gestione Ordine" landmark="true" gr:x="0" gr:y="0">
   <ContentUnits>
-    <IndexUnit id="sv2#area10#page18#inu12" name="Lista Ordini" gr:x="0" gr:y="0"/>
+    <IndexUnit id="sv2#area10#page18#inu12" name="Lista Ordini" gr:x="0" gr:y="0" entity="ent3"/>
     <SelectorUnit id="sv2#area10#page18#seu10" name="Filtro Ordini" gr:x="105" gr:y="0"/>
   </ContentUnits>
   <layout:Grid containerType="grid">

@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area7#page11" name="Profilo" landmark="true" gr:x="5" gr:y="0">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area7#page11" name="Profilo" landmark="true" gr:x="5" gr:y="0" linkOrder="sv2#area7#page11#ln3">
   <ContentUnits>
-    <DataUnit id="sv2#area7#page11#dau4" name="Dati Profilo" gr:x="0" gr:y="0">
+    <DataUnit id="sv2#area7#page11#dau4" name="Dati Profilo" gr:x="0" gr:y="0" entity="ent6">
       <Selector id="sv2#area7#page11#dau4#su13" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area7#page11#dau4#su13#kcond13" name="KeyCondition2" predicate="in" implied="false"/>
       </Selector>
@@ -24,4 +24,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv2#area7#page11#ln3" name="Flow3" to="sv2#area7#page19" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

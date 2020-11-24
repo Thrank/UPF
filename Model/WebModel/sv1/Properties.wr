@@ -1,6 +1,6 @@
 <SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="SiteViewCliente" landmarks="sv1#area2 sv1#area1 sv1#area3 sv1#area4 sv1#area5" homePage="sv1#area2#page1">
   <OperationUnits>
-    <LoginUnit gr:x="625" gr:y="70" id="sv1#lgu1" name="Login"/>
-    <LogoutUnit gr:x="715" gr:y="70" id="sv1#lou1" name="Logout" siteView="sv1"/>
+    <LoginUnit gr:x="690" gr:y="40" id="sv1#lgu1" name="Login"/>
+    <LogoutUnit gr:x="375" gr:y="160" id="sv1#lou1" name="Logout" siteView="sv1"/>
   </OperationUnits>
 </SiteView>

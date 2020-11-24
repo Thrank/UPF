@@ -1,16 +1,24 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area20#page40" name="Dettagli Ristorante" landmark="true" gr:x="15" gr:y="140">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area20#page40" name="Dettagli Ristorante" landmark="true" gr:x="10" gr:y="190" linkOrder="sv5#area20#page40#ln13">
   <ContentUnits>
-    <DataUnit id="sv5#area20#page40#dau13" name="Dettaglio Ristorante" gr:x="0" gr:y="0">
+    <DataUnit id="sv5#area20#page40#dau13" name="Dettaglio Ristorante" gr:x="0" gr:y="0" entity="ent14" displayAttributes="ent14#att42 ent14#att44 ent14#att45 ent14#att46 ent14#att52">
       <Selector id="sv5#area20#page40#dau13#su52" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv5#area20#page40#dau13#su52#kcond52" name="KeyCondition5" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <MultiDataUnit id="sv5#area20#page40#mdu10" name="Lista Valutazioni" gr:x="5" gr:y="120"/>
+    <MultiDataUnit id="sv5#area20#page40#mdu10" name="Lista Valutazioni" gr:x="15" gr:y="130" entity="ent15" displayAttributes="ent15#att53 ent15#att54">
+      <SortAttribute attribute="ent15#att53" order="descending"/>
+    </MultiDataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv5#area20#page40#dau13"/>
+        <layout:Unit unitId="sv5#area20#page40#dau13">
+          <layout:Attribute attribute="ent14#att42"/>
+          <layout:Attribute attribute="ent14#att44"/>
+          <layout:Attribute attribute="ent14#att45"/>
+          <layout:Attribute attribute="ent14#att46"/>
+          <layout:Attribute attribute="ent14#att52"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
@@ -26,7 +34,10 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv5#area20#page40#mdu10"/>
+        <layout:Unit unitId="sv5#area20#page40#mdu10">
+          <layout:Attribute attribute="ent15#att53"/>
+          <layout:Attribute attribute="ent15#att54"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
@@ -41,4 +52,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv5#area20#page40#ln13" name="Flow13" to="sv5#area21" automaticCoupling="true" type="normal" validate="true"/>
 </Page>
