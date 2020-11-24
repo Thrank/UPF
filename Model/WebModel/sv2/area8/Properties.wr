@@ -1,0 +1,15 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area8" name="Piatto" defaultPage="sv2#area8#page13" landmarks="sv2#area8#page14 sv2#area8#page13" landmark="true" gr:x="1195" gr:y="70">
+  <OperationUnits>
+    <CreateUnit gr:x="175" gr:y="140" id="sv2#area8#cru3" name="Aggiungi Piatto"/>
+    <DeleteUnit gr:x="170" gr:y="230" id="sv2#area8#dlu9" name="Rimuovi Piatto">
+      <Selector id="sv2#area8#dlu9#su25" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area8#dlu9#su25#kcond25" name="KeyCondition25" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <ModifyUnit gr:x="170" gr:y="340" id="sv2#area8#mfu11" name="Modifica Piatto">
+      <Selector id="sv2#area8#mfu11#su26" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area8#mfu11#su26#kcond26" name="KeyCondition26" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+  </OperationUnits>
+</Area>

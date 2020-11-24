@@ -1,0 +1,31 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4#area18" name="Personale" defaultPage="sv4#area18#page33" landmarks="sv4#area18#page33 sv4#area18#page34 sv4#area18#page35" landmark="true" gr:x="20" gr:y="430">
+  <OperationUnits>
+    <ModifyUnit id="sv4#area18#mfu18" name="Modifica Dati Profilo" gr:x="5" gr:y="160">
+      <Selector id="sv4#area18#mfu18#su42" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area18#mfu18#su42#kcond42" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+    <CreateUnit gr:x="600" gr:y="5" id="sv4#area18#cru6" name="Aggiungi Moderatore"/>
+    <DeleteUnit gr:x="745" gr:y="0" id="sv4#area18#dlu16" name="Rimuovi Moderatore">
+      <Selector id="sv4#area18#dlu16#su48" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area18#dlu16#su48#kcond48" name="KeyCondition48" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <CreateUnit gr:x="570" gr:y="135" id="sv4#area18#cru7" name="Aggiungi Amministratore"/>
+    <DeleteUnit id="sv4#area18#dlu17" name="Rimuovi Amministratore" gr:x="740" gr:y="115">
+      <Selector id="sv4#area18#dlu17#su49" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area18#dlu17#su49#kcond49" name="KeyCondition48" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <ModifyUnit gr:x="180" gr:y="140" id="sv4#area18#mfu21" name="Modifica Stato Ristoratore">
+      <Selector id="sv4#area18#mfu21#su50" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area18#mfu21#su50#kcond50" name="KeyCondition50" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+    <DeleteUnit gr:x="195" gr:y="255" id="sv4#area18#dlu18" name="Rimuovi Richiesta">
+      <Selector id="sv4#area18#dlu18#su51" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area18#dlu18#su51#kcond51" name="KeyCondition51" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+  </OperationUnits>
+</Area>

@@ -1,3 +1,15 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="335" gr:y="45" id="sv1#area4" name="Ristorante" landmark="true" defaultPage="sv1#area4#page4" landmarks="sv1#area4#page5 sv1#area4#page4">
-  <OperationUnits/>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="660" gr:y="180" id="sv1#area4" name="Ristorante" landmark="true" defaultPage="sv1#area4#page4" landmarks="sv1#area4#page5 sv1#area4#page4">
+  <OperationUnits>
+    <CreateUnit gr:x="215" gr:y="140" id="sv1#area4#cru5" name="Aggiungi Valutazione"/>
+    <DeleteUnit gr:x="225" gr:y="225" id="sv1#area4#dlu2" name="Rimuovi Valutazione">
+      <Selector id="sv1#area4#dlu2#su7" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area4#dlu2#su7#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <ModifyUnit gr:x="220" gr:y="335" id="sv1#area4#mfu3" name="Modifica Valutazione">
+      <Selector id="sv1#area4#mfu3#su8" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area4#mfu3#su8#kcond8" name="KeyCondition8" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+  </OperationUnits>
 </Area>

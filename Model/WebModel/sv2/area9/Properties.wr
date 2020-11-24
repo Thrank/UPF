@@ -1,0 +1,14 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area9" name="Ristorante" defaultPage="sv2#area9#page15" landmarks="sv2#area9#page16 sv2#area9#page15" landmark="true" gr:x="705" gr:y="60">
+  <OperationUnits>
+    <ModifyUnit gr:x="180" gr:y="140" id="sv2#area9#mfu9" name="Modifica Ristorante">
+      <Selector id="sv2#area9#mfu9#su22" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area9#mfu9#su22#kcond22" name="KeyCondition22" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+    <DeleteUnit gr:x="185" gr:y="250" id="sv2#area9#dlu8" name="Rimuovi Ristorante">
+      <Selector id="sv2#area9#dlu8#su23" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area9#dlu8#su23#kcond23" name="KeyCondition23" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+  </OperationUnits>
+</Area>

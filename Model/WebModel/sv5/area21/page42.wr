@@ -1,0 +1,27 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area21#page42" name="Dettagli Piatto" landmark="true" gr:x="0" gr:y="195">
+  <ContentUnits>
+    <DataUnit id="sv5#area21#page42#dau14" name="Dettagli Piatto" gr:x="0" gr:y="0">
+      <Selector id="sv5#area21#page42#dau14#su53" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area21#page42#dau14#su53#kcond53" name="KeyCondition6" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area21#page42#dau14"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

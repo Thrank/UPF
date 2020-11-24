@@ -1,0 +1,9 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area10" name="Ordine" defaultPage="sv2#area10#page18" landmarks="sv2#area10#page18" landmark="true" gr:x="680" gr:y="525">
+  <OperationUnits>
+    <ModifyUnit gr:x="25" gr:y="135" id="sv2#area10#mfu10" name="Aggiornamento Stato Ordine">
+      <Selector id="sv2#area10#mfu10#su24" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area10#mfu10#su24#kcond24" name="KeyCondition24" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+  </OperationUnits>
+</Area>

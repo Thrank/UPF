@@ -1,0 +1,6 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="SiteViewRistoratore" landmarks="sv2#area6 sv2#area7 sv2#area9 sv2#area10 sv2#area8" homePage="sv2#area6#page9">
+  <OperationUnits>
+    <LoginUnit id="sv2#lgu2" name="Login" gr:x="455" gr:y="60"/>
+    <LogoutUnit gr:x="550" gr:y="60" id="sv2#lou3" name="Logout"/>
+  </OperationUnits>
+</SiteView>

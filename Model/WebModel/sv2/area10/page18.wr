@@ -1,12 +1,12 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="10" gr:y="0" id="sv1#area5#page7" name="Elenco Piatto" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area10#page18" name="Gestione Ordine" landmark="true" gr:x="0" gr:y="0">
   <ContentUnits>
-    <IndexUnit gr:x="0" gr:y="0" id="sv1#area5#page7#inu5" name="Lista Piatti"/>
-    <SelectorUnit gr:x="120" gr:y="0" id="sv1#area5#page7#seu3" name="Filtro Piatto"/>
+    <IndexUnit id="sv2#area10#page18#inu12" name="Lista Ordini" gr:x="0" gr:y="0"/>
+    <SelectorUnit id="sv2#area10#page18#seu10" name="Filtro Ordini" gr:x="105" gr:y="0"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area5#page7#inu5"/>
+        <layout:Unit unitId="sv2#area10#page18#inu12"/>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

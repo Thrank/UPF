@@ -1,16 +1,16 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="140" id="sv1#area4#page5" name="Dettagli Ristorante" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area16#page31" name="Dettagli Ristorante" landmark="true" gr:x="15" gr:y="140">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv1#area4#page5#dau2" name="Dettaglio Ristorante">
-      <Selector id="sv1#area4#page5#dau2#su5" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv1#area4#page5#dau2#su5#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
+    <DataUnit id="sv4#area16#page31#dau10" name="Dettaglio Ristorante" gr:x="0" gr:y="0">
+      <Selector id="sv4#area16#page31#dau10#su41" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area16#page31#dau10#su41#kcond41" name="KeyCondition5" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <MultiDataUnit gr:x="5" gr:y="120" id="sv1#area4#page5#mdu1" name="Lista Valutazioni"/>
+    <MultiDataUnit id="sv4#area16#page31#mdu8" name="Lista Valutazioni" gr:x="5" gr:y="120"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area4#page5#dau2"/>
+        <layout:Unit unitId="sv4#area16#page31#dau10"/>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
@@ -26,7 +26,7 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area4#page5#mdu1"/>
+        <layout:Unit unitId="sv4#area16#page31#mdu8"/>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

@@ -1,18 +1,18 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area2#page1" name="Principale">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area22#page43" name="Principale" landmark="true" gr:x="0" gr:y="0">
   <ContentUnits>
-    <ScrollerUnit gr:x="0" gr:y="0" id="sv1#area2#page1#scu1" name="Tipologia Cucina" useCountQuery="false"/>
-    <IndexUnit gr:x="115" gr:y="105" id="sv1#area2#page1#inu1" name="Elenco Migliori Ristoranti"/>
-    <SelectorUnit gr:x="160" gr:y="5" id="sv1#area2#page1#seu1" name="Strumento Ricerca"/>
+    <ScrollerUnit id="sv5#area22#page43#scu5" name="Tipologia Cucina" gr:x="0" gr:y="0" useCountQuery="false"/>
+    <IndexUnit id="sv5#area22#page43#inu26" name="Elenco Migliori Ristoranti" gr:x="65" gr:y="90"/>
+    <SelectorUnit id="sv5#area22#page43#seu21" name="Strumento Ricerca" gr:x="160" gr:y="5"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area2#page1#scu1">
-          <layout:Link link="sv1#area2#page1#scu1First"/>
-          <layout:Link link="sv1#area2#page1#scu1Previous"/>
-          <layout:Link link="sv1#area2#page1#scu1Block"/>
-          <layout:Link link="sv1#area2#page1#scu1Next"/>
-          <layout:Link link="sv1#area2#page1#scu1Last"/>
+        <layout:Unit unitId="sv5#area22#page43#scu5">
+          <layout:Link link="sv5#area22#page43#scu5First"/>
+          <layout:Link link="sv5#area22#page43#scu5Previous"/>
+          <layout:Link link="sv5#area22#page43#scu5Block"/>
+          <layout:Link link="sv5#area22#page43#scu5Next"/>
+          <layout:Link link="sv5#area22#page43#scu5Last"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -29,7 +29,7 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area2#page1#inu1"/>
+        <layout:Unit unitId="sv5#area22#page43#inu26"/>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
