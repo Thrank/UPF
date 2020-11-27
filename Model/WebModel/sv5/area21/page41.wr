@@ -1,7 +1,29 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area21#page41" name="Elenco Piatto" landmark="true" gr:x="0" gr:y="0" linkOrder="sv5#area21#page41#ln14">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area21#page41" name="Elenco Piatto" landmark="true" gr:x="0" gr:y="0">
   <ContentUnits>
-    <IndexUnit id="sv5#area21#page41#inu25" name="Lista Piatti" gr:x="0" gr:y="0" entity="ent1"/>
-    <SelectorUnit id="sv5#area21#page41#seu20" name="Filtro Piatto" gr:x="120" gr:y="0"/>
+    <IndexUnit id="sv5#area21#page41#inu25" name="Lista Piatti" gr:x="215" gr:y="0" entity="ent1">
+      <Selector id="sv5#area21#page41#inu25#su43" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area21#page41#inu25#su43#rcond8" name="RoleCondition8" predicate="in" implied="false" role="rel13#role25"/>
+      </Selector>
+    </IndexUnit>
+    <SelectorUnit id="sv5#area21#page41#seu20" name="Tipologia Cucina Piatto" gr:x="0" gr:y="10" entity="ent10">
+      <Link id="sv5#area21#page41#seu20#ln30" name="Flow30" to="sv5#area21#page41#inu25" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit gr:x="5" gr:y="125" id="sv5#area21#page41#seu21" name="Categoria Piatto" entity="ent18">
+      <Link id="sv5#area21#page41#seu21#ln31" name="Flow31" to="sv5#area21#page41#inu29" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <IndexUnit gr:x="240" gr:y="115" id="sv5#area21#page41#inu29" name="Lista Piatti Per Categoria" entity="ent1">
+      <Selector id="sv5#area21#page41#inu29#su44" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area21#page41#inu29#su44#rcond9" name="RoleCondition9" predicate="in" implied="false" role="rel15#role29"/>
+      </Selector>
+    </IndexUnit>
+    <SelectorUnit gr:x="10" gr:y="250" id="sv5#area21#page41#seu22" name="Allergene" entity="ent19">
+      <Link id="sv5#area21#page41#seu22#ln32" name="Flow32" to="sv5#area21#page41#inu30" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <IndexUnit gr:x="235" gr:y="235" id="sv5#area21#page41#inu30" name="Lista Piatti Senza Allergene" entity="ent1">
+      <Selector id="sv5#area21#page41#inu30#su45" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area21#page41#inu30#su45#rcond10" name="RoleCondition10" predicate="notIn" implied="false" role="rel16#role32"/>
+      </Selector>
+    </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -21,7 +43,25 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area21#page41#inu29"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area21#page41#inu30"/>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -35,5 +75,4 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv5#area21#page41#ln14" name="Flow14" to="sv5#area21#page42" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

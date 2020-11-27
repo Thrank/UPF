@@ -1,3 +1,3 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5#area20" name="Ristorante" defaultPage="sv5#area20#page39" landmarks="sv5#area20#page40 sv5#area20#page39" landmark="true" gr:x="125" gr:y="395">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5#area20" name="Ristorante" defaultPage="sv5#area20#page39" landmarks="sv5#area20#page40 sv5#area20#page39" landmark="true" gr:x="45" gr:y="540">
   <OperationUnits/>
 </Area>

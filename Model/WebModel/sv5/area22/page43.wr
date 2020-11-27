@@ -1,10 +1,23 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area22#page43" name="Principale" landmark="true" gr:x="0" gr:y="0">
   <ContentUnits>
-    <ScrollerUnit id="sv5#area22#page43#scu5" name="Tipologia Cucina" gr:x="25" gr:y="0" useCountQuery="false" entity="ent10" linkOrder="sv5#area22#page43#scu5#ln11">
-      <Link id="sv5#area22#page43#scu5#ln11" name="Flow11" to="sv5#area20#page39" automaticCoupling="true" type="normal" validate="true"/>
+    <ScrollerUnit id="sv5#area22#page43#scu5" name="Tipologia Cucina" gr:x="0" gr:y="10" useCountQuery="false" entity="ent10" linkOrder="sv5#area22#page43#scu5#ln3">
+      <Link id="sv5#area22#page43#scu5#ln3" name="Flow3" to="sv5#area22#page43#inu11" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
-    <IndexUnit id="sv5#area22#page43#inu26" name="Elenco Migliori Ristoranti" gr:x="200" gr:y="175" entity="ent2"/>
-    <EntryUnit gr:x="235" gr:y="10" id="sv5#area22#page43#enu14" name="Ricerca Per Nome"/>
+    <IndexUnit id="sv5#area22#page43#inu26" name="Elenco Migliori Ristoranti" gr:x="155" gr:y="215" entity="ent2" linkOrder="sv5#area22#page43#inu26#ln2">
+      <Link id="sv5#area22#page43#inu26#ln2" name="Flow2" to="sv5#area20#page40#dau13" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+    <EntryUnit gr:x="230" gr:y="0" id="sv5#area22#page43#enu14" name="Ricerca Per Nome" linkOrder="sv5#area22#page43#enu14#ln18">
+      <Link id="sv5#area22#page43#enu14#ln18" name="Flow18" to="sv5#area22#page43#seu9" automaticCoupling="true" type="normal" validate="true"/>
+    </EntryUnit>
+    <IndexUnit gr:x="0" gr:y="180" id="sv5#area22#page43#inu11" name="Tipologia Cucina" entity="ent10" linkOrder="sv5#area22#page43#inu11#ln6">
+      <Link id="sv5#area22#page43#inu11#ln6" name="Flow6" to="sv5#area20#page39#inu24" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+    <SelectorUnit gr:x="240" gr:y="80" id="sv5#area22#page43#seu9" name="Filtra Nome" entity="ent14">
+      <Selector id="sv5#area22#page43#seu9#su33" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv5#area22#page43#seu9#su33#acond1" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="ent14#att42"/>
+      </Selector>
+      <Link id="sv5#area22#page43#seu9#ln20" name="Flow20" to="sv5#area20#page40#dau13" automaticCoupling="true" type="normal" validate="true"/>
+    </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -31,7 +44,9 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv5#area22#page43#inu26"/>
+        <layout:Unit unitId="sv5#area22#page43#inu26">
+          <layout:Link link="sv5#area22#page43#inu26#ln2"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
@@ -61,7 +76,27 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv5#area22#page43#enu14"/>
+        <layout:Unit unitId="sv5#area22#page43#enu14">
+          <layout:Link link="sv5#area22#page43#enu14#ln18"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area22#page43#inu11">
+          <layout:Link link="sv5#area22#page43#inu11#ln6"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
