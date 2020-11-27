@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area2#page1" name="Principale">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area2#page1" name="Principale" landmark="true">
   <ContentUnits>
     <ScrollerUnit gr:x="0" gr:y="0" id="sv1#area2#page1#scu1" name="Tipologia Cucina" useCountQuery="false"/>
     <IndexUnit gr:x="115" gr:y="105" id="sv1#area2#page1#inu1" name="Elenco Migliori Ristoranti"/>

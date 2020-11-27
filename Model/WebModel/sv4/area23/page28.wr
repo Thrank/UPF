@@ -1,11 +1,11 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area13#page24" name="Valutazioni Sospette" landmark="true" gr:x="175" gr:y="0">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area23#page28" name="Ristoratori in Attesa" landmark="true" gr:x="0" gr:y="250">
   <ContentUnits>
-    <MultiDataUnit id="sv3#area13#page24#mdu6" name="Lista Valutazioni" gr:x="0" gr:y="0"/>
+    <MultiDataUnit id="sv4#area23#page28#mdu9" name="Lista Richieste Ristorante" gr:x="0" gr:y="0"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv3#area13#page24#mdu6"/>
+        <layout:Unit unitId="sv4#area23#page28#mdu9"/>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

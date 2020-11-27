@@ -1,14 +1,15 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area9" name="Ristorante" defaultPage="sv2#area9#page15" landmarks="sv2#area9#page16 sv2#area9#page15" landmark="true" gr:x="710" gr:y="60">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area9" name="Ristorante" defaultPage="sv2#area9#page15" landmarks="sv2#area9#page16 sv2#area9#page15 sv2#area9#page17" landmark="true" gr:x="775" gr:y="15">
   <OperationUnits>
-    <ModifyUnit gr:x="125" gr:y="135" id="sv2#area9#mfu9" name="Modifica Ristorante">
+    <ModifyUnit gr:x="365" gr:y="145" id="sv2#area9#mfu9" name="Modifica Ristorante">
       <Selector id="sv2#area9#mfu9#su22" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area9#mfu9#su22#kcond22" name="KeyCondition22" predicate="in" implied="false"/>
       </Selector>
     </ModifyUnit>
-    <DeleteUnit gr:x="135" gr:y="265" id="sv2#area9#dlu8" name="Rimuovi Ristorante">
+    <DeleteUnit gr:x="360" gr:y="260" id="sv2#area9#dlu8" name="Rimuovi Ristorante">
       <Selector id="sv2#area9#dlu8#su23" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area9#dlu8#su23#kcond23" name="KeyCondition23" predicate="in" implied="false"/>
       </Selector>
     </DeleteUnit>
+    <CreateUnit id="sv2#area9#cru1" name="Aggiungi Ristorante" gr:x="205" gr:y="165"/>
   </OperationUnits>
 </Area>

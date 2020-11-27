@@ -1,16 +1,5 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area7" name="Personale" defaultPage="sv2#area7#page11" landmarks="sv2#area7#page11 sv2#area7#page19" landmark="true" gr:x="75" gr:y="555">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area7" name="Personale" defaultPage="sv2#area7#page11" landmarks="sv2#area7#page11" landmark="true" gr:x="25" gr:y="425">
   <OperationUnits>
-    <CreateUnit gr:x="160" gr:y="155" id="sv2#area7#cru2" name="Aggiungi Ristorante"/>
-    <DeleteUnit gr:x="300" gr:y="155" id="sv2#area7#dlu7" name="Rimuovi Ristorante">
-      <Selector id="sv2#area7#dlu7#su19" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#area7#dlu7#su19#kcond19" name="KeyCondition19" predicate="in" implied="false"/>
-      </Selector>
-    </DeleteUnit>
-    <ModifyUnit gr:x="440" gr:y="160" id="sv2#area7#mfu7" name="Modifica Ristorante">
-      <Selector id="sv2#area7#mfu7#su20" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#area7#mfu7#su20#kcond20" name="KeyCondition20" predicate="in" implied="false"/>
-      </Selector>
-    </ModifyUnit>
     <ModifyUnit gr:x="0" gr:y="160" id="sv2#area7#mfu8" name="Modifica Dati Personali">
       <Selector id="sv2#area7#mfu8#su21" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area7#mfu8#su21#kcond21" name="KeyCondition21" predicate="in" implied="false"/>

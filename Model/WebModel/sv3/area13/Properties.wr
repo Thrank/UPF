@@ -1,23 +1,8 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area13" name="Personale" defaultPage="sv3#area13#page23" landmarks="sv3#area13#page23 sv3#area13#page24 sv3#area13#page29" landmark="true" gr:x="15" gr:y="435">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area13" name="Personale" defaultPage="sv3#area13#page23" landmarks="sv3#area13#page23" landmark="true" gr:x="15" gr:y="435">
   <OperationUnits>
     <ModifyUnit id="sv3#area13#mfu12" name="Modifica Dati Profilo" gr:x="5" gr:y="160">
       <Selector id="sv3#area13#mfu12#su28" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area13#mfu12#su28#kcond28" name="KeyCondition1" predicate="in" implied="false"/>
-      </Selector>
-    </ModifyUnit>
-    <DeleteUnit id="sv3#area13#dlu10" name="Respingi Valutazione" gr:x="360" gr:y="140">
-      <Selector id="sv3#area13#dlu10#su29" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#area13#dlu10#su29#kcond29" name="KeyCondition3" predicate="in" implied="false"/>
-      </Selector>
-    </DeleteUnit>
-    <ModifyUnit gr:x="190" gr:y="140" id="sv3#area13#mfu15" name="Modifica Stato Valutazione">
-      <Selector id="sv3#area13#mfu15#su36" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#area13#mfu15#su36#kcond36" name="KeyCondition36" predicate="in" implied="false"/>
-      </Selector>
-    </ModifyUnit>
-    <ModifyUnit gr:x="560" gr:y="140" id="sv3#area13#mfu16" name="Stato Ban Utente">
-      <Selector id="sv3#area13#mfu16#su38" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#area13#mfu16#su38#kcond38" name="KeyCondition38" predicate="in" implied="false"/>
       </Selector>
     </ModifyUnit>
   </OperationUnits>

@@ -1,11 +1,11 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area18#page35" name="Gestione Utenti Interni" gr:x="390" gr:y="0" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area15#page24" name="Valutazioni Sospette" landmark="true" gr:x="300" gr:y="10">
   <ContentUnits>
-    <IndexUnit id="sv4#area18#page35#inu21" name="Lista Utenti Interni" gr:x="0" gr:y="0"/>
+    <MultiDataUnit id="sv3#area15#page24#mdu6" name="Lista Valutazioni" gr:x="0" gr:y="0"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv4#area18#page35#inu21"/>
+        <layout:Unit unitId="sv3#area15#page24#mdu6"/>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

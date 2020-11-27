@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="SiteViewAmministratore" landmarks="sv4#area18 sv4#area19 sv4#area16 sv4#area17" homePage="sv4#area17#page32">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="SiteViewAmministratore" landmarks="sv4#area18 sv4#area19 sv4#area16 sv4#area17 sv4#area23" homePage="sv4#area17#page32">
   <OperationUnits>
     <LoginUnit id="sv4#lgu4" name="Login" gr:x="490" gr:y="40"/>
     <LogoutUnit id="sv4#lou6" name="Logout" gr:x="580" gr:y="45"/>

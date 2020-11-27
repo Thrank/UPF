@@ -1,0 +1,26 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="220" gr:y="290" id="sv4#area23" name="Gestione Amministratore" landmark="true" landmarks="sv4#area23#page27 sv4#area23#page28">
+  <OperationUnits>
+    <DeleteUnit id="sv4#area23#dlu5" name="Rimuovi Moderatore" gr:x="145" gr:y="140">
+      <Selector id="sv4#area23#dlu5#su15" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area23#dlu5#su15#kcond15" name="KeyCondition48" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <DeleteUnit id="sv4#area23#dlu6" name="Rimuovi Amministratore" gr:x="280" gr:y="95">
+      <Selector id="sv4#area23#dlu6#su16" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area23#dlu6#su16#kcond16" name="KeyCondition48" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <CreateUnit id="sv4#area23#cru2" name="Aggiungi Amministratore" gr:x="275" gr:y="0"/>
+    <CreateUnit id="sv4#area23#cru4" name="Aggiungi Moderatore" gr:x="0" gr:y="140"/>
+    <ModifyUnit id="sv4#area23#mfu6" name="Modifica Stato Ristoratore" gr:x="290" gr:y="210">
+      <Selector id="sv4#area23#mfu6#su18" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area23#mfu6#su18#kcond18" name="KeyCondition50" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+    <DeleteUnit id="sv4#area23#dlu7" name="Rimuovi Richiesta" gr:x="225" gr:y="320">
+      <Selector id="sv4#area23#dlu7#su19" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area23#dlu7#su19#kcond19" name="KeyCondition51" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+  </OperationUnits>
+</Area>
