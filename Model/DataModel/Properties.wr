@@ -114,7 +114,7 @@
     <Attribute id="ent16#att64" name="oid" key="true" type="integer"/>
     <Attribute id="ent16#att76" name="CAP" type="integer"/>
   </Entity>
-  <Relationship id="rel10" name="Ristorante_Indirizzo" sourceEntity="ent14" targetEntity="ent16">
+  <Relationship id="rel10" name="Ristorante_Indirizzo" sourceEntity="ent14" targetEntity="ent16" gr:bendpoints="101,40,-593,-9">
     <RelationshipRole1 id="rel10#role19" name="RistoranteToIndirizzo" maxCard="1"/>
     <RelationshipRole2 id="rel10#role20" name="IndirizzoToRistorante" maxCard="1"/>
   </Relationship>
