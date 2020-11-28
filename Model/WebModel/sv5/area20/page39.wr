@@ -8,7 +8,7 @@
         <RelationshipRoleCondition id="sv5#area20#page39#inu24#su32#rcond4" name="RoleCondition4" predicate="in" implied="false" role="rel7#role13"/>
       </Selector>
     </IndexUnit>
-    <SelectorUnit id="sv5#area20#page39#seu19" name="Ristorante Citt&#224;" gr:x="35" gr:y="320" entity="ent16">
+    <SelectorUnit id="sv5#area20#page39#seu19" name="Citt&#224;" gr:x="35" gr:y="320" entity="ent16">
       <Selector id="sv5#area20#page39#seu19#su35" defaultPolicy="fill" booleanOperator="and"/>
       <Link id="sv5#area20#page39#seu19#ln34" name="Flow34" to="sv5#area20#page39#inu18" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
@@ -25,13 +25,13 @@
       <Link id="sv5#area20#page39#scu8#ln22" name="Flow22" to="sv5#area20#page39#inu18" automaticCoupling="true" type="automatic" validate="true"/>
       <SortAttribute attribute="ent14#att42" order="ascending"/>
     </ScrollerUnit>
-    <SelectorUnit gr:x="0" gr:y="230" id="sv5#area20#page39#seu14" name="Ristorante Tipologia Cucina" entity="ent10">
+    <SelectorUnit gr:x="0" gr:y="230" id="sv5#area20#page39#seu14" name="Tipologia Cucina" entity="ent10">
       <Link id="sv5#area20#page39#seu14#ln33" name="Flow33" to="sv5#area20#page39#inu18" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="35" gr:y="410" id="sv5#area20#page39#seu15" name="Ristoranti Orario" entity="ent17">
+    <SelectorUnit gr:x="100" gr:y="415" id="sv5#area20#page39#seu15" name="Orario" entity="ent17">
       <Link id="sv5#area20#page39#seu15#ln35" name="Flow35" to="sv5#area20#page39#inu18" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="195" gr:y="375" id="sv5#area20#page39#seu23" name="Ristoranti Voto" entity="ent14">
+    <SelectorUnit gr:x="195" gr:y="375" id="sv5#area20#page39#seu23" name="Voto" entity="ent14">
       <SortAttribute attribute="ent14#att52" order="descending"/>
       <Link id="sv5#area20#page39#seu23#ln36" name="Flow36" to="sv5#area20#page39#inu18" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>

@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="810" gr:y="205" id="sv6#area25#page34" name="Dettaglio ristorante">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv6#area25#page34#dau15" name="Ristorante" entity="ent14" displayAttributes="ent14#att46 ent14#att45 ent14#att52 ent14#att42 ent14#att44" linkOrder="sv6#area25#page34#dau15#ln44">
+      <Selector id="sv6#area25#page34#dau15#su38" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area25#page34#dau15#su38#kcond20" name="KeyCondition20" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv6#area25#page34#dau15#ln44" name="Flow44" to="sv6#area26#page35#scu13" type="normal" validate="true">
+        <LinkParameter id="sv6#area25#page34#dau15#ln44#par15" name="oid_PASSING" source="data.ent14#att40" passing="true"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv6#area25#page34#dau15">
+          <layout:Attribute attribute="ent14#att46"/>
+          <layout:Attribute attribute="ent14#att45"/>
+          <layout:Attribute attribute="ent14#att52"/>
+          <layout:Attribute attribute="ent14#att42"/>
+          <layout:Attribute attribute="ent14#att44"/>
+          <layout:Link link="sv6#area25#page34#dau15#ln44"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

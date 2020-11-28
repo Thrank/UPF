@@ -5,7 +5,7 @@
         <RelationshipRoleCondition id="sv5#area21#page41#inu25#su43#rcond8" name="RoleCondition8" predicate="in" implied="false" role="rel13#role25"/>
       </Selector>
     </IndexUnit>
-    <SelectorUnit id="sv5#area21#page41#seu20" name="Tipologia Cucina Piatto" gr:x="0" gr:y="10" entity="ent10">
+    <SelectorUnit id="sv5#area21#page41#seu20" name="Tipologia Cucina" gr:x="0" gr:y="10" entity="ent10">
       <Link id="sv5#area21#page41#seu20#ln30" name="Flow30" to="sv5#area21#page41#inu25" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
     <SelectorUnit gr:x="5" gr:y="125" id="sv5#area21#page41#seu21" name="Categoria Piatto" entity="ent18">
