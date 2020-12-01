@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv7#area30#page46" name="Elenco piatti" linkOrder="sv7#area30#page46#ln38 sv7#area30#page46#ln39 sv7#area30#page46#ln42">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv7#area30#page46" name="Elenco piatti">
   <ContentUnits>
     <IndexUnit gr:x="0" gr:y="0" id="sv7#area30#page46#inu27" name="Elenco piatti" entity="ent1" linkOrder="sv7#area30#page46#inu27#ln41">
       <Selector id="sv7#area30#page46#inu27#su56" defaultPolicy="fill" booleanOperator="and">
@@ -29,7 +29,4 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv7#area30#page46#ln38" name="Flow38" to="sv7#area28#page45" automaticCoupling="true" type="normal" validate="true"/>
-  <Link id="sv7#area30#page46#ln39" name="Flow39" to="sv7#area29#page47" automaticCoupling="true" type="normal" validate="true"/>
-  <Link id="sv7#area30#page46#ln42" name="Flow42" to="sv7#area29#page29" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="1,469,711,4"/>
 </Page>

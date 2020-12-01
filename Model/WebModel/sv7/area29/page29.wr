@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="170" id="sv7#area29#page29" name="Ricerca Personalizzata" landmark="true" linkOrder="sv7#area29#page29#ln27">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="170" id="sv7#area29#page29" name="Ricerca Personalizzata" landmark="true">
   <ContentUnits>
     <PowerIndexUnit id="sv7#area29#page29#pwu1" name="Elenco ristoranti" linkOrder="sv7#area29#page29#pwu1#ln19" gr:x="345" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent14" displayAttributes="ent14#att42 ent14#att52">
       <Link id="sv7#area29#page29#pwu1#ln19" name="Vedi dettaglio ristorante" to="sv7#area29#page48#dau17" type="normal" validate="true">
@@ -107,5 +107,4 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv7#area29#page29#ln27" name="Flow27" to="sv7#area29#page47" automaticCoupling="true" type="normal" validate="true"/>
 </Page>
