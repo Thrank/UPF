@@ -1,10 +1,10 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="385" gr:y="150" id="sv7#area29#page48" name="Dettaglio ristorante">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="655" gr:y="150" id="sv7#area29#page48" name="Dettaglio ristorante" linkOrder="sv7#area29#page48#ln29 sv7#area29#page48#ln37">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv7#area29#page48#dau17" name="Dettaglio ristorante" entity="ent14" displayAttributes="ent14#att42 ent14#att46 ent14#att44 ent14#att45 ent14#att52" linkOrder="sv7#area29#page48#dau17#ln57">
       <Selector id="sv7#area29#page48#dau17#su55" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv7#area29#page48#dau17#su55#kcond30" name="Dettaglio ristorante" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv7#area29#page48#dau17#ln57" name="Flow57" to="sv7#area30#page46#inu27" type="normal" validate="true">
+      <Link id="sv7#area29#page48#dau17#ln57" name="VaiAPiatti" to="sv7#area30#page46#inu27" type="normal" validate="true" gr:bendpoints="88,-191,-157,169">
         <LinkParameter id="sv7#area29#page48#dau17#ln57#par66" name="oid_RoleCondition18 [oid]" source="data.ent14#att40" target="sv7#area30#page46#inu27#su56#rcond18.ent14#att40"/>
       </Link>
     </DataUnit>
@@ -34,4 +34,6 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv7#area29#page48#ln29" name="Flow29" to="sv7#area29#page47" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv7#area29#page48#ln37" name="Flow37" to="sv7#area28#page45" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

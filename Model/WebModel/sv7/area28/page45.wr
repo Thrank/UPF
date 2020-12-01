@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv7#area28#page45" name="Benvenuto" linkOrder="sv7#area28#page45#ln55">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv7#area28#page45" name="Benvenuto" linkOrder="sv7#area28#page45#ln55 sv7#area28#page45#ln23">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv7#area28#page45#enu15" name="Registrazion cliente" entity="ent4" fieldOrder="sv7#area28#page45#enu15#fld25 sv7#area28#page45#enu15#fld26 sv7#area28#page45#enu15#fld24 sv7#area28#page45#enu15#fld21 sv7#area28#page45#enu15#fld27 sv7#area28#page45#enu15#fld22 sv7#area28#page45#enu15#fld23" linkOrder="sv7#area28#page45#enu15#ln10">
       <Field id="sv7#area28#page45#enu15#fld21" name="data di nascita" type="date" modifiable="true" attribute="ent4#att12"/>
@@ -108,4 +108,5 @@
     </layout:Row>
   </layout:Grid>
   <Link id="sv7#area28#page45#ln55" name="Prosegui" to="sv7#area29#page47" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv7#area28#page45#ln23" name="Flow23" to="sv7#area29#page29" automaticCoupling="true" type="normal" validate="true"/>
 </Page>
