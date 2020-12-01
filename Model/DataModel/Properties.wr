@@ -55,10 +55,11 @@
     <Attribute id="ent14#att44" name="numero di telefono" type="string"/>
     <Attribute id="ent14#att42" name="nome" type="string"/>
   </Entity>
-  <Entity gr:x="370" gr:y="285" id="ent15" name="valutazione" duration="persistent" attributeOrder="ent15#att41 ent15#att53 ent15#att54">
+  <Entity gr:x="370" gr:y="285" id="ent15" name="Valutazione" duration="persistent" attributeOrder="ent15#att41 ent15#att53 ent15#att54 ent15#att4">
     <Attribute id="ent15#att41" key="true" name="oid" type="integer"/>
     <Attribute id="ent15#att54" name="commento" type="text"/>
     <Attribute id="ent15#att53" name="voto" type="integer"/>
+    <Attribute id="ent15#att4" name="data" type="date"/>
   </Entity>
   <Relationship id="rel1" name="Ristoratore_Ristorante" sourceEntity="ent6" targetEntity="ent14">
     <RelationshipRole1 id="rel1#role1" name="RistoratoreToRistorante" maxCard="N"/>
@@ -152,10 +153,10 @@
     <RelationshipRole1 id="rel16#role31" name="PiattoToAllergene" maxCard="N"/>
     <RelationshipRole2 id="rel16#role32" name="AllergeneToPiatto" maxCard="N"/>
   </Relationship>
-  <Property id="prop1" name="Property 1"/>
-  <Entity gr:x="-165" gr:y="245" id="ent21" name="Approvazione Attivit&#224;" duration="persistent" attributeOrder="ent21#att5 ent21#att81">
+  <Entity gr:x="-165" gr:y="245" id="ent21" name="Approvazione Attivit&#224;" duration="persistent" attributeOrder="ent21#att5 ent21#att81 ent21#att9">
     <Attribute id="ent21#att81" name="data" type="date"/>
     <Attribute id="ent21#att5" name="oid" key="true" type="integer"/>
+    <Attribute id="ent21#att9" name="stato" type="integer"/>
   </Entity>
   <Entity gr:x="270" gr:y="-70" id="ent24" name="Moderazione Eseguita" duration="persistent" attributeOrder="ent24#att10 ent24#att80">
     <Attribute id="ent24#att80" name="data" type="date"/>

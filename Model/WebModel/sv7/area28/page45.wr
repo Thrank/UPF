@@ -1,0 +1,111 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv7#area28#page45" name="Benvenuto" linkOrder="sv7#area28#page45#ln55">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv7#area28#page45#enu15" name="Registrazion cliente" entity="ent4" fieldOrder="sv7#area28#page45#enu15#fld25 sv7#area28#page45#enu15#fld26 sv7#area28#page45#enu15#fld24 sv7#area28#page45#enu15#fld21 sv7#area28#page45#enu15#fld27 sv7#area28#page45#enu15#fld22 sv7#area28#page45#enu15#fld23" linkOrder="sv7#area28#page45#enu15#ln10">
+      <Field id="sv7#area28#page45#enu15#fld21" name="data di nascita" type="date" modifiable="true" attribute="ent4#att12"/>
+      <Field id="sv7#area28#page45#enu15#fld22" name="username" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv7#area28#page45#enu15#fld23" name="password" type="password" modifiable="true" attribute="password"/>
+      <Field id="sv7#area28#page45#enu15#fld24" name="email" type="string" modifiable="true" attribute="email"/>
+      <Field id="sv7#area28#page45#enu15#fld25" name="nome" type="string" modifiable="true" attribute="User#att3"/>
+      <Field id="sv7#area28#page45#enu15#fld26" name="cognome" type="string" modifiable="true" attribute="User#att6"/>
+      <Field id="sv7#area28#page45#enu15#fld27" name="numero di telefono" type="string" modifiable="true" attribute="User#att11"/>
+      <Link id="sv7#area28#page45#enu15#ln10" name="Accedi" to="sv7#lgu6" type="normal" validate="true">
+        <LinkParameter id="sv7#area28#page45#enu15#ln10#par1" name="username_Username" source="sv7#area28#page45#enu15#fld22" target="sv7#lgu6.username"/>
+        <LinkParameter id="sv7#area28#page45#enu15#ln10#par2" name="password_Password" source="sv7#area28#page45#enu15#fld23" target="sv7#lgu6.password"/>
+      </Link>
+    </EntryUnit>
+    <EntryUnit gr:x="140" gr:y="0" id="sv7#area28#page45#enu16" name="Registrazione ristoratore" entity="ent6" fieldOrder="sv7#area28#page45#enu16#fld32 sv7#area28#page45#enu16#fld33 sv7#area28#page45#enu16#fld28 sv7#area28#page45#enu16#fld31 sv7#area28#page45#enu16#fld29 sv7#area28#page45#enu16#fld34 sv7#area28#page45#enu16#fld30" linkOrder="sv7#area28#page45#enu16#ln13">
+      <Field id="sv7#area28#page45#enu16#fld28" name="partita iva" type="string" modifiable="true" attribute="ent6#att18"/>
+      <Field id="sv7#area28#page45#enu16#fld29" name="username" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv7#area28#page45#enu16#fld30" name="password" type="password" modifiable="true" attribute="password"/>
+      <Field id="sv7#area28#page45#enu16#fld31" name="email" type="string" modifiable="true" attribute="email"/>
+      <Field id="sv7#area28#page45#enu16#fld32" name="nome" type="string" modifiable="true" attribute="User#att3"/>
+      <Field id="sv7#area28#page45#enu16#fld33" name="cognome" type="string" modifiable="true" attribute="User#att6"/>
+      <Field id="sv7#area28#page45#enu16#fld34" name="numero di telefono" type="string" modifiable="true" attribute="User#att11"/>
+      <Link id="sv7#area28#page45#enu16#ln13" name="Accedi" to="sv7#lgu6" type="normal" validate="true" gr:bendpoints="-264,-69,146,-114">
+        <LinkParameter id="sv7#area28#page45#enu16#ln13#par3" name="username_Username" source="sv7#area28#page45#enu16#fld29" target="sv7#lgu6.username"/>
+        <LinkParameter id="sv7#area28#page45#enu16#ln13#par4" name="password_Password" source="sv7#area28#page45#enu16#fld30" target="sv7#lgu6.password"/>
+      </Link>
+    </EntryUnit>
+    <EntryUnit gr:x="305" gr:y="5" id="sv7#area28#page45#enu17" name="Accedi" fieldOrder="sv7#area28#page45#enu17#fld35 sv7#area28#page45#enu17#fld36" linkOrder="sv7#area28#page45#enu17#ln14">
+      <Field id="sv7#area28#page45#enu17#fld36" name="password" type="password" modifiable="true"/>
+      <Field id="sv7#area28#page45#enu17#fld35" name="username" type="string" modifiable="true"/>
+      <Link id="sv7#area28#page45#enu17#ln14" name="Accedi" to="sv7#lgu6" type="normal" validate="true" gr:bendpoints="-352,-162,183,-212">
+        <LinkParameter id="sv7#area28#page45#enu17#ln14#par5" name="username_Username" source="sv7#area28#page45#enu17#fld35" target="sv7#lgu6.username"/>
+        <LinkParameter id="sv7#area28#page45#enu17#ln14#par6" name="password_Password" source="sv7#area28#page45#enu17#fld36" target="sv7#lgu6.password"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv7#area28#page45#enu15">
+          <layout:Field field="sv7#area28#page45#enu15#fld25"/>
+          <layout:Field field="sv7#area28#page45#enu15#fld26"/>
+          <layout:Field field="sv7#area28#page45#enu15#fld24"/>
+          <layout:Field field="sv7#area28#page45#enu15#fld21"/>
+          <layout:Field field="sv7#area28#page45#enu15#fld27"/>
+          <layout:Field field="sv7#area28#page45#enu15#fld22"/>
+          <layout:Field field="sv7#area28#page45#enu15#fld23"/>
+          <layout:Link link="sv7#area28#page45#enu15#ln10"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv7#area28#page45#enu16">
+          <layout:Field field="sv7#area28#page45#enu16#fld32"/>
+          <layout:Field field="sv7#area28#page45#enu16#fld33"/>
+          <layout:Field field="sv7#area28#page45#enu16#fld28"/>
+          <layout:Field field="sv7#area28#page45#enu16#fld31"/>
+          <layout:Field field="sv7#area28#page45#enu16#fld29"/>
+          <layout:Field field="sv7#area28#page45#enu16#fld34"/>
+          <layout:Field field="sv7#area28#page45#enu16#fld30"/>
+          <layout:Link link="sv7#area28#page45#enu16#ln13"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv7#area28#page45#enu17">
+          <layout:Field field="sv7#area28#page45#enu17#fld35"/>
+          <layout:Field field="sv7#area28#page45#enu17#fld36"/>
+          <layout:Link link="sv7#area28#page45#enu17#ln14"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv7#area28#page45#ln55" name="Prosegui" to="sv7#area29#page47" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

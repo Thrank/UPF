@@ -1,0 +1,63 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv7#area29#page47" name="Elenco ristoranti">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv7#area29#page47#pwu2" name="Elenco tipologie cucina" sortable="true" checkable="false" useCountQuery="false" entity="ent10" displayAttributes="ent10#att28"/>
+    <PowerIndexUnit gr:x="170" gr:y="0" id="sv7#area29#page47#pwu3" name="Elenco migliori ristoranti" sortable="true" checkable="false" useCountQuery="false" entity="ent2" displayAttributes="ent14#att42 ent14#att52 rel7#role14.ent10#att28" linkOrder="sv7#area29#page47#pwu3#ln56">
+      <Link id="sv7#area29#page47#pwu3#ln56" name="Vedi dettaglio ristorante" to="sv7#area29#page48#dau17" automaticCoupling="true" type="normal" validate="true"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv7#area29#page47#pwu2">
+          <layout:Attribute attribute="ent10#att28"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv7#area29#page47#pwu3">
+          <layout:Attribute attribute="ent14#att42"/>
+          <layout:Attribute attribute="ent14#att52"/>
+          <layout:Attribute attribute="rel7#role14.ent10#att28"/>
+          <layout:Link link="sv7#area29#page47#pwu3#ln56"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

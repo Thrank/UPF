@@ -1,0 +1,41 @@
+Buildfile: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\WebRatio\plugins\com.webratio.generator.webapp_7.2.18.201903231300\DataModel\JavaCompile.xml
+
+main:
+    [javac] Compiling 23 source files to C:\WebRatio\WebRatio Platform 7.2.18.x64bit\Tomcat\webapps\UPF\WEB-INF\classes
+    [javac] ----------
+    [javac] 1. ERROR in C:\WebRatio\WebRatio Platform 7.2.18.x64bit\Tomcat\webapps\UPF\WEB-INF\classes\com\webratio\webapp\Ristorante.java (at line 11)
+    [javac] 	private com.webratio.webapp.Ristorante_MediaVotiBean _mediaVotiBean;
+    [javac] 	        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.Ristorante_MediaVotiBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 2. ERROR in C:\WebRatio\WebRatio Platform 7.2.18.x64bit\Tomcat\webapps\UPF\WEB-INF\classes\com\webratio\webapp\Ristorante.java (at line 53)
+    [javac] 	com.webratio.webapp.Ristorante_MediaVotiBean __mediaVoti = this.getMediaVotiBean();
+    [javac] 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.Ristorante_MediaVotiBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 3. ERROR in C:\WebRatio\WebRatio Platform 7.2.18.x64bit\Tomcat\webapps\UPF\WEB-INF\classes\com\webratio\webapp\Ristorante.java (at line 53)
+    [javac] 	com.webratio.webapp.Ristorante_MediaVotiBean __mediaVoti = this.getMediaVotiBean();
+    [javac] 	                                                                ^^^^^^^^^^^^^^^^
+    [javac] The method getMediaVotiBean() from the type Ristorante refers to the missing type Ristorante_MediaVotiBean
+    [javac] ----------
+    [javac] 4. ERROR in C:\WebRatio\WebRatio Platform 7.2.18.x64bit\Tomcat\webapps\UPF\WEB-INF\classes\com\webratio\webapp\Ristorante.java (at line 64)
+    [javac] 	public com.webratio.webapp.Ristorante_MediaVotiBean getMediaVotiBean() {
+    [javac] 	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.Ristorante_MediaVotiBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 5. ERROR in C:\WebRatio\WebRatio Platform 7.2.18.x64bit\Tomcat\webapps\UPF\WEB-INF\classes\com\webratio\webapp\Ristorante.java (at line 65)
+    [javac] 	return _mediaVotiBean;
+    [javac] 	       ^^^^^^^^^^^^^^
+    [javac] Ristorante_MediaVotiBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 6. ERROR in C:\WebRatio\WebRatio Platform 7.2.18.x64bit\Tomcat\webapps\UPF\WEB-INF\classes\com\webratio\webapp\Ristorante.java (at line 68)
+    [javac] 	public void setMediaVotiBean(com.webratio.webapp.Ristorante_MediaVotiBean _mediaVotiBean) {
+    [javac] 	                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.Ristorante_MediaVotiBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 7. ERROR in C:\WebRatio\WebRatio Platform 7.2.18.x64bit\Tomcat\webapps\UPF\WEB-INF\classes\com\webratio\webapp\Ristorante.java (at line 69)
+    [javac] 	this._mediaVotiBean = _mediaVotiBean;
+    [javac] 	^^^^^^^^^^^^^^^^^^^
+    [javac] Ristorante_MediaVotiBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 7 problems (7 errors)

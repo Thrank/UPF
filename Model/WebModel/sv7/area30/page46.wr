@@ -1,0 +1,27 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv7#area30#page46" name="Elenco piatti">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="0" id="sv7#area30#page46#inu27" name="Elenco piatti" entity="ent1">
+      <Selector id="sv7#area30#page46#inu27#su56" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv7#area30#page46#inu27#su56#rcond18" name="Ottieni elenco piatti" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv7#area30#page46#inu27"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
