@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv7" name="Visitatore" landmarks="sv7#area28 sv7#area29 sv7#area30" homePage="sv7#area28#page45">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv7" name="Visitatore" landmarks="sv7#area28 sv7#area29" homePage="sv7#area28#page45">
   <OperationUnits>
     <LoginUnit gr:x="165" gr:y="310" id="sv7#lgu6" name="Login" landmark="false">
       <OKLink id="sv7#lgu6#oln3" name="Accesso riuscito" to="sv7#area29#page47" automaticCoupling="true"/>
