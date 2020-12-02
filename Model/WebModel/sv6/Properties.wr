@@ -1,0 +1,5 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv6" name="Cliente" landmarks="sv6#area26 sv6#area25 sv6#area27 sv6#area31" homePage="sv6#area26#page41">
+  <OperationUnits>
+    <LogoutUnit gr:x="130" gr:y="50" id="sv6#lou2" name="Esci" siteView="sv7"/>
+  </OperationUnits>
+</SiteView>

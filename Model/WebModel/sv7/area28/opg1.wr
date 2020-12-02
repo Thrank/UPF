@@ -1,0 +1,40 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="sv7#area28#opg1" name="Iscrizione cliente" transaction="true">
+  <OperationUnits>
+    <CreateUnit gr:x="265" gr:y="40" id="sv7#area28#opg1#cru7" name="Aggiungi cliente" entity="ent4" linkOrder="sv7#area28#opg1#cru7#ln65">
+      <Link id="sv7#area28#opg1#cru7#ln65" name="Flow65" to="sv7#area28#opg1#cnu2" automaticCoupling="true" type="transport" validate="true"/>
+    </CreateUnit>
+    <ConnectUnit gr:x="180" gr:y="160" id="sv7#area28#opg1#cnu2" name="Connetti a indirizzo" relationship="rel11#role21">
+      <SourceSelector id="sv7#area28#opg1#cnu2#su30" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv7#area28#opg1#cnu2#su30#kcond52" name="KeyCondition52" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv7#area28#opg1#cnu2#su32" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv7#area28#opg1#cnu2#su32#kcond53" name="KeyCondition53" predicate="in" implied="false"/>
+      </TargetSelector>
+    </ConnectUnit>
+    <CreateUnit gr:x="130" gr:y="40" id="sv7#area28#opg1#cru8" name="Aggiungi indirizzo" entity="ent16" linkOrder="sv7#area28#opg1#cru8#ln67">
+      <Link id="sv7#area28#opg1#cru8#ln63" name="Flow63" to="sv7#area28#opg1#cnu4" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv7#area28#opg1#cru8#ln67" name="Flow67" to="sv7#area28#opg1#cnu2" automaticCoupling="true" type="transport" validate="true"/>
+    </CreateUnit>
+    <CreateUnit gr:x="5" gr:y="40" id="sv7#area28#opg1#cru12" name="Aggiungi citt&#224;" entity="ent22" gr:showAllParts="false" linkOrder="sv7#area28#opg1#cru12#ln64">
+      <Link id="sv7#area28#opg1#cru12#ln64" name="Flow64" to="sv7#area28#opg1#cnu4" automaticCoupling="true" type="transport" validate="true"/>
+    </CreateUnit>
+    <ConnectUnit gr:x="0" gr:y="165" id="sv7#area28#opg1#cnu4" name="Connetti a citt&#224;" relationship="rel32#role63">
+      <SourceSelector id="sv7#area28#opg1#cnu4#su73" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv7#area28#opg1#cnu4#su73#kcond62" name="KeyCondition62" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv7#area28#opg1#cnu4#su74" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv7#area28#opg1#cnu4#su74#kcond63" name="KeyCondition63" predicate="in" implied="false"/>
+      </TargetSelector>
+    </ConnectUnit>
+    <SelectorUnit gr:x="470" gr:y="0" id="sv7#area28#opg1#seu14" name="Seleziona citt&#224;" entity="ent22" distinctAttributes="ent22#att27 ent22#att29">
+      <SortAttribute attribute="ent22#att27" order="ascending"/>
+      <Selector id="sv7#area28#opg1#seu14#su79" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv7#area28#opg1#seu14#su79#acond1" name="AttCondition1" predicate="neq" booleanOperator="or" implied="false" attributes="ent22#att29"/>
+      </Selector>
+      <OKLink id="sv7#area28#opg1#seu14#oln8" name="OKFlow8" to="sv7#area28#opg1#cru12" gr:bendpoints="-121,-46,344,-76;-445,-45,20,-75">
+        <LinkParameter id="sv7#area28#opg1#seu14#oln8#par85" name="nome_nome" source="ent22#att29Array" target="sv7#area28#opg1#cru12.ent22#att29"/>
+      </OKLink>
+      <KOLink id="sv7#area28#opg1#seu14#kln2" name="KOFlow2" to="sv7#area28#opg1#cnu4" automaticCoupling="true" gr:bendpoints="-86,234,369,64;-352,233,103,63"/>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

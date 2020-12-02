@@ -1,45 +1,76 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="40" gr:y="175" id="sv7#area29#page29" name="Ricerca Personalizzata" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="185" id="sv7#area29#page29" name="Ricerca Personalizzata" landmark="true">
   <ContentUnits>
-    <SelectorUnit gr:x="130" gr:y="290" id="sv7#area29#page29#seu26" name="Orario" entity="ent17" distinctAttributes="ent17#att47">
-      <Selector id="sv7#area29#page29#seu26#su39" defaultPolicy="fill" booleanOperator="and">
-        <AttributesCondition id="sv7#area29#page29#seu26#su39#acond3" name="aperto" predicate="eq" booleanOperator="or" implied="false" attributes="ent17#att47" value="false"/>
-      </Selector>
-      <Link id="sv7#area29#page29#seu26#ln55" name="Flow55" to="sv7#area29#page29#enu8" automaticCoupling="true" type="transport" validate="true"/>
-    </SelectorUnit>
-    <SelectorUnit gr:x="275" gr:y="310" id="sv7#area29#page29#seu27" name="Citt&#224;" entity="ent22" distinctAttributes="ent22#att27 ent22#att29">
-      <Link id="sv7#area29#page29#seu27#ln53" name="Flow53" to="sv7#area29#page29#enu3" automaticCoupling="true" type="transport" validate="true"/>
-    </SelectorUnit>
-    <SelectorUnit gr:x="410" gr:y="305" id="sv7#area29#page29#seu28" name="Tipologie cucine" entity="ent10">
-      <Link id="sv7#area29#page29#seu28#ln49" name="Flow49" to="sv7#area29#page29#pwu4" automaticCoupling="true" type="transport" validate="true"/>
-    </SelectorUnit>
-    <SelectorUnit gr:x="0" gr:y="305" id="sv7#area29#page29#seu29" name="Fascia prezzo"/>
-    <IndexUnit gr:x="385" gr:y="10" id="sv7#area29#page29#inu23" name="Elenco ristoranti filtrati" entity="ent14" displayAttributes="ent14#att42 ent14#att52" linkOrder="sv7#area29#page29#inu23#ln43">
+    <IndexUnit gr:x="340" gr:y="10" id="sv7#area29#page29#inu23" name="Elenco ristoranti filtrati" entity="ent14" displayAttributes="ent14#att42 ent14#att52" linkOrder="sv7#area29#page29#inu23#ln43 sv7#area29#page29#inu23#ln78">
       <SortAttribute attribute="ent14#att42" order="ascending"/>
-      <Selector id="sv7#area29#page29#inu23#su38" defaultPolicy="fill" booleanOperator="and">
+      <Selector id="sv7#area29#page29#inu23#su38" defaultPolicy="fill" booleanOperator="or">
         <RelationshipRoleCondition id="sv7#area29#page29#inu23#su38#rcond5" name="tipologia cucina" predicate="in" implied="true" role="rel7#role13"/>
         <KeyCondition id="sv7#area29#page29#inu23#su38#kcond20" name="oid ristorante" predicate="in" implied="false"/>
         <RelationshipRoleCondition id="sv7#area29#page29#inu23#su38#rcond20" name="citt&#224;" predicate="in" implied="true" role="rel32#role64.rel10#role20"/>
         <RelationshipRoleCondition id="sv7#area29#page29#inu23#su38#rcond21" name="aperto" predicate="in" implied="true" role="rel14#role27"/>
+        <AttributesCondition id="sv7#area29#page29#inu23#su38#acond2" name="fascia prezzo" predicate="lteq" booleanOperator="or" implied="true" attributes="ent14#att13"/>
       </Selector>
       <Link id="sv7#area29#page29#inu23#ln43" name="Flow43" to="sv7#area29#page48#dau17" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv7#area29#page29#inu23#ln78" name="Flow43" to="sv7#area29#page48#dau17" type="normal" automaticCoupling="true" validate="true"/>
     </IndexUnit>
-    <ScrollerUnit gr:x="220" gr:y="0" id="sv7#area29#page29#scu10" name="Scorri ristoranti" useCountQuery="false" entity="ent14" blockFactor="5" gr:showAllParts="true" linkOrder="sv7#area29#page29#scu10#ln26">
+    <ScrollerUnit gr:x="175" gr:y="0" id="sv7#area29#page29#scu10" name="Scorri ristoranti" useCountQuery="false" entity="ent14" blockFactor="5" gr:showAllParts="true" linkOrder="sv7#area29#page29#scu10#ln26 sv7#area29#page29#scu10#ln82">
       <SortAttribute attribute="ent14#att42" order="ascending"/>
       <Link id="sv7#area29#page29#scu10#ln26" name="Flow26" to="sv7#area29#page29#inu23" type="automatic" validate="true" automaticCoupling="true"/>
       <Selector id="sv7#area29#page29#scu10#su58" defaultPolicy="fill" booleanOperator="and"/>
+      <Link id="sv7#area29#page29#scu10#ln82" name="Flow26" to="sv7#area29#page29#inu23" type="automatic" automaticCoupling="true" validate="true"/>
     </ScrollerUnit>
-    <PowerIndexUnit gr:x="395" gr:y="185" id="sv7#area29#page29#pwu4" name="Elenco tipologie cucine" sortable="true" checkable="true" useCountQuery="false" entity="ent10" displayAttributes="ent10#att28" linkOrder="sv7#area29#page29#pwu4#ln50">
+    <EntryUnit id="sv7#area29#page29#enu22" name="Filtro fascia prezzo" gr:showAllParts="true" gr:x="10" gr:y="240" fieldOrder="sv7#area29#page29#enu22#sfld8">
+      <SelectionField id="sv7#area29#page29#enu22#sfld8" name="fascia prezzo" type="string"/>
+      <Link id="sv7#area29#page29#enu22#ln99" name="Flow99" to="sv7#area29#page29#inu23" type="transport" validate="true">
+        <LinkParameter id="sv7#area29#page29#enu22#ln99#par74" name="fascia prezzo_fascia prezzo" source="sv7#area29#page29#enu22#sfld8" target="sv7#area29#page29#inu23#su38#acond2"/>
+      </Link>
+    </EntryUnit>
+    <EntryUnit id="sv7#area29#page29#enu23" name="Filtro citt&#224;" gr:showAllParts="true" gr:x="300" gr:y="255" fieldOrder="sv7#area29#page29#enu23#sfld9">
+      <SelectionField id="sv7#area29#page29#enu23#sfld9" name="elenco citt&#224;" type="string"/>
+      <Link id="sv7#area29#page29#enu23#ln100" name="Flow100" to="sv7#area29#page29#inu23" type="transport" validate="true">
+        <LinkParameter id="sv7#area29#page29#enu23#ln100#par72" name="elenco citt&#224;_citt&#224; [oid]" source="sv7#area29#page29#enu23#sfld9" target="sv7#area29#page29#inu23#su38#rcond20.ent22#att27"/>
+      </Link>
+    </EntryUnit>
+    <EntryUnit id="sv7#area29#page29#enu24" name="Filtro aperto" gr:showAllParts="true" gr:x="165" gr:y="255">
+      <SelectionField id="sv7#area29#page29#enu24#sfld10" name="aperto?" type="boolean" preselectValue="No"/>
+      <Link id="sv7#area29#page29#enu24#ln98" name="Flow98" to="sv7#area29#page29#inu23" type="transport" validate="true">
+        <LinkParameter id="sv7#area29#page29#enu24#ln98#par73" name="aperto?_aperto [oid]" source="sv7#area29#page29#enu24#sfld10" target="sv7#area29#page29#inu23#su38#rcond21.ent17#att60"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit id="sv7#area29#page29#seu35" name="Orario" gr:showAllParts="true" gr:x="145" gr:y="390" entity="ent17" distinctAttributes="ent17#att47">
+      <Selector id="sv7#area29#page29#seu35#su66" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv7#area29#page29#seu35#su66#acond6" name="aperto" predicate="eq" booleanOperator="or" implied="false" attributes="ent17#att47" value="true"/>
+      </Selector>
+      <Link id="sv7#area29#page29#seu35#ln93" name="Flow55" to="sv7#area29#page29#enu24" type="transport" validate="true">
+        <LinkParameter id="sv7#area29#page29#seu35#ln93#par80" name="aperto_aperto? [label]" source="ent17#att47Array" target="sv7#area29#page29#enu24#sfld10_label"/>
+        <LinkParameter id="sv7#area29#page29#seu35#ln93#par81" name="oid_aperto? [output]" source="ent17#att60Array" target="sv7#area29#page29#enu24#sfld10_output"/>
+      </Link>
+      <SortAttribute attribute="ent17#att60" order="ascending"/>
+    </SelectorUnit>
+    <PowerIndexUnit id="sv7#area29#page29#pwu2" name="Elenco tipologie cucine" gr:showAllParts="true" gr:x="440" gr:y="230" sortable="true" checkable="true" useCountQuery="false" entity="ent10" displayAttributes="ent10#att28">
       <SortAttribute attribute="ent10#att28" order="ascending"/>
-      <Link id="sv7#area29#page29#pwu4#ln50" name="Flow50" to="sv7#area29#page29#inu23" automaticCoupling="true" type="normal" validate="true"/>
+      <DefaultSortAttribute attribute="ent10#att28" order="ascending"/>
+      <Link id="sv7#area29#page29#pwu2#ln97" name="Flow97" to="sv7#area29#page29#inu23" type="transport" validate="true">
+        <LinkParameter id="sv7#area29#page29#pwu2#ln97#par71" name="oid_tipologia cucina [oid]" source="data[].ent10#att61" target="sv7#area29#page29#inu23#su38#rcond5.ent10#att61"/>
+      </Link>
     </PowerIndexUnit>
-    <EntryUnit gr:x="270" gr:y="190" id="sv7#area29#page29#enu3" name="Filtro citt&#224;" entity="ent22" fieldOrder="sv7#area29#page29#enu3#sfld2" linkOrder="sv7#area29#page29#enu3#ln54">
-      <SelectionField id="sv7#area29#page29#enu3#sfld2" name="elenco citt&#224;" type="string"/>
-      <Link id="sv7#area29#page29#enu3#ln54" name="Flow54" to="sv7#area29#page29#inu23" automaticCoupling="true" type="normal" validate="true"/>
-    </EntryUnit>
-    <EntryUnit gr:x="140" gr:y="165" id="sv7#area29#page29#enu8" name="Filtro aperto" entity="ent17" linkOrder="sv7#area29#page29#enu8#ln56">
-      <MultiSelectionField id="sv7#area29#page29#enu8#msfld3" name="Multi Selection Field3" type="string" role="rel14#role27"/>
-      <Link id="sv7#area29#page29#enu8#ln56" name="Flow56" to="sv7#area29#page29#inu23" automaticCoupling="true" type="normal" validate="true"/>
-    </EntryUnit>
+    <SelectorUnit id="sv7#area29#page29#seu36" name="Tipologie cucine" gr:showAllParts="true" gr:x="440" gr:y="415" entity="ent10">
+      <Link id="sv7#area29#page29#seu36#ln94" name="Flow49" to="sv7#area29#page29#pwu2" type="transport" automaticCoupling="true" validate="true"/>
+      <SortAttribute attribute="ent10#att61" order="ascending"/>
+    </SelectorUnit>
+    <SelectorUnit id="sv7#area29#page29#seu37" name="Fascia prezzo" gr:showAllParts="true" gr:x="0" gr:y="390" entity="ent14" distinctAttributes="ent14#att40 ent14#att13">
+      <SortAttribute attribute="ent14#att13" order="ascending"/>
+      <Link id="sv7#area29#page29#seu37#ln95" name="Flow19" to="sv7#area29#page29#enu22" type="transport" validate="true">
+        <LinkParameter id="sv7#area29#page29#seu37#ln95#par64" name="fascia di prezzo_fascia prezzo [label]" source="ent14#att13Array" target="sv7#area29#page29#enu22#sfld8_label"/>
+        <LinkParameter id="sv7#area29#page29#seu37#ln95#par65" name="fascia di prezzo_fascia prezzo [output]" source="ent14#att40Array" target="sv7#area29#page29#enu22#sfld8_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv7#area29#page29#seu38" name="Citt&#224;" gr:showAllParts="true" gr:x="300" gr:y="405" entity="ent22" distinctAttributes="ent22#att27 ent22#att29">
+      <Link id="sv7#area29#page29#seu38#ln96" name="Flow53" to="sv7#area29#page29#enu23" type="transport" validate="true">
+        <LinkParameter id="sv7#area29#page29#seu38#ln96#par68" name="nome_elenco citt&#224; [label]" source="ent22#att29Array" target="sv7#area29#page29#enu23#sfld9_label"/>
+        <LinkParameter id="sv7#area29#page29#seu38#ln96#par69" name="nome_elenco citt&#224; [output]" source="ent22#att27Array" target="sv7#area29#page29#enu23#sfld9_output"/>
+      </Link>
+      <SortAttribute attribute="ent22#att27" order="ascending"/>
+    </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -76,6 +107,7 @@
           <layout:Attribute attribute="ent14#att42"/>
           <layout:Attribute attribute="ent14#att52"/>
           <layout:Link link="sv7#area29#page29#inu23#ln43"/>
+          <layout:Link link="sv7#area29#page29#inu23#ln78"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -114,10 +146,18 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv7#area29#page29#pwu4">
+        <layout:Unit unitId="sv7#area29#page29#enu22">
+          <layout:Field field="sv7#area29#page29#enu22#sfld8"/>
+        </layout:Unit>
+        <layout:Unit unitId="sv7#area29#page29#enu23">
+          <layout:Field field="sv7#area29#page29#enu23#sfld9"/>
+        </layout:Unit>
+        <layout:Unit unitId="sv7#area29#page29#enu24">
+          <layout:Field field="sv7#area29#page29#enu24#sfld10"/>
+        </layout:Unit>
+        <layout:Unit unitId="sv7#area29#page29#pwu2">
           <layout:Attribute attribute="ent10#att28"/>
-          <layout:Link link="sv7#area29#page29#pwu4#ln50"/>
-          <layout:Link link="sv7#area29#page29#pwu4ent10#att28"/>
+          <layout:Link link="sv7#area29#page29#pwu2ent10#att28"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -133,12 +173,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv7#area29#page29#enu3">
-          <layout:Field field="sv7#area29#page29#enu3#sfld2"/>
-          <layout:Link link="sv7#area29#page29#enu3#ln54"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -152,12 +187,21 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv7#area29#page29#enu8">
-          <layout:Field field="sv7#area29#page29#enu8#msfld3"/>
-          <layout:Link link="sv7#area29#page29#enu8#ln56"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

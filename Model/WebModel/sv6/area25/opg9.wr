@@ -1,0 +1,39 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1330" gr:y="435" id="sv6#area25#opg9" name="Inserisci valutazione" transaction="true">
+  <OperationUnits>
+    <CreateUnit gr:x="5" gr:y="155" id="sv6#area25#opg9#cru15" name="Aggiungi valutazione" entity="ent15" linkOrder="sv6#area25#opg9#cru15#ln140 sv6#area25#opg9#cru15#ln142">
+      <Link id="sv6#area25#opg9#cru15#ln140" name="Flow140" to="sv6#area25#opg9#cnu10" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv6#area25#opg9#cru15#ln142" name="Flow142" to="sv6#area25#opg9#cnu11" automaticCoupling="true" type="transport" validate="true"/>
+    </CreateUnit>
+    <TimeUnit gr:x="0" gr:y="30" id="sv6#area25#opg9#tmu3" name="Recupera data corrente" linkOrder="sv6#area25#opg9#tmu3#ln139 sv6#area25#opg9#tmu3#ln143">
+      <Link id="sv6#area25#opg9#tmu3#ln139" name="Flow139" to="sv6#area25#opg9#cru15" type="transport" validate="true">
+        <LinkParameter id="sv6#area25#opg9#tmu3#ln139#par144" name="commento_PASSING_commento" sourceLinkParameter="sv6#area25#page51#enu25#ln138#par141" target="sv6#area25#opg9#cru15.ent15#att54"/>
+        <LinkParameter id="sv6#area25#opg9#tmu3#ln139#par145" name="Current/Input Date_data" source="currentDate" target="sv6#area25#opg9#cru15.ent15#att4"/>
+        <LinkParameter id="sv6#area25#opg9#tmu3#ln139#par147" name="voto_PASSING_voto" sourceLinkParameter="sv6#area25#page51#enu25#ln138#par143" target="sv6#area25#opg9#cru15.ent15#att53"/>
+      </Link>
+      <Link id="sv6#area25#opg9#tmu3#ln143" name="Flow143" to="sv6#area25#opg9#cnu11" type="transport" validate="true" gr:bendpoints="-113,63,-123,-197;-112,229,-122,-31">
+        <LinkParameter id="sv6#area25#opg9#tmu3#ln143#par149" name="oid_PASSING_KeyCondition91 [oid] [Ristorante] [Target]" sourceLinkParameter="sv6#area25#page51#enu25#ln138#par142" target="sv6#area25#opg9#cnu11#su104#kcond91.ent14#att40"/>
+      </Link>
+    </TimeUnit>
+    <ConnectUnit gr:x="195" gr:y="130" id="sv6#area25#opg9#cnu10" name="Connetti a utente" relationship="rel3#role6">
+      <SourceSelector id="sv6#area25#opg9#cnu10#su101" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area25#opg9#cnu10#su101#kcond88" name="KeyCondition88" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv6#area25#opg9#cnu10#su102" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area25#opg9#cnu10#su102#kcond89" name="KeyCondition89" predicate="in" implied="false"/>
+      </TargetSelector>
+    </ConnectUnit>
+    <GetUnit gr:x="215" gr:y="0" id="sv6#area25#opg9#gtu2" name="Get oid utente" contextParameters="UserCtxParam" linkOrder="sv6#area25#opg9#gtu2#ln141">
+      <Link id="sv6#area25#opg9#gtu2#ln141" name="Flow141" to="sv6#area25#opg9#cnu10" type="transport" validate="true">
+        <LinkParameter id="sv6#area25#opg9#gtu2#ln141#par148" name="UserCtxParam.oid_KeyCondition89 [oid] [Cliente ] [Target]" source="sv6#area25#opg9#gtu2.UserCtxParam" target="sv6#area25#opg9#cnu10#su102#kcond89.userOID"/>
+      </Link>
+    </GetUnit>
+    <ConnectUnit gr:x="10" gr:y="265" id="sv6#area25#opg9#cnu11" name="Connetti a ristorante" relationship="rel2#role4">
+      <SourceSelector id="sv6#area25#opg9#cnu11#su103" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area25#opg9#cnu11#su103#kcond90" name="KeyCondition90" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv6#area25#opg9#cnu11#su104" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area25#opg9#cnu11#su104#kcond91" name="KeyCondition91" predicate="in" implied="false"/>
+      </TargetSelector>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>

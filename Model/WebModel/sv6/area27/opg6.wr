@@ -1,0 +1,20 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1220" gr:y="340" id="sv6#area27#opg6" name="Aggiorna preferenze" transaction="true">
+  <OperationUnits>
+    <ConnectUnit gr:x="0" gr:y="0" id="sv6#area27#opg6#cnu8" name="Aggiungi preferenza cucina" relationship="rel20#role39" gr:showAllParts="false">
+      <SourceSelector id="sv6#area27#opg6#cnu8#su93" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area27#opg6#cnu8#su93#kcond79" name="KeyCondition79" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv6#area27#opg6#cnu8#su94" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area27#opg6#cnu8#su94#kcond80" name="KeyCondition80" predicate="in" implied="false"/>
+      </TargetSelector>
+    </ConnectUnit>
+    <DisconnectUnit gr:x="20" gr:y="225" id="sv6#area27#opg6#dcnu2" name="Rimuovi preferenza cucina" relationship="rel20#role39">
+      <SourceSelector id="sv6#area27#opg6#dcnu2#su97" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area27#opg6#dcnu2#su97#kcond83" name="KeyCondition83" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv6#area27#opg6#dcnu2#su98" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area27#opg6#dcnu2#su98#kcond84" name="KeyCondition84" predicate="in" implied="false"/>
+      </TargetSelector>
+    </DisconnectUnit>
+  </OperationUnits>
+</OperationGroup>

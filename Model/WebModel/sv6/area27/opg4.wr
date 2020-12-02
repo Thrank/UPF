@@ -1,0 +1,42 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="620" gr:y="180" id="sv6#area27#opg4" name="Modifica profilo" transaction="true">
+  <OperationUnits>
+    <ModifyUnit gr:x="0" gr:y="0" id="sv6#area27#opg4#mfu14" name="Aggiorna dati profilo" entity="ent4">
+      <Selector id="sv6#area27#opg4#mfu14#su68" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area27#opg4#mfu14#su68#kcond57" name="KeyCondition56" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+    <ModifyUnit gr:x="5" gr:y="115" id="sv6#area27#opg4#mfu15" name="Aggiorna indirizzo" entity="ent16">
+      <Selector id="sv6#area27#opg4#mfu15#su81" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area27#opg4#mfu15#su81#kcond68" name="KeyCondition68" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv6#area27#opg4#mfu15#ln111" name="Flow111" to="sv6#area27#opg4#cnu7" automaticCoupling="true" type="transport" validate="true"/>
+    </ModifyUnit>
+    <CreateUnit gr:x="350" gr:y="235" id="sv6#area27#opg4#cru14" name="Aggiungi citt&#224;" entity="ent22" linkOrder="sv6#area27#opg4#cru14#ln110">
+      <Link id="sv6#area27#opg4#cru14#ln110" name="Flow110" to="sv6#area27#opg4#cnu7" automaticCoupling="true" type="transport" validate="true"/>
+    </CreateUnit>
+    <SelectorUnit gr:x="210" gr:y="210" id="sv6#area27#opg4#seu19" name="Seleziona citt&#224;" entity="ent22" distinctAttributes="ent22#att27 ent22#att29" gr:showAllParts="true">
+      <OKLink id="sv6#area27#opg4#seu19#oln10" name="OKFlow10" to="sv6#area27#opg4#cru14" automaticCoupling="true"/>
+      <SortAttribute attribute="ent22#att27" order="ascending"/>
+      <Selector id="sv6#area27#opg4#seu19#su82" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv6#area27#opg4#seu19#su82#acond7" name="citt&#224;" predicate="neq" booleanOperator="or" implied="false" attributes="ent22#att29"/>
+      </Selector>
+      <KOLink id="sv6#area27#opg4#seu19#kln4" name="KOFlow4" to="sv6#area27#opg4#cnu7" automaticCoupling="true"/>
+    </SelectorUnit>
+    <ConnectUnit id="sv6#area27#opg4#cnu7" relationship="rel32#role63" gr:x="325" gr:y="75" name="Connetti a citt&#224;">
+      <SourceSelector id="sv6#area27#opg4#cnu7#su87" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area27#opg4#cnu7#su87#kcond73" predicate="in" implied="false" name="KeyCondition69"/>
+      </SourceSelector>
+      <TargetSelector id="sv6#area27#opg4#cnu7#su88" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area27#opg4#cnu7#su88#kcond74" predicate="in" implied="false" name="KeyCondition70"/>
+      </TargetSelector>
+    </ConnectUnit>
+    <DisconnectUnit gr:x="10" gr:y="255" id="sv6#area27#opg4#dcnu1" name="Sconnetti da citt&#224;" relationship="rel32#role64">
+      <SourceSelector id="sv6#area27#opg4#dcnu1#su89" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area27#opg4#dcnu1#su89#kcond75" name="KeyCondition75" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv6#area27#opg4#dcnu1#su90" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area27#opg4#dcnu1#su90#kcond76" name="KeyCondition76" predicate="in" implied="false"/>
+      </TargetSelector>
+    </DisconnectUnit>
+  </OperationUnits>
+</OperationGroup>
