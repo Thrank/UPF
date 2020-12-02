@@ -1,25 +1,31 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="270" gr:y="0" id="sv7#area29#page47" name="Elenco ristoranti" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv7#area29#page47" name="Elenco ristoranti" landmark="true">
   <ContentUnits>
-    <PowerIndexUnit gr:x="0" gr:y="0" id="sv7#area29#page47#pwu2" name="Elenco tipologie cucina" sortable="true" checkable="false" useCountQuery="false" entity="ent10" displayAttributes="ent10#att28" linkOrder="sv7#area29#page47#pwu2#ln43">
-      <Link id="sv7#area29#page47#pwu2#ln43" name="Flow43" to="sv7#area29#page29#pwu1" type="normal" validate="true" gr:bendpoints="95,73,-5,-127">
-        <LinkParameter id="sv7#area29#page47#pwu2#ln43#par24" name="Nome_tipologia cucina [oid]" source="data[].ent10#att28" target="sv7#area29#page29#pwu1#su36#rcond15.ent10#att61"/>
-      </Link>
-    </PowerIndexUnit>
-    <PowerIndexUnit gr:x="170" gr:y="0" id="sv7#area29#page47#pwu3" name="Elenco migliori ristoranti" sortable="true" checkable="false" useCountQuery="false" entity="ent2" displayAttributes="ent14#att42 ent14#att52 rel7#role14.ent10#att28" linkOrder="sv7#area29#page47#pwu3#ln56">
-      <Link id="sv7#area29#page47#pwu3#ln56" name="Vedi dettaglio ristorante" to="sv7#area29#page48#dau17" type="normal" validate="true">
-        <LinkParameter id="sv7#area29#page47#pwu3#ln56#par23" name="oid_Dettaglio ristorante [oid]" source="data[].ent14#att40" target="sv7#area29#page48#dau17#su55#kcond30.ent14#att40"/>
-      </Link>
+    <IndexUnit gr:x="615" gr:y="0" id="sv7#area29#page47#inu17" name="Elenco migliori ristoranti" entity="ent2" displayAttributes="ent14#att42 ent14#att52" linkOrder="sv7#area29#page47#inu17#ln23" gr:showAllParts="true">
       <SortAttribute attribute="ent14#att52" order="descending"/>
-    </PowerIndexUnit>
+      <Link id="sv7#area29#page47#inu17#ln23" name="Flow23" to="sv7#area29#page48#dau17" type="normal" validate="true" gr:bendpoints="161,67,-64,-113" automaticCoupling="true"/>
+      <Selector id="sv7#area29#page47#inu17#su51" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv7#area29#page47#inu17#su51#kcond33" name="KeyCondition33" predicate="in" implied="false"/>
+      </Selector>
+    </IndexUnit>
+    <IndexUnit gr:x="205" gr:y="5" id="sv7#area29#page47#inu21" name="Elenco tipologie cucine" entity="ent10" displayAttributes="ent10#att28" linkOrder="sv7#area29#page47#inu21#ln25" distinct="false">
+      <SortAttribute attribute="ent10#att28" order="ascending"/>
+      <Link id="sv7#area29#page47#inu21#ln25" name="Flow25" to="sv7#area29#page29#inu23" type="normal" validate="true" automaticCoupling="true"/>
+      <Selector id="sv7#area29#page47#inu21#su50" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv7#area29#page47#inu21#su50#kcond32" name="KeyCondition32" predicate="in" implied="false"/>
+      </Selector>
+    </IndexUnit>
+    <ScrollerUnit gr:x="0" gr:y="5" id="sv7#area29#page47#scu9" name="Scorri cucine" useCountQuery="false" entity="ent10" blockFactor="5" gr:showAllParts="true" linkOrder="sv7#area29#page47#scu9#ln41">
+      <SortAttribute attribute="ent10#att28" order="ascending"/>
+      <Link id="sv7#area29#page47#scu9#ln41" name="Flow41" to="sv7#area29#page47#inu21" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
+    <ScrollerUnit gr:x="410" gr:y="10" id="sv7#area29#page47#scu12" name="Scorri migliori ristoranti" useCountQuery="false" linkOrder="sv7#area29#page47#scu12#ln42" entity="ent2" gr:showAllParts="true">
+      <Link id="sv7#area29#page47#scu12#ln42" name="Flow42" to="sv7#area29#page47#inu17" automaticCoupling="true" type="automatic" validate="true"/>
+      <SortAttribute attribute="ent14#att52" order="descending"/>
+    </ScrollerUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv7#area29#page47#pwu2">
-          <layout:Attribute attribute="ent10#att28"/>
-          <layout:Link link="sv7#area29#page47#pwu2#ln43"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -34,12 +40,10 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv7#area29#page47#pwu3">
+        <layout:Unit unitId="sv7#area29#page47#inu17">
           <layout:Attribute attribute="ent14#att42"/>
           <layout:Attribute attribute="ent14#att52"/>
-          <layout:Attribute attribute="rel7#role14.ent10#att28"/>
-          <layout:Link link="sv7#area29#page47#pwu3#ln56"/>
-          <layout:Link link="sv7#area29#page47#pwu3ent14#att52"/>
+          <layout:Link link="sv7#area29#page47#inu17#ln23"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -55,7 +59,56 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv7#area29#page47#inu21">
+          <layout:Attribute attribute="ent10#att28"/>
+          <layout:Link link="sv7#area29#page47#inu21#ln25"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv7#area29#page47#scu9">
+          <layout:Link link="sv7#area29#page47#scu9First"/>
+          <layout:Link link="sv7#area29#page47#scu9Previous"/>
+          <layout:Link link="sv7#area29#page47#scu9Block"/>
+          <layout:Link link="sv7#area29#page47#scu9Next"/>
+          <layout:Link link="sv7#area29#page47#scu9Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv7#area29#page47#scu12">
+          <layout:Link link="sv7#area29#page47#scu12First"/>
+          <layout:Link link="sv7#area29#page47#scu12Previous"/>
+          <layout:Link link="sv7#area29#page47#scu12Block"/>
+          <layout:Link link="sv7#area29#page47#scu12Next"/>
+          <layout:Link link="sv7#area29#page47#scu12Last"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
