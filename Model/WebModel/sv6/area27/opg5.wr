@@ -1,9 +1,11 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1140" gr:y="180" id="sv6#area27#opg5" name="Cambio password" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="580" gr:y="335" id="sv6#area27#opg5" name="Cambio password" transaction="true">
   <OperationUnits>
     <ModifyUnit gr:x="0" gr:y="0" id="sv6#area27#opg5#mfu16" name="Aggiorna password" entity="ent4">
       <Selector id="sv6#area27#opg5#mfu16#su91" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv6#area27#opg5#mfu16#su91#kcond77" name="KeyCondition77" predicate="in" implied="false"/>
       </Selector>
+      <KOLink id="sv6#area27#opg5#mfu16#kln23" name="KOFlow23" to="sv6#area27#page63#alt6#page65#mssu12" automaticCoupling="true"/>
+      <OKLink id="sv6#area27#opg5#mfu16#oln22" name="OKFlow22" to="sv6#area27#page42" automaticCoupling="true"/>
     </ModifyUnit>
   </OperationUnits>
 </OperationGroup>

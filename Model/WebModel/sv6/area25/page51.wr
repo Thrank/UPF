@@ -1,23 +1,44 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1050" gr:y="505" id="sv6#area25#page51" name="Aggiungi valutazione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="960" gr:y="790" id="sv6#area25#page51" name="Aggiungi valutazione">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv6#area25#page51#enu25" name="Scrivi valutazione" gr:showAllParts="true">
-      <Field id="sv6#area25#page51#enu25#fld55" name="commento" type="text" modifiable="true"/>
-      <Field id="sv6#area25#page51#enu25#fld56" name="voto" type="integer" modifiable="true"/>
-      <Link id="sv6#area25#page51#enu25#ln138" name="Flow138" to="sv6#area25#opg9#tmu3" type="transport" validate="true">
+    <EntryUnit gr:x="180" gr:y="5" id="sv6#area25#page51#enu25" name="Scrivi valutazione" gr:showAllParts="true" linkOrder="sv6#area25#page51#enu25#ln138">
+      <Field id="sv6#area25#page51#enu25#fld55" name="commento" type="text" modifiable="true" preloaded="false"/>
+      <Link id="sv6#area25#page51#enu25#ln138" name="Flow138" to="sv6#area25#opg9#tmu3" type="normal" validate="true" gr:bendpoints="226,-32,-149,178">
         <LinkParameter id="sv6#area25#page51#enu25#ln138#par141" name="commento_PASSING" source="sv6#area25#page51#enu25#fld55" passing="true"/>
         <LinkParameter id="sv6#area25#page51#enu25#ln138#par142" name="oid_PASSING" sourceLinkParameter="sv6#area25#page40#dau15#ln134#par133" passing="true"/>
-        <LinkParameter id="sv6#area25#page51#enu25#ln138#par143" name="voto_PASSING" source="sv6#area25#page51#enu25#fld56" passing="true"/>
+        <LinkParameter id="sv6#area25#page51#enu25#ln138#par143" name="voto_PASSING" source="sv6#area25#page51#enu25#sfld7" passing="true"/>
+        <LinkParameter id="sv6#area25#page51#enu25#ln138#par249" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area25#page51#gtu7#ln108#par248" passing="true"/>
       </Link>
+      <SelectionField id="sv6#area25#page51#enu25#sfld7" type="integer" name="voto"/>
     </EntryUnit>
+    <GetUnit gr:x="0" gr:y="0" id="sv6#area25#page51#gtu7" name="Recupera oid utente" contextParameters="UserCtxParam">
+      <Link id="sv6#area25#page51#gtu7#ln108" name="Flow108" to="sv6#area25#page51#enu25" type="transport" validate="true">
+        <LinkParameter id="sv6#area25#page51#gtu7#ln108#par248" name="UserCtxParam.oid_PASSING" source="sv6#area25#page51#gtu7.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv6#area25#page51#enu25">
           <layout:Field field="sv6#area25#page51#enu25#fld55"/>
-          <layout:Field field="sv6#area25#page51#enu25#fld56"/>
+          <layout:Field field="sv6#area25#page51#enu25#sfld7"/>
+          <layout:Link link="sv6#area25#page51#enu25#ln138"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

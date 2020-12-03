@@ -1,0 +1,24 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="950" gr:y="0" id="sv6#area25#opg12" name="Aggiorna ristoranti preferiti" transaction="true">
+  <OperationUnits>
+    <ConnectUnit gr:x="0" gr:y="0" id="sv6#area25#opg12#cnu1" name="Aggiungi preferenza ristorante" relationship="rel19#role38">
+      <SourceSelector id="sv6#area25#opg12#cnu1#su108" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area25#opg12#cnu1#su108#kcond82" name="KeyCondition82" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv6#area25#opg12#cnu1#su109" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area25#opg12#cnu1#su109#kcond85" name="KeyCondition85" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv6#area25#opg12#cnu1#oln33" name="OKFlow33" to="sv6#area25#page40" automaticCoupling="true"/>
+      <KOLink id="sv6#area25#opg12#cnu1#kln33" name="KOFlow33" to="sv6#area25#page72#mssu14" automaticCoupling="true"/>
+    </ConnectUnit>
+    <DisconnectUnit gr:x="260" gr:y="0" id="sv6#area25#opg12#dcnu5" name="Rimuovi preferenza ristorante" relationship="rel19#role38">
+      <SourceSelector id="sv6#area25#opg12#dcnu5#su110" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area25#opg12#dcnu5#su110#kcond92" name="KeyCondition92" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv6#area25#opg12#dcnu5#su111" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area25#opg12#dcnu5#su111#kcond93" name="KeyCondition93" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv6#area25#opg12#dcnu5#oln32" name="OKFlow32" to="sv6#area25#page40" automaticCoupling="true"/>
+      <KOLink id="sv6#area25#opg12#dcnu5#kln34" name="KOFlow34" to="sv6#area25#page72#mssu14" automaticCoupling="true" gr:bendpoints="-149,-62,421,-37;-394,-62,176,-37"/>
+    </DisconnectUnit>
+  </OperationUnits>
+</OperationGroup>

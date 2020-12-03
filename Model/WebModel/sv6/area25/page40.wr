@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv6#area25#page40" name="Dettaglio ristorante" gr:x="1035" gr:y="60">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv6#area25#page40" name="Dettaglio ristorante" gr:x="955" gr:y="200">
   <ContentUnits>
-    <DataUnit id="sv6#area25#page40#dau15" name="Dettaglio ristorante" linkOrder="sv6#area25#page40#dau15#ln60 sv6#area25#page40#dau15#ln134" gr:x="145" gr:y="0" entity="ent14" displayAttributes="ent14#att42 ent14#att46 ent14#att44 ent14#att45 ent14#att52">
+    <DataUnit id="sv6#area25#page40#dau15" name="Dettaglio ristorante" linkOrder="sv6#area25#page40#dau15#ln60 sv6#area25#page40#dau15#ln134 sv6#area25#page40#dau15#ln111 sv6#area25#page40#dau15#ln121" gr:x="210" gr:y="200" entity="ent14" displayAttributes="ent14#att42 ent14#att46 ent14#att44 ent14#att45 ent14#att52">
       <Selector id="sv6#area25#page40#dau15#su53" defaultPolicy="fill" booleanOperator="or">
         <KeyCondition id="sv6#area25#page40#dau15#su53#kcond43" name="Dettaglio ristorante" predicate="in" implied="false"/>
         <RelationshipRoleCondition id="sv6#area25#page40#dau15#su53#rcond11" name="piatto to dettaglioRistorante" predicate="in" implied="true" role="rel4#role8"/>
@@ -8,11 +8,21 @@
       <Link id="sv6#area25#page40#dau15#ln52" name="dettaglio to migliori valutazioni" to="sv6#area25#page40#mdu13" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv6#area25#page40#dau15#ln59" name="dettaglio to valutazioni" to="sv6#area25#page40#mdu12" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv6#area25#page40#dau15#ln60" name="Flow58" to="sv6#area24#page12#scu11" type="normal" automaticCoupling="true" validate="true"/>
-      <Link id="sv6#area25#page40#dau15#ln134" name="Flow134" to="sv6#area25#page51#enu25" type="normal" validate="true" gr:bendpoints="-18,258,122,-177">
+      <Link id="sv6#area25#page40#dau15#ln134" name="Flow134" to="sv6#area25#page51#enu25" type="normal" validate="true">
         <LinkParameter id="sv6#area25#page40#dau15#ln134#par133" name="oid_PASSING" source="data.ent14#att40" passing="true"/>
       </Link>
+      <Link id="sv6#area25#page40#dau15#ln111" name="Flow111" to="sv6#area25#page67#seu36" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="49,445,229,-245;-58,469,122,-221;-86,590,94,-100"/>
+      <Link id="sv6#area25#page40#dau15#ln121" name="Flow121" to="sv6#area25#opg11#seu37" type="normal" validate="true">
+        <LinkParameter id="sv6#area25#page40#dau15#ln121#par285" name="oid_valutazione per ristorante [oid]" source="data.ent14#att40" target="sv6#area25#opg11#seu37#su107#rcond26.ent14#att40"/>
+        <LinkParameter id="sv6#area25#page40#dau15#ln121#par286" name="oid_PASSING" source="data.ent14#att40" passing="true"/>
+      </Link>
+      <Link id="sv6#area25#page40#dau15#ln132" name="Flow132" to="sv6#area25#opg13#seu39" type="transport" validate="true" gr:bendpoints="-297,-104,223,191">
+        <LinkParameter id="sv6#area25#page40#dau15#ln132#par304" name="oid_oid ristorante [oid]" source="data.ent14#att40" target="sv6#area25#opg13#seu39#su112#kcond94.ent14#att40"/>
+        <LinkParameter id="sv6#area25#page40#dau15#ln132#par305" name="UserCtxParam.oid_PASSING_&#232; preferito dall'utente? [oid]" sourceLinkParameter="sv6#area25#page40#gtu11#ln131#par303" target="sv6#area25#opg13#seu39#su112#rcond27.userOID"/>
+        <LinkParameter id="sv6#area25#page40#dau15#ln132#par307" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area25#page40#gtu11#ln131#par303" passing="true"/>
+      </Link>
     </DataUnit>
-    <MultiDataUnit id="sv6#area25#page40#mdu12" name="Valutazioni" gr:showAllParts="true" gr:x="280" gr:y="170" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4">
+    <MultiDataUnit id="sv6#area25#page40#mdu12" name="Valutazioni" gr:showAllParts="true" gr:x="345" gr:y="370" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4">
       <SortAttribute attribute="ent15#att53" order="descending"/>
       <Selector id="sv6#area25#page40#mdu12#su59" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv6#area25#page40#mdu12#su59#rcond12" name="RoleCondition17" predicate="in" implied="false" role="rel2#role3"/>
@@ -21,7 +31,7 @@
         </KeyCondition>
       </Selector>
     </MultiDataUnit>
-    <MultiDataUnit id="sv6#area25#page40#mdu13" name="Migliori valutazioni" gr:showAllParts="true" gr:x="0" gr:y="185" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4" maxResults="5">
+    <MultiDataUnit id="sv6#area25#page40#mdu13" name="Migliori valutazioni" gr:showAllParts="true" gr:x="65" gr:y="385" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4" maxResults="5">
       <SortAttribute attribute="ent15#att53" order="descending"/>
       <Selector id="sv6#area25#page40#mdu13#su60" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv6#area25#page40#mdu13#su60#rcond13" name="ristorante to valutazione" predicate="in" implied="false" role="rel2#role3"/>
@@ -29,6 +39,11 @@
       <Link id="sv6#area25#page40#mdu13#ln61" name="Flow38" to="sv6#area25#page40#mdu12" type="transport" automaticCoupling="true" validate="true"/>
       <Comment xml:space="preserve">Qui mostro solo le 5 valutazioni con voti migliori. Anche se non ho previsto la relazione derivta nel modello dei dati posso farlo solo da qui avendo specificato un massimo numero di valutazioni da mostrare ed ordinandole in base al voto.</Comment>
     </MultiDataUnit>
+    <GetUnit gr:x="0" gr:y="55" id="sv6#area25#page40#gtu11" name="Recupera oid utente" contextParameters="UserCtxParam">
+      <Link id="sv6#area25#page40#gtu11#ln131" name="Flow131" to="sv6#area25#page40#dau15" type="transport" validate="true">
+        <LinkParameter id="sv6#area25#page40#gtu11#ln131#par303" name="UserCtxParam.oid_PASSING" source="sv6#area25#page40#gtu11.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -41,6 +56,8 @@
           <layout:Attribute attribute="ent14#att52"/>
           <layout:Link link="sv6#area25#page40#dau15#ln60"/>
           <layout:Link link="sv6#area25#page40#dau15#ln134"/>
+          <layout:Link link="sv6#area25#page40#dau15#ln111"/>
+          <layout:Link link="sv6#area25#page40#dau15#ln121"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -117,5 +134,115 @@
       <layout:Cell/>
       <layout:Cell/>
     </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv6#area25#page40#alt8#page70">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv6#area25#page40#alt8#page70#enu19">
+                  <layout:Link link="sv6#area25#page40#alt8#page70#enu19#ln135"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv6#area25#page40#alt8#page71">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv6#area25#page40#alt8#page71#enu26">
+                  <layout:Link link="sv6#area25#page40#alt8#page71#enu26#ln133"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
   </layout:Grid>
+  <Alternative gr:x="170" gr:y="0" id="sv6#area25#page40#alt8" name="Preferenza ristorante " defaultPage="sv6#area25#page40#alt8#page70">
+    <Page gr:x="0" gr:y="0" id="sv6#area25#page40#alt8#page70" name="Aggiungi">
+      <ContentUnits>
+        <EntryUnit gr:x="0" gr:y="0" id="sv6#area25#page40#alt8#page70#enu19" name="Aggiungi preferenza" linkOrder="sv6#area25#page40#alt8#page70#enu19#ln135">
+          <Link id="sv6#area25#page40#alt8#page70#enu19#ln135" name="Flow135" to="sv6#area25#opg12#cnu1" type="normal" validate="true" gr:bendpoints="-33,-145,147,100">
+            <LinkParameter id="sv6#area25#page40#alt8#page70#enu19#ln135#par315" name="UserCtxParam.oid_PASSING_KeyCondition82 [oid] [Cliente ] [Source]" sourceLinkParameter="sv6#area25#opg13#seu39#kln32#par309" target="sv6#area25#opg12#cnu1#su108#kcond82.userOID"/>
+            <LinkParameter id="sv6#area25#page40#alt8#page70#enu19#ln135#par316" name="oid_PASSING_KeyCondition85 [oid] [Ristorante] [Target]" sourceLinkParameter="sv6#area25#opg13#seu39#kln32#par308" target="sv6#area25#opg12#cnu1#su109#kcond85.ent14#att40"/>
+          </Link>
+        </EntryUnit>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="185" gr:y="0" id="sv6#area25#page40#alt8#page71" name="Rimuovi">
+      <ContentUnits>
+        <EntryUnit gr:x="0" gr:y="0" id="sv6#area25#page40#alt8#page71#enu26" name="Rimuovi preferenza" linkOrder="sv6#area25#page40#alt8#page71#enu26#ln133">
+          <Link id="sv6#area25#page40#alt8#page71#enu26#ln133" name="Flow133" to="sv6#area25#opg12#dcnu5" type="normal" validate="true" gr:bendpoints="9,-125,114,120">
+            <LinkParameter id="sv6#area25#page40#alt8#page71#enu26#ln133#par313" name="UserCtxParam.oid_PASSING_KeyCondition92 [oid] [Cliente ] [Source]" sourceLinkParameter="sv6#area25#opg13#seu39#oln31#par310" target="sv6#area25#opg12#dcnu5#su110#kcond92.userOID"/>
+            <LinkParameter id="sv6#area25#page40#alt8#page71#enu26#ln133#par314" name="oid_PASSING_KeyCondition93 [oid] [Ristorante] [Target]" sourceLinkParameter="sv6#area25#opg13#seu39#oln31#par306" target="sv6#area25#opg12#dcnu5#su111#kcond93.ent14#att40"/>
+          </Link>
+        </EntryUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
 </Page>

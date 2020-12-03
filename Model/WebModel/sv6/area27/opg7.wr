@@ -1,9 +1,11 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1505" gr:y="425" id="sv6#area27#opg7" name="Aggiorna valutazione" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1685" gr:y="525" id="sv6#area27#opg7" name="Aggiorna valutazione" transaction="true">
   <OperationUnits>
     <ModifyUnit gr:x="10" gr:y="110" id="sv6#area27#opg7#mfu17" name="Aggiorna valutazione" entity="ent15">
       <Selector id="sv6#area27#opg7#mfu17#su99" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv6#area27#opg7#mfu17#su99#kcond86" name="KeyCondition86" predicate="in" implied="false"/>
       </Selector>
+      <KOLink id="sv6#area27#opg7#mfu17#kln18" name="KOFlow18" to="sv6#area27#page60#alt5#page62#mssu10" automaticCoupling="true"/>
+      <OKLink id="sv6#area27#opg7#mfu17#oln20" name="OKFlow20" to="sv6#area27#page43" automaticCoupling="true" gr:bendpoints="-116,-13,-151,537;-115,-195,-150,355"/>
     </ModifyUnit>
     <TimeUnit id="sv6#area27#opg7#tmu1" name="Recupera data corrente" gr:x="0" gr:y="0" linkOrder="sv6#area27#opg7#tmu1#ln130">
       <Link id="sv6#area27#opg7#tmu1#ln130" name="Flow130" to="sv6#area27#opg7#mfu17" type="transport" validate="true">

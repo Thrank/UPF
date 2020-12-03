@@ -1,20 +1,18 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv7#area30#page46" name="Elenco piatti">
   <ContentUnits>
-    <IndexUnit gr:x="185" gr:y="0" id="sv7#area30#page46#inu27" name="Elenco piatti" entity="ent1" displayAttributes="ent1#att2 ent1#att7 ent1#att57 ent1#att58" gr:showAllParts="true" linkOrder="sv7#area30#page46#inu27#ln57 sv7#area30#page46#inu27#ln83">
+    <IndexUnit gr:x="185" gr:y="0" id="sv7#area30#page46#inu27" name="Elenco piatti" entity="ent1" displayAttributes="ent1#att2 ent1#att7 ent1#att57 ent1#att58" gr:showAllParts="true" linkOrder="sv7#area30#page46#inu27#ln83">
       <Selector id="sv7#area30#page46#inu27#su56" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv7#area30#page46#inu27#su56#kcond29" name="oid piatto" predicate="in" implied="false"/>
       </Selector>
       <SortAttribute attribute="ent1#att2" order="descending"/>
-      <Link id="sv7#area30#page46#inu27#ln57" name="Flow57" to="sv7#area29#page48#dau17" automaticCoupling="true" type="normal" validate="true"/>
-      <Link id="sv7#area30#page46#inu27#ln83" name="Flow57" to="sv7#area29#page48#dau17" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv7#area30#page46#inu27#ln83" name="Flow57" to="sv7#area29#page48#dau17" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-178,134,397,-51"/>
     </IndexUnit>
-    <ScrollerUnit gr:x="0" gr:y="5" id="sv7#area30#page46#scu13" name="Scorri piatti" useCountQuery="false" entity="ent1" blockFactor="10" linkOrder="sv7#area30#page46#scu13#ln47 sv7#area30#page46#scu13#ln86" gr:showAllParts="true">
+    <ScrollerUnit gr:x="0" gr:y="5" id="sv7#area30#page46#scu13" name="Scorri piatti" useCountQuery="false" entity="ent1" blockFactor="10" linkOrder="sv7#area30#page46#scu13#ln47" gr:showAllParts="true">
       <Selector id="sv7#area30#page46#scu13#su57" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv7#area30#page46#scu13#su57#rcond18" name="RoleCondition15" predicate="in" implied="false" role="rel4#role7"/>
       </Selector>
       <SortAttribute attribute="ent1#att2" order="descending"/>
       <Link id="sv7#area30#page46#scu13#ln47" name="Flow40" to="sv7#area30#page46#inu27" automaticCoupling="true" type="normal" validate="true"/>
-      <Link id="sv7#area30#page46#scu13#ln86" name="Flow40" to="sv7#area30#page46#inu27" type="normal" automaticCoupling="true" validate="true"/>
     </ScrollerUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -25,10 +23,23 @@
           <layout:Attribute attribute="ent1#att7"/>
           <layout:Attribute attribute="ent1#att57"/>
           <layout:Attribute attribute="ent1#att58"/>
-          <layout:Link link="sv7#area30#page46#inu27#ln57"/>
           <layout:Link link="sv7#area30#page46#inu27#ln83"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

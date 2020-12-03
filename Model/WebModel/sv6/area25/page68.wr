@@ -1,0 +1,47 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1565" gr:y="215" id="sv6#area25#page68" name="Errore valutazione">
+  <ContentUnits/>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv6#area25#page68#alt7#page69">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv6#area25#page68#alt7#page69#mssu13"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="0" gr:y="0" id="sv6#area25#page68#alt7" name="Errori valutazioni" defaultPage="sv6#area25#page68#alt7#page69">
+    <Page gr:x="0" gr:y="0" id="sv6#area25#page68#alt7#page69" name="Errore inserimento valutazione">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area25#page68#alt7#page69#mssu13" name="Errore aggiunta valutazione"/>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

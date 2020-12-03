@@ -1,0 +1,19 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="680" gr:y="150" id="sv6#area25#opg13" name="Ristorante preferito" transaction="true">
+  <OperationUnits>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv6#area25#opg13#seu39" name="Verifica preferenza" entity="ent14">
+      <SortAttribute attribute="ent14#att40" order="ascending"/>
+      <Selector id="sv6#area25#opg13#seu39#su112" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv6#area25#opg13#seu39#su112#rcond27" name="&#232; preferito dall'utente?" predicate="in" implied="false" role="rel19#role38"/>
+        <KeyCondition id="sv6#area25#opg13#seu39#su112#kcond94" name="oid ristorante" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv6#area25#opg13#seu39#oln31" name="OKFlow31" to="sv6#area25#page40#alt8#page71#enu26" gr:bendpoints="650,19,-45,-116">
+        <LinkParameter id="sv6#area25#opg13#seu39#oln31#par306" name="oid_PASSING" source="ent14#att40Array" passing="true"/>
+        <LinkParameter id="sv6#area25#opg13#seu39#oln31#par310" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area25#page40#dau15#ln132#par307" passing="true"/>
+      </OKLink>
+      <KOLink id="sv6#area25#opg13#seu39#kln32" name="KOFlow32" to="sv6#area25#page40#alt8#page70#enu19" gr:bendpoints="350,56,-160,-79">
+        <LinkParameter id="sv6#area25#opg13#seu39#kln32#par308" name="oid_PASSING" source="ent14#att40Array" passing="true"/>
+        <LinkParameter id="sv6#area25#opg13#seu39#kln32#par309" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area25#page40#dau15#ln132#par307" passing="true"/>
+      </KOLink>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

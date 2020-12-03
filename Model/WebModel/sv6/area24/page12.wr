@@ -5,7 +5,7 @@
         <KeyCondition id="sv6#area24#page12#inu31#su36#kcond36" name="oid piatto" predicate="in" implied="false"/>
       </Selector>
       <SortAttribute attribute="ent1#att2" order="descending"/>
-      <Link id="sv6#area24#page12#inu31#ln27" name="Flow57" to="sv6#area25#page40#dau15" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv6#area24#page12#inu31#ln27" name="Flow57" to="sv6#area25#page40#dau15" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-394,47,436,7"/>
     </IndexUnit>
     <ScrollerUnit id="sv6#area24#page12#scu11" name="Scorri piatti" linkOrder="sv6#area24#page12#scu11#ln28" gr:showAllParts="true" gr:x="0" gr:y="5" useCountQuery="false" entity="ent1" blockFactor="10">
       <Selector id="sv6#area24#page12#scu11#su43" defaultPolicy="fill" booleanOperator="and">

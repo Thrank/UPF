@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv6#area25#page38" name="Elenco ristoranti" landmark="true" gr:x="65" gr:y="0">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv6#area25#page38" name="Elenco ristoranti" landmark="true" gr:x="50" gr:y="340">
   <ContentUnits>
     <IndexUnit id="sv6#area25#page38#inu32" name="Elenco migliori ristoranti" linkOrder="sv6#area25#page38#inu32#ln30" gr:showAllParts="true" gr:x="615" gr:y="0" entity="ent2" displayAttributes="ent14#att42 ent14#att52">
       <SortAttribute attribute="ent14#att52" order="descending"/>
@@ -7,12 +7,14 @@
         <KeyCondition id="sv6#area25#page38#inu32#su44#kcond38" name="KeyCondition33" predicate="in" implied="false"/>
       </Selector>
     </IndexUnit>
-    <IndexUnit id="sv6#area25#page38#inu33" name="Elenco tipologie cucine" linkOrder="sv6#area25#page38#inu33#ln31" gr:x="205" gr:y="5" entity="ent10" displayAttributes="ent10#att28" distinct="false">
+    <IndexUnit id="sv6#area25#page38#inu33" name="Elenco tipologie cucine" gr:x="205" gr:y="5" entity="ent10" displayAttributes="ent10#att28" distinct="false" linkOrder="sv6#area25#page38#inu33#ln95">
       <SortAttribute attribute="ent10#att28" order="ascending"/>
-      <Link id="sv6#area25#page38#inu33#ln31" name="Flow25" to="sv6#area25#page39#inu34" type="normal" automaticCoupling="true" validate="true"/>
       <Selector id="sv6#area25#page38#inu33#su45" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv6#area25#page38#inu33#su45#kcond39" name="KeyCondition32" predicate="in" implied="false"/>
       </Selector>
+      <Link id="sv6#area25#page38#inu33#ln95" name="Flow95" to="sv6#area25#page39#alt4#page58#scu10" type="normal" validate="true" gr:bendpoints="-356,147,-156,-598;-332,685,-132,-60">
+        <LinkParameter id="sv6#area25#page38#inu33#ln95#par212" name="oid_tipologie cucine preferite [oid]" source="data[].ent10#att61" target="sv6#area25#page39#alt4#page58#scu10#su79#rcond9.ent10#att61"/>
+      </Link>
     </IndexUnit>
     <ScrollerUnit id="sv6#area25#page38#scu14" name="Scorri cucine" linkOrder="sv6#area25#page38#scu14#ln32" gr:showAllParts="true" gr:x="0" gr:y="5" useCountQuery="false" entity="ent10" blockFactor="5">
       <SortAttribute attribute="ent10#att28" order="ascending"/>
@@ -62,7 +64,7 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv6#area25#page38#inu33">
           <layout:Attribute attribute="ent10#att28"/>
-          <layout:Link link="sv6#area25#page38#inu33#ln31"/>
+          <layout:Link link="sv6#area25#page38#inu33#ln95"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

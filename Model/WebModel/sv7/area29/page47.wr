@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv7#area29#page47" name="Elenco ristoranti" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="0" id="sv7#area29#page47" name="Elenco ristoranti" landmark="true">
   <ContentUnits>
     <IndexUnit gr:x="615" gr:y="0" id="sv7#area29#page47#inu17" name="Elenco migliori ristoranti" entity="ent2" displayAttributes="ent14#att42 ent14#att52" linkOrder="sv7#area29#page47#inu17#ln23 sv7#area29#page47#inu17#ln87" gr:showAllParts="true">
       <SortAttribute attribute="ent14#att52" order="descending"/>
@@ -8,23 +8,20 @@
       </Selector>
       <Link id="sv7#area29#page47#inu17#ln87" name="Flow23" to="sv7#area29#page48#dau17" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="161,67,-64,-113"/>
     </IndexUnit>
-    <IndexUnit gr:x="205" gr:y="5" id="sv7#area29#page47#inu21" name="Elenco tipologie cucine" entity="ent10" displayAttributes="ent10#att28" linkOrder="sv7#area29#page47#inu21#ln25 sv7#area29#page47#inu21#ln89" distinct="false">
+    <IndexUnit gr:x="205" gr:y="5" id="sv7#area29#page47#inu21" name="Elenco tipologie cucine" entity="ent10" displayAttributes="ent10#att28" distinct="false" linkOrder="sv7#area29#page47#inu21#ln17">
       <SortAttribute attribute="ent10#att28" order="ascending"/>
-      <Link id="sv7#area29#page47#inu21#ln25" name="Flow25" to="sv7#area29#page29#inu23" type="normal" validate="true" automaticCoupling="true"/>
       <Selector id="sv7#area29#page47#inu21#su50" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv7#area29#page47#inu21#su50#kcond32" name="KeyCondition32" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv7#area29#page47#inu21#ln89" name="Flow25" to="sv7#area29#page29#inu23" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv7#area29#page47#inu21#ln17" name="Flow17" to="sv7#area29#page29#alt1#page49#scu6" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-163,64,-13,-371;-302,75,-152,-360;-303,414,-153,-21"/>
     </IndexUnit>
-    <ScrollerUnit gr:x="0" gr:y="5" id="sv7#area29#page47#scu9" name="Scorri cucine" useCountQuery="false" entity="ent10" blockFactor="5" gr:showAllParts="true" linkOrder="sv7#area29#page47#scu9#ln41 sv7#area29#page47#scu9#ln79">
+    <ScrollerUnit gr:x="0" gr:y="5" id="sv7#area29#page47#scu9" name="Scorri cucine" useCountQuery="false" entity="ent10" blockFactor="5" gr:showAllParts="true" linkOrder="sv7#area29#page47#scu9#ln79">
       <SortAttribute attribute="ent10#att28" order="ascending"/>
-      <Link id="sv7#area29#page47#scu9#ln41" name="Flow41" to="sv7#area29#page47#inu21" automaticCoupling="true" type="automatic" validate="true"/>
       <Link id="sv7#area29#page47#scu9#ln79" name="Flow41" to="sv7#area29#page47#inu21" type="automatic" automaticCoupling="true" validate="true"/>
     </ScrollerUnit>
-    <ScrollerUnit gr:x="410" gr:y="10" id="sv7#area29#page47#scu12" name="Scorri migliori ristoranti" useCountQuery="false" linkOrder="sv7#area29#page47#scu12#ln42 sv7#area29#page47#scu12#ln91" entity="ent2" gr:showAllParts="true">
+    <ScrollerUnit gr:x="410" gr:y="10" id="sv7#area29#page47#scu12" name="Scorri migliori ristoranti" useCountQuery="false" linkOrder="sv7#area29#page47#scu12#ln42" entity="ent2" gr:showAllParts="true" blockFactor="5">
       <Link id="sv7#area29#page47#scu12#ln42" name="Flow42" to="sv7#area29#page47#inu17" automaticCoupling="true" type="automatic" validate="true"/>
       <SortAttribute attribute="ent14#att52" order="descending"/>
-      <Link id="sv7#area29#page47#scu12#ln91" name="Flow42" to="sv7#area29#page47#inu17" type="automatic" automaticCoupling="true" validate="true"/>
     </ScrollerUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -67,8 +64,7 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv7#area29#page47#inu21">
           <layout:Attribute attribute="ent10#att28"/>
-          <layout:Link link="sv7#area29#page47#inu21#ln25"/>
-          <layout:Link link="sv7#area29#page47#inu21#ln89"/>
+          <layout:Link link="sv7#area29#page47#inu21#ln17"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
