@@ -33,7 +33,7 @@
         <LinkParameter id="sv6#opg23#cnu22#oln65#par491" name="Source oid [Ordine]_KeyCondition148 [oid] [Ordine] [Source]" source="sourceent3#att8" target="sv6#opg23#cnu24#su191#kcond148.ent3#att8"/>
         <LinkParameter id="sv6#opg23#cnu22#oln65#par502" name="promozione_PASSING" sourceLinkParameter="sv6#opg23#cru24#oln64#par501" passing="true"/>
       </OKLink>
-      <KOLink id="sv6#opg23#cnu22#kln69" name="KOFlow69" to="sv6#page110#alt15#page112#mssu28" automaticCoupling="true"/>
+      <KOLink id="sv6#opg23#cnu22#kln69" name="KOFlow69" to="sv6#page110#alt15#page112#mssu28" automaticCoupling="true" gr:bendpoints="-79,155,356,-210;-230,192,205,-173"/>
     </ConnectUnit>
     <ConnectUnit gr:x="265" gr:y="200" id="sv6#opg23#cnu24" name="Connetti a indirizzo" relationship="rel34#role68">
       <SourceSelector id="sv6#opg23#cnu24#su191" defaultPolicy="fill" booleanOperator="and">
@@ -85,7 +85,7 @@
         <KeyCondition id="sv6#opg23#cnu27#su198#kcond155" name="KeyCondition155" predicate="in" implied="false"/>
       </TargetSelector>
       <KOLink id="sv6#opg23#cnu27#kln73" name="KOFlow73" to="sv6#page110#alt15#page112#mssu28" automaticCoupling="true"/>
-      <OKLink id="sv6#opg23#cnu27#oln69" name="OKFlow69" to="sv6#area25#page40" automaticCoupling="true" gr:bendpoints="-369,-3,851,1437;-649,-606,571,834"/>
+      <OKLink id="sv6#opg23#cnu27#oln69" name="OKFlow69" to="sv6#area25#page40" automaticCoupling="true" gr:bendpoints="-419,-3,801,1437;-649,-606,571,834"/>
     </ConnectUnit>
   </OperationUnits>
 </OperationGroup>
