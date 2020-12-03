@@ -1,0 +1,78 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv9#area36#opg22" name="Iscrizione cliente" transaction="true" gr:x="0" gr:y="0">
+  <OperationUnits>
+    <CreateUnit id="sv9#area36#opg22#cru21" name="Aggiungi cliente" gr:x="295" gr:y="0" entity="ent4">
+      <OKLink id="sv9#area36#opg22#cru21#oln59" name="OKFlow2" to="sv9#area36#opg22#cru22">
+        <LinkParameter id="sv9#area36#opg22#cru21#oln59#par402" name="oid_Utente.oid(IndirizzoToUtente)" source="userOIDArray" target="sv9#area36#opg22#cru22.rel11#role22.userOID"/>
+        <LinkParameter id="sv9#area36#opg22#cru21#oln59#par403" name="oid_PASSING" source="userOIDArray" passing="true"/>
+        <LinkParameter id="sv9#area36#opg22#cru21#oln59#par404" name="CAP_PASSING_CAP" sourceLinkParameter="sv9#area36#opg22#seu53#oln63#par429" target="sv9#area36#opg22#cru22.ent16#att76"/>
+        <LinkParameter id="sv9#area36#opg22#cru21#oln59#par405" name="via/piazza/corso_PASSING_civico" sourceLinkParameter="sv9#area36#opg22#seu53#oln63#par434" target="sv9#area36#opg22#cru22.ent16#att32"/>
+        <LinkParameter id="sv9#area36#opg22#cru21#oln59#par406" name="via/piazza/corso_PASSING_via/piazza/corso" sourceLinkParameter="sv9#area36#opg22#seu53#oln63#par433" target="sv9#area36#opg22#cru22.ent16#att31"/>
+        <LinkParameter id="sv9#area36#opg22#cru21#oln59#par407" name="citt&#224;_PASSING" sourceLinkParameter="sv9#area36#opg22#seu53#oln63#par430" passing="true"/>
+        <LinkParameter id="sv9#area36#opg22#cru21#oln59#par408" name="password_PASSING" sourceLinkParameter="sv9#area36#opg22#seu53#oln63#par431" passing="true"/>
+        <LinkParameter id="sv9#area36#opg22#cru21#oln59#par409" name="username_PASSING" sourceLinkParameter="sv9#area36#opg22#seu53#oln63#par432" passing="true"/>
+      </OKLink>
+      <KOLink id="sv9#area36#opg22#cru21#kln62" name="KOFlow11" to="sv9#page96#alt13#page99#mssu26" automaticCoupling="true" gr:bendpoints="-32,75,723,-200;-46,257,709,-18"/>
+    </CreateUnit>
+    <ConnectUnit id="sv9#area36#opg22#cnu20" name="Connetti a indirizzo" gr:x="180" gr:y="120" relationship="rel11#role21">
+      <SourceSelector id="sv9#area36#opg22#cnu20#su170" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area36#opg22#cnu20#su170#kcond132" name="KeyCondition52" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv9#area36#opg22#cnu20#su171" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area36#opg22#cnu20#su171#kcond133" name="KeyCondition53" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv9#area36#opg22#cnu20#oln60" name="OKFlow6" to="sv9#area36#opg22#cnu21">
+        <LinkParameter id="sv9#area36#opg22#cnu20#oln60#par410" name="oid_PASSING_KeyCondition62 [oid] [Indirizzo] [Source]" sourceLinkParameter="sv9#area36#opg22#cru22#oln61#par416" target="sv9#area36#opg22#cnu21#su172#kcond134.ent16#att64"/>
+        <LinkParameter id="sv9#area36#opg22#cnu20#oln60#par411" name="citt&#224;_PASSING_KeyCondition63 [oid] [Citt&#224;] [Target]" sourceLinkParameter="sv9#area36#opg22#cru22#oln61#par419" target="sv9#area36#opg22#cnu21#su173#kcond135.ent22#att27"/>
+        <LinkParameter id="sv9#area36#opg22#cnu20#oln60#par412" name="password_PASSING" sourceLinkParameter="sv9#area36#opg22#cru22#oln61#par417" passing="true"/>
+        <LinkParameter id="sv9#area36#opg22#cnu20#oln60#par413" name="username_PASSING" sourceLinkParameter="sv9#area36#opg22#cru22#oln61#par418" passing="true"/>
+      </OKLink>
+      <KOLink id="sv9#area36#opg22#cnu20#kln63" name="KOFlow9" to="sv9#page96#alt13#page99#mssu26" automaticCoupling="true" gr:bendpoints="-310,118,340,-22"/>
+    </ConnectUnit>
+    <CreateUnit id="sv9#area36#opg22#cru22" name="Aggiungi indirizzo" gr:x="130" gr:y="0" entity="ent16">
+      <OKLink id="sv9#area36#opg22#cru22#oln61" name="OKFlow5" to="sv9#area36#opg22#cnu20">
+        <LinkParameter id="sv9#area36#opg22#cru22#oln61#par414" name="oid_PASSING_KeyCondition52 [oid] [Utente] [Source]" sourceLinkParameter="sv9#area36#opg22#cru21#oln59#par403" target="sv9#area36#opg22#cnu20#su170#kcond132.userOID"/>
+        <LinkParameter id="sv9#area36#opg22#cru22#oln61#par415" name="oid_KeyCondition53 [oid] [Indirizzo] [Target]" source="ent16#att64Array" target="sv9#area36#opg22#cnu20#su171#kcond133.ent16#att64"/>
+        <LinkParameter id="sv9#area36#opg22#cru22#oln61#par416" name="oid_PASSING" source="ent16#att64Array" passing="true"/>
+        <LinkParameter id="sv9#area36#opg22#cru22#oln61#par417" name="password_PASSING" sourceLinkParameter="sv9#area36#opg22#cru21#oln59#par408" passing="true"/>
+        <LinkParameter id="sv9#area36#opg22#cru22#oln61#par418" name="username_PASSING" sourceLinkParameter="sv9#area36#opg22#cru21#oln59#par409" passing="true"/>
+        <LinkParameter id="sv9#area36#opg22#cru22#oln61#par419" name="citt&#224;_PASSING" sourceLinkParameter="sv9#area36#opg22#cru21#oln59#par407" passing="true"/>
+      </OKLink>
+      <KOLink id="sv9#area36#opg22#cru22#kln64" name="KOFlow10" to="sv9#page96#alt13#page99#mssu26" automaticCoupling="true" gr:bendpoints="-277,188,318,-87"/>
+    </CreateUnit>
+    <ConnectUnit id="sv9#area36#opg22#cnu21" name="Connetti a citt&#224;" gr:x="0" gr:y="115" relationship="rel32#role63">
+      <SourceSelector id="sv9#area36#opg22#cnu21#su172" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area36#opg22#cnu21#su172#kcond134" name="KeyCondition62" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv9#area36#opg22#cnu21#su173" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area36#opg22#cnu21#su173#kcond135" name="KeyCondition63" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv9#area36#opg22#cnu21#oln62" name="OKFlow7" to="sv9#lgu8" gr:bendpoints="-116,129,74,-326">
+        <LinkParameter id="sv9#area36#opg22#cnu21#oln62#par420" name="username_PASSING_Username" sourceLinkParameter="sv9#area36#opg22#cnu20#oln60#par413" target="sv9#lgu8.username"/>
+        <LinkParameter id="sv9#area36#opg22#cnu21#oln62#par421" name="password_PASSING_Password" sourceLinkParameter="sv9#area36#opg22#cnu20#oln60#par412" target="sv9#lgu8.password"/>
+      </OKLink>
+      <KOLink id="sv9#area36#opg22#cnu21#kln65" name="KOFlow8" to="sv9#page96#alt13#page99#mssu26" automaticCoupling="true" gr:bendpoints="-198,102,272,-43"/>
+    </ConnectUnit>
+    <SelectorUnit id="sv9#area36#opg22#seu53" name="Seleziona utente" gr:x="330" gr:y="140" entity="User" distinctAttributes="userOID userName">
+      <SortAttribute attribute="userOID" order="ascending"/>
+      <OKLink id="sv9#area36#opg22#seu53#oln63" name="OKFlow8" to="sv9#area36#opg22#cru21">
+        <LinkParameter id="sv9#area36#opg22#seu53#oln63#par422" name="cognome_PASSING_cognome" sourceLinkParameter="sv9#area36#page105#enu41#ln185#par372" target="sv9#area36#opg22#cru21.User#att6"/>
+        <LinkParameter id="sv9#area36#opg22#seu53#oln63#par423" name="data di nascita_PASSING_data di nascita" sourceLinkParameter="sv9#area36#page105#enu41#ln185#par373" target="sv9#area36#opg22#cru21.ent4#att12"/>
+        <LinkParameter id="sv9#area36#opg22#seu53#oln63#par424" name="email_PASSING_email" sourceLinkParameter="sv9#area36#page105#enu41#ln185#par374" target="sv9#area36#opg22#cru21.email"/>
+        <LinkParameter id="sv9#area36#opg22#seu53#oln63#par425" name="nome_PASSING_nome" sourceLinkParameter="sv9#area36#page105#enu41#ln185#par375" target="sv9#area36#opg22#cru21.User#att3"/>
+        <LinkParameter id="sv9#area36#opg22#seu53#oln63#par426" name="numero di telefono_PASSING_numero di telefono" sourceLinkParameter="sv9#area36#page105#enu41#ln185#par377" target="sv9#area36#opg22#cru21.User#att11"/>
+        <LinkParameter id="sv9#area36#opg22#seu53#oln63#par427" name="password_PASSING_password" sourceLinkParameter="sv9#area36#page105#enu41#ln185#par378" target="sv9#area36#opg22#cru21.password"/>
+        <LinkParameter id="sv9#area36#opg22#seu53#oln63#par428" name="username_PASSING_username" sourceLinkParameter="sv9#area36#page105#enu41#ln185#par379" target="sv9#area36#opg22#cru21.userName"/>
+        <LinkParameter id="sv9#area36#opg22#seu53#oln63#par429" name="CAP_PASSING" sourceLinkParameter="sv9#area36#page105#enu41#ln185#par370" passing="true"/>
+        <LinkParameter id="sv9#area36#opg22#seu53#oln63#par430" name="citt&#224;_PASSING" sourceLinkParameter="sv9#area36#page105#enu41#ln185#par371" passing="true"/>
+        <LinkParameter id="sv9#area36#opg22#seu53#oln63#par431" name="password_PASSING" sourceLinkParameter="sv9#area36#page105#enu41#ln185#par378" passing="true"/>
+        <LinkParameter id="sv9#area36#opg22#seu53#oln63#par432" name="username_PASSING" sourceLinkParameter="sv9#area36#page105#enu41#ln185#par379" passing="true"/>
+        <LinkParameter id="sv9#area36#opg22#seu53#oln63#par433" name="via/piazza/corso_PASSING" sourceLinkParameter="sv9#area36#page105#enu41#ln185#par380" passing="true"/>
+        <LinkParameter id="sv9#area36#opg22#seu53#oln63#par434" name="numero civico_PASSING" sourceLinkParameter="sv9#area36#page105#enu41#ln185#par376" passing="true"/>
+      </OKLink>
+      <KOLink id="sv9#area36#opg22#seu53#kln66" name="KOFlow6" to="sv9#page96#alt13#page98#mssu25" automaticCoupling="true" gr:bendpoints="-51,98,584,78;-484,103,151,83"/>
+      <Selector id="sv9#area36#opg22#seu53#su174" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv9#area36#opg22#seu53#su174#acond48" name="username presente?" predicate="neq" booleanOperator="or" implied="false" attributes="userName" ignoreCase="false"/>
+      </Selector>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

@@ -1,0 +1,120 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv9#area35#page104" name="Dettaglio ristorante" gr:x="635" gr:y="190">
+  <ContentUnits>
+    <DataUnit id="sv9#area35#page104#dau21" name="Dettaglio ristorante" linkOrder="sv9#area35#page104#dau21#ln180" gr:x="145" gr:y="0" entity="ent14" displayAttributes="ent14#att42 ent14#att46 ent14#att44 ent14#att45 ent14#att52">
+      <Selector id="sv9#area35#page104#dau21#su161" defaultPolicy="fill" booleanOperator="or">
+        <KeyCondition id="sv9#area35#page104#dau21#su161#kcond126" name="Dettaglio ristorante" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv9#area35#page104#dau21#su161#rcond44" name="piatto to dettaglioRistorante" predicate="in" implied="true" role="rel4#role8"/>
+      </Selector>
+      <Link id="sv9#area35#page104#dau21#ln178" name="dettaglio to migliori valutazioni" to="sv9#area35#page104#mdu19" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv9#area35#page104#dau21#ln179" name="dettaglio to valutazioni" to="sv9#area35#page104#mdu18" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv9#area35#page104#dau21#ln180" name="Flow58" to="sv9#area37#page106#scu31" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="142,-133,-218,52"/>
+      <Link id="sv9#area35#page104#dau21#ln181" name="dettaglio to migliori valutazioni" to="sv9#area35#page104#mdu19" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv9#area35#page104#dau21#ln182" name="dettaglio to valutazioni" to="sv9#area35#page104#mdu18" type="transport" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+    <MultiDataUnit id="sv9#area35#page104#mdu18" name="Valutazioni" gr:showAllParts="true" gr:x="280" gr:y="170" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4">
+      <SortAttribute attribute="ent15#att53" order="descending"/>
+      <Selector id="sv9#area35#page104#mdu18#su162" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv9#area35#page104#mdu18#su162#rcond45" name="RoleCondition17" predicate="in" implied="false" role="rel2#role3"/>
+        <KeyCondition id="sv9#area35#page104#mdu18#su162#kcond127" name="KeyCondition35" predicate="notIn" implied="false">
+          <Comment xml:space="preserve">Cos&#236; evito di ripresentare le valutazioni migliori mostrare nell'altro "dettagli multipli"</Comment>
+        </KeyCondition>
+      </Selector>
+    </MultiDataUnit>
+    <MultiDataUnit id="sv9#area35#page104#mdu19" name="Migliori valutazioni" gr:showAllParts="true" gr:x="0" gr:y="185" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4" maxResults="5">
+      <SortAttribute attribute="ent15#att53" order="descending"/>
+      <Selector id="sv9#area35#page104#mdu19#su163" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv9#area35#page104#mdu19#su163#rcond46" name="ristorante to valutazione" predicate="in" implied="false" role="rel2#role3"/>
+      </Selector>
+      <Link id="sv9#area35#page104#mdu19#ln183" name="Flow38" to="sv9#area35#page104#mdu18" type="transport" automaticCoupling="true" validate="true"/>
+      <Comment xml:space="preserve">Qui mostro solo le 5 valutazioni con voti migliori. Anche se non ho previsto la relazione derivta nel modello dei dati posso farlo solo da qui avendo specificato un massimo numero di valutazioni da mostrare ed ordinandole in base al voto.</Comment>
+      <Link id="sv9#area35#page104#mdu19#ln184" name="Flow38" to="sv9#area35#page104#mdu18" type="transport" automaticCoupling="true" validate="true"/>
+    </MultiDataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area35#page104#dau21">
+          <layout:Attribute attribute="ent14#att42"/>
+          <layout:Attribute attribute="ent14#att46"/>
+          <layout:Attribute attribute="ent14#att44"/>
+          <layout:Attribute attribute="ent14#att45"/>
+          <layout:Attribute attribute="ent14#att52"/>
+          <layout:Link link="sv9#area35#page104#dau21#ln180"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area35#page104#mdu18">
+          <layout:Attribute attribute="ent15#att53"/>
+          <layout:Attribute attribute="ent15#att54"/>
+          <layout:Attribute attribute="ent15#att4"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area35#page104#mdu19">
+          <layout:Attribute attribute="ent15#att53"/>
+          <layout:Attribute attribute="ent15#att54"/>
+          <layout:Attribute attribute="ent15#att4"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area37#page106#scu31">
+          <layout:Link link="sv9#area37#page106#scu31First"/>
+          <layout:Link link="sv9#area37#page106#scu31Previous"/>
+          <layout:Link link="sv9#area37#page106#scu31Block"/>
+          <layout:Link link="sv9#area37#page106#scu31Next"/>
+          <layout:Link link="sv9#area37#page106#scu31Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

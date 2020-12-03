@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="0" id="sv7#area29#page47" name="Elenco ristoranti" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv7#area29#page47" name="Elenco ristoranti" landmark="true">
   <ContentUnits>
     <IndexUnit gr:x="615" gr:y="0" id="sv7#area29#page47#inu17" name="Elenco migliori ristoranti" entity="ent2" displayAttributes="ent14#att42 ent14#att52" linkOrder="sv7#area29#page47#inu17#ln23 sv7#area29#page47#inu17#ln87" gr:showAllParts="true">
       <SortAttribute attribute="ent14#att52" order="descending"/>

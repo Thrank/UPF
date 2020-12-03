@@ -1,0 +1,7 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv8" name="Moderatore" landmarks="sv8#area33 sv8#area32">
+  <OperationUnits>
+    <LoginUnit id="sv8#lgu7" name="Login" landmark="false" gr:x="430" gr:y="635">
+      <KOLink id="sv8#lgu7#kln55" name="KOFlow5" to="sv8#page85#alt11#page86#mssu21" automaticCoupling="true"/>
+    </LoginUnit>
+  </OperationUnits>
+</SiteView>

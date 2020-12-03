@@ -1,0 +1,141 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv8#page85" name="Pagine errori" gr:x="85" gr:y="130">
+  <ContentUnits/>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv8#page85#alt11#page86">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv8#page85#alt11#page86#mssu21"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv8#page85#alt11#page87">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv8#page85#alt11#page87#mssu22"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv8#page85#alt11#page88">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv8#page85#alt11#page88#mssu23"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative id="sv8#page85#alt11" name="Vari errori" defaultPage="sv8#page85#alt11#page86" gr:x="0" gr:y="0">
+    <Page id="sv8#page85#alt11#page86" name="Errore Login" gr:x="0" gr:y="0">
+      <ContentUnits>
+        <MultiMessageUnit id="sv8#page85#alt11#page86#mssu21" name="Errore login" gr:x="0" gr:y="0"/>
+      </ContentUnits>
+    </Page>
+    <Page id="sv8#page85#alt11#page87" name="Errore iscrizione" gr:x="155" gr:y="0">
+      <ContentUnits>
+        <MultiMessageUnit id="sv8#page85#alt11#page87#mssu22" name="Errore username presente" gr:x="0" gr:y="0"/>
+      </ContentUnits>
+    </Page>
+    <Page id="sv8#page85#alt11#page88" name="Errore generico" gr:x="0" gr:y="120">
+      <ContentUnits>
+        <MultiMessageUnit id="sv8#page85#alt11#page88#mssu23" name="Errore generico" gr:x="0" gr:y="0"/>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

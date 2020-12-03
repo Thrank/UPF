@@ -1,0 +1,7 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv9" name="Ristoratore" landmarks="sv9#area35 sv9#area36">
+  <OperationUnits>
+    <LoginUnit id="sv9#lgu8" name="Login" landmark="false" gr:x="430" gr:y="635">
+      <KOLink id="sv9#lgu8#kln67" name="KOFlow5" to="sv9#page96#alt13#page97#mssu24" automaticCoupling="true"/>
+    </LoginUnit>
+  </OperationUnits>
+</SiteView>

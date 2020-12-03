@@ -1,0 +1,40 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv8#area33#opg18" name="Iscrizione ristoratore" transaction="true" gr:x="10" gr:y="355">
+  <OperationUnits>
+    <CreateUnit id="sv8#area33#opg18#cru14" name="Aggiungi indirizzo" gr:x="125" gr:y="0" entity="ent16">
+      <OKLink id="sv8#area33#opg18#cru14#oln43" name="OKFlow12" to="sv8#area33#opg18#cnu14" automaticCoupling="true"/>
+      <KOLink id="sv8#area33#opg18#cru14#kln45" name="KOFlow12" to="sv8#page85#alt11#page88#mssu23" automaticCoupling="true" gr:bendpoints="-143,-34,477,46"/>
+    </CreateUnit>
+    <CreateUnit id="sv8#area33#opg18#cru16" name="Aggiungi ristoratore" gr:x="275" gr:y="0" entity="ent6">
+      <OKLink id="sv8#area33#opg18#cru16#oln44" name="OKFlow11" to="sv8#area33#opg18#cru14" automaticCoupling="true"/>
+      <KOLink id="sv8#area33#opg18#cru16#kln46" name="KOFlow15" to="sv8#page85#alt11#page88#mssu23" automaticCoupling="true" gr:bendpoints="-98,-52,677,28"/>
+    </CreateUnit>
+    <ConnectUnit id="sv8#area33#opg18#cnu14" name="Connetti a indirizzo" gr:x="190" gr:y="115" relationship="rel11#role21">
+      <SourceSelector id="sv8#area33#opg18#cnu14#su143" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv8#area33#opg18#cnu14#su143#kcond113" name="KeyCondition64" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv8#area33#opg18#cnu14#su144" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv8#area33#opg18#cnu14#su144#kcond114" name="KeyCondition65" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv8#area33#opg18#cnu14#oln45" name="OKFlow13" to="sv8#area33#opg18#cnu15" automaticCoupling="true"/>
+      <KOLink id="sv8#area33#opg18#cnu14#kln47" name="KOFlow14" to="sv8#page85#alt11#page88#mssu23" automaticCoupling="true" gr:bendpoints="-206,-120,484,90"/>
+    </ConnectUnit>
+    <ConnectUnit id="sv8#area33#opg18#cnu15" name="Connetti a citt&#224;" gr:x="0" gr:y="115" relationship="rel32#role63">
+      <SourceSelector id="sv8#area33#opg18#cnu15#su145" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv8#area33#opg18#cnu15#su145#kcond115" name="KeyCondition66" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv8#area33#opg18#cnu15#su146" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv8#area33#opg18#cnu15#su146#kcond116" name="KeyCondition67" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv8#area33#opg18#cnu15#oln46" name="OKFlow14" to="sv8#lgu7" automaticCoupling="true" gr:bendpoints="-174,-10,51,-110"/>
+      <KOLink id="sv8#area33#opg18#cnu15#kln48" name="KOFlow13" to="sv8#page85#alt11#page88#mssu23" automaticCoupling="true" gr:bendpoints="-70,-115,430,95"/>
+    </ConnectUnit>
+    <SelectorUnit id="sv8#area33#opg18#seu45" name="Seleziona utente" gr:x="360" gr:y="145" entity="User">
+      <OKLink id="sv8#area33#opg18#seu45#oln47" name="OKFlow9" to="sv8#area33#opg18#cru16"/>
+      <KOLink id="sv8#area33#opg18#seu45#kln49" name="KOFlow7" to="sv8#page85#alt11#page87#mssu22" automaticCoupling="true" gr:bendpoints="-3,-224,712,116;-615,-230,100,110"/>
+      <SortAttribute attribute="userOID" order="ascending"/>
+      <Selector id="sv8#area33#opg18#seu45#su147" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv8#area33#opg18#seu45#su147#acond36" name="username presente?" predicate="neq" booleanOperator="or" implied="false" attributes="userName"/>
+      </Selector>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>
