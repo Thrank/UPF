@@ -1,0 +1,91 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="2360" gr:y="1845" id="sv6#opg23" name="Inserisci nuovo ordine" transaction="true">
+  <OperationUnits>
+    <CreateUnit gr:x="25" gr:y="130" id="sv6#opg23#cru24" name="Inserisci ordine" entity="ent3">
+      <KOLink id="sv6#opg23#cru24#kln68" name="KOFlow68" to="sv6#page110#alt15#page111#mssu27" automaticCoupling="true"/>
+      <OKLink id="sv6#opg23#cru24#oln64" name="OKFlow64" to="sv6#opg23#cnu22">
+        <LinkParameter id="sv6#opg23#cru24#oln64#par481" name="oid_KeyCondition144 [oid] [Ordine] [Source]" source="ent3#att8Array" target="sv6#opg23#cnu22#su187#kcond144.ent3#att8"/>
+        <LinkParameter id="sv6#opg23#cru24#oln64#par487" name="Checked oid_PASSING" sourceLinkParameter="sv6#opg23#tmu10#ln230#par485" passing="true"/>
+        <LinkParameter id="sv6#opg23#cru24#oln64#par501" name="promozione_PASSING" sourceLinkParameter="sv6#opg23#tmu10#ln230#par500" passing="true"/>
+      </OKLink>
+    </CreateUnit>
+    <TimeUnit gr:x="0" gr:y="0" id="sv6#opg23#tmu10" name="Data" linkOrder="sv6#opg23#tmu10#ln230">
+      <Link id="sv6#opg23#tmu10#ln230" name="Flow230" to="sv6#opg23#cru24" type="transport" validate="true">
+        <LinkParameter id="sv6#opg23#tmu10#ln230#par474" name="UserCtxParam.oid_PASSING_Cliente .oid(OrdineToCliente )" sourceLinkParameter="sv6#area31#page44#enu50#ln229#par472" target="sv6#opg23#cru24.rel5#role10.userOID"/>
+        <LinkParameter id="sv6#opg23#tmu10#ln230#par475" name="Current/Input Date_data" source="currentDate" target="sv6#opg23#cru24.ent3#att15"/>
+        <LinkParameter id="sv6#opg23#tmu10#ln230#par476" name="oid (Single Row)_PASSING_Indirizzo.oid(OrdineToIndirizzo)" sourceLinkParameter="sv6#area31#page44#enu50#ln229#par469" target="sv6#opg23#cru24.rel34#role68.ent16#att64"/>
+        <LinkParameter id="sv6#opg23#tmu10#ln230#par477" name="metodo_PASSING_metodo di pagamento" sourceLinkParameter="sv6#area31#page44#enu50#ln229#par468" target="sv6#opg23#cru24.ent3#att23"/>
+        <LinkParameter id="sv6#opg23#tmu10#ln230#par478" name="Checked oid_PASSING_Piatto.oid(OrdineToPiatto)" sourceLinkParameter="sv6#area31#page44#enu50#ln229#par467" target="sv6#opg23#cru24.rel8#role15.ent1#att1"/>
+        <LinkParameter id="sv6#opg23#tmu10#ln230#par480" name="oid_PASSING_Ristorante.oid(OrdineToRistorante)" sourceLinkParameter="sv6#area31#page44#enu50#ln229#par470" target="sv6#opg23#cru24.rel6#role11.ent14#att40"/>
+        <LinkParameter id="sv6#opg23#tmu10#ln230#par485" name="Checked oid_PASSING" sourceLinkParameter="sv6#area31#page44#enu50#ln229#par467" passing="true"/>
+        <LinkParameter id="sv6#opg23#tmu10#ln230#par499" name="promozione_PASSING_Promozione.oid(OrdineToPromozione)" sourceLinkParameter="sv6#area31#page44#enu50#ln229#par498" target="sv6#opg23#cru24.rel25#role49.ent25#att69"/>
+        <LinkParameter id="sv6#opg23#tmu10#ln230#par500" name="promozione_PASSING" sourceLinkParameter="sv6#area31#page44#enu50#ln229#par498" passing="true"/>
+      </Link>
+    </TimeUnit>
+    <ConnectUnit gr:x="165" gr:y="10" id="sv6#opg23#cnu22" name="Connetti a cliente" relationship="rel5#role10">
+      <SourceSelector id="sv6#opg23#cnu22#su187" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#opg23#cnu22#su187#kcond144" name="KeyCondition144" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv6#opg23#cnu22#su188" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#opg23#cnu22#su188#kcond145" name="KeyCondition145" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv6#opg23#cnu22#oln65" name="OKFlow65" to="sv6#opg23#cnu24">
+        <LinkParameter id="sv6#opg23#cnu22#oln65#par488" name="Checked oid_PASSING" sourceLinkParameter="sv6#opg23#cru24#oln64#par487" passing="true"/>
+        <LinkParameter id="sv6#opg23#cnu22#oln65#par491" name="Source oid [Ordine]_KeyCondition148 [oid] [Ordine] [Source]" source="sourceent3#att8" target="sv6#opg23#cnu24#su191#kcond148.ent3#att8"/>
+        <LinkParameter id="sv6#opg23#cnu22#oln65#par502" name="promozione_PASSING" sourceLinkParameter="sv6#opg23#cru24#oln64#par501" passing="true"/>
+      </OKLink>
+      <KOLink id="sv6#opg23#cnu22#kln69" name="KOFlow69" to="sv6#page110#alt15#page112#mssu28" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit gr:x="265" gr:y="200" id="sv6#opg23#cnu24" name="Connetti a indirizzo" relationship="rel34#role68">
+      <SourceSelector id="sv6#opg23#cnu24#su191" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#opg23#cnu24#su191#kcond148" name="KeyCondition148" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv6#opg23#cnu24#su192" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#opg23#cnu24#su192#kcond149" name="KeyCondition149" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv6#opg23#cnu24#oln66" name="OKFlow66" to="sv6#opg23#cnu25">
+        <LinkParameter id="sv6#opg23#cnu24#oln66#par490" name="Source oid [Ordine]_KeyCondition150 [oid] [Ordine] [Source]" source="sourceent3#att8" target="sv6#opg23#cnu25#su193#kcond150.ent3#att8"/>
+        <LinkParameter id="sv6#opg23#cnu24#oln66#par492" name="Checked oid_PASSING" sourceLinkParameter="sv6#opg23#cnu22#oln65#par488" passing="true"/>
+        <LinkParameter id="sv6#opg23#cnu24#oln66#par503" name="promozione_PASSING" sourceLinkParameter="sv6#opg23#cnu22#oln65#par502" passing="true"/>
+      </OKLink>
+      <KOLink id="sv6#opg23#cnu24#kln70" name="KOFlow70" to="sv6#page110#alt15#page112#mssu28" automaticCoupling="true" gr:bendpoints="-328,40,207,-135"/>
+    </ConnectUnit>
+    <ConnectUnit gr:x="5" gr:y="310" id="sv6#opg23#cnu25" name="Connetti a ristorante" relationship="rel6#role11">
+      <SourceSelector id="sv6#opg23#cnu25#su193" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#opg23#cnu25#su193#kcond150" name="KeyCondition150" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv6#opg23#cnu25#su194" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#opg23#cnu25#su194#kcond151" name="KeyCondition151" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv6#opg23#cnu25#oln67" name="OKFlow67" to="sv6#opg23#cnu26">
+        <LinkParameter id="sv6#opg23#cnu25#oln67#par493" name="Source oid [Ordine]_KeyCondition152 [oid] [Ordine] [Source]" source="sourceent3#att8" target="sv6#opg23#cnu26#su195#kcond152.ent3#att8"/>
+        <LinkParameter id="sv6#opg23#cnu25#oln67#par494" name="Checked oid_PASSING" sourceLinkParameter="sv6#opg23#cnu24#oln66#par492" passing="true"/>
+        <LinkParameter id="sv6#opg23#cnu25#oln67#par495" name="Checked oid_PASSING_KeyCondition153 [oid] [Piatto] [Target]" sourceLinkParameter="sv6#opg23#cnu24#oln66#par492" target="sv6#opg23#cnu26#su196#kcond153.ent1#att1"/>
+        <LinkParameter id="sv6#opg23#cnu25#oln67#par504" name="promozione_PASSING" sourceLinkParameter="sv6#opg23#cnu24#oln66#par503" passing="true"/>
+      </OKLink>
+      <KOLink id="sv6#opg23#cnu25#kln71" name="KOFlow71" to="sv6#page110#alt15#page112#mssu28" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit gr:x="285" gr:y="425" id="sv6#opg23#cnu26" name="Connetti a piatti" relationship="rel8#role15">
+      <SourceSelector id="sv6#opg23#cnu26#su195" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#opg23#cnu26#su195#kcond152" name="KeyCondition152" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv6#opg23#cnu26#su196" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#opg23#cnu26#su196#kcond153" name="KeyCondition153" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv6#opg23#cnu26#oln68" name="OKFlow68" to="sv6#opg23#cnu27">
+        <LinkParameter id="sv6#opg23#cnu26#oln68#par505" name="Source oid [Ordine]_KeyCondition154 [oid] [Ordine] [Source]" source="sourceent3#att8" target="sv6#opg23#cnu27#su197#kcond154.ent3#att8"/>
+        <LinkParameter id="sv6#opg23#cnu26#oln68#par506" name="promozione_PASSING_KeyCondition155 [oid] [Promozione] [Target]" sourceLinkParameter="sv6#opg23#cnu25#oln67#par504" target="sv6#opg23#cnu27#su198#kcond155.ent25#att69"/>
+      </OKLink>
+      <KOLink id="sv6#opg23#cnu26#kln72" name="KOFlow72" to="sv6#page110#alt15#page112#mssu28" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit gr:x="40" gr:y="540" id="sv6#opg23#cnu27" name="Connetti a promozione" relationship="rel25#role49">
+      <SourceSelector id="sv6#opg23#cnu27#su197" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#opg23#cnu27#su197#kcond154" name="KeyCondition154" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv6#opg23#cnu27#su198" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#opg23#cnu27#su198#kcond155" name="KeyCondition155" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="sv6#opg23#cnu27#kln73" name="KOFlow73" to="sv6#page110#alt15#page112#mssu28" automaticCoupling="true"/>
+      <OKLink id="sv6#opg23#cnu27#oln69" name="OKFlow69" to="sv6#area25#page40" automaticCoupling="true" gr:bendpoints="-369,-3,851,1437;-649,-606,571,834"/>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>
