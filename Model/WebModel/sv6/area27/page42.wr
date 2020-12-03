@@ -73,7 +73,7 @@
         <RelationshipRoleCondition id="sv6#area27#page42#seu9#su72#rcond2" name="RoleCondition2" role="rel32#role63" predicate="in" implied="false"/>
       </Selector>
     </SelectorUnit>
-    <DataUnit gr:x="210" gr:y="275" id="sv6#area27#page42#dau14" name="Citt&#224; utente" entity="ent22" displayAttributes="ent22#att29" gr:showAllParts="true">
+    <DataUnit gr:x="210" gr:y="275" id="sv6#area27#page42#dau14" name="Citt&#224; utente" entity="ent22" gr:showAllParts="true">
       <Selector id="sv6#area27#page42#dau14#su70" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv6#area27#page42#dau14#su70#kcond60" name="KeyCondition60" predicate="in" implied="false"/>
       </Selector>
@@ -185,9 +185,7 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv6#area27#page42#dau14">
-          <layout:Attribute attribute="ent22#att29"/>
-        </layout:Unit>
+        <layout:Unit unitId="sv6#area27#page42#dau14"/>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
