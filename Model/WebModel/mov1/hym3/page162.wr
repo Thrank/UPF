@@ -1,0 +1,123 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="mov1#hym3#page162" name="Modifica dettagli ristorante" gr:x="440" gr:y="0">
+  <ContentUnits>
+    <EntryUnit id="mov1#hym3#page162#enu69" name="Modifica dettagli ristorante" linkOrder="mov1#hym3#page162#enu69#ln423" gr:showAllParts="true" gr:x="190" gr:y="125" fieldOrder="mov1#hym3#page162#enu69#fld137 mov1#hym3#page162#enu69#fld136 mov1#hym3#page162#enu69#fld135 mov1#hym3#page162#enu69#fld134 mov1#hym3#page162#enu69#fld133 mov1#hym3#page162#enu69#sfld39 mov1#hym3#page162#enu69#fld139 mov1#hym3#page162#enu69#fld138">
+      <Link id="mov1#hym3#page162#enu69#ln423" name="Flow352" to="mov1#hym3#miu26" type="normal" validate="true">
+        <LinkParameter id="mov1#hym3#page162#enu69#ln423#par1090" name="CAP_CAP" source="mov1#hym3#page162#enu69#fld134" target="mov1#hym3#miu26.mov1#opm2#icu2#icp4"/>
+        <LinkParameter id="mov1#hym3#page162#enu69#ln423#par1091" name="IndirizzoToCitt&#224;.oid_PASSING_citt&#224;" sourceLinkParameter="mov1#hym3#page162#dau42#ln425#par1114" target="mov1#hym3#miu26.mov1#opm2#icu2#icp5"/>
+        <LinkParameter id="mov1#hym3#page162#enu69#ln423#par1092" name="descrizione_descrizione" source="mov1#hym3#page162#enu69#fld136" target="mov1#hym3#miu26.mov1#opm2#icu2#icp6"/>
+        <LinkParameter id="mov1#hym3#page162#enu69#ln423#par1093" name="email_email" source="mov1#hym3#page162#enu69#fld138" target="mov1#hym3#miu26.mov1#opm2#icu2#icp7"/>
+        <LinkParameter id="mov1#hym3#page162#enu69#ln423#par1094" name="nome_nome" source="mov1#hym3#page162#enu69#fld137" target="mov1#hym3#miu26.mov1#opm2#icu2#icp9"/>
+        <LinkParameter id="mov1#hym3#page162#enu69#ln423#par1095" name="numero civico_numero civico" source="mov1#hym3#page162#enu69#fld133" target="mov1#hym3#miu26.mov1#opm2#icu2#icp2"/>
+        <LinkParameter id="mov1#hym3#page162#enu69#ln423#par1096" name="numero di telefono_numero di telefono" source="mov1#hym3#page162#enu69#fld139" target="mov1#hym3#miu26.mov1#opm2#icu2#icp8"/>
+        <LinkParameter id="mov1#hym3#page162#enu69#ln423#par1097" name="via/corso/piazza_via/corso/piazza" source="mov1#hym3#page162#enu69#fld135" target="mov1#hym3#miu26.mov1#opm2#icu2#icp3"/>
+        <LinkParameter id="mov1#hym3#page162#enu69#ln423#par1098" name="oid_PASSING_citt&#224;_nuova" sourceLinkParameter="mov1#hym3#page162#dau42#ln425#par1115" target="mov1#hym3#miu26.mov1#opm2#icu2#icp11"/>
+        <LinkParameter id="mov1#hym3#page162#enu69#ln423#par1100" name="IndirizzoToRistorante.oid_PASSING_oid_ristorante" sourceLinkParameter="mov1#hym3#page162#dau42#ln425#par1117" target="mov1#hym3#miu26.mov1#opm2#icu2#icp1"/>
+        <LinkParameter id="mov1#hym3#page162#enu69#ln423#par1123" name="oid_PASSING_oid_indirizzo" sourceLinkParameter="mov1#hym3#page162#seu102#ln426#par1122" target="mov1#hym3#miu26.mov1#opm2#icu2#icp10"/>
+      </Link>
+      <SelectionField id="mov1#hym3#page162#enu69#sfld39" name="citt&#224;" type="string" modifiable="true"/>
+      <Field id="mov1#hym3#page162#enu69#fld133" name="numero civico" type="string" modifiable="true" preloaded="true"/>
+      <Field id="mov1#hym3#page162#enu69#fld134" name="CAP" type="string" modifiable="true" preloaded="true"/>
+      <Field id="mov1#hym3#page162#enu69#fld135" name="via/corso/piazza" type="string" modifiable="true" preloaded="true"/>
+      <Field id="mov1#hym3#page162#enu69#fld136" name="descrizione" type="string" modifiable="true" preloaded="true"/>
+      <Field id="mov1#hym3#page162#enu69#fld137" name="nome" type="string" modifiable="true" preloaded="true"/>
+      <Field id="mov1#hym3#page162#enu69#fld138" name="email" type="string" modifiable="true" preloaded="true"/>
+      <Field id="mov1#hym3#page162#enu69#fld139" name="numero di telefono" type="string" modifiable="true" preloaded="true"/>
+    </EntryUnit>
+    <SelectorUnit id="mov1#hym3#page162#seu101" name="Seleziona indirizzo" gr:showAllParts="false" gr:x="0" gr:y="25" entity="ent16">
+      <Selector id="mov1#hym3#page162#seu101#su330" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#hym3#page162#seu101#su330#rcond117" name="RoleCondition98" predicate="in" implied="false" role="rel10#role19"/>
+      </Selector>
+      <Link id="mov1#hym3#page162#seu101#ln424" name="Flow359" to="mov1#hym3#page162#dau42" type="transport" validate="true">
+        <LinkParameter id="mov1#hym3#page162#seu101#ln424#par1101" name="oid_KeyCondition226 [oid]" source="ent16#att64Array" target="mov1#hym3#page162#dau42#su331#kcond245.ent16#att64"/>
+        <LinkParameter id="mov1#hym3#page162#seu101#ln424#par1102" name="descrizione_PASSING" sourceLinkParameter="mov1#hym3#icu13#oln91#par1086" passing="true"/>
+        <LinkParameter id="mov1#hym3#page162#seu101#ln424#par1103" name="email_PASSING" sourceLinkParameter="mov1#hym3#icu13#oln91#par1087" passing="true"/>
+        <LinkParameter id="mov1#hym3#page162#seu101#ln424#par1104" name="nome_PASSING" sourceLinkParameter="mov1#hym3#icu13#oln91#par1088" passing="true"/>
+        <LinkParameter id="mov1#hym3#page162#seu101#ln424#par1105" name="numero di telefono_PASSING" sourceLinkParameter="mov1#hym3#icu13#oln91#par1089" passing="true"/>
+        <LinkParameter id="mov1#hym3#page162#seu101#ln424#par1106" name="IndirizzoToRistorante.oid_PASSING" source="rel10#role20_ent14#att40Array" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <DataUnit id="mov1#hym3#page162#dau42" name="Indirizzo ristorante" gr:x="20" gr:y="160" entity="ent16">
+      <Selector id="mov1#hym3#page162#dau42#su331" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#hym3#page162#dau42#su331#kcond245" name="KeyCondition226" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="mov1#hym3#page162#dau42#ln425" name="Flow360" to="mov1#hym3#page162#enu69" type="transport" validate="true">
+        <LinkParameter id="mov1#hym3#page162#dau42#ln425#par1107" name="CAP_CAP" source="data.ent16#att76" target="mov1#hym3#page162#enu69#fld134_slot"/>
+        <LinkParameter id="mov1#hym3#page162#dau42#ln425#par1108" name="civico_numero civico" source="data.ent16#att32" target="mov1#hym3#page162#enu69#fld133_slot"/>
+        <LinkParameter id="mov1#hym3#page162#dau42#ln425#par1109" name="via/piazza/corso_via/corso/piazza" source="data.ent16#att31" target="mov1#hym3#page162#enu69#fld135_slot"/>
+        <LinkParameter id="mov1#hym3#page162#dau42#ln425#par1110" name="descrizione_PASSING_descrizione" sourceLinkParameter="mov1#hym3#page162#seu101#ln424#par1102" target="mov1#hym3#page162#enu69#fld136_slot"/>
+        <LinkParameter id="mov1#hym3#page162#dau42#ln425#par1111" name="email_PASSING_email" sourceLinkParameter="mov1#hym3#page162#seu101#ln424#par1103" target="mov1#hym3#page162#enu69#fld138_slot"/>
+        <LinkParameter id="mov1#hym3#page162#dau42#ln425#par1112" name="nome_PASSING_nome" sourceLinkParameter="mov1#hym3#page162#seu101#ln424#par1104" target="mov1#hym3#page162#enu69#fld137_slot"/>
+        <LinkParameter id="mov1#hym3#page162#dau42#ln425#par1113" name="numero di telefono_PASSING_numero di telefono" sourceLinkParameter="mov1#hym3#page162#seu101#ln424#par1105" target="mov1#hym3#page162#enu69#fld139_slot"/>
+        <LinkParameter id="mov1#hym3#page162#dau42#ln425#par1114" name="IndirizzoToCitt&#224;.oid_PASSING" source="data.rel32#role63_ent22#att27" passing="true"/>
+        <LinkParameter id="mov1#hym3#page162#dau42#ln425#par1115" name="oid_PASSING" source="data.ent16#att64" passing="true"/>
+        <LinkParameter id="mov1#hym3#page162#dau42#ln425#par1116" name="IndirizzoToCitt&#224;.oid_citt&#224; - Preselection" source="data.rel32#role63_ent22#att27" target="mov1#hym3#page162#enu69#sfld39_presel"/>
+        <LinkParameter id="mov1#hym3#page162#dau42#ln425#par1117" name="IndirizzoToRistorante.oid_PASSING" source="data.rel10#role20_ent14#att40" passing="true"/>
+      </Link>
+    </DataUnit>
+    <SelectorUnit id="mov1#hym3#page162#seu102" name="Seleziona citt&#224;" gr:x="335" gr:y="0" entity="ent22">
+      <Link id="mov1#hym3#page162#seu102#ln426" name="Flow363" to="mov1#hym3#page162#enu69" type="transport" validate="true">
+        <LinkParameter id="mov1#hym3#page162#seu102#ln426#par1120" name="nome_citt&#224; [label]" source="ent22#att29Array" target="mov1#hym3#page162#enu69#sfld39_label"/>
+        <LinkParameter id="mov1#hym3#page162#seu102#ln426#par1121" name="oid_citt&#224; [output]" source="ent22#att27Array" target="mov1#hym3#page162#enu69#sfld39_output"/>
+        <LinkParameter id="mov1#hym3#page162#seu102#ln426#par1122" name="oid_PASSING" source="ent22#att27Array" passing="true"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov1#hym3#page162#enu69">
+          <layout:Link link="mov1#hym3#page162#enu69#ln423"/>
+          <layout:Field field="mov1#hym3#page162#enu69#fld137"/>
+          <layout:Field field="mov1#hym3#page162#enu69#fld136"/>
+          <layout:Field field="mov1#hym3#page162#enu69#fld135"/>
+          <layout:Field field="mov1#hym3#page162#enu69#fld134"/>
+          <layout:Field field="mov1#hym3#page162#enu69#fld133"/>
+          <layout:Field field="mov1#hym3#page162#enu69#sfld39"/>
+          <layout:Field field="mov1#hym3#page162#enu69#fld139"/>
+          <layout:Field field="mov1#hym3#page162#enu69#fld138"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov1#hym3#page162#dau42"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,12 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv9#area48" name="Ristorante" defaultPage="sv9#area48#page184" landmarks="sv9#area48#page184" landmark="true" gr:x="50" gr:y="895">
+  <OperationUnits>
+    <ModuleInstanceUnit id="sv9#area48#miu36" gr:x="95" gr:y="270" moduleId="mov1#hym7">
+      <OKLink id="sv9#area48#miu36#oln132" name="Flow19" to="sv9#area48#page185#dau44" codeRef="mov1#hym7#okcu14" gr:bendpoints="166,-58,-474,-33">
+        <LinkParameter id="sv9#area48#miu36#oln132#par1265" name="oid_Dettaglio ristorante [oid]" source="mov1#hym7#okcu14#ocp7" target="sv9#area48#page185#dau44#su377#kcond275.ent14#att40"/>
+      </OKLink>
+      <OKLink id="sv9#area48#miu36#oln133" name="Flow18" to="sv9#area48#page185#dau44" codeRef="mov1#hym7#okcu13" gr:bendpoints="157,37,-483,62">
+        <LinkParameter id="sv9#area48#miu36#oln133#par1266" name="oid_Dettaglio ristorante [oid]" source="mov1#hym7#okcu13#ocp8" target="sv9#area48#page185#dau44#su377#kcond275.ent14#att40"/>
+      </OKLink>
+    </ModuleInstanceUnit>
+  </OperationUnits>
+</Area>

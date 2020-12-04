@@ -41,16 +41,16 @@
       <Field id="sv8#area38#page127#enu47#fld46" name="CAP" type="integer" modifiable="true" preloaded="true"/>
       <Field id="sv8#area38#page127#enu47#fld56" name="numero civico" type="integer" modifiable="true" preloaded="true"/>
       <Link id="sv8#area38#page127#enu47#ln265" name="Flow101" to="sv8#area38#opg28#mfu26" type="normal" validate="true">
-        <LinkParameter id="sv8#area38#page127#enu47#ln265#par408" name="cognome_cognome" source="sv8#area38#page127#enu47#fld40" target="sv8#area38#opg28#mfu26.User#att6"/>
-        <LinkParameter id="sv8#area38#page127#enu47#ln265#par409" name="data di nascita_data di nascita" source="sv8#area38#page127#enu47#fld38" target="sv8#area38#opg28#mfu26.ent4#att12"/>
-        <LinkParameter id="sv8#area38#page127#enu47#ln265#par410" name="email_email" source="sv8#area38#page127#enu47#fld42" target="sv8#area38#opg28#mfu26.email"/>
-        <LinkParameter id="sv8#area38#page127#enu47#ln265#par411" name="nome_nome" source="sv8#area38#page127#enu47#fld37" target="sv8#area38#opg28#mfu26.User#att3"/>
-        <LinkParameter id="sv8#area38#page127#enu47#ln265#par412" name="numero di telefono_numero di telefono" source="sv8#area38#page127#enu47#fld41" target="sv8#area38#opg28#mfu26.User#att11"/>
         <LinkParameter id="sv8#area38#page127#enu47#ln265#par413" name="CAP_PASSING" source="sv8#area38#page127#enu47#fld46" passing="true"/>
         <LinkParameter id="sv8#area38#page127#enu47#ln265#par414" name="citt&#224;_PASSING" source="sv8#area38#page127#enu47#sfld21" passing="true"/>
         <LinkParameter id="sv8#area38#page127#enu47#ln265#par415" name="numero civico_PASSING" source="sv8#area38#page127#enu47#fld56" passing="true"/>
         <LinkParameter id="sv8#area38#page127#enu47#ln265#par416" name="via/corso/piazza_PASSING" source="sv8#area38#page127#enu47#fld39" passing="true"/>
         <LinkParameter id="sv8#area38#page127#enu47#ln265#par417" name="oid_PASSING" sourceLinkParameter="sv8#area38#page127#dau31#ln266#par421" passing="true"/>
+        <LinkParameter id="sv8#area38#page127#enu47#ln265#par408" name="cognome_cognome" source="sv8#area38#page127#enu47#fld40" target="sv8#area38#opg28#mfu26.User#att6"/>
+        <LinkParameter id="sv8#area38#page127#enu47#ln265#par409" name="data di nascita_data di nascita" source="sv8#area38#page127#enu47#fld38" target="sv8#area38#opg28#mfu26.ent4#att12"/>
+        <LinkParameter id="sv8#area38#page127#enu47#ln265#par410" name="email_email" source="sv8#area38#page127#enu47#fld42" target="sv8#area38#opg28#mfu26.email"/>
+        <LinkParameter id="sv8#area38#page127#enu47#ln265#par411" name="nome_nome" source="sv8#area38#page127#enu47#fld37" target="sv8#area38#opg28#mfu26.User#att3"/>
+        <LinkParameter id="sv8#area38#page127#enu47#ln265#par412" name="numero di telefono_numero di telefono" source="sv8#area38#page127#enu47#fld41" target="sv8#area38#opg28#mfu26.User#att11"/>
       </Link>
       <SelectionField id="sv8#area38#page127#enu47#sfld21" name="citt&#224;" type="string"/>
     </EntryUnit>

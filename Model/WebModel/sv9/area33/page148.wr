@@ -12,17 +12,24 @@
       <Link id="sv9#area33#page148#seu66#ln332" name="Flow332" to="sv9#area33#page148#scu56" automaticCoupling="true" type="transport" validate="true"/>
       <SortAttribute attribute="ent14#att42" order="ascending"/>
     </SelectorUnit>
-    <ScrollerUnit gr:x="365" gr:y="10" id="sv9#area33#page148#scu56" name="Scorri ristoranti" useCountQuery="false" entity="ent14" gr:showAllParts="true" linkOrder="sv9#area33#page148#scu56#ln333">
+    <ScrollerUnit gr:x="285" gr:y="150" id="sv9#area33#page148#scu56" name="Scorri ristoranti" useCountQuery="false" entity="ent14" gr:showAllParts="true" linkOrder="sv9#area33#page148#scu56#ln333">
       <Link id="sv9#area33#page148#scu56#ln333" name="Flow333" to="sv9#area33#page148#mdu29" automaticCoupling="true" type="automatic" validate="true"/>
       <SortAttribute attribute="ent14#att42" order="ascending"/>
     </ScrollerUnit>
-    <MultiDataUnit gr:x="500" gr:y="10" id="sv9#area33#page148#mdu29" name="Ristoranti ristoratore" entity="ent14" displayAttributes="ent14#att42" gr:showAllParts="true" linkOrder="sv9#area33#page148#mdu29#ln337">
+    <MultiDataUnit gr:x="45" gr:y="225" id="sv9#area33#page148#mdu29" name="Ristoranti ristoratore" entity="ent14" displayAttributes="ent14#att42" gr:showAllParts="true" linkOrder="sv9#area33#page148#mdu29#ln335 sv9#area33#page148#mdu29#ln337">
       <SortAttribute attribute="ent14#att42" order="ascending"/>
       <Selector id="sv9#area33#page148#mdu29#su265" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv9#area33#page148#mdu29#su265#kcond207" name="KeyCondition207" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv9#area33#page148#mdu29#ln337" name="Flow337" to="sv9#area33#page151#dau38" type="normal" validate="true">
-        <LinkParameter id="sv9#area33#page148#mdu29#ln337#par547" name="oid_KeyCondition220 [oid]" source="ent14#att40Array" target="sv9#area33#page151#dau38#su278#kcond220.ent14#att40"/>
+      <Link id="sv9#area33#page148#mdu29#ln335" name="Flow335" to="sv9#area33#miu25" type="normal" validate="true" gr:bendpoints="-91,192,-136,-73">
+        <LinkParameter id="sv9#area33#page148#mdu29#ln335#par617" name="oid_RoleCondition98 [oid]" source="ent14#att40Array" target="sv9#area33#miu25.mov1#hym3#icu13#icp63"/>
+        <LinkParameter id="sv9#area33#page148#mdu29#ln335#par618" name="descrizione_PASSING" source="ent14#att46Array" target="sv9#area33#miu25.mov1#hym3#icu13#icp66"/>
+        <LinkParameter id="sv9#area33#page148#mdu29#ln335#par619" name="email_PASSING" source="ent14#att45Array" target="sv9#area33#miu25.mov1#hym3#icu13#icp65"/>
+        <LinkParameter id="sv9#area33#page148#mdu29#ln335#par620" name="nome_PASSING" source="ent14#att42Array" target="sv9#area33#miu25.mov1#hym3#icu13#icp64"/>
+        <LinkParameter id="sv9#area33#page148#mdu29#ln335#par621" name="numero di telefono_PASSING" source="ent14#att44Array" target="sv9#area33#miu25.mov1#hym3#icu13#icp67"/>
+      </Link>
+      <Link id="sv9#area33#page148#mdu29#ln337" name="Flow337" to="sv9#area33#miu28" type="normal" validate="true" gr:bendpoints="1,146,-154,-34">
+        <LinkParameter id="sv9#area33#page148#mdu29#ln337#par547" name="oid_KeyCondition220 [oid]" source="ent14#att40Array" target="sv9#area33#miu28.mov1#hym4#icu15#icp71"/>
       </Link>
     </MultiDataUnit>
   </ContentUnits>
@@ -53,6 +60,7 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv9#area33#page148#mdu29">
           <layout:Attribute attribute="ent14#att42"/>
+          <layout:Link link="sv9#area33#page148#mdu29#ln335"/>
           <layout:Link link="sv9#area33#page148#mdu29#ln337"/>
         </layout:Unit>
       </layout:Cell>

@@ -1,0 +1,56 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv9#area47#page183" name="Elenco piatti" gr:x="0" gr:y="0">
+  <ContentUnits>
+    <IndexUnit id="sv9#area47#page183#inu80" name="Elenco piatti" linkOrder="sv9#area47#page183#inu80#ln489" gr:showAllParts="true" gr:x="185" gr:y="0" entity="ent1" displayAttributes="ent1#att2 ent1#att7 ent1#att57 ent1#att58">
+      <Selector id="sv9#area47#page183#inu80#su373" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area47#page183#inu80#su373#kcond272" name="oid piatto" predicate="in" implied="false"/>
+      </Selector>
+      <SortAttribute attribute="ent1#att2" order="descending"/>
+      <Link id="sv9#area47#page183#inu80#ln489" name="Flow57" to="sv9#area48#page185#dau44" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-178,134,397,-51"/>
+    </IndexUnit>
+    <ScrollerUnit id="sv9#area47#page183#scu70" name="Scorri piatti" linkOrder="sv9#area47#page183#scu70#ln490" gr:showAllParts="true" gr:x="0" gr:y="5" useCountQuery="false" entity="ent1" blockFactor="10">
+      <Selector id="sv9#area47#page183#scu70#su374" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv9#area47#page183#scu70#su374#rcond138" name="RoleCondition15" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+      <SortAttribute attribute="ent1#att2" order="descending"/>
+      <Link id="sv9#area47#page183#scu70#ln490" name="Flow40" to="sv9#area47#page183#inu80" type="normal" automaticCoupling="true" validate="true"/>
+    </ScrollerUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area47#page183#inu80">
+          <layout:Attribute attribute="ent1#att2"/>
+          <layout:Attribute attribute="ent1#att7"/>
+          <layout:Attribute attribute="ent1#att57"/>
+          <layout:Attribute attribute="ent1#att58"/>
+          <layout:Link link="sv9#area47#page183#inu80#ln489"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

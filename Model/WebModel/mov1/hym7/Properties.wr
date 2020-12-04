@@ -1,0 +1,16 @@
+<HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="185" gr:y="1987" id="mov1#hym7" name="Ricerca personalizzata base" landmarks="mov1#hym7#page180">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#hym7#icu19" name="Input Port">
+      <InputCollectorParameter id="mov1#hym7#icu19#icp83" name="tipologia cucina [oid]"/>
+      <OKLink id="mov1#hym7#icu19#oln128" to="mov1#hym7#page180#alt27#page182#scu69" validate="true" name="Start">
+        <LinkParameter id="mov1#hym7#icu19#oln128#par1244" name="oid_tipologia cucina [oid]" source="mov1#hym7#icu19#icp83" target="mov1#hym7#page180#alt27#page182#scu69#su371#rcond135.ent10#att61"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="1000" gr:y="350" id="mov1#hym7#okcu14" name="OK Port14">
+      <OutputCollectorParameter id="mov1#hym7#okcu14#ocp7" name="Elenco ristoranti filtrati oid"/>
+    </OKCollectorUnit>
+    <OKCollectorUnit gr:x="1000" gr:y="0" id="mov1#hym7#okcu13" name="OK Port13">
+      <OutputCollectorParameter id="mov1#hym7#okcu13#ocp8" name="Elenco ristoranti totale oid"/>
+    </OKCollectorUnit>
+  </OperationUnits>
+</HybridModule>

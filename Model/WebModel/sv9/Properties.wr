@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv9" name="Ristoratore" landmarks="sv9#area33 sv9#area35" homePage="sv9#area33#page150">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv9" name="Ristoratore" landmarks="sv9#area33 sv9#area35 sv9#area48">
   <OperationUnits>
     <LogoutUnit id="sv9#lou9" name="Esci" gr:x="80" gr:y="110" siteView="sv7"/>
   </OperationUnits>

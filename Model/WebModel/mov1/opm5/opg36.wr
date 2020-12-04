@@ -1,0 +1,105 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm5#opg36" name="Elimina ristorante" transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <DeleteUnit id="mov1#opm5#opg36#dlu15" name="Elimina ristorante" gr:x="265" gr:y="520" entity="ent14">
+      <Selector id="mov1#opm5#opg36#dlu15#su332" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm5#opg36#dlu15#su332#kcond246" name="KeyCondition209" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm5#opg36#dlu15#oln104" to="mov1#opm5#okcu3" name="OKFlow78"/>
+      <KOLink id="mov1#opm5#opg36#dlu15#kln95" name="KOFlow95" to="mov1#opm5#kocu2" automaticCoupling="true"/>
+    </DeleteUnit>
+    <DisconnectUnit id="mov1#opm5#opg36#dcnu21" name="Disconnetti da indirizzo" gr:x="0" gr:y="0" relationship="rel10#role19">
+      <SourceSelector id="mov1#opm5#opg36#dcnu21#su333" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm5#opg36#dcnu21#su333#kcond247" name="KeyCondition210" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#opm5#opg36#dcnu21#su334" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm5#opg36#dcnu21#su334#kcond248" name="KeyCondition211" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#opm5#opg36#dcnu21#oln96" name="OKFlow61" to="mov1#opm5#opg36#seu103" gr:bendpoints="96,20,-79,10">
+        <LinkParameter id="mov1#opm5#opg36#dcnu21#oln96#par1127" name="Target oid [Indirizzo]_RoleCondition93 [oid]" source="targetent16#att64" target="mov1#opm5#opg36#seu103#su343#rcond118.ent16#att64"/>
+        <LinkParameter id="mov1#opm5#opg36#dcnu21#oln96#par1128" name="Source oid [Ristorante]_PASSING" source="sourceent14#att40" passing="true"/>
+        <LinkParameter id="mov1#opm5#opg36#dcnu21#oln96#par1129" name="Target oid [Indirizzo]_PASSING" source="targetent16#att64" passing="true"/>
+        <LinkParameter id="mov1#opm5#opg36#dcnu21#oln96#par1130" name="oid_PASSING" sourceLinkParameter="mov1#opm5#icu14#oln93#par1126" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm5#opg36#dcnu21#kln91" name="KOFlow91" to="mov1#opm5#kocu2" automaticCoupling="true" gr:bendpoints="106,75,-694,-245;447,135,-353,-185"/>
+    </DisconnectUnit>
+    <DisconnectUnit id="mov1#opm5#opg36#dcnu22" name="Disconnetti da citt&#224;" gr:x="345" gr:y="30" relationship="rel32#role63">
+      <SourceSelector id="mov1#opm5#opg36#dcnu22#su335" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm5#opg36#dcnu22#su335#kcond249" name="KeyCondition212" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#opm5#opg36#dcnu22#su336" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm5#opg36#dcnu22#su336#kcond250" name="KeyCondition213" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#opm5#opg36#dcnu22#oln97" name="OKFlow63" to="mov1#opm5#opg36#dcnu23">
+        <LinkParameter id="mov1#opm5#opg36#dcnu22#oln97#par1131" name="Source oid [Ristorante]_PASSING_KeyCondition214 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#opm5#opg36#seu103#oln101#par1140" target="mov1#opm5#opg36#dcnu23#su337#kcond251.ent14#att40"/>
+        <LinkParameter id="mov1#opm5#opg36#dcnu22#oln97#par1132" name="oid_PASSING_KeyCondition215 [oid] [Ristoratore] [Target]" sourceLinkParameter="mov1#opm5#opg36#seu103#oln101#par1141" target="mov1#opm5#opg36#dcnu23#su338#kcond252.userOID"/>
+      </OKLink>
+      <KOLink id="mov1#opm5#opg36#dcnu22#kln90" name="KOFlow90" to="mov1#opm5#kocu2" automaticCoupling="true"/>
+    </DisconnectUnit>
+    <DisconnectUnit id="mov1#opm5#opg36#dcnu23" name="Disconnetti da ristoratore" gr:x="50" gr:y="155" relationship="rel1#role2">
+      <SourceSelector id="mov1#opm5#opg36#dcnu23#su337" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm5#opg36#dcnu23#su337#kcond251" name="KeyCondition214" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#opm5#opg36#dcnu23#su338" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm5#opg36#dcnu23#su338#kcond252" name="KeyCondition215" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#opm5#opg36#dcnu23#oln98" name="OKFlow73" to="mov1#opm5#opg36#seu105">
+        <LinkParameter id="mov1#opm5#opg36#dcnu23#oln98#par1133" name="Source oid [Ristorante]_RoleCondition94 [oid]" source="sourceent14#att40" target="mov1#opm5#opg36#seu105#su345#rcond120.ent14#att40"/>
+        <LinkParameter id="mov1#opm5#opg36#dcnu23#oln98#par1134" name="Source oid [Ristorante]_PASSING" source="sourceent14#att40" passing="true"/>
+        <LinkParameter id="mov1#opm5#opg36#dcnu23#oln98#par1135" name="Target oid [Ristoratore]_PASSING" source="targetuserOID" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm5#opg36#dcnu23#kln92" name="KOFlow92" to="mov1#opm5#kocu2" automaticCoupling="true" gr:bendpoints="-129,84,-874,-81;-129,434,-874,269;594,432,-151,267"/>
+    </DisconnectUnit>
+    <DisconnectUnit id="mov1#opm5#opg36#dcnu24" name="Disconnetti dai piatti" gr:x="460" gr:y="255" relationship="rel4#role7">
+      <SourceSelector id="mov1#opm5#opg36#dcnu24#su339" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm5#opg36#dcnu24#su339#kcond253" name="KeyCondition216" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#opm5#opg36#dcnu24#su340" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm5#opg36#dcnu24#su340#kcond254" name="KeyCondition217" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#opm5#opg36#dcnu24#oln99" name="OKFlow75" to="mov1#opm5#opg36#seu104">
+        <LinkParameter id="mov1#opm5#opg36#dcnu24#oln99#par1136" name="Source oid [Ristorante]_RoleCondition95 [oid]" source="sourceent14#att40" target="mov1#opm5#opg36#seu104#su344#rcond119.ent14#att40"/>
+        <LinkParameter id="mov1#opm5#opg36#dcnu24#oln99#par1137" name="Source oid [Ristorante]_PASSING" source="sourceent14#att40" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#opm5#opg36#dcnu24#kln93" name="KOFlow93" to="mov1#opm5#kocu2" automaticCoupling="true"/>
+    </DisconnectUnit>
+    <DisconnectUnit id="mov1#opm5#opg36#dcnu25" name="Disconnetti dagli orari" gr:x="40" gr:y="385" relationship="rel14#role28">
+      <SourceSelector id="mov1#opm5#opg36#dcnu25#su341" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm5#opg36#dcnu25#su341#kcond255" name="KeyCondition218" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#opm5#opg36#dcnu25#su342" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm5#opg36#dcnu25#su342#kcond256" name="KeyCondition219" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#opm5#opg36#dcnu25#oln100" name="OKFlow77" to="mov1#opm5#opg36#dlu15" automaticCoupling="true"/>
+      <KOLink id="mov1#opm5#opg36#dcnu25#kln94" name="KOFlow94" to="mov1#opm5#kocu2" automaticCoupling="true" gr:bendpoints="422,-1,-343,64"/>
+    </DisconnectUnit>
+    <SelectorUnit id="mov1#opm5#opg36#seu103" name="Ottieni citt&#224;" gr:x="195" gr:y="15" entity="ent22">
+      <Selector id="mov1#opm5#opg36#seu103#su343" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm5#opg36#seu103#su343#rcond118" name="RoleCondition93" role="rel32#role63" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm5#opg36#seu103#oln101" name="OKFlow62" to="mov1#opm5#opg36#dcnu22">
+        <LinkParameter id="mov1#opm5#opg36#seu103#oln101#par1138" name="oid_KeyCondition213 [oid] [Citt&#224;] [Target]" source="ent22#att27Array" target="mov1#opm5#opg36#dcnu22#su336#kcond250.ent22#att27"/>
+        <LinkParameter id="mov1#opm5#opg36#seu103#oln101#par1139" name="Target oid [Indirizzo]_PASSING_KeyCondition212 [oid] [Indirizzo] [Source]" sourceLinkParameter="mov1#opm5#opg36#dcnu21#oln96#par1129" target="mov1#opm5#opg36#dcnu22#su335#kcond249.ent16#att64"/>
+        <LinkParameter id="mov1#opm5#opg36#seu103#oln101#par1140" name="Source oid [Ristorante]_PASSING" sourceLinkParameter="mov1#opm5#opg36#dcnu21#oln96#par1128" passing="true"/>
+        <LinkParameter id="mov1#opm5#opg36#seu103#oln101#par1141" name="oid_PASSING" sourceLinkParameter="mov1#opm5#opg36#dcnu21#oln96#par1130" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit id="mov1#opm5#opg36#seu104" name="Ottieni orari" gr:x="240" gr:y="330" entity="ent17">
+      <Selector id="mov1#opm5#opg36#seu104#su344" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm5#opg36#seu104#su344#rcond119" name="RoleCondition95" role="rel14#role28" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm5#opg36#seu104#oln102" name="OKFlow76" to="mov1#opm5#opg36#dcnu25">
+        <LinkParameter id="mov1#opm5#opg36#seu104#oln102#par1142" name="Source oid [Ristorante]_PASSING_KeyCondition218 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#opm5#opg36#dcnu24#oln99#par1137" target="mov1#opm5#opg36#dcnu25#su341#kcond255.ent14#att40"/>
+        <LinkParameter id="mov1#opm5#opg36#seu104#oln102#par1143" name="oid_KeyCondition219 [oid] [Orario] [Target]" source="ent17#att60Array" target="mov1#opm5#opg36#dcnu25#su342#kcond256.ent17#att60"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit id="mov1#opm5#opg36#seu105" name="Ottieni piatti" gr:x="290" gr:y="190" entity="ent1">
+      <Selector id="mov1#opm5#opg36#seu105#su345" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#opm5#opg36#seu105#su345#rcond120" name="RoleCondition94" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+      <OKLink id="mov1#opm5#opg36#seu105#oln103" name="OKFlow74" to="mov1#opm5#opg36#dcnu24">
+        <LinkParameter id="mov1#opm5#opg36#seu105#oln103#par1144" name="Source oid [Ristorante]_PASSING_KeyCondition216 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#opm5#opg36#dcnu23#oln98#par1134" target="mov1#opm5#opg36#dcnu24#su339#kcond253.ent14#att40"/>
+        <LinkParameter id="mov1#opm5#opg36#seu105#oln103#par1145" name="oid_KeyCondition217 [oid] [Piatto] [Target]" source="ent1#att1Array" target="mov1#opm5#opg36#dcnu24#su340#kcond254.ent1#att1"/>
+      </OKLink>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

@@ -1,0 +1,129 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv8#area50#page187" name="Elenco ristoranti" landmark="true" gr:x="0" gr:y="0">
+  <ContentUnits>
+    <IndexUnit id="sv8#area50#page187#inu84" name="Elenco migliori ristoranti" linkOrder="sv8#area50#page187#inu84#ln505 sv8#area50#page187#inu84#ln506" gr:showAllParts="true" gr:x="615" gr:y="0" entity="ent2" displayAttributes="ent14#att42 ent14#att52">
+      <SortAttribute attribute="ent14#att52" order="descending"/>
+      <Link id="sv8#area50#page187#inu84#ln505" name="Flow23" to="sv8#area50#page188#dau45" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="161,67,-64,-113"/>
+      <Selector id="sv8#area50#page187#inu84#su382" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv8#area50#page187#inu84#su382#kcond278" name="KeyCondition33" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv8#area50#page187#inu84#ln506" name="Flow23" to="sv8#area50#page188#dau45" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="161,67,-64,-113"/>
+    </IndexUnit>
+    <IndexUnit id="sv8#area50#page187#inu85" name="Elenco tipologie cucine" linkOrder="sv8#area50#page187#inu85#ln507" gr:x="205" gr:y="5" entity="ent10" displayAttributes="ent10#att28" distinct="false">
+      <SortAttribute attribute="ent10#att28" order="ascending"/>
+      <Selector id="sv8#area50#page187#inu85#su383" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv8#area50#page187#inu85#su383#kcond279" name="KeyCondition32" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv8#area50#page187#inu85#ln507" name="Flow17" to="sv8#area50#miu37" type="normal" validate="true" gr:bendpoints="-222,133,-147,-82;-224,217,-149,2">
+        <LinkParameter id="sv8#area50#page187#inu85#ln507#par1270" name="oid_tipologia cucina [oid]" source="data[].ent10#att61" target="sv8#area50#miu37.mov1#hym7#icu19#icp83"/>
+      </Link>
+    </IndexUnit>
+    <ScrollerUnit id="sv8#area50#page187#scu74" name="Scorri cucine" linkOrder="sv8#area50#page187#scu74#ln508" gr:showAllParts="true" gr:x="0" gr:y="5" useCountQuery="false" entity="ent10" blockFactor="5">
+      <SortAttribute attribute="ent10#att28" order="ascending"/>
+      <Link id="sv8#area50#page187#scu74#ln508" name="Flow41" to="sv8#area50#page187#inu85" type="automatic" automaticCoupling="true" validate="true"/>
+    </ScrollerUnit>
+    <ScrollerUnit id="sv8#area50#page187#scu75" name="Scorri migliori ristoranti" linkOrder="sv8#area50#page187#scu75#ln509" gr:showAllParts="true" gr:x="410" gr:y="10" useCountQuery="false" entity="ent2" blockFactor="5">
+      <Link id="sv8#area50#page187#scu75#ln509" name="Flow42" to="sv8#area50#page187#inu84" type="automatic" automaticCoupling="true" validate="true"/>
+      <SortAttribute attribute="ent14#att52" order="descending"/>
+    </ScrollerUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv8#area50#page187#inu84">
+          <layout:Attribute attribute="ent14#att42"/>
+          <layout:Attribute attribute="ent14#att52"/>
+          <layout:Link link="sv8#area50#page187#inu84#ln505"/>
+          <layout:Link link="sv8#area50#page187#inu84#ln506"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv8#area50#page187#inu85">
+          <layout:Attribute attribute="ent10#att28"/>
+          <layout:Link link="sv8#area50#page187#inu85#ln507"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv8#area50#page187#scu74">
+          <layout:Link link="sv8#area50#page187#scu74First"/>
+          <layout:Link link="sv8#area50#page187#scu74Previous"/>
+          <layout:Link link="sv8#area50#page187#scu74Block"/>
+          <layout:Link link="sv8#area50#page187#scu74Next"/>
+          <layout:Link link="sv8#area50#page187#scu74Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv8#area50#page187#scu75">
+          <layout:Link link="sv8#area50#page187#scu75First"/>
+          <layout:Link link="sv8#area50#page187#scu75Previous"/>
+          <layout:Link link="sv8#area50#page187#scu75Block"/>
+          <layout:Link link="sv8#area50#page187#scu75Next"/>
+          <layout:Link link="sv8#area50#page187#scu75Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

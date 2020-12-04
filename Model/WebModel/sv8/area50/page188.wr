@@ -1,0 +1,120 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv8#area50#page188" name="Dettaglio ristorante" gr:x="635" gr:y="190">
+  <ContentUnits>
+    <DataUnit id="sv8#area50#page188#dau45" name="Dettaglio ristorante" linkOrder="sv8#area50#page188#dau45#ln512" gr:x="145" gr:y="0" entity="ent14" displayAttributes="ent14#att42 ent14#att46 ent14#att44 ent14#att45 ent14#att52">
+      <Selector id="sv8#area50#page188#dau45#su384" defaultPolicy="fill" booleanOperator="or">
+        <KeyCondition id="sv8#area50#page188#dau45#su384#kcond280" name="Dettaglio ristorante" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv8#area50#page188#dau45#su384#rcond143" name="piatto to dettaglioRistorante" predicate="in" implied="true" role="rel4#role8"/>
+      </Selector>
+      <Link id="sv8#area50#page188#dau45#ln510" name="dettaglio to migliori valutazioni" to="sv8#area50#page188#mdu33" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv8#area50#page188#dau45#ln511" name="dettaglio to valutazioni" to="sv8#area50#page188#mdu32" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv8#area50#page188#dau45#ln512" name="Flow58" to="sv8#area49#page186#scu73" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="142,-133,-218,52"/>
+      <Link id="sv8#area50#page188#dau45#ln513" name="dettaglio to migliori valutazioni" to="sv8#area50#page188#mdu33" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv8#area50#page188#dau45#ln514" name="dettaglio to valutazioni" to="sv8#area50#page188#mdu32" type="transport" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+    <MultiDataUnit id="sv8#area50#page188#mdu32" name="Valutazioni" gr:showAllParts="true" gr:x="280" gr:y="170" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4">
+      <SortAttribute attribute="ent15#att53" order="descending"/>
+      <Selector id="sv8#area50#page188#mdu32#su385" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv8#area50#page188#mdu32#su385#rcond144" name="RoleCondition17" predicate="in" implied="false" role="rel2#role3"/>
+        <KeyCondition id="sv8#area50#page188#mdu32#su385#kcond281" name="KeyCondition35" predicate="notIn" implied="false">
+          <Comment xml:space="preserve">Cos&#236; evito di ripresentare le valutazioni migliori mostrare nell'altro "dettagli multipli"</Comment>
+        </KeyCondition>
+      </Selector>
+    </MultiDataUnit>
+    <MultiDataUnit id="sv8#area50#page188#mdu33" name="Migliori valutazioni" gr:showAllParts="true" gr:x="0" gr:y="185" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4" maxResults="5">
+      <SortAttribute attribute="ent15#att53" order="descending"/>
+      <Selector id="sv8#area50#page188#mdu33#su386" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv8#area50#page188#mdu33#su386#rcond145" name="ristorante to valutazione" predicate="in" implied="false" role="rel2#role3"/>
+      </Selector>
+      <Link id="sv8#area50#page188#mdu33#ln515" name="Flow38" to="sv8#area50#page188#mdu32" type="transport" automaticCoupling="true" validate="true"/>
+      <Comment xml:space="preserve">Qui mostro solo le 5 valutazioni con voti migliori. Anche se non ho previsto la relazione derivta nel modello dei dati posso farlo solo da qui avendo specificato un massimo numero di valutazioni da mostrare ed ordinandole in base al voto.</Comment>
+      <Link id="sv8#area50#page188#mdu33#ln516" name="Flow38" to="sv8#area50#page188#mdu32" type="transport" automaticCoupling="true" validate="true"/>
+    </MultiDataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv8#area50#page188#dau45">
+          <layout:Attribute attribute="ent14#att42"/>
+          <layout:Attribute attribute="ent14#att46"/>
+          <layout:Attribute attribute="ent14#att44"/>
+          <layout:Attribute attribute="ent14#att45"/>
+          <layout:Attribute attribute="ent14#att52"/>
+          <layout:Link link="sv8#area50#page188#dau45#ln512"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv8#area50#page188#mdu32">
+          <layout:Attribute attribute="ent15#att53"/>
+          <layout:Attribute attribute="ent15#att54"/>
+          <layout:Attribute attribute="ent15#att4"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv8#area50#page188#mdu33">
+          <layout:Attribute attribute="ent15#att53"/>
+          <layout:Attribute attribute="ent15#att54"/>
+          <layout:Attribute attribute="ent15#att4"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv8#area49#page186#scu73">
+          <layout:Link link="sv8#area49#page186#scu73First"/>
+          <layout:Link link="sv8#area49#page186#scu73Previous"/>
+          <layout:Link link="sv8#area49#page186#scu73Block"/>
+          <layout:Link link="sv8#area49#page186#scu73Next"/>
+          <layout:Link link="sv8#area49#page186#scu73Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
