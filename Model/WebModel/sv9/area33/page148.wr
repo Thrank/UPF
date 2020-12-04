@@ -1,0 +1,72 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1320" gr:y="25" id="sv9#area33#page148" name="Gestione ristoranti" landmark="true">
+  <ContentUnits>
+    <GetUnit gr:x="0" gr:y="10" id="sv9#area33#page148#gtu20" name="Ristoratore connesso" contextParameters="UserCtxParam">
+      <Link id="sv9#area33#page148#gtu20#ln331" name="Flow331" to="sv9#area33#page148#seu66" type="transport" validate="true">
+        <LinkParameter id="sv9#area33#page148#gtu20#ln331#par543" name="UserCtxParam.oid_ristoranti di propriet&#224; [oid]" source="sv9#area33#page148#gtu20.UserCtxParam" target="sv9#area33#page148#seu66#su264#rcond88.userOID"/>
+      </Link>
+    </GetUnit>
+    <SelectorUnit gr:x="165" gr:y="0" id="sv9#area33#page148#seu66" name="Ristoranti ristoratore" entity="ent14" gr:showAllParts="true" distinctAttributes="ent14#att42">
+      <Selector id="sv9#area33#page148#seu66#su264" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv9#area33#page148#seu66#su264#rcond88" name="ristoranti di propriet&#224;" predicate="in" implied="false" role="rel1#role1"/>
+      </Selector>
+      <Link id="sv9#area33#page148#seu66#ln332" name="Flow332" to="sv9#area33#page148#scu56" automaticCoupling="true" type="transport" validate="true"/>
+      <SortAttribute attribute="ent14#att42" order="ascending"/>
+    </SelectorUnit>
+    <ScrollerUnit gr:x="365" gr:y="10" id="sv9#area33#page148#scu56" name="Scorri ristoranti" useCountQuery="false" entity="ent14" gr:showAllParts="true" linkOrder="sv9#area33#page148#scu56#ln333">
+      <Link id="sv9#area33#page148#scu56#ln333" name="Flow333" to="sv9#area33#page148#mdu29" automaticCoupling="true" type="automatic" validate="true"/>
+      <SortAttribute attribute="ent14#att42" order="ascending"/>
+    </ScrollerUnit>
+    <MultiDataUnit gr:x="500" gr:y="10" id="sv9#area33#page148#mdu29" name="Ristoranti ristoratore" entity="ent14" displayAttributes="ent14#att42" gr:showAllParts="true" linkOrder="sv9#area33#page148#mdu29#ln337">
+      <SortAttribute attribute="ent14#att42" order="ascending"/>
+      <Selector id="sv9#area33#page148#mdu29#su265" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area33#page148#mdu29#su265#kcond207" name="KeyCondition207" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv9#area33#page148#mdu29#ln337" name="Flow337" to="sv9#area33#page151#dau38" type="normal" validate="true">
+        <LinkParameter id="sv9#area33#page148#mdu29#ln337#par547" name="oid_KeyCondition220 [oid]" source="ent14#att40Array" target="sv9#area33#page151#dau38#su278#kcond220.ent14#att40"/>
+      </Link>
+    </MultiDataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area33#page148#scu56">
+          <layout:Link link="sv9#area33#page148#scu56First"/>
+          <layout:Link link="sv9#area33#page148#scu56Previous"/>
+          <layout:Link link="sv9#area33#page148#scu56Block"/>
+          <layout:Link link="sv9#area33#page148#scu56Next"/>
+          <layout:Link link="sv9#area33#page148#scu56Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area33#page148#mdu29">
+          <layout:Attribute attribute="ent14#att42"/>
+          <layout:Link link="sv9#area33#page148#mdu29#ln337"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

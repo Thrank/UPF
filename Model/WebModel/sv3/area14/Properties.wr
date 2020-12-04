@@ -1,9 +1,0 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area14" name="Ristorante" defaultPage="sv3#area14#page25" landmarks="sv3#area14#page26 sv3#area14#page25" landmark="true" gr:x="765" gr:y="30">
-  <OperationUnits>
-    <DeleteUnit gr:x="210" gr:y="160" id="sv3#area14#dlu13" name="Rimuovi Valutazione">
-      <Selector id="sv3#area14#dlu13#su37" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#area14#dlu13#su37#kcond37" name="KeyCondition37" predicate="in" implied="false"/>
-      </Selector>
-    </DeleteUnit>
-  </OperationUnits>
-</Area>

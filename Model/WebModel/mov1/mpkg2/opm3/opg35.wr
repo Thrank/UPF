@@ -1,0 +1,48 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#mpkg2#opm3#opg35" name="Modifica ristorante" transaction="true" gr:x="310" gr:y="60">
+  <OperationUnits>
+    <ModifyUnit id="mov1#mpkg2#opm3#opg35#mfu35" name="Aggiorna ristorante" gr:x="90" gr:y="0" entity="ent14">
+      <Selector id="mov1#mpkg2#opm3#opg35#mfu35#su312" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg2#opm3#opg35#mfu35#su312#kcond239" name="KeyCondition208" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#mpkg2#opm3#opg35#mfu35#oln87" name="OKFlow79" to="mov1#mpkg2#opm3#opg35#mfu36" gr:bendpoints="99,0,-1,-110">
+        <LinkParameter id="mov1#mpkg2#opm3#opg35#mfu35#oln87#par829" name="CAP_PASSING_CAP" sourceLinkParameter="mov1#mpkg2#opm3#icu5#ln381#par822" target="mov1#mpkg2#opm3#opg35#mfu36.ent16#att76"/>
+        <LinkParameter id="mov1#mpkg2#opm3#opg35#mfu35#oln87#par830" name="numero civico_PASSING_civico" sourceLinkParameter="mov1#mpkg2#opm3#icu5#ln381#par824" target="mov1#mpkg2#opm3#opg35#mfu36.ent16#att32"/>
+        <LinkParameter id="mov1#mpkg2#opm3#opg35#mfu35#oln87#par831" name="via/corso/piazza_PASSING_via/piazza/corso" sourceLinkParameter="mov1#mpkg2#opm3#icu5#ln381#par825" target="mov1#mpkg2#opm3#opg35#mfu36.ent16#att31"/>
+        <LinkParameter id="mov1#mpkg2#opm3#opg35#mfu35#oln87#par832" name="oid_indirizzo_PASSING_KeyCondition227 [oid]" sourceLinkParameter="mov1#mpkg2#opm3#icu5#ln381#par827" target="mov1#mpkg2#opm3#opg35#mfu36#su313#kcond240.ent16#att64"/>
+        <LinkParameter id="mov1#mpkg2#opm3#opg35#mfu35#oln87#par833" name="citt&#224;_nuova_PASSING" sourceLinkParameter="mov1#mpkg2#opm3#icu5#ln381#par828" passing="true"/>
+        <LinkParameter id="mov1#mpkg2#opm3#opg35#mfu35#oln87#par834" name="citt&#224;_PASSING" sourceLinkParameter="mov1#mpkg2#opm3#icu5#ln381#par823" passing="true"/>
+      </OKLink>
+    </ModifyUnit>
+    <ModifyUnit id="mov1#mpkg2#opm3#opg35#mfu36" name="Aggiorna indirizzo" gr:x="195" gr:y="110" entity="ent16">
+      <Selector id="mov1#mpkg2#opm3#opg35#mfu36#su313" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg2#opm3#opg35#mfu36#su313#kcond240" name="KeyCondition227" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#mpkg2#opm3#opg35#mfu36#oln88" name="OKFlow80" to="mov1#mpkg2#opm3#opg35#dcnu20">
+        <LinkParameter id="mov1#mpkg2#opm3#opg35#mfu36#oln88#par835" name="oid_KeyCondition229 [oid] [Indirizzo] [Target]" source="ent16#att64Array" target="mov1#mpkg2#opm3#opg35#dcnu20#su315#kcond242.ent16#att64"/>
+        <LinkParameter id="mov1#mpkg2#opm3#opg35#mfu36#oln88#par836" name="citt&#224;_PASSING_KeyCondition228 [oid] [Citt&#224;] [Source]" sourceLinkParameter="mov1#mpkg2#opm3#opg35#mfu35#oln87#par834" target="mov1#mpkg2#opm3#opg35#dcnu20#su314#kcond241.ent22#att27"/>
+        <LinkParameter id="mov1#mpkg2#opm3#opg35#mfu36#oln88#par837" name="citt&#224;_nuova_PASSING" sourceLinkParameter="mov1#mpkg2#opm3#opg35#mfu35#oln87#par833" passing="true"/>
+      </OKLink>
+    </ModifyUnit>
+    <DisconnectUnit id="mov1#mpkg2#opm3#opg35#dcnu20" name="Disconnetti vecchia citt&#224;" gr:x="0" gr:y="125" relationship="rel32#role64">
+      <SourceSelector id="mov1#mpkg2#opm3#opg35#dcnu20#su314" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg2#opm3#opg35#dcnu20#su314#kcond241" name="KeyCondition228" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg2#opm3#opg35#dcnu20#su315" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg2#opm3#opg35#dcnu20#su315#kcond242" name="KeyCondition229" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg2#opm3#opg35#dcnu20#oln89" name="OKFlow81" to="mov1#mpkg2#opm3#opg35#cnu19">
+        <LinkParameter id="mov1#mpkg2#opm3#opg35#dcnu20#oln89#par838" name="Target oid [Indirizzo]_KeyCondition230 [oid] [Indirizzo] [Source]" source="targetent16#att64" target="mov1#mpkg2#opm3#opg35#cnu19#su316#kcond243.ent16#att64"/>
+        <LinkParameter id="mov1#mpkg2#opm3#opg35#dcnu20#oln89#par839" name="citt&#224;_nuova_PASSING_KeyCondition231 [oid] [Citt&#224;] [Target]" sourceLinkParameter="mov1#mpkg2#opm3#opg35#mfu36#oln88#par837" target="mov1#mpkg2#opm3#opg35#cnu19#su317#kcond244.ent22#att27"/>
+      </OKLink>
+    </DisconnectUnit>
+    <ConnectUnit id="mov1#mpkg2#opm3#opg35#cnu19" name="Connetti a citt&#224;" gr:x="125" gr:y="285" relationship="rel32#role63">
+      <SourceSelector id="mov1#mpkg2#opm3#opg35#cnu19#su316" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg2#opm3#opg35#cnu19#su316#kcond243" name="KeyCondition230" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg2#opm3#opg35#cnu19#su317" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg2#opm3#opg35#cnu19#su317#kcond244" name="KeyCondition231" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg2#opm3#opg35#cnu19#oln90" name="OKFlow86" to="mov1#mpkg2#opm3#okcu2" automaticCoupling="true"/>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>

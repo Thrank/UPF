@@ -1,9 +1,0 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="SiteViewRistoratore" landmarks="sv2#area6 sv2#area7 sv2#area9 sv2#area10 sv2#area8" homePage="sv2#area6#page9">
-  <OperationUnits>
-    <LoginUnit id="sv2#lgu2" name="Login" gr:x="460" gr:y="175">
-      <OKLink id="sv2#lgu2#oln1" name="OKFlow1" to="sv2#area6#page9" automaticCoupling="true"/>
-      <KOLink id="sv2#lgu2#kln1" name="KOFlow1" to="sv2#mpage2#mssu6" automaticCoupling="true"/>
-    </LoginUnit>
-    <LogoutUnit gr:x="550" gr:y="220" id="sv2#lou3" name="Logout"/>
-  </OperationUnits>
-</SiteView>

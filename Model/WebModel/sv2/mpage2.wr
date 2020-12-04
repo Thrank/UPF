@@ -1,8 +1,0 @@
-<MasterPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#mpage2" name="Accesso e Registrazione" gr:x="420" gr:y="35">
-  <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv2#mpage2#enu9" name="Modulo di Accesso" linkOrder="sv2#mpage2#enu9#ln5">
-      <Link id="sv2#mpage2#enu9#ln5" name="Flow5" to="sv2#lgu2" automaticCoupling="true" type="normal" validate="true"/>
-    </EntryUnit>
-    <MultiMessageUnit gr:x="135" gr:y="0" id="sv2#mpage2#mssu6" name="Errore Accesso"/>
-  </ContentUnits>
-</MasterPage>

@@ -1,35 +1,10 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="2780" gr:y="1260" id="sv6#opg24" name="Aggiungi indirizzo" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="2780" gr:y="1260" id="sv6#opg24" name="Modifica indirizzo" transaction="true">
   <OperationUnits>
-    <CreateUnit gr:x="10" gr:y="0" id="sv6#opg24#cru23" name="Aggiungi indirizzo" entity="ent16">
-      <OKLink id="sv6#opg24#cru23#oln72" name="OKFlow72" to="sv6#opg24#cnu23">
-        <LinkParameter id="sv6#opg24#cru23#oln72#par526" name="oid_KeyCondition137 [oid] [Indirizzo] [Source]" source="ent16#att64Array" target="sv6#opg24#cnu23#su178#kcond137.ent16#att64"/>
-        <LinkParameter id="sv6#opg24#cru23#oln72#par530" name="UserCtxParam.oid_PASSING_KeyCondition138 [oid] [Utente] [Target]" sourceLinkParameter="sv6#area31#page44#enu49#ln201#par529" target="sv6#opg24#cnu23#su179#kcond138.userOID"/>
-        <LinkParameter id="sv6#opg24#cru23#oln72#par531" name="citt&#224;_PASSING" sourceLinkParameter="sv6#area31#page44#enu49#ln201#par528" passing="true"/>
-      </OKLink>
-      <KOLink id="sv6#opg24#cru23#kln76" name="KOFlow76" to="sv6#page66#alt2#page73#mssu16" automaticCoupling="true" gr:bendpoints="96,-7,146,333;85,-312,135,28"/>
-    </CreateUnit>
-    <ConnectUnit gr:x="5" gr:y="115" id="sv6#opg24#cnu23" name="Connetti a utente" relationship="rel11#role22">
-      <SourceSelector id="sv6#opg24#cnu23#su178" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv6#opg24#cnu23#su178#kcond137" name="KeyCondition137" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv6#opg24#cnu23#su179" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv6#opg24#cnu23#su179#kcond138" name="KeyCondition138" predicate="in" implied="false"/>
-      </TargetSelector>
-      <OKLink id="sv6#opg24#cnu23#oln73" name="OKFlow73" to="sv6#opg24#cnu28">
-        <LinkParameter id="sv6#opg24#cnu23#oln73#par532" name="Source oid [Indirizzo]_KeyCondition147 [oid] [Indirizzo] [Source]" source="sourceent16#att64" target="sv6#opg24#cnu28#su190#kcond147.ent16#att64"/>
-        <LinkParameter id="sv6#opg24#cnu23#oln73#par533" name="citt&#224;_PASSING_KeyCondition156 [oid] [Citt&#224;] [Target]" sourceLinkParameter="sv6#opg24#cru23#oln72#par531" target="sv6#opg24#cnu28#su199#kcond156.ent22#att27"/>
-      </OKLink>
-      <KOLink id="sv6#opg24#cnu23#kln77" name="KOFlow77" to="sv6#page66#alt2#page107#mssu17" automaticCoupling="true" gr:bendpoints="-106,2,-56,352;-101,-228,-51,122"/>
-    </ConnectUnit>
-    <ConnectUnit gr:x="0" gr:y="280" id="sv6#opg24#cnu28" name="Connetti a citt&#224;" relationship="rel32#role63">
-      <SourceSelector id="sv6#opg24#cnu28#su190" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv6#opg24#cnu28#su190#kcond147" name="KeyCondition147" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv6#opg24#cnu28#su199" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv6#opg24#cnu28#su199#kcond156" name="KeyCondition156" predicate="in" implied="false"/>
-      </TargetSelector>
-      <KOLink id="sv6#opg24#cnu28#kln78" name="KOFlow78" to="sv6#page66#alt2#page107#mssu17" automaticCoupling="true" gr:bendpoints="-122,-17,-77,498;-126,-420,-81,95"/>
-      <OKLink id="sv6#opg24#cnu28#oln74" name="OKFlow74" to="sv6#area31#page44" automaticCoupling="true" gr:bendpoints="-115,26,340,191"/>
-    </ConnectUnit>
+    <ModifyUnit id="sv6#opg24#mfu15" entity="ent16" gr:x="10" gr:y="0" name="Modifica indirizzo">
+      <KOLink id="sv6#opg24#mfu15#kln44" name="KOFlow76" to="sv6#page66#alt2#page73#mssu16" automaticCoupling="true" gr:bendpoints="96,-7,146,333;85,-312,135,28"/>
+      <Selector id="sv6#opg24#mfu15#su144" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#opg24#mfu15#su144#kcond113" name="KeyCondition113" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
   </OperationUnits>
 </OperationGroup>

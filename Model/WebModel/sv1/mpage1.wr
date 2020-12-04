@@ -1,5 +1,0 @@
-<MasterPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="375" gr:y="15" id="sv1#mpage1" name="Accesso e Registrazione">
-  <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv1#mpage1#enu7" name="Modulo Accesso"/>
-  </ContentUnits>
-</MasterPage>

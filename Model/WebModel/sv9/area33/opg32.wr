@@ -1,0 +1,42 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1495" gr:y="670" id="sv9#area33#opg32" name="Modifica ristorante" transaction="true">
+  <OperationUnits>
+    <ModifyUnit gr:x="90" gr:y="0" id="sv9#area33#opg32#mfu31" name="Aggiorna ristorante" entity="ent14">
+      <Selector id="sv9#area33#opg32#mfu31#su266" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area33#opg32#mfu31#su266#kcond208" name="KeyCondition208" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv9#area33#opg32#mfu31#oln79" name="OKFlow79" to="sv9#area33#opg32#mfu32" gr:bendpoints="99,0,-1,-110"/>
+      <KOLink id="sv9#area33#opg32#mfu31#kln81" name="KOFlow81" to="sv9#area33#page154#alt23#page159#mssu36" automaticCoupling="true" gr:bendpoints="-186,41,-1191,-594;-185,390,-1190,-245;222,637,-783,2"/>
+    </ModifyUnit>
+    <ModifyUnit gr:x="195" gr:y="110" id="sv9#area33#opg32#mfu32" name="Aggiorna indirizzo" entity="ent16">
+      <Selector id="sv9#area33#opg32#mfu32#su296" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area33#opg32#mfu32#su296#kcond227" name="KeyCondition227" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv9#area33#opg32#mfu32#oln80" name="OKFlow80" to="sv9#area33#opg32#dcnu18">
+        <LinkParameter id="sv9#area33#opg32#mfu32#oln80#par647" name="oid_KeyCondition229 [oid] [Indirizzo] [Target]" source="ent16#att64Array" target="sv9#area33#opg32#dcnu18#su298#kcond229.ent16#att64"/>
+      </OKLink>
+      <KOLink id="sv9#area33#opg32#mfu32#kln83" name="KOFlow83" to="sv9#area33#page154#alt23#page159#mssu36" automaticCoupling="true" gr:bendpoints="-70,-43,-975,-568;-279,-47,-1184,-572;-276,275,-1181,-250;125,517,-780,-8;848,517,-57,-8"/>
+    </ModifyUnit>
+    <DisconnectUnit gr:x="0" gr:y="125" id="sv9#area33#opg32#dcnu18" name="Disconnetti vecchia citt&#224;" relationship="rel32#role64">
+      <SourceSelector id="sv9#area33#opg32#dcnu18#su297" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area33#opg32#dcnu18#su297#kcond228" name="KeyCondition228" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv9#area33#opg32#dcnu18#su298" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area33#opg32#dcnu18#su298#kcond229" name="KeyCondition229" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv9#area33#opg32#dcnu18#oln81" name="OKFlow81" to="sv9#area33#opg32#cnu17">
+        <LinkParameter id="sv9#area33#opg32#dcnu18#oln81#par649" name="Target oid [Indirizzo]_KeyCondition230 [oid] [Indirizzo] [Source]" source="targetent16#att64" target="sv9#area33#opg32#cnu17#su299#kcond230.ent16#att64"/>
+      </OKLink>
+      <KOLink id="sv9#area33#opg32#dcnu18#kln82" name="KOFlow82" to="sv9#area33#page154#alt23#page156#mssu33" automaticCoupling="true" gr:bendpoints="9,286,-1086,156;270,420,-825,290;1233,426,138,296;1230,191,135,61"/>
+    </DisconnectUnit>
+    <ConnectUnit gr:x="125" gr:y="285" id="sv9#area33#opg32#cnu17" name="Connetti a citt&#224;" relationship="rel32#role63">
+      <SourceSelector id="sv9#area33#opg32#cnu17#su299" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area33#opg32#cnu17#su299#kcond230" name="KeyCondition230" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv9#area33#opg32#cnu17#su300" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area33#opg32#cnu17#su300#kcond231" name="KeyCondition231" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv9#area33#opg32#cnu17#oln82" name="OKFlow82" to="sv9#area33#page148" automaticCoupling="true" gr:bendpoints="154,-63,204,867;158,-809,208,121"/>
+      <KOLink id="sv9#area33#opg32#cnu17#kln85" name="KOFlow85" to="sv9#area33#page154#alt23#page160#mssu37" automaticCoupling="true" gr:bendpoints="162,238,-828,38;893,238,-97,38"/>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>

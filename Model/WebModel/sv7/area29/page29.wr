@@ -295,9 +295,9 @@
         </IndexUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="0" gr:y="175" id="sv7#area29#page29#alt1#page49" name="Ristoranti filtrati">
+    <Page gr:x="0" gr:y="180" id="sv7#area29#page29#alt1#page49" name="Ristoranti filtrati">
       <ContentUnits>
-        <ScrollerUnit gr:x="0" gr:y="0" id="sv7#area29#page29#alt1#page49#scu6" name="Scorri ristoranti" useCountQuery="false" entity="ent14" linkOrder="sv7#area29#page29#alt1#page49#scu6#ln10" blockFactor="10">
+        <ScrollerUnit gr:x="0" gr:y="10" id="sv7#area29#page29#alt1#page49#scu6" name="Scorri ristoranti" useCountQuery="false" entity="ent14" linkOrder="sv7#area29#page29#alt1#page49#scu6#ln10" blockFactor="10">
           <SortAttribute attribute="ent14#att42" order="ascending"/>
           <Selector id="sv7#area29#page29#alt1#page49#scu6#su29" defaultPolicy="fill" booleanOperator="or" expression="( IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#acond3) OR ( IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#acond4) AND IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#acond4) ) OR IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#acond1) ) AND IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#rcond4) AND IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#rcond1) AND IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#rcond3)">
             <RelationshipRoleCondition id="sv7#area29#page29#alt1#page49#scu6#su29#rcond1" name="tipologia cucina" predicate="in" implied="false" role="rel7#role13"/>
@@ -310,7 +310,7 @@
           </Selector>
           <Link id="sv7#area29#page29#alt1#page49#scu6#ln10" name="Flow10" to="sv7#area29#page29#alt1#page49#inu16" automaticCoupling="true" type="automatic" validate="true"/>
         </ScrollerUnit>
-        <IndexUnit gr:x="270" gr:y="5" id="sv7#area29#page29#alt1#page49#inu16" name="Elenco ristoranti filtrati" entity="ent14" displayAttributes="ent14#att42 ent14#att13" gr:showAllParts="true" linkOrder="sv7#area29#page29#alt1#page49#inu16#ln19">
+        <IndexUnit gr:x="270" gr:y="0" id="sv7#area29#page29#alt1#page49#inu16" name="Elenco ristoranti filtrati" entity="ent14" displayAttributes="ent14#att42 ent14#att13" gr:showAllParts="true" linkOrder="sv7#area29#page29#alt1#page49#inu16#ln19">
           <SortAttribute attribute="ent14#att42" order="ascending"/>
           <Selector id="sv7#area29#page29#alt1#page49#inu16#su33" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="sv7#area29#page29#alt1#page49#inu16#su33#kcond50" name="KeyCondition50" predicate="in" implied="false"/>

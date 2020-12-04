@@ -14,7 +14,7 @@
       <Selector id="sv6#area31#page44#mciu3#su182" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv6#area31#page44#mciu3#su182#kcond140" predicate="in" implied="false" name="KeyCondition137"/>
       </Selector>
-      <Link id="sv6#area31#page44#mciu3#ln223" name="Flow223" to="sv6#area31#page44#mciu6" type="normal" validate="true">
+      <Link id="sv6#area31#page44#mciu3#ln223" name="Flow223" to="sv6#area31#page44#enu50" type="normal" validate="true">
         <LinkParameter id="sv6#area31#page44#mciu3#ln223#par442" name="Checked oid_PASSING" source="ent1#att1Checked" passing="true"/>
         <LinkParameter id="sv6#area31#page44#mciu3#ln223#par460" name="oid_PASSING" sourceLinkParameter="sv6#area31#page44#scu32#ln200#par459" passing="true"/>
       </Link>
@@ -28,50 +28,29 @@
         <LinkParameter id="sv6#area31#page44#dau23#ln218#par456" name="oid_PASSING" source="data.ent14#att40" passing="true"/>
       </Link>
     </DataUnit>
-    <ScrollerUnit gr:x="20" gr:y="155" id="sv6#area31#page44#scu34" name="Scorri indirizzi utente" useCountQuery="false" entity="ent16" linkOrder="sv6#area31#page44#scu34#ln220">
-      <Selector id="sv6#area31#page44#scu34#su185" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv6#area31#page44#scu34#su185#rcond50" name="ottieni indirizzi" predicate="in" implied="false" role="rel11#role21"/>
-      </Selector>
-      <Link id="sv6#area31#page44#scu34#ln220" name="Flow207" to="sv6#area31#page44#mciu6" type="automatic" validate="true">
-        <LinkParameter id="sv6#area31#page44#scu34#ln220#par464" name="oid_KeyCondition141 [oid]" source="ent16#att64Array" target="sv6#area31#page44#mciu6#su186#kcond143.ent16#att64"/>
-        <LinkParameter id="sv6#area31#page44#scu34#ln220#par465" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#gtu5#ln204#par463" passing="true"/>
-      </Link>
-    </ScrollerUnit>
-    <EntryUnit gr:x="405" gr:y="160" id="sv6#area31#page44#enu49" name="Inserisci nuovo indirizzo" fieldOrder="sv6#area31#page44#enu49#fld108 sv6#area31#page44#enu49#fld107 sv6#area31#page44#enu49#fld106 sv6#area31#page44#enu49#sfld25" linkOrder="sv6#area31#page44#enu49#ln201" gr:showAllParts="true">
+    <EntryUnit gr:x="420" gr:y="150" id="sv6#area31#page44#enu49" name="Modifica indirizzo" fieldOrder="sv6#area31#page44#enu49#fld108 sv6#area31#page44#enu49#fld107 sv6#area31#page44#enu49#fld106 sv6#area31#page44#enu49#sfld25" linkOrder="sv6#area31#page44#enu49#ln201" gr:showAllParts="true">
       <SelectionField id="sv6#area31#page44#enu49#sfld25" name="citt&#224;" type="string" modifiable="true"/>
       <Field id="sv6#area31#page44#enu49#fld106" name="CAP" type="string" modifiable="true"/>
       <Field id="sv6#area31#page44#enu49#fld107" name="civico" type="string" modifiable="true"/>
       <Field id="sv6#area31#page44#enu49#fld108" name="via/piazza/corso" type="string" modifiable="true"/>
-      <Link id="sv6#area31#page44#enu49#ln201" name="Flow201" to="sv6#opg24#cru23" type="normal" validate="true">
+      <Link id="sv6#area31#page44#enu49#ln201" name="Flow201" to="sv6#opg24#mfu15" type="normal" validate="true">
         <LinkParameter id="sv6#area31#page44#enu49#ln201#par528" name="citt&#224;_PASSING" source="sv6#area31#page44#enu49#sfld25" passing="true"/>
         <LinkParameter id="sv6#area31#page44#enu49#ln201#par529" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#gtu5#ln202#par523" passing="true"/>
-        <LinkParameter id="sv6#area31#page44#enu49#ln201#par534" name="CAP_CAP" source="sv6#area31#page44#enu49#fld106" target="sv6#opg24#cru23.ent16#att76"/>
-        <LinkParameter id="sv6#area31#page44#enu49#ln201#par535" name="civico_civico" source="sv6#area31#page44#enu49#fld107" target="sv6#opg24#cru23.ent16#att32"/>
-        <LinkParameter id="sv6#area31#page44#enu49#ln201#par536" name="via/piazza/corso_via/piazza/corso" source="sv6#area31#page44#enu49#fld108" target="sv6#opg24#cru23.ent16#att31"/>
+        <LinkParameter id="sv6#area31#page44#enu49#ln201#par534" name="CAP_CAP" source="sv6#area31#page44#enu49#fld106" target="sv6#opg24#mfu15.ent16#att76"/>
+        <LinkParameter id="sv6#area31#page44#enu49#ln201#par535" name="civico_civico" source="sv6#area31#page44#enu49#fld107" target="sv6#opg24#mfu15.ent16#att32"/>
+        <LinkParameter id="sv6#area31#page44#enu49#ln201#par536" name="via/piazza/corso_via/piazza/corso" source="sv6#area31#page44#enu49#fld108" target="sv6#opg24#mfu15.ent16#att31"/>
       </Link>
     </EntryUnit>
-    <MultiChoiceIndexUnit id="sv6#area31#page44#mciu6" entity="ent16" gr:x="220" gr:y="135" name="Lista indirizzi" linkOrder="sv6#area31#page44#mciu6#ln224" displayAttributes="ent16#att31 ent16#att32 ent16#att76" gr:showAllParts="true">
-      <Selector id="sv6#area31#page44#mciu6#su186" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv6#area31#page44#mciu6#su186#kcond143" name="KeyCondition141" predicate="in" implied="false"/>
-      </Selector>
-      <Link id="sv6#area31#page44#mciu6#ln224" name="Flow224" to="sv6#area31#page44#enu50" type="normal" validate="true">
-        <LinkParameter id="sv6#area31#page44#mciu6#ln224#par461" name="Checked oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu3#ln223#par442" passing="true"/>
-        <LinkParameter id="sv6#area31#page44#mciu6#ln224#par462" name="oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu3#ln223#par460" passing="true"/>
-        <LinkParameter id="sv6#area31#page44#mciu6#ln224#par466" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#page44#scu34#ln220#par465" passing="true"/>
-        <LinkParameter id="sv6#area31#page44#mciu6#ln224#par518" name="Checked oid_PASSING" source="ent16#att64Checked" passing="true"/>
-      </Link>
-      <SortAttribute attribute="ent16#att64" order="ascending"/>
-    </MultiChoiceIndexUnit>
     <EntryUnit gr:x="150" gr:y="305" id="sv6#area31#page44#enu50" name="Inserisci metodo di pagamento" fieldOrder="sv6#area31#page44#enu50#sfld26 sv6#area31#page44#enu50#sfld27" gr:showAllParts="true" linkOrder="sv6#area31#page44#enu50#ln199">
       <SelectionField id="sv6#area31#page44#enu50#sfld26" name="metodo" type="string"/>
       <SelectionField id="sv6#area31#page44#enu50#sfld27" name="promozione" type="string" modifiable="true"/>
       <Link id="sv6#area31#page44#enu50#ln199" name="Flow199" to="sv6#opg23#tmu10" type="normal" validate="true">
-        <LinkParameter id="sv6#area31#page44#enu50#ln199#par484" name="Checked oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu6#ln224#par461" passing="true"/>
         <LinkParameter id="sv6#area31#page44#enu50#ln199#par486" name="metodo_PASSING" source="sv6#area31#page44#enu50#sfld26" passing="true"/>
         <LinkParameter id="sv6#area31#page44#enu50#ln199#par487" name="promozione_PASSING" source="sv6#area31#page44#enu50#sfld27" passing="true"/>
-        <LinkParameter id="sv6#area31#page44#enu50#ln199#par488" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu6#ln224#par466" passing="true"/>
-        <LinkParameter id="sv6#area31#page44#enu50#ln199#par507" name="oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu6#ln224#par462" passing="true"/>
-        <LinkParameter id="sv6#area31#page44#enu50#ln199#par519" name="Checked oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu6#ln224#par518" passing="true"/>
+        <LinkParameter id="sv6#area31#page44#enu50#ln199#par33" name="Checked oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu3#ln223#par442" passing="true"/>
+        <LinkParameter id="sv6#area31#page44#enu50#ln199#par34" name="oid_PASSING" sourceLinkParameter="sv6#area31#page44#dau24#ln90#par31" passing="true"/>
+        <LinkParameter id="sv6#area31#page44#enu50#ln199#par35" name="oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu3#ln223#par460" passing="true"/>
+        <LinkParameter id="sv6#area31#page44#enu50#ln199#par36" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#page44#dau24#ln90#par32" passing="true"/>
       </Link>
     </EntryUnit>
     <SelectorUnit gr:x="400" gr:y="310" id="sv6#area31#page44#seu54" name="Promozioni" entity="ent25" gr:showAllParts="false">
@@ -87,6 +66,16 @@
         <LinkParameter id="sv6#area31#page44#seu14#ln203#par525" name="oid_citt&#224; [output]" source="ent22#att27Array" target="sv6#area31#page44#enu49#sfld25_output"/>
       </Link>
     </SelectorUnit>
+    <DataUnit gr:x="30" gr:y="155" id="sv6#area31#page44#dau24" name="Indirizzo" entity="ent16">
+      <Selector id="sv6#area31#page44#dau24#su146" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area31#page44#dau24#su146#kcond115" name="KeyCondition115" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv6#area31#page44#dau24#su146#rcond57" name="RoleCondition57" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv6#area31#page44#dau24#ln90" name="Flow90" to="sv6#area31#page44#enu50" type="transport" validate="true">
+        <LinkParameter id="sv6#area31#page44#dau24#ln90#par31" name="oid_PASSING" source="data.ent16#att64" passing="true"/>
+        <LinkParameter id="sv6#area31#page44#dau24#ln90#par32" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#gtu5#ln39#par30" passing="true"/>
+      </Link>
+    </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -190,7 +179,9 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv6#area31#page44#dau24"/>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

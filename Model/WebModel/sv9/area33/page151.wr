@@ -1,0 +1,92 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1990" gr:y="245" id="sv9#area33#page151" name="Elimina ristorante">
+  <ContentUnits>
+    <EntryUnit gr:x="70" gr:y="160" id="sv9#area33#page151#enu60" name="Elimina ristorante" linkOrder="sv9#area33#page151#enu60#ln336">
+      <Link id="sv9#area33#page151#enu60#ln336" name="Flow336" to="sv9#area33#opg31#dcnu13" type="normal" validate="true">
+        <LinkParameter id="sv9#area33#page151#enu60#ln336#par587" name="oid_PASSING_KeyCondition210 [oid] [Ristorante] [Source]" sourceLinkParameter="sv9#area33#page151#dau38#ln350#par584" target="sv9#area33#opg31#dcnu13#su268#kcond210.ent14#att40"/>
+        <LinkParameter id="sv9#area33#page151#enu60#ln336#par588" name="RistoranteToIndirizzo.oid_PASSING_KeyCondition211 [oid] [Indirizzo] [Target]" sourceLinkParameter="sv9#area33#page151#dau38#ln350#par585" target="sv9#area33#opg31#dcnu13#su269#kcond211.ent16#att64"/>
+        <LinkParameter id="sv9#area33#page151#enu60#ln336#par594" name="oid_PASSING" sourceLinkParameter="sv9#area33#page151#dau38#ln350#par584" passing="true"/>
+      </Link>
+    </EntryUnit>
+    <DataUnit gr:x="0" gr:y="0" id="sv9#area33#page151#dau38" name="Ristorante" entity="ent14" gr:showAllParts="true" displayAttributes="ent14#att42 ent14#att44 ent14#att45 ent14#att46 ent14#att52 ent14#att13">
+      <Selector id="sv9#area33#page151#dau38#su278" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area33#page151#dau38#su278#kcond220" name="KeyCondition220" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv9#area33#page151#dau38#ln350" name="Flow350" to="sv9#area33#page151#enu60" type="transport" validate="true">
+        <LinkParameter id="sv9#area33#page151#dau38#ln350#par584" name="oid_PASSING" source="data.ent14#att40" passing="true"/>
+        <LinkParameter id="sv9#area33#page151#dau38#ln350#par585" name="RistoranteToIndirizzo.oid_PASSING" source="data.rel10#role19_ent16#att64" passing="true"/>
+        <LinkParameter id="sv9#area33#page151#dau38#ln350#par586" name="RistoranteToRistoratore.oid_PASSING" source="data.rel1#role2_userOID" passing="true"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area33#page151#enu60">
+          <layout:Link link="sv9#area33#page151#enu60#ln336"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area33#page151#dau38">
+          <layout:Attribute attribute="ent14#att42"/>
+          <layout:Attribute attribute="ent14#att44"/>
+          <layout:Attribute attribute="ent14#att45"/>
+          <layout:Attribute attribute="ent14#att46"/>
+          <layout:Attribute attribute="ent14#att52"/>
+          <layout:Attribute attribute="ent14#att13"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

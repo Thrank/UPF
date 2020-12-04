@@ -1,9 +1,0 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area7" name="Personale" defaultPage="sv2#area7#page11" landmarks="sv2#area7#page11" landmark="true" gr:x="25" gr:y="425">
-  <OperationUnits>
-    <ModifyUnit gr:x="0" gr:y="160" id="sv2#area7#mfu8" name="Modifica Dati Personali">
-      <Selector id="sv2#area7#mfu8#su21" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#area7#mfu8#su21#kcond21" name="KeyCondition21" predicate="in" implied="false"/>
-      </Selector>
-    </ModifyUnit>
-  </OperationUnits>
-</Area>

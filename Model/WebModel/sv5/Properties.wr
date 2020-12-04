@@ -1,7 +1,5 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5" name="Amministratore" landmarks="sv5#area21 sv5#area20">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5" name="Amministratore" landmarks="sv5#area42 sv5#area44 sv5#area41">
   <OperationUnits>
-    <LoginUnit id="sv5#lgu5" name="Login" landmark="false" gr:x="430" gr:y="635">
-      <KOLink id="sv5#lgu5#kln43" name="KOFlow5" to="sv5#page74#alt9#page75#mssu18" automaticCoupling="true"/>
-    </LoginUnit>
+    <LogoutUnit id="sv5#lou11" name="Esci" gr:x="40" gr:y="90" siteView="sv7"/>
   </OperationUnits>
 </SiteView>

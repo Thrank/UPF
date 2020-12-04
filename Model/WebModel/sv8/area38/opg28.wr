@@ -1,0 +1,53 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv8#area38#opg28" name="Modifica profilo" transaction="true" gr:x="590" gr:y="20">
+  <OperationUnits>
+    <ModifyUnit id="sv8#area38#opg28#mfu26" name="Aggiorna dati profilo" gr:x="0" gr:y="25" entity="ent13">
+      <Selector id="sv8#area38#opg28#mfu26#su223" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv8#area38#opg28#mfu26#su223#kcond176" name="KeyCondition56" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv8#area38#opg28#mfu26#oln52" name="OKFlow17" to="sv8#area38#opg28#mfu27">
+        <LinkParameter id="sv8#area38#opg28#mfu26#oln52#par428" name="CAP_PASSING_CAP" sourceLinkParameter="sv8#area38#page127#enu47#ln265#par413" target="sv8#area38#opg28#mfu27.ent16#att76"/>
+        <LinkParameter id="sv8#area38#opg28#mfu26#oln52#par429" name="numero civico_PASSING_civico" sourceLinkParameter="sv8#area38#page127#enu47#ln265#par415" target="sv8#area38#opg28#mfu27.ent16#att32"/>
+        <LinkParameter id="sv8#area38#opg28#mfu26#oln52#par430" name="oid_PASSING_KeyCondition56 [oid]" sourceLinkParameter="sv8#area38#page127#enu47#ln265#par417" target="sv8#area38#opg28#mfu27#su228#kcond181.ent16#att64"/>
+        <LinkParameter id="sv8#area38#opg28#mfu26#oln52#par431" name="via/corso/piazza_PASSING_via/piazza/corso" sourceLinkParameter="sv8#area38#page127#enu47#ln265#par416" target="sv8#area38#opg28#mfu27.ent16#att31"/>
+        <LinkParameter id="sv8#area38#opg28#mfu26#oln52#par432" name="citt&#224;_PASSING" sourceLinkParameter="sv8#area38#page127#enu47#ln265#par414" passing="true"/>
+        <LinkParameter id="sv8#area38#opg28#mfu26#oln52#par433" name="oid_PASSING" source="userOIDArray" passing="true"/>
+      </OKLink>
+      <KOLink id="sv8#area38#opg28#mfu26#kln55" name="KOFlow22" to="sv8#area38#page128#alt19#page129#mssu29" automaticCoupling="true" gr:bendpoints="87,45,-338,15"/>
+    </ModifyUnit>
+    <ConnectUnit id="sv8#area38#opg28#cnu15" name="Connetti a citt&#224;" gr:x="165" gr:y="0" relationship="rel32#role63">
+      <SourceSelector id="sv8#area38#opg28#cnu15#su224" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv8#area38#opg28#cnu15#su224#kcond177" name="KeyCondition69" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv8#area38#opg28#cnu15#su225" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv8#area38#opg28#cnu15#su225#kcond178" name="KeyCondition70" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="sv8#area38#opg28#cnu15#kln56" name="KOFlow19" to="sv8#area38#page128#alt19#page129#mssu29" automaticCoupling="true"/>
+      <OKLink id="sv8#area38#opg28#cnu15#oln53" name="OKFlow21" to="sv8#area38#page127" automaticCoupling="true" gr:bendpoints="-106,-48,439,-353;-230,-41,315,-346"/>
+    </ConnectUnit>
+    <DisconnectUnit id="sv8#area38#opg28#dcnu11" name="Sconnetti da citt&#224;" gr:x="165" gr:y="150" relationship="rel32#role64">
+      <SourceSelector id="sv8#area38#opg28#dcnu11#su226" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv8#area38#opg28#dcnu11#su226#kcond179" name="KeyCondition75" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv8#area38#opg28#dcnu11#su227" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv8#area38#opg28#dcnu11#su227#kcond180" name="KeyCondition76" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv8#area38#opg28#dcnu11#oln54" name="OKFlow19" to="sv8#area38#opg28#cnu15">
+        <LinkParameter id="sv8#area38#opg28#dcnu11#oln54#par434" name="oid_PASSING_KeyCondition69 [oid] [Indirizzo] [Source]" sourceLinkParameter="sv8#area38#opg28#mfu27#oln55#par440" target="sv8#area38#opg28#cnu15#su224#kcond177.ent16#att64"/>
+        <LinkParameter id="sv8#area38#opg28#dcnu11#oln54#par436" name="citt&#224;_PASSING_KeyCondition70 [oid] [Citt&#224;] [Target]" sourceLinkParameter="sv8#area38#opg28#mfu27#oln55#par439" target="sv8#area38#opg28#cnu15#su225#kcond178.ent22#att27"/>
+      </OKLink>
+      <KOLink id="sv8#area38#opg28#dcnu11#kln57" name="KOFlow20" to="sv8#area38#page128#alt19#page129#mssu29" automaticCoupling="true"/>
+    </DisconnectUnit>
+    <ModifyUnit id="sv8#area38#opg28#mfu27" name="Aggiorna indirizzo" gr:x="5" gr:y="160" entity="ent16">
+      <Selector id="sv8#area38#opg28#mfu27#su228" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv8#area38#opg28#mfu27#su228#kcond181" name="KeyCondition56" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv8#area38#opg28#mfu27#oln55" name="OKFlow18" to="sv8#area38#opg28#dcnu11">
+        <LinkParameter id="sv8#area38#opg28#mfu27#oln55#par437" name="citt&#224;_PASSING_KeyCondition75 [oid] [Citt&#224;] [Source]" sourceLinkParameter="sv8#area38#opg28#mfu26#oln52#par432" target="sv8#area38#opg28#dcnu11#su226#kcond179.ent22#att27"/>
+        <LinkParameter id="sv8#area38#opg28#mfu27#oln55#par438" name="oid_KeyCondition76 [oid] [Indirizzo] [Target]" source="ent16#att64Array" target="sv8#area38#opg28#dcnu11#su227#kcond180.ent16#att64"/>
+        <LinkParameter id="sv8#area38#opg28#mfu27#oln55#par439" name="citt&#224;_PASSING" sourceLinkParameter="sv8#area38#opg28#mfu26#oln52#par432" passing="true"/>
+        <LinkParameter id="sv8#area38#opg28#mfu27#oln55#par440" name="oid_PASSING" source="ent16#att64Array" passing="true"/>
+      </OKLink>
+      <KOLink id="sv8#area38#opg28#mfu27#kln58" name="KOFlow21" to="sv8#area38#page128#alt19#page129#mssu29" automaticCoupling="true" gr:bendpoints="74,-59,-351,46"/>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationGroup>

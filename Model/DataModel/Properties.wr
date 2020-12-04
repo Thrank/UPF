@@ -122,7 +122,7 @@
     <RelationshipRole2 id="rel10#role20" name="IndirizzoToRistorante" maxCard="1"/>
   </Relationship>
   <Relationship id="rel11" name="Utente_Indirizzo" sourceEntity="User" targetEntity="ent16" gr:bendpoints="192,167,-28,-253">
-    <RelationshipRole1 id="rel11#role21" name="UtenteToIndirizzo" maxCard="N"/>
+    <RelationshipRole1 id="rel11#role21" name="UtenteToIndirizzo" maxCard="1"/>
     <RelationshipRole2 id="rel11#role22" name="IndirizzoToUtente" maxCard="1"/>
   </Relationship>
   <Relationship id="rel13" name="Tipologia Cucina_Piatto" sourceEntity="ent10" targetEntity="ent1" gr:bendpoints="4,169,-251,-96">

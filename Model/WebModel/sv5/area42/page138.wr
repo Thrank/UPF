@@ -1,0 +1,244 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv5#area42#page138" name="Profilo" landmark="true" gr:x="0" gr:y="0">
+  <ContentUnits>
+    <GetUnit id="sv5#area42#page138#gtu19" name="Dati utente" gr:x="0" gr:y="20" contextParameters="UserCtxParam">
+      <Link id="sv5#area42#page138#gtu19#ln295" name="Flow66" to="sv5#area42#page138#dau34" type="transport" validate="true">
+        <LinkParameter id="sv5#area42#page138#gtu19#ln295#par465" name="UserCtxParam.oid_KeyCondition45 [oid]" source="sv5#area42#page138#gtu19.UserCtxParam" target="sv5#area42#page138#dau34#su240#kcond189.userOID"/>
+        <LinkParameter id="sv5#area42#page138#gtu19#ln295#par466" name="UserCtxParam.oid_PASSING" source="sv5#area42#page138#gtu19.UserCtxParam" passing="true"/>
+      </Link>
+      <Link id="sv5#area42#page138#gtu19#ln296" name="Flow22" to="sv5#area42#page138#seu60" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv5#area42#page138#gtu19#ln297" name="Flow118" to="sv5#area42#page138#seu62" type="transport" validate="true" gr:bendpoints="-49,232,-89,-263;-51,521,-71,-74">
+        <LinkParameter id="sv5#area42#page138#gtu19#ln297#par467" name="UserCtxParam.oid_KeyCondition78 [oid]" source="sv5#area42#page138#gtu19.UserCtxParam" target="sv5#area42#page138#seu62#su245#kcond192.userOID"/>
+        <LinkParameter id="sv5#area42#page138#gtu19#ln297#par468" name="UserCtxParam.oid_PASSING" source="sv5#area42#page138#gtu19.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
+    <DataUnit id="sv5#area42#page138#dau34" name="Dati profilo" gr:showAllParts="false" gr:x="205" gr:y="0" entity="ent12">
+      <Selector id="sv5#area42#page138#dau34#su240" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area42#page138#dau34#su240#kcond189" name="KeyCondition45" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv5#area42#page138#dau34#ln298" name="Flow21" to="sv5#area42#page138#enu54" type="transport" validate="true">
+        <LinkParameter id="sv5#area42#page138#dau34#ln298#par469" name="cognome_cognome" source="data.User#att6" target="sv5#area42#page138#enu54#fld61_slot"/>
+        <LinkParameter id="sv5#area42#page138#dau34#ln298#par470" name="data di nascita_data di nascita" source="data.ent4#att12" target="sv5#area42#page138#enu54#fld59_slot"/>
+        <LinkParameter id="sv5#area42#page138#dau34#ln298#par471" name="email_email" source="data.email" target="sv5#area42#page138#enu54#fld63_slot"/>
+        <LinkParameter id="sv5#area42#page138#dau34#ln298#par472" name="nome_nome" source="data.User#att3" target="sv5#area42#page138#enu54#fld58_slot"/>
+        <LinkParameter id="sv5#area42#page138#dau34#ln298#par473" name="numero di telefono_numero di telefono" source="data.User#att11" target="sv5#area42#page138#enu54#fld62_slot"/>
+        <LinkParameter id="sv5#area42#page138#dau34#ln298#par474" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv5#area42#page138#gtu19#ln295#par466" passing="true"/>
+      </Link>
+    </DataUnit>
+    <SelectorUnit id="sv5#area42#page138#seu60" name="Seleziona indirizzo" gr:showAllParts="true" gr:x="10" gr:y="275" entity="ent16" distinctAttributes="ent16#att64 ent16#att31 ent16#att32 ent16#att76">
+      <Selector id="sv5#area42#page138#seu60#su241" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area42#page138#seu60#su241#rcond79" name="RoleCondition24" predicate="in" implied="false" role="rel11#role21"/>
+      </Selector>
+      <SortAttribute attribute="ent16#att64" order="ascending"/>
+      <Link id="sv5#area42#page138#seu60#ln299" name="Flow53" to="sv5#area42#page138#dau35" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv5#area42#page138#seu60#ln300" name="Flow56" to="sv5#area42#page138#seu61" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <EntryUnit id="sv5#area42#page138#enu54" name="Modifica dati" linkOrder="sv5#area42#page138#enu54#ln301" gr:showAllParts="true" gr:x="385" gr:y="215" fieldOrder="sv5#area42#page138#enu54#fld58 sv5#area42#page138#enu54#fld60 sv5#area42#page138#enu54#fld61 sv5#area42#page138#enu54#fld62 sv5#area42#page138#enu54#fld63 sv5#area42#page138#enu54#fld64 sv5#area42#page138#enu54#fld65 sv5#area42#page138#enu54#sfld24">
+      <Field id="sv5#area42#page138#enu54#fld58" name="nome" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv5#area42#page138#enu54#fld60" name="via/corso/piazza" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv5#area42#page138#enu54#fld61" name="cognome" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv5#area42#page138#enu54#fld62" name="numero di telefono" type="integer" modifiable="true" contentType="image/jpg" preloaded="true"/>
+      <Field id="sv5#area42#page138#enu54#fld63" name="email" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv5#area42#page138#enu54#fld64" name="CAP" type="integer" modifiable="true" preloaded="true"/>
+      <Field id="sv5#area42#page138#enu54#fld65" name="numero civico" type="integer" modifiable="true" preloaded="true"/>
+      <Link id="sv5#area42#page138#enu54#ln301" name="Flow101" to="sv5#area42#opg30#mfu29" type="normal" validate="true">
+        <LinkParameter id="sv5#area42#page138#enu54#ln301#par476" name="cognome_cognome" source="sv5#area42#page138#enu54#fld61" target="sv5#area42#opg30#mfu29.User#att6"/>
+        <LinkParameter id="sv5#area42#page138#enu54#ln301#par477" name="data di nascita_data di nascita" source="sv5#area42#page138#enu54#fld59" target="sv5#area42#opg30#mfu29.ent4#att12"/>
+        <LinkParameter id="sv5#area42#page138#enu54#ln301#par478" name="email_email" source="sv5#area42#page138#enu54#fld63" target="sv5#area42#opg30#mfu29.email"/>
+        <LinkParameter id="sv5#area42#page138#enu54#ln301#par479" name="nome_nome" source="sv5#area42#page138#enu54#fld58" target="sv5#area42#opg30#mfu29.User#att3"/>
+        <LinkParameter id="sv5#area42#page138#enu54#ln301#par480" name="numero di telefono_numero di telefono" source="sv5#area42#page138#enu54#fld62" target="sv5#area42#opg30#mfu29.User#att11"/>
+        <LinkParameter id="sv5#area42#page138#enu54#ln301#par482" name="CAP_PASSING" source="sv5#area42#page138#enu54#fld64" passing="true"/>
+        <LinkParameter id="sv5#area42#page138#enu54#ln301#par483" name="citt&#224;_PASSING" source="sv5#area42#page138#enu54#sfld24" passing="true"/>
+        <LinkParameter id="sv5#area42#page138#enu54#ln301#par484" name="numero civico_PASSING" source="sv5#area42#page138#enu54#fld65" passing="true"/>
+        <LinkParameter id="sv5#area42#page138#enu54#ln301#par485" name="via/corso/piazza_PASSING" source="sv5#area42#page138#enu54#fld60" passing="true"/>
+        <LinkParameter id="sv5#area42#page138#enu54#ln301#par488" name="oid_PASSING" sourceLinkParameter="sv5#area42#page138#dau35#ln302#par495" passing="true"/>
+      </Link>
+      <SelectionField id="sv5#area42#page138#enu54#sfld24" name="citt&#224;" type="string"/>
+    </EntryUnit>
+    <DataUnit id="sv5#area42#page138#dau35" name="Indirizzo utente" gr:showAllParts="true" gr:x="200" gr:y="150" entity="ent16">
+      <Selector id="sv5#area42#page138#dau35#su242" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area42#page138#dau35#su242#kcond190" name="KeyCondition59" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv5#area42#page138#dau35#ln302" name="Flow54" to="sv5#area42#page138#enu54" type="transport" validate="true">
+        <LinkParameter id="sv5#area42#page138#dau35#ln302#par489" name="via/piazza/corso_via/corso/piazza" source="data.ent16#att31" target="sv5#area42#page138#enu54#fld60_slot"/>
+        <LinkParameter id="sv5#area42#page138#dau35#ln302#par491" name="CAP_CAP" source="data.ent16#att76" target="sv5#area42#page138#enu54#fld64_slot"/>
+        <LinkParameter id="sv5#area42#page138#dau35#ln302#par492" name="civico_numero civico" source="data.ent16#att32" target="sv5#area42#page138#enu54#fld65_slot"/>
+        <LinkParameter id="sv5#area42#page138#dau35#ln302#par495" name="oid_PASSING" source="data.ent16#att64" passing="true"/>
+      </Link>
+    </DataUnit>
+    <SelectorUnit id="sv5#area42#page138#seu61" name="Seleziona citt&#224; attuale" gr:showAllParts="true" gr:x="115" gr:y="435" entity="ent22" distinctAttributes="ent22#att29">
+      <SortAttribute attribute="ent22#att27" order="ascending"/>
+      <Link id="sv5#area42#page138#seu61#ln303" name="Flow55" to="sv5#area42#page138#dau36" type="transport" automaticCoupling="true" validate="true"/>
+      <Selector id="sv5#area42#page138#seu61#su243" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv5#area42#page138#seu61#su243#rcond80" name="RoleCondition2" role="rel32#role63" predicate="in" implied="false"/>
+      </Selector>
+    </SelectorUnit>
+    <DataUnit id="sv5#area42#page138#dau36" name="Citt&#224; utente" gr:showAllParts="true" gr:x="210" gr:y="275" entity="ent22">
+      <Selector id="sv5#area42#page138#dau36#su244" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area42#page138#dau36#su244#kcond191" name="KeyCondition60" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv5#area42#page138#dau36#ln304" name="Flow103" to="sv5#area42#page138#enu54" type="transport" validate="true">
+        <LinkParameter id="sv5#area42#page138#dau36#ln304#par499" name="nome_citt&#224; - Preselection" source="data.ent22#att29" target="sv5#area42#page138#enu54#sfld24_presel"/>
+      </Link>
+    </DataUnit>
+    <EntryUnit id="sv5#area42#page138#enu55" name="Cambio password" linkOrder="sv5#area42#page138#enu55#ln305" gr:showAllParts="true" gr:x="395" gr:y="525">
+      <Field id="sv5#area42#page138#enu55#fld66" name="password" type="string" modifiable="true"/>
+      <Link id="sv5#area42#page138#enu55#ln305" name="Flow120" to="sv5#area42#opg29#mfu28" type="normal" validate="true">
+        <LinkParameter id="sv5#area42#page138#enu55#ln305#par500" name="password_password" source="sv5#area42#page138#enu55#fld66" target="sv5#area42#opg29#mfu28.password"/>
+        <LinkParameter id="sv5#area42#page138#enu55#ln305#par501" name="UserCtxParam.oid_PASSING_KeyCondition77 [oid]" sourceLinkParameter="sv5#area42#page138#seu62#ln306#par502" target="sv5#area42#opg29#mfu28#su246#kcond193.userOID"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit id="sv5#area42#page138#seu62" name="Seleziona ristoratore" gr:x="5" gr:y="605" entity="ent12" distinctAttributes="userName password">
+      <Selector id="sv5#area42#page138#seu62#su245" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area42#page138#seu62#su245#kcond192" name="KeyCondition78" predicate="in" implied="false"/>
+      </Selector>
+      <SortAttribute attribute="userOID" order="ascending"/>
+      <Link id="sv5#area42#page138#seu62#ln306" name="Flow119" to="sv5#area42#page138#enu55" type="transport" validate="true">
+        <LinkParameter id="sv5#area42#page138#seu62#ln306#par502" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv5#area42#page138#gtu19#ln297#par468" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv5#area42#page138#seu63" name="Seleziona citt&#224;" gr:showAllParts="true" gr:x="260" gr:y="435" entity="ent22" distinctAttributes="ent22#att27 ent22#att29">
+      <SortAttribute attribute="ent22#att27" order="ascending"/>
+      <Link id="sv5#area42#page138#seu63#ln307" name="Flow102" to="sv5#area42#page138#enu54" type="transport" validate="true">
+        <LinkParameter id="sv5#area42#page138#seu63#ln307#par504" name="oid_citt&#224; [output]" source="ent22#att27Array" target="sv5#area42#page138#enu54#sfld24_output"/>
+        <LinkParameter id="sv5#area42#page138#seu63#ln307#par507" name="nome_citt&#224; [label]" source="ent22#att29Array" target="sv5#area42#page138#enu54#sfld24_label"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area42#page138#dau34"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area42#page138#enu54">
+          <layout:Link link="sv5#area42#page138#enu54#ln301"/>
+          <layout:Field field="sv5#area42#page138#enu54#fld58"/>
+          <layout:Field field="sv5#area42#page138#enu54#fld60"/>
+          <layout:Field field="sv5#area42#page138#enu54#fld61"/>
+          <layout:Field field="sv5#area42#page138#enu54#fld62"/>
+          <layout:Field field="sv5#area42#page138#enu54#fld63"/>
+          <layout:Field field="sv5#area42#page138#enu54#fld64"/>
+          <layout:Field field="sv5#area42#page138#enu54#fld65"/>
+          <layout:Field field="sv5#area42#page138#enu54#sfld24"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area42#page138#dau35"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area42#page138#dau36"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area42#page138#enu55">
+          <layout:Field field="sv5#area42#page138#enu55#fld66"/>
+          <layout:Link link="sv5#area42#page138#enu55#ln305"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
