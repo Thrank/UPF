@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv6#area27#page42" name="Profilo" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="190" id="sv6#area27#page42" name="Profilo" landmark="true">
   <ContentUnits>
     <GetUnit gr:x="0" gr:y="20" id="sv6#area27#page42#gtu1" name="Dati utente" contextParameters="UserCtxParam">
       <Link id="sv6#area27#page42#gtu1#ln66" name="Flow66" to="sv6#area27#page42#dau16" type="transport" validate="true">
@@ -9,6 +9,9 @@
       <Link id="sv6#area27#page42#gtu1#ln118" name="Flow118" to="sv6#area27#page42#seu20" type="transport" validate="true" gr:bendpoints="-49,232,-89,-263;-50,450,-90,-45">
         <LinkParameter id="sv6#area27#page42#gtu1#ln118#par114" name="UserCtxParam.oid_KeyCondition78 [oid]" source="sv6#area27#page42#gtu1.UserCtxParam" target="sv6#area27#page42#seu20#su92#kcond78.userOID"/>
         <LinkParameter id="sv6#area27#page42#gtu1#ln118#par116" name="UserCtxParam.oid_PASSING" source="sv6#area27#page42#gtu1.UserCtxParam" passing="true"/>
+      </Link>
+      <Link id="sv6#area27#page42#gtu1#ln193" name="Flow193" to="sv6#area27#page42#mciu1" type="transport" validate="true" gr:bendpoints="-98,61,-478,-599;-96,658,-476,-2">
+        <LinkParameter id="sv6#area27#page42#gtu1#ln193#par435" name="UserCtxParam.oid_PASSING" source="sv6#area27#page42#gtu1.UserCtxParam" passing="true"/>
       </Link>
     </GetUnit>
     <DataUnit gr:x="205" gr:y="0" id="sv6#area27#page42#dau16" name="Dati profilo" entity="ent4" gr:showAllParts="false">
@@ -97,10 +100,6 @@
         <LinkParameter id="sv6#area27#page42#seu20#ln119#par117" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area27#page42#gtu1#ln118#par116" passing="true"/>
       </Link>
     </SelectorUnit>
-    <PowerIndexUnit gr:x="190" gr:y="620" id="sv6#area27#page42#pwu3" name="Elenco tipologie cucina" sortable="true" checkable="true" useCountQuery="false" entity="ent10" displayAttributes="ent10#att28" gr:showAllParts="true">
-      <SortAttribute attribute="ent10#att28" order="ascending"/>
-      <DefaultSortAttribute attribute="ent10#att28" order="ascending"/>
-    </PowerIndexUnit>
     <SelectorUnit gr:x="260" gr:y="435" id="sv6#area27#page42#seu30" name="Seleziona citt&#224;" entity="ent22" gr:showAllParts="true" distinctAttributes="ent22#att27 ent22#att29">
       <SortAttribute attribute="ent22#att27" order="ascending"/>
       <Link id="sv6#area27#page42#seu30#ln102" name="Flow102" to="sv6#area27#page42#enu3" type="transport" validate="true">
@@ -108,6 +107,15 @@
         <LinkParameter id="sv6#area27#page42#seu30#ln102#par240" name="nome_citt&#224; [label]" source="ent22#att29Array" target="sv6#area27#page42#enu3#sfld5_label"/>
       </Link>
     </SelectorUnit>
+    <MultiChoiceIndexUnit gr:x="255" gr:y="640" id="sv6#area27#page42#mciu1" name="Preferenze tipologia cucina" entity="ent10" displayAttributes="ent10#att28" gr:showAllParts="true" linkOrder="sv6#area27#page42#mciu1#ln192">
+      <SortAttribute attribute="ent10#att28" order="ascending"/>
+      <Link id="sv6#area27#page42#mciu1#ln192" name="Flow192" to="sv6#area27#opg6#dcnu2" type="normal" validate="true">
+        <LinkParameter id="sv6#area27#page42#mciu1#ln192#par441" name="Checked oid_PASSING" source="ent10#att61Checked" passing="true"/>
+        <LinkParameter id="sv6#area27#page42#mciu1#ln192#par443" name="UserCtxParam.oid_PASSING_KeyCondition83 [oid] [Cliente ] [Source]" sourceLinkParameter="sv6#area27#page42#gtu1#ln193#par435" target="sv6#area27#opg6#dcnu2#su97#kcond83.userOID"/>
+        <LinkParameter id="sv6#area27#page42#mciu1#ln192#par444" name="oid (Single Row)_KeyCondition84 [oid] [Tipologia Cucina] [Target]" source="data[].ent10#att61" target="sv6#area27#opg6#dcnu2#su98#kcond84.ent10#att61"/>
+        <LinkParameter id="sv6#area27#page42#mciu1#ln192#par448" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area27#page42#gtu1#ln193#par435" passing="true"/>
+      </Link>
+    </MultiChoiceIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -219,12 +227,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv6#area27#page42#pwu3">
-          <layout:Attribute attribute="ent10#att28"/>
-          <layout:Link link="sv6#area27#page42#pwu3ent10#att28"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -238,7 +241,12 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv6#area27#page42#mciu1">
+          <layout:Attribute attribute="ent10#att28"/>
+          <layout:Link link="sv6#area27#page42#mciu1#ln192"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

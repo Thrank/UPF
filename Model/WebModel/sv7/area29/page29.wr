@@ -30,7 +30,7 @@
       </Link>
       <SortAttribute attribute="ent17#att60" order="ascending"/>
     </SelectorUnit>
-    <PowerIndexUnit id="sv7#area29#page29#pwu2" name="Elenco tipologie cucine" gr:showAllParts="true" gr:x="405" gr:y="435" sortable="true" checkable="true" useCountQuery="false" entity="ent10" displayAttributes="ent10#att28">
+    <PowerIndexUnit id="sv7#area29#page29#pwu2" name="Elenco tipologie cucine" gr:showAllParts="true" gr:x="425" gr:y="480" sortable="true" checkable="true" useCountQuery="false" entity="ent10" displayAttributes="ent10#att28">
       <SortAttribute attribute="ent10#att28" order="ascending"/>
       <DefaultSortAttribute attribute="ent10#att28" order="ascending"/>
       <Link id="sv7#area29#page29#pwu2#ln15" name="Flow15" to="sv7#area29#page29#alt1#page49#scu6" type="transport" validate="true" gr:bendpoints="-113,-88,237,97">
@@ -299,13 +299,13 @@
       <ContentUnits>
         <ScrollerUnit gr:x="0" gr:y="0" id="sv7#area29#page29#alt1#page49#scu6" name="Scorri ristoranti" useCountQuery="false" entity="ent14" linkOrder="sv7#area29#page29#alt1#page49#scu6#ln10" blockFactor="10">
           <SortAttribute attribute="ent14#att42" order="ascending"/>
-          <Selector id="sv7#area29#page29#alt1#page49#scu6#su29" defaultPolicy="fill" booleanOperator="or">
+          <Selector id="sv7#area29#page29#alt1#page49#scu6#su29" defaultPolicy="fill" booleanOperator="or" expression="( IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#acond3) OR ( IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#acond4) AND IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#acond4) ) OR IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#acond1) ) AND IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#rcond4) AND IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#rcond1) AND IFNULLTRUE(sv7#area29#page29#alt1#page49#scu6#su29#rcond3)">
             <RelationshipRoleCondition id="sv7#area29#page29#alt1#page49#scu6#su29#rcond1" name="tipologia cucina" predicate="in" implied="false" role="rel7#role13"/>
             <RelationshipRoleCondition id="sv7#area29#page29#alt1#page49#scu6#su29#rcond3" name="il ristorante &#232; aperto?" predicate="in" implied="false" role="rel14#role27"/>
             <RelationshipRoleCondition id="sv7#area29#page29#alt1#page49#scu6#su29#rcond4" name="citt&#224; del ristorante" predicate="in" implied="false" role="rel32#role64.rel10#role20"/>
-            <AttributesCondition id="sv7#area29#page29#alt1#page49#scu6#su29#acond1" name="in fascia economica (&lt;10)" predicate="lt" booleanOperator="or" implied="false" value="10" attributes="ent14#att13"/>
+            <AttributesCondition id="sv7#area29#page29#alt1#page49#scu6#su29#acond1" name="in fascia economica (&lt;10)" predicate="lt" booleanOperator="and" implied="false" value="10" attributes="ent14#att13"/>
             <AttributesCondition id="sv7#area29#page29#alt1#page49#scu6#su29#acond2" name="in fascia media &gt;" predicate="gteq" booleanOperator="and" implied="false" value="10" attributes="ent14#att13"/>
-            <AttributesCondition id="sv7#area29#page29#alt1#page49#scu6#su29#acond3" name="in fascia costosa (&gt;20)" predicate="gt" booleanOperator="or" implied="false" value="20" attributes="ent14#att13"/>
+            <AttributesCondition id="sv7#area29#page29#alt1#page49#scu6#su29#acond3" name="in fascia costosa (&gt;20)" predicate="gt" booleanOperator="and" implied="false" value="20" attributes="ent14#att13"/>
             <AttributesCondition id="sv7#area29#page29#alt1#page49#scu6#su29#acond4" name="in fascia media &lt;" predicate="lteq" booleanOperator="and" implied="false" value="20" attributes="ent14#att13"/>
           </Selector>
           <Link id="sv7#area29#page29#alt1#page49#scu6#ln10" name="Flow10" to="sv7#area29#page29#alt1#page49#inu16" automaticCoupling="true" type="automatic" validate="true"/>

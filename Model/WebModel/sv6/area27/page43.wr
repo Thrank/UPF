@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1315" gr:y="20" id="sv6#area27#page43" name="Le Mie Valutazioni" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1315" gr:y="210" id="sv6#area27#page43" name="Le Mie Valutazioni" landmark="true">
   <ContentUnits>
     <MultiDataUnit gr:x="655" gr:y="0" id="sv6#area27#page43#mdu14" name="Valutazioni utente" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4" gr:showAllParts="true" linkOrder="sv6#area27#page43#mdu14#ln127">
       <SortAttribute attribute="ent15#att4" order="descending"/>

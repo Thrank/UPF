@@ -1,18 +1,11 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv6#area25#page39" name="Ricerca personalizzata" landmark="true" gr:x="0" gr:y="625">
   <ContentUnits>
-    <SelectorUnit id="sv6#area25#page39#seu25" name="Citt&#224;" gr:x="655" gr:y="850" entity="ent22" distinctAttributes="ent22#att27 ent22#att29" gr:showAllParts="true">
+    <SelectorUnit id="sv6#area25#page39#seu25" name="Citt&#224;" gr:x="650" gr:y="905" entity="ent22" distinctAttributes="ent22#att27 ent22#att29" gr:showAllParts="true">
       <Link id="sv6#area25#page39#seu25#ln35" name="Flow53" to="sv6#area25#page39#enu4" type="transport" validate="true">
         <LinkParameter id="sv6#area25#page39#seu25#ln35#par25" name="nome_elenco citt&#224; [label]" source="ent22#att29Array" target="sv6#area25#page39#enu4#sfld3_label"/>
         <LinkParameter id="sv6#area25#page39#seu25#ln35#par26" name="nome_elenco citt&#224; [output]" source="ent22#att27Array" target="sv6#area25#page39#enu4#sfld3_output"/>
       </Link>
       <SortAttribute attribute="ent22#att27" order="ascending"/>
-    </SelectorUnit>
-    <SelectorUnit id="sv6#area25#page39#seu31" name="Fascia prezzo" gr:showAllParts="true" gr:x="335" gr:y="850" entity="ent14" distinctAttributes="ent14#att40 ent14#att13">
-      <SortAttribute attribute="ent14#att13" order="ascending"/>
-      <Link id="sv6#area25#page39#seu31#ln39" name="Flow19" to="sv6#area25#page39#enu6" type="transport" validate="true">
-        <LinkParameter id="sv6#area25#page39#seu31#ln39#par29" name="fascia di prezzo_fascia prezzo [label]" source="ent14#att13Array" target="sv6#area25#page39#enu6#sfld4_label"/>
-        <LinkParameter id="sv6#area25#page39#seu31#ln39#par30" name="fascia di prezzo_fascia prezzo [output]" source="ent14#att40Array" target="sv6#area25#page39#enu6#sfld4_output"/>
-      </Link>
     </SelectorUnit>
     <PowerIndexUnit id="sv6#area25#page39#pwu1" name="Elenco tipologie cucine" gr:x="745" gr:y="710" sortable="true" checkable="true" useCountQuery="false" entity="ent10" displayAttributes="ent10#att28" gr:showAllParts="true">
       <SortAttribute attribute="ent10#att28" order="ascending"/>
@@ -21,7 +14,7 @@
         <LinkParameter id="sv6#area25#page39#pwu1#ln97#par215" name="oid_tipologie cucine preferite [oid]" source="data[].ent10#att61" target="sv6#area25#page39#alt4#page58#scu10#su79#rcond9.ent10#att61"/>
       </Link>
     </PowerIndexUnit>
-    <EntryUnit id="sv6#area25#page39#enu4" name="Filtro citt&#224;" gr:x="640" gr:y="735" fieldOrder="sv6#area25#page39#enu4#sfld3" gr:showAllParts="true">
+    <EntryUnit id="sv6#area25#page39#enu4" name="Filtro citt&#224;" gr:x="640" gr:y="750" fieldOrder="sv6#area25#page39#enu4#sfld3" gr:showAllParts="true">
       <SelectionField id="sv6#area25#page39#enu4#sfld3" name="elenco citt&#224;" type="string"/>
       <Link id="sv6#area25#page39#enu4#ln89" name="Flow89" to="sv6#area25#page39#alt4#page58#scu10" type="transport" validate="true">
         <LinkParameter id="sv6#area25#page39#enu4#ln89#par216" name="elenco citt&#224;_citt&#224; [oid]" source="sv6#area25#page39#enu4#sfld3" target="sv6#area25#page39#alt4#page58#scu10#su79#rcond10.ent22#att27"/>
@@ -33,7 +26,7 @@
         <LinkParameter id="sv6#area25#page39#enu6#ln123#par297" name="fascia prezzo_fascia prezzo" source="sv6#area25#page39#enu6#sfld4" target="sv6#area25#page39#alt4#page58#scu10#su79#acond24"/>
       </Link>
     </EntryUnit>
-    <SelectorUnit gr:x="170" gr:y="815" id="sv6#area25#page39#seu33" name="Cucine preferite" entity="ent10" gr:showAllParts="true" distinctAttributes="ent10#att61 ent10#att28">
+    <SelectorUnit gr:x="170" gr:y="860" id="sv6#area25#page39#seu33" name="Cucine preferite" entity="ent10" gr:showAllParts="true" distinctAttributes="ent10#att61 ent10#att28">
       <SortAttribute attribute="ent10#att61" order="ascending"/>
       <Link id="sv6#area25#page39#seu33#ln72" name="Flow72" to="sv6#area25#page39#enu20" type="transport" validate="true">
         <LinkParameter id="sv6#area25#page39#seu33#ln72#par77" name="Nome_cucine preferite [label]" target="sv6#area25#page39#enu20#msfld3_label" sourceValue="Cucine preferite"/>
@@ -43,13 +36,13 @@
         <RelationshipRoleCondition id="sv6#area25#page39#seu33#su64#rcond15" name="cucine preferite dal cliente" predicate="in" implied="false" role="rel20#role39"/>
       </Selector>
     </SelectorUnit>
-    <EntryUnit gr:x="170" gr:y="700" id="sv6#area25#page39#enu20" name="Preferenza cucina" gr:showAllParts="true">
+    <EntryUnit gr:x="185" gr:y="755" id="sv6#area25#page39#enu20" name="Preferenza cucina" gr:showAllParts="true">
       <MultiSelectionField id="sv6#area25#page39#enu20#msfld3" type="boolean" name="cucine preferite"/>
       <Link id="sv6#area25#page39#enu20#ln88" name="Flow88" to="sv6#area25#page39#alt4#page58#scu10" type="transport" validate="true">
         <LinkParameter id="sv6#area25#page39#enu20#ln88#par214" name="cucine preferite_tipologie cucine preferite [oid]" source="sv6#area25#page39#enu20#msfld3" target="sv6#area25#page39#alt4#page58#scu10#su79#rcond9.ent10#att61"/>
       </Link>
     </EntryUnit>
-    <GetUnit gr:x="15" gr:y="955" id="sv6#area25#page39#gtu4" name="Preferenze utente" contextParameters="UserCtxParam">
+    <GetUnit gr:x="15" gr:y="985" id="sv6#area25#page39#gtu4" name="Preferenze utente" contextParameters="UserCtxParam">
       <Link id="sv6#area25#page39#gtu4#ln74" name="Flow74" to="sv6#area25#page39#seu33" type="transport" validate="true">
         <LinkParameter id="sv6#area25#page39#gtu4#ln74#par45" name="UserCtxParam.oid_RoleCondition15 [oid]" source="sv6#area25#page39#gtu4.UserCtxParam" target="sv6#area25#page39#seu33#su64#rcond15.userOID"/>
       </Link>
@@ -57,7 +50,7 @@
         <LinkParameter id="sv6#area25#page39#gtu4#ln76#par46" name="UserCtxParam.oid_ristorante to cliente [oid]" source="sv6#area25#page39#gtu4.UserCtxParam" target="sv6#area25#page39#seu34#su65#rcond16.userOID"/>
       </Link>
     </GetUnit>
-    <SelectorUnit gr:x="10" gr:y="785" id="sv6#area25#page39#seu34" name="Ristoranti preferiti" entity="ent14" gr:showAllParts="true" distinctAttributes="ent14#att40">
+    <SelectorUnit gr:x="10" gr:y="830" id="sv6#area25#page39#seu34" name="Ristoranti preferiti" entity="ent14" gr:showAllParts="true" distinctAttributes="ent14#att40">
       <Selector id="sv6#area25#page39#seu34#su65" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv6#area25#page39#seu34#su65#rcond16" name="ristoranti preferiti dal cliente" predicate="in" implied="false" role="rel19#role38"/>
       </Selector>
@@ -67,7 +60,7 @@
         <LinkParameter id="sv6#area25#page39#seu34#ln75#par82" name="Data Size_ristoranti preferiti [label]" source="dataSize" target="sv6#area25#page39#enu21#msfld4_label"/>
       </Link>
     </SelectorUnit>
-    <EntryUnit gr:x="15" gr:y="650" id="sv6#area25#page39#enu21" name="Preferenza ristorante" gr:showAllParts="true" linkOrder="sv6#area25#page39#enu21#ln80">
+    <EntryUnit gr:x="20" gr:y="715" id="sv6#area25#page39#enu21" name="Preferenza ristorante" gr:showAllParts="true" linkOrder="sv6#area25#page39#enu21#ln80">
       <MultiSelectionField id="sv6#area25#page39#enu21#msfld4" type="boolean" name="ristoranti preferiti"/>
       <Link id="sv6#area25#page39#enu21#ln80" name="Flow78" to="sv6#area25#page39#alt4#page57#scu8" type="normal" validate="true" gr:bendpoints="-91,-10,-111,385;-94,-403,-109,82">
         <LinkParameter id="sv6#area25#page39#enu21#ln80#par211" name="ristoranti preferiti_ristoranti preferiti [oid]" source="sv6#area25#page39#enu21#msfld4" target="sv6#area25#page39#alt4#page57#scu8#su58#rcond5.userOID"/>
@@ -76,7 +69,7 @@
         <LinkParameter id="sv6#area25#page39#enu21#ln86#par213" name="ristoranti preferiti_ristoranti preferiti [oid]" source="sv6#area25#page39#enu21#msfld4" target="sv6#area25#page39#alt4#page58#scu10#su79#rcond8.userOID"/>
       </Link>
     </EntryUnit>
-    <TimeUnit gr:x="490" gr:y="955" id="sv6#area25#page39#tmu4" name="Prendi data attuale">
+    <TimeUnit gr:x="490" gr:y="980" id="sv6#area25#page39#tmu4" name="Prendi data attuale">
       <Link id="sv6#area25#page39#tmu4#ln98" name="Flow98" to="sv6#area25#page39#seu29" type="transport" validate="true">
         <LinkParameter id="sv6#area25#page39#tmu4#ln98#par217" name="Day_giorno" source="day" target="sv6#area25#page39#seu29#su80#acond22"/>
         <LinkParameter id="sv6#area25#page39#tmu4#ln98#par218" name="Current/Input Time_ora fine" source="currentTime" target="sv6#area25#page39#seu29#su80#acond21"/>
@@ -500,12 +493,15 @@
         <ScrollerUnit gr:x="0" gr:y="15" id="sv6#area25#page39#alt4#page58#scu10" name="Scorri ristoranti" useCountQuery="false" entity="ent14" gr:showAllParts="true" linkOrder="sv6#area25#page39#alt4#page58#scu10#ln82">
           <SortAttribute attribute="ent14#att42" order="ascending"/>
           <Link id="sv6#area25#page39#alt4#page58#scu10#ln82" name="Flow82" to="sv6#area25#page39#alt4#page58#inu24" automaticCoupling="true" type="automatic" validate="true"/>
-          <Selector id="sv6#area25#page39#alt4#page58#scu10#su79" defaultPolicy="fill" booleanOperator="or">
+          <Selector id="sv6#area25#page39#alt4#page58#scu10#su79" defaultPolicy="fill" booleanOperator="or" expression="( IFNULLTRUE(sv6#area25#page39#alt4#page58#scu10#su79#acond24) OR ( IFNULLTRUE(sv6#area25#page39#alt4#page58#scu10#su79#acond50) AND IFNULLTRUE(sv6#area25#page39#alt4#page58#scu10#su79#acond49) ) OR IFNULLTRUE(sv6#area25#page39#alt4#page58#scu10#su79#acond51) ) AND IFNULLTRUE(sv6#area25#page39#alt4#page58#scu10#su79#rcond10) AND IFNULLTRUE(sv6#area25#page39#alt4#page58#scu10#su79#rcond8) AND IFNULLTRUE(sv6#area25#page39#alt4#page58#scu10#su79#rcond9) AND IFNULLTRUE(sv6#area25#page39#alt4#page58#scu10#su79#rcond19)">
             <RelationshipRoleCondition id="sv6#area25#page39#alt4#page58#scu10#su79#rcond8" name="ristoranti preferiti" predicate="in" implied="false" role="rel19#role38"/>
             <RelationshipRoleCondition id="sv6#area25#page39#alt4#page58#scu10#su79#rcond9" name="tipologie cucine preferite" predicate="in" implied="false" role="rel7#role13"/>
             <RelationshipRoleCondition id="sv6#area25#page39#alt4#page58#scu10#su79#rcond10" name="citt&#224;" predicate="in" implied="false" role="rel32#role64.rel10#role20"/>
             <RelationshipRoleCondition id="sv6#area25#page39#alt4#page58#scu10#su79#rcond19" name="&#232; aperto?" predicate="in" implied="false" role="rel14#role27"/>
-            <AttributesCondition id="sv6#area25#page39#alt4#page58#scu10#su79#acond24" name="fascia prezzo" predicate="eq" booleanOperator="or" implied="false" attributes="ent14#att13"/>
+            <AttributesCondition id="sv6#area25#page39#alt4#page58#scu10#su79#acond24" name="fascia alta &gt;=" predicate="gt" booleanOperator="or" implied="true" attributes="ent14#att13" value="20"/>
+            <AttributesCondition id="sv6#area25#page39#alt4#page58#scu10#su79#acond49" name="fascia media &gt;" predicate="gteq" booleanOperator="or" implied="true" value="10" attributes="ent14#att13"/>
+            <AttributesCondition id="sv6#area25#page39#alt4#page58#scu10#su79#acond50" name="fascia media &lt;" predicate="lt" booleanOperator="or" implied="true" value="20" attributes="ent14#att13"/>
+            <AttributesCondition id="sv6#area25#page39#alt4#page58#scu10#su79#acond51" name="fascia bassa &lt;=" predicate="lteq" booleanOperator="or" implied="false" value="10" attributes="ent14#att13"/>
           </Selector>
         </ScrollerUnit>
       </ContentUnits>

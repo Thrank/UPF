@@ -1,9 +1,12 @@
 <Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="2095" gr:y="1205" id="sv6#area31" name="Ordine" landmark="true" defaultPage="sv6#area31#page44">
   <OperationUnits>
-    <GetUnit gr:x="40" gr:y="500" id="sv6#area31#gtu5" name="Get5" contextParameters="UserCtxParam">
+    <GetUnit gr:x="35" gr:y="465" id="sv6#area31#gtu5" name="Recupera dati utente" contextParameters="UserCtxParam" linkOrder="sv6#area31#gtu5#ln202">
       <Link id="sv6#area31#gtu5#ln204" name="Flow204" to="sv6#area31#page44#scu34" type="transport" validate="true">
         <LinkParameter id="sv6#area31#gtu5#ln204#par438" name="UserCtxParam.oid_current oid" source="sv6#area31#gtu5.UserCtxParam" target="sv6#area31#page44#scu34.scroller.ent16#att64"/>
         <LinkParameter id="sv6#area31#gtu5#ln204#par463" name="UserCtxParam.oid_PASSING" source="sv6#area31#gtu5.UserCtxParam" passing="true"/>
+      </Link>
+      <Link id="sv6#area31#gtu5#ln202" name="Flow202" to="sv6#area31#page44#enu49" type="transport" validate="true" gr:bendpoints="447,-1,52,269">
+        <LinkParameter id="sv6#area31#gtu5#ln202#par523" name="UserCtxParam.oid_PASSING" source="sv6#area31#gtu5.UserCtxParam" passing="true"/>
       </Link>
     </GetUnit>
   </OperationUnits>

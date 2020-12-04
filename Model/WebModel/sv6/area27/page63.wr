@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="955" gr:y="10" id="sv6#area27#page63" name="Errore aggiornamento profilo">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="955" gr:y="200" id="sv6#area27#page63" name="Errore aggiornamento profilo">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -71,6 +71,41 @@
       <layout:Cell/>
       <layout:Cell/>
     </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv6#area27#page63#alt6#page52">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv6#area27#page63#alt6#page52#mssu15"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
   </layout:Grid>
   <Alternative gr:x="0" gr:y="0" id="sv6#area27#page63#alt6" name="Errori aggiornamento profilo" defaultPage="sv6#area27#page63#alt6#page64">
     <Page gr:x="0" gr:y="0" id="sv6#area27#page63#alt6#page64" name="Errore aggiornamento dati">
@@ -81,6 +116,11 @@
     <Page gr:x="0" gr:y="115" id="sv6#area27#page63#alt6#page65" name="Errore cambio password">
       <ContentUnits>
         <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area27#page63#alt6#page65#mssu12" name="Errore password"/>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="0" gr:y="230" id="sv6#area27#page63#alt6#page52" name="Errore modifica preferenze">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area27#page63#alt6#page52#mssu15" name="Errore preferenze"/>
       </ContentUnits>
     </Page>
   </Alternative>

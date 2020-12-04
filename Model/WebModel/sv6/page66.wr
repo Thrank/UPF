@@ -1,13 +1,13 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1925" gr:y="715" id="sv6#area27#page60" name="Errori valutazioni">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2685" gr:y="860" id="sv6#page66" name="Errore aggiunta indirizzo">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv6#area27#page60#alt5#page61">
+        <layout:SubPage pageId="sv6#page66#alt2#page73">
           <layout:Grid containerType="grid">
             <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv6#area27#page60#alt5#page61#mssu9"/>
+                <layout:Unit unitId="sv6#page66#alt2#page73#mssu16"/>
               </layout:Cell>
               <layout:Cell/>
               <layout:Cell/>
@@ -38,11 +38,11 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv6#area27#page60#alt5#page62">
+        <layout:SubPage pageId="sv6#page66#alt2#page107">
           <layout:Grid containerType="grid">
             <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv6#area27#page60#alt5#page62#mssu10"/>
+                <layout:Unit unitId="sv6#page66#alt2#page107#mssu17"/>
               </layout:Cell>
               <layout:Cell/>
               <layout:Cell/>
@@ -72,15 +72,15 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Alternative gr:x="0" gr:y="0" id="sv6#area27#page60#alt5" name="Errori valutazioni" defaultPage="sv6#area27#page60#alt5#page61">
-    <Page gr:x="0" gr:y="0" id="sv6#area27#page60#alt5#page61" name="Errore eliminazione valutazione">
+  <Alternative gr:x="0" gr:y="0" id="sv6#page66#alt2" name="Errori indirizzo" defaultPage="sv6#page66#alt2#page73">
+    <Page gr:x="0" gr:y="0" id="sv6#page66#alt2#page73" name="Errore inserimento">
       <ContentUnits>
-        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area27#page60#alt5#page61#mssu9" name="Errore eliminazione"/>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#page66#alt2#page73#mssu16" name="Errore inserimento indirizzo"/>
       </ContentUnits>
     </Page>
-    <Page gr:x="10" gr:y="115" id="sv6#area27#page60#alt5#page62" name="Errore aggiornamento valutazione">
+    <Page gr:x="0" gr:y="120" id="sv6#page66#alt2#page107" name="Errore connessione">
       <ContentUnits>
-        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area27#page60#alt5#page62#mssu10" name="Errore aggiornamento"/>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#page66#alt2#page107#mssu17" name="Errore connessione indirizzo"/>
       </ContentUnits>
     </Page>
   </Alternative>

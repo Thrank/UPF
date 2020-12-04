@@ -30,7 +30,7 @@
       </Link>
       <SortAttribute attribute="ent17#att60" order="ascending"/>
     </SelectorUnit>
-    <PowerIndexUnit id="sv8#area32#page90#pwu5" name="Elenco tipologie cucine" gr:showAllParts="true" gr:x="405" gr:y="435" sortable="true" checkable="true" useCountQuery="false" entity="ent10" displayAttributes="ent10#att28">
+    <PowerIndexUnit id="sv8#area32#page90#pwu5" name="Elenco tipologie cucine" gr:showAllParts="true" gr:x="425" gr:y="480" sortable="true" checkable="true" useCountQuery="false" entity="ent10" displayAttributes="ent10#att28">
       <SortAttribute attribute="ent10#att28" order="ascending"/>
       <DefaultSortAttribute attribute="ent10#att28" order="ascending"/>
       <Link id="sv8#area32#page90#pwu5#ln141" name="Flow15" to="sv8#area32#page90#alt12#page92#scu25" type="transport" validate="true" gr:bendpoints="-113,-88,237,97">
@@ -299,7 +299,7 @@
       <ContentUnits>
         <ScrollerUnit id="sv8#area32#page90#alt12#page92#scu25" name="Scorri ristoranti" linkOrder="sv8#area32#page90#alt12#page92#scu25#ln146" gr:x="0" gr:y="0" useCountQuery="false" entity="ent14" blockFactor="10">
           <SortAttribute attribute="ent14#att42" order="ascending"/>
-          <Selector id="sv8#area32#page90#alt12#page92#scu25#su137" defaultPolicy="fill" booleanOperator="or">
+          <Selector id="sv8#area32#page90#alt12#page92#scu25#su137" defaultPolicy="fill" booleanOperator="or" expression="( IFNULLTRUE(sv8#area32#page90#alt12#page92#scu25#su137#acond32) OR IFNULLTRUE(sv8#area32#page90#alt12#page92#scu25#su137#acond30) OR ( IFNULLTRUE(sv8#area32#page90#alt12#page92#scu25#su137#acond33) AND IFNULLTRUE(sv8#area32#page90#alt12#page92#scu25#su137#acond31) ) ) AND IFNULLTRUE(sv8#area32#page90#alt12#page92#scu25#su137#rcond36) AND IFNULLTRUE(sv8#area32#page90#alt12#page92#scu25#su137#rcond35) AND IFNULLTRUE(sv8#area32#page90#alt12#page92#scu25#su137#rcond34)">
             <RelationshipRoleCondition id="sv8#area32#page90#alt12#page92#scu25#su137#rcond34" name="tipologia cucina" predicate="in" implied="false" role="rel7#role13"/>
             <RelationshipRoleCondition id="sv8#area32#page90#alt12#page92#scu25#su137#rcond35" name="il ristorante &#232; aperto?" predicate="in" implied="false" role="rel14#role27"/>
             <RelationshipRoleCondition id="sv8#area32#page90#alt12#page92#scu25#su137#rcond36" name="citt&#224; del ristorante" predicate="in" implied="false" role="rel32#role64.rel10#role20"/>
