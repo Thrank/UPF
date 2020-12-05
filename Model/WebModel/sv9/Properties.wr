@@ -1,5 +1,7 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv9" name="Ristoratore" landmarks="sv9#area33 sv9#area35 sv9#area48">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv9" name="Ristoratore" landmarks="sv9#area33 sv9#area35 sv9#area48 sv9#lou9" homePage="sv9#area35#page120">
   <OperationUnits>
-    <LogoutUnit id="sv9#lou9" name="Esci" gr:x="80" gr:y="110" siteView="sv7"/>
+    <LogoutUnit id="sv9#lou9" name="Esci" gr:x="80" gr:y="110" siteView="sv7" landmark="true">
+      <KOLink id="sv9#lou9#kln40" name="KOFlow40" to="sv9#area35#page120" automaticCoupling="true" gr:bendpoints="-26,101,-36,-109"/>
+    </LogoutUnit>
   </OperationUnits>
 </SiteView>

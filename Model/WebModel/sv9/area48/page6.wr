@@ -1,0 +1,72 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1495" gr:y="15" id="sv9#area48#page6" name="Aggiungi ristorante">
+  <ContentUnits>
+    <GetUnit gr:x="0" gr:y="0" id="sv9#area48#page6#gtu12" name="Recupera oid utente" contextParameters="UserCtxParam">
+      <Link id="sv9#area48#page6#gtu12#ln9" name="Flow9" to="sv9#area48#page6#enu9" type="transport" validate="true">
+        <LinkParameter id="sv9#area48#page6#gtu12#ln9#par108" name="UserCtxParam.oid_PASSING" source="sv9#area48#page6#gtu12.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
+    <EntryUnit gr:x="0" gr:y="130" id="sv9#area48#page6#enu9" name="Modulo aggiunta ristorante" gr:showAllParts="true" entity="ent17">
+      <Field id="sv9#area48#page6#enu9#fld4" name="nome" type="string" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld8" name="numero di telefono" type="string" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld19" name="email" type="string" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld20" name="indirizzo" type="string" modifiable="true"/>
+      <SelectionField id="sv9#area48#page6#enu9#sfld8" name="tipologia cucina" type="string"/>
+      <Field id="sv9#area48#page6#enu9#fld38" name="numero civico" type="string" modifiable="true"/>
+      <SelectionField id="sv9#area48#page6#enu9#sfld9" name="citt&#224;" type="string"/>
+      <Field id="sv9#area48#page6#enu9#fld59" name="CAP" type="string" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld68" name="ora inizio luned&#236;" type="time" modifiable="true" attribute="ent17#att43"/>
+      <Field id="sv9#area48#page6#enu9#fld69" name="ora fine luned&#236;" type="time" modifiable="true" attribute="ent17#att14"/>
+      <MultiSelectionField id="sv9#area48#page6#enu9#msfld1" type="date" name="luned&#236;"/>
+    </EntryUnit>
+    <SelectorUnit gr:x="160" gr:y="0" id="sv9#area48#page6#seu6" name="Seleziona citt&#224;" entity="ent22">
+      <Link id="sv9#area48#page6#seu6#ln11" name="Flow11" to="sv9#area48#page6#enu9" type="transport" validate="true">
+        <LinkParameter id="sv9#area48#page6#seu6#ln11#par109" name="nome_citt&#224; [label]" source="ent22#att29Array" target="sv9#area48#page6#enu9#sfld9_label"/>
+        <LinkParameter id="sv9#area48#page6#seu6#ln11#par112" name="oid_citt&#224; [output]" source="ent22#att27Array" target="sv9#area48#page6#enu9#sfld9_output"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area48#page6#enu9">
+          <layout:Field field="sv9#area48#page6#enu9#fld4"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld8"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld19"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld20"/>
+          <layout:Field field="sv9#area48#page6#enu9#sfld8"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld38"/>
+          <layout:Field field="sv9#area48#page6#enu9#sfld9"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld59"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld68"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld69"/>
+          <layout:Field field="sv9#area48#page6#enu9#msfld1"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
