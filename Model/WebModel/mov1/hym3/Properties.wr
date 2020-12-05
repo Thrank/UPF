@@ -1,4 +1,4 @@
-<HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="185" gr:y="330" id="mov1#hym3" name="Modifica ristorante">
+<HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="200" gr:y="140" id="mov1#hym3" name="Modifica ristorante">
   <OperationUnits>
     <InputCollectorUnit gr:x="0" gr:y="385" id="mov1#hym3#icu13" name="Input Port">
       <InputCollectorParameter id="mov1#hym3#icu13#icp63" name="RoleCondition98 [oid]"/>
@@ -16,7 +16,9 @@
     </InputCollectorUnit>
     <ModuleInstanceUnit id="mov1#hym3#miu26" gr:x="300" gr:y="470" moduleId="mov1#opm2" action="true">
       <OKLink id="mov1#hym3#miu26#oln109" name="OKFlow109" to="mov1#hym3#okcu5" automaticCoupling="true"/>
-      <KOLink id="mov1#hym3#miu26#kln97" name="KOFlow97" to="mov1#hym3#page170#mssu42" automaticCoupling="true"/>
+      <KOLink id="mov1#hym3#miu26#kln65" name="KOFlow65" to="mov1#hym3#page170#alt9#page9#mssu17" automaticCoupling="true" codeRef="mov1#opm2#kocu1" gr:bendpoints="-85,35,-115,-190"/>
+      <KOLink id="mov1#hym3#miu26#kln66" name="KOFlow66" to="mov1#hym3#page170#alt9#page8#mssu6" automaticCoupling="true" codeRef="mov1#opm2#kocu5"/>
+      <KOLink id="mov1#hym3#miu26#kln67" name="KOFlow67" to="mov1#hym3#page170#alt9#page7#mssu4" automaticCoupling="true" codeRef="mov1#opm2#kocu6" gr:bendpoints="134,6,-316,-224"/>
     </ModuleInstanceUnit>
     <OKCollectorUnit gr:x="1015" gr:y="270" id="mov1#hym3#okcu5" name="Modifica avvenuta con successo"/>
   </OperationUnits>

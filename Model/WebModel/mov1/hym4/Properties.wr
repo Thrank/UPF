@@ -1,4 +1,4 @@
-<HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="185" gr:y="1887" id="mov1#hym4" name="Elimina ristorante">
+<HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="490" gr:y="135" id="mov1#hym4" name="Elimina ristorante">
   <OperationUnits>
     <InputCollectorUnit gr:x="0" gr:y="305" id="mov1#hym4#icu15" name="Input Port">
       <InputCollectorParameter id="mov1#hym4#icu15#icp71" name="KeyCondition220 [oid]"/>

@@ -1,4 +1,4 @@
-<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="185" gr:y="997" id="mov1#opm5" name="Elimina ristorante">
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="490" gr:y="55" id="mov1#opm5" name="Elimina ristorante">
   <OperationUnits>
     <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#opm5#icu14" name="Input Port">
       <InputCollectorParameter id="mov1#opm5#icu14#icp68" name="oid_PASSING"/>

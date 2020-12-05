@@ -1,4 +1,4 @@
-<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="185" gr:y="230" id="mov1#opm2" name="Modifica ristorante">
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="195" gr:y="50" id="mov1#opm2" name="Modifica ristorante">
   <OperationUnits>
     <InputCollectorUnit id="mov1#opm2#icu2" gr:x="30" gr:y="60">
       <InputCollectorParameter id="mov1#opm2#icu2#icp5" name="citt&#224;"/>
@@ -26,7 +26,9 @@
       <InputCollectorParameter id="mov1#opm2#icu2#icp10" name="oid_indirizzo"/>
       <InputCollectorParameter id="mov1#opm2#icu2#icp11" name="citt&#224;_nuova"/>
     </InputCollectorUnit>
-    <OKCollectorUnit gr:x="715" gr:y="175" id="mov1#opm2#okcu1" name="Modifica effettuata con successo"/>
-    <KOCollectorUnit gr:x="715" gr:y="305" id="mov1#opm2#kocu1" name="Errori modifica"/>
+    <OKCollectorUnit gr:x="815" gr:y="175" id="mov1#opm2#okcu1" name="Modifica effettuata con successo"/>
+    <KOCollectorUnit gr:x="815" gr:y="305" id="mov1#opm2#kocu1" name="KO aggiornamento database"/>
+    <KOCollectorUnit gr:x="815" gr:y="450" id="mov1#opm2#kocu5" name="KO connessione"/>
+    <KOCollectorUnit gr:x="815" gr:y="390" id="mov1#opm2#kocu6" name="KO disconnessione"/>
   </OperationUnits>
 </OperationModule>
