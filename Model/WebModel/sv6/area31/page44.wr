@@ -68,8 +68,7 @@
     </SelectorUnit>
     <DataUnit gr:x="60" gr:y="155" id="sv6#area31#page44#dau24" name="Indirizzo" entity="ent16">
       <Selector id="sv6#area31#page44#dau24#su146" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv6#area31#page44#dau24#su146#kcond115" name="KeyCondition115" predicate="in" implied="false"/>
-        <RelationshipRoleCondition id="sv6#area31#page44#dau24#su146#rcond57" name="RoleCondition57" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv6#area31#page44#dau24#su146#rcond57" name="indirizzo dell'utente" predicate="in" implied="false" role="rel11#role21"/>
       </Selector>
       <Link id="sv6#area31#page44#dau24#ln90" name="Flow90" to="sv6#area31#page44#enu50" type="transport" validate="true">
         <LinkParameter id="sv6#area31#page44#dau24#ln90#par31" name="oid_PASSING" source="data.ent16#att64" passing="true"/>

@@ -1,10 +1,3 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="265" gr:y="-545" id="sv6#area27" name="Personale" landmark="true" landmarks="sv6#area27#page43 sv6#area27#page42 sv6#area27#page59" defaultPage="sv6#area27#page42">
-  <OperationUnits>
-    <GetUnit gr:x="880" gr:y="860" id="sv6#area27#gtu2" name="Recupera dati utenti" contextParameters="UserCtxParam">
-      <Link id="sv6#area27#gtu2#ln196" name="Flow196" to="sv6#area27#page59#scu33" type="transport" validate="true">
-        <LinkParameter id="sv6#area27#gtu2#ln196#par16" name="UserCtxParam.oid_current oid" source="sv6#area27#gtu2.UserCtxParam" target="sv6#area27#page59#scu33.scroller.ent3#att8"/>
-        <LinkParameter id="sv6#area27#gtu2#ln196#par17" name="UserCtxParam.oid_PASSING" source="sv6#area27#gtu2.UserCtxParam" passing="true"/>
-      </Link>
-    </GetUnit>
-  </OperationUnits>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="265" gr:y="-545" id="sv6#area27" name="Personale" landmark="true" landmarks="sv6#area27#page43 sv6#area27#page42" defaultPage="sv6#area27#page42">
+  <OperationUnits/>
 </Area>

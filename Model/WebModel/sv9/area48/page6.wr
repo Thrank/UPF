@@ -1,22 +1,72 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1495" gr:y="15" id="sv9#area48#page6" name="Aggiungi ristorante">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1395" gr:y="25" id="sv9#area48#page6" name="Aggiungi ristorante">
   <ContentUnits>
     <GetUnit gr:x="0" gr:y="0" id="sv9#area48#page6#gtu12" name="Recupera oid utente" contextParameters="UserCtxParam">
       <Link id="sv9#area48#page6#gtu12#ln9" name="Flow9" to="sv9#area48#page6#enu9" type="transport" validate="true">
         <LinkParameter id="sv9#area48#page6#gtu12#ln9#par108" name="UserCtxParam.oid_PASSING" source="sv9#area48#page6#gtu12.UserCtxParam" passing="true"/>
       </Link>
     </GetUnit>
-    <EntryUnit gr:x="0" gr:y="130" id="sv9#area48#page6#enu9" name="Modulo aggiunta ristorante" gr:showAllParts="true" entity="ent17">
+    <EntryUnit gr:x="0" gr:y="130" id="sv9#area48#page6#enu9" name="Modulo aggiunta ristorante" gr:showAllParts="true" linkOrder="sv9#area48#page6#enu9#ln16" fieldOrder="sv9#area48#page6#enu9#fld4 sv9#area48#page6#enu9#fld8 sv9#area48#page6#enu9#fld19 sv9#area48#page6#enu9#fld20 sv9#area48#page6#enu9#fld38 sv9#area48#page6#enu9#sfld9 sv9#area48#page6#enu9#fld59 sv9#area48#page6#enu9#fld71 sv9#area48#page6#enu9#fld72 sv9#area48#page6#enu9#fld81 sv9#area48#page6#enu9#fld82 sv9#area48#page6#enu9#fld83 sv9#area48#page6#enu9#fld84 sv9#area48#page6#enu9#fld85 sv9#area48#page6#enu9#fld86 sv9#area48#page6#enu9#fld87 sv9#area48#page6#enu9#fld88 sv9#area48#page6#enu9#fld89 sv9#area48#page6#enu9#fld90 sv9#area48#page6#enu9#fld91 sv9#area48#page6#enu9#fld92 sv9#area48#page6#enu9#fld93 sv9#area48#page6#enu9#fld94 sv9#area48#page6#enu9#fld95 sv9#area48#page6#enu9#fld96 sv9#area48#page6#enu9#fld97 sv9#area48#page6#enu9#fld98 sv9#area48#page6#enu9#fld99 sv9#area48#page6#enu9#fld100">
       <Field id="sv9#area48#page6#enu9#fld4" name="nome" type="string" modifiable="true"/>
       <Field id="sv9#area48#page6#enu9#fld8" name="numero di telefono" type="string" modifiable="true"/>
       <Field id="sv9#area48#page6#enu9#fld19" name="email" type="string" modifiable="true"/>
-      <Field id="sv9#area48#page6#enu9#fld20" name="indirizzo" type="string" modifiable="true"/>
-      <SelectionField id="sv9#area48#page6#enu9#sfld8" name="tipologia cucina" type="string"/>
+      <Field id="sv9#area48#page6#enu9#fld20" name="via/piazza/corso" type="string" modifiable="true"/>
       <Field id="sv9#area48#page6#enu9#fld38" name="numero civico" type="string" modifiable="true"/>
       <SelectionField id="sv9#area48#page6#enu9#sfld9" name="citt&#224;" type="string"/>
       <Field id="sv9#area48#page6#enu9#fld59" name="CAP" type="string" modifiable="true"/>
-      <Field id="sv9#area48#page6#enu9#fld68" name="ora inizio luned&#236;" type="time" modifiable="true" attribute="ent17#att43"/>
-      <Field id="sv9#area48#page6#enu9#fld69" name="ora fine luned&#236;" type="time" modifiable="true" attribute="ent17#att14"/>
-      <MultiSelectionField id="sv9#area48#page6#enu9#msfld1" type="date" name="luned&#236;"/>
+      <Link id="sv9#area48#page6#enu9#ln16" name="Flow16" to="sv9#area48#page6#mciu2" type="normal" validate="true">
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par24" name="CAP_PASSING" source="sv9#area48#page6#enu9#fld59" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par27" name="citt&#224;_PASSING" source="sv9#area48#page6#enu9#sfld9" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par28" name="email_PASSING" source="sv9#area48#page6#enu9#fld19" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par37" name="indirizzo_PASSING" source="sv9#area48#page6#enu9#fld20" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par38" name="nome_PASSING" source="sv9#area48#page6#enu9#fld4" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par41" name="numero civico_PASSING" source="sv9#area48#page6#enu9#fld38" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par42" name="numero di telefono_PASSING" source="sv9#area48#page6#enu9#fld8" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par48" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv9#area48#page6#gtu12#ln9#par108" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par373" name="domenica_PASSING" source="sv9#area48#page6#enu9#fld97" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par374" name="domenica ora fine_PASSING" source="sv9#area48#page6#enu9#fld99" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par387" name="domenica ora inizio_PASSING" source="sv9#area48#page6#enu9#fld98" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par388" name="gioved&#236;_PASSING" source="sv9#area48#page6#enu9#fld88" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par389" name="gioved&#236; ora fine_PASSING" source="sv9#area48#page6#enu9#fld89" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par390" name="gioved&#236; ora inizio_PASSING" source="sv9#area48#page6#enu9#fld90" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par391" name="luned&#236;_PASSING" source="sv9#area48#page6#enu9#fld72" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par392" name="luned&#236; ora fine_PASSING" source="sv9#area48#page6#enu9#fld81" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par393" name="luned&#236; ora inizio_PASSING" source="sv9#area48#page6#enu9#fld71" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par394" name="marted&#236;_PASSING" source="sv9#area48#page6#enu9#fld82" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par395" name="marted&#236; ora fine_PASSING" source="sv9#area48#page6#enu9#fld84" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par396" name="marted&#236; ora inizio_PASSING" source="sv9#area48#page6#enu9#fld83" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par397" name="mercoled&#236;_PASSING" source="sv9#area48#page6#enu9#fld85" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par446" name="mercoled&#236; ora fine_PASSING" source="sv9#area48#page6#enu9#fld86" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par449" name="mercoled&#236; ora inizio_PASSING" source="sv9#area48#page6#enu9#fld87" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par450" name="sabato_PASSING" source="sv9#area48#page6#enu9#fld94" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par451" name="sabato ora fine_PASSING" source="sv9#area48#page6#enu9#fld96" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par452" name="sabato ora inizio_PASSING" source="sv9#area48#page6#enu9#fld95" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par453" name="venerd&#236;_PASSING" source="sv9#area48#page6#enu9#fld91" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par454" name="venerd&#236; ora fine_PASSING" source="sv9#area48#page6#enu9#fld92" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par458" name="venerd&#236; ora inizio_PASSING" source="sv9#area48#page6#enu9#fld93" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#enu9#ln16#par461" name="descrizione_PASSING" source="sv9#area48#page6#enu9#fld100" passing="true"/>
+      </Link>
+      <Field id="sv9#area48#page6#enu9#fld71" name="luned&#236; ora inizio" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld72" name="luned&#236;" type="boolean" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld81" name="luned&#236; ora fine" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld99" name="domenica ora fine" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld98" name="domenica ora inizio" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld97" name="domenica" type="boolean" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld96" name="sabato ora fine" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld95" name="sabato ora inizio" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld94" name="sabato" type="boolean" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld93" name="venerd&#236; ora inizio" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld92" name="venerd&#236; ora fine" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld91" name="venerd&#236;" type="boolean" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld90" name="gioved&#236; ora inizio" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld89" name="gioved&#236; ora fine" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld88" name="gioved&#236;" type="boolean" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld87" name="mercoled&#236; ora inizio" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld86" name="mercoled&#236; ora fine" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld85" name="mercoled&#236;" type="boolean" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld84" name="marted&#236; ora fine" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld83" name="marted&#236; ora inizio" type="time" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld82" name="marted&#236;" type="boolean" modifiable="true"/>
+      <Field id="sv9#area48#page6#enu9#fld100" name="descrizione" type="string" modifiable="true"/>
     </EntryUnit>
     <SelectorUnit gr:x="160" gr:y="0" id="sv9#area48#page6#seu6" name="Seleziona citt&#224;" entity="ent22">
       <Link id="sv9#area48#page6#seu6#ln11" name="Flow11" to="sv9#area48#page6#enu9" type="transport" validate="true">
@@ -24,22 +74,77 @@
         <LinkParameter id="sv9#area48#page6#seu6#ln11#par112" name="oid_citt&#224; [output]" source="ent22#att27Array" target="sv9#area48#page6#enu9#sfld9_output"/>
       </Link>
     </SelectorUnit>
+    <MultiChoiceIndexUnit gr:x="230" gr:y="165" id="sv9#area48#page6#mciu2" name="Tipologie cucina" entity="ent10" displayAttributes="ent10#att28" gr:showAllParts="true" linkOrder="sv9#area48#page6#mciu2#ln44">
+      <SortAttribute attribute="ent10#att28" order="ascending"/>
+      <Link id="sv9#area48#page6#mciu2#ln44" name="Flow44" to="sv9#area48#opg17#cru4" type="normal" validate="true">
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par462" name="descrizione_PASSING_descrizione" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par461" target="sv9#area48#opg17#cru4.ent14#att46"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par463" name="email_PASSING_email" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par28" target="sv9#area48#opg17#cru4.ent14#att45"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par464" name="nome_PASSING_nome" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par38" target="sv9#area48#opg17#cru4.ent14#att42"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par475" name="numero di telefono_PASSING_numero di telefono" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par42" target="sv9#area48#opg17#cru4.ent14#att44"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par481" name="CAP_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par24" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par490" name="Checked oid_PASSING" source="ent10#att61Checked" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par493" name="citt&#224;_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par27" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par494" name="domenica ora fine_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par374" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par498" name="domenica ora inizio_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par387" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par503" name="domenica_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par373" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par505" name="gioved&#236; ora fine_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par389" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par506" name="gioved&#236; ora inizio_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par390" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par511" name="gioved&#236;_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par388" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par516" name="luned&#236; ora fine_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par392" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par517" name="luned&#236; ora inizio_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par393" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par527" name="luned&#236;_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par391" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par530" name="marted&#236; ora fine_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par395" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par531" name="marted&#236; ora inizio_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par396" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par532" name="marted&#236;_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par394" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par533" name="mercoled&#236; ora fine_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par446" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par537" name="mercoled&#236; ora inizio_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par449" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par538" name="mercoled&#236;_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par397" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par539" name="numero civico_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par41" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par540" name="sabato ora fine_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par451" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par541" name="sabato ora inizio_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par452" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par542" name="sabato_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par450" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par543" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par48" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par544" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par454" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par545" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par458" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par546" name="venerd&#236;_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par453" passing="true"/>
+        <LinkParameter id="sv9#area48#page6#mciu2#ln44#par577" name="indirizzo_PASSING" sourceLinkParameter="sv9#area48#page6#enu9#ln16#par37" passing="true"/>
+      </Link>
+    </MultiChoiceIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv9#area48#page6#enu9">
+          <layout:Link link="sv9#area48#page6#enu9#ln16"/>
           <layout:Field field="sv9#area48#page6#enu9#fld4"/>
           <layout:Field field="sv9#area48#page6#enu9#fld8"/>
           <layout:Field field="sv9#area48#page6#enu9#fld19"/>
           <layout:Field field="sv9#area48#page6#enu9#fld20"/>
-          <layout:Field field="sv9#area48#page6#enu9#sfld8"/>
           <layout:Field field="sv9#area48#page6#enu9#fld38"/>
           <layout:Field field="sv9#area48#page6#enu9#sfld9"/>
           <layout:Field field="sv9#area48#page6#enu9#fld59"/>
-          <layout:Field field="sv9#area48#page6#enu9#fld68"/>
-          <layout:Field field="sv9#area48#page6#enu9#fld69"/>
-          <layout:Field field="sv9#area48#page6#enu9#msfld1"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld71"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld72"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld81"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld82"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld83"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld84"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld85"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld86"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld87"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld88"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld89"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld90"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld91"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld92"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld93"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld94"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld95"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld96"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld97"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld98"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld99"/>
+          <layout:Field field="sv9#area48#page6#enu9#fld100"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -56,6 +161,25 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area48#page6#mciu2">
+          <layout:Attribute attribute="ent10#att28"/>
+          <layout:Link link="sv9#area48#page6#mciu2#ln44"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

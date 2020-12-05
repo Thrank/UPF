@@ -130,13 +130,13 @@
     <RelationshipRole2 id="rel13#role26" name="PiattoToTipologia Cucina" maxCard="1"/>
   </Relationship>
   <Entity gr:x="-95" gr:y="405" id="ent17" name="Orario" duration="persistent" attributeOrder="ent17#att60 ent17#att34 ent17#att43 ent17#att14">
-    <Attribute id="ent17#att34" key="false" name="giorno" type="date"/>
+    <Attribute id="ent17#att34" key="false" name="giorno" type="integer"/>
     <Attribute id="ent17#att43" name="ora_inizio" type="time"/>
     <Attribute id="ent17#att60" name="oid" type="integer" key="true"/>
     <Attribute id="ent17#att14" name="ora_fine" type="time"/>
   </Entity>
   <Relationship id="rel14" name="Orario_Ristorante" sourceEntity="ent17" targetEntity="ent14">
-    <RelationshipRole1 id="rel14#role27" name="OrarioToRistorante" maxCard="1"/>
+    <RelationshipRole1 id="rel14#role27" name="OrarioToRistorante" maxCard="1" cascadeDelete="true"/>
     <RelationshipRole2 id="rel14#role28" name="RistoranteToOrario" maxCard="N"/>
   </Relationship>
   <Entity gr:x="-45" gr:y="825" id="ent18" name="Categoria Piatto" duration="persistent" attributeOrder="ent18#att62 ent18#att51">

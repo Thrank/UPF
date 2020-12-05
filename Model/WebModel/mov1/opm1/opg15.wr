@@ -61,7 +61,7 @@
     <LoopUnit id="mov1#opm1#opg15#lpu2" name="Ciclo sui piatti" gr:showAllParts="true" gr:x="230" gr:y="310">
       <OKLink id="mov1#opm1#opg15#lpu2#oln73" name="OKFlow43" to="mov1#opm1#opg15#dcnu16" code="next">
         <LinkParameter id="mov1#opm1#opg15#lpu2#oln73#par90" name="Source oid [Ordine]_PASSING_KeyCondition11 [oid] [Ordine] [Source]" sourceLinkParameter="mov1#opm1#opg15#seu8#oln77#par149" target="mov1#opm1#opg15#dcnu16#su22#kcond18.ent3#att8"/>
-        <LinkParameter id="mov1#opm1#opg15#lpu2#oln73#par93" name="Index_KeyCondition12 [oid] [Piatto] [Target]" source="index" target="mov1#opm1#opg15#dcnu16#su23#kcond19.ent1#att1"/>
+        <LinkParameter id="mov1#opm1#opg15#lpu2#oln73#par93" name="Index_KeyCondition12 [oid] [Piatto] [Target]" source="next" target="mov1#opm1#opg15#dcnu16#su23#kcond19.ent1#att1"/>
       </OKLink>
       <OKLink id="mov1#opm1#opg15#lpu2#oln74" name="OKFlow45" to="mov1#opm1#opg15#dlu1" code="end">
         <LinkParameter id="mov1#opm1#opg15#lpu2#oln74#par94" name="Source oid [Ordine]_PASSING_KeyCondition4 [oid]" sourceLinkParameter="mov1#opm1#opg15#seu8#oln77#par149" target="mov1#opm1#opg15#dlu1#su12#kcond2.ent3#att8"/>

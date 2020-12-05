@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="925" gr:y="225" id="sv9#area48#page5" name="Gestione ristoranti" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="920" gr:y="205" id="sv9#area48#page5" name="Gestione ristoranti" landmark="true" linkOrder="sv9#area48#page5#ln43">
   <ContentUnits>
     <GetUnit gr:x="0" gr:y="10" id="sv9#area48#page5#gtu10" name="Ristoratore connesso" contextParameters="UserCtxParam">
       <Link id="sv9#area48#page5#gtu10#ln4" name="Flow331" to="sv9#area48#page5#seu5" type="transport" validate="true">
@@ -12,7 +12,7 @@
       <Link id="sv9#area48#page5#seu5#ln5" name="Flow332" to="sv9#area48#page5#scu1" automaticCoupling="true" type="transport" validate="true"/>
       <SortAttribute attribute="ent14#att42" order="ascending"/>
     </SelectorUnit>
-    <ScrollerUnit gr:x="285" gr:y="150" id="sv9#area48#page5#scu1" name="Scorri ristoranti" useCountQuery="false" entity="ent14" gr:showAllParts="true" linkOrder="sv9#area48#page5#scu1#ln6">
+    <ScrollerUnit gr:x="210" gr:y="160" id="sv9#area48#page5#scu1" name="Scorri ristoranti" useCountQuery="false" entity="ent14" gr:showAllParts="true" linkOrder="sv9#area48#page5#scu1#ln6">
       <Link id="sv9#area48#page5#scu1#ln6" name="Flow333" to="sv9#area48#page5#mdu1" automaticCoupling="true" type="automatic" validate="true"/>
       <SortAttribute attribute="ent14#att42" order="ascending"/>
     </ScrollerUnit>
@@ -21,20 +21,17 @@
       <Selector id="sv9#area48#page5#mdu1#su15" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv9#area48#page5#mdu1#su15#kcond1" name="KeyCondition207" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv9#area48#page5#mdu1#ln7" name="Flow335" to="sv9#area48#miu2" type="normal" validate="true" gr:bendpoints="-91,192,-136,-73">
+      <Link id="sv9#area48#page5#mdu1#ln7" name="Flow335" to="sv9#area48#miu2" type="normal" validate="true" gr:bendpoints="-129,128,-269,-162;-217,134,-357,-156;-228,287,-368,-3">
         <LinkParameter id="sv9#area48#page5#mdu1#ln7#par100" name="oid_RoleCondition98 [oid]" source="ent14#att40Array" target="sv9#area48#miu2.mov1#hym3#icu13#icp63"/>
         <LinkParameter id="sv9#area48#page5#mdu1#ln7#par102" name="descrizione_PASSING" source="ent14#att46Array" target="sv9#area48#miu2.mov1#hym3#icu13#icp66"/>
         <LinkParameter id="sv9#area48#page5#mdu1#ln7#par103" name="email_PASSING" source="ent14#att45Array" target="sv9#area48#miu2.mov1#hym3#icu13#icp65"/>
         <LinkParameter id="sv9#area48#page5#mdu1#ln7#par104" name="nome_PASSING" source="ent14#att42Array" target="sv9#area48#miu2.mov1#hym3#icu13#icp64"/>
         <LinkParameter id="sv9#area48#page5#mdu1#ln7#par105" name="numero di telefono_PASSING" source="ent14#att44Array" target="sv9#area48#miu2.mov1#hym3#icu13#icp67"/>
       </Link>
-      <Link id="sv9#area48#page5#mdu1#ln8" name="Flow337" to="sv9#area48#miu1" type="normal" validate="true" gr:bendpoints="1,146,-154,-34">
-        <LinkParameter id="sv9#area48#page5#mdu1#ln8#par106" name="oid_KeyCondition220 [oid]" source="ent14#att40Array" target="sv9#area48#miu1.mov1#hym4#icu15#icp71"/>
+      <Link id="sv9#area48#page5#mdu1#ln8" name="Flow337" to="sv9#area48#page13#enu10" type="normal" validate="true">
+        <LinkParameter id="sv9#area48#page5#mdu1#ln8#par9" name="oid_PASSING" source="ent14#att40Array" passing="true"/>
       </Link>
     </MultiDataUnit>
-    <EntryUnit gr:x="370" gr:y="20" id="sv9#area48#page5#enu7" name="Aggiungi ristorante" linkOrder="sv9#area48#page5#enu7#ln10">
-      <Link id="sv9#area48#page5#enu7#ln10" name="Flow10" to="sv9#area48#page6#enu9" type="normal" validate="true" automaticCoupling="true"/>
-    </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -81,11 +78,21 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv9#area48#page5#enu7">
-          <layout:Link link="sv9#area48#page5#enu7#ln10"/>
-        </layout:Unit>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -99,4 +106,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv9#area48#page5#ln43" name="Flow10" to="sv9#area48#page6" type="normal" automaticCoupling="true" validate="true"/>
 </Page>
