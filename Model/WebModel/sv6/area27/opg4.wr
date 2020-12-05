@@ -22,7 +22,7 @@
         <KeyCondition id="sv6#area27#opg4#cnu7#su88#kcond74" predicate="in" implied="false" name="KeyCondition70"/>
       </TargetSelector>
       <KOLink id="sv6#area27#opg4#cnu7#kln19" name="KOFlow19" to="sv6#area27#page63#alt6#page64#mssu11" automaticCoupling="true"/>
-      <OKLink id="sv6#area27#opg4#cnu7#oln21" name="OKFlow21" to="sv6#area27#page42" automaticCoupling="true" gr:bendpoints="-106,-48,439,-353;-230,-41,315,-346"/>
+      <OKLink id="sv6#area27#opg4#cnu7#oln21" name="OKFlow21" to="sv6#area27#page42" gr:bendpoints="-106,-48,439,-353;-230,-41,315,-346" automaticCoupling="true"/>
     </ConnectUnit>
     <DisconnectUnit gr:x="165" gr:y="150" id="sv6#area27#opg4#dcnu1" name="Sconnetti da citt&#224;" relationship="rel32#role64">
       <SourceSelector id="sv6#area27#opg4#dcnu1#su89" defaultPolicy="fill" booleanOperator="and">

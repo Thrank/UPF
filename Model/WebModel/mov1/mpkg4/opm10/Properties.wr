@@ -1,0 +1,16 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="mov1#mpkg4#opm10" name="Elimina ristorante">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#mpkg4#opm10#icu12">
+      <InputCollectorParameter id="mov1#mpkg4#opm10#icu12#icp60" name="oid_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg4#opm10#icu12#icp61" name="KeyCondition210 [oid] [Ristorante] [Source]"/>
+      <InputCollectorParameter id="mov1#mpkg4#opm10#icu12#icp62" name="KeyCondition211 [oid] [Indirizzo] [Target]"/>
+      <OKLink id="mov1#mpkg4#opm10#icu12#oln165" to="mov1#mpkg4#opm10#opg23#dcnu18" validate="true" name="Flow336">
+        <LinkParameter id="mov1#mpkg4#opm10#icu12#oln165#par1016" name="RistoranteToIndirizzo.oid_PASSING_KeyCondition211 [oid] [Indirizzo] [Target]" target="mov1#mpkg4#opm10#opg23#dcnu18#su197#kcond166.ent16#att64" source="mov1#mpkg4#opm10#icu12#icp62"/>
+        <LinkParameter id="mov1#mpkg4#opm10#icu12#oln165#par1017" name="oid_PASSING" passing="true" source="mov1#mpkg4#opm10#icu12#icp60"/>
+        <LinkParameter id="mov1#mpkg4#opm10#icu12#oln165#par1018" name="oid_PASSING_KeyCondition210 [oid] [Ristorante] [Source]" target="mov1#mpkg4#opm10#opg23#dcnu18#su196#kcond165.ent14#att40" source="mov1#mpkg4#opm10#icu12#icp61"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="1100" gr:y="190" id="mov1#mpkg4#opm10#okcu17" name="Eliminazione avvenuta con successo"/>
+    <KOCollectorUnit gr:x="1100" gr:y="370" id="mov1#mpkg4#opm10#kocu23" name="Errore nell'eliminazione"/>
+  </OperationUnits>
+</OperationModule>

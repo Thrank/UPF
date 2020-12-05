@@ -1,0 +1,23 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="100" id="mov3#mpkg1#opm8" name="Inserisci nuovo ordine">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov3#mpkg1#opm8#icu8">
+      <InputCollectorParameter id="mov3#mpkg1#opm8#icu8#icp37" name="oid_PASSING"/>
+      <InputCollectorParameter id="mov3#mpkg1#opm8#icu8#icp38" name="oid_PASSING"/>
+      <InputCollectorParameter id="mov3#mpkg1#opm8#icu8#icp39" name="Checked oid_PASSING"/>
+      <InputCollectorParameter id="mov3#mpkg1#opm8#icu8#icp40" name="promozione_PASSING"/>
+      <InputCollectorParameter id="mov3#mpkg1#opm8#icu8#icp41" name="metodo_PASSING"/>
+      <InputCollectorParameter id="mov3#mpkg1#opm8#icu8#icp42" name="UserCtxParam.oid_PASSING"/>
+      <OKLink id="mov3#mpkg1#opm8#icu8#oln151" to="mov3#mpkg1#opm8#opg21#tmu9" validate="true" name="Flow199">
+        <LinkParameter id="mov3#mpkg1#opm8#icu8#oln151#par907" name="UserCtxParam.oid_PASSING" passing="true" source="mov3#mpkg1#opm8#icu8#icp42"/>
+        <LinkParameter id="mov3#mpkg1#opm8#icu8#oln151#par908" source="mov3#mpkg1#opm8#icu8#icp41" name="metodo_PASSING" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#opm8#icu8#oln151#par909" name="oid_PASSING" passing="true" source="mov3#mpkg1#opm8#icu8#icp37"/>
+        <LinkParameter id="mov3#mpkg1#opm8#icu8#oln151#par910" name="Checked oid_PASSING" passing="true" source="mov3#mpkg1#opm8#icu8#icp39"/>
+        <LinkParameter id="mov3#mpkg1#opm8#icu8#oln151#par911" source="mov3#mpkg1#opm8#icu8#icp40" name="promozione_PASSING" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#opm8#icu8#oln151#par912" name="oid_PASSING" passing="true" source="mov3#mpkg1#opm8#icu8#icp38"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <KOCollectorUnit gr:x="815" gr:y="600" id="mov3#mpkg1#opm8#kocu18" name="KO connessione"/>
+    <KOCollectorUnit gr:x="815" gr:y="300" id="mov3#mpkg1#opm8#kocu19" name="KO database"/>
+    <OKCollectorUnit gr:x="815" gr:y="15" id="mov3#mpkg1#opm8#okcu12" name="OK inserimento effettuato"/>
+  </OperationUnits>
+</OperationModule>

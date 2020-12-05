@@ -1,11 +1,11 @@
 <Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-295" gr:y="370" id="sv7#area29" name="Ristorante" landmark="true" defaultPage="sv7#area29#page47" landmarks="sv7#area29#page47">
   <OperationUnits>
-    <ModuleInstanceUnit gr:x="95" gr:y="270" id="sv7#area29#miu35" moduleId="mov1#hym7">
-      <OKLink id="sv7#area29#miu35#oln131" to="sv7#area29#page48#dau17" validate="true" name="Flow19" gr:bendpoints="166,-58,-474,-33" codeRef="mov1#hym7#okcu14">
-        <LinkParameter id="sv7#area29#miu35#oln131#par1248" source="mov1#hym7#okcu14#ocp7" name="oid_Dettaglio ristorante [oid]" target="sv7#area29#page48#dau17#su55#kcond30.ent14#att40"/>
+    <ModuleInstanceUnit gr:x="95" gr:y="270" id="sv7#area29#miu35" moduleId="mov2#mpkg2#hym2">
+      <OKLink id="sv7#area29#miu35#oln131" to="sv7#area29#page48#dau17" validate="true" name="Flow19" gr:bendpoints="166,-58,-474,-33" codeRef="mov2#mpkg2#hym2#okcu13">
+        <LinkParameter id="sv7#area29#miu35#oln131#par1248" source="mov2#mpkg2#hym2#okcu13#ocp3" name="oid_Dettaglio ristorante [oid]" target="sv7#area29#page48#dau17#su55#kcond30.ent14#att40"/>
       </OKLink>
-      <OKLink id="sv7#area29#miu35#oln130" to="sv7#area29#page48#dau17" validate="true" name="Flow18" codeRef="mov1#hym7#okcu13" gr:bendpoints="157,37,-483,62">
-        <LinkParameter id="sv7#area29#miu35#oln130#par1246" source="mov1#hym7#okcu13#ocp8" name="oid_Dettaglio ristorante [oid]" target="sv7#area29#page48#dau17#su55#kcond30.ent14#att40"/>
+      <OKLink id="sv7#area29#miu35#oln130" to="sv7#area29#page48#dau17" validate="true" name="Flow18" codeRef="mov2#mpkg2#hym2#okcu14" gr:bendpoints="157,37,-483,62">
+        <LinkParameter id="sv7#area29#miu35#oln130#par1246" source="mov2#mpkg2#hym2#okcu14#ocp4" name="oid_Dettaglio ristorante [oid]" target="sv7#area29#page48#dau17#su55#kcond30.ent14#att40"/>
       </OKLink>
     </ModuleInstanceUnit>
   </OperationUnits>

@@ -1,0 +1,20 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="mov3#mpkg1#opm7" name="Annullamento ordine">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov3#mpkg1#opm7#icu7">
+      <InputCollectorParameter id="mov3#mpkg1#opm7#icu7#icp33" name="KeyCondition5 [oid] [Cliente ] [Source]"/>
+      <InputCollectorParameter id="mov3#mpkg1#opm7#icu7#icp34" name="KeyCondition6 [oid] [Ordine] [Target]"/>
+      <InputCollectorParameter id="mov3#mpkg1#opm7#icu7#icp35" name="UserCtxParam.oid_PASSING"/>
+      <InputCollectorParameter id="mov3#mpkg1#opm7#icu7#icp36" name="oid_PASSING"/>
+      <OKLink id="mov3#mpkg1#opm7#icu7#oln140" to="mov3#mpkg1#opm7#opg19#dcnu13" validate="true" name="Flow2">
+        <LinkParameter id="mov3#mpkg1#opm7#icu7#oln140#par886" name="oid_PASSING_KeyCondition6 [oid] [Ordine] [Target]" target="mov3#mpkg1#opm7#opg19#dcnu13#su153#kcond125.ent3#att8" source="mov3#mpkg1#opm7#icu7#icp34"/>
+        <LinkParameter id="mov3#mpkg1#opm7#icu7#oln140#par887" name="UserCtxParam.oid_PASSING" passing="true" source="mov3#mpkg1#opm7#icu7#icp35"/>
+        <LinkParameter id="mov3#mpkg1#opm7#icu7#oln140#par888" name="UserCtxParam.oid_PASSING_KeyCondition5 [oid] [Cliente ] [Source]" target="mov3#mpkg1#opm7#opg19#dcnu13#su152#kcond124.userOID" source="mov3#mpkg1#opm7#icu7#icp33"/>
+        <LinkParameter id="mov3#mpkg1#opm7#icu7#oln140#par889" name="oid_PASSING" passing="true" source="mov3#mpkg1#opm7#icu7#icp36"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="965" gr:y="40" id="mov3#mpkg1#opm7#okcu11" name="OK annullamento "/>
+    <KOCollectorUnit gr:x="965" gr:y="240" id="mov3#mpkg1#opm7#kocu15" name="KO selezione"/>
+    <KOCollectorUnit gr:x="965" gr:y="485" id="mov3#mpkg1#opm7#kocu16" name="KO rimozione database"/>
+    <KOCollectorUnit gr:x="965" gr:y="350" id="mov3#mpkg1#opm7#kocu17" name="KO  disconnessione"/>
+  </OperationUnits>
+</OperationModule>

@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv6#area25#page40" name="Dettaglio ristorante" gr:x="955" gr:y="200">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv6#area25#page40" name="Dettaglio ristorante" gr:x="905" gr:y="200">
   <ContentUnits>
-    <DataUnit id="sv6#area25#page40#dau15" name="Dettaglio ristorante" linkOrder="sv6#area25#page40#dau15#ln60 sv6#area25#page40#dau15#ln134 sv6#area25#page40#dau15#ln111 sv6#area25#page40#dau15#ln121 sv6#area25#page40#dau15#ln195" gr:x="210" gr:y="200" entity="ent14" displayAttributes="ent14#att42 ent14#att46 ent14#att44 ent14#att45 ent14#att52">
+    <DataUnit id="sv6#area25#page40#dau15" name="Dettaglio ristorante" linkOrder="sv6#area25#page40#dau15#ln60 sv6#area25#page40#dau15#ln134 sv6#area25#page40#dau15#ln111 sv6#area25#page40#dau15#ln195 sv6#area25#page40#dau15#ln236" gr:x="210" gr:y="200" entity="ent14" displayAttributes="ent14#att42 ent14#att46 ent14#att44 ent14#att45 ent14#att52">
       <Selector id="sv6#area25#page40#dau15#su53" defaultPolicy="fill" booleanOperator="or">
         <KeyCondition id="sv6#area25#page40#dau15#su53#kcond43" name="Dettaglio ristorante" predicate="in" implied="false"/>
         <RelationshipRoleCondition id="sv6#area25#page40#dau15#su53#rcond11" name="piatto to dettaglioRistorante" predicate="in" implied="true" role="rel4#role8"/>
@@ -10,20 +10,24 @@
       <Link id="sv6#area25#page40#dau15#ln60" name="Flow58" to="sv6#area24#page12#scu11" type="normal" automaticCoupling="true" validate="true"/>
       <Link id="sv6#area25#page40#dau15#ln134" name="Flow134" to="sv6#area25#page51#enu25" type="normal" validate="true">
         <LinkParameter id="sv6#area25#page40#dau15#ln134#par133" name="oid_PASSING" source="data.ent14#att40" passing="true"/>
+        <LinkParameter id="sv6#area25#page40#dau15#ln134#par1297" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area25#page40#gtu11#ln131#par303" passing="true"/>
       </Link>
-      <Link id="sv6#area25#page40#dau15#ln111" name="Flow111" to="sv6#area25#page67#seu36" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="49,445,229,-245;-58,469,122,-221;-86,590,94,-100"/>
-      <Link id="sv6#area25#page40#dau15#ln121" name="Flow121" to="sv6#area25#opg11#seu37" type="normal" validate="true">
-        <LinkParameter id="sv6#area25#page40#dau15#ln121#par285" name="oid_valutazione per ristorante [oid]" source="data.ent14#att40" target="sv6#area25#opg11#seu37#su107#rcond26.ent14#att40"/>
-        <LinkParameter id="sv6#area25#page40#dau15#ln121#par286" name="oid_PASSING" source="data.ent14#att40" passing="true"/>
+      <Link id="sv6#area25#page40#dau15#ln111" name="Flow111" to="sv6#area25#page67#seu36" type="normal" validate="true" gr:bendpoints="-172,134,-62,-311;-172,305,-62,-140">
+        <LinkParameter id="sv6#area25#page40#dau15#ln111#par1255" name="UserCtxParam.oid_PASSING_utente della valutazione [oid]" sourceLinkParameter="sv6#area25#page40#gtu11#ln131#par303" target="sv6#area25#page67#seu36#su84#rcond21.userOID"/>
+        <LinkParameter id="sv6#area25#page40#dau15#ln111#par1256" name="oid_valutazione del ristorante [oid]" source="data.ent14#att40" target="sv6#area25#page67#seu36#su84#rcond23.ent14#att40"/>
       </Link>
       <Link id="sv6#area25#page40#dau15#ln132" name="Flow132" to="sv6#area25#opg13#seu39" type="transport" validate="true" gr:bendpoints="-297,-104,223,191">
         <LinkParameter id="sv6#area25#page40#dau15#ln132#par304" name="oid_oid ristorante [oid]" source="data.ent14#att40" target="sv6#area25#opg13#seu39#su112#kcond94.ent14#att40"/>
         <LinkParameter id="sv6#area25#page40#dau15#ln132#par305" name="UserCtxParam.oid_PASSING_&#232; preferito dall'utente? [oid]" sourceLinkParameter="sv6#area25#page40#gtu11#ln131#par303" target="sv6#area25#opg13#seu39#su112#rcond27.userOID"/>
         <LinkParameter id="sv6#area25#page40#dau15#ln132#par307" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area25#page40#gtu11#ln131#par303" passing="true"/>
       </Link>
-      <Link id="sv6#area25#page40#dau15#ln195" name="Flow58" to="sv6#area31#page44#dau23" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv6#area25#page40#dau15#ln195" name="Flow58" to="sv6#area31#page44#dau23" type="normal" validate="true" automaticCoupling="true" gr:bendpoints="239,100,-651,-620;267,300,-623,-420;551,617,-339,-103"/>
+      <Link id="sv6#area25#page40#dau15#ln236" name="Flow111" to="sv6#area25#miu15" type="normal" validate="true" gr:bendpoints="202,118,-73,-597;207,624,-68,-91;151,677,-124,-38">
+        <LinkParameter id="sv6#area25#page40#dau15#ln236#par1300" name="UserCtxParam.oid_PASSING_utente della valutazione [oid]" sourceLinkParameter="sv6#area25#page40#gtu11#ln131#par303" target="sv6#area25#miu15.mov3#mpkg5#hym10#icu20#icp80"/>
+        <LinkParameter id="sv6#area25#page40#dau15#ln236#par1301" name="oid_valutazione del ristorante [oid]" source="data.ent14#att40" target="sv6#area25#miu15.mov3#mpkg5#hym10#icu20#icp81"/>
+      </Link>
     </DataUnit>
-    <MultiDataUnit id="sv6#area25#page40#mdu12" name="Valutazioni" gr:showAllParts="true" gr:x="345" gr:y="370" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4">
+    <MultiDataUnit id="sv6#area25#page40#mdu12" name="Valutazioni" gr:showAllParts="true" gr:x="310" gr:y="375" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4">
       <SortAttribute attribute="ent15#att53" order="descending"/>
       <Selector id="sv6#area25#page40#mdu12#su59" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv6#area25#page40#mdu12#su59#rcond12" name="RoleCondition17" predicate="in" implied="false" role="rel2#role3"/>
@@ -32,7 +36,7 @@
         </KeyCondition>
       </Selector>
     </MultiDataUnit>
-    <MultiDataUnit id="sv6#area25#page40#mdu13" name="Migliori valutazioni" gr:showAllParts="true" gr:x="65" gr:y="385" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4" maxResults="5">
+    <MultiDataUnit id="sv6#area25#page40#mdu13" name="Migliori valutazioni" gr:showAllParts="true" gr:x="125" gr:y="390" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4" maxResults="5">
       <SortAttribute attribute="ent15#att53" order="descending"/>
       <Selector id="sv6#area25#page40#mdu13#su60" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv6#area25#page40#mdu13#su60#rcond13" name="ristorante to valutazione" predicate="in" implied="false" role="rel2#role3"/>
@@ -58,8 +62,8 @@
           <layout:Link link="sv6#area25#page40#dau15#ln60"/>
           <layout:Link link="sv6#area25#page40#dau15#ln134"/>
           <layout:Link link="sv6#area25#page40#dau15#ln111"/>
-          <layout:Link link="sv6#area25#page40#dau15#ln121"/>
           <layout:Link link="sv6#area25#page40#dau15#ln195"/>
+          <layout:Link link="sv6#area25#page40#dau15#ln236"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

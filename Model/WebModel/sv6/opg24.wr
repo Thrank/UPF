@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="2845" gr:y="1645" id="sv6#opg24" name="Modifica indirizzo" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="2805" gr:y="1680" id="sv6#opg24" name="Modifica indirizzo" transaction="true">
   <OperationUnits>
     <ModifyUnit id="sv6#opg24#mfu15" entity="ent16" gr:x="10" gr:y="0" name="Modifica indirizzo">
       <KOLink id="sv6#opg24#mfu15#kln44" name="KOFlow76" to="sv6#page66#alt2#page73#mssu16" automaticCoupling="true" gr:bendpoints="171,-110,-44,70"/>

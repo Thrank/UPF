@@ -1,0 +1,92 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="mov1#mpkg4#hym6#page26" name="Elimina ristorante" gr:x="300" gr:y="0">
+  <ContentUnits>
+    <EntryUnit id="mov1#mpkg4#hym6#page26#enu24" name="Elimina ristorante" linkOrder="mov1#mpkg4#hym6#page26#enu24#ln124" gr:x="70" gr:y="160">
+      <Link id="mov1#mpkg4#hym6#page26#enu24#ln124" name="Flow336" to="mov1#mpkg4#hym6#miu5" type="normal" validate="true">
+        <LinkParameter id="mov1#mpkg4#hym6#page26#enu24#ln124#par1039" name="oid_PASSING_KeyCondition210 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#mpkg4#hym6#page26#dau2#ln125#par1042" target="mov1#mpkg4#hym6#miu5.mov1#mpkg4#opm10#icu12#icp61"/>
+        <LinkParameter id="mov1#mpkg4#hym6#page26#enu24#ln124#par1040" name="RistoranteToIndirizzo.oid_PASSING_KeyCondition211 [oid] [Indirizzo] [Target]" sourceLinkParameter="mov1#mpkg4#hym6#page26#dau2#ln125#par1043" target="mov1#mpkg4#hym6#miu5.mov1#mpkg4#opm10#icu12#icp62"/>
+        <LinkParameter id="mov1#mpkg4#hym6#page26#enu24#ln124#par1041" name="oid_PASSING" sourceLinkParameter="mov1#mpkg4#hym6#page26#dau2#ln125#par1042" target="mov1#mpkg4#hym6#miu5.mov1#mpkg4#opm10#icu12#icp60"/>
+      </Link>
+    </EntryUnit>
+    <DataUnit id="mov1#mpkg4#hym6#page26#dau2" name="Ristorante" gr:showAllParts="true" gr:x="0" gr:y="0" entity="ent14" displayAttributes="ent14#att42 ent14#att44 ent14#att45 ent14#att46 ent14#att52 ent14#att13">
+      <Selector id="mov1#mpkg4#hym6#page26#dau2#su215" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg4#hym6#page26#dau2#su215#kcond187" name="KeyCondition220" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="mov1#mpkg4#hym6#page26#dau2#ln125" name="Flow350" to="mov1#mpkg4#hym6#page26#enu24" type="transport" validate="true">
+        <LinkParameter id="mov1#mpkg4#hym6#page26#dau2#ln125#par1042" name="oid_PASSING" source="data.ent14#att40" passing="true"/>
+        <LinkParameter id="mov1#mpkg4#hym6#page26#dau2#ln125#par1043" name="RistoranteToIndirizzo.oid_PASSING" source="data.rel10#role19_ent16#att64" passing="true"/>
+        <LinkParameter id="mov1#mpkg4#hym6#page26#dau2#ln125#par1044" name="RistoranteToRistoratore.oid_PASSING" source="data.rel1#role2_userOID" passing="true"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov1#mpkg4#hym6#page26#enu24">
+          <layout:Link link="mov1#mpkg4#hym6#page26#enu24#ln124"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov1#mpkg4#hym6#page26#dau2">
+          <layout:Attribute attribute="ent14#att42"/>
+          <layout:Attribute attribute="ent14#att44"/>
+          <layout:Attribute attribute="ent14#att45"/>
+          <layout:Attribute attribute="ent14#att46"/>
+          <layout:Attribute attribute="ent14#att52"/>
+          <layout:Attribute attribute="ent14#att13"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

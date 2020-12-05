@@ -1,3 +1,35 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv6#area25" name="Ristorante" landmarks="sv6#area25#page38 sv6#area25#page39" landmark="true" gr:x="10" gr:y="520" defaultPage="sv6#area25#page38">
-  <OperationUnits/>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv6#area25" name="Ristorante" landmarks="sv6#area25#page38 sv6#area25#page77" landmark="true" gr:x="75" gr:y="500" defaultPage="sv6#area25#page38">
+  <OperationUnits>
+    <ModuleInstanceUnit gr:x="310" gr:y="615" id="sv6#area25#miu7" moduleId="mov2#mpkg2#hym7">
+      <OKLink id="sv6#area25#miu7#oln181" to="sv6#area25#page40#dau15" validate="true" name="Flow94" gr:bendpoints="143,33,-612,193;155,38,-600,198;386,38,-369,198" codeRef="mov2#mpkg2#hym7#okcu21">
+        <LinkParameter id="sv6#area25#miu7#oln181#par1051" source="mov2#mpkg2#hym7#okcu21#ocp5" name="oid_Dettaglio ristorante [oid]" target="sv6#area25#page40#dau15#su53#kcond43.ent14#att40"/>
+      </OKLink>
+      <OKLink id="sv6#area25#miu7#oln180" to="sv6#area25#page40#dau15" validate="true" name="Flow92" gr:bendpoints="130,-49,-625,111;141,-72,-614,88;0,-20,0,0" codeRef="mov2#mpkg2#hym7#okcu20">
+        <LinkParameter id="sv6#area25#miu7#oln180#par1049" source="mov2#mpkg2#hym7#okcu20#ocp7" name="oid_Dettaglio ristorante [oid]" target="sv6#area25#page40#dau15#su53#kcond43.ent14#att40"/>
+      </OKLink>
+      <OKLink id="sv6#area25#miu7#oln179" to="sv6#area25#page40#dau15" validate="true" name="Flow91" codeRef="mov2#mpkg2#hym7#okcu19" gr:bendpoints="365,-1,-390,159">
+        <LinkParameter id="sv6#area25#miu7#oln179#par1047" source="mov2#mpkg2#hym7#okcu19#ocp6" name="oid_Dettaglio ristorante [oid]" target="sv6#area25#page40#dau15#su53#kcond43.ent14#att40"/>
+      </OKLink>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="1620" gr:y="720" id="sv6#area25#miu10" moduleId="mov3#mpkg5#opm12">
+      <KOLink id="sv6#area25#miu10#kln122" to="sv6#area25#page74#alt16#page80" name="KOFlow29" codeRef="mov3#mpkg5#opm12#kocu25" gr:bendpoints="3,789,173,-6"/>
+      <OKLink id="sv6#area25#miu10#oln204" name="OKFlow204" to="sv6#area25#page40" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="945" gr:y="1160" id="sv6#area25#miu11" moduleId="mov3#mpkg5#opm13">
+      <OKLink id="sv6#area25#miu11#oln206" to="sv6#area25#page40" name="OKFlow26" gr:bendpoints="-108,-52,-232,808;-107,-531,-231,329"/>
+      <KOLink id="sv6#area25#miu11#kln133" to="sv6#area25#page74#alt16#page76#mssu37" name="KOFlow28"/>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="305" gr:y="1320" id="sv6#area25#miu14" action="true" moduleId="mov3#mpkg5#opm13">
+      <OKLink id="sv6#area25#miu14#oln212" name="OKFlow209" to="sv6#area25#page77" automaticCoupling="true" gr:bendpoints="-129,0,-149,424;-176,-169,-196,255"/>
+      <KOLink id="sv6#area25#miu14#kln139" name="KOFlow136" to="sv6#area25#page74#alt16#page76#mssu37" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="1365" gr:y="1170" id="sv6#area25#miu15" moduleId="mov3#mpkg5#hym10">
+      <KOLink id="sv6#area25#miu15#kln141" to="sv6#area25#page74#alt16#page75#mssu36" name="KOFlow24" gr:bendpoints="96,97,522,-247"/>
+      <OKLink id="sv6#area25#miu15#oln215" to="sv6#area25#page40" name="OKFlow30" gr:bendpoints="94,-183,454,557"/>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="630" gr:y="1110" id="sv6#area25#miu16" action="false" moduleId="mov3#mpkg5#hym10">
+      <OKLink id="sv6#area25#miu16#oln220" name="OKFlow220" to="sv6#area25#page77" automaticCoupling="true" gr:bendpoints="100,-274,414,36"/>
+      <KOLink id="sv6#area25#miu16#kln149" name="KOFlow149" to="sv6#area25#page74#alt16#page75#mssu36" automaticCoupling="true" gr:bendpoints="191,368,-119,-36"/>
+    </ModuleInstanceUnit>
+  </OperationUnits>
 </Area>

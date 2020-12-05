@@ -1,0 +1,127 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="295" gr:y="595" id="mov1#mpkg3#hym5#page22" name="Errore modifica">
+  <ContentUnits/>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="mov1#mpkg3#hym5#page22#alt12#page23">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="mov1#mpkg3#hym5#page22#alt12#page23#mssu20"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="mov1#mpkg3#hym5#page22#alt12#page24">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="mov1#mpkg3#hym5#page22#alt12#page24#mssu21"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="mov1#mpkg3#hym5#page22#alt12#page25">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="mov1#mpkg3#hym5#page22#alt12#page25#mssu22"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="0" gr:y="0" id="mov1#mpkg3#hym5#page22#alt12" name="Errore modifica ristorante" defaultPage="mov1#mpkg3#hym5#page22#alt12#page23">
+    <Page gr:x="445" gr:y="5" id="mov1#mpkg3#hym5#page22#alt12#page23" name="Errore disconnessione">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="mov1#mpkg3#hym5#page22#alt12#page23#mssu20" name="Errore disconnessione"/>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="255" gr:y="0" id="mov1#mpkg3#hym5#page22#alt12#page24" name="Errore connessione">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="mov1#mpkg3#hym5#page22#alt12#page24#mssu21" name="Errore connessione"/>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="0" gr:y="0" id="mov1#mpkg3#hym5#page22#alt12#page25" name="Errore aggiornamento database">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="mov1#mpkg3#hym5#page22#alt12#page25#mssu22" name="Errore aggiornamento database"/>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

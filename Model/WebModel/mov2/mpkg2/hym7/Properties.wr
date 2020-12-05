@@ -1,0 +1,19 @@
+<HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="100" id="mov2#mpkg2#hym7" name="Ricerca personalizzata cliente" landmarks="mov2#mpkg2#hym7#page28">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="-130" gr:y="230" id="mov2#mpkg2#hym7#icu14" name="Input Port">
+      <InputCollectorParameter id="mov2#mpkg2#hym7#icu14#icp64" name="tipologie cucine preferite [oid]"/>
+      <OKLink id="mov2#mpkg2#hym7#icu14#oln177" to="mov2#mpkg2#hym7#page28#alt13#page31#scu19" validate="true" name="Start">
+        <LinkParameter id="mov2#mpkg2#hym7#icu14#oln177#par1045" source="mov2#mpkg2#hym7#icu14#icp64" name="oid_tipologie cucine preferite [oid]" target="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#rcond53.ent10#att61"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="1250" gr:y="585" id="mov2#mpkg2#hym7#okcu21" name="OK elenco filtrato">
+      <OutputCollectorParameter id="mov2#mpkg2#hym7#okcu21#ocp5" name="Elenco ristoranti filtrati oid"/>
+    </OKCollectorUnit>
+    <OKCollectorUnit gr:x="1250" gr:y="0" id="mov2#mpkg2#hym7#okcu19" name="OK elenco completo">
+      <OutputCollectorParameter id="mov2#mpkg2#hym7#okcu19#ocp6" name="Elenco tutti i ristoranti oid"/>
+    </OKCollectorUnit>
+    <OKCollectorUnit gr:x="1250" gr:y="360" id="mov2#mpkg2#hym7#okcu20" name="OK ristoranti preferiti">
+      <OutputCollectorParameter id="mov2#mpkg2#hym7#okcu20#ocp7" name="Elenco ristoranti preferiti oid"/>
+    </OKCollectorUnit>
+  </OperationUnits>
+</HybridModule>

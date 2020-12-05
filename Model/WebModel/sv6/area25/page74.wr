@@ -1,0 +1,127 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="610" gr:y="1410" id="sv6#area25#page74" name="Errori valutazioni">
+  <ContentUnits/>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv6#area25#page74#alt16#page75">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv6#area25#page74#alt16#page75#mssu36"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv6#area25#page74#alt16#page76">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv6#area25#page74#alt16#page76#mssu37"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv6#area25#page74#alt16#page80">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv6#area25#page74#alt16#page80#mssu39"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="0" gr:y="0" id="sv6#area25#page74#alt16" name="Errori valutazioni" defaultPage="sv6#area25#page74#alt16#page75">
+    <Page gr:x="330" gr:y="5" id="sv6#area25#page74#alt16#page75" name="Errore eliminazione ">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area25#page74#alt16#page75#mssu36" name="Errore eliminazione"/>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="0" gr:y="0" id="sv6#area25#page74#alt16#page76" name="Errore aggiornamento">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area25#page74#alt16#page76#mssu37" name="Errore aggiornamento"/>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="835" gr:y="15" id="sv6#area25#page74#alt16#page80" name="Errore inserimento ">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area25#page74#alt16#page80#mssu39" name="Errore inserimento"/>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

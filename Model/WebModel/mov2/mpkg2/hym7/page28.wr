@@ -1,0 +1,516 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="mov2#mpkg2#hym7#page28" name="Ricerca personalizzata" landmark="true" gr:x="265" gr:y="-5">
+  <ContentUnits>
+    <SelectorUnit id="mov2#mpkg2#hym7#page28#seu31" name="Citt&#224;" gr:showAllParts="true" gr:x="650" gr:y="905" entity="ent22" distinctAttributes="ent22#att27 ent22#att29">
+      <Link id="mov2#mpkg2#hym7#page28#seu31#ln140" name="Flow53" to="mov2#mpkg2#hym7#page28#enu27" type="transport" validate="true">
+        <LinkParameter id="mov2#mpkg2#hym7#page28#seu31#ln140#par1055" name="nome_elenco citt&#224; [label]" source="ent22#att29Array" target="mov2#mpkg2#hym7#page28#enu27#sfld14_label"/>
+        <LinkParameter id="mov2#mpkg2#hym7#page28#seu31#ln140#par1056" name="nome_elenco citt&#224; [output]" source="ent22#att27Array" target="mov2#mpkg2#hym7#page28#enu27#sfld14_output"/>
+      </Link>
+      <SortAttribute attribute="ent22#att27" order="ascending"/>
+    </SelectorUnit>
+    <PowerIndexUnit id="mov2#mpkg2#hym7#page28#pwu4" name="Elenco tipologie cucine" gr:showAllParts="true" gr:x="745" gr:y="710" sortable="true" checkable="true" useCountQuery="false" entity="ent10" displayAttributes="ent10#att28">
+      <SortAttribute attribute="ent10#att28" order="ascending"/>
+      <DefaultSortAttribute attribute="ent10#att28" order="ascending"/>
+      <Link id="mov2#mpkg2#hym7#page28#pwu4#ln141" name="Flow97" to="mov2#mpkg2#hym7#page28#alt13#page31#scu19" type="transport" validate="true" gr:bendpoints="-119,-65,571,180">
+        <LinkParameter id="mov2#mpkg2#hym7#page28#pwu4#ln141#par1057" name="oid_tipologie cucine preferite [oid]" source="data[].ent10#att61" target="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#rcond53.ent10#att61"/>
+      </Link>
+    </PowerIndexUnit>
+    <EntryUnit id="mov2#mpkg2#hym7#page28#enu27" name="Filtro citt&#224;" gr:showAllParts="true" gr:x="640" gr:y="750" fieldOrder="mov2#mpkg2#hym7#page28#enu27#sfld14">
+      <SelectionField id="mov2#mpkg2#hym7#page28#enu27#sfld14" name="elenco citt&#224;" type="string"/>
+      <Link id="mov2#mpkg2#hym7#page28#enu27#ln142" name="Flow89" to="mov2#mpkg2#hym7#page28#alt13#page31#scu19" type="transport" validate="true">
+        <LinkParameter id="mov2#mpkg2#hym7#page28#enu27#ln142#par1058" name="elenco citt&#224;_citt&#224; [oid]" source="mov2#mpkg2#hym7#page28#enu27#sfld14" target="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#rcond54.ent22#att27"/>
+      </Link>
+    </EntryUnit>
+    <EntryUnit id="mov2#mpkg2#hym7#page28#enu28" name="Filtro fascia prezzo" gr:showAllParts="true" gr:x="330" gr:y="720" fieldOrder="mov2#mpkg2#hym7#page28#enu28#sfld15">
+      <SelectionField id="mov2#mpkg2#hym7#page28#enu28#sfld15" name="fascia prezzo" type="string"/>
+      <Link id="mov2#mpkg2#hym7#page28#enu28#ln143" name="Flow123" to="mov2#mpkg2#hym7#page28#alt13#page31#scu19" type="transport" validate="true">
+        <LinkParameter id="mov2#mpkg2#hym7#page28#enu28#ln143#par1059" name="fascia prezzo_fascia prezzo" source="mov2#mpkg2#hym7#page28#enu28#sfld15" target="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#acond26"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit id="mov2#mpkg2#hym7#page28#seu35" name="Cucine preferite" gr:showAllParts="true" gr:x="170" gr:y="860" entity="ent10" distinctAttributes="ent10#att61 ent10#att28">
+      <SortAttribute attribute="ent10#att61" order="ascending"/>
+      <Link id="mov2#mpkg2#hym7#page28#seu35#ln144" name="Flow72" to="mov2#mpkg2#hym7#page28#enu29" type="transport" validate="true">
+        <LinkParameter id="mov2#mpkg2#hym7#page28#seu35#ln144#par1060" name="Nome_cucine preferite [label]" target="mov2#mpkg2#hym7#page28#enu29#msfld5_label" sourceValue="Cucine preferite"/>
+        <LinkParameter id="mov2#mpkg2#hym7#page28#seu35#ln144#par1061" name="oid_cucine preferite [output]" source="ent10#att61Array" target="mov2#mpkg2#hym7#page28#enu29#msfld5_output"/>
+      </Link>
+      <Selector id="mov2#mpkg2#hym7#page28#seu35#su231" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov2#mpkg2#hym7#page28#seu35#su231#rcond49" name="cucine preferite dal cliente" predicate="in" implied="false" role="rel20#role39"/>
+      </Selector>
+    </SelectorUnit>
+    <EntryUnit id="mov2#mpkg2#hym7#page28#enu29" name="Preferenza cucina" gr:showAllParts="true" gr:x="185" gr:y="755">
+      <MultiSelectionField id="mov2#mpkg2#hym7#page28#enu29#msfld5" name="cucine preferite" type="boolean"/>
+      <Link id="mov2#mpkg2#hym7#page28#enu29#ln145" name="Flow88" to="mov2#mpkg2#hym7#page28#alt13#page31#scu19" type="transport" validate="true">
+        <LinkParameter id="mov2#mpkg2#hym7#page28#enu29#ln145#par1062" name="cucine preferite_tipologie cucine preferite [oid]" source="mov2#mpkg2#hym7#page28#enu29#msfld5" target="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#rcond53.ent10#att61"/>
+      </Link>
+    </EntryUnit>
+    <GetUnit id="mov2#mpkg2#hym7#page28#gtu2" name="Preferenze utente" gr:x="15" gr:y="985" contextParameters="UserCtxParam">
+      <Link id="mov2#mpkg2#hym7#page28#gtu2#ln146" name="Flow74" to="mov2#mpkg2#hym7#page28#seu35" type="transport" validate="true">
+        <LinkParameter id="mov2#mpkg2#hym7#page28#gtu2#ln146#par1063" name="UserCtxParam.oid_RoleCondition15 [oid]" source="mov2#mpkg2#hym7#page28#gtu2.UserCtxParam" target="mov2#mpkg2#hym7#page28#seu35#su231#rcond49.userOID"/>
+      </Link>
+      <Link id="mov2#mpkg2#hym7#page28#gtu2#ln147" name="Flow76" to="mov2#mpkg2#hym7#page28#seu38" type="transport" validate="true">
+        <LinkParameter id="mov2#mpkg2#hym7#page28#gtu2#ln147#par1064" name="UserCtxParam.oid_ristorante to cliente [oid]" source="mov2#mpkg2#hym7#page28#gtu2.UserCtxParam" target="mov2#mpkg2#hym7#page28#seu38#su232#rcond50.userOID"/>
+      </Link>
+    </GetUnit>
+    <SelectorUnit id="mov2#mpkg2#hym7#page28#seu38" name="Ristoranti preferiti" gr:showAllParts="true" gr:x="10" gr:y="830" entity="ent14" distinctAttributes="ent14#att40">
+      <Selector id="mov2#mpkg2#hym7#page28#seu38#su232" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov2#mpkg2#hym7#page28#seu38#su232#rcond50" name="ristoranti preferiti dal cliente" predicate="in" implied="false" role="rel19#role38"/>
+      </Selector>
+      <SortAttribute attribute="ent14#att40" order="ascending"/>
+      <Link id="mov2#mpkg2#hym7#page28#seu38#ln148" name="Flow75" to="mov2#mpkg2#hym7#page28#enu30" type="transport" validate="true">
+        <LinkParameter id="mov2#mpkg2#hym7#page28#seu38#ln148#par1065" name="oid_ristoranti preferiti [output]" source="ent14#att40Array" target="mov2#mpkg2#hym7#page28#enu30#msfld6_output"/>
+        <LinkParameter id="mov2#mpkg2#hym7#page28#seu38#ln148#par1066" name="Data Size_ristoranti preferiti [label]" source="dataSize" target="mov2#mpkg2#hym7#page28#enu30#msfld6_label"/>
+      </Link>
+    </SelectorUnit>
+    <EntryUnit id="mov2#mpkg2#hym7#page28#enu30" name="Preferenza ristorante" linkOrder="mov2#mpkg2#hym7#page28#enu30#ln149" gr:showAllParts="true" gr:x="20" gr:y="715">
+      <MultiSelectionField id="mov2#mpkg2#hym7#page28#enu30#msfld6" name="ristoranti preferiti" type="boolean"/>
+      <Link id="mov2#mpkg2#hym7#page28#enu30#ln149" name="Flow78" to="mov2#mpkg2#hym7#page28#alt13#page30#scu18" type="normal" validate="true" gr:bendpoints="-91,-10,-111,385;-94,-403,-109,82">
+        <LinkParameter id="mov2#mpkg2#hym7#page28#enu30#ln149#par1067" name="ristoranti preferiti_ristoranti preferiti [oid]" source="mov2#mpkg2#hym7#page28#enu30#msfld6" target="mov2#mpkg2#hym7#page28#alt13#page30#scu18#su235#rcond51.userOID"/>
+      </Link>
+      <Link id="mov2#mpkg2#hym7#page28#enu30#ln150" name="Flow86" to="mov2#mpkg2#hym7#page28#alt13#page31#scu19" type="transport" validate="true">
+        <LinkParameter id="mov2#mpkg2#hym7#page28#enu30#ln150#par1068" name="ristoranti preferiti_ristoranti preferiti [oid]" source="mov2#mpkg2#hym7#page28#enu30#msfld6" target="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#rcond52.userOID"/>
+      </Link>
+    </EntryUnit>
+    <TimeUnit id="mov2#mpkg2#hym7#page28#tmu11" name="Prendi data attuale" gr:x="490" gr:y="980">
+      <Link id="mov2#mpkg2#hym7#page28#tmu11#ln151" name="Flow98" to="mov2#mpkg2#hym7#page28#seu41" type="transport" validate="true">
+        <LinkParameter id="mov2#mpkg2#hym7#page28#tmu11#ln151#par1069" name="Day_giorno" source="day" target="mov2#mpkg2#hym7#page28#seu41#su233#acond25"/>
+        <LinkParameter id="mov2#mpkg2#hym7#page28#tmu11#ln151#par1070" name="Current/Input Time_ora fine" source="currentTime" target="mov2#mpkg2#hym7#page28#seu41#su233#acond23"/>
+        <LinkParameter id="mov2#mpkg2#hym7#page28#tmu11#ln151#par1071" name="Current/Input Time_ora inizio" source="currentTime" target="mov2#mpkg2#hym7#page28#seu41#su233#acond19"/>
+      </Link>
+    </TimeUnit>
+    <SelectorUnit id="mov2#mpkg2#hym7#page28#seu41" name="Orario" gr:showAllParts="true" gr:x="480" gr:y="770" entity="ent17" distinctAttributes="ent17#att34 ent17#att43 ent17#att14">
+      <SortAttribute attribute="ent17#att60" order="ascending"/>
+      <Selector id="mov2#mpkg2#hym7#page28#seu41#su233" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="mov2#mpkg2#hym7#page28#seu41#su233#acond19" name="ora inizio" predicate="gteq" booleanOperator="or" implied="false" attributes="ent17#att43"/>
+        <AttributesCondition id="mov2#mpkg2#hym7#page28#seu41#su233#acond23" name="ora fine" predicate="lteq" booleanOperator="or" implied="false" attributes="ent17#att14"/>
+        <AttributesCondition id="mov2#mpkg2#hym7#page28#seu41#su233#acond25" name="giorno" predicate="eq" booleanOperator="or" implied="false" attributes="ent17#att34"/>
+      </Selector>
+      <Link id="mov2#mpkg2#hym7#page28#seu41#ln152" name="Flow100" to="mov2#mpkg2#hym7#page28#alt13#page31#scu19" type="transport" automaticCoupling="true" validate="true" gr:bendpoints="-28,-120,392,205"/>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov2#mpkg2#hym7#page28#pwu4">
+          <layout:Attribute attribute="ent10#att28"/>
+          <layout:Link link="mov2#mpkg2#hym7#page28#pwu4ent10#att28"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov2#mpkg2#hym7#page28#enu27">
+          <layout:Field field="mov2#mpkg2#hym7#page28#enu27#sfld14"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov2#mpkg2#hym7#page28#enu28">
+          <layout:Field field="mov2#mpkg2#hym7#page28#enu28#sfld15"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov2#mpkg2#hym7#page28#enu29">
+          <layout:Field field="mov2#mpkg2#hym7#page28#enu29#msfld5"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov2#mpkg2#hym7#page28#enu30">
+          <layout:Field field="mov2#mpkg2#hym7#page28#enu30#msfld6"/>
+          <layout:Link link="mov2#mpkg2#hym7#page28#enu30#ln149"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="mov2#mpkg2#hym7#page28#alt13#page29">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="mov2#mpkg2#hym7#page28#alt13#page29#scu16">
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page29#scu16First"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page29#scu16Previous"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page29#scu16Block"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page29#scu16Next"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page29#scu16Last"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="mov2#mpkg2#hym7#page28#alt13#page29#inu6">
+                  <layout:Attribute attribute="ent14#att42"/>
+                  <layout:Attribute attribute="ent14#att52"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page29#inu6#ln156"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="mov2#mpkg2#hym7#page28#alt13#page30">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="mov2#mpkg2#hym7#page28#alt13#page30#scu18">
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page30#scu18First"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page30#scu18Previous"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page30#scu18Block"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page30#scu18Next"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page30#scu18Last"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="mov2#mpkg2#hym7#page28#alt13#page30#inu7">
+                  <layout:Attribute attribute="ent14#att42"/>
+                  <layout:Attribute attribute="ent14#att13"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page30#inu7#ln157"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="mov2#mpkg2#hym7#page28#alt13#page31">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="mov2#mpkg2#hym7#page28#alt13#page31#inu8">
+                  <layout:Attribute attribute="ent14#att42"/>
+                  <layout:Attribute attribute="ent14#att52"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page31#inu8#ln158"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="mov2#mpkg2#hym7#page28#alt13#page31#scu19">
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page31#scu19First"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page31#scu19Previous"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page31#scu19Block"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page31#scu19Next"/>
+                  <layout:Link link="mov2#mpkg2#hym7#page28#alt13#page31#scu19Last"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative id="mov2#mpkg2#hym7#page28#alt13" name="Ricerca personalizzata" defaultPage="mov2#mpkg2#hym7#page28#alt13#page29" gr:x="0" gr:y="0">
+    <Page id="mov2#mpkg2#hym7#page28#alt13#page29" name="Tutti i ristoranti" gr:x="0" gr:y="0">
+      <ContentUnits>
+        <ScrollerUnit id="mov2#mpkg2#hym7#page28#alt13#page29#scu16" name="Scorri ristoranti" linkOrder="mov2#mpkg2#hym7#page28#alt13#page29#scu16#ln153" gr:showAllParts="true" gr:x="0" gr:y="5" useCountQuery="false" entity="ent14">
+          <SortAttribute attribute="ent14#att42" order="ascending"/>
+          <Link id="mov2#mpkg2#hym7#page28#alt13#page29#scu16#ln153" name="Flow68" to="mov2#mpkg2#hym7#page28#alt13#page29#inu6" type="automatic" automaticCoupling="true" validate="true"/>
+        </ScrollerUnit>
+        <IndexUnit id="mov2#mpkg2#hym7#page28#alt13#page29#inu6" name="Elenco tutti i ristoranti" linkOrder="mov2#mpkg2#hym7#page28#alt13#page29#inu6#ln156" gr:showAllParts="true" gr:x="195" gr:y="0" entity="ent14" displayAttributes="ent14#att42 ent14#att52">
+          <Selector id="mov2#mpkg2#hym7#page28#alt13#page29#inu6#su234" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="mov2#mpkg2#hym7#page28#alt13#page29#inu6#su234#kcond188" name="KeyCondition51" predicate="in" implied="false"/>
+          </Selector>
+          <SortAttribute attribute="ent14#att42" order="ascending"/>
+          <Link id="mov2#mpkg2#hym7#page28#alt13#page29#inu6#ln156" to="mov2#mpkg2#hym7#okcu19" type="normal" validate="true" name="Flow91">
+            <LinkParameter id="mov2#mpkg2#hym7#page28#alt13#page29#inu6#ln156#par1072" name="oid_Dettaglio ristorante [oid]" source="data[].ent14#att40" target="mov2#mpkg2#hym7#okcu19#ocp6"/>
+          </Link>
+        </IndexUnit>
+      </ContentUnits>
+    </Page>
+    <Page id="mov2#mpkg2#hym7#page28#alt13#page30" name="Ricerca solo ristoranti preferiti" gr:x="0" gr:y="175">
+      <ContentUnits>
+        <ScrollerUnit id="mov2#mpkg2#hym7#page28#alt13#page30#scu18" name="Scorri ristoranti" linkOrder="mov2#mpkg2#hym7#page28#alt13#page30#scu18#ln154" gr:x="0" gr:y="0" useCountQuery="false" entity="ent14">
+          <Link id="mov2#mpkg2#hym7#page28#alt13#page30#scu18#ln154" name="Flow73" to="mov2#mpkg2#hym7#page28#alt13#page30#inu7" type="automatic" automaticCoupling="true" validate="true"/>
+          <SortAttribute attribute="ent14#att42" order="ascending"/>
+          <Selector id="mov2#mpkg2#hym7#page28#alt13#page30#scu18#su235" defaultPolicy="fill" booleanOperator="and">
+            <RelationshipRoleCondition id="mov2#mpkg2#hym7#page28#alt13#page30#scu18#su235#rcond51" name="ristoranti preferiti" predicate="in" implied="false" role="rel19#role38"/>
+          </Selector>
+        </ScrollerUnit>
+        <IndexUnit id="mov2#mpkg2#hym7#page28#alt13#page30#inu7" name="Elenco ristoranti preferiti" linkOrder="mov2#mpkg2#hym7#page28#alt13#page30#inu7#ln157" gr:showAllParts="true" gr:x="235" gr:y="0" entity="ent14" displayAttributes="ent14#att42 ent14#att13">
+          <Selector id="mov2#mpkg2#hym7#page28#alt13#page30#inu7#su236" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="mov2#mpkg2#hym7#page28#alt13#page30#inu7#su236#kcond201" name="KeyCondition54" predicate="in" implied="false"/>
+          </Selector>
+          <SortAttribute attribute="ent14#att42" order="ascending"/>
+          <Link id="mov2#mpkg2#hym7#page28#alt13#page30#inu7#ln157" to="mov2#mpkg2#hym7#okcu20" type="normal" validate="true" name="Flow92">
+            <LinkParameter id="mov2#mpkg2#hym7#page28#alt13#page30#inu7#ln157#par1073" name="oid_Dettaglio ristorante [oid]" source="data[].ent14#att40" target="mov2#mpkg2#hym7#okcu20#ocp7"/>
+          </Link>
+        </IndexUnit>
+      </ContentUnits>
+    </Page>
+    <Page id="mov2#mpkg2#hym7#page28#alt13#page31" name="Ricerca filtrata" gr:x="0" gr:y="360">
+      <ContentUnits>
+        <IndexUnit id="mov2#mpkg2#hym7#page28#alt13#page31#inu8" name="Elenco ristoranti filtrati" linkOrder="mov2#mpkg2#hym7#page28#alt13#page31#inu8#ln158" gr:showAllParts="true" gr:x="240" gr:y="0" entity="ent14" displayAttributes="ent14#att42 ent14#att52">
+          <Selector id="mov2#mpkg2#hym7#page28#alt13#page31#inu8#su237" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="mov2#mpkg2#hym7#page28#alt13#page31#inu8#su237#kcond202" name="KeyCondition55" predicate="in" implied="false"/>
+          </Selector>
+          <SortAttribute attribute="ent14#att42" order="ascending"/>
+          <Link id="mov2#mpkg2#hym7#page28#alt13#page31#inu8#ln158" to="mov2#mpkg2#hym7#okcu21" type="normal" validate="true" name="Flow94">
+            <LinkParameter id="mov2#mpkg2#hym7#page28#alt13#page31#inu8#ln158#par1074" name="oid_Dettaglio ristorante [oid]" source="data[].ent14#att40" target="mov2#mpkg2#hym7#okcu21#ocp5"/>
+          </Link>
+        </IndexUnit>
+        <ScrollerUnit id="mov2#mpkg2#hym7#page28#alt13#page31#scu19" name="Scorri ristoranti" linkOrder="mov2#mpkg2#hym7#page28#alt13#page31#scu19#ln155" gr:showAllParts="true" gr:x="0" gr:y="15" useCountQuery="false" entity="ent14">
+          <SortAttribute attribute="ent14#att42" order="ascending"/>
+          <Link id="mov2#mpkg2#hym7#page28#alt13#page31#scu19#ln155" name="Flow82" to="mov2#mpkg2#hym7#page28#alt13#page31#inu8" type="automatic" automaticCoupling="true" validate="true"/>
+          <Selector id="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238" defaultPolicy="fill" booleanOperator="or" expression="(IFNULLTRUE(mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#acond26) OR (IFNULLTRUE(mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#acond28) AND IFNULLTRUE(mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#acond27)) OR IFNULLTRUE(mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#acond29)) AND IFNULLTRUE(mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#rcond54) AND IFNULLTRUE(mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#rcond52) AND IFNULLTRUE(mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#rcond53) AND IFNULLTRUE(mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#rcond55)">
+            <RelationshipRoleCondition id="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#rcond52" name="ristoranti preferiti" predicate="in" implied="false" role="rel19#role38"/>
+            <RelationshipRoleCondition id="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#rcond53" name="tipologie cucine preferite" predicate="in" implied="false" role="rel7#role13"/>
+            <RelationshipRoleCondition id="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#rcond54" name="citt&#224;" predicate="in" implied="false" role="rel32#role64.rel10#role20"/>
+            <RelationshipRoleCondition id="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#rcond55" name="&#232; aperto?" predicate="in" implied="false" role="rel14#role27"/>
+            <AttributesCondition id="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#acond26" name="fascia alta &gt;=" predicate="gt" booleanOperator="or" implied="true" attributes="ent14#att13" value="20"/>
+            <AttributesCondition id="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#acond27" name="fascia media &gt;" predicate="gteq" booleanOperator="or" implied="true" value="10" attributes="ent14#att13"/>
+            <AttributesCondition id="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#acond28" name="fascia media &lt;" predicate="lt" booleanOperator="or" implied="true" value="20" attributes="ent14#att13"/>
+            <AttributesCondition id="mov2#mpkg2#hym7#page28#alt13#page31#scu19#su238#acond29" name="fascia bassa &lt;=" predicate="lteq" booleanOperator="or" implied="false" value="10" attributes="ent14#att13"/>
+          </Selector>
+        </ScrollerUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

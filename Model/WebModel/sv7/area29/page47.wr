@@ -14,7 +14,7 @@
         <KeyCondition id="sv7#area29#page47#inu21#su50#kcond32" name="KeyCondition32" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv7#area29#page47#inu21#ln17" name="Flow17" to="sv7#area29#miu35" type="normal" validate="true" gr:bendpoints="-222,133,-147,-82;-224,217,-149,2">
-        <LinkParameter id="sv7#area29#page47#inu21#ln17#par1251" name="oid_tipologia cucina [oid]" source="data[].ent10#att61" target="sv7#area29#miu35.mov1#hym7#icu19#icp83"/>
+        <LinkParameter id="sv7#area29#page47#inu21#ln17#par1251" name="oid_tipologia cucina [oid]" source="data[].ent10#att61" target="sv7#area29#miu35.mov2#mpkg2#hym2#icu9#icp43"/>
       </Link>
     </IndexUnit>
     <ScrollerUnit gr:x="0" gr:y="5" id="sv7#area29#page47#scu9" name="Scorri cucine" useCountQuery="false" entity="ent10" blockFactor="5" gr:showAllParts="true" linkOrder="sv7#area29#page47#scu9#ln79">

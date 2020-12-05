@@ -45,12 +45,12 @@
       <SelectionField id="sv6#area31#page44#enu50#sfld26" name="metodo" type="string"/>
       <SelectionField id="sv6#area31#page44#enu50#sfld27" name="promozione" type="string" modifiable="true"/>
       <Link id="sv6#area31#page44#enu50#ln199" name="Flow199" to="sv6#area31#miu6" type="normal" validate="true" gr:bendpoints="-262,6,-152,546;-268,-408,-133,322;-189,-416,-54,314;-190,-504,-55,226;-146,-528,-11,202">
-        <LinkParameter id="sv6#area31#page44#enu50#ln199#par486" name="metodo_PASSING" source="sv6#area31#page44#enu50#sfld26" target="sv6#area31#miu6.mov1#opm3#icu3#icp20"/>
-        <LinkParameter id="sv6#area31#page44#enu50#ln199#par487" name="promozione_PASSING" source="sv6#area31#page44#enu50#sfld27" target="sv6#area31#miu6.mov1#opm3#icu3#icp19"/>
-        <LinkParameter id="sv6#area31#page44#enu50#ln199#par33" name="Checked oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu3#ln223#par442" target="sv6#area31#miu6.mov1#opm3#icu3#icp18"/>
-        <LinkParameter id="sv6#area31#page44#enu50#ln199#par34" name="oid_PASSING" sourceLinkParameter="sv6#area31#page44#dau24#ln90#par31" target="sv6#area31#miu6.mov1#opm3#icu3#icp16"/>
-        <LinkParameter id="sv6#area31#page44#enu50#ln199#par35" name="oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu3#ln223#par460" target="sv6#area31#miu6.mov1#opm3#icu3#icp17"/>
-        <LinkParameter id="sv6#area31#page44#enu50#ln199#par36" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#page44#dau24#ln90#par32" target="sv6#area31#miu6.mov1#opm3#icu3#icp21"/>
+        <LinkParameter id="sv6#area31#page44#enu50#ln199#par486" name="metodo_PASSING" source="sv6#area31#page44#enu50#sfld26" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp41"/>
+        <LinkParameter id="sv6#area31#page44#enu50#ln199#par487" name="promozione_PASSING" source="sv6#area31#page44#enu50#sfld27" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp40"/>
+        <LinkParameter id="sv6#area31#page44#enu50#ln199#par33" name="Checked oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu3#ln223#par442" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp39"/>
+        <LinkParameter id="sv6#area31#page44#enu50#ln199#par34" name="oid_PASSING" sourceLinkParameter="sv6#area31#page44#dau24#ln90#par31" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp37"/>
+        <LinkParameter id="sv6#area31#page44#enu50#ln199#par35" name="oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu3#ln223#par460" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp38"/>
+        <LinkParameter id="sv6#area31#page44#enu50#ln199#par36" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#page44#dau24#ln90#par32" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp42"/>
       </Link>
     </EntryUnit>
     <SelectorUnit gr:x="430" gr:y="310" id="sv6#area31#page44#seu54" name="Promozioni" entity="ent25" gr:showAllParts="false">

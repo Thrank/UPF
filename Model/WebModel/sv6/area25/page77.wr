@@ -1,0 +1,94 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="30" gr:y="745" id="sv6#area25#page77" name="Le Mie Valutazioni" landmark="true">
+  <ContentUnits>
+    <MultiDataUnit gr:x="620" gr:y="0" id="sv6#area25#page77#mdu4" name="Valutazioni utente" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4" gr:showAllParts="true" linkOrder="sv6#area25#page77#mdu4#ln228">
+      <SortAttribute attribute="ent15#att4" order="descending"/>
+      <Selector id="sv6#area25#page77#mdu4#su277" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area25#page77#mdu4#su277#kcond221" name="KeyCondition48" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv6#area25#page77#mdu4#ln228" name="Flow127" to="sv6#area25#page59#enu37" type="normal" validate="true">
+        <LinkParameter id="sv6#area25#page77#mdu4#ln228#par1288" name="commento_commento" source="ent15#att54Array" target="sv6#area25#page59#enu37#fld114_slot"/>
+        <LinkParameter id="sv6#area25#page77#mdu4#ln228#par1289" name="voto_voto" source="ent15#att53Array" target="sv6#area25#page59#enu37#fld113_slot"/>
+        <LinkParameter id="sv6#area25#page77#mdu4#ln228#par1290" name="oid_PASSING" source="ent15#att41Array" passing="true"/>
+      </Link>
+      <Link id="sv6#area25#page77#mdu4#ln244" name="Flow244" to="sv6#area25#miu16" type="transport" validate="true" gr:bendpoints="-109,251,-113,-55">
+        <LinkParameter id="sv6#area25#page77#mdu4#ln244#par1326" name="valutazioneToCliente registrato.oid_utente della valutazione [oid]" source="rel3#role6_userOIDArray" target="sv6#area25#miu16.mov3#mpkg5#hym10#icu20#icp80"/>
+        <LinkParameter id="sv6#area25#page77#mdu4#ln244#par1327" name="valutazioneToRistorante.oid_valutazione del ristorante [oid]" source="rel2#role4_ent14#att40Array" target="sv6#area25#miu16.mov3#mpkg5#hym10#icu20#icp81"/>
+      </Link>
+    </MultiDataUnit>
+    <ScrollerUnit gr:x="415" gr:y="10" id="sv6#area25#page77#scu22" name="Scorri valutazioni utente" useCountQuery="false" linkOrder="sv6#area25#page77#scu22#ln230" entity="ent15" gr:showAllParts="true" blockFactor="10">
+      <Link id="sv6#area25#page77#scu22#ln230" name="Flow70" to="sv6#area25#page77#mdu4" type="normal" validate="true" automaticCoupling="true"/>
+      <SortAttribute attribute="ent15#att4" order="descending"/>
+    </ScrollerUnit>
+    <SelectorUnit gr:x="185" gr:y="5" id="sv6#area25#page77#seu58" name="Valutazioni utente" entity="ent15" distinctAttributes="ent15#att41" gr:showAllParts="true">
+      <Link id="sv6#area25#page77#seu58#ln232" name="Flow69" to="sv6#area25#page77#scu22" automaticCoupling="true" type="transport" validate="true"/>
+      <SortAttribute attribute="ent15#att4" order="descending"/>
+      <Selector id="sv6#area25#page77#seu58#su278" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv6#area25#page77#seu58#su278#rcond64" name="RoleCondition14" predicate="in" implied="false" role="rel3#role5"/>
+      </Selector>
+    </SelectorUnit>
+    <GetUnit gr:x="0" gr:y="20" id="sv6#area25#page77#gtu8" name="Valutazioni Utente" contextParameters="UserCtxParam">
+      <Link id="sv6#area25#page77#gtu8#ln233" name="Flow71" to="sv6#area25#page77#seu58" type="transport" validate="true">
+        <LinkParameter id="sv6#area25#page77#gtu8#ln233#par1292" name="UserCtxParam.oid_RoleCondition14 [oid]" source="sv6#area25#page77#gtu8.UserCtxParam" target="sv6#area25#page77#seu58#su278#rcond64.userOID"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv6#area25#page77#mdu4">
+          <layout:Attribute attribute="ent15#att53"/>
+          <layout:Attribute attribute="ent15#att54"/>
+          <layout:Attribute attribute="ent15#att4"/>
+          <layout:Link link="sv6#area25#page77#mdu4#ln228"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv6#area25#page77#scu22">
+          <layout:Link link="sv6#area25#page77#scu22First"/>
+          <layout:Link link="sv6#area25#page77#scu22Previous"/>
+          <layout:Link link="sv6#area25#page77#scu22Block"/>
+          <layout:Link link="sv6#area25#page77#scu22Next"/>
+          <layout:Link link="sv6#area25#page77#scu22Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

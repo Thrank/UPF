@@ -1,0 +1,44 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov3#mpkg5#opm12#opg31" name="Inserisci valutazione" transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <CreateUnit id="mov3#mpkg5#opm12#opg31#cru15" name="Inserisci valutazione" gr:x="5" gr:y="145" entity="ent15">
+      <OKLink id="mov3#mpkg5#opm12#opg31#cru15#oln201" name="OKFlow23" to="mov3#mpkg5#opm12#opg31#cnu44">
+        <LinkParameter id="mov3#mpkg5#opm12#opg31#cru15#oln201#par1241" name="oid_KeyCondition88 [oid] [Valutazione] [Source]" source="ent15#att41Array" target="mov3#mpkg5#opm12#opg31#cnu44#su268#kcond213.ent15#att41"/>
+        <LinkParameter id="mov3#mpkg5#opm12#opg31#cru15#oln201#par1242" name="UserCtxParam.oid_PASSING_KeyCondition89 [oid] [Cliente ] [Target]" sourceLinkParameter="mov3#mpkg5#opm12#opg31#tmu13#ln197#par1249" target="mov3#mpkg5#opm12#opg31#cnu44#su269#kcond214.userOID"/>
+        <LinkParameter id="mov3#mpkg5#opm12#opg31#cru15#oln201#par1243" name="oid_PASSING" sourceLinkParameter="mov3#mpkg5#opm12#opg31#tmu13#ln197#par1250" passing="true"/>
+      </OKLink>
+      <KOLink id="mov3#mpkg5#opm12#opg31#cru15#kln129" to="mov3#mpkg5#opm12#kocu25" name="KOFlow30" gr:bendpoints="145,-113,-305,67"/>
+    </CreateUnit>
+    <TimeUnit id="mov3#mpkg5#opm12#opg31#tmu13" name="Recupera data corrente" gr:x="0" gr:y="20">
+      <Link id="mov3#mpkg5#opm12#opg31#tmu13#ln197" name="Flow139" to="mov3#mpkg5#opm12#opg31#cru15" type="transport" validate="true">
+        <LinkParameter id="mov3#mpkg5#opm12#opg31#tmu13#ln197#par1244" name="commento_PASSING_commento" sourceLinkParameter="mov3#mpkg5#opm12#icu18#oln200#par1238" target="mov3#mpkg5#opm12#opg31#cru15.ent15#att54"/>
+        <LinkParameter id="mov3#mpkg5#opm12#opg31#tmu13#ln197#par1245" name="Current/Input Date_data" source="currentDate" target="mov3#mpkg5#opm12#opg31#cru15.ent15#att4"/>
+        <LinkParameter id="mov3#mpkg5#opm12#opg31#tmu13#ln197#par1247" name="voto_PASSING_voto" sourceLinkParameter="mov3#mpkg5#opm12#icu18#oln200#par1239" target="mov3#mpkg5#opm12#opg31#cru15.ent15#att53"/>
+        <LinkParameter id="mov3#mpkg5#opm12#opg31#tmu13#ln197#par1249" name="UserCtxParam.oid_PASSING" sourceLinkParameter="mov3#mpkg5#opm12#icu18#oln200#par1237" passing="true"/>
+        <LinkParameter id="mov3#mpkg5#opm12#opg31#tmu13#ln197#par1250" name="oid_PASSING" sourceLinkParameter="mov3#mpkg5#opm12#icu18#oln200#par1240" passing="true"/>
+      </Link>
+    </TimeUnit>
+    <ConnectUnit id="mov3#mpkg5#opm12#opg31#cnu44" name="Connetti a utente" gr:x="195" gr:y="120" relationship="rel3#role6">
+      <SourceSelector id="mov3#mpkg5#opm12#opg31#cnu44#su268" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov3#mpkg5#opm12#opg31#cnu44#su268#kcond213" name="KeyCondition88" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov3#mpkg5#opm12#opg31#cnu44#su269" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov3#mpkg5#opm12#opg31#cnu44#su269#kcond214" name="KeyCondition89" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov3#mpkg5#opm12#opg31#cnu44#oln202" name="OKFlow24" to="mov3#mpkg5#opm12#opg31#cnu45">
+        <LinkParameter id="mov3#mpkg5#opm12#opg31#cnu44#oln202#par1252" name="Source oid [Valutazione]_KeyCondition90 [oid] [Valutazione] [Source]" source="sourceent15#att41" target="mov3#mpkg5#opm12#opg31#cnu45#su270#kcond215.ent15#att41"/>
+        <LinkParameter id="mov3#mpkg5#opm12#opg31#cnu44#oln202#par1253" name="oid_PASSING_KeyCondition91 [oid] [Ristorante] [Target]" sourceLinkParameter="mov3#mpkg5#opm12#opg31#cru15#oln201#par1243" target="mov3#mpkg5#opm12#opg31#cnu45#su271#kcond216.ent14#att40"/>
+      </OKLink>
+      <KOLink id="mov3#mpkg5#opm12#opg31#cnu44#kln130" to="mov3#mpkg5#opm12#kocu25" name="KOFlow29"/>
+    </ConnectUnit>
+    <ConnectUnit id="mov3#mpkg5#opm12#opg31#cnu45" name="Connetti a ristorante" gr:x="10" gr:y="255" relationship="rel2#role4">
+      <SourceSelector id="mov3#mpkg5#opm12#opg31#cnu45#su270" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov3#mpkg5#opm12#opg31#cnu45#su270#kcond215" name="KeyCondition90" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov3#mpkg5#opm12#opg31#cnu45#su271" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov3#mpkg5#opm12#opg31#cnu45#su271#kcond216" name="KeyCondition91" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="mov3#mpkg5#opm12#opg31#cnu45#kln131" to="mov3#mpkg5#opm12#kocu25" name="KOFlow31" gr:bendpoints="306,-71,-134,234"/>
+      <OKLink id="mov3#mpkg5#opm12#opg31#cnu45#oln203" to="mov3#mpkg5#opm12#okcu28" name="OKFlow25"/>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>

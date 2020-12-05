@@ -1,0 +1,19 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov3#mpkg5#opm13#opg32" name="Modifica valutazione" transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <ModifyUnit id="mov3#mpkg5#opm13#opg32#mfu3" name="Aggiorna valutazione" gr:x="0" gr:y="100" entity="ent15">
+      <Selector id="mov3#mpkg5#opm13#opg32#mfu3#su272" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov3#mpkg5#opm13#opg32#mfu3#su272#kcond217" name="KeyCondition68" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov3#mpkg5#opm13#opg32#mfu3#oln208" to="mov3#mpkg5#opm13#okcu29" name="OKFlow26"/>
+      <KOLink id="mov3#mpkg5#opm13#opg32#mfu3#kln135" to="mov3#mpkg5#opm13#kocu27" name="KOFlow28"/>
+    </ModifyUnit>
+    <TimeUnit id="mov3#mpkg5#opm13#opg32#tmu14" name="Recupera data corrente" gr:x="0" gr:y="0">
+      <Link id="mov3#mpkg5#opm13#opg32#tmu14#ln198" name="Flow115" to="mov3#mpkg5#opm13#opg32#mfu3" type="transport" validate="true">
+        <LinkParameter id="mov3#mpkg5#opm13#opg32#tmu14#ln198#par1260" name="commento_PASSING_commento" sourceLinkParameter="mov3#mpkg5#opm13#icu19#oln205#par1257" target="mov3#mpkg5#opm13#opg32#mfu3.ent15#att54"/>
+        <LinkParameter id="mov3#mpkg5#opm13#opg32#tmu14#ln198#par1261" name="Current/Input Date_data" source="currentDate" target="mov3#mpkg5#opm13#opg32#mfu3.ent15#att4"/>
+        <LinkParameter id="mov3#mpkg5#opm13#opg32#tmu14#ln198#par1262" name="oid_PASSING_KeyCondition68 [oid]" sourceLinkParameter="mov3#mpkg5#opm13#icu19#oln205#par1258" target="mov3#mpkg5#opm13#opg32#mfu3#su272#kcond217.ent15#att41"/>
+        <LinkParameter id="mov3#mpkg5#opm13#opg32#tmu14#ln198#par1263" name="voto_PASSING_voto" sourceLinkParameter="mov3#mpkg5#opm13#icu19#oln205#par1259" target="mov3#mpkg5#opm13#opg32#mfu3.ent15#att53"/>
+      </Link>
+    </TimeUnit>
+  </OperationUnits>
+</OperationGroup>

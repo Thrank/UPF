@@ -1,0 +1,14 @@
+<HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="1780" id="mov3#mpkg5#hym10" name="Elimina valutazione">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="345" id="mov3#mpkg5#hym10#icu20" name="Input Port">
+      <InputCollectorParameter id="mov3#mpkg5#hym10#icu20#icp80" name="utente della valutazione [oid]"/>
+      <InputCollectorParameter id="mov3#mpkg5#hym10#icu20#icp81" name="valutazione del ristorante [oid]"/>
+      <OKLink id="mov3#mpkg5#hym10#icu20#oln214" to="mov3#mpkg5#hym10#page78#seu64" validate="true" name="Flow111">
+        <LinkParameter id="mov3#mpkg5#hym10#icu20#oln214#par1316" name="UserCtxParam.oid_PASSING_utente della valutazione [oid]" target="mov3#mpkg5#hym10#page78#seu64#su287#rcond67.userOID" source="mov3#mpkg5#hym10#icu20#icp80"/>
+        <LinkParameter id="mov3#mpkg5#hym10#icu20#oln214#par1317" source="mov3#mpkg5#hym10#icu20#icp81" name="oid_valutazione del ristorante [oid]" target="mov3#mpkg5#hym10#page78#seu64#su287#rcond68.ent14#att40"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="905" gr:y="0" id="mov3#mpkg5#hym10#okcu30" name="OK eliminazione"/>
+    <KOCollectorUnit gr:x="905" gr:y="255" id="mov3#mpkg5#hym10#kocu30" name="KO eliminazione"/>
+  </OperationUnits>
+</HybridModule>

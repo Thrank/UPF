@@ -1,0 +1,34 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov3#mpkg5#hym10#opg35" name="Eliminazione valutazione" transaction="true" gr:x="300" gr:y="390">
+  <OperationUnits>
+    <DeleteUnit id="mov3#mpkg5#hym10#opg35#dlu7" name="Elimina valutazione" gr:x="20" gr:y="180" entity="ent15">
+      <Selector id="mov3#mpkg5#hym10#opg35#dlu7#su282" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov3#mpkg5#hym10#opg35#dlu7#su282#kcond224" name="KeyCondition69" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="mov3#mpkg5#hym10#opg35#dlu7#kln145" to="mov3#mpkg5#hym10#kocu30" name="KOFlow26" gr:bendpoints="115,58,-510,418;416,58,-209,418"/>
+      <OKLink id="mov3#mpkg5#hym10#opg35#dlu7#oln219" to="mov3#mpkg5#hym10#okcu30" name="OKFlow30"/>
+    </DeleteUnit>
+    <DisconnectUnit id="mov3#mpkg5#hym10#opg35#dcnu28" name="Sconnetti da ristorante" gr:x="250" gr:y="0" relationship="rel2#role4">
+      <SourceSelector id="mov3#mpkg5#hym10#opg35#dcnu28#su283" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov3#mpkg5#hym10#opg35#dcnu28#su283#kcond225" name="KeyCondition70" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov3#mpkg5#hym10#opg35#dcnu28#su284" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov3#mpkg5#hym10#opg35#dcnu28#su284#kcond226" name="KeyCondition71" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov3#mpkg5#hym10#opg35#dcnu28#oln217" name="OKFlow28" to="mov3#mpkg5#hym10#opg35#dcnu29">
+        <LinkParameter id="mov3#mpkg5#hym10#opg35#dcnu28#oln217#par1318" name="Source oid [Valutazione]_KeyCondition72 [oid] [Valutazione] [Source]" source="sourceent15#att41" target="mov3#mpkg5#hym10#opg35#dcnu29#su285#kcond227.ent15#att41"/>
+        <LinkParameter id="mov3#mpkg5#hym10#opg35#dcnu28#oln217#par1319" name="valutazioneToCliente registrato.oid_PASSING_KeyCondition81 [oid] [Cliente ] [Target]" sourceLinkParameter="mov3#mpkg5#hym10#page78#dau10#ln243#par1325" target="mov3#mpkg5#hym10#opg35#dcnu29#su286#kcond228.userOID"/>
+      </OKLink>
+      <KOLink id="mov3#mpkg5#hym10#opg35#dcnu28#kln146" to="mov3#mpkg5#hym10#kocu30" name="KOFlow24"/>
+    </DisconnectUnit>
+    <DisconnectUnit id="mov3#mpkg5#hym10#opg35#dcnu29" name="Sconnetti da utente" gr:x="245" gr:y="165" relationship="rel3#role6">
+      <SourceSelector id="mov3#mpkg5#hym10#opg35#dcnu29#su285" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov3#mpkg5#hym10#opg35#dcnu29#su285#kcond227" name="KeyCondition72" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov3#mpkg5#hym10#opg35#dcnu29#su286" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov3#mpkg5#hym10#opg35#dcnu29#su286#kcond228" name="KeyCondition81" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov3#mpkg5#hym10#opg35#dcnu29#oln218" name="OKFlow29" to="mov3#mpkg5#hym10#opg35#dlu7" automaticCoupling="true"/>
+      <KOLink id="mov3#mpkg5#hym10#opg35#dcnu29#kln147" to="mov3#mpkg5#hym10#kocu30" name="KOFlow25" gr:bendpoints="0,-20"/>
+    </DisconnectUnit>
+  </OperationUnits>
+</OperationGroup>

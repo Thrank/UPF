@@ -1,0 +1,18 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="mov3#mpkg5#opm12" name="Inserisci valuazione">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov3#mpkg5#opm12#icu18">
+      <InputCollectorParameter id="mov3#mpkg5#opm12#icu18#icp73" name="UserCtxParam.oid_PASSING"/>
+      <InputCollectorParameter id="mov3#mpkg5#opm12#icu18#icp74" name="oid_PASSING"/>
+      <InputCollectorParameter id="mov3#mpkg5#opm12#icu18#icp75" name="voto_PASSING"/>
+      <InputCollectorParameter id="mov3#mpkg5#opm12#icu18#icp76" name="commento_PASSING"/>
+      <OKLink id="mov3#mpkg5#opm12#icu18#oln200" to="mov3#mpkg5#opm12#opg31#tmu13" validate="true" name="Flow138">
+        <LinkParameter id="mov3#mpkg5#opm12#icu18#oln200#par1237" name="UserCtxParam.oid_PASSING" passing="true" source="mov3#mpkg5#opm12#icu18#icp73"/>
+        <LinkParameter id="mov3#mpkg5#opm12#icu18#oln200#par1238" source="mov3#mpkg5#opm12#icu18#icp76" name="commento_PASSING" passing="true"/>
+        <LinkParameter id="mov3#mpkg5#opm12#icu18#oln200#par1239" source="mov3#mpkg5#opm12#icu18#icp75" name="voto_PASSING" passing="true"/>
+        <LinkParameter id="mov3#mpkg5#opm12#icu18#oln200#par1240" name="oid_PASSING" passing="true" source="mov3#mpkg5#opm12#icu18#icp74"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="730" gr:y="300" id="mov3#mpkg5#opm12#okcu28" name="OK valutazione inserita"/>
+    <KOCollectorUnit gr:x="730" gr:y="0" id="mov3#mpkg5#opm12#kocu25" name="KO inserimento"/>
+  </OperationUnits>
+</OperationModule>

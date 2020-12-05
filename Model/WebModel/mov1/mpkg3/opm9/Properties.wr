@@ -1,0 +1,34 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="mov1#mpkg3#opm9" name="Modifica ristorante">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#mpkg3#opm9#icu10" gr:x="30" gr:y="60">
+      <InputCollectorParameter id="mov1#mpkg3#opm9#icu10#icp44" name="citt&#224;"/>
+      <InputCollectorParameter id="mov1#mpkg3#opm9#icu10#icp45" name="CAP"/>
+      <InputCollectorParameter id="mov1#mpkg3#opm9#icu10#icp46" name="via/corso/piazza"/>
+      <InputCollectorParameter id="mov1#mpkg3#opm9#icu10#icp47" name="numero civico"/>
+      <InputCollectorParameter id="mov1#mpkg3#opm9#icu10#icp48" name="oid_ristorante"/>
+      <Link id="mov1#mpkg3#opm9#icu10#ln106" name="Flow364" to="mov1#mpkg3#opm9#opg22#mfu1" type="transport" validate="true">
+        <LinkParameter id="mov1#mpkg3#opm9#icu10#ln106#par958" name="descrizione_descrizione" source="mov1#mpkg3#opm9#icu10#icp52" target="mov1#mpkg3#opm9#opg22#mfu1.ent14#att46"/>
+        <LinkParameter id="mov1#mpkg3#opm9#icu10#ln106#par959" name="email_email" source="mov1#mpkg3#opm9#icu10#icp51" target="mov1#mpkg3#opm9#opg22#mfu1.ent14#att45"/>
+        <LinkParameter id="mov1#mpkg3#opm9#icu10#ln106#par960" name="nome_nome" source="mov1#mpkg3#opm9#icu10#icp49" target="mov1#mpkg3#opm9#opg22#mfu1.ent14#att42"/>
+        <LinkParameter id="mov1#mpkg3#opm9#icu10#ln106#par961" name="numero di telefono_numero di telefono" source="mov1#mpkg3#opm9#icu10#icp50" target="mov1#mpkg3#opm9#opg22#mfu1.ent14#att44"/>
+        <LinkParameter id="mov1#mpkg3#opm9#icu10#ln106#par962" name="CAP_PASSING" source="mov1#mpkg3#opm9#icu10#icp45" passing="true"/>
+        <LinkParameter id="mov1#mpkg3#opm9#icu10#ln106#par963" name="citt&#224;_PASSING" source="mov1#mpkg3#opm9#icu10#icp44" passing="true"/>
+        <LinkParameter id="mov1#mpkg3#opm9#icu10#ln106#par964" name="numero civico_PASSING" source="mov1#mpkg3#opm9#icu10#icp47" passing="true"/>
+        <LinkParameter id="mov1#mpkg3#opm9#icu10#ln106#par965" name="via/corso/piazza_PASSING" source="mov1#mpkg3#opm9#icu10#icp46" passing="true"/>
+        <LinkParameter id="mov1#mpkg3#opm9#icu10#ln106#par966" name="oid_KeyCondition208 [oid]" source="mov1#mpkg3#opm9#icu10#icp48" target="mov1#mpkg3#opm9#opg22#mfu1#su187#kcond151.ent14#att40"/>
+        <LinkParameter id="mov1#mpkg3#opm9#icu10#ln106#par967" name="oid_indirizzo_PASSING" source="mov1#mpkg3#opm9#icu10#icp53" passing="true"/>
+        <LinkParameter id="mov1#mpkg3#opm9#icu10#ln106#par968" name="citt&#224;_nuova_PASSING" source="mov1#mpkg3#opm9#icu10#icp54" passing="true"/>
+      </Link>
+      <InputCollectorParameter id="mov1#mpkg3#opm9#icu10#icp49" name="nome"/>
+      <InputCollectorParameter id="mov1#mpkg3#opm9#icu10#icp50" name="numero di telefono"/>
+      <InputCollectorParameter id="mov1#mpkg3#opm9#icu10#icp51" name="email"/>
+      <InputCollectorParameter id="mov1#mpkg3#opm9#icu10#icp52" name="descrizione"/>
+      <InputCollectorParameter id="mov1#mpkg3#opm9#icu10#icp53" name="oid_indirizzo"/>
+      <InputCollectorParameter id="mov1#mpkg3#opm9#icu10#icp54" name="citt&#224;_nuova"/>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="815" gr:y="175" id="mov1#mpkg3#opm9#okcu15" name="Modifica effettuata con successo"/>
+    <KOCollectorUnit gr:x="815" gr:y="305" id="mov1#mpkg3#opm9#kocu20" name="KO aggiornamento database"/>
+    <KOCollectorUnit gr:x="815" gr:y="450" id="mov1#mpkg3#opm9#kocu21" name="KO connessione"/>
+    <KOCollectorUnit gr:x="815" gr:y="390" id="mov1#mpkg3#opm9#kocu22" name="KO disconnessione"/>
+  </OperationUnits>
+</OperationModule>

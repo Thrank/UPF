@@ -1,0 +1,15 @@
+<HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="80" id="mov1#mpkg4#hym6" name="Elimina ristorante">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="305" id="mov1#mpkg4#hym6#icu13">
+      <InputCollectorParameter id="mov1#mpkg4#hym6#icu13#icp63" name="KeyCondition220 [oid]"/>
+      <OKLink id="mov1#mpkg4#hym6#icu13#oln175" to="mov1#mpkg4#hym6#page26#dau2" validate="true" name="Flow337">
+        <LinkParameter id="mov1#mpkg4#hym6#icu13#oln175#par1038" source="mov1#mpkg4#hym6#icu13#icp63" name="oid_KeyCondition220 [oid]" target="mov1#mpkg4#hym6#page26#dau2#su215#kcond187.ent14#att40"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="775" gr:y="25" id="mov1#mpkg4#hym6#okcu18" name="Eliminazione avvenuta con successo"/>
+    <ModuleInstanceUnit id="mov1#mpkg4#hym6#miu5" gr:x="325" gr:y="310" moduleId="mov1#mpkg4#opm10">
+      <OKLink id="mov1#mpkg4#hym6#miu5#oln176" to="mov1#mpkg4#hym6#okcu18" name="OKFlow78"/>
+      <KOLink id="mov1#mpkg4#hym6#miu5#kln121" name="KOFlow98" to="mov1#mpkg4#hym6#page27#mssu23" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+  </OperationUnits>
+</HybridModule>

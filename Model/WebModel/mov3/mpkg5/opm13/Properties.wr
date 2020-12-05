@@ -1,0 +1,16 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="890" id="mov3#mpkg5#opm13" name="Modifica valutazione">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov3#mpkg5#opm13#icu19" name="Input Port">
+      <InputCollectorParameter id="mov3#mpkg5#opm13#icu19#icp77" name="voto_PASSING"/>
+      <InputCollectorParameter id="mov3#mpkg5#opm13#icu19#icp78" name="oid_PASSING"/>
+      <InputCollectorParameter id="mov3#mpkg5#opm13#icu19#icp79" name="commento_PASSING"/>
+      <OKLink id="mov3#mpkg5#opm13#icu19#oln205" to="mov3#mpkg5#opm13#opg32#tmu14" validate="true" name="Flow114">
+        <LinkParameter id="mov3#mpkg5#opm13#icu19#oln205#par1257" source="mov3#mpkg5#opm13#icu19#icp79" name="commento_PASSING" passing="true"/>
+        <LinkParameter id="mov3#mpkg5#opm13#icu19#oln205#par1259" source="mov3#mpkg5#opm13#icu19#icp77" name="voto_PASSING" passing="true"/>
+        <LinkParameter id="mov3#mpkg5#opm13#icu19#oln205#par1258" name="oid_PASSING" passing="true" source="mov3#mpkg5#opm13#icu19#icp78"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="700" gr:y="300" id="mov3#mpkg5#opm13#okcu29" name="OK aggiornamento"/>
+    <KOCollectorUnit gr:x="700" gr:y="0" id="mov3#mpkg5#opm13#kocu27" name="KO aggiornamento"/>
+  </OperationUnits>
+</OperationModule>

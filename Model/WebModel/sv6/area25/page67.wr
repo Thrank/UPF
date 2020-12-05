@@ -1,22 +1,15 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="960" gr:y="960" id="sv6#area25#page67" name="Modifica valutazione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="980" gr:y="830" id="sv6#area25#page67" name="Modifica valutazione">
   <ContentUnits>
-    <GetUnit gr:x="20" gr:y="0" id="sv6#area25#page67#gtu8" name="Recupera oid utente" contextParameters="UserCtxParam">
-      <Link id="sv6#area25#page67#gtu8#ln110" name="Flow110" to="sv6#area25#page67#seu36" type="transport" validate="true">
-        <LinkParameter id="sv6#area25#page67#gtu8#ln110#par259" name="UserCtxParam.oid_utente della valutazione [oid]" source="sv6#area25#page67#gtu8.UserCtxParam" target="sv6#area25#page67#seu36#su84#rcond21.userOID"/>
-        <LinkParameter id="sv6#area25#page67#gtu8#ln110#par269" name="UserCtxParam.oid_PASSING" source="sv6#area25#page67#gtu8.UserCtxParam" passing="true"/>
-      </Link>
-    </GetUnit>
-    <EntryUnit gr:x="225" gr:y="10" id="sv6#area25#page67#enu5" name="Modifica valutazione" gr:showAllParts="true" linkOrder="sv6#area25#page67#enu5#ln114">
+    <EntryUnit gr:x="10" gr:y="165" id="sv6#area25#page67#enu5" name="Modifica valutazione" gr:showAllParts="true" linkOrder="sv6#area25#page67#enu5#ln114">
       <Field id="sv6#area25#page67#enu5#fld9" name="commento" type="text" modifiable="true" preloaded="true"/>
       <SelectionField id="sv6#area25#page67#enu5#sfld6" name="voto" type="integer"/>
-      <Link id="sv6#area25#page67#enu5#ln114" name="Flow114" to="sv6#area25#opg10#tmu5" type="normal" validate="true">
-        <LinkParameter id="sv6#area25#page67#enu5#ln114#par275" name="commento_PASSING" source="sv6#area25#page67#enu5#fld9" passing="true"/>
-        <LinkParameter id="sv6#area25#page67#enu5#ln114#par276" name="oid_PASSING" sourceLinkParameter="sv6#area25#page67#dau18#ln113#par268" passing="true"/>
-        <LinkParameter id="sv6#area25#page67#enu5#ln114#par277" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area25#page67#dau18#ln113#par271" passing="true"/>
-        <LinkParameter id="sv6#area25#page67#enu5#ln114#par278" name="voto_PASSING" source="sv6#area25#page67#enu5#sfld6" passing="true"/>
+      <Link id="sv6#area25#page67#enu5#ln114" name="Flow114" to="sv6#area25#miu11" type="normal" validate="true">
+        <LinkParameter id="sv6#area25#page67#enu5#ln114#par275" name="commento_PASSING" source="sv6#area25#page67#enu5#fld9" target="sv6#area25#miu11.mov3#mpkg5#opm13#icu19#icp79"/>
+        <LinkParameter id="sv6#area25#page67#enu5#ln114#par276" name="oid_PASSING" sourceLinkParameter="sv6#area25#page67#dau18#ln113#par268" target="sv6#area25#miu11.mov3#mpkg5#opm13#icu19#icp78"/>
+        <LinkParameter id="sv6#area25#page67#enu5#ln114#par278" name="voto_PASSING" source="sv6#area25#page67#enu5#sfld6" target="sv6#area25#miu11.mov3#mpkg5#opm13#icu19#icp77"/>
       </Link>
     </EntryUnit>
-    <DataUnit gr:x="245" gr:y="155" id="sv6#area25#page67#dau18" name="Valutazione" entity="ent15">
+    <DataUnit gr:x="235" gr:y="60" id="sv6#area25#page67#dau18" name="Valutazione" entity="ent15">
       <Selector id="sv6#area25#page67#dau18#su83" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv6#area25#page67#dau18#su83#kcond61" name="KeyCondition61" predicate="in" implied="false"/>
       </Selector>
@@ -25,10 +18,9 @@
         <LinkParameter id="sv6#area25#page67#dau18#ln113#par266" name="voto_voto [output]" source="data.ent15#att53" target="sv6#area25#page67#enu5#sfld6_output"/>
         <LinkParameter id="sv6#area25#page67#dau18#ln113#par267" name="commento_commento" source="data.ent15#att54" target="sv6#area25#page67#enu5#fld9_slot"/>
         <LinkParameter id="sv6#area25#page67#dau18#ln113#par268" name="oid_PASSING" source="data.ent15#att41" passing="true"/>
-        <LinkParameter id="sv6#area25#page67#dau18#ln113#par271" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area25#page67#seu36#ln112#par270" passing="true"/>
       </Link>
     </DataUnit>
-    <SelectorUnit gr:x="0" gr:y="125" id="sv6#area25#page67#seu36" name="Seleziona valutazione" gr:showAllParts="true" entity="ent15" distinctAttributes="ent15#att53 ent15#att54 ent15#att4 ent15#att41">
+    <SelectorUnit gr:x="0" gr:y="0" id="sv6#area25#page67#seu36" name="Seleziona valutazione" gr:showAllParts="true" entity="ent15" distinctAttributes="ent15#att53 ent15#att54 ent15#att4 ent15#att41">
       <Selector id="sv6#area25#page67#seu36#su84" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv6#area25#page67#seu36#su84#rcond21" name="utente della valutazione" predicate="in" implied="false" role="rel3#role5"/>
         <RelationshipRoleCondition id="sv6#area25#page67#seu36#su84#rcond23" name="valutazione del ristorante" predicate="in" implied="false" role="rel2#role3"/>
@@ -36,7 +28,6 @@
       <SortAttribute attribute="ent15#att41" order="ascending"/>
       <Link id="sv6#area25#page67#seu36#ln112" name="Flow112" to="sv6#area25#page67#dau18" type="transport" validate="true">
         <LinkParameter id="sv6#area25#page67#seu36#ln112#par260" name="oid_KeyCondition61 [oid]" source="ent15#att41Array" target="sv6#area25#page67#dau18#su83#kcond61.ent15#att41"/>
-        <LinkParameter id="sv6#area25#page67#seu36#ln112#par270" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area25#page67#gtu8#ln110#par269" passing="true"/>
       </Link>
     </SelectorUnit>
   </ContentUnits>

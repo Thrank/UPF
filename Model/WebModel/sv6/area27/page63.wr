@@ -106,6 +106,20 @@
       <layout:Cell/>
       <layout:Cell/>
     </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
   </layout:Grid>
   <Alternative gr:x="0" gr:y="0" id="sv6#area27#page63#alt6" name="Errori aggiornamento profilo" defaultPage="sv6#area27#page63#alt6#page64">
     <Page gr:x="0" gr:y="0" id="sv6#area27#page63#alt6#page64" name="Errore aggiornamento dati">
