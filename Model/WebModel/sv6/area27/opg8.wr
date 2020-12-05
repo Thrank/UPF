@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1975" gr:y="535" id="sv6#area27#opg8" name="Elimina valutazione" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="2210" gr:y="400" id="sv6#area27#opg8" name="Elimina valutazione" transaction="true">
   <OperationUnits>
     <DeleteUnit gr:x="0" gr:y="0" id="sv6#area27#opg8#dlu10" name="Elimina valutazione" entity="ent15">
       <Selector id="sv6#area27#opg8#dlu10#su100" defaultPolicy="fill" booleanOperator="and">

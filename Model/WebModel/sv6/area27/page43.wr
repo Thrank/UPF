@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1315" gr:y="210" id="sv6#area27#page43" name="Le Mie Valutazioni" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1585" gr:y="75" id="sv6#area27#page43" name="Le Mie Valutazioni" landmark="true">
   <ContentUnits>
-    <MultiDataUnit gr:x="655" gr:y="0" id="sv6#area27#page43#mdu14" name="Valutazioni utente" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4" gr:showAllParts="true" linkOrder="sv6#area27#page43#mdu14#ln127">
+    <MultiDataUnit gr:x="620" gr:y="0" id="sv6#area27#page43#mdu14" name="Valutazioni utente" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4" gr:showAllParts="true" linkOrder="sv6#area27#page43#mdu14#ln127">
       <SortAttribute attribute="ent15#att4" order="descending"/>
       <Selector id="sv6#area27#page43#mdu14#su62" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv6#area27#page43#mdu14#su62#kcond48" name="KeyCondition48" predicate="in" implied="false"/>
@@ -14,11 +14,11 @@
         <LinkParameter id="sv6#area27#page43#mdu14#ln65#par202" name="oid_PASSING" source="ent15#att41Array" passing="true"/>
       </Link>
     </MultiDataUnit>
-    <ScrollerUnit gr:x="450" gr:y="10" id="sv6#area27#page43#scu17" name="Scorri valutazioni utente" useCountQuery="false" linkOrder="sv6#area27#page43#scu17#ln70" entity="ent15" gr:showAllParts="true" blockFactor="10">
+    <ScrollerUnit gr:x="415" gr:y="10" id="sv6#area27#page43#scu17" name="Scorri valutazioni utente" useCountQuery="false" linkOrder="sv6#area27#page43#scu17#ln70" entity="ent15" gr:showAllParts="true" blockFactor="10">
       <Link id="sv6#area27#page43#scu17#ln70" name="Flow70" to="sv6#area27#page43#mdu14" type="normal" validate="true" automaticCoupling="true"/>
       <SortAttribute attribute="ent15#att4" order="descending"/>
     </ScrollerUnit>
-    <SelectorUnit gr:x="220" gr:y="5" id="sv6#area27#page43#seu32" name="Valutazioni utente" entity="ent15" distinctAttributes="ent15#att41" gr:showAllParts="true">
+    <SelectorUnit gr:x="185" gr:y="5" id="sv6#area27#page43#seu32" name="Valutazioni utente" entity="ent15" distinctAttributes="ent15#att41" gr:showAllParts="true">
       <Link id="sv6#area27#page43#seu32#ln69" name="Flow69" to="sv6#area27#page43#scu17" automaticCoupling="true" type="transport" validate="true"/>
       <SortAttribute attribute="ent15#att4" order="descending"/>
       <Selector id="sv6#area27#page43#seu32#su63" defaultPolicy="fill" booleanOperator="and">
@@ -30,7 +30,7 @@
         <LinkParameter id="sv6#area27#page43#gtu3#ln71#par39" name="UserCtxParam.oid_RoleCondition14 [oid]" source="sv6#area27#page43#gtu3.UserCtxParam" target="sv6#area27#page43#seu32#su63#rcond14.userOID"/>
       </Link>
     </GetUnit>
-    <EntryUnit gr:x="650" gr:y="175" id="sv6#area27#page43#enu2" name="Eliminazione valutazione" linkOrder="sv6#area27#page43#enu2#ln67">
+    <EntryUnit gr:x="615" gr:y="175" id="sv6#area27#page43#enu2" name="Eliminazione valutazione" linkOrder="sv6#area27#page43#enu2#ln67">
       <Link id="sv6#area27#page43#enu2#ln67" name="Flow67" to="sv6#area27#opg8#dlu10" type="normal" validate="true">
         <LinkParameter id="sv6#area27#page43#enu2#ln67#par203" name="oid_PASSING_KeyCondition87 [oid]" sourceLinkParameter="sv6#area27#page43#mdu14#ln65#par202" target="sv6#area27#opg8#dlu10#su100#kcond87.ent15#att41"/>
       </Link>

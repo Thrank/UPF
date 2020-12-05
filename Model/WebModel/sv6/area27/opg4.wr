@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="575" gr:y="195" id="sv6#area27#opg4" name="Modifica profilo" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="575" gr:y="65" id="sv6#area27#opg4" name="Modifica profilo" transaction="true">
   <OperationUnits>
     <ModifyUnit gr:x="0" gr:y="25" id="sv6#area27#opg4#mfu14" name="Aggiorna dati profilo" entity="ent4">
       <Selector id="sv6#area27#opg4#mfu14#su68" defaultPolicy="fill" booleanOperator="and">

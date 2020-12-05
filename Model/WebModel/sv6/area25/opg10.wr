@@ -5,7 +5,7 @@
         <KeyCondition id="sv6#area25#opg10#mfu13#su85#kcond68" name="KeyCondition68" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv6#area25#opg10#mfu13#oln26" name="OKFlow26" to="sv6#area25#page40" automaticCoupling="true" gr:bendpoints="-136,-57,129,553"/>
-      <KOLink id="sv6#area25#opg10#mfu13#kln28" name="KOFlow28" to="sv6#area27#page60#alt5#page62#mssu10" automaticCoupling="true" gr:bendpoints="458,-173,-322,1182;455,-993,-325,362"/>
+      <KOLink id="sv6#area25#opg10#mfu13#kln28" name="KOFlow28" to="sv6#area27#page60#alt5#page62#mssu10" automaticCoupling="true" gr:bendpoints="458,-173,-322,1182;561,-1045,-464,380"/>
     </ModifyUnit>
     <TimeUnit gr:x="0" gr:y="0" id="sv6#area25#opg10#tmu5" name="Recupera data corrente" linkOrder="sv6#area25#opg10#tmu5#ln115">
       <Link id="sv6#area25#opg10#tmu5#ln115" name="Flow115" to="sv6#area25#opg10#mfu13" type="transport" validate="true">

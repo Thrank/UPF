@@ -37,28 +37,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv6#page66#alt2#page107">
-          <layout:Grid containerType="grid">
-            <layout:Row>
-              <layout:Cell colspan="12">
-                <layout:Unit unitId="sv6#page66#alt2#page107#mssu17"/>
-              </layout:Cell>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-            </layout:Row>
-          </layout:Grid>
-        </layout:SubPage>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -76,11 +55,6 @@
     <Page gr:x="0" gr:y="0" id="sv6#page66#alt2#page73" name="Errore modifica">
       <ContentUnits>
         <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#page66#alt2#page73#mssu16" name="Errore inserimento indirizzo"/>
-      </ContentUnits>
-    </Page>
-    <Page gr:x="0" gr:y="120" id="sv6#page66#alt2#page107" name="Errore connessione">
-      <ContentUnits>
-        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#page66#alt2#page107#mssu17" name="Errore connessione indirizzo"/>
       </ContentUnits>
     </Page>
   </Alternative>

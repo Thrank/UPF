@@ -5,7 +5,7 @@
         <KeyCondition id="sv6#area25#opg11#dlu12#su86#kcond69" name="KeyCondition69" predicate="in" implied="false"/>
       </Selector>
       <OKLink id="sv6#area25#opg11#dlu12#oln30" name="OKFlow30" to="sv6#area25#page40" automaticCoupling="true" gr:bendpoints="-494,4,-314,969;-487,-750,-307,215"/>
-      <KOLink id="sv6#area25#opg11#dlu12#kln26" name="KOFlow26" to="sv6#area27#page60#alt5#page61#mssu9" automaticCoupling="true" gr:bendpoints="547,-179,-298,1646;544,-1338,-301,487"/>
+      <KOLink id="sv6#area25#opg11#dlu12#kln26" name="KOFlow26" to="sv6#area27#page60#alt5#page61#mssu9" automaticCoupling="true" gr:bendpoints="547,-179,-298,1646;657,-1396,-433,499"/>
     </DeleteUnit>
     <DisconnectUnit gr:x="445" gr:y="0" id="sv6#area25#opg11#dcnu3" name="Sconnetti da ristorante" relationship="rel2#role4">
       <SourceSelector id="sv6#area25#opg11#dcnu3#su95" defaultPolicy="fill" booleanOperator="and">
@@ -18,7 +18,7 @@
         <LinkParameter id="sv6#area25#opg11#dcnu3#oln28#par295" name="oid_PASSING_KeyCondition72 [oid] [Valutazione] [Source]" sourceLinkParameter="sv6#area25#opg11#seu37#oln27#par293" target="sv6#area25#opg11#dcnu4#su105#kcond72.ent15#att41"/>
         <LinkParameter id="sv6#area25#opg11#dcnu3#oln28#par296" name="UserCtxParam.oid_PASSING_KeyCondition81 [oid] [Cliente ] [Target]" sourceLinkParameter="sv6#area25#opg11#seu37#oln27#par294" target="sv6#area25#opg11#dcnu4#su106#kcond81.userOID"/>
       </OKLink>
-      <KOLink id="sv6#area25#opg11#dcnu3#kln24" name="KOFlow24" to="sv6#area27#page60#alt5#page61#mssu9" automaticCoupling="true" gr:bendpoints="327,-221,-303,1444;321,-1194,-309,471"/>
+      <KOLink id="sv6#area25#opg11#dcnu3#kln24" name="KOFlow24" to="sv6#area27#page60#alt5#page61#mssu9" automaticCoupling="true" gr:bendpoints="327,-221,-303,1444;424,-1243,-451,492"/>
     </DisconnectUnit>
     <DisconnectUnit gr:x="440" gr:y="165" id="sv6#area25#opg11#dcnu4" name="Sconnetti da utente" relationship="rel3#role6">
       <SourceSelector id="sv6#area25#opg11#dcnu4#su105" defaultPolicy="fill" booleanOperator="and">
@@ -28,7 +28,7 @@
         <KeyCondition id="sv6#area25#opg11#dcnu4#su106#kcond81" name="KeyCondition81" predicate="in" implied="false"/>
       </TargetSelector>
       <OKLink id="sv6#area25#opg11#dcnu4#oln29" name="OKFlow29" to="sv6#area25#opg11#dlu12" automaticCoupling="true"/>
-      <KOLink id="sv6#area25#opg11#dcnu4#kln25" name="KOFlow25" to="sv6#area27#page60#alt5#page61#mssu9" automaticCoupling="true" gr:bendpoints="328,-226,-297,1604;309,-1356,-316,474"/>
+      <KOLink id="sv6#area25#opg11#dcnu4#kln25" name="KOFlow25" to="sv6#area27#page60#alt5#page61#mssu9" automaticCoupling="true" gr:bendpoints="328,-226,-297,1604;422,-1402,-448,498"/>
     </DisconnectUnit>
     <SelectorUnit gr:x="185" gr:y="0" id="sv6#area25#opg11#seu37" name="Seleziona valutazione" entity="ent15" distinctAttributes="ent15#att41 ent15#att53 ent15#att54 ent15#att4" gr:showAllParts="true">
       <Selector id="sv6#area25#opg11#seu37#su107" defaultPolicy="fill" booleanOperator="and">
@@ -42,7 +42,7 @@
         <LinkParameter id="sv6#area25#opg11#seu37#oln27#par293" name="oid_PASSING" source="ent15#att41Array" passing="true"/>
         <LinkParameter id="sv6#area25#opg11#seu37#oln27#par294" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area25#opg11#gtu9#ln117#par283" passing="true"/>
       </OKLink>
-      <KOLink id="sv6#area25#opg11#seu37#kln27" name="KOFlow27" to="sv6#area27#page60#alt5#page61#mssu9" automaticCoupling="true" gr:bendpoints="579,-241,-296,1439;563,-1222,-312,458"/>
+      <KOLink id="sv6#area25#opg11#seu37#kln27" name="KOFlow27" to="sv6#area27#page60#alt5#page61#mssu9" automaticCoupling="true" gr:bendpoints="579,-241,-296,1439;670,-1256,-450,494"/>
     </SelectorUnit>
     <GetUnit gr:x="0" gr:y="15" id="sv6#area25#opg11#gtu9" name="Recupera oid utente" contextParameters="UserCtxParam" linkOrder="sv6#area25#opg11#gtu9#ln117">
       <Link id="sv6#area25#opg11#gtu9#ln117" name="Flow117" to="sv6#area25#opg11#seu37" type="transport" validate="true">

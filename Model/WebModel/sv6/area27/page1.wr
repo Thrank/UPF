@@ -1,13 +1,13 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="955" gr:y="70" id="sv6#area27#page63" name="Errore aggiornamento profilo">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1270" gr:y="0" id="sv6#area27#page1" name="Errori cancellazione ordine">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv6#area27#page63#alt6#page64">
+        <layout:SubPage pageId="sv6#area27#page1#alt1#page2">
           <layout:Grid containerType="grid">
             <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv6#area27#page63#alt6#page64#mssu11"/>
+                <layout:Unit unitId="sv6#area27#page1#alt1#page2#mssu1"/>
               </layout:Cell>
               <layout:Cell/>
               <layout:Cell/>
@@ -38,11 +38,11 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv6#area27#page63#alt6#page65">
+        <layout:SubPage pageId="sv6#area27#page1#alt1#page3">
           <layout:Grid containerType="grid">
             <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv6#area27#page63#alt6#page65#mssu12"/>
+                <layout:Unit unitId="sv6#area27#page1#alt1#page3#mssu2"/>
               </layout:Cell>
               <layout:Cell/>
               <layout:Cell/>
@@ -73,11 +73,11 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv6#area27#page63#alt6#page52">
+        <layout:SubPage pageId="sv6#area27#page1#alt1#page4">
           <layout:Grid containerType="grid">
             <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv6#area27#page63#alt6#page52#mssu15"/>
+                <layout:Unit unitId="sv6#area27#page1#alt1#page4#mssu3"/>
               </layout:Cell>
               <layout:Cell/>
               <layout:Cell/>
@@ -107,20 +107,20 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Alternative gr:x="0" gr:y="0" id="sv6#area27#page63#alt6" name="Errori aggiornamento profilo" defaultPage="sv6#area27#page63#alt6#page64">
-    <Page gr:x="0" gr:y="0" id="sv6#area27#page63#alt6#page64" name="Errore aggiornamento dati">
+  <Alternative gr:x="0" gr:y="0" id="sv6#area27#page1#alt1" name="Errori ordine">
+    <Page gr:x="0" gr:y="0" id="sv6#area27#page1#alt1#page2" name="Errore eliminazione ordine">
       <ContentUnits>
-        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area27#page63#alt6#page64#mssu11" name="Errore aggiornamento dati"/>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area27#page1#alt1#page2#mssu1" name="Errore eliminazione"/>
       </ContentUnits>
     </Page>
-    <Page gr:x="0" gr:y="115" id="sv6#area27#page63#alt6#page65" name="Errore cambio password">
+    <Page gr:x="0" gr:y="235" id="sv6#area27#page1#alt1#page3" name="Errore disconnessione">
       <ContentUnits>
-        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area27#page63#alt6#page65#mssu12" name="Errore password"/>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area27#page1#alt1#page3#mssu2" name="Errore disconnessione"/>
       </ContentUnits>
     </Page>
-    <Page gr:x="0" gr:y="230" id="sv6#area27#page63#alt6#page52" name="Errore modifica preferenze">
+    <Page gr:x="0" gr:y="115" id="sv6#area27#page1#alt1#page4" name="Errore selezione">
       <ContentUnits>
-        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area27#page63#alt6#page52#mssu15" name="Errore preferenze"/>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area27#page1#alt1#page4#mssu3" name="Errore selezione"/>
       </ContentUnits>
     </Page>
   </Alternative>
