@@ -1,4 +1,4 @@
-<HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="1780" id="mov3#mpkg5#hym10" name="Elimina valutazione">
+<HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="5" gr:y="140" id="mov3#mpkg5#hym10" name="Elimina valutazione">
   <OperationUnits>
     <InputCollectorUnit gr:x="0" gr:y="345" id="mov3#mpkg5#hym10#icu20">
       <InputCollectorParameter id="mov3#mpkg5#hym10#icu20#icp80" name="utente della valutazione [oid]"/>

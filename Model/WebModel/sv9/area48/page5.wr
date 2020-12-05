@@ -21,7 +21,7 @@
       <Selector id="sv9#area48#page5#mdu1#su15" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv9#area48#page5#mdu1#su15#kcond1" name="KeyCondition207" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv9#area48#page5#mdu1#ln7" name="Flow335" to="sv9#area48#miu2" type="normal" validate="true" gr:bendpoints="-129,128,-269,-162;-217,134,-357,-156;-228,287,-368,-3">
+      <Link id="sv9#area48#page5#mdu1#ln7" name="Flow335" to="sv9#area48#miu2" type="normal" validate="true" gr:bendpoints="3,120,-132,-45">
         <LinkParameter id="sv9#area48#page5#mdu1#ln7#par100" name="oid_RoleCondition98 [oid]" source="ent14#att40Array" target="sv9#area48#miu2.mov1#mpkg3#hym5#icu11#icp55"/>
         <LinkParameter id="sv9#area48#page5#mdu1#ln7#par102" name="descrizione_PASSING" source="ent14#att46Array" target="sv9#area48#miu2.mov1#mpkg3#hym5#icu11#icp58"/>
         <LinkParameter id="sv9#area48#page5#mdu1#ln7#par103" name="email_PASSING" source="ent14#att45Array" target="sv9#area48#miu2.mov1#mpkg3#hym5#icu11#icp57"/>
@@ -106,5 +106,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv9#area48#page5#ln43" name="Flow10" to="sv9#area48#page6" type="normal" automaticCoupling="true" validate="true"/>
+  <Link id="sv9#area48#page5#ln43" name="Flow10" to="sv9#area48#miu17" type="normal" validate="true"/>
 </Page>

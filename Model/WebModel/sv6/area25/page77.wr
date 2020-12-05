@@ -10,7 +10,7 @@
         <LinkParameter id="sv6#area25#page77#mdu4#ln228#par1289" name="voto_voto" source="ent15#att53Array" target="sv6#area25#page59#enu37#fld113_slot"/>
         <LinkParameter id="sv6#area25#page77#mdu4#ln228#par1290" name="oid_PASSING" source="ent15#att41Array" passing="true"/>
       </Link>
-      <Link id="sv6#area25#page77#mdu4#ln244" name="Flow244" to="sv6#area25#miu15" type="normal" validate="true" gr:bendpoints="250,338,-230,-102">
+      <Link id="sv6#area25#page77#mdu4#ln244" name="Flow244" to="sv6#area25#miu15" type="normal" validate="true" gr:bendpoints="159,363,-321,-77;306,483,-174,43;346,486,-134,46">
         <LinkParameter id="sv6#area25#page77#mdu4#ln244#par1329" name="valutazioneToCliente registrato.oid_utente della valutazione [oid]" source="rel3#role6_userOIDArray" target="sv6#area25#miu15.mov3#mpkg5#hym10#icu20#icp80"/>
         <LinkParameter id="sv6#area25#page77#mdu4#ln244#par1330" name="valutazioneToRistorante.oid_valutazione del ristorante [oid]" source="rel2#role4_ent14#att40Array" target="sv6#area25#miu15.mov3#mpkg5#hym10#icu20#icp81"/>
         <LinkParameter id="sv6#area25#page77#mdu4#ln244#par1332" name="Le mie valutazioni_azione" sourceValue="Le mie valutazioni" target="sv6#area25#miu15.mov3#mpkg5#hym10#icu20#icp82"/>

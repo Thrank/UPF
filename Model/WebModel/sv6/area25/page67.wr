@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="980" gr:y="830" id="sv6#area25#page67" name="Modifica valutazione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="880" gr:y="805" id="sv6#area25#page67" name="Modifica valutazione">
   <ContentUnits>
     <EntryUnit gr:x="10" gr:y="165" id="sv6#area25#page67#enu5" name="Modifica valutazione" gr:showAllParts="true" linkOrder="sv6#area25#page67#enu5#ln114">
       <Field id="sv6#area25#page67#enu5#fld9" name="commento" type="text" modifiable="true" preloaded="true"/>

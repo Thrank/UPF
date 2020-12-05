@@ -8,11 +8,17 @@
         <LinkParameter id="sv9#area48#miu36#oln133#par1266" name="oid_Dettaglio ristorante [oid]" source="mov2#mpkg2#hym2#okcu14#ocp4" target="sv9#area48#page185#dau44#su377#kcond275.ent14#att40"/>
       </OKLink>
     </ModuleInstanceUnit>
-    <ModuleInstanceUnit gr:x="1085" gr:y="620" id="sv9#area48#miu1" moduleId="mov1#mpkg4#hym6">
-      <OKLink id="sv9#area48#miu1#oln61" to="sv9#area48#page5" name="OKFlow78" gr:bendpoints="108,-41,178,259"/>
+    <ModuleInstanceUnit gr:x="1085" gr:y="720" id="sv9#area48#miu1" moduleId="mov1#mpkg4#hym6">
+      <OKLink id="sv9#area48#miu1#oln61" to="sv9#area48#page5" name="OKFlow78" gr:bendpoints="111,-19,201,366;110,-51,200,334;-136,-96,-46,289;-185,-96,-95,289;-165,-210,-75,175"/>
+      <KOLink id="sv9#area48#miu1#kln177" name="KOFlow177" to="sv9#area48#page83#alt18#page86#mssu42" automaticCoupling="true" gr:bendpoints="616,-6,-59,99"/>
     </ModuleInstanceUnit>
-    <ModuleInstanceUnit gr:x="1075" gr:y="710" id="sv9#area48#miu2" moduleId="mov1#mpkg3#hym5">
+    <ModuleInstanceUnit gr:x="1070" gr:y="585" id="sv9#area48#miu2" moduleId="mov1#mpkg3#hym5">
       <OKLink id="sv9#area48#miu2#oln62" name="OKFlow92" to="sv9#area48#page5" automaticCoupling="true" gr:bendpoints="203,-97,198,278"/>
+      <KOLink id="sv9#area48#miu2#kln178" name="KOFlow178" to="sv9#area48#page83#alt18#page84#mssu40" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="1510" gr:y="270" id="sv9#area48#miu17" moduleId="mov1#mpkg6#hym12">
+      <OKLink id="sv9#area48#miu17#oln228" to="sv9#area48#page5" name="OKFlow117" gr:bendpoints="115,47,710,-263;143,-51,658,-116;-258,-52,257,-117"/>
+      <KOLink id="sv9#area48#miu17#kln176" name="KOFlow176" to="sv9#area48#page83#alt18#page85#mssu41" automaticCoupling="true" gr:bendpoints="118,10,33,-335"/>
     </ModuleInstanceUnit>
   </OperationUnits>
 </Area>

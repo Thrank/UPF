@@ -1,11 +1,10 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv6#area24#page12" name="Elenco piatti" gr:x="0" gr:y="0">
   <ContentUnits>
-    <IndexUnit id="sv6#area24#page12#inu31" name="Elenco piatti" gr:showAllParts="true" gr:x="185" gr:y="0" entity="ent1" displayAttributes="ent1#att2 ent1#att7 ent1#att57 ent1#att58" linkOrder="sv6#area24#page12#inu31#ln27">
+    <IndexUnit id="sv6#area24#page12#inu31" name="Elenco piatti" gr:showAllParts="true" gr:x="185" gr:y="0" entity="ent1" displayAttributes="ent1#att2 ent1#att7 ent1#att57 ent1#att58">
       <Selector id="sv6#area24#page12#inu31#su36" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv6#area24#page12#inu31#su36#kcond36" name="oid piatto" predicate="in" implied="false"/>
       </Selector>
       <SortAttribute attribute="ent1#att2" order="descending"/>
-      <Link id="sv6#area24#page12#inu31#ln27" name="Flow57" to="sv6#area25#page40#dau15" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-105,114,995,-1"/>
     </IndexUnit>
     <ScrollerUnit id="sv6#area24#page12#scu11" name="Scorri piatti" linkOrder="sv6#area24#page12#scu11#ln28" gr:showAllParts="true" gr:x="0" gr:y="5" useCountQuery="false" entity="ent1" blockFactor="10">
       <Selector id="sv6#area24#page12#scu11#su43" defaultPolicy="fill" booleanOperator="and">
@@ -23,7 +22,6 @@
           <layout:Attribute attribute="ent1#att7"/>
           <layout:Attribute attribute="ent1#att57"/>
           <layout:Attribute attribute="ent1#att58"/>
-          <layout:Link link="sv6#area24#page12#inu31#ln27"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -38,5 +36,20 @@
       <layout:Cell/>
       <layout:Cell/>
     </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
   </layout:Grid>
+  <Link id="sv6#area24#page12#ln247" name="Flow57" to="sv6#area25#page40#dau15" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-105,114,995,-1"/>
 </Page>

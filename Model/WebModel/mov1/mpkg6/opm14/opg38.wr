@@ -1,0 +1,493 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#mpkg6#opm14#opg38" name="Aggiungi ristorante" transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <CreateUnit id="mov1#mpkg6#opm14#opg38#cru40" name="Aggiungi ristorante" gr:x="30" gr:y="5" entity="ent14">
+      <OKLink id="mov1#mpkg6#opm14#opg38#cru40#oln284" name="OKFlow34" to="mov1#mpkg6#opm14#opg38#cnu70">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2100" name="oid_KeyCondition10 [oid] [Ristorante] [Source]" source="ent14#att40Array" target="mov1#mpkg6#opm14#opg38#cnu70#su338#kcond293.ent14#att40"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2101" name="UserCtxParam.oid_PASSING_KeyCondition11 [oid] [Ristoratore] [Target]" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2095" target="mov1#mpkg6#opm14#opg38#cnu70#su339#kcond294.userOID"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2102" name="CAP_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2073" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2103" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2074" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2104" name="citt&#224;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2075" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2105" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2076" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2106" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2077" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2107" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2078" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2108" name="gioved&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2079" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2109" name="gioved&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2080" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2110" name="gioved&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2081" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2111" name="luned&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2082" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2112" name="luned&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2083" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2113" name="luned&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2084" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2114" name="marted&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2085" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2115" name="marted&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2086" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2116" name="marted&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2087" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2117" name="mercoled&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2088" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2118" name="mercoled&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2089" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2119" name="mercoled&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2090" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2120" name="numero civico_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2091" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2121" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2092" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2122" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2093" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2123" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2094" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2124" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2096" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2125" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2097" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2126" name="venerd&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2098" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru40#oln284#par2127" name="indirizzo_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#icu23#oln281#par2099" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cru40#kln151" name="KOFlow151" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="114,71,-626,-134;233,71,-507,-134"/>
+    </CreateUnit>
+    <CreateUnit id="mov1#mpkg6#opm14#opg38#cru41" name="Aggiungi indirizzo" gr:x="35" gr:y="125" entity="ent16">
+      <OKLink id="mov1#mpkg6#opm14#opg38#cru41#oln285" name="OKFlow37" to="mov1#mpkg6#opm14#opg38#cnu71">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2128" name="Source oid [Ristorante]_PASSING_KeyCondition12 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2179" target="mov1#mpkg6#opm14#opg38#cnu71#su340#kcond295.ent14#att40"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2129" name="oid_KeyCondition34 [oid] [Indirizzo] [Target]" source="ent16#att64Array" target="mov1#mpkg6#opm14#opg38#cnu71#su341#kcond296.ent16#att64"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2130" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2156" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2131" name="citt&#224;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2157" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2132" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2158" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2133" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2159" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2134" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2160" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2135" name="gioved&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2161" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2136" name="gioved&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2162" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2137" name="gioved&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2163" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2138" name="luned&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2164" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2139" name="luned&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2165" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2140" name="luned&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2166" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2141" name="marted&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2167" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2142" name="marted&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2168" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2143" name="marted&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2169" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2144" name="mercoled&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2170" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2145" name="mercoled&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2171" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2146" name="mercoled&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2172" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2147" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2173" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2148" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2174" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2149" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2175" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2150" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2176" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2151" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2177" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru41#oln285#par2152" name="venerd&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2178" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cru41#kln153" name="KOFlow153" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="115,-39,-625,-124;225,-40,-515,-125"/>
+    </CreateUnit>
+    <ConnectUnit id="mov1#mpkg6#opm14#opg38#cnu70" name="Connetti a ristoratore" gr:x="210" gr:y="0" relationship="rel1#role2">
+      <SourceSelector id="mov1#mpkg6#opm14#opg38#cnu70#su338" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu70#su338#kcond293" name="KeyCondition10" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg6#opm14#opg38#cnu70#su339" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu70#su339#kcond294" name="KeyCondition11" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg6#opm14#opg38#cnu70#oln286" name="OKFlow35" to="mov1#mpkg6#opm14#opg38#cru41">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2153" name="CAP_PASSING_CAP" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2102" target="mov1#mpkg6#opm14#opg38#cru41.ent16#att76"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2154" name="numero civico_PASSING_civico" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2120" target="mov1#mpkg6#opm14#opg38#cru41.ent16#att32"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2155" name="indirizzo_PASSING_via/piazza/corso" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2127" target="mov1#mpkg6#opm14#opg38#cru41.ent16#att31"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2156" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2103" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2157" name="citt&#224;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2104" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2158" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2105" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2159" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2106" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2160" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2107" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2161" name="gioved&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2108" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2162" name="gioved&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2109" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2163" name="gioved&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2110" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2164" name="luned&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2111" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2165" name="luned&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2112" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2166" name="luned&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2113" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2167" name="marted&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2114" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2168" name="marted&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2115" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2169" name="marted&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2116" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2170" name="mercoled&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2117" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2171" name="mercoled&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2118" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2172" name="mercoled&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2119" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2173" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2121" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2174" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2122" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2175" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2123" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2176" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2124" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2177" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2125" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2178" name="venerd&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru40#oln284#par2126" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu70#oln286#par2179" name="Source oid [Ristorante]_PASSING" source="sourceent14#att40" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cnu70#kln152" name="KOFlow152" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit id="mov1#mpkg6#opm14#opg38#cnu71" name="Connetti a indirizzo" gr:x="205" gr:y="135" relationship="rel10#role19">
+      <SourceSelector id="mov1#mpkg6#opm14#opg38#cnu71#su340" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu71#su340#kcond295" name="KeyCondition12" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg6#opm14#opg38#cnu71#su341" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu71#su341#kcond296" name="KeyCondition34" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg6#opm14#opg38#cnu71#oln287" name="OKFlow38" to="mov1#mpkg6#opm14#opg38#cnu72">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2180" name="Target oid [Indirizzo]_KeyCondition37 [oid] [Indirizzo] [Source]" source="targetent16#att64" target="mov1#mpkg6#opm14#opg38#cnu72#su342#kcond297.ent16#att64"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2181" name="citt&#224;_PASSING_KeyCondition40 [oid] [Citt&#224;] [Target]" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2131" target="mov1#mpkg6#opm14#opg38#cnu72#su343#kcond298.ent22#att27"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2182" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2130" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2183" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2132" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2184" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2133" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2185" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2134" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2186" name="gioved&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2135" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2187" name="gioved&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2136" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2188" name="gioved&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2137" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2189" name="luned&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2138" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2190" name="luned&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2139" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2191" name="luned&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2140" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2192" name="marted&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2141" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2193" name="marted&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2142" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2194" name="marted&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2143" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2195" name="mercoled&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2144" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2196" name="mercoled&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2145" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2197" name="mercoled&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2146" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2198" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2147" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2199" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2148" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2200" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2149" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2201" name="Source oid [Ristorante]_PASSING" source="sourceent14#att40" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2202" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2150" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2203" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2151" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2204" name="venerd&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru41#oln285#par2152" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cnu71#kln154" name="KOFlow154" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit id="mov1#mpkg6#opm14#opg38#cnu72" name="Connetti a citt&#224;" gr:x="0" gr:y="240" relationship="rel32#role63">
+      <SourceSelector id="mov1#mpkg6#opm14#opg38#cnu72#su342" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu72#su342#kcond297" name="KeyCondition37" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg6#opm14#opg38#cnu72#su343" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu72#su343#kcond298" name="KeyCondition40" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg6#opm14#opg38#cnu72#oln288" name="OKFlow43" to="mov1#mpkg6#opm14#opg38#cru42">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2205" name="luned&#236;_PASSING_giorno" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2191" target="mov1#mpkg6#opm14#opg38#cru42.ent17#att34"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2206" name="luned&#236; ora fine_PASSING_ora_fine" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2189" target="mov1#mpkg6#opm14#opg38#cru42.ent17#att14"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2207" name="luned&#236; ora inizio_PASSING_ora_inizio" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2190" target="mov1#mpkg6#opm14#opg38#cru42.ent17#att43"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2208" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2182" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2209" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2183" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2210" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2184" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2211" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2185" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2212" name="gioved&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2186" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2213" name="gioved&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2187" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2214" name="gioved&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2188" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2215" name="marted&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2192" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2216" name="marted&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2193" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2217" name="marted&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2194" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2218" name="mercoled&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2195" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2219" name="mercoled&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2196" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2220" name="mercoled&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2197" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2221" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2198" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2222" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2199" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2223" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2200" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2224" name="Source oid [Ristorante]_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2201" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2225" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2202" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2226" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2203" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2227" name="venerd&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu71#oln287#par2204" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cnu72#kln155" name="KOFlow155" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="136,-39,-634,6"/>
+    </ConnectUnit>
+    <ConnectUnit id="mov1#mpkg6#opm14#opg38#cnu73" name="Connetti a tipologie cucina" gr:x="20" gr:y="975" relationship="rel7#role14">
+      <SourceSelector id="mov1#mpkg6#opm14#opg38#cnu73#su344" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu73#su344#kcond299" name="KeyCondition41" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg6#opm14#opg38#cnu73#su345" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu73#su345#kcond300" name="KeyCondition42" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg6#opm14#opg38#cnu73#oln289" name="OKFlow113" to="mov1#mpkg6#opm14#opg38#lpu5" automaticCoupling="true" gr:bendpoints="134,11,-91,56"/>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cnu73#kln171" name="KOFlow171" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="66,-86,-664,694;89,-200,-641,580;253,-216,-477,564;306,-362,-424,418;467,-363,-263,417"/>
+    </ConnectUnit>
+    <ConnectUnit id="mov1#mpkg6#opm14#opg38#cnu74" name="Connetti a orario luned&#236;" gr:x="390" gr:y="265" relationship="rel14#role28">
+      <SourceSelector id="mov1#mpkg6#opm14#opg38#cnu74#su346" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu74#su346#kcond301" name="KeyCondition46" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg6#opm14#opg38#cnu74#su347" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu74#su347#kcond302" name="KeyCondition47" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg6#opm14#opg38#cnu74#oln290" name="OKFlow46" to="mov1#mpkg6#opm14#opg38#cru43" gr:bendpoints="-108,53,287,-77;-388,58,7,-72">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2228" name="marted&#236;_PASSING_giorno" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2262" target="mov1#mpkg6#opm14#opg38#cru43.ent17#att34"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2229" name="marted&#236; ora fine_PASSING_ora_fine" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2260" target="mov1#mpkg6#opm14#opg38#cru43.ent17#att14"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2230" name="marted&#236; ora inizio_PASSING_ora_inizio" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2261" target="mov1#mpkg6#opm14#opg38#cru43.ent17#att43"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2231" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2253" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2232" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2254" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2233" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2255" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2234" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2256" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2235" name="gioved&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2257" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2236" name="gioved&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2258" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2237" name="gioved&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2259" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2238" name="mercoled&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2263" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2239" name="mercoled&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2264" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2240" name="mercoled&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2265" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2241" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2266" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2242" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2267" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2243" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2268" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2244" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2270" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2245" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2271" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2246" name="venerd&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru42#oln293#par2272" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2247" name="Source oid [Ristorante]_PASSING" source="sourceent14#att40" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cnu74#kln157" name="KOFlow157" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true"/>
+    </ConnectUnit>
+    <LoopUnit id="mov1#mpkg6#opm14#opg38#lpu5" name="Ciclo cucine" gr:x="285" gr:y="955" iterationSize="7">
+      <OKLink id="mov1#mpkg6#opm14#opg38#lpu5#oln291" name="OKFlow112" to="mov1#mpkg6#opm14#opg38#cnu73" code="next">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#lpu5#oln291#par2248" name="Source oid [Ristorante]_PASSING_KeyCondition41 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu80#oln305#par2393" target="mov1#mpkg6#opm14#opg38#cnu73#su344#kcond299.ent14#att40"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#lpu5#oln291#par2249" name="Next Element_KeyCondition42 [oid] [Tipologia Cucina] [Target]" source="next" target="mov1#mpkg6#opm14#opg38#cnu73#su345#kcond300.ent10#att61"/>
+      </OKLink>
+      <OKLink id="mov1#mpkg6#opm14#opg38#lpu5#oln292" name="OKFlow114" to="mov1#mpkg6#opm14#opg38#tmu17" code="end">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#lpu5#oln292#par2250" name="Source oid [Ristorante]_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu80#oln305#par2393" passing="true"/>
+      </OKLink>
+    </LoopUnit>
+    <CreateUnit id="mov1#mpkg6#opm14#opg38#cru42" name="Orario del luned&#236;" gr:x="200" gr:y="275" entity="ent17">
+      <OKLink id="mov1#mpkg6#opm14#opg38#cru42#oln293" name="OKFlow45" to="mov1#mpkg6#opm14#opg38#cnu74">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2251" name="Source oid [Ristorante]_PASSING_KeyCondition46 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2224" target="mov1#mpkg6#opm14#opg38#cnu74#su346#kcond301.ent14#att40"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2252" name="oid_KeyCondition47 [oid] [Orario] [Target]" source="ent17#att60Array" target="mov1#mpkg6#opm14#opg38#cnu74#su347#kcond302.ent17#att60"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2253" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2208" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2254" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2209" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2255" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2210" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2256" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2211" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2257" name="gioved&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2212" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2258" name="gioved&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2213" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2259" name="gioved&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2214" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2260" name="marted&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2215" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2261" name="marted&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2216" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2262" name="marted&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2217" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2263" name="mercoled&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2218" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2264" name="mercoled&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2219" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2265" name="mercoled&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2220" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2266" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2221" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2267" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2222" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2268" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2223" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2269" name="Source oid [Ristorante]_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2224" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2270" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2225" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2271" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2226" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru42#oln293#par2272" name="venerd&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu72#oln288#par2227" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cru42#kln156" name="KOFlow156" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="118,-55,-462,10;424,-55,-156,10"/>
+    </CreateUnit>
+    <CreateUnit id="mov1#mpkg6#opm14#opg38#cru43" name="Orario del marted&#236;" gr:x="10" gr:y="410" entity="ent17">
+      <OKLink id="mov1#mpkg6#opm14#opg38#cru43#oln294" name="OKFlow64" to="mov1#mpkg6#opm14#opg38#cnu75">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2273" name="Source oid [Ristorante]_PASSING_KeyCondition49 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2247" target="mov1#mpkg6#opm14#opg38#cnu75#su348#kcond303.ent14#att40"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2274" name="oid_KeyCondition50 [oid] [Orario] [Target]" source="ent17#att60Array" target="mov1#mpkg6#opm14#opg38#cnu75#su349#kcond304.ent17#att60"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2275" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2231" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2276" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2232" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2277" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2233" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2278" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2234" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2279" name="gioved&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2235" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2280" name="gioved&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2236" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2281" name="gioved&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2237" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2282" name="mercoled&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2238" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2283" name="mercoled&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2239" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2284" name="mercoled&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2240" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2285" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2241" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2286" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2242" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2287" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2243" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2288" name="Source oid [Ristorante]_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2247" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2289" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2244" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2290" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2245" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru43#oln294#par2291" name="venerd&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu74#oln290#par2246" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cru43#kln158" name="KOFlow158" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="105,-45,-660,155;479,-48,-286,152"/>
+    </CreateUnit>
+    <ConnectUnit id="mov1#mpkg6#opm14#opg38#cnu75" name="Connetti a orario marted&#236;" gr:x="205" gr:y="410" relationship="rel14#role28">
+      <SourceSelector id="mov1#mpkg6#opm14#opg38#cnu75#su348" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu75#su348#kcond303" name="KeyCondition49" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg6#opm14#opg38#cnu75#su349" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu75#su349#kcond304" name="KeyCondition50" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg6#opm14#opg38#cnu75#oln295" name="OKFlow65" to="mov1#mpkg6#opm14#opg38#cru44">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2292" name="mercoled&#236;_PASSING_giorno" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2284" target="mov1#mpkg6#opm14#opg38#cru44.ent17#att34"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2293" name="mercoled&#236; ora fine_PASSING_ora_fine" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2282" target="mov1#mpkg6#opm14#opg38#cru44.ent17#att14"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2294" name="mercoled&#236; ora inizio_PASSING_ora_inizio" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2283" target="mov1#mpkg6#opm14#opg38#cru44.ent17#att43"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2295" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2275" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2296" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2276" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2297" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2277" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2298" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2278" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2299" name="gioved&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2279" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2300" name="gioved&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2280" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2301" name="gioved&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2281" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2302" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2285" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2303" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2286" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2304" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2287" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2305" name="Source oid [Ristorante]_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2288" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2306" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2289" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2307" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2290" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2308" name="venerd&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru43#oln294#par2291" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cnu75#kln159" name="KOFlow159" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="127,-45,-423,170;266,-50,-284,165"/>
+    </ConnectUnit>
+    <CreateUnit id="mov1#mpkg6#opm14#opg38#cru44" name="Orario del mercoled&#236;" gr:x="430" gr:y="425" entity="ent17">
+      <OKLink id="mov1#mpkg6#opm14#opg38#cru44#oln296" name="OKFlow66" to="mov1#mpkg6#opm14#opg38#cnu76" gr:bendpoints="-115,59,285,-76;-362,59,38,-76">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2309" name="Source oid [Ristorante]_PASSING_KeyCondition56 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2305" target="mov1#mpkg6#opm14#opg38#cnu76#su350#kcond305.ent14#att40"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2310" name="oid_KeyCondition95 [oid] [Orario] [Target]" source="ent17#att60Array" target="mov1#mpkg6#opm14#opg38#cnu76#su351#kcond306.ent17#att60"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2311" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2295" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2312" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2296" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2313" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2297" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2314" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2298" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2315" name="gioved&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2299" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2316" name="gioved&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2300" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2317" name="gioved&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2301" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2318" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2302" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2319" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2303" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2320" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2304" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2321" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2306" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2322" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2307" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru44#oln296#par2323" name="venerd&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu75#oln295#par2308" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cru44#kln160" name="KOFlow160" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true"/>
+    </CreateUnit>
+    <ConnectUnit id="mov1#mpkg6#opm14#opg38#cnu76" name="Connetti a orario mercoled&#236;" gr:x="10" gr:y="545" relationship="rel14#role28">
+      <SourceSelector id="mov1#mpkg6#opm14#opg38#cnu76#su350" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu76#su350#kcond305" name="KeyCondition56" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg6#opm14#opg38#cnu76#su351" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu76#su351#kcond306" name="KeyCondition95" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg6#opm14#opg38#cnu76#oln297" name="OKFlow67" to="mov1#mpkg6#opm14#opg38#cru45">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2324" name="gioved&#236;_PASSING_giorno" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru44#oln296#par2317" target="mov1#mpkg6#opm14#opg38#cru45.ent17#att34"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2325" name="gioved&#236; ora fine_PASSING_ora_fine" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru44#oln296#par2315" target="mov1#mpkg6#opm14#opg38#cru45.ent17#att14"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2326" name="gioved&#236; ora inizio_PASSING_ora_inizio" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru44#oln296#par2316" target="mov1#mpkg6#opm14#opg38#cru45.ent17#att43"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2327" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru44#oln296#par2311" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2328" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru44#oln296#par2312" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2329" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru44#oln296#par2313" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2330" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru44#oln296#par2314" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2331" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru44#oln296#par2318" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2332" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru44#oln296#par2319" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2333" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru44#oln296#par2320" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2334" name="Source oid [Ristorante]_PASSING" source="sourceent14#att40" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2335" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru44#oln296#par2321" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2336" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru44#oln296#par2322" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2337" name="venerd&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru44#oln296#par2323" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cnu76#kln163" name="KOFlow163" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="134,-52,-606,298;259,-53,-481,297;304,-77,-436,273;492,-79,-248,271"/>
+    </ConnectUnit>
+    <CreateUnit id="mov1#mpkg6#opm14#opg38#cru45" name="Orario del gioved&#236;" gr:x="235" gr:y="555" entity="ent17">
+      <OKLink id="mov1#mpkg6#opm14#opg38#cru45#oln298" name="OKFlow68" to="mov1#mpkg6#opm14#opg38#cnu77">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru45#oln298#par2338" name="Source oid [Ristorante]_PASSING_KeyCondition96 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2334" target="mov1#mpkg6#opm14#opg38#cnu77#su352#kcond307.ent14#att40"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru45#oln298#par2339" name="oid_KeyCondition97 [oid] [Orario] [Target]" source="ent17#att60Array" target="mov1#mpkg6#opm14#opg38#cnu77#su353#kcond308.ent17#att60"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru45#oln298#par2340" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2327" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru45#oln298#par2341" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2328" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru45#oln298#par2342" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2329" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru45#oln298#par2343" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2330" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru45#oln298#par2344" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2331" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru45#oln298#par2345" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2332" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru45#oln298#par2346" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2333" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru45#oln298#par2347" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2335" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru45#oln298#par2348" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2336" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru45#oln298#par2349" name="venerd&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu76#oln297#par2337" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cru45#kln162" name="KOFlow162" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="98,-63,-442,282;298,-63,-242,282"/>
+    </CreateUnit>
+    <ConnectUnit id="mov1#mpkg6#opm14#opg38#cnu77" name="Connetti a orario gioved&#236;" gr:x="400" gr:y="545" relationship="rel14#role28">
+      <SourceSelector id="mov1#mpkg6#opm14#opg38#cnu77#su352" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu77#su352#kcond307" name="KeyCondition96" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg6#opm14#opg38#cnu77#su353" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu77#su353#kcond308" name="KeyCondition97" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg6#opm14#opg38#cnu77#oln299" name="OKFlow69" to="mov1#mpkg6#opm14#opg38#cru46" gr:bendpoints="-114,47,276,-68;-309,65,81,-50">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2350" name="venerd&#236;_PASSING_giorno" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru45#oln298#par2349" target="mov1#mpkg6#opm14#opg38#cru46.ent17#att34"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2351" name="venerd&#236; ora fine_PASSING_ora_fine" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru45#oln298#par2347" target="mov1#mpkg6#opm14#opg38#cru46.ent17#att14"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2352" name="venerd&#236; ora inizio_PASSING_ora_inizio" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru45#oln298#par2348" target="mov1#mpkg6#opm14#opg38#cru46.ent17#att43"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2353" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru45#oln298#par2340" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2354" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru45#oln298#par2341" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2355" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru45#oln298#par2342" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2356" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru45#oln298#par2343" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2357" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru45#oln298#par2344" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2358" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru45#oln298#par2345" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2359" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru45#oln298#par2346" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2360" name="Source oid [Ristorante]_PASSING" source="sourceent14#att40" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cnu77#kln161" name="KOFlow161" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="92,20,-268,370"/>
+    </ConnectUnit>
+    <CreateUnit id="mov1#mpkg6#opm14#opg38#cru46" name="Orario del venerd&#236;" gr:x="25" gr:y="675" entity="ent17">
+      <OKLink id="mov1#mpkg6#opm14#opg38#cru46#oln300" name="OKFlow81" to="mov1#mpkg6#opm14#opg38#cnu78">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru46#oln300#par2361" name="Source oid [Ristorante]_PASSING_KeyCondition98 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2360" target="mov1#mpkg6#opm14#opg38#cnu78#su354#kcond309.ent14#att40"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru46#oln300#par2362" name="oid_KeyCondition99 [oid] [Orario] [Target]" source="ent17#att60Array" target="mov1#mpkg6#opm14#opg38#cnu78#su355#kcond310.ent17#att60"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru46#oln300#par2363" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2353" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru46#oln300#par2364" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2354" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru46#oln300#par2365" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2355" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru46#oln300#par2366" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2356" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru46#oln300#par2367" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2357" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru46#oln300#par2368" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2358" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru46#oln300#par2369" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu77#oln299#par2359" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cru46#kln164" name="KOFlow164" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="58,-54,-692,411;274,-75,-476,390;274,-110,-476,355;298,-134,-452,331;309,-176,-441,289;511,-178,-239,287"/>
+    </CreateUnit>
+    <ConnectUnit id="mov1#mpkg6#opm14#opg38#cnu78" name="Connetti a orario venerd&#236;" gr:x="210" gr:y="685" relationship="rel14#role28">
+      <SourceSelector id="mov1#mpkg6#opm14#opg38#cnu78#su354" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu78#su354#kcond309" name="KeyCondition98" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg6#opm14#opg38#cnu78#su355" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu78#su355#kcond310" name="KeyCondition99" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg6#opm14#opg38#cnu78#oln301" name="OKFlow82" to="mov1#mpkg6#opm14#opg38#cru47">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu78#oln301#par2370" name="sabato_PASSING_giorno" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru46#oln300#par2369" target="mov1#mpkg6#opm14#opg38#cru47.ent17#att34"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu78#oln301#par2371" name="sabato ora fine_PASSING_ora_fine" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru46#oln300#par2367" target="mov1#mpkg6#opm14#opg38#cru47.ent17#att14"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu78#oln301#par2372" name="sabato ora inizio_PASSING_ora_inizio" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru46#oln300#par2368" target="mov1#mpkg6#opm14#opg38#cru47.ent17#att43"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu78#oln301#par2373" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru46#oln300#par2363" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu78#oln301#par2374" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru46#oln300#par2364" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu78#oln301#par2375" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru46#oln300#par2365" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu78#oln301#par2376" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru46#oln300#par2366" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu78#oln301#par2377" name="Source oid [Ristorante]_PASSING" source="sourceent14#att40" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cnu78#kln165" name="KOFlow165" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="112,-77,-438,413;282,-77,-268,413"/>
+    </ConnectUnit>
+    <CreateUnit id="mov1#mpkg6#opm14#opg38#cru47" name="Orario del sabato" gr:x="440" gr:y="685" entity="ent17">
+      <OKLink id="mov1#mpkg6#opm14#opg38#cru47#oln302" name="OKFlow106" to="mov1#mpkg6#opm14#opg38#cnu79" gr:bendpoints="-119,73,291,-57;-306,74,104,-56">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru47#oln302#par2378" name="Source oid [Ristorante]_PASSING_KeyCondition100 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu78#oln301#par2377" target="mov1#mpkg6#opm14#opg38#cnu79#su356#kcond311.ent14#att40"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru47#oln302#par2379" name="oid_KeyCondition101 [oid] [Orario] [Target]" source="ent17#att60Array" target="mov1#mpkg6#opm14#opg38#cnu79#su357#kcond312.ent17#att60"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru47#oln302#par2380" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu78#oln301#par2373" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru47#oln302#par2381" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu78#oln301#par2374" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru47#oln302#par2382" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu78#oln301#par2375" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru47#oln302#par2383" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu78#oln301#par2376" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cru47#kln166" name="KOFlow166" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="99,-27,-241,448"/>
+    </CreateUnit>
+    <ConnectUnit id="mov1#mpkg6#opm14#opg38#cnu79" name="Connetti a orario sabato" gr:x="10" gr:y="800" relationship="rel14#role28">
+      <SourceSelector id="mov1#mpkg6#opm14#opg38#cnu79#su356" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu79#su356#kcond311" name="KeyCondition100" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg6#opm14#opg38#cnu79#su357" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu79#su357#kcond312" name="KeyCondition101" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg6#opm14#opg38#cnu79#oln303" name="OKFlow107" to="mov1#mpkg6#opm14#opg38#cru48">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu79#oln303#par2384" name="domenica_PASSING_giorno" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru47#oln302#par2383" target="mov1#mpkg6#opm14#opg38#cru48.ent17#att34"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu79#oln303#par2385" name="domenica ora fine_PASSING_ora_fine" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru47#oln302#par2381" target="mov1#mpkg6#opm14#opg38#cru48.ent17#att14"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu79#oln303#par2386" name="domenica ora inizio_PASSING_ora_inizio" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru47#oln302#par2382" target="mov1#mpkg6#opm14#opg38#cru48.ent17#att43"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu79#oln303#par2387" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru47#oln302#par2380" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu79#oln303#par2388" name="Source oid [Ristorante]_PASSING" source="sourceent14#att40" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cnu79#kln168" name="KOFlow168" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="62,-73,-688,532;84,-179,-666,426;266,-182,-484,423;307,-197,-443,408;477,-197,-273,408"/>
+    </ConnectUnit>
+    <CreateUnit id="mov1#mpkg6#opm14#opg38#cru48" name="Orario della domenica" gr:x="245" gr:y="830" entity="ent17">
+      <OKLink id="mov1#mpkg6#opm14#opg38#cru48#oln304" name="OKFlow110" to="mov1#mpkg6#opm14#opg38#cnu80">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru48#oln304#par2389" name="Source oid [Ristorante]_PASSING_KeyCondition102 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu79#oln303#par2388" target="mov1#mpkg6#opm14#opg38#cnu80#su358#kcond313.ent14#att40"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru48#oln304#par2390" name="oid_KeyCondition103 [oid] [Orario] [Target]" source="ent17#att60Array" target="mov1#mpkg6#opm14#opg38#cnu80#su359#kcond314.ent17#att60"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru48#oln304#par2391" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cnu79#oln303#par2387" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cru48#kln167" name="KOFlow167" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="102,-75,-418,545;245,-77,-275,543;284,-141,-236,479"/>
+    </CreateUnit>
+    <ConnectUnit id="mov1#mpkg6#opm14#opg38#cnu80" name="Connetti a orario domenica" gr:x="425" gr:y="810" relationship="rel14#role28">
+      <SourceSelector id="mov1#mpkg6#opm14#opg38#cnu80#su358" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu80#su358#kcond313" name="KeyCondition102" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg6#opm14#opg38#cnu80#su359" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu80#su359#kcond314" name="KeyCondition103" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg6#opm14#opg38#cnu80#oln305" name="OKFlow111" to="mov1#mpkg6#opm14#opg38#lpu5">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu80#oln305#par2392" name="Checked oid_PASSING_Input Array" sourceLinkParameter="mov1#mpkg6#opm14#opg38#cru48#oln304#par2391" target="mov1#mpkg6#opm14#opg38#lpu5.array"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cnu80#oln305#par2393" name="Source oid [Ristorante]_PASSING" source="sourceent14#att40" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cnu80#kln169" name="KOFlow169" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="175,-148,-150,467"/>
+    </ConnectUnit>
+    <CreateUnit id="mov1#mpkg6#opm14#opg38#cru49" name="Richiesta approvazione" gr:x="320" gr:y="1080" entity="ent21">
+      <OKLink id="mov1#mpkg6#opm14#opg38#cru49#oln306" name="OKFlow116" to="mov1#mpkg6#opm14#opg38#cnu81">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru49#oln306#par2394" name="Source oid [Ristorante]_PASSING_KeyCondition105 [oid] [Ristorante] [Source]" sourceLinkParameter="mov1#mpkg6#opm14#opg38#tmu17#oln307#par2397" target="mov1#mpkg6#opm14#opg38#cnu81#su360#kcond315.ent14#att40"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#cru49#oln306#par2395" name="oid_KeyCondition106 [oid] [Approvazione Attivit&#224;] [Target]" source="ent21#att5Array" target="mov1#mpkg6#opm14#opg38#cnu81#su361#kcond316.ent21#att5"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cru49#kln170" name="KOFlow170" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="272,-72,-173,798"/>
+    </CreateUnit>
+    <TimeUnit id="mov1#mpkg6#opm14#opg38#tmu17" name="Recupera data corrente" gr:x="460" gr:y="965">
+      <OKLink id="mov1#mpkg6#opm14#opg38#tmu17#oln307" name="OKFlow115" to="mov1#mpkg6#opm14#opg38#cru49">
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#tmu17#oln307#par2396" name="Current/Input Date_data" source="currentDate" target="mov1#mpkg6#opm14#opg38#cru49.ent21#att81"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#tmu17#oln307#par2397" name="Source oid [Ristorante]_PASSING" sourceLinkParameter="mov1#mpkg6#opm14#opg38#lpu5#oln292#par2250" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#opg38#tmu17#oln307#par2398" name="0_stato" target="mov1#mpkg6#opm14#opg38#cru49.ent21#att9" sourceValue="0"/>
+      </OKLink>
+    </TimeUnit>
+    <ConnectUnit id="mov1#mpkg6#opm14#opg38#cnu81" name="Connetti a richiesta di approvazione" gr:x="40" gr:y="1120" relationship="rel29#role57">
+      <SourceSelector id="mov1#mpkg6#opm14#opg38#cnu81#su360" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu81#su360#kcond315" name="KeyCondition105" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg6#opm14#opg38#cnu81#su361" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg6#opm14#opg38#cnu81#su361#kcond316" name="KeyCondition106" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg6#opm14#opg38#cnu81#oln308" to="mov1#mpkg6#opm14#okcu35" name="OKFlow117"/>
+      <KOLink id="mov1#mpkg6#opm14#opg38#cnu81#kln172" name="KOFlow172" to="mov1#mpkg6#opm14#kocu31" automaticCoupling="true" gr:bendpoints="556,-11,-134,914"/>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>

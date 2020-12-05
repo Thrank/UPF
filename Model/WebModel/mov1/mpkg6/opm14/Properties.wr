@@ -1,0 +1,72 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="60" id="mov1#mpkg6#opm14" name="Aggiungi ristorante">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#mpkg6#opm14#icu23" name="Input Port">
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp84" name="descrizione"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp85" name="numero di telefono"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp86" name="email"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp87" name="gioved&#236; ora inizio_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp88" name="domenica ora fine_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp89" name="domenica ora inizio_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp90" name="Checked oid_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp91" name="citt&#224;_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp92" name="CAP_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp93" name="UserCtxParam.oid_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp94" name="sabato_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp95" name="sabato ora inizio_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp96" name="sabato ora fine_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp97" name="indirizzo_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp98" name="venerd&#236;_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp99" name="nome"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp100" name="venerd&#236; ora inizio_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp101" name="domenica_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp102" name="venerd&#236; ora fine_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp103" name="gioved&#236; ora fine_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp104" name="numero civico_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp105" name="mercoled&#236;_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp106" name="marted&#236; ora fine_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp107" name="marted&#236; ora inizio_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp108" name="marted&#236;_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp109" name="mercoled&#236; ora fine_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp110" name="gioved&#236;_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp111" name="luned&#236; ora fine_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp112" name="luned&#236; ora inizio_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp113" name="luned&#236;_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg6#opm14#icu23#icp114" name="mercoled&#236; ora inizio_PASSING"/>
+      <OKLink id="mov1#mpkg6#opm14#icu23#oln281" to="mov1#mpkg6#opm14#opg38#cru40" validate="true" name="Flow44">
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2093" name="sabato ora inizio_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp95"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2098" name="venerd&#236;_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp98"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2087" name="marted&#236;_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp108"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2091" name="numero civico_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp104"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2083" name="luned&#236; ora inizio_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp112"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2090" name="mercoled&#236;_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp105"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2085" name="marted&#236; ora fine_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp106"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2073" name="CAP_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp92"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2072" name="numero di telefono_PASSING_numero di telefono" target="mov1#mpkg6#opm14#opg38#cru40.ent14#att44" source="mov1#mpkg6#opm14#icu23#icp85"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2089" name="mercoled&#236; ora inizio_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp114"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2070" name="email_PASSING_email" target="mov1#mpkg6#opm14#opg38#cru40.ent14#att45" source="mov1#mpkg6#opm14#icu23#icp86"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2086" name="marted&#236; ora inizio_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp107"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2078" name="domenica_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp101"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2074" source="mov1#mpkg6#opm14#icu23#icp90" name="Checked oid_PASSING" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2094" name="sabato_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp94"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2079" name="gioved&#236; ora fine_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp103"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2084" name="luned&#236;_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp113"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2071" name="nome_PASSING_nome" target="mov1#mpkg6#opm14#opg38#cru40.ent14#att42" source="mov1#mpkg6#opm14#icu23#icp99"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2080" name="gioved&#236; ora inizio_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp87"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2081" name="gioved&#236;_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp110"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2077" name="domenica ora inizio_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp89"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2095" name="UserCtxParam.oid_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp93"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2082" name="luned&#236; ora fine_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp111"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2097" name="venerd&#236; ora inizio_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp100"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2075" name="citt&#224;_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp91"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2096" name="venerd&#236; ora fine_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp102"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2092" name="sabato ora fine_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp96"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2076" name="domenica ora fine_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp88"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2099" name="indirizzo_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp97"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2069" name="descrizione_PASSING_descrizione" target="mov1#mpkg6#opm14#opg38#cru40.ent14#att46" source="mov1#mpkg6#opm14#icu23#icp84"/>
+        <LinkParameter id="mov1#mpkg6#opm14#icu23#oln281#par2088" name="mercoled&#236; ora fine_PASSING" passing="true" source="mov1#mpkg6#opm14#icu23#icp109"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="1030" gr:y="1200" id="mov1#mpkg6#opm14#okcu35" name="OK Port35"/>
+    <KOCollectorUnit gr:x="1040" gr:y="245" id="mov1#mpkg6#opm14#kocu31" name="KO aggiunta"/>
+  </OperationUnits>
+</OperationModule>

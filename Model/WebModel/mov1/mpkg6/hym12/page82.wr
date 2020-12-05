@@ -1,0 +1,196 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="mov1#mpkg6#hym12#page82" name="Aggiungi ristorante" gr:x="300" gr:y="0">
+  <ContentUnits>
+    <GetUnit id="mov1#mpkg6#hym12#page82#gtu12" name="Recupera oid utente" gr:x="0" gr:y="0" contextParameters="UserCtxParam">
+      <Link id="mov1#mpkg6#hym12#page82#gtu12#ln252" name="Flow9" to="mov1#mpkg6#hym12#page82#enu42" type="transport" validate="true">
+        <LinkParameter id="mov1#mpkg6#hym12#page82#gtu12#ln252#par1706" name="UserCtxParam.oid_PASSING" source="mov1#mpkg6#hym12#page82#gtu12.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
+    <EntryUnit id="mov1#mpkg6#hym12#page82#enu42" name="Modulo aggiunta ristorante" linkOrder="mov1#mpkg6#hym12#page82#enu42#ln253" gr:showAllParts="true" gr:x="0" gr:y="130" fieldOrder="mov1#mpkg6#hym12#page82#enu42#fld143 mov1#mpkg6#hym12#page82#enu42#fld144 mov1#mpkg6#hym12#page82#enu42#fld145 mov1#mpkg6#hym12#page82#enu42#fld146 mov1#mpkg6#hym12#page82#enu42#fld147 mov1#mpkg6#hym12#page82#enu42#sfld23 mov1#mpkg6#hym12#page82#enu42#fld148 mov1#mpkg6#hym12#page82#enu42#fld149 mov1#mpkg6#hym12#page82#enu42#fld150 mov1#mpkg6#hym12#page82#enu42#fld151 mov1#mpkg6#hym12#page82#enu42#fld169 mov1#mpkg6#hym12#page82#enu42#fld168 mov1#mpkg6#hym12#page82#enu42#fld167 mov1#mpkg6#hym12#page82#enu42#fld166 mov1#mpkg6#hym12#page82#enu42#fld165 mov1#mpkg6#hym12#page82#enu42#fld164 mov1#mpkg6#hym12#page82#enu42#fld163 mov1#mpkg6#hym12#page82#enu42#fld162 mov1#mpkg6#hym12#page82#enu42#fld161 mov1#mpkg6#hym12#page82#enu42#fld160 mov1#mpkg6#hym12#page82#enu42#fld159 mov1#mpkg6#hym12#page82#enu42#fld158 mov1#mpkg6#hym12#page82#enu42#fld157 mov1#mpkg6#hym12#page82#enu42#fld156 mov1#mpkg6#hym12#page82#enu42#fld155 mov1#mpkg6#hym12#page82#enu42#fld154 mov1#mpkg6#hym12#page82#enu42#fld153 mov1#mpkg6#hym12#page82#enu42#fld152 mov1#mpkg6#hym12#page82#enu42#fld170">
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld143" name="nome" type="string" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld144" name="numero di telefono" type="string" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld145" name="email" type="string" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld146" name="via/piazza/corso" type="string" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld147" name="numero civico" type="string" modifiable="true"/>
+      <SelectionField id="mov1#mpkg6#hym12#page82#enu42#sfld23" name="citt&#224;" type="string"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld148" name="CAP" type="string" modifiable="true"/>
+      <Link id="mov1#mpkg6#hym12#page82#enu42#ln253" name="Flow16" to="mov1#mpkg6#hym12#page82#mciu7" type="normal" validate="true">
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1707" name="CAP_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld148" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1708" name="citt&#224;_PASSING" source="mov1#mpkg6#hym12#page82#enu42#sfld23" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1709" name="email_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld145" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1710" name="indirizzo_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld146" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1711" name="nome_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld143" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1712" name="numero civico_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld147" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1713" name="numero di telefono_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld144" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1714" name="UserCtxParam.oid_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#gtu12#ln252#par1706" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1715" name="domenica_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld154" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1716" name="domenica ora fine_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld152" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1717" name="domenica ora inizio_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld153" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1718" name="gioved&#236;_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld163" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1719" name="gioved&#236; ora fine_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld162" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1720" name="gioved&#236; ora inizio_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld161" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1721" name="luned&#236;_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld150" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1722" name="luned&#236; ora fine_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld151" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1723" name="luned&#236; ora inizio_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld149" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1724" name="marted&#236;_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld169" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1725" name="marted&#236; ora fine_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld167" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1726" name="marted&#236; ora inizio_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld168" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1727" name="mercoled&#236;_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld166" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1728" name="mercoled&#236; ora fine_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld165" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1729" name="mercoled&#236; ora inizio_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld164" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1730" name="sabato_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld157" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1731" name="sabato ora fine_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld155" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1732" name="sabato ora inizio_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld156" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1733" name="venerd&#236;_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld160" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1734" name="venerd&#236; ora fine_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld159" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1735" name="venerd&#236; ora inizio_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld158" passing="true"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#enu42#ln253#par1736" name="descrizione_PASSING" source="mov1#mpkg6#hym12#page82#enu42#fld170" passing="true"/>
+      </Link>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld149" name="luned&#236; ora inizio" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld150" name="luned&#236;" type="boolean" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld151" name="luned&#236; ora fine" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld152" name="domenica ora fine" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld153" name="domenica ora inizio" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld154" name="domenica" type="boolean" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld155" name="sabato ora fine" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld156" name="sabato ora inizio" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld157" name="sabato" type="boolean" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld158" name="venerd&#236; ora inizio" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld159" name="venerd&#236; ora fine" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld160" name="venerd&#236;" type="boolean" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld161" name="gioved&#236; ora inizio" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld162" name="gioved&#236; ora fine" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld163" name="gioved&#236;" type="boolean" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld164" name="mercoled&#236; ora inizio" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld165" name="mercoled&#236; ora fine" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld166" name="mercoled&#236;" type="boolean" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld167" name="marted&#236; ora fine" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld168" name="marted&#236; ora inizio" type="time" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld169" name="marted&#236;" type="boolean" modifiable="true"/>
+      <Field id="mov1#mpkg6#hym12#page82#enu42#fld170" name="descrizione" type="string" modifiable="true"/>
+    </EntryUnit>
+    <SelectorUnit id="mov1#mpkg6#hym12#page82#seu67" name="Seleziona citt&#224;" gr:x="160" gr:y="0" entity="ent22">
+      <Link id="mov1#mpkg6#hym12#page82#seu67#ln254" name="Flow11" to="mov1#mpkg6#hym12#page82#enu42" type="transport" validate="true">
+        <LinkParameter id="mov1#mpkg6#hym12#page82#seu67#ln254#par1737" name="nome_citt&#224; [label]" source="ent22#att29Array" target="mov1#mpkg6#hym12#page82#enu42#sfld23_label"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#seu67#ln254#par1738" name="oid_citt&#224; [output]" source="ent22#att27Array" target="mov1#mpkg6#hym12#page82#enu42#sfld23_output"/>
+      </Link>
+    </SelectorUnit>
+    <MultiChoiceIndexUnit id="mov1#mpkg6#hym12#page82#mciu7" name="Tipologie cucina" linkOrder="mov1#mpkg6#hym12#page82#mciu7#ln255" gr:showAllParts="true" gr:x="230" gr:y="165" entity="ent10" displayAttributes="ent10#att28">
+      <SortAttribute attribute="ent10#att28" order="ascending"/>
+      <Link id="mov1#mpkg6#hym12#page82#mciu7#ln255" name="Flow44" to="mov1#mpkg6#hym12#miu18" type="normal" validate="true">
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1739" name="descrizione_PASSING_descrizione" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1736" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp84"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1740" name="email_PASSING_email" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1709" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp86"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1741" name="nome_PASSING_nome" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1711" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp99"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1742" name="numero di telefono_PASSING_numero di telefono" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1713" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp85"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1743" name="CAP_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1707" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp92"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1744" name="Checked oid_PASSING" source="ent10#att61Checked" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp90"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1745" name="citt&#224;_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1708" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp91"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1746" name="domenica ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1716" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp88"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1747" name="domenica ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1717" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp89"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1748" name="domenica_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1715" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp101"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1749" name="gioved&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1719" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp103"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1750" name="gioved&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1720" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp87"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1751" name="gioved&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1718" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp110"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1752" name="luned&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1722" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp111"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1753" name="luned&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1723" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp112"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1754" name="luned&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1721" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp113"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1755" name="marted&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1725" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp106"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1756" name="marted&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1726" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp107"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1757" name="marted&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1724" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp108"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1758" name="mercoled&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1728" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp109"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1759" name="mercoled&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1729" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp114"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1760" name="mercoled&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1727" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp105"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1761" name="numero civico_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1712" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp104"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1762" name="sabato ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1731" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp96"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1763" name="sabato ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1732" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp95"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1764" name="sabato_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1730" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp94"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1765" name="UserCtxParam.oid_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1714" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp93"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1766" name="venerd&#236; ora fine_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1734" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp102"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1767" name="venerd&#236; ora inizio_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1735" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp100"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1768" name="venerd&#236;_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1733" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp98"/>
+        <LinkParameter id="mov1#mpkg6#hym12#page82#mciu7#ln255#par1769" name="indirizzo_PASSING" sourceLinkParameter="mov1#mpkg6#hym12#page82#enu42#ln253#par1710" target="mov1#mpkg6#hym12#miu18.mov1#mpkg6#opm14#icu23#icp97"/>
+      </Link>
+    </MultiChoiceIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov1#mpkg6#hym12#page82#enu42">
+          <layout:Link link="mov1#mpkg6#hym12#page82#enu42#ln253"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld143"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld144"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld145"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld146"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld147"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#sfld23"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld148"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld149"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld150"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld151"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld169"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld168"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld167"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld166"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld165"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld164"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld163"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld162"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld161"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld160"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld159"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld158"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld157"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld156"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld155"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld154"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld153"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld152"/>
+          <layout:Field field="mov1#mpkg6#hym12#page82#enu42#fld170"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov1#mpkg6#hym12#page82#mciu7">
+          <layout:Attribute attribute="ent10#att28"/>
+          <layout:Link link="mov1#mpkg6#hym12#page82#mciu7#ln255"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

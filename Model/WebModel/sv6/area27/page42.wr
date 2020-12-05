@@ -10,7 +10,7 @@
         <LinkParameter id="sv6#area27#page42#gtu1#ln118#par114" name="UserCtxParam.oid_KeyCondition78 [oid]" source="sv6#area27#page42#gtu1.UserCtxParam" target="sv6#area27#page42#seu20#su92#kcond78.userOID"/>
         <LinkParameter id="sv6#area27#page42#gtu1#ln118#par116" name="UserCtxParam.oid_PASSING" source="sv6#area27#page42#gtu1.UserCtxParam" passing="true"/>
       </Link>
-      <Link id="sv6#area27#page42#gtu1#ln193" name="Flow193" to="sv6#area27#page42#mciu1" type="transport" validate="true" gr:bendpoints="-98,61,-478,-599;-96,658,-476,-2">
+      <Link id="sv6#area27#page42#gtu1#ln193" name="Flow193" to="sv6#area27#page42#mciu1" type="transport" validate="true" gr:bendpoints="-99,17,-389,-618;-98,621,-388,-14">
         <LinkParameter id="sv6#area27#page42#gtu1#ln193#par435" name="UserCtxParam.oid_PASSING" source="sv6#area27#page42#gtu1.UserCtxParam" passing="true"/>
       </Link>
     </GetUnit>

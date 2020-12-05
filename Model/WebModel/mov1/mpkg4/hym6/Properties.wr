@@ -9,7 +9,8 @@
     <OKCollectorUnit gr:x="775" gr:y="25" id="mov1#mpkg4#hym6#okcu18" name="Eliminazione avvenuta con successo"/>
     <ModuleInstanceUnit id="mov1#mpkg4#hym6#miu5" gr:x="325" gr:y="310" moduleId="mov1#mpkg4#opm10">
       <OKLink id="mov1#mpkg4#hym6#miu5#oln176" to="mov1#mpkg4#hym6#okcu18" name="OKFlow78"/>
-      <KOLink id="mov1#mpkg4#hym6#miu5#kln121" name="KOFlow98" to="mov1#mpkg4#hym6#page27#mssu23" automaticCoupling="true"/>
+      <KOLink id="mov1#mpkg4#hym6#miu5#kln175" name="KOFlow175" to="mov1#mpkg4#hym6#kocu34" automaticCoupling="true"/>
     </ModuleInstanceUnit>
+    <KOCollectorUnit gr:x="820" gr:y="350" id="mov1#mpkg4#hym6#kocu34" name="KO eliminazione"/>
   </OperationUnits>
 </HybridModule>
