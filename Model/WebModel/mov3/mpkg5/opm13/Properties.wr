@@ -1,6 +1,6 @@
 <OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="890" id="mov3#mpkg5#opm13" name="Modifica valutazione">
   <OperationUnits>
-    <InputCollectorUnit gr:x="0" gr:y="150" id="mov3#mpkg5#opm13#icu19" name="Input Port">
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov3#mpkg5#opm13#icu19" linkOrder="mov3#mpkg5#opm13#icu19#ln246">
       <InputCollectorParameter id="mov3#mpkg5#opm13#icu19#icp77" name="voto_PASSING"/>
       <InputCollectorParameter id="mov3#mpkg5#opm13#icu19#icp78" name="oid_PASSING"/>
       <InputCollectorParameter id="mov3#mpkg5#opm13#icu19#icp79" name="commento_PASSING"/>
@@ -9,8 +9,19 @@
         <LinkParameter id="mov3#mpkg5#opm13#icu19#oln205#par1259" source="mov3#mpkg5#opm13#icu19#icp77" name="voto_PASSING" passing="true"/>
         <LinkParameter id="mov3#mpkg5#opm13#icu19#oln205#par1258" name="oid_PASSING" passing="true" source="mov3#mpkg5#opm13#icu19#icp78"/>
       </OKLink>
+      <InputCollectorParameter id="mov3#mpkg5#opm13#icu19#icp83" name="azione"/>
+      <Link id="mov3#mpkg5#opm13#icu19#ln246" name="Flow246" to="mov3#mpkg5#opm13#switch2" type="transport" validate="true" gr:bendpoints="196,112,-269,-8">
+        <LinkParameter id="mov3#mpkg5#opm13#icu19#ln246#par1334" name="azione_Switch" source="mov3#mpkg5#opm13#icu19#icp83" target="mov3#mpkg5#opm13#switch2.switch"/>
+      </Link>
     </InputCollectorUnit>
-    <OKCollectorUnit gr:x="700" gr:y="300" id="mov3#mpkg5#opm13#okcu29" name="OK aggiornamento"/>
-    <KOCollectorUnit gr:x="700" gr:y="0" id="mov3#mpkg5#opm13#kocu27" name="KO aggiornamento"/>
+    <OKCollectorUnit gr:x="670" gr:y="180" id="mov3#mpkg5#opm13#okcu29" name="OK ristorante"/>
+    <KOCollectorUnit gr:x="670" gr:y="0" id="mov3#mpkg5#opm13#kocu27" name="KO aggiornamento"/>
+    <OKCollectorUnit gr:x="670" gr:y="275" id="mov3#mpkg5#opm13#okcu32" name="OK valutazioni"/>
+    <SwitchUnit gr:x="550" gr:y="295" id="mov3#mpkg5#opm13#switch2" name="Switch">
+      <OKLink id="mov3#mpkg5#opm13#switch2#oln224" name="OKFlow224" to="mov3#mpkg5#opm13#okcu29" automaticCoupling="true" code="Ristorante"/>
+      <OKLink id="mov3#mpkg5#opm13#switch2#oln225" name="OKFlow225" to="mov3#mpkg5#opm13#okcu32" automaticCoupling="true" code="Le mie valutazioni"/>
+      <Case value="Le mie valutazioni"/>
+      <Case value="Ristorante"/>
+    </SwitchUnit>
   </OperationUnits>
 </OperationModule>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="190" id="sv6#area31#page44" name="Scegli i piatti da ordinare">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="175" id="sv6#area31#page44" name="Scegli i piatti da ordinare">
   <ContentUnits>
     <ScrollerUnit id="sv6#area31#page44#scu32" name="Scorri piatti" gr:showAllParts="true" gr:x="170" gr:y="0" useCountQuery="false" entity="ent1" blockFactor="10" linkOrder="sv6#area31#page44#scu32#ln200">
       <Selector id="sv6#area31#page44#scu32#su177" defaultPolicy="fill" booleanOperator="and">

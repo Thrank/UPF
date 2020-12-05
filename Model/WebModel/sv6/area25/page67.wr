@@ -7,6 +7,7 @@
         <LinkParameter id="sv6#area25#page67#enu5#ln114#par275" name="commento_PASSING" source="sv6#area25#page67#enu5#fld9" target="sv6#area25#miu11.mov3#mpkg5#opm13#icu19#icp79"/>
         <LinkParameter id="sv6#area25#page67#enu5#ln114#par276" name="oid_PASSING" sourceLinkParameter="sv6#area25#page67#dau18#ln113#par268" target="sv6#area25#miu11.mov3#mpkg5#opm13#icu19#icp78"/>
         <LinkParameter id="sv6#area25#page67#enu5#ln114#par278" name="voto_PASSING" source="sv6#area25#page67#enu5#sfld6" target="sv6#area25#miu11.mov3#mpkg5#opm13#icu19#icp77"/>
+        <LinkParameter id="sv6#area25#page67#enu5#ln114#par1339" name="Ristorante_azione" sourceValue="Ristorante" target="sv6#area25#miu11.mov3#mpkg5#opm13#icu19#icp83"/>
       </Link>
     </EntryUnit>
     <DataUnit gr:x="235" gr:y="60" id="sv6#area25#page67#dau18" name="Valutazione" entity="ent15">

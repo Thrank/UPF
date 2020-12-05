@@ -22,9 +22,10 @@
         <LinkParameter id="sv6#area25#page40#dau15#ln132#par307" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area25#page40#gtu11#ln131#par303" passing="true"/>
       </Link>
       <Link id="sv6#area25#page40#dau15#ln195" name="Flow58" to="sv6#area31#page44#dau23" type="normal" validate="true" automaticCoupling="true" gr:bendpoints="239,100,-651,-620;267,300,-623,-420;551,617,-339,-103"/>
-      <Link id="sv6#area25#page40#dau15#ln236" name="Flow111" to="sv6#area25#miu15" type="normal" validate="true" gr:bendpoints="202,118,-73,-597;207,624,-68,-91;151,677,-124,-38">
+      <Link id="sv6#area25#page40#dau15#ln236" name="Flow111" to="sv6#area25#miu15" type="normal" validate="true" gr:bendpoints="-244,157,-259,-633;-245,756,-260,-34">
         <LinkParameter id="sv6#area25#page40#dau15#ln236#par1300" name="UserCtxParam.oid_PASSING_utente della valutazione [oid]" sourceLinkParameter="sv6#area25#page40#gtu11#ln131#par303" target="sv6#area25#miu15.mov3#mpkg5#hym10#icu20#icp80"/>
         <LinkParameter id="sv6#area25#page40#dau15#ln236#par1301" name="oid_valutazione del ristorante [oid]" source="data.ent14#att40" target="sv6#area25#miu15.mov3#mpkg5#hym10#icu20#icp81"/>
+        <LinkParameter id="sv6#area25#page40#dau15#ln236#par1333" name="Ristorante_azione" sourceValue="Ristorante" target="sv6#area25#miu15.mov3#mpkg5#hym10#icu20#icp82"/>
       </Link>
     </DataUnit>
     <MultiDataUnit id="sv6#area25#page40#mdu12" name="Valutazioni" gr:showAllParts="true" gr:x="310" gr:y="375" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4">

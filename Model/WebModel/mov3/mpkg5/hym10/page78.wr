@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="mov3#mpkg5#hym10#page78" name="Elimina valutazione" gr:x="480" gr:y="0">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="mov3#mpkg5#hym10#page78" name="Elimina valutazione" gr:x="435" gr:y="5">
   <ContentUnits>
     <SelectorUnit id="mov3#mpkg5#hym10#page78#seu64" name="Seleziona valutazione" gr:showAllParts="true" gr:x="0" gr:y="0" entity="ent15" distinctAttributes="ent15#att53 ent15#att54 ent15#att4 ent15#att41">
       <Selector id="mov3#mpkg5#hym10#page78#seu64#su287" defaultPolicy="fill" booleanOperator="and">

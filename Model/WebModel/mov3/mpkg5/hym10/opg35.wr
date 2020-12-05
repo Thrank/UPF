@@ -5,7 +5,7 @@
         <KeyCondition id="mov3#mpkg5#hym10#opg35#dlu7#su282#kcond224" name="KeyCondition69" predicate="in" implied="false"/>
       </Selector>
       <KOLink id="mov3#mpkg5#hym10#opg35#dlu7#kln145" to="mov3#mpkg5#hym10#kocu30" name="KOFlow26" gr:bendpoints="115,58,-510,418;416,58,-209,418"/>
-      <OKLink id="mov3#mpkg5#hym10#opg35#dlu7#oln219" to="mov3#mpkg5#hym10#okcu30" name="OKFlow30"/>
+      <OKLink id="mov3#mpkg5#hym10#opg35#dlu7#oln219" to="mov3#mpkg5#hym10#switch1" name="OKFlow30"/>
     </DeleteUnit>
     <DisconnectUnit id="mov3#mpkg5#hym10#opg35#dcnu28" name="Sconnetti da ristorante" gr:x="250" gr:y="0" relationship="rel2#role4">
       <SourceSelector id="mov3#mpkg5#hym10#opg35#dcnu28#su283" defaultPolicy="fill" booleanOperator="and">

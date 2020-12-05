@@ -108,7 +108,7 @@
     </layout:Row>
   </layout:Grid>
   <Alternative gr:x="0" gr:y="0" id="sv6#area25#page74#alt16" name="Errori valutazioni" defaultPage="sv6#area25#page74#alt16#page75">
-    <Page gr:x="330" gr:y="5" id="sv6#area25#page74#alt16#page75" name="Errore eliminazione ">
+    <Page gr:x="475" gr:y="25" id="sv6#area25#page74#alt16#page75" name="Errore eliminazione ">
       <ContentUnits>
         <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area25#page74#alt16#page75#mssu36" name="Errore eliminazione"/>
       </ContentUnits>

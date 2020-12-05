@@ -1,14 +1,25 @@
 <HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="1780" id="mov3#mpkg5#hym10" name="Elimina valutazione">
   <OperationUnits>
-    <InputCollectorUnit gr:x="0" gr:y="345" id="mov3#mpkg5#hym10#icu20" name="Input Port">
+    <InputCollectorUnit gr:x="0" gr:y="345" id="mov3#mpkg5#hym10#icu20">
       <InputCollectorParameter id="mov3#mpkg5#hym10#icu20#icp80" name="utente della valutazione [oid]"/>
       <InputCollectorParameter id="mov3#mpkg5#hym10#icu20#icp81" name="valutazione del ristorante [oid]"/>
       <OKLink id="mov3#mpkg5#hym10#icu20#oln214" to="mov3#mpkg5#hym10#page78#seu64" validate="true" name="Flow111">
         <LinkParameter id="mov3#mpkg5#hym10#icu20#oln214#par1316" name="UserCtxParam.oid_PASSING_utente della valutazione [oid]" target="mov3#mpkg5#hym10#page78#seu64#su287#rcond67.userOID" source="mov3#mpkg5#hym10#icu20#icp80"/>
         <LinkParameter id="mov3#mpkg5#hym10#icu20#oln214#par1317" source="mov3#mpkg5#hym10#icu20#icp81" name="oid_valutazione del ristorante [oid]" target="mov3#mpkg5#hym10#page78#seu64#su287#rcond68.ent14#att40"/>
       </OKLink>
+      <Link id="mov3#mpkg5#hym10#icu20#ln245" name="Flow245" to="mov3#mpkg5#hym10#switch1" type="transport" validate="true" gr:bendpoints="256,-406,-364,-106;588,-407,-32,-107">
+        <LinkParameter id="mov3#mpkg5#hym10#icu20#ln245#par1328" name="azione_Switch" source="mov3#mpkg5#hym10#icu20#icp82" target="mov3#mpkg5#hym10#switch1.switch"/>
+      </Link>
+      <InputCollectorParameter id="mov3#mpkg5#hym10#icu20#icp82" name="azione"/>
     </InputCollectorUnit>
-    <OKCollectorUnit gr:x="905" gr:y="0" id="mov3#mpkg5#hym10#okcu30" name="OK eliminazione"/>
-    <KOCollectorUnit gr:x="905" gr:y="255" id="mov3#mpkg5#hym10#kocu30" name="KO eliminazione"/>
+    <OKCollectorUnit gr:x="890" gr:y="15" id="mov3#mpkg5#hym10#okcu30" name="OK verso valutazioni"/>
+    <KOCollectorUnit gr:x="890" gr:y="255" id="mov3#mpkg5#hym10#kocu30" name="KO eliminazione"/>
+    <SwitchUnit gr:x="730" gr:y="70" id="mov3#mpkg5#hym10#switch1" name="Switch">
+      <Case value="Le mie valutazioni"/>
+      <Case value="Ristorante"/>
+      <OKLink id="mov3#mpkg5#hym10#switch1#oln221" name="OKFlow221" to="mov3#mpkg5#hym10#okcu30" automaticCoupling="true" code="Le mie valutazioni"/>
+      <OKLink id="mov3#mpkg5#hym10#switch1#oln222" name="OKFlow222" to="mov3#mpkg5#hym10#okcu31" automaticCoupling="true" code="Ristorante"/>
+    </SwitchUnit>
+    <OKCollectorUnit gr:x="890" gr:y="145" id="mov3#mpkg5#hym10#okcu31" name="OK verso ristorante"/>
   </OperationUnits>
 </HybridModule>

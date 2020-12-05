@@ -1,12 +1,13 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="360" gr:y="1105" id="sv6#area25#page59" name="Modifica valutazione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="520" gr:y="1025" id="sv6#area25#page59" name="Modifica valutazione">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv6#area25#page59#enu37" name="Modifica valutazione" gr:showAllParts="true" linkOrder="sv6#area25#page59#enu37#ln227">
       <Field id="sv6#area25#page59#enu37#fld113" name="voto" type="integer" modifiable="true" preloaded="true"/>
       <Field id="sv6#area25#page59#enu37#fld114" name="commento" type="text" modifiable="true" preloaded="true"/>
-      <Link id="sv6#area25#page59#enu37#ln227" name="Flow204" to="sv6#area25#miu14" type="normal" validate="true">
-        <LinkParameter id="sv6#area25#page59#enu37#ln227#par1285" name="commento_commento_PASSING" source="sv6#area25#page59#enu37#fld114" target="sv6#area25#miu14.mov3#mpkg5#opm13#icu19#icp79"/>
-        <LinkParameter id="sv6#area25#page59#enu37#ln227#par1286" name="oid_PASSING_oid_PASSING" sourceLinkParameter="sv6#area25#page77#mdu4#ln228#par1290" target="sv6#area25#miu14.mov3#mpkg5#opm13#icu19#icp78"/>
-        <LinkParameter id="sv6#area25#page59#enu37#ln227#par1287" name="voto_voto_PASSING" source="sv6#area25#page59#enu37#fld113" target="sv6#area25#miu14.mov3#mpkg5#opm13#icu19#icp77"/>
+      <Link id="sv6#area25#page59#enu37#ln227" name="Flow204" to="sv6#area25#miu11" type="normal" validate="true">
+        <LinkParameter id="sv6#area25#page59#enu37#ln227#par1335" name="Le mie valutazioni_azione" sourceValue="Le mie valutazioni" target="sv6#area25#miu11.mov3#mpkg5#opm13#icu19#icp83"/>
+        <LinkParameter id="sv6#area25#page59#enu37#ln227#par1336" name="commento_commento_PASSING" source="sv6#area25#page59#enu37#fld114" target="sv6#area25#miu11.mov3#mpkg5#opm13#icu19#icp79"/>
+        <LinkParameter id="sv6#area25#page59#enu37#ln227#par1337" name="oid_PASSING_oid_PASSING" sourceLinkParameter="sv6#area25#page77#mdu4#ln228#par1290" target="sv6#area25#miu11.mov3#mpkg5#opm13#icu19#icp78"/>
+        <LinkParameter id="sv6#area25#page59#enu37#ln227#par1338" name="voto_voto_PASSING" source="sv6#area25#page59#enu37#fld113" target="sv6#area25#miu11.mov3#mpkg5#opm13#icu19#icp77"/>
       </Link>
     </EntryUnit>
   </ContentUnits>

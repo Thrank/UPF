@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="30" gr:y="745" id="sv6#area25#page77" name="Le Mie Valutazioni" landmark="true">
   <ContentUnits>
-    <MultiDataUnit gr:x="620" gr:y="0" id="sv6#area25#page77#mdu4" name="Valutazioni utente" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4" gr:showAllParts="true" linkOrder="sv6#area25#page77#mdu4#ln228">
+    <MultiDataUnit gr:x="620" gr:y="0" id="sv6#area25#page77#mdu4" name="Valutazioni utente" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4" gr:showAllParts="true" linkOrder="sv6#area25#page77#mdu4#ln228 sv6#area25#page77#mdu4#ln244">
       <SortAttribute attribute="ent15#att4" order="descending"/>
       <Selector id="sv6#area25#page77#mdu4#su277" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv6#area25#page77#mdu4#su277#kcond221" name="KeyCondition48" predicate="in" implied="false"/>
@@ -10,9 +10,10 @@
         <LinkParameter id="sv6#area25#page77#mdu4#ln228#par1289" name="voto_voto" source="ent15#att53Array" target="sv6#area25#page59#enu37#fld113_slot"/>
         <LinkParameter id="sv6#area25#page77#mdu4#ln228#par1290" name="oid_PASSING" source="ent15#att41Array" passing="true"/>
       </Link>
-      <Link id="sv6#area25#page77#mdu4#ln244" name="Flow244" to="sv6#area25#miu16" type="transport" validate="true" gr:bendpoints="-109,251,-113,-55">
-        <LinkParameter id="sv6#area25#page77#mdu4#ln244#par1326" name="valutazioneToCliente registrato.oid_utente della valutazione [oid]" source="rel3#role6_userOIDArray" target="sv6#area25#miu16.mov3#mpkg5#hym10#icu20#icp80"/>
-        <LinkParameter id="sv6#area25#page77#mdu4#ln244#par1327" name="valutazioneToRistorante.oid_valutazione del ristorante [oid]" source="rel2#role4_ent14#att40Array" target="sv6#area25#miu16.mov3#mpkg5#hym10#icu20#icp81"/>
+      <Link id="sv6#area25#page77#mdu4#ln244" name="Flow244" to="sv6#area25#miu15" type="normal" validate="true" gr:bendpoints="250,338,-230,-102">
+        <LinkParameter id="sv6#area25#page77#mdu4#ln244#par1329" name="valutazioneToCliente registrato.oid_utente della valutazione [oid]" source="rel3#role6_userOIDArray" target="sv6#area25#miu15.mov3#mpkg5#hym10#icu20#icp80"/>
+        <LinkParameter id="sv6#area25#page77#mdu4#ln244#par1330" name="valutazioneToRistorante.oid_valutazione del ristorante [oid]" source="rel2#role4_ent14#att40Array" target="sv6#area25#miu15.mov3#mpkg5#hym10#icu20#icp81"/>
+        <LinkParameter id="sv6#area25#page77#mdu4#ln244#par1332" name="Le mie valutazioni_azione" sourceValue="Le mie valutazioni" target="sv6#area25#miu15.mov3#mpkg5#hym10#icu20#icp82"/>
       </Link>
     </MultiDataUnit>
     <ScrollerUnit gr:x="415" gr:y="10" id="sv6#area25#page77#scu22" name="Scorri valutazioni utente" useCountQuery="false" linkOrder="sv6#area25#page77#scu22#ln230" entity="ent15" gr:showAllParts="true" blockFactor="10">
@@ -40,6 +41,7 @@
           <layout:Attribute attribute="ent15#att54"/>
           <layout:Attribute attribute="ent15#att4"/>
           <layout:Link link="sv6#area25#page77#mdu4#ln228"/>
+          <layout:Link link="sv6#area25#page77#mdu4#ln244"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
