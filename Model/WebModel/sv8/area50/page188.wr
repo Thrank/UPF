@@ -7,7 +7,7 @@
       </Selector>
       <Link id="sv8#area50#page188#dau45#ln510" name="dettaglio to migliori valutazioni" to="sv8#area50#page188#mdu33" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv8#area50#page188#dau45#ln511" name="dettaglio to valutazioni" to="sv8#area50#page188#mdu32" type="transport" automaticCoupling="true" validate="true"/>
-      <Link id="sv8#area50#page188#dau45#ln512" name="Flow58" to="sv8#area49#page186#scu73" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="142,-133,-218,52"/>
+      <Link id="sv8#area50#page188#dau45#ln512" name="Flow58" to="sv8#area49#page186#scu73" type="normal" automaticCoupling="true" validate="true"/>
       <Link id="sv8#area50#page188#dau45#ln513" name="dettaglio to migliori valutazioni" to="sv8#area50#page188#mdu33" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv8#area50#page188#dau45#ln514" name="dettaglio to valutazioni" to="sv8#area50#page188#mdu32" type="transport" automaticCoupling="true" validate="true"/>
     </DataUnit>

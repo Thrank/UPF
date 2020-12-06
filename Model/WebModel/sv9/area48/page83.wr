@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1425" gr:y="515" id="sv9#area48#page83" name="Errori ristorante">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1020" gr:y="830" id="sv9#area48#page83" name="Errori ristorante">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>

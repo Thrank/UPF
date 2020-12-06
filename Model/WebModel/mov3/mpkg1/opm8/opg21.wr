@@ -24,6 +24,7 @@
         <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par927" name="Checked oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par910" passing="true"/>
         <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par928" name="oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par909" passing="true"/>
         <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par929" name="oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par912" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par383" name="true_in attesa" sourceValue="true" target="mov3#mpkg1#opm8#opg21#cru3.ent3#att33"/>
       </Link>
     </TimeUnit>
     <ConnectUnit id="mov3#mpkg1#opm8#opg21#cnu36" name="Connetti a cliente" gr:x="165" gr:y="10" relationship="rel5#role10">

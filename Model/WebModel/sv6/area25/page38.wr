@@ -5,6 +5,7 @@
       <Link id="sv6#area25#page38#inu32#ln30" name="Flow23" to="sv6#area25#page40#dau15" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="294,20,-196,-35"/>
       <Selector id="sv6#area25#page38#inu32#su44" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv6#area25#page38#inu32#su44#kcond38" name="KeyCondition33" predicate="in" implied="false"/>
+        <AttributesCondition id="sv6#area25#page38#inu32#su44#acond4" name="Stato attivit&#224;" predicate="eq" booleanOperator="or" implied="false" attributes="ent14#att35" value="1"/>
       </Selector>
     </IndexUnit>
     <IndexUnit id="sv6#area25#page38#inu33" name="Elenco tipologie cucine" gr:x="205" gr:y="5" entity="ent10" displayAttributes="ent10#att28" distinct="false" linkOrder="sv6#area25#page38#inu33#ln95">

@@ -1,0 +1,115 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="365" gr:y="0" id="sv5#area2#page36" name="Conferma rimozione utente">
+  <ContentUnits/>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv5#area2#page36#alt7#page37">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv5#area2#page36#alt7#page37#enu9">
+                  <layout:Link link="sv5#area2#page36#alt7#page37#enu9#ln136"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv5#area2#page36#alt7#page39">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv5#area2#page36#alt7#page39#enu11">
+                  <layout:Link link="sv5#area2#page36#alt7#page39#enu11#ln128"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="0" gr:y="0" id="sv5#area2#page36#alt7" name="Utente" defaultPage="sv5#area2#page36#alt7#page37">
+    <Page gr:x="0" gr:y="0" id="sv5#area2#page36#alt7#page37" name="Amministratore">
+      <ContentUnits>
+        <EntryUnit gr:x="0" gr:y="0" id="sv5#area2#page36#alt7#page37#enu9" name="Conferma rimozione amministratore" linkOrder="sv5#area2#page36#alt7#page37#enu9#ln136">
+          <Link id="sv5#area2#page36#alt7#page37#enu9#ln136" name="Flow136" to="sv5#miu13" type="normal" validate="true">
+            <LinkParameter id="sv5#area2#page36#alt7#page37#enu9#ln136#par446" name="oid_PASSING_oid_PASSING" sourceLinkParameter="sv5#area2#page27#inu11#ln98#par396" target="sv5#miu13.mov4#opm4#icu4#icp27"/>
+            <LinkParameter id="sv5#area2#page36#alt7#page37#enu9#ln136#par449" name="Amministratore_utente" sourceValue="Amministratore" target="sv5#miu13.mov4#opm4#icu4#icp29"/>
+          </Link>
+        </EntryUnit>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="25" gr:y="215" id="sv5#area2#page36#alt7#page39" name="Moderatore">
+      <ContentUnits>
+        <EntryUnit gr:x="0" gr:y="0" id="sv5#area2#page36#alt7#page39#enu11" name="Conferma rimozione moderatore" linkOrder="sv5#area2#page36#alt7#page39#enu11#ln128">
+          <Link id="sv5#area2#page36#alt7#page39#enu11#ln128" name="Flow128" to="sv5#miu13" type="normal" validate="true">
+            <LinkParameter id="sv5#area2#page36#alt7#page39#enu11#ln128#par416" name="oid_PASSING" sourceLinkParameter="sv5#area2#page27#inu10#ln100#par395" target="sv5#miu13.mov4#opm4#icu4#icp27"/>
+            <LinkParameter id="sv5#area2#page36#alt7#page39#enu11#ln128#par440" name="Moderatore_utente" sourceValue="Moderatore" target="sv5#miu13.mov4#opm4#icu4#icp29"/>
+          </Link>
+        </EntryUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

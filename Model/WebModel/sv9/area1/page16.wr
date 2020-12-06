@@ -1,0 +1,80 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="55" gr:y="315" id="sv9#area1#page16" name="Gestione ordini singolo ristorante">
+  <ContentUnits>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv9#area1#page16#seu29" name="Ordini ristorante" entity="ent3">
+      <Selector id="sv9#area1#page16#seu29#su103" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv9#area1#page16#seu29#su103#rcond31" name="RoleCondition31" predicate="in" implied="false" role="rel6#role12"/>
+      </Selector>
+      <Link id="sv9#area1#page16#seu29#ln73" name="Flow73" to="sv9#area1#page16#scu10" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <ScrollerUnit gr:x="190" gr:y="10" id="sv9#area1#page16#scu10" name="Scorri ordini" useCountQuery="false" entity="ent3" linkOrder="sv9#area1#page16#scu10#ln74">
+      <Link id="sv9#area1#page16#scu10#ln74" name="Flow74" to="sv9#area1#page16#inu2" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
+    <IndexUnit gr:x="60" gr:y="150" id="sv9#area1#page16#inu2" name="Elenco ordini" entity="ent3" linkOrder="sv9#area1#page16#inu2#ln75 sv9#area1#page16#inu2#ln76" displayAttributes="ent3#att22 ent3#att23 rel5#role10.User#att3 rel5#role10.User#att6 rel5#role10.User#att11 rel34#role68.ent16#att31 rel34#role68.ent16#att32 rel34#role68.ent16#att76 rel34#role68.rel32#role63.ent22#att29 ent3#att15" gr:showAllParts="true">
+      <Selector id="sv9#area1#page16#inu2#su104" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area1#page16#inu2#su104#kcond75" name="KeyCondition75" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv9#area1#page16#inu2#ln75" name="Flow75" to="sv9#opg10#mfu9" type="normal" validate="true">
+        <LinkParameter id="sv9#area1#page16#inu2#ln75#par384" name="false_in attesa" sourceValue="false" target="sv9#opg10#mfu9.ent3#att33"/>
+        <LinkParameter id="sv9#area1#page16#inu2#ln75#par385" name="oid_KeyCondition76 [oid]" source="data[].ent3#att8" target="sv9#opg10#mfu9#su105#kcond76.ent3#att8"/>
+        <LinkParameter id="sv9#area1#page16#inu2#ln75#par386" name="true_stato" sourceValue="true" target="sv9#opg10#mfu9.ent3#att16"/>
+      </Link>
+      <Link id="sv9#area1#page16#inu2#ln76" name="Flow76" to="sv9#area1#page25#enu1" type="normal" validate="true">
+        <LinkParameter id="sv9#area1#page16#inu2#ln76#par390" name="oid_PASSING" source="data[].ent3#att8" passing="true"/>
+      </Link>
+      <SortAttribute attribute="ent3#att15" order="ascending"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area1#page16#scu10">
+          <layout:Link link="sv9#area1#page16#scu10First"/>
+          <layout:Link link="sv9#area1#page16#scu10Previous"/>
+          <layout:Link link="sv9#area1#page16#scu10Block"/>
+          <layout:Link link="sv9#area1#page16#scu10Next"/>
+          <layout:Link link="sv9#area1#page16#scu10Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area1#page16#inu2">
+          <layout:Link link="sv9#area1#page16#inu2#ln75"/>
+          <layout:Link link="sv9#area1#page16#inu2#ln76"/>
+          <layout:Attribute attribute="ent3#att22"/>
+          <layout:Attribute attribute="ent3#att23"/>
+          <layout:Attribute attribute="rel5#role10.User#att3"/>
+          <layout:Attribute attribute="rel5#role10.User#att6"/>
+          <layout:Attribute attribute="rel5#role10.User#att11"/>
+          <layout:Attribute attribute="rel34#role68.ent16#att31"/>
+          <layout:Attribute attribute="rel34#role68.ent16#att32"/>
+          <layout:Attribute attribute="rel34#role68.ent16#att76"/>
+          <layout:Attribute attribute="rel34#role68.rel32#role63.ent22#att29"/>
+          <layout:Attribute attribute="ent3#att15"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

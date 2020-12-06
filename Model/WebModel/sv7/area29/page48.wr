@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="635" gr:y="190" id="sv7#area29#page48" name="Dettaglio ristorante">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="635" gr:y="210" id="sv7#area29#page48" name="Dettaglio ristorante">
   <ContentUnits>
     <DataUnit gr:x="145" gr:y="0" id="sv7#area29#page48#dau17" name="Dettaglio ristorante" entity="ent14" displayAttributes="ent14#att42 ent14#att46 ent14#att44 ent14#att45 ent14#att52" linkOrder="sv7#area29#page48#dau17#ln58">
       <Selector id="sv7#area29#page48#dau17#su55" defaultPolicy="fill" booleanOperator="or">
@@ -7,7 +7,7 @@
       </Selector>
       <Link id="sv7#area29#page48#dau17#ln29" name="dettaglio to migliori valutazioni" to="sv7#area29#page48#mdu11" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv7#area29#page48#dau17#ln37" name="dettaglio to valutazioni" to="sv7#area29#page48#mdu3" automaticCoupling="true" type="transport" validate="true"/>
-      <Link id="sv7#area29#page48#dau17#ln58" name="Flow58" to="sv7#area30#page46#scu13" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="142,-133,-218,52"/>
+      <Link id="sv7#area29#page48#dau17#ln58" name="Flow58" to="sv7#area30#page46#scu13" automaticCoupling="true" type="normal" validate="true"/>
       <Link id="sv7#area29#page48#dau17#ln81" name="dettaglio to migliori valutazioni" to="sv7#area29#page48#mdu11" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv7#area29#page48#dau17#ln84" name="dettaglio to valutazioni" to="sv7#area29#page48#mdu3" type="transport" automaticCoupling="true" validate="true"/>
     </DataUnit>

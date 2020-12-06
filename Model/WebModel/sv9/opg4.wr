@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="2750" gr:y="-235" id="sv9#opg4" name="Elimina piatto" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="2340" gr:y="130" id="sv9#opg4" name="Elimina piatto" transaction="true">
   <OperationUnits>
     <LoopUnit gr:x="215" gr:y="5" id="sv9#opg4#lpu9" name="Ciclo sconnessioni">
       <SecondaryArray id="sv9#opg4#lpu9#lsa5" name="categorie piatto"/>

@@ -10,7 +10,7 @@
       <Link id="sv9#area48#page185#dau44#ln499" name="dettaglio to migliori valutazioni" to="sv9#area48#page185#mdu31" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv9#area48#page185#dau44#ln500" name="dettaglio to valutazioni" to="sv9#area48#page185#mdu30" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv9#area48#page185#dau44#ln10" name="Flow10" to="sv9#area47#page183#alt1#page2#scu4" type="normal" validate="true" automaticCoupling="true"/>
-      <Link id="sv9#area48#page185#dau44#ln19" name="Flow19" to="sv9#area47#page183#alt1#page3#scu7" type="normal" validate="true" automaticCoupling="true"/>
+      <Link id="sv9#area48#page185#dau44#ln19" name="Flow19" to="sv9#area47#page183#alt1#page3#scu7" type="normal" validate="true" automaticCoupling="true" gr:bendpoints="392,-362,-628,308"/>
     </DataUnit>
     <MultiDataUnit id="sv9#area48#page185#mdu30" name="Valutazioni" gr:showAllParts="true" gr:x="280" gr:y="170" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4">
       <SortAttribute attribute="ent15#att53" order="descending"/>

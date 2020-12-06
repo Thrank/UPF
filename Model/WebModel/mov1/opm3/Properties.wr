@@ -1,0 +1,26 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="mov1#opm3" name="Inserisci piatto">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#opm3#icu3" name="Input Port">
+      <InputCollectorParameter id="mov1#opm3#icu3#icp19" name="descrizione breve"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp20" name="foto"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp21" name="Checked oid_PASSING"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp22" name="Checked oid_PASSING"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp23" name="Checked oid_PASSING"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp24" name="prezzo"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp25" name="nome"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp26" name="oid_PASSING"/>
+      <OKLink id="mov1#opm3#icu3#oln74" to="mov1#opm3#opg9#cru2" validate="true" name="Flow36">
+        <LinkParameter id="mov1#opm3#icu3#oln74#par349" name="nome_PASSING_nome" target="mov1#opm3#opg9#cru2.ent1#att2" source="mov1#opm3#icu3#icp25"/>
+        <LinkParameter id="mov1#opm3#icu3#oln74#par345" name="foto_PASSING_foto" target="mov1#opm3#opg9#cru2.ent1#att58" source="mov1#opm3#icu3#icp20"/>
+        <LinkParameter id="mov1#opm3#icu3#oln74#par359" name="Checked oid_PASSING" passing="true" source="mov1#opm3#icu3#icp23"/>
+        <LinkParameter id="mov1#opm3#icu3#oln74#par360" name="oid_PASSING" passing="true" source="mov1#opm3#icu3#icp26"/>
+        <LinkParameter id="mov1#opm3#icu3#oln74#par357" source="mov1#opm3#icu3#icp21" name="Checked oid_PASSING" passing="true"/>
+        <LinkParameter id="mov1#opm3#icu3#oln74#par358" name="Checked oid_PASSING" passing="true" source="mov1#opm3#icu3#icp22"/>
+        <LinkParameter id="mov1#opm3#icu3#oln74#par344" name="descrizione_PASSING_descrizione breve" target="mov1#opm3#opg9#cru2.ent1#att57" source="mov1#opm3#icu3#icp19"/>
+        <LinkParameter id="mov1#opm3#icu3#oln74#par356" name="prezzo_PASSING_prezzo" target="mov1#opm3#opg9#cru2.ent1#att7" source="mov1#opm3#icu3#icp24"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="895" gr:y="625" id="mov1#opm3#okcu3" name="OK inserimento"/>
+    <KOCollectorUnit gr:x="895" gr:y="270" id="mov1#opm3#kocu2" name="KO inserimento"/>
+  </OperationUnits>
+</OperationModule>

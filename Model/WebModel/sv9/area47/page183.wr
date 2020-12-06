@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv9#area47#page183" name="Elenco piatti" gr:x="0" gr:y="215">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv9#area47#page183" name="Elenco piatti" gr:x="0" gr:y="200">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -172,7 +172,7 @@
     </layout:Row>
   </layout:Grid>
   <Alternative gr:x="0" gr:y="0" id="sv9#area47#page183#alt1" name="Elenchi piatti">
-    <Page gr:x="0" gr:y="0" id="sv9#area47#page183#alt1#page2" name="Elenco piatti generale">
+    <Page gr:x="15" gr:y="0" id="sv9#area47#page183#alt1#page2" name="Elenco piatti generale">
       <ContentUnits>
         <IndexUnit gr:x="265" gr:y="0" id="sv9#area47#page183#alt1#page2#inu3" name="Elenco piatti" entity="ent1" displayAttributes="ent1#att2 ent1#att7 ent1#att57 ent1#att58" gr:showAllParts="true">
           <SortAttribute attribute="ent1#att2" order="ascending"/>
@@ -190,7 +190,7 @@
         </ScrollerUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="0" gr:y="190" id="sv9#area47#page183#alt1#page3" name="Elenco piatti di ristorante di proprit&#224;">
+    <Page gr:x="0" gr:y="330" id="sv9#area47#page183#alt1#page3" name="Elenco piatti di ristorante di proprit&#224;">
       <ContentUnits>
         <ScrollerUnit gr:x="0" gr:y="0" id="sv9#area47#page183#alt1#page3#scu7" name="Scorri piatti" useCountQuery="false" entity="ent1" gr:showAllParts="true" linkOrder="sv9#area47#page183#alt1#page3#scu7#ln14">
           <SortAttribute attribute="ent1#att2" order="ascending"/>
@@ -213,7 +213,7 @@
             <LinkParameter id="sv9#area47#page183#alt1#page3#inu9#ln65#par93" name="prezzo_prezzo" source="data[].ent1#att7" target="sv9#area47#page9#enu4#fld53_slot"/>
             <LinkParameter id="sv9#area47#page183#alt1#page3#inu9#ln65#par112" name="oid_PASSING" source="data[].ent1#att1" passing="true"/>
           </Link>
-          <Link id="sv9#area47#page183#alt1#page3#inu9#ln71" name="Flow71" to="sv9#area47#page11#enu6" type="normal" validate="true">
+          <Link id="sv9#area47#page183#alt1#page3#inu9#ln71" name="Flow71" to="sv9#area47#page11#enu6" type="normal" validate="true" gr:bendpoints="169,-61,269,429;169,-358,269,132">
             <LinkParameter id="sv9#area47#page183#alt1#page3#inu9#ln71#par217" name="oid_PASSING" source="data[].ent1#att1" passing="true"/>
           </Link>
         </IndexUnit>

@@ -1,4 +1,4 @@
-<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="mov2#opm17" name="Modifica profilo">
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="140" gr:y="360" id="mov2#opm17" name="Modifica profilo">
   <OperationUnits>
     <InputCollectorUnit gr:x="-375" gr:y="145" id="mov2#opm17#icu26" linkOrder="mov2#opm17#icu26#ln279">
       <InputCollectorParameter id="mov2#opm17#icu26#icp139" name="CAP"/>

@@ -1,5 +1,5 @@
 <DataModel xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
-  <Entity id="User" name="Utente" duration="persistent" gr:x="380" gr:y="10" gr:hideAttributes="false" attributeOrder="userOID userName password User#att3 User#att6 User#att11 email">
+  <Entity id="User" name="Utente" duration="persistent" gr:x="380" gr:y="10" gr:hideAttributes="false" attributeOrder="userOID userName password User#att3 User#att6 User#att11 email User#att17">
     <Attribute name="oid" id="userOID" type="integer" key="true"/>
     <Attribute name="username" id="userName" type="string"/>
     <Attribute name="password" id="password" type="password"/>
@@ -7,6 +7,7 @@
     <Attribute id="User#att3" name="nome" type="string"/>
     <Attribute id="User#att6" name="cognome" type="string"/>
     <Attribute id="User#att11" name="numero di telefono" type="string"/>
+    <Attribute id="User#att17" name="ban" type="boolean"/>
   </Entity>
   <Entity id="Group" name="Group" duration="persistent" gr:x="610" gr:y="-30" gr:hideAttributes="false" attributeOrder="groupOID groupName">
     <Attribute name="oid" id="groupOID" type="integer" key="true"/>
@@ -33,9 +34,10 @@
     <RelationshipRole1 id="Group2Module" name="modules" maxCard="N"/>
     <RelationshipRole2 id="Module2Group" name="groups" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="830" gr:y="210" id="ent4" name="Cliente " duration="persistent" attributeOrder="ent4#att12">
+  <Entity gr:x="830" gr:y="210" id="ent4" name="Cliente " duration="persistent" attributeOrder="ent4#att12 ent4#att30">
     <Generalization superEntity="User"/>
     <Attribute id="ent4#att12" name="data di nascita" type="date"/>
+    <Attribute id="ent4#att30" name="n valutazioni moderate" type="integer" derivationQuery="calculated::count(Self.rel3#role5(as Var1).rel31#role62(as Var2)) where count(Var1) in Var2"/>
   </Entity>
   <Entity gr:x="140" gr:y="250" id="ent6" name="Ristoratore" duration="persistent" attributeOrder="ent6#att18">
     <Attribute id="ent6#att18" name="partita iva" type="string"/>
@@ -47,7 +49,7 @@
   <Entity gr:x="85" gr:y="-35" id="ent13" name="Moderatore" duration="persistent">
     <Generalization superEntity="User"/>
   </Entity>
-  <Entity gr:x="105" gr:y="345" id="ent14" name="Ristorante" duration="persistent" attributeOrder="ent14#att40 ent14#att42 ent14#att44 ent14#att45 ent14#att46 ent14#att52 ent14#att13">
+  <Entity gr:x="105" gr:y="345" id="ent14" name="Ristorante" duration="persistent" attributeOrder="ent14#att40 ent14#att42 ent14#att44 ent14#att45 ent14#att46 ent14#att52 ent14#att13 ent14#att35">
     <Attribute id="ent14#att40" key="true" name="oid" type="integer"/>
     <Attribute id="ent14#att52" name="media voti" type="float" derivationQuery="calculated::Self.rel2#role3(as Var1).ent15#att53"/>
     <Attribute id="ent14#att46" name="descrizione" type="text"/>
@@ -55,6 +57,7 @@
     <Attribute id="ent14#att44" name="numero di telefono" type="string"/>
     <Attribute id="ent14#att42" name="nome" type="string"/>
     <Attribute id="ent14#att13" name="fascia di prezzo" type="float" derivationQuery="calculated::avg(Self.rel4#role7(as Var1).ent1#att7)"/>
+    <Attribute id="ent14#att35" name="stato attivit&#224;" type="integer" derivationQuery="simpleImported::Self.rel29#role57.ent21#att9"/>
   </Entity>
   <Entity gr:x="370" gr:y="285" id="ent15" name="Valutazione" duration="persistent" attributeOrder="ent15#att41 ent15#att53 ent15#att54 ent15#att4">
     <Attribute id="ent15#att41" key="true" name="oid" type="integer"/>
@@ -88,12 +91,13 @@
   <Entity gr:x="100" gr:y="740" id="ent2" name="MigliorRistorante" duration="persistent" derivationQuery="derived::ent14(as SuperEntity) where SuperEntity.ent14#att52 &gt;= '8'">
     <Generalization superEntity="ent14"/>
   </Entity>
-  <Entity gr:x="510" gr:y="630" id="ent3" name="Ordine" duration="persistent" attributeOrder="ent3#att8 ent3#att15 ent3#att22 ent3#att23 ent3#att16">
+  <Entity gr:x="510" gr:y="630" id="ent3" name="Ordine" duration="persistent" attributeOrder="ent3#att8 ent3#att15 ent3#att22 ent3#att23 ent3#att16 ent3#att33">
     <Attribute id="ent3#att8" key="true" name="oid" type="integer"/>
     <Attribute id="ent3#att15" name="data" type="date"/>
     <Attribute id="ent3#att22" name="totale" type="float" derivationQuery="calculated::sum(Self.rel8#role15(as Var1).ent1#att7)"/>
     <Attribute id="ent3#att23" name="metodo di pagamento" type="string"/>
     <Attribute id="ent3#att16" name="stato" type="boolean"/>
+    <Attribute id="ent3#att33" name="in attesa" type="boolean"/>
   </Entity>
   <Relationship id="rel5" name="Cliente _Ordine" sourceEntity="ent4" targetEntity="ent3" gr:bendpoints="-240,222,55,-228">
     <RelationshipRole1 id="rel5#role9" name="Cliente ToOrdine" maxCard="N"/>

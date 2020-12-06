@@ -30,7 +30,7 @@
       </Link>
       <SortAttribute attribute="ent17#att60" order="ascending"/>
     </SelectorUnit>
-    <PowerIndexUnit id="mov2#mpkg2#hym2#page18#pwu3" name="Elenco tipologie cucine" gr:showAllParts="true" gr:x="425" gr:y="480" sortable="true" checkable="true" useCountQuery="false" entity="ent10" displayAttributes="ent10#att28">
+    <PowerIndexUnit id="mov2#mpkg2#hym2#page18#pwu3" name="Elenco tipologie cucine" gr:showAllParts="true" gr:x="435" gr:y="515" sortable="true" checkable="true" useCountQuery="false" entity="ent10" displayAttributes="ent10#att28">
       <SortAttribute attribute="ent10#att28" order="ascending"/>
       <DefaultSortAttribute attribute="ent10#att28" order="ascending"/>
       <Link id="mov2#mpkg2#hym2#page18#pwu3#ln77" name="Flow15" to="mov2#mpkg2#hym2#page18#alt11#page20#scu6" type="transport" validate="true" gr:bendpoints="-113,-88,237,97">
@@ -290,6 +290,7 @@
         <IndexUnit id="mov2#mpkg2#hym2#page18#alt11#page19#inu4" name="Elenco ristoranti totale" linkOrder="mov2#mpkg2#hym2#page18#alt11#page19#inu4#ln99" gr:x="185" gr:y="0" entity="ent14" displayAttributes="ent14#att42 ent14#att52">
           <Selector id="mov2#mpkg2#hym2#page18#alt11#page19#inu4#su183" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="mov2#mpkg2#hym2#page18#alt11#page19#inu4#su183#kcond149" name="KeyCondition49" predicate="in" implied="false"/>
+            <AttributesCondition id="mov2#mpkg2#hym2#page18#alt11#page19#inu4#su183#acond2" name="Stato attivit&#224;" predicate="eq" booleanOperator="or" implied="false" attributes="ent14#att35" value="1"/>
           </Selector>
           <Link id="mov2#mpkg2#hym2#page18#alt11#page19#inu4#ln99" to="mov2#mpkg2#hym2#okcu14" type="normal" validate="true" name="Flow18">
             <LinkParameter id="mov2#mpkg2#hym2#page18#alt11#page19#inu4#ln99#par956" name="oid_Dettaglio ristorante [oid]" source="data[].ent14#att40" target="mov2#mpkg2#hym2#okcu14#ocp4"/>
@@ -316,6 +317,7 @@
           <SortAttribute attribute="ent14#att42" order="ascending"/>
           <Selector id="mov2#mpkg2#hym2#page18#alt11#page20#inu5#su186" defaultPolicy="fill" booleanOperator="and">
             <KeyCondition id="mov2#mpkg2#hym2#page18#alt11#page20#inu5#su186#kcond150" name="KeyCondition50" predicate="in" implied="false"/>
+            <AttributesCondition id="mov2#mpkg2#hym2#page18#alt11#page20#inu5#su186#acond3" name="Stato attivit&#224;" predicate="eq" booleanOperator="or" implied="false" attributes="ent14#att35" value="1"/>
           </Selector>
           <Link id="mov2#mpkg2#hym2#page18#alt11#page20#inu5#ln105" to="mov2#mpkg2#hym2#okcu13" type="normal" validate="true" name="Flow19">
             <LinkParameter id="mov2#mpkg2#hym2#page18#alt11#page20#inu5#ln105#par957" name="oid_Dettaglio ristorante [oid]" source="data[].ent14#att40" target="mov2#mpkg2#hym2#okcu13#ocp3"/>

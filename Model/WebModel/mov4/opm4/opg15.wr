@@ -1,0 +1,43 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov4#opm4#opg15" name="Rimozione utente" transaction="true" gr:x="325" gr:y="85">
+  <OperationUnits>
+    <SelectorUnit id="mov4#opm4#opg15#seu44" name="Ottieni indirizzo" gr:x="0" gr:y="10" entity="ent16">
+      <Selector id="mov4#opm4#opg15#seu44#su120" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov4#opm4#opg15#seu44#su120#rcond34" name="RoleCondition33" predicate="in" implied="false" role="rel11#role21"/>
+      </Selector>
+      <OKLink id="mov4#opm4#opg15#seu44#oln100" name="OKFlow92" to="mov4#opm4#opg15#dcnu21">
+        <LinkParameter id="mov4#opm4#opg15#seu44#oln100#par433" name="oid_KeyCondition88 [oid] [Indirizzo] [Source]" source="ent16#att64Array" target="mov4#opm4#opg15#dcnu21#su121#kcond95.ent16#att64"/>
+        <LinkParameter id="mov4#opm4#opg15#seu44#oln100#par434" name="oid_PASSING_KeyCondition89 [oid] [Utente] [Target]" sourceLinkParameter="mov4#opm4#icu4#oln97#par432" target="mov4#opm4#opg15#dcnu21#su122#kcond96.userOID"/>
+      </OKLink>
+    </SelectorUnit>
+    <DisconnectUnit id="mov4#opm4#opg15#dcnu21" name="Disconnetti dipendente da indirizzo" gr:x="340" gr:y="0" relationship="rel11#role22">
+      <SourceSelector id="mov4#opm4#opg15#dcnu21#su121" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov4#opm4#opg15#dcnu21#su121#kcond95" name="KeyCondition88" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov4#opm4#opg15#dcnu21#su122" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov4#opm4#opg15#dcnu21#su122#kcond96" name="KeyCondition89" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov4#opm4#opg15#dcnu21#oln101" name="OKFlow93" to="mov4#opm4#opg15#dlu5">
+        <LinkParameter id="mov4#opm4#opg15#dcnu21#oln101#par436" name="Source oid [Indirizzo]_KeyCondition90 [oid]" source="sourceent16#att64" target="mov4#opm4#opg15#dlu5#su123#kcond97.ent16#att64"/>
+        <LinkParameter id="mov4#opm4#opg15#dcnu21#oln101#par437" name="Target oid [Utente]_PASSING" source="targetuserOID" passing="true"/>
+      </OKLink>
+    </DisconnectUnit>
+    <DeleteUnit id="mov4#opm4#opg15#dlu5" name="Rimuovi indirizzo" gr:x="50" gr:y="205" entity="ent16">
+      <Selector id="mov4#opm4#opg15#dlu5#su123" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov4#opm4#opg15#dlu5#su123#kcond97" name="KeyCondition90" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov4#opm4#opg15#dlu5#oln102" name="OKFlow94" to="mov4#opm4#switch4"/>
+    </DeleteUnit>
+    <DeleteUnit id="mov4#opm4#opg15#dlu6" name="Rimuovi moderatore" gr:x="420" gr:y="150" entity="ent13">
+      <Selector id="mov4#opm4#opg15#dlu6#su124" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov4#opm4#opg15#dlu6#su124#kcond98" name="KeyCondition91" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov4#opm4#opg15#dlu6#oln103" to="mov4#opm4#okcu4" name="OKFlow96" automaticCoupling="true"/>
+    </DeleteUnit>
+    <DeleteUnit gr:x="415" gr:y="285" id="mov4#opm4#opg15#dlu8" name="Rimuovi amministratore" entity="ent12">
+      <Selector id="mov4#opm4#opg15#dlu8#su127" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov4#opm4#opg15#dlu8#su127#kcond99" name="KeyCondition99" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov4#opm4#opg15#dlu8#oln104" name="OKFlow104" to="mov4#opm4#okcu4" automaticCoupling="true"/>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>

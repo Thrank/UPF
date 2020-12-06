@@ -1,0 +1,29 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="440" id="sv5#area2#page32" name="Gestione attivit&#224;">
+  <ContentUnits>
+    <ScrollerUnit gr:x="0" gr:y="0" id="sv5#area2#page32#scu21" name="Scorri attivit&#224;" useCountQuery="false" entity="ent21"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area2#page32#scu21">
+          <layout:Link link="sv5#area2#page32#scu21First"/>
+          <layout:Link link="sv5#area2#page32#scu21Previous"/>
+          <layout:Link link="sv5#area2#page32#scu21Block"/>
+          <layout:Link link="sv5#area2#page32#scu21Next"/>
+          <layout:Link link="sv5#area2#page32#scu21Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

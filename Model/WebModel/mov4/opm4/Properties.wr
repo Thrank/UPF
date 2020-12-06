@@ -1,0 +1,22 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="mov4#opm4" name="Rimuovi dipendente">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov4#opm4#icu4">
+      <InputCollectorParameter id="mov4#opm4#icu4#icp27" name="oid_PASSING"/>
+      <OKLink id="mov4#opm4#icu4#oln97" to="mov4#opm4#opg15#seu44" validate="true" name="Flow128">
+        <LinkParameter id="mov4#opm4#icu4#oln97#par432" name="oid_PASSING" passing="true" source="mov4#opm4#icu4#icp27"/>
+        <LinkParameter id="mov4#opm4#icu4#oln97#par431" name="oid_PASSING_RoleCondition33 [oid]" target="mov4#opm4#opg15#seu44#su120#rcond34.userOID" source="mov4#opm4#icu4#icp27"/>
+      </OKLink>
+      <InputCollectorParameter id="mov4#opm4#icu4#icp29" name="utente"/>
+      <Link id="mov4#opm4#icu4#ln130" name="Flow130" to="mov4#opm4#switch4" type="transport" validate="true" gr:bendpoints="161,257,-359,87;468,255,-52,85">
+        <LinkParameter id="mov4#opm4#icu4#ln130#par439" name="utente_Switch" source="mov4#opm4#icu4#icp29" target="mov4#opm4#switch4.switch"/>
+      </Link>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="995" gr:y="350" id="mov4#opm4#okcu4" name="OK Port4"/>
+    <SwitchUnit gr:x="605" gr:y="345" id="mov4#opm4#switch4" name="Switch4">
+      <Case value="Amministratore"/>
+      <Case value="Moderatore"/>
+      <OKLink id="mov4#opm4#switch4#oln105" name="OKFlow105" to="mov4#opm4#opg15#dlu6" automaticCoupling="true" code="Moderatore"/>
+      <OKLink id="mov4#opm4#switch4#oln106" name="OKFlow106" to="mov4#opm4#opg15#dlu8" automaticCoupling="true" code="Amministratore"/>
+    </SwitchUnit>
+  </OperationUnits>
+</OperationModule>

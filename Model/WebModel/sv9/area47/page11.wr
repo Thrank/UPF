@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="625" gr:y="0" id="sv9#area47#page11" name="Elimina piatto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="220" gr:y="0" id="sv9#area47#page11" name="Elimina piatto">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv9#area47#page11#enu6" name="Conferma eliminazione piatto" linkOrder="sv9#area47#page11#enu6#ln72">
       <Link id="sv9#area47#page11#enu6#ln72" name="Flow72" to="sv9#opg4#seu7" type="normal" validate="true">
