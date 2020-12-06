@@ -1,0 +1,37 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="mov2#mpkg7#opm15" name="Iscrizione cliente">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov2#mpkg7#opm15#icu24" name="Input Port">
+      <InputCollectorParameter id="mov2#mpkg7#opm15#icu24#icp115" name="citt&#224;_PASSING"/>
+      <InputCollectorParameter id="mov2#mpkg7#opm15#icu24#icp116" name="data di nascita_PASSING"/>
+      <InputCollectorParameter id="mov2#mpkg7#opm15#icu24#icp117" name="numero di telefono_PASSING"/>
+      <InputCollectorParameter id="mov2#mpkg7#opm15#icu24#icp118" name="numero civico_PASSING"/>
+      <InputCollectorParameter id="mov2#mpkg7#opm15#icu24#icp119" name="username presente?"/>
+      <InputCollectorParameter id="mov2#mpkg7#opm15#icu24#icp120" name="nome_PASSING"/>
+      <InputCollectorParameter id="mov2#mpkg7#opm15#icu24#icp121" name="email_PASSING"/>
+      <InputCollectorParameter id="mov2#mpkg7#opm15#icu24#icp122" name="via/piazza/corso_PASSING"/>
+      <InputCollectorParameter id="mov2#mpkg7#opm15#icu24#icp123" name="username_PASSING"/>
+      <InputCollectorParameter id="mov2#mpkg7#opm15#icu24#icp124" name="password_PASSING"/>
+      <InputCollectorParameter id="mov2#mpkg7#opm15#icu24#icp125" name="CAP_PASSING"/>
+      <InputCollectorParameter id="mov2#mpkg7#opm15#icu24#icp126" name="cognome_PASSING"/>
+      <OKLink id="mov2#mpkg7#opm15#icu24#oln312" to="mov2#mpkg7#opm15#opg39#seu68" validate="true" name="Flow62">
+        <LinkParameter id="mov2#mpkg7#opm15#icu24#oln312#par2412" source="mov2#mpkg7#opm15#icu24#icp117" name="numero di telefono_PASSING" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm15#icu24#oln312#par2409" source="mov2#mpkg7#opm15#icu24#icp121" name="email_PASSING" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm15#icu24#oln312#par2416" source="mov2#mpkg7#opm15#icu24#icp119" name="username_username presente?" target="mov2#mpkg7#opm15#opg39#seu68#su366#acond55"/>
+        <LinkParameter id="mov2#mpkg7#opm15#icu24#oln312#par2414" source="mov2#mpkg7#opm15#icu24#icp123" name="username_PASSING" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm15#icu24#oln312#par2411" source="mov2#mpkg7#opm15#icu24#icp118" name="numero civico_PASSING" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm15#icu24#oln312#par2413" source="mov2#mpkg7#opm15#icu24#icp124" name="password_PASSING" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm15#icu24#oln312#par2405" source="mov2#mpkg7#opm15#icu24#icp125" name="CAP_PASSING" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm15#icu24#oln312#par2407" source="mov2#mpkg7#opm15#icu24#icp126" name="cognome_PASSING" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm15#icu24#oln312#par2410" source="mov2#mpkg7#opm15#icu24#icp120" name="nome_PASSING" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm15#icu24#oln312#par2408" source="mov2#mpkg7#opm15#icu24#icp116" name="data di nascita_PASSING" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm15#icu24#oln312#par2406" source="mov2#mpkg7#opm15#icu24#icp115" name="citt&#224;_PASSING" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm15#icu24#oln312#par2415" source="mov2#mpkg7#opm15#icu24#icp122" name="via/piazza/corso_PASSING" passing="true"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <KOCollectorUnit gr:x="830" gr:y="300" id="mov2#mpkg7#opm15#kocu36" name="KO iscrizione cliente"/>
+    <OKCollectorUnit gr:x="830" gr:y="495" id="mov2#mpkg7#opm15#okcu36" name="OK iscrizione">
+      <OutputCollectorParameter id="mov2#mpkg7#opm15#okcu36#ocp35" name="password_PASSING_Password"/>
+      <OutputCollectorParameter id="mov2#mpkg7#opm15#okcu36#ocp36" name="username_PASSING_Username"/>
+    </OKCollectorUnit>
+  </OperationUnits>
+</OperationModule>
