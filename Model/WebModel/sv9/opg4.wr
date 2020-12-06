@@ -1,0 +1,15 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="2750" gr:y="-235" id="sv9#opg4" name="Elimina piatto" transaction="true">
+  <OperationUnits>
+    <LoopUnit gr:x="215" gr:y="5" id="sv9#opg4#lpu9" name="Ciclo sconnessioni">
+      <SecondaryArray id="sv9#opg4#lpu9#lsa5" name="categorie piatto"/>
+      <SecondaryArray id="sv9#opg4#lpu9#lsa6" name="allergeni"/>
+    </LoopUnit>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv9#opg4#seu7" name="Seleziona dati piatto" entity="ent1" distinctAttributes="ent1#att2 ent1#att7 ent1#att57 ent1#att58">
+      <Selector id="sv9#opg4#seu7#su34" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#opg4#seu7#su34#kcond26" name="KeyCondition26" predicate="in" implied="false"/>
+      </Selector>
+      <SortAttribute attribute="ent1#att2" order="ascending"/>
+      <OKLink id="sv9#opg4#seu7#oln34" name="OKFlow34" to="sv9#opg4#lpu9" automaticCoupling="true"/>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

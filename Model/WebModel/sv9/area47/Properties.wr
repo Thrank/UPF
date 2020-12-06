@@ -1,3 +1,12 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv9#area47" name="Piatto" defaultPage="sv9#area47#page183" landmark="false" gr:x="1590" gr:y="615">
-  <OperationUnits/>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv9#area47" name="Piatto" landmark="false" gr:x="1560" gr:y="90" defaultPage="sv9#area47#page183">
+  <OperationUnits>
+    <GetUnit gr:x="35" gr:y="695" id="sv9#area47#gtu3" name="Recupera oid utente" contextParameters="UserCtxParam" linkOrder="sv9#area47#gtu3#ln18 sv9#area47#gtu3#ln25">
+      <Link id="sv9#area47#gtu3#ln18" name="Flow18" to="sv9#area47#page183#alt1#page3#scu7" type="transport" validate="true">
+        <LinkParameter id="sv9#area47#gtu3#ln18#par1" name="UserCtxParam.oid_ristorante dell'utente iscritto? [oid]" source="sv9#area47#gtu3.UserCtxParam" target="sv9#area47#page183#alt1#page3#scu7#su5#rcond10.userOID"/>
+      </Link>
+      <Link id="sv9#area47#gtu3#ln25" name="Flow25" to="sv9#area47#page183#alt1#page2#scu4" type="transport" validate="true" gr:bendpoints="-100,-3,-115,357;-112,-231,-127,129">
+        <LinkParameter id="sv9#area47#gtu3#ln25#par2" name="UserCtxParam.oid_ristorante non dell'utente iscritto [oid]" source="sv9#area47#gtu3.UserCtxParam" target="sv9#area47#page183#alt1#page2#scu4#su3#rcond15.userOID"/>
+      </Link>
+    </GetUnit>
+  </OperationUnits>
 </Area>

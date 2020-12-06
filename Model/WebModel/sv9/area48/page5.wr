@@ -16,7 +16,7 @@
       <Link id="sv9#area48#page5#scu1#ln6" name="Flow333" to="sv9#area48#page5#mdu1" automaticCoupling="true" type="automatic" validate="true"/>
       <SortAttribute attribute="ent14#att42" order="ascending"/>
     </ScrollerUnit>
-    <MultiDataUnit gr:x="40" gr:y="155" id="sv9#area48#page5#mdu1" name="Ristoranti ristoratore" entity="ent14" displayAttributes="ent14#att42 ent14#att46" gr:showAllParts="true" linkOrder="sv9#area48#page5#mdu1#ln7 sv9#area48#page5#mdu1#ln8">
+    <MultiDataUnit gr:x="40" gr:y="155" id="sv9#area48#page5#mdu1" name="Ristoranti ristoratore" entity="ent14" displayAttributes="ent14#att42 ent14#att46" gr:showAllParts="true" linkOrder="sv9#area48#page5#mdu1#ln7 sv9#area48#page5#mdu1#ln8 sv9#area48#page5#mdu1#ln11">
       <SortAttribute attribute="ent14#att42" order="ascending"/>
       <Selector id="sv9#area48#page5#mdu1#su15" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv9#area48#page5#mdu1#su15#kcond1" name="KeyCondition207" predicate="in" implied="false"/>
@@ -31,6 +31,7 @@
       <Link id="sv9#area48#page5#mdu1#ln8" name="Flow337" to="sv9#area48#page13#enu10" type="normal" validate="true">
         <LinkParameter id="sv9#area48#page5#mdu1#ln8#par9" name="oid_PASSING" source="ent14#att40Array" passing="true"/>
       </Link>
+      <Link id="sv9#area48#page5#mdu1#ln11" name="Flow11" to="sv9#area47#page183#alt1#page3#scu7" type="normal" validate="true" gr:bendpoints="51,-249,-599,541" automaticCoupling="true"/>
     </MultiDataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -59,10 +60,11 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv9#area48#page5#mdu1">
-          <layout:Link link="sv9#area48#page5#mdu1#ln7"/>
-          <layout:Link link="sv9#area48#page5#mdu1#ln8"/>
           <layout:Attribute attribute="ent14#att42"/>
           <layout:Attribute attribute="ent14#att46"/>
+          <layout:Link link="sv9#area48#page5#mdu1#ln7"/>
+          <layout:Link link="sv9#area48#page5#mdu1#ln8"/>
+          <layout:Link link="sv9#area48#page5#mdu1#ln11"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

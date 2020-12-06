@@ -1,0 +1,133 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="595" gr:y="585" id="sv9#area47#page9" name="Modifica piatto">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv9#area47#page9#enu4" name="Modifica piatto" gr:showAllParts="true" fieldOrder="sv9#area47#page9#enu4#fld38 sv9#area47#page9#enu4#fld53 sv9#area47#page9#enu4#fld54 sv9#area47#page9#enu4#fld59" linkOrder="sv9#area47#page9#enu4#ln67">
+      <Field id="sv9#area47#page9#enu4#fld54" name="foto" type="blob" preloaded="true" modifiable="true"/>
+      <Field id="sv9#area47#page9#enu4#fld53" name="prezzo" type="float" preloaded="true" modifiable="true"/>
+      <Field id="sv9#area47#page9#enu4#fld38" name="nome" type="string" preloaded="true" modifiable="true"/>
+      <Field id="sv9#area47#page9#enu4#fld59" name="descrizione" type="string" modifiable="true" preloaded="true"/>
+      <Link id="sv9#area47#page9#enu4#ln67" name="Flow67" to="sv9#area47#page9#mciu6" type="normal" validate="true">
+        <LinkParameter id="sv9#area47#page9#enu4#ln67#par94" name="descrizione_PASSING" source="sv9#area47#page9#enu4#fld59" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#enu4#ln67#par95" name="foto_PASSING" source="sv9#area47#page9#enu4#fld54" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#enu4#ln67#par96" name="nome_PASSING" source="sv9#area47#page9#enu4#fld38" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#enu4#ln67#par97" name="prezzo_PASSING" source="sv9#area47#page9#enu4#fld53" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#enu4#ln67#par113" name="oid_PASSING" sourceLinkParameter="sv9#area47#page183#alt1#page3#inu9#ln65#par112" passing="true"/>
+      </Link>
+    </EntryUnit>
+    <MultiChoiceIndexUnit gr:x="130" gr:y="5" id="sv9#area47#page9#mciu6" name="Lista tipologie cucina" entity="ent10" displayAttributes="ent10#att28" linkOrder="sv9#area47#page9#mciu6#ln68">
+      <SortAttribute attribute="ent10#att28" order="ascending"/>
+      <Link id="sv9#area47#page9#mciu6#ln68" name="Flow68" to="sv9#area47#page9#mciu8" type="normal" validate="true">
+        <LinkParameter id="sv9#area47#page9#mciu6#ln68#par98" name="Checked oid_PASSING" source="ent10#att61Checked" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu6#ln68#par101" name="descrizione_PASSING" sourceLinkParameter="sv9#area47#page9#enu4#ln67#par94" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu6#ln68#par106" name="foto_PASSING" sourceLinkParameter="sv9#area47#page9#enu4#ln67#par95" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu6#ln68#par108" name="nome_PASSING" sourceLinkParameter="sv9#area47#page9#enu4#ln67#par96" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu6#ln68#par109" name="prezzo_PASSING" sourceLinkParameter="sv9#area47#page9#enu4#ln67#par97" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu6#ln68#par119" name="oid_PASSING" sourceLinkParameter="sv9#area47#page9#enu4#ln67#par113" passing="true"/>
+      </Link>
+    </MultiChoiceIndexUnit>
+    <MultiChoiceIndexUnit gr:x="310" gr:y="5" id="sv9#area47#page9#mciu8" name="Lista  categorie piatto" entity="ent18" linkOrder="sv9#area47#page9#mciu8#ln69">
+      <Link id="sv9#area47#page9#mciu8#ln69" name="Flow69" to="sv9#area47#page9#mciu9" type="normal" validate="true">
+        <LinkParameter id="sv9#area47#page9#mciu8#ln69#par120" name="Checked oid_PASSING" source="ent18#att62Checked" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu8#ln69#par121" name="Checked oid_PASSING" sourceLinkParameter="sv9#area47#page9#mciu6#ln68#par98" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu8#ln69#par122" name="descrizione_PASSING" sourceLinkParameter="sv9#area47#page9#mciu6#ln68#par101" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu8#ln69#par125" name="foto_PASSING" sourceLinkParameter="sv9#area47#page9#mciu6#ln68#par106" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu8#ln69#par126" name="nome_PASSING" sourceLinkParameter="sv9#area47#page9#mciu6#ln68#par108" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu8#ln69#par127" name="oid_PASSING" sourceLinkParameter="sv9#area47#page9#mciu6#ln68#par119" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu8#ln69#par128" name="prezzo_PASSING" sourceLinkParameter="sv9#area47#page9#mciu6#ln68#par109" passing="true"/>
+      </Link>
+    </MultiChoiceIndexUnit>
+    <MultiChoiceIndexUnit gr:x="145" gr:y="130" id="sv9#area47#page9#mciu9" name="Lista allergeni" linkOrder="sv9#area47#page9#mciu9#ln70" entity="ent19" displayAttributes="ent19#att56">
+      <Link id="sv9#area47#page9#mciu9#ln70" name="Flow70" to="sv9#opg2#mfu6" type="normal" validate="true">
+        <LinkParameter id="sv9#area47#page9#mciu9#ln70#par129" name="descrizione_PASSING_descrizione breve" sourceLinkParameter="sv9#area47#page9#mciu8#ln69#par122" target="sv9#opg2#mfu6.ent1#att57"/>
+        <LinkParameter id="sv9#area47#page9#mciu9#ln70#par130" name="foto_PASSING_foto" sourceLinkParameter="sv9#area47#page9#mciu8#ln69#par125" target="sv9#opg2#mfu6.ent1#att58"/>
+        <LinkParameter id="sv9#area47#page9#mciu9#ln70#par131" name="oid_PASSING_KeyCondition13 [oid]" sourceLinkParameter="sv9#area47#page9#mciu8#ln69#par127" target="sv9#opg2#mfu6#su18#kcond13.ent1#att1"/>
+        <LinkParameter id="sv9#area47#page9#mciu9#ln70#par132" name="nome_PASSING_nome" sourceLinkParameter="sv9#area47#page9#mciu8#ln69#par126" target="sv9#opg2#mfu6.ent1#att2"/>
+        <LinkParameter id="sv9#area47#page9#mciu9#ln70#par140" name="prezzo_PASSING_prezzo" sourceLinkParameter="sv9#area47#page9#mciu8#ln69#par128" target="sv9#opg2#mfu6.ent1#att7"/>
+        <LinkParameter id="sv9#area47#page9#mciu9#ln70#par144" name="Checked oid_PASSING" sourceLinkParameter="sv9#area47#page9#mciu8#ln69#par120" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu9#ln70#par145" name="Checked oid_PASSING" sourceLinkParameter="sv9#area47#page9#mciu8#ln69#par121" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu9#ln70#par146" name="oid_PASSING" sourceLinkParameter="sv9#area47#page9#mciu8#ln69#par127" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#mciu9#ln70#par182" name="Checked oid_PASSING" source="ent19#att55Checked" passing="true"/>
+      </Link>
+      <SortAttribute attribute="ent19#att56" order="ascending"/>
+    </MultiChoiceIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area47#page9#enu4">
+          <layout:Field field="sv9#area47#page9#enu4#fld38"/>
+          <layout:Field field="sv9#area47#page9#enu4#fld53"/>
+          <layout:Field field="sv9#area47#page9#enu4#fld54"/>
+          <layout:Field field="sv9#area47#page9#enu4#fld59"/>
+          <layout:Link link="sv9#area47#page9#enu4#ln67"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area47#page9#mciu6">
+          <layout:Attribute attribute="ent10#att28"/>
+          <layout:Link link="sv9#area47#page9#mciu6#ln68"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area47#page9#mciu8">
+          <layout:Link link="sv9#area47#page9#mciu8#ln69"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv9#area47#page9#mciu9">
+          <layout:Link link="sv9#area47#page9#mciu9#ln70"/>
+          <layout:Attribute attribute="ent19#att56"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
