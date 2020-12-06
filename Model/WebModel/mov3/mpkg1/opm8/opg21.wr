@@ -8,7 +8,7 @@
         <LinkParameter id="mov3#mpkg1#opm8#opg21#cru3#oln152#par916" name="oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#tmu9#ln40#par928" passing="true"/>
         <LinkParameter id="mov3#mpkg1#opm8#opg21#cru3#oln152#par917" name="oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#tmu9#ln40#par929" passing="true"/>
       </OKLink>
-      <KOLink id="mov3#mpkg1#opm8#opg21#cru3#kln102" to="mov3#mpkg1#opm8#kocu19" name="KOFlow68" gr:bendpoints="337,2,-223,-138"/>
+      <KOLink id="mov3#mpkg1#opm8#opg21#cru3#kln102" to="mov3#mpkg1#opm8#kocu18" name="KOFlow68" gr:bendpoints="346,0,-224,-110"/>
     </CreateUnit>
     <TimeUnit id="mov3#mpkg1#opm8#opg21#tmu9" name="Data" gr:x="0" gr:y="0">
       <Link id="mov3#mpkg1#opm8#opg21#tmu9#ln40" name="Flow230" to="mov3#mpkg1#opm8#opg21#cru3" type="transport" validate="true">
@@ -40,7 +40,7 @@
         <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu36#oln153#par933" name="Checked oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cru3#oln152#par915" passing="true"/>
         <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu36#oln153#par934" name="oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cru3#oln152#par916" passing="true"/>
       </OKLink>
-      <KOLink id="mov3#mpkg1#opm8#opg21#cnu36#kln103" to="mov3#mpkg1#opm8#kocu18" name="KOFlow69" gr:bendpoints="214,-2,-191,-547"/>
+      <KOLink id="mov3#mpkg1#opm8#opg21#cnu36#kln103" to="mov3#mpkg1#opm8#kocu18" name="KOFlow69" gr:bendpoints="199,22,-216,-193"/>
     </ConnectUnit>
     <ConnectUnit id="mov3#mpkg1#opm8#opg21#cnu37" name="Connetti a indirizzo" gr:x="265" gr:y="200" relationship="rel34#role68">
       <SourceSelector id="mov3#mpkg1#opm8#opg21#cnu37#su165" defaultPolicy="fill" booleanOperator="and">
@@ -64,25 +64,22 @@
       <TargetSelector id="mov3#mpkg1#opm8#opg21#cnu38#su168" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov3#mpkg1#opm8#opg21#cnu38#su168#kcond144" name="KeyCondition151" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="mov3#mpkg1#opm8#opg21#cnu38#oln155" name="OKFlow67" to="mov3#mpkg1#opm8#opg21#cnu39">
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu38#oln155#par939" name="Source oid [Ordine]_KeyCondition152 [oid] [Ordine] [Source]" source="sourceent3#att8" target="mov3#mpkg1#opm8#opg21#cnu39#su176#kcond145.ent3#att8"/>
+      <OKLink id="mov3#mpkg1#opm8#opg21#cnu38#oln155" name="OKFlow67" to="mov3#mpkg1#opm8#opg21#lpu6">
         <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu38#oln155#par940" name="promozione_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu37#oln154#par936" passing="true"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu38#oln155#par941" name="Checked oid_PASSING_KeyCondition153 [oid] [Piatto] [Target]" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu37#oln154#par938" target="mov3#mpkg1#opm8#opg21#cnu39#su178#kcond146.ent1#att1"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu38#oln155#par2399" name="Checked oid_PASSING_Input Array" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu37#oln154#par938" target="mov3#mpkg1#opm8#opg21#lpu6.array"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu38#oln155#par2400" name="Source oid [Ordine]_PASSING" source="sourceent3#att8" passing="true"/>
       </OKLink>
-      <KOLink id="mov3#mpkg1#opm8#opg21#cnu38#kln105" to="mov3#mpkg1#opm8#kocu18" name="KOFlow71" gr:bendpoints="-105,65,-670,-180;-107,308,-672,63;444,311,-121,66"/>
+      <KOLink id="mov3#mpkg1#opm8#opg21#cnu38#kln105" to="mov3#mpkg1#opm8#kocu18" name="KOFlow71" gr:bendpoints="205,-44,-370,41;352,-43,-223,42"/>
     </ConnectUnit>
-    <ConnectUnit id="mov3#mpkg1#opm8#opg21#cnu39" name="Connetti a piatti" gr:x="285" gr:y="425" relationship="rel8#role15">
+    <ConnectUnit id="mov3#mpkg1#opm8#opg21#cnu39" name="Connetti a piatti" gr:x="315" gr:y="475" relationship="rel8#role15">
       <SourceSelector id="mov3#mpkg1#opm8#opg21#cnu39#su176" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov3#mpkg1#opm8#opg21#cnu39#su176#kcond145" name="KeyCondition152" predicate="in" implied="false"/>
       </SourceSelector>
       <TargetSelector id="mov3#mpkg1#opm8#opg21#cnu39#su178" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov3#mpkg1#opm8#opg21#cnu39#su178#kcond146" name="KeyCondition153" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="mov3#mpkg1#opm8#opg21#cnu39#oln156" name="OKFlow68" to="mov3#mpkg1#opm8#opg21#cnu40">
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu39#oln156#par942" name="Source oid [Ordine]_KeyCondition154 [oid] [Ordine] [Source]" source="sourceent3#att8" target="mov3#mpkg1#opm8#opg21#cnu40#su179#kcond147.ent3#att8"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu39#oln156#par943" name="promozione_PASSING_KeyCondition155 [oid] [Promozione] [Target]" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu38#oln155#par940" target="mov3#mpkg1#opm8#opg21#cnu40#su180#kcond148.ent25#att69"/>
-      </OKLink>
       <KOLink id="mov3#mpkg1#opm8#opg21#cnu39#kln106" to="mov3#mpkg1#opm8#kocu18" name="KOFlow72" gr:bendpoints="0,-60"/>
+      <OKLink id="mov3#mpkg1#opm8#opg21#cnu39#oln311" name="OKFlow311" to="mov3#mpkg1#opm8#opg21#lpu6" automaticCoupling="true" gr:bendpoints="-5,-113,95,42"/>
     </ConnectUnit>
     <ConnectUnit id="mov3#mpkg1#opm8#opg21#cnu40" name="Connetti a promozione" gr:x="40" gr:y="540" relationship="rel25#role49">
       <SourceSelector id="mov3#mpkg1#opm8#opg21#cnu40#su179" defaultPolicy="fill" booleanOperator="and">
@@ -91,8 +88,18 @@
       <TargetSelector id="mov3#mpkg1#opm8#opg21#cnu40#su180" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov3#mpkg1#opm8#opg21#cnu40#su180#kcond148" name="KeyCondition155" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="mov3#mpkg1#opm8#opg21#cnu40#oln157" to="mov3#mpkg1#opm8#okcu12" name="OKFlow69" gr:bendpoints="307,-264,-213,306"/>
-      <KOLink id="mov3#mpkg1#opm8#opg21#cnu40#kln107" to="mov3#mpkg1#opm8#kocu18" name="KOFlow73" gr:bendpoints="0,80"/>
+      <OKLink id="mov3#mpkg1#opm8#opg21#cnu40#oln157" to="mov3#mpkg1#opm8#okcu12" name="OKFlow69" gr:bendpoints="372,0,-178,570;377,-256,-173,314"/>
+      <KOLink id="mov3#mpkg1#opm8#opg21#cnu40#kln107" to="mov3#mpkg1#opm8#kocu18" name="KOFlow73" gr:bendpoints="360,-2,-170,313"/>
     </ConnectUnit>
+    <LoopUnit gr:x="240" gr:y="345" id="mov3#mpkg1#opm8#opg21#lpu6" name="Cicla piatti">
+      <OKLink id="mov3#mpkg1#opm8#opg21#lpu6#oln309" name="OKFlow309" to="mov3#mpkg1#opm8#opg21#cnu39" code="next" gr:bendpoints="5,96,-95,-59">
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#lpu6#oln309#par2401" name="Source oid [Ordine]_PASSING_KeyCondition152 [oid] [Ordine] [Source]" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu38#oln155#par2400" target="mov3#mpkg1#opm8#opg21#cnu39#su176#kcond145.ent3#att8"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#lpu6#oln309#par2402" name="Next Element_KeyCondition153 [oid] [Piatto] [Target]" source="next" target="mov3#mpkg1#opm8#opg21#cnu39#su178#kcond146.ent1#att1"/>
+      </OKLink>
+      <OKLink id="mov3#mpkg1#opm8#opg21#lpu6#oln310" name="OKFlow310" to="mov3#mpkg1#opm8#opg21#cnu40" code="end">
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#lpu6#oln310#par2403" name="Source oid [Ordine]_PASSING_KeyCondition154 [oid] [Ordine] [Source]" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu38#oln155#par2400" target="mov3#mpkg1#opm8#opg21#cnu40#su179#kcond147.ent3#att8"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#lpu6#oln310#par2404" name="promozione_PASSING_KeyCondition155 [oid] [Promozione] [Target]" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu38#oln155#par940" target="mov3#mpkg1#opm8#opg21#cnu40#su180#kcond148.ent25#att69"/>
+      </OKLink>
+    </LoopUnit>
   </OperationUnits>
 </OperationGroup>

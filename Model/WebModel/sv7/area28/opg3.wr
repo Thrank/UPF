@@ -1,12 +1,12 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="740" gr:y="460" id="sv7#area28#opg3" name="Accesso" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="35" gr:y="420" id="sv7#area28#opg3" name="Accesso" transaction="true">
   <OperationUnits>
     <SelectorUnit gr:x="0" gr:y="0" id="sv7#area28#opg3#seu27" name="Seleziona utente" entity="User">
       <Selector id="sv7#area28#opg3#seu27#su39" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv7#area28#opg3#seu27#su39#acond12" name="username" predicate="eq" booleanOperator="or" implied="false" attributes="userName"/>
         <AttributesCondition id="sv7#area28#opg3#seu27#su39#acond18" name="password" predicate="eq" booleanOperator="or" implied="false" attributes="password"/>
       </Selector>
-      <OKLink id="sv7#area28#opg3#seu27#oln16" name="OKFlow16" to="sv7#lgu6" gr:bendpoints="-133,116,782,36;-803,114,112,34" automaticCoupling="true"/>
-      <KOLink id="sv7#area28#opg3#seu27#kln16" name="KOFlow16" to="sv7#page35#alt3#page53#mssu5" automaticCoupling="true" gr:bendpoints="-266,-95,944,225;-294,-214,916,106;-1096,-260,114,60"/>
+      <OKLink id="sv7#area28#opg3#seu27#oln16" name="OKFlow16" to="sv7#lgu6" automaticCoupling="true"/>
+      <KOLink id="sv7#area28#opg3#seu27#kln16" name="KOFlow16" to="sv7#page35#alt3#page53#mssu5" automaticCoupling="true" gr:bendpoints="-343,-1,287,309"/>
     </SelectorUnit>
   </OperationUnits>
 </OperationGroup>

@@ -1,0 +1,87 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov2#opm17#opg41" name="Modifica profilo" transaction="true" gr:x="75" gr:y="45">
+  <OperationUnits>
+    <ModifyUnit id="mov2#opm17#opg41#mfu4" name="Aggiorna profilo cliente" gr:x="25" gr:y="0" entity="ent4">
+      <Selector id="mov2#opm17#opg41#mfu4#su372" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm17#opg41#mfu4#su372#kcond325" name="KeyCondition56" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov2#opm17#opg41#mfu4#oln331" name="OKFlow17" to="mov2#opm17#opg41#mfu5">
+        <LinkParameter id="mov2#opm17#opg41#mfu4#oln331#par2601" name="CAP_PASSING_CAP" sourceLinkParameter="mov2#opm17#switch5#oln343#par2561" target="mov2#opm17#opg41#mfu5.ent16#att76"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu4#oln331#par2602" name="numero civico_PASSING_civico" sourceLinkParameter="mov2#opm17#switch5#oln343#par2563" target="mov2#opm17#opg41#mfu5.ent16#att32"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu4#oln331#par2603" name="via/corso/piazza_PASSING_via/piazza/corso" sourceLinkParameter="mov2#opm17#switch5#oln343#par2566" target="mov2#opm17#opg41#mfu5.ent16#att31"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu4#oln331#par2609" name="oid indirizzo_PASSING_KeyCondition56 [oid]" sourceLinkParameter="mov2#opm17#switch5#oln343#par2605" target="mov2#opm17#opg41#mfu5#su398#kcond330.ent16#att64"/>
+      </OKLink>
+      <KOLink id="mov2#opm17#opg41#mfu4#kln210" to="mov2#opm17#kocu39" name="KOFlow22" gr:bendpoints="0,-20"/>
+    </ModifyUnit>
+    <ConnectUnit id="mov2#opm17#opg41#cnu86" name="Connetti a citt&#224;" gr:x="640" gr:y="200" relationship="rel32#role63">
+      <SourceSelector id="mov2#opm17#opg41#cnu86#su394" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm17#opg41#cnu86#su394#kcond326" name="KeyCondition69" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov2#opm17#opg41#cnu86#su395" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm17#opg41#cnu86#su395#kcond327" name="KeyCondition70" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="mov2#opm17#opg41#cnu86#kln211" to="mov2#opm17#kocu39" name="KOFlow19"/>
+      <OKLink id="mov2#opm17#opg41#cnu86#oln334" to="mov2#opm17#switch6" name="OKFlow21"/>
+    </ConnectUnit>
+    <DisconnectUnit id="mov2#opm17#opg41#dcnu30" name="Sconnetti da citt&#224;" gr:x="440" gr:y="200" relationship="rel32#role64">
+      <SourceSelector id="mov2#opm17#opg41#dcnu30#su396" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm17#opg41#dcnu30#su396#kcond328" name="KeyCondition75" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov2#opm17#opg41#dcnu30#su397" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm17#opg41#dcnu30#su397#kcond329" name="KeyCondition76" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov2#opm17#opg41#dcnu30#oln332" name="OKFlow19" to="mov2#opm17#opg41#cnu86">
+        <LinkParameter id="mov2#opm17#opg41#dcnu30#oln332#par2484" name="oid_PASSING_KeyCondition69 [oid] [Indirizzo] [Source]" sourceLinkParameter="mov2#opm17#opg41#mfu5#oln333#par2489" target="mov2#opm17#opg41#cnu86#su394#kcond326.ent16#att64"/>
+        <LinkParameter id="mov2#opm17#opg41#dcnu30#oln332#par2634" name="oid citt&#224; nuova_PASSING_KeyCondition70 [oid] [Citt&#224;] [Target]" sourceLinkParameter="mov2#opm17#opg41#mfu5#oln333#par2633" target="mov2#opm17#opg41#cnu86#su395#kcond327.ent22#att27"/>
+      </OKLink>
+      <KOLink id="mov2#opm17#opg41#dcnu30#kln212" to="mov2#opm17#kocu39" name="KOFlow20" gr:bendpoints="132,-86,-638,209"/>
+    </DisconnectUnit>
+    <ModifyUnit id="mov2#opm17#opg41#mfu5" name="Aggiorna indirizzo" gr:x="260" gr:y="205" entity="ent16">
+      <Selector id="mov2#opm17#opg41#mfu5#su398" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm17#opg41#mfu5#su398#kcond330" name="KeyCondition56" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov2#opm17#opg41#mfu5#oln333" name="OKFlow18" to="mov2#opm17#opg41#dcnu30">
+        <LinkParameter id="mov2#opm17#opg41#mfu5#oln333#par2487" name="oid_KeyCondition76 [oid] [Indirizzo] [Target]" source="ent16#att64Array" target="mov2#opm17#opg41#dcnu30#su397#kcond329.ent16#att64"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu5#oln333#par2489" name="oid_PASSING" source="ent16#att64Array" passing="true"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu5#oln333#par2632" name="oid citt&#224; vecchia_PASSING_KeyCondition75 [oid] [Citt&#224;] [Source]" sourceLinkParameter="mov2#opm17#icu26#ln279#par2631" target="mov2#opm17#opg41#dcnu30#su396#kcond328.ent22#att27"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu5#oln333#par2633" name="oid citt&#224; nuova_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln279#par2630" passing="true"/>
+      </OKLink>
+      <KOLink id="mov2#opm17#opg41#mfu5#kln213" to="mov2#opm17#kocu39" name="KOFlow21" gr:bendpoints="85,-86,-870,209"/>
+    </ModifyUnit>
+    <ModifyUnit gr:x="10" gr:y="430" id="mov2#opm17#opg41#mfu10" name="Aggiorna profilo ristoratore" entity="ent6">
+      <Selector id="mov2#opm17#opg41#mfu10#su402" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm17#opg41#mfu10#su402#kcond334" name="KeyCondition332" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="mov2#opm17#opg41#mfu10#kln216" name="KOFlow216" to="mov2#opm17#kocu39" automaticCoupling="true" gr:bendpoints="991,3,-189,523"/>
+      <OKLink id="mov2#opm17#opg41#mfu10#oln337" name="OKFlow337" to="mov2#opm17#opg41#mfu5" gr:bendpoints="131,-52,-94,173">
+        <LinkParameter id="mov2#opm17#opg41#mfu10#oln337#par2624" name="CAP_PASSING_CAP" sourceLinkParameter="mov2#opm17#switch5#oln346#par2595" target="mov2#opm17#opg41#mfu5.ent16#att76"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu10#oln337#par2625" name="numero civico_PASSING_civico" sourceLinkParameter="mov2#opm17#switch5#oln346#par2597" target="mov2#opm17#opg41#mfu5.ent16#att32"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu10#oln337#par2626" name="oid indirizzo_PASSING_KeyCondition56 [oid]" sourceLinkParameter="mov2#opm17#switch5#oln346#par2608" target="mov2#opm17#opg41#mfu5#su398#kcond330.ent16#att64"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu10#oln337#par2627" name="via/corso/piazza_PASSING_via/piazza/corso" sourceLinkParameter="mov2#opm17#switch5#oln346#par2600" target="mov2#opm17#opg41#mfu5.ent16#att31"/>
+      </OKLink>
+    </ModifyUnit>
+    <ModifyUnit gr:x="0" gr:y="295" id="mov2#opm17#opg41#mfu11" name="Aggiorna profilo amministratore" entity="ent12">
+      <Selector id="mov2#opm17#opg41#mfu11#su403" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm17#opg41#mfu11#su403#kcond335" name="KeyCondition331" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="mov2#opm17#opg41#mfu11#kln215" name="KOFlow215" to="mov2#opm17#kocu39" automaticCoupling="true" gr:bendpoints="977,-4,-203,381"/>
+      <OKLink id="mov2#opm17#opg41#mfu11#oln336" name="OKFlow336" to="mov2#opm17#opg41#mfu5">
+        <LinkParameter id="mov2#opm17#opg41#mfu11#oln336#par2618" name="CAP_PASSING_CAP" sourceLinkParameter="mov2#opm17#switch5#oln345#par2583" target="mov2#opm17#opg41#mfu5.ent16#att76"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu11#oln336#par2619" name="numero civico_PASSING_civico" sourceLinkParameter="mov2#opm17#switch5#oln345#par2585" target="mov2#opm17#opg41#mfu5.ent16#att32"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu11#oln336#par2620" name="oid indirizzo_PASSING_KeyCondition56 [oid]" sourceLinkParameter="mov2#opm17#switch5#oln345#par2607" target="mov2#opm17#opg41#mfu5#su398#kcond330.ent16#att64"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu11#oln336#par2621" name="via/corso/piazza_PASSING_via/piazza/corso" sourceLinkParameter="mov2#opm17#switch5#oln345#par2588" target="mov2#opm17#opg41#mfu5.ent16#att31"/>
+      </OKLink>
+    </ModifyUnit>
+    <ModifyUnit gr:x="0" gr:y="155" id="mov2#opm17#opg41#mfu12" name="Aggiorna profilo moderatore" entity="ent13">
+      <Selector id="mov2#opm17#opg41#mfu12#su404" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm17#opg41#mfu12#su404#kcond336" name="KeyCondition333" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="mov2#opm17#opg41#mfu12#kln214" name="KOFlow214" to="mov2#opm17#kocu39" automaticCoupling="true"/>
+      <OKLink id="mov2#opm17#opg41#mfu12#oln335" name="OKFlow335" to="mov2#opm17#opg41#mfu5">
+        <LinkParameter id="mov2#opm17#opg41#mfu12#oln335#par2612" name="CAP_PASSING_CAP" sourceLinkParameter="mov2#opm17#switch5#oln344#par2567" target="mov2#opm17#opg41#mfu5.ent16#att76"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu12#oln335#par2613" name="numero civico_PASSING_civico" sourceLinkParameter="mov2#opm17#switch5#oln344#par2569" target="mov2#opm17#opg41#mfu5.ent16#att32"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu12#oln335#par2616" name="via/corso/piazza_PASSING_via/piazza/corso" sourceLinkParameter="mov2#opm17#switch5#oln344#par2572" target="mov2#opm17#opg41#mfu5.ent16#att31"/>
+        <LinkParameter id="mov2#opm17#opg41#mfu12#oln335#par2617" name="oid indirizzo_PASSING_KeyCondition56 [oid]" sourceLinkParameter="mov2#opm17#switch5#oln344#par2606" target="mov2#opm17#opg41#mfu5#su398#kcond330.ent16#att64"/>
+      </OKLink>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationGroup>

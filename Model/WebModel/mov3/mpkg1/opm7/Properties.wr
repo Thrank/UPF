@@ -13,8 +13,6 @@
       </OKLink>
     </InputCollectorUnit>
     <OKCollectorUnit gr:x="965" gr:y="40" id="mov3#mpkg1#opm7#okcu11" name="OK annullamento "/>
-    <KOCollectorUnit gr:x="965" gr:y="240" id="mov3#mpkg1#opm7#kocu15" name="KO selezione"/>
-    <KOCollectorUnit gr:x="965" gr:y="485" id="mov3#mpkg1#opm7#kocu16" name="KO rimozione database"/>
-    <KOCollectorUnit gr:x="965" gr:y="350" id="mov3#mpkg1#opm7#kocu17" name="KO  disconnessione"/>
+    <KOCollectorUnit gr:x="965" gr:y="350" id="mov3#mpkg1#opm7#kocu17" name="KO  annullamento"/>
   </OperationUnits>
 </OperationModule>

@@ -12,8 +12,8 @@
       </OKLink>
     </ModuleInstanceUnit>
     <ModuleInstanceUnit gr:x="1620" gr:y="720" id="sv6#area25#miu10" moduleId="mov3#mpkg5#opm12">
-      <KOLink id="sv6#area25#miu10#kln122" to="sv6#area25#page74#alt16#page80" name="KOFlow29" codeRef="mov3#mpkg5#opm12#kocu25" gr:bendpoints="3,789,173,-6"/>
       <OKLink id="sv6#area25#miu10#oln204" name="OKFlow204" to="sv6#area25#page40" automaticCoupling="true"/>
+      <KOLink id="sv6#area25#miu10#kln180" name="KOFlow180" to="sv6#area25#page74#alt16#page80#mssu39" automaticCoupling="true"/>
     </ModuleInstanceUnit>
     <ModuleInstanceUnit gr:x="635" gr:y="1255" id="sv6#area25#miu11" moduleId="mov3#mpkg5#opm13">
       <OKLink id="sv6#area25#miu11#oln206" to="sv6#area25#page40" name="OKFlow26" gr:bendpoints="182,1,-268,806;272,-119,-178,686;534,-119,84,686;597,-260,147,545" codeRef="mov3#mpkg5#opm13#okcu29"/>
@@ -21,7 +21,7 @@
       <OKLink id="sv6#area25#miu11#oln226" name="OKFlow226" to="sv6#area25#page77" automaticCoupling="true" gr:bendpoints="-267,-3,58,452" codeRef="mov3#mpkg5#opm13#okcu32"/>
     </ModuleInstanceUnit>
     <ModuleInstanceUnit gr:x="1105" gr:y="1245" id="sv6#area25#miu15" moduleId="mov3#mpkg5#hym10">
-      <KOLink id="sv6#area25#miu15#kln141" to="sv6#area25#page74#alt16#page75#mssu36" name="KOFlow24" gr:bendpoints="118,143,138,-147"/>
+      <KOLink id="sv6#area25#miu15#kln141" to="sv6#area25#page74#alt16#page75#mssu36" name="KOFlow24" gr:bendpoints="94,146,114,-144"/>
       <OKLink id="sv6#area25#miu15#oln215" to="sv6#area25#page40" name="OKFlow30" gr:bendpoints="94,-183,454,557" codeRef="mov3#mpkg5#hym10#okcu31"/>
       <OKLink id="sv6#area25#miu15#oln223" name="OKFlow220" to="sv6#area25#page77" automaticCoupling="true" gr:bendpoints="120,60,910,505;-808,63,-18,508" codeRef="mov3#mpkg5#hym10#okcu30"/>
     </ModuleInstanceUnit>

@@ -16,8 +16,7 @@
         <LinkParameter id="mov3#mpkg1#opm8#icu8#oln151#par912" name="oid_PASSING" passing="true" source="mov3#mpkg1#opm8#icu8#icp38"/>
       </OKLink>
     </InputCollectorUnit>
-    <KOCollectorUnit gr:x="815" gr:y="600" id="mov3#mpkg1#opm8#kocu18" name="KO connessione"/>
-    <KOCollectorUnit gr:x="815" gr:y="300" id="mov3#mpkg1#opm8#kocu19" name="KO database"/>
-    <OKCollectorUnit gr:x="815" gr:y="15" id="mov3#mpkg1#opm8#okcu12" name="OK inserimento effettuato"/>
+    <KOCollectorUnit gr:x="825" gr:y="270" id="mov3#mpkg1#opm8#kocu18" name="KO inserimento"/>
+    <OKCollectorUnit gr:x="825" gr:y="730" id="mov3#mpkg1#opm8#okcu12" name="OK inserimento effettuato"/>
   </OperationUnits>
 </OperationModule>

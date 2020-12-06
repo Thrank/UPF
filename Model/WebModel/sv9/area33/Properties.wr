@@ -1,3 +1,8 @@
 <Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv9#area33" name="Personale" landmarks="sv9#area33#page103" landmark="true" gr:x="220" gr:y="20" defaultPage="sv9#area33#page103">
-  <OperationUnits/>
+  <OperationUnits>
+    <ModuleInstanceUnit gr:x="690" gr:y="175" id="sv9#area33#miu24" action="true" moduleId="mov2#opm17">
+      <KOLink id="sv9#area33#miu24#kln219" name="KOFlow219" to="sv9#area33#page116#alt17#page117#mssu24" automaticCoupling="true"/>
+      <OKLink id="sv9#area33#miu24#oln349" name="OKFlow349" to="sv9#area33#page103" automaticCoupling="true" codeRef="mov2#opm17#okcu39" gr:bendpoints="-248,-95,312,-270"/>
+    </ModuleInstanceUnit>
+  </OperationUnits>
 </Area>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2025" gr:y="1105" id="sv6#page110" name="Errori ordine">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2190" gr:y="1140" id="sv6#page110" name="Errori ordine">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -37,28 +37,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv6#page110#alt15#page112">
-          <layout:Grid containerType="grid">
-            <layout:Row>
-              <layout:Cell colspan="12">
-                <layout:Unit unitId="sv6#page110#alt15#page112#mssu28"/>
-              </layout:Cell>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-            </layout:Row>
-          </layout:Grid>
-        </layout:SubPage>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -107,28 +86,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv6#page110#alt15#page11">
-          <layout:Grid containerType="grid">
-            <layout:Row>
-              <layout:Cell colspan="12">
-                <layout:Unit unitId="sv6#page110#alt15#page11#mssu19"/>
-              </layout:Cell>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-            </layout:Row>
-          </layout:Grid>
-        </layout:SubPage>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -143,24 +101,14 @@
     </layout:Row>
   </layout:Grid>
   <Alternative gr:x="0" gr:y="0" id="sv6#page110#alt15" name="Errori ordine" defaultPage="sv6#page110#alt15#page111">
-    <Page gr:x="0" gr:y="0" id="sv6#page110#alt15#page111" name="Errore inserimento ordine">
+    <Page gr:x="0" gr:y="0" id="sv6#page110#alt15#page111" name="Errore inserimento ">
       <ContentUnits>
         <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#page110#alt15#page111#mssu27" name="Errore inserimento"/>
       </ContentUnits>
     </Page>
-    <Page gr:x="215" gr:y="0" id="sv6#page110#alt15#page112" name="Errore connessione">
+    <Page gr:x="270" gr:y="0" id="sv6#page110#alt15#page10" name="Errore annullamento">
       <ContentUnits>
-        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#page110#alt15#page112#mssu28" name="Errore connessione"/>
-      </ContentUnits>
-    </Page>
-    <Page gr:x="380" gr:y="0" id="sv6#page110#alt15#page10" name="Errore rimozione ordine">
-      <ContentUnits>
-        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#page110#alt15#page10#mssu18" name="Errore rimozione "/>
-      </ContentUnits>
-    </Page>
-    <Page gr:x="575" gr:y="0" id="sv6#page110#alt15#page11" name="Errore selezione ">
-      <ContentUnits>
-        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#page110#alt15#page11#mssu19" name="Errore selezione"/>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#page110#alt15#page10#mssu18" name="Errore annullamento"/>
       </ContentUnits>
     </Page>
   </Alternative>

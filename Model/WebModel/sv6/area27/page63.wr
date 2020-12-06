@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="955" gr:y="70" id="sv6#area27#page63" name="Errore aggiornamento profilo">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="955" gr:y="10" id="sv6#area27#page63" name="Errore aggiornamento profilo">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>

@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="625" gr:y="555" id="sv6#area27#opg6" name="Aggiorna preferenze" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="625" gr:y="495" id="sv6#area27#opg6" name="Aggiorna preferenze" transaction="true">
   <OperationUnits>
     <ConnectUnit gr:x="0" gr:y="0" id="sv6#area27#opg6#cnu8" name="Aggiungi preferenza cucina" relationship="rel20#role39" gr:showAllParts="false">
       <SourceSelector id="sv6#area27#opg6#cnu8#su93" defaultPolicy="fill" booleanOperator="and">

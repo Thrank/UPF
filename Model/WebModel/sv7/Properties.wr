@@ -1,6 +1,6 @@
 <SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv7" name="Visitatore" landmarks="sv7#area29 sv7#area28" homePage="sv7#area28#page45">
   <OperationUnits>
-    <LoginUnit gr:x="135" gr:y="280" id="sv7#lgu6" name="Login" landmark="false">
+    <LoginUnit gr:x="200" gr:y="90" id="sv7#lgu6" name="Login" landmark="false">
       <KOLink id="sv7#lgu6#kln5" name="KOFlow5" to="sv7#page35#alt3#page53#mssu5" automaticCoupling="true"/>
     </LoginUnit>
   </OperationUnits>

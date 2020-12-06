@@ -11,13 +11,10 @@
     </GetUnit>
     <ModuleInstanceUnit gr:x="355" gr:y="0" id="sv6#area31#miu4" moduleId="mov3#mpkg1#opm7">
       <OKLink id="sv6#area31#miu4#oln79" to="sv6#area31#page15" name="OKFlow46" gr:bendpoints="472,166,682,-739;475,405,685,-500;471,832,681,-73"/>
-      <KOLink id="sv6#area31#miu4#kln77" name="KOFlow77" to="sv6#page110#alt15#page10#mssu18" automaticCoupling="true" codeRef="mov3#mpkg1#opm7#kocu16"/>
-      <KOLink id="sv6#area31#miu4#kln78" name="KOFlow78" to="sv6#page110#alt15#page11#mssu19" automaticCoupling="true" codeRef="mov3#mpkg1#opm7#kocu15" gr:bendpoints="156,-30,-109,210"/>
-      <KOLink id="sv6#area31#miu4#kln79" name="KOFlow79" to="sv6#page110#alt15#page112#mssu28" automaticCoupling="true" codeRef="mov3#mpkg1#opm7#kocu17" gr:bendpoints="-108,-25,12,220;-115,-56,-25,184"/>
+      <KOLink id="sv6#area31#miu4#kln77" name="KOFlow77" to="sv6#page110#alt15#page10#mssu18" automaticCoupling="true"/>
     </ModuleInstanceUnit>
     <ModuleInstanceUnit gr:x="75" gr:y="0" id="sv6#area31#miu6" moduleId="mov3#mpkg1#opm8">
-      <KOLink id="sv6#area31#miu6#kln49" to="sv6#page110#alt15#page112#mssu28" name="KOFlow69" codeRef="mov3#mpkg1#opm8#kocu18" automaticCoupling="true" gr:bendpoints="63,-37,-102,223"/>
-      <KOLink id="sv6#area31#miu6#kln64" to="sv6#page110#alt15#page111#mssu27" name="KOFlow68" codeRef="mov3#mpkg1#opm8#kocu19" gr:bendpoints="-42,-133,-62,142" automaticCoupling="true"/>
+      <KOLink id="sv6#area31#miu6#kln64" to="sv6#page110#alt15#page111#mssu27" name="KOFlow68" automaticCoupling="true"/>
       <OKLink id="sv6#area31#miu6#oln95" to="sv6#area31#page15" name="OKFlow69" gr:bendpoints="-255,112,-330,-778;-256,791,-331,-99"/>
     </ModuleInstanceUnit>
     <GetUnit gr:x="50" gr:y="1035" id="sv6#area31#gtu13" name="Recupera dati utenti" contextParameters="UserCtxParam">

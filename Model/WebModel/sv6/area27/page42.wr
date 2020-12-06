@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="60" id="sv6#area27#page42" name="Profilo" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv6#area27#page42" name="Profilo" landmark="true" linkOrder="sv6#area27#page42#ln256">
   <ContentUnits>
     <GetUnit gr:x="0" gr:y="20" id="sv6#area27#page42#gtu1" name="Dati utente" contextParameters="UserCtxParam">
       <Link id="sv6#area27#page42#gtu1#ln66" name="Flow66" to="sv6#area27#page42#dau16" type="transport" validate="true">
@@ -25,6 +25,7 @@
         <LinkParameter id="sv6#area27#page42#dau16#ln21#par60" name="nome_nome" source="data.User#att3" target="sv6#area27#page42#enu3#fld43_slot"/>
         <LinkParameter id="sv6#area27#page42#dau16#ln21#par61" name="numero di telefono_numero di telefono" source="data.User#att11" target="sv6#area27#page42#enu3#fld48_slot"/>
         <LinkParameter id="sv6#area27#page42#dau16#ln21#par89" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area27#page42#gtu1#ln66#par88" passing="true"/>
+        <LinkParameter id="sv6#area27#page42#dau16#ln21#par2661" name="UtenteToIndirizzo.oid_PASSING" source="data.rel11#role21_ent16#att64" passing="true"/>
       </Link>
     </DataUnit>
     <SelectorUnit gr:x="10" gr:y="275" id="sv6#area27#page42#seu40" name="Seleziona indirizzo" entity="ent16" distinctAttributes="ent16#att64 ent16#att31 ent16#att32 ent16#att76" gr:showAllParts="true">
@@ -35,7 +36,7 @@
       <Link id="sv6#area27#page42#seu40#ln53" name="Flow53" to="sv6#area27#page42#dau13" type="transport" validate="true" automaticCoupling="true"/>
       <Link id="sv6#area27#page42#seu40#ln56" name="Flow56" to="sv6#area27#page42#seu9" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <EntryUnit id="sv6#area27#page42#enu3" name="Modifica dati" gr:x="385" gr:y="215" gr:showAllParts="true" linkOrder="sv6#area27#page42#enu3#ln101">
+    <EntryUnit id="sv6#area27#page42#enu3" name="Modifica dati" gr:x="385" gr:y="215" gr:showAllParts="true" linkOrder="sv6#area27#page42#enu3#ln280">
       <Field id="sv6#area27#page42#enu3#fld43" name="nome" type="string" modifiable="true" preloaded="true"/>
       <Field id="sv6#area27#page42#enu3#fld44" name="data di nascita" type="date" modifiable="true" preloaded="true"/>
       <Field id="sv6#area27#page42#enu3#fld45" name="via/corso/piazza" type="string" modifiable="true" preloaded="true"/>
@@ -44,19 +45,24 @@
       <Field id="sv6#area27#page42#enu3#fld49" name="email" type="string" modifiable="true" preloaded="true"/>
       <Field id="sv6#area27#page42#enu3#fld50" name="CAP" type="integer" modifiable="true" preloaded="true"/>
       <Field id="sv6#area27#page42#enu3#fld51" name="numero civico" type="integer" modifiable="true" preloaded="true"/>
-      <Link id="sv6#area27#page42#enu3#ln101" name="Flow101" to="sv6#area27#opg4#mfu14" type="normal" validate="true">
-        <LinkParameter id="sv6#area27#page42#enu3#ln101#par221" name="cognome_cognome" source="sv6#area27#page42#enu3#fld47" target="sv6#area27#opg4#mfu14.User#att6"/>
-        <LinkParameter id="sv6#area27#page42#enu3#ln101#par222" name="data di nascita_data di nascita" source="sv6#area27#page42#enu3#fld44" target="sv6#area27#opg4#mfu14.ent4#att12"/>
-        <LinkParameter id="sv6#area27#page42#enu3#ln101#par223" name="email_email" source="sv6#area27#page42#enu3#fld49" target="sv6#area27#opg4#mfu14.email"/>
-        <LinkParameter id="sv6#area27#page42#enu3#ln101#par224" name="nome_nome" source="sv6#area27#page42#enu3#fld43" target="sv6#area27#opg4#mfu14.User#att3"/>
-        <LinkParameter id="sv6#area27#page42#enu3#ln101#par225" name="numero di telefono_numero di telefono" source="sv6#area27#page42#enu3#fld48" target="sv6#area27#opg4#mfu14.User#att11"/>
-        <LinkParameter id="sv6#area27#page42#enu3#ln101#par226" name="CAP_PASSING" source="sv6#area27#page42#enu3#fld50" passing="true"/>
-        <LinkParameter id="sv6#area27#page42#enu3#ln101#par227" name="citt&#224;_PASSING" source="sv6#area27#page42#enu3#sfld5" passing="true"/>
-        <LinkParameter id="sv6#area27#page42#enu3#ln101#par228" name="numero civico_PASSING" source="sv6#area27#page42#enu3#fld51" passing="true"/>
-        <LinkParameter id="sv6#area27#page42#enu3#ln101#par229" name="via/corso/piazza_PASSING" source="sv6#area27#page42#enu3#fld45" passing="true"/>
-        <LinkParameter id="sv6#area27#page42#enu3#ln101#par232" name="oid_PASSING" sourceLinkParameter="sv6#area27#page42#dau13#ln54#par101" passing="true"/>
-      </Link>
       <SelectionField id="sv6#area27#page42#enu3#sfld5" type="string" name="citt&#224;"/>
+      <Link id="sv6#area27#page42#enu3#ln280" name="Flow280" to="sv6#area27#miu22" type="normal" validate="true">
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2635" name="CAP_CAP" source="sv6#area27#page42#enu3#fld50" target="sv6#area27#miu22.mov2#opm17#icu26#icp139"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2636" name="citt&#224;_citt&#224;" source="sv6#area27#page42#enu3#sfld5" target="sv6#area27#miu22.mov2#opm17#icu26#icp140"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2637" name="cognome_cognome" source="sv6#area27#page42#enu3#fld47" target="sv6#area27#miu22.mov2#opm17#icu26#icp147"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2638" name="data di nascita_data di nascita" source="sv6#area27#page42#enu3#fld44" target="sv6#area27#miu22.mov2#opm17#icu26#icp150"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2639" name="email_email" source="sv6#area27#page42#enu3#fld49" target="sv6#area27#miu22.mov2#opm17#icu26#icp143"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2640" name="nome_nome" source="sv6#area27#page42#enu3#fld43" target="sv6#area27#miu22.mov2#opm17#icu26#icp146"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2641" name="numero civico_numero civico" source="sv6#area27#page42#enu3#fld51" target="sv6#area27#miu22.mov2#opm17#icu26#icp142"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2642" name="numero di telefono_numero di telefono" source="sv6#area27#page42#enu3#fld48" target="sv6#area27#miu22.mov2#opm17#icu26#icp141"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2643" name="UserCtxParam.oid_PASSING_oid utente" sourceLinkParameter="sv6#area27#page42#dau16#ln21#par89" target="sv6#area27#miu22.mov2#opm17#icu26#icp151"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2644" name="-_partita IVA" sourceValue="-" target="sv6#area27#miu22.mov2#opm17#icu26#icp149"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2645" name="Cliente_utente" sourceValue="Cliente" target="sv6#area27#miu22.mov2#opm17#icu26#icp148"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2646" name="via/corso/piazza_via/corso/piazza" source="sv6#area27#page42#enu3#fld45" target="sv6#area27#miu22.mov2#opm17#icu26#icp144"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2659" name="IndirizzoToCitt&#224;.oid_PASSING_oid citt&#224; vecchia" sourceLinkParameter="sv6#area27#page42#dau13#ln54#par2657" target="sv6#area27#miu22.mov2#opm17#icu26#icp145"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2660" name="oid_PASSING_oid indirizzo" sourceLinkParameter="sv6#area27#page42#dau16#ln21#par2661" target="sv6#area27#miu22.mov2#opm17#icu26#icp153"/>
+        <LinkParameter id="sv6#area27#page42#enu3#ln280#par2662" name="oid_PASSING_oid citt&#224; nuova" sourceLinkParameter="sv6#area27#page42#seu30#ln102#par2656" target="sv6#area27#miu22.mov2#opm17#icu26#icp152"/>
+      </Link>
     </EntryUnit>
     <DataUnit gr:x="200" gr:y="150" id="sv6#area27#page42#dau13" name="Indirizzo utente" entity="ent16" gr:showAllParts="true">
       <Selector id="sv6#area27#page42#dau13#su69" defaultPolicy="fill" booleanOperator="and">
@@ -66,7 +72,7 @@
         <LinkParameter id="sv6#area27#page42#dau13#ln54#par62" name="via/piazza/corso_via/corso/piazza" source="data.ent16#att31" target="sv6#area27#page42#enu3#fld45_slot"/>
         <LinkParameter id="sv6#area27#page42#dau13#ln54#par63" name="CAP_CAP" source="data.ent16#att76" target="sv6#area27#page42#enu3#fld50_slot"/>
         <LinkParameter id="sv6#area27#page42#dau13#ln54#par66" name="civico_numero civico" source="data.ent16#att32" target="sv6#area27#page42#enu3#fld51_slot"/>
-        <LinkParameter id="sv6#area27#page42#dau13#ln54#par101" name="oid_PASSING" source="data.ent16#att64" passing="true"/>
+        <LinkParameter id="sv6#area27#page42#dau13#ln54#par2657" name="IndirizzoToCitt&#224;.oid_PASSING" source="data.rel32#role63_ent22#att27" passing="true"/>
       </Link>
     </DataUnit>
     <SelectorUnit gr:x="115" gr:y="435" id="sv6#area27#page42#seu9" name="Seleziona citt&#224; attuale" entity="ent22" gr:showAllParts="true" distinctAttributes="ent22#att29">
@@ -105,6 +111,7 @@
       <Link id="sv6#area27#page42#seu30#ln102" name="Flow102" to="sv6#area27#page42#enu3" type="transport" validate="true">
         <LinkParameter id="sv6#area27#page42#seu30#ln102#par239" name="oid_citt&#224; [output]" source="ent22#att27Array" target="sv6#area27#page42#enu3#sfld5_output"/>
         <LinkParameter id="sv6#area27#page42#seu30#ln102#par240" name="nome_citt&#224; [label]" source="ent22#att29Array" target="sv6#area27#page42#enu3#sfld5_label"/>
+        <LinkParameter id="sv6#area27#page42#seu30#ln102#par2656" name="oid_PASSING" source="ent22#att27Array" passing="true"/>
       </Link>
     </SelectorUnit>
     <MultiChoiceIndexUnit gr:x="255" gr:y="640" id="sv6#area27#page42#mciu1" name="Preferenze tipologia cucina" entity="ent10" displayAttributes="ent10#att28" gr:showAllParts="true" linkOrder="sv6#area27#page42#mciu1#ln192">
@@ -151,7 +158,6 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv6#area27#page42#enu3">
-          <layout:Link link="sv6#area27#page42#enu3#ln101"/>
           <layout:Field field="sv6#area27#page42#enu3#fld43"/>
           <layout:Field field="sv6#area27#page42#enu3#fld44"/>
           <layout:Field field="sv6#area27#page42#enu3#fld45"/>
@@ -161,6 +167,7 @@
           <layout:Field field="sv6#area27#page42#enu3#fld50"/>
           <layout:Field field="sv6#area27#page42#enu3#fld51"/>
           <layout:Field field="sv6#area27#page42#enu3#sfld5"/>
+          <layout:Link link="sv6#area27#page42#enu3#ln280"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -260,4 +267,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv6#area27#page42#ln256" name="Flow256" to="sv6#lou2" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

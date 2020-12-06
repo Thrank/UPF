@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5#area42#opg29" name="Cambio password" transaction="true" gr:x="685" gr:y="380">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5#area42#opg29" name="Cambio password" transaction="true" gr:x="660" gr:y="365">
   <OperationUnits>
     <ModifyUnit id="sv5#area42#opg29#mfu28" name="Aggiorna password" gr:x="0" gr:y="0" entity="ent12">
       <Selector id="sv5#area42#opg29#mfu28#su246" defaultPolicy="fill" booleanOperator="and">

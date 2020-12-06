@@ -1,0 +1,115 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="mov2#opm17" name="Modifica profilo">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="-375" gr:y="145" id="mov2#opm17#icu26" linkOrder="mov2#opm17#icu26#ln279">
+      <InputCollectorParameter id="mov2#opm17#icu26#icp139" name="CAP"/>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp140" name="citt&#224;"/>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp141" name="numero di telefono"/>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp142" name="numero civico"/>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp143" name="email"/>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp144" name="via/corso/piazza"/>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp145" name="oid citt&#224; vecchia"/>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp146" name="nome"/>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp147" name="cognome"/>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp148" name="utente"/>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp149" name="partita IVA"/>
+      <Link id="mov2#opm17#icu26#ln257" name="Flow257" to="mov2#opm17#switch6" type="transport" validate="true" gr:bendpoints="98,414,-1147,334;1246,414,1,334">
+        <LinkParameter id="mov2#opm17#icu26#ln257#par2490" name="utente_Switch" source="mov2#opm17#icu26#icp148" target="mov2#opm17#switch6.switch"/>
+      </Link>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp152" name="oid citt&#224; nuova"/>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp151" name="oid utente"/>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp150" name="data di nascita"/>
+      <Link id="mov2#opm17#icu26#ln278" name="Flow278" to="mov2#opm17#switch5" type="transport" validate="true">
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2540" name="utente_Switch" source="mov2#opm17#icu26#icp148" target="mov2#opm17#switch5.switch"/>
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2541" name="CAP_PASSING" source="mov2#opm17#icu26#icp139" passing="true"/>
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2542" name="citt&#224;_PASSING" source="mov2#opm17#icu26#icp140" passing="true"/>
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2543" name="cognome_PASSING" source="mov2#opm17#icu26#icp147" passing="true"/>
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2544" name="data di nascita_PASSING" source="mov2#opm17#icu26#icp150" passing="true"/>
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2545" name="email_PASSING" source="mov2#opm17#icu26#icp143" passing="true"/>
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2546" name="nome_PASSING" source="mov2#opm17#icu26#icp146" passing="true"/>
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2547" name="numero civico_PASSING" source="mov2#opm17#icu26#icp142" passing="true"/>
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2548" name="numero di telefono_PASSING" source="mov2#opm17#icu26#icp141" passing="true"/>
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2551" name="oid utente_PASSING" source="mov2#opm17#icu26#icp151" passing="true"/>
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2552" name="partita IVA_PASSING" source="mov2#opm17#icu26#icp149" passing="true"/>
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2553" name="utente_PASSING" source="mov2#opm17#icu26#icp148" passing="true"/>
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2554" name="via/corso/piazza_PASSING" source="mov2#opm17#icu26#icp144" passing="true"/>
+        <LinkParameter id="mov2#opm17#icu26#ln278#par2604" name="oid indirizzo_PASSING" source="mov2#opm17#icu26#icp153" passing="true"/>
+      </Link>
+      <InputCollectorParameter id="mov2#opm17#icu26#icp153" name="oid indirizzo"/>
+      <Link id="mov2#opm17#icu26#ln279" name="Flow279" to="mov2#opm17#opg41#mfu5" type="transport" validate="true" gr:bendpoints="83,-292,-587,-337;664,-291,-6,-336">
+        <LinkParameter id="mov2#opm17#icu26#ln279#par2630" name="oid citt&#224; nuova_PASSING" source="mov2#opm17#icu26#icp152" passing="true"/>
+        <LinkParameter id="mov2#opm17#icu26#ln279#par2631" name="oid citt&#224; vecchia_PASSING" source="mov2#opm17#icu26#icp145" passing="true"/>
+      </Link>
+    </InputCollectorUnit>
+    <KOCollectorUnit gr:x="1255" gr:y="0" id="mov2#opm17#kocu39" name="KO modifica"/>
+    <OKCollectorUnit gr:x="1255" gr:y="350" id="mov2#opm17#okcu38" name="OK cliente"/>
+    <OKCollectorUnit gr:x="1255" gr:y="440" id="mov2#opm17#okcu39" name="OK ristoratore"/>
+    <OKCollectorUnit gr:x="1255" gr:y="525" id="mov2#opm17#okcu40" name="OK amministratore"/>
+    <OKCollectorUnit gr:x="1255" gr:y="245" id="mov2#opm17#okcu41" name="OK moderatore"/>
+    <SwitchUnit gr:x="-90" gr:y="230" id="mov2#opm17#switch5" name="Switch utente">
+      <Case value="Amministratore"/>
+      <Case value="Cliente"/>
+      <Case value="Moderatore"/>
+      <Case value="Ristoratore"/>
+      <OKLink id="mov2#opm17#switch5#oln343" name="OKFlow343" to="mov2#opm17#opg41#mfu4" code="Cliente">
+        <LinkParameter id="mov2#opm17#switch5#oln343#par2555" name="cognome_PASSING_cognome" sourceLinkParameter="mov2#opm17#icu26#ln278#par2543" target="mov2#opm17#opg41#mfu4.User#att6"/>
+        <LinkParameter id="mov2#opm17#switch5#oln343#par2556" name="data di nascita_PASSING_data di nascita" sourceLinkParameter="mov2#opm17#icu26#ln278#par2544" target="mov2#opm17#opg41#mfu4.ent4#att12"/>
+        <LinkParameter id="mov2#opm17#switch5#oln343#par2557" name="email_PASSING_email" sourceLinkParameter="mov2#opm17#icu26#ln278#par2545" target="mov2#opm17#opg41#mfu4.email"/>
+        <LinkParameter id="mov2#opm17#switch5#oln343#par2558" name="oid utente_PASSING_KeyCondition56 [oid]" sourceLinkParameter="mov2#opm17#icu26#ln278#par2551" target="mov2#opm17#opg41#mfu4#su372#kcond325.userOID"/>
+        <LinkParameter id="mov2#opm17#switch5#oln343#par2559" name="nome_PASSING_nome" sourceLinkParameter="mov2#opm17#icu26#ln278#par2546" target="mov2#opm17#opg41#mfu4.User#att3"/>
+        <LinkParameter id="mov2#opm17#switch5#oln343#par2560" name="numero di telefono_PASSING_numero di telefono" sourceLinkParameter="mov2#opm17#icu26#ln278#par2548" target="mov2#opm17#opg41#mfu4.User#att11"/>
+        <LinkParameter id="mov2#opm17#switch5#oln343#par2561" name="CAP_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2541" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln343#par2562" name="citt&#224;_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2542" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln343#par2563" name="numero civico_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2547" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln343#par2566" name="via/corso/piazza_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2554" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln343#par2605" name="oid indirizzo_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2604" passing="true"/>
+      </OKLink>
+      <OKLink id="mov2#opm17#switch5#oln344" name="OKFlow344" to="mov2#opm17#opg41#mfu12" code="Moderatore">
+        <LinkParameter id="mov2#opm17#switch5#oln344#par2567" name="CAP_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2541" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln344#par2568" name="citt&#224;_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2542" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln344#par2569" name="numero civico_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2547" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln344#par2572" name="via/corso/piazza_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2554" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln344#par2573" name="cognome_PASSING_cognome" sourceLinkParameter="mov2#opm17#icu26#ln278#par2543" target="mov2#opm17#opg41#mfu12.User#att6"/>
+        <LinkParameter id="mov2#opm17#switch5#oln344#par2574" name="email_PASSING_email" sourceLinkParameter="mov2#opm17#icu26#ln278#par2545" target="mov2#opm17#opg41#mfu12.email"/>
+        <LinkParameter id="mov2#opm17#switch5#oln344#par2575" name="oid utente_PASSING_KeyCondition333 [oid]" sourceLinkParameter="mov2#opm17#icu26#ln278#par2551" target="mov2#opm17#opg41#mfu12#su404#kcond336.userOID"/>
+        <LinkParameter id="mov2#opm17#switch5#oln344#par2576" name="nome_PASSING_nome" sourceLinkParameter="mov2#opm17#icu26#ln278#par2546" target="mov2#opm17#opg41#mfu12.User#att3"/>
+        <LinkParameter id="mov2#opm17#switch5#oln344#par2577" name="numero di telefono_PASSING_numero di telefono" sourceLinkParameter="mov2#opm17#icu26#ln278#par2548" target="mov2#opm17#opg41#mfu12.User#att11"/>
+        <LinkParameter id="mov2#opm17#switch5#oln344#par2606" name="oid indirizzo_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2604" passing="true"/>
+      </OKLink>
+      <OKLink id="mov2#opm17#switch5#oln345" name="OKFlow345" to="mov2#opm17#opg41#mfu11" code="Amministratore">
+        <LinkParameter id="mov2#opm17#switch5#oln345#par2578" name="cognome_PASSING_cognome" sourceLinkParameter="mov2#opm17#icu26#ln278#par2543" target="mov2#opm17#opg41#mfu11.User#att6"/>
+        <LinkParameter id="mov2#opm17#switch5#oln345#par2579" name="email_PASSING_email" sourceLinkParameter="mov2#opm17#icu26#ln278#par2545" target="mov2#opm17#opg41#mfu11.email"/>
+        <LinkParameter id="mov2#opm17#switch5#oln345#par2580" name="oid utente_PASSING_KeyCondition331 [oid]" sourceLinkParameter="mov2#opm17#icu26#ln278#par2551" target="mov2#opm17#opg41#mfu11#su403#kcond335.userOID"/>
+        <LinkParameter id="mov2#opm17#switch5#oln345#par2581" name="nome_PASSING_nome" sourceLinkParameter="mov2#opm17#icu26#ln278#par2546" target="mov2#opm17#opg41#mfu11.User#att3"/>
+        <LinkParameter id="mov2#opm17#switch5#oln345#par2582" name="numero di telefono_PASSING_numero di telefono" sourceLinkParameter="mov2#opm17#icu26#ln278#par2548" target="mov2#opm17#opg41#mfu11.User#att11"/>
+        <LinkParameter id="mov2#opm17#switch5#oln345#par2583" name="CAP_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2541" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln345#par2584" name="citt&#224;_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2542" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln345#par2585" name="numero civico_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2547" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln345#par2588" name="via/corso/piazza_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2554" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln345#par2607" name="oid indirizzo_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2604" passing="true"/>
+      </OKLink>
+      <OKLink id="mov2#opm17#switch5#oln346" name="OKFlow346" to="mov2#opm17#opg41#mfu10" gr:bendpoints="-56,47,-281,-253;-51,222,-276,-78" code="Ristoratore">
+        <LinkParameter id="mov2#opm17#switch5#oln346#par2589" name="cognome_PASSING_cognome" sourceLinkParameter="mov2#opm17#icu26#ln278#par2543" target="mov2#opm17#opg41#mfu10.User#att6"/>
+        <LinkParameter id="mov2#opm17#switch5#oln346#par2590" name="email_PASSING_email" sourceLinkParameter="mov2#opm17#icu26#ln278#par2545" target="mov2#opm17#opg41#mfu10.email"/>
+        <LinkParameter id="mov2#opm17#switch5#oln346#par2591" name="oid utente_PASSING_KeyCondition332 [oid]" sourceLinkParameter="mov2#opm17#icu26#ln278#par2551" target="mov2#opm17#opg41#mfu10#su402#kcond334.userOID"/>
+        <LinkParameter id="mov2#opm17#switch5#oln346#par2592" name="nome_PASSING_nome" sourceLinkParameter="mov2#opm17#icu26#ln278#par2546" target="mov2#opm17#opg41#mfu10.User#att3"/>
+        <LinkParameter id="mov2#opm17#switch5#oln346#par2593" name="numero di telefono_PASSING_numero di telefono" sourceLinkParameter="mov2#opm17#icu26#ln278#par2548" target="mov2#opm17#opg41#mfu10.User#att11"/>
+        <LinkParameter id="mov2#opm17#switch5#oln346#par2594" name="partita IVA_PASSING_partita iva" sourceLinkParameter="mov2#opm17#icu26#ln278#par2552" target="mov2#opm17#opg41#mfu10.ent6#att18"/>
+        <LinkParameter id="mov2#opm17#switch5#oln346#par2595" name="CAP_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2541" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln346#par2596" name="citt&#224;_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2542" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln346#par2597" name="numero civico_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2547" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln346#par2600" name="via/corso/piazza_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2554" passing="true"/>
+        <LinkParameter id="mov2#opm17#switch5#oln346#par2608" name="oid indirizzo_PASSING" sourceLinkParameter="mov2#opm17#icu26#ln278#par2604" passing="true"/>
+      </OKLink>
+    </SwitchUnit>
+    <SwitchUnit id="mov2#opm17#switch6" name="Switch utente pagina ritorno" gr:x="915" gr:y="310">
+      <Case value="Amministratore"/>
+      <Case value="Cliente"/>
+      <Case value="Moderatore"/>
+      <Case value="Ristoratore"/>
+      <OKLink id="mov2#opm17#switch6#oln338" name="OKFlow338" to="mov2#opm17#okcu41" automaticCoupling="true" code="Moderatore"/>
+      <OKLink id="mov2#opm17#switch6#oln339" name="OKFlow339" to="mov2#opm17#okcu38" automaticCoupling="true" code="Cliente"/>
+      <OKLink id="mov2#opm17#switch6#oln340" name="OKFlow340" to="mov2#opm17#okcu39" automaticCoupling="true" code="Ristoratore"/>
+      <OKLink id="mov2#opm17#switch6#oln341" name="OKFlow341" to="mov2#opm17#okcu40" automaticCoupling="true" code="Amministratore" gr:bendpoints="30,112,-345,-113"/>
+    </SwitchUnit>
+  </OperationUnits>
+</OperationModule>

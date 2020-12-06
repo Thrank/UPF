@@ -86,28 +86,7 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv7#page35#alt3#page55">
-          <layout:Grid containerType="grid">
-            <layout:Row>
-              <layout:Cell colspan="12">
-                <layout:Unit unitId="sv7#page35#alt3#page55#mssu8"/>
-              </layout:Cell>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-              <layout:Cell/>
-            </layout:Row>
-          </layout:Grid>
-        </layout:SubPage>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
@@ -130,11 +109,6 @@
     <Page gr:x="155" gr:y="0" id="sv7#page35#alt3#page54" name="Errore iscrizione">
       <ContentUnits>
         <MultiMessageUnit gr:x="0" gr:y="0" id="sv7#page35#alt3#page54#mssu7" name="Errore username presente"/>
-      </ContentUnits>
-    </Page>
-    <Page gr:x="0" gr:y="120" id="sv7#page35#alt3#page55" name="Errore generico">
-      <ContentUnits>
-        <MultiMessageUnit gr:x="0" gr:y="0" id="sv7#page35#alt3#page55#mssu8" name="Errore generico"/>
       </ContentUnits>
     </Page>
   </Alternative>
