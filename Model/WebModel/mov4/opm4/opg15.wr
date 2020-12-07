@@ -25,7 +25,9 @@
       <Selector id="mov4#opm4#opg15#dlu5#su123" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov4#opm4#opg15#dlu5#su123#kcond97" name="KeyCondition90" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="mov4#opm4#opg15#dlu5#oln102" name="OKFlow94" to="mov4#opm4#switch4"/>
+      <OKLink id="mov4#opm4#opg15#dlu5#oln102" name="OKFlow94" to="mov4#opm4#switch4">
+        <LinkParameter id="mov4#opm4#opg15#dlu5#oln102#par155" name="Target oid [Utente]_PASSING" sourceLinkParameter="mov4#opm4#opg15#dcnu21#oln101#par437" passing="true"/>
+      </OKLink>
     </DeleteUnit>
     <DeleteUnit id="mov4#opm4#opg15#dlu6" name="Rimuovi moderatore" gr:x="420" gr:y="150" entity="ent13">
       <Selector id="mov4#opm4#opg15#dlu6#su124" defaultPolicy="fill" booleanOperator="and">

@@ -1,0 +1,133 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="640" gr:y="0" id="sv9#area47#opg1" name="Elimina piatto" transaction="true">
+  <OperationUnits>
+    <LoopUnit gr:x="40" gr:y="150" id="sv9#area47#opg1#lpu1" name="Ciclo sconnessioni">
+      <SecondaryArray id="sv9#area47#opg1#lpu1#lsa1" name="categorie piatto"/>
+      <SecondaryArray id="sv9#area47#opg1#lpu1#lsa2" name="allergeni"/>
+      <OKLink id="sv9#area47#opg1#lpu1#oln9" name="OKFlow9" to="sv9#area47#opg1#dcnu3" code="next">
+        <LinkParameter id="sv9#area47#opg1#lpu1#oln9#par80" name="Source oid [Piatto]_PASSING_KeyCondition7 [oid] [Piatto] [Source]" sourceLinkParameter="sv9#area47#opg1#seu7#oln8#par79" target="sv9#area47#opg1#dcnu3#su12#kcond7.ent1#att1"/>
+        <LinkParameter id="sv9#area47#opg1#lpu1#oln9#par81" name="Next Element_KeyCondition8 [oid] [Tipologia Cucina] [Target]" source="next" target="sv9#area47#opg1#dcnu3#su13#kcond8.ent10#att61"/>
+        <LinkParameter id="sv9#area47#opg1#lpu1#oln9#par82" name="Next Element (allergeni)_PASSING" source="sv9#area47#opg1#lpu1#lsa2" passing="true"/>
+        <LinkParameter id="sv9#area47#opg1#lpu1#oln9#par83" name="Next Element (categorie piatto)_PASSING" source="sv9#area47#opg1#lpu1#lsa1" passing="true"/>
+      </OKLink>
+      <OKLink id="sv9#area47#opg1#lpu1#oln13" name="OKFlow13" to="sv9#area47#opg1#seu8" gr:bendpoints="-82,52,-62,-208;-84,179,-64,-81" code="end">
+        <LinkParameter id="sv9#area47#opg1#lpu1#oln13#par148" name="Source oid [Piatto]_PASSING_piatto nell'ordine [oid]" sourceLinkParameter="sv9#area47#opg1#seu7#oln8#par79" target="sv9#area47#opg1#seu8#su22#rcond20.ent1#att1"/>
+        <LinkParameter id="sv9#area47#opg1#lpu1#oln13#par149" name="Source oid [Piatto]_PASSING" sourceLinkParameter="sv9#area47#opg1#seu7#oln8#par79" passing="true"/>
+      </OKLink>
+    </LoopUnit>
+    <DisconnectUnit gr:x="195" gr:y="0" id="sv9#area47#opg1#dcnu1" name="Sconnnetti da ristorante" relationship="rel4#role8">
+      <SourceSelector id="sv9#area47#opg1#dcnu1#su2" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area47#opg1#dcnu1#su2#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv9#area47#opg1#dcnu1#su7" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area47#opg1#dcnu1#su7#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv9#area47#opg1#dcnu1#oln5" name="OKFlow5" to="sv9#area47#opg1#seu4">
+        <LinkParameter id="sv9#area47#opg1#dcnu1#oln5#par44" name="Source oid [Piatto]_PASSING" source="sourceent1#att1" passing="true"/>
+      </OKLink>
+    </DisconnectUnit>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv9#area47#opg1#seu3" name="Seleziona ristorante" entity="ent14" distinctAttributes="ent14#att40">
+      <SortAttribute attribute="ent14#att40" order="ascending"/>
+      <Selector id="sv9#area47#opg1#seu3#su8" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv9#area47#opg1#seu3#su8#rcond3" name="piatto del ristorante" predicate="in" implied="false" role="rel4#role8"/>
+      </Selector>
+      <OKLink id="sv9#area47#opg1#seu3#oln4" name="OKFlow4" to="sv9#area47#opg1#dcnu1">
+        <LinkParameter id="sv9#area47#opg1#seu3#oln4#par41" name="oid_PASSING_KeyCondition5 [oid] [Piatto] [Source]" sourceLinkParameter="sv9#area47#page11#enu6#ln16#par19" target="sv9#area47#opg1#dcnu1#su2#kcond5.ent1#att1"/>
+        <LinkParameter id="sv9#area47#opg1#seu3#oln4#par42" name="oid_KeyCondition6 [oid] [Ristorante] [Target]" source="ent14#att40Array" target="sv9#area47#opg1#dcnu1#su7#kcond6.ent14#att40"/>
+        <LinkParameter id="sv9#area47#opg1#seu3#oln4#par43" name="oid_PASSING" sourceLinkParameter="sv9#area47#page11#enu6#ln16#par19" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit gr:x="420" gr:y="10" id="sv9#area47#opg1#seu4" name="Seleziona tipologie cucina" entity="ent10" distinctAttributes="ent10#att28">
+      <Selector id="sv9#area47#opg1#seu4#su9" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv9#area47#opg1#seu4#su9#rcond4" name="tipologie del piatto" predicate="in" implied="false" role="rel13#role26"/>
+      </Selector>
+      <SortAttribute attribute="ent10#att28" order="ascending"/>
+      <OKLink id="sv9#area47#opg1#seu4#oln6" name="OKFlow6" to="sv9#area47#opg1#seu6">
+        <LinkParameter id="sv9#area47#opg1#seu4#oln6#par52" name="oid_PASSING" source="ent10#att61Array" passing="true"/>
+        <LinkParameter id="sv9#area47#opg1#seu4#oln6#par56" name="Source oid [Piatto]_PASSING" sourceLinkParameter="sv9#area47#opg1#dcnu1#oln5#par44" passing="true"/>
+        <LinkParameter id="sv9#area47#opg1#seu4#oln6#par68" name="Source oid [Piatto]_PASSING_categorie del piatto [oid]" sourceLinkParameter="sv9#area47#opg1#dcnu1#oln5#par44" target="sv9#area47#opg1#seu6#su10#rcond9.ent1#att1"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit gr:x="415" gr:y="145" id="sv9#area47#opg1#seu6" name="Seleziona categorie piatto" entity="ent18" distinctAttributes="ent18#att51">
+      <SortAttribute attribute="ent18#att51" order="ascending"/>
+      <Selector id="sv9#area47#opg1#seu6#su10" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv9#area47#opg1#seu6#su10#rcond9" name="categorie del piatto" role="rel15#role30" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv9#area47#opg1#seu6#oln7" name="OKFlow7" to="sv9#area47#opg1#seu7">
+        <LinkParameter id="sv9#area47#opg1#seu6#oln7#par69" name="Source oid [Piatto]_PASSING_allergeni del piatto [oid]" sourceLinkParameter="sv9#area47#opg1#seu4#oln6#par56" target="sv9#area47#opg1#seu7#su11#rcond19.ent1#att1"/>
+        <LinkParameter id="sv9#area47#opg1#seu6#oln7#par70" name="oid_PASSING" source="ent18#att62Array" passing="true"/>
+        <LinkParameter id="sv9#area47#opg1#seu6#oln7#par71" name="oid_PASSING" sourceLinkParameter="sv9#area47#opg1#seu4#oln6#par52" passing="true"/>
+        <LinkParameter id="sv9#area47#opg1#seu6#oln7#par72" name="Source oid [Piatto]_PASSING" sourceLinkParameter="sv9#area47#opg1#seu4#oln6#par56" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit gr:x="255" gr:y="135" id="sv9#area47#opg1#seu7" name="elezione allergeni" entity="ent19" distinctAttributes="ent19#att56">
+      <SortAttribute attribute="ent19#att56" order="ascending"/>
+      <Selector id="sv9#area47#opg1#seu7#su11" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv9#area47#opg1#seu7#su11#rcond19" name="allergeni del piatto" role="rel16#role31" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv9#area47#opg1#seu7#oln8" name="OKFlow8" to="sv9#area47#opg1#lpu1">
+        <LinkParameter id="sv9#area47#opg1#seu7#oln8#par73" name="oid_allergeni" source="ent19#att55Array" target="sv9#area47#opg1#lpu1#lsa2"/>
+        <LinkParameter id="sv9#area47#opg1#seu7#oln8#par74" name="oid_PASSING_categorie piatto" sourceLinkParameter="sv9#area47#opg1#seu6#oln7#par71" target="sv9#area47#opg1#lpu1#lsa1"/>
+        <LinkParameter id="sv9#area47#opg1#seu7#oln8#par75" name="oid_PASSING_Input Array" sourceLinkParameter="sv9#area47#opg1#seu6#oln7#par70" target="sv9#area47#opg1#lpu1.array"/>
+        <LinkParameter id="sv9#area47#opg1#seu7#oln8#par76" name="oid_PASSING" source="ent19#att55Array" passing="true"/>
+        <LinkParameter id="sv9#area47#opg1#seu7#oln8#par77" name="oid_PASSING" sourceLinkParameter="sv9#area47#opg1#seu6#oln7#par70" passing="true"/>
+        <LinkParameter id="sv9#area47#opg1#seu7#oln8#par78" name="oid_PASSING" sourceLinkParameter="sv9#area47#opg1#seu6#oln7#par71" passing="true"/>
+        <LinkParameter id="sv9#area47#opg1#seu7#oln8#par79" name="Source oid [Piatto]_PASSING" sourceLinkParameter="sv9#area47#opg1#seu6#oln7#par72" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <DisconnectUnit gr:x="45" gr:y="245" id="sv9#area47#opg1#dcnu3" name="Sconnetti da tipologia cucina" relationship="rel13#role26">
+      <SourceSelector id="sv9#area47#opg1#dcnu3#su12" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area47#opg1#dcnu3#su12#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv9#area47#opg1#dcnu3#su13" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area47#opg1#dcnu3#su13#kcond8" name="KeyCondition8" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv9#area47#opg1#dcnu3#oln10" name="OKFlow10" to="sv9#area47#opg1#dcnu4">
+        <LinkParameter id="sv9#area47#opg1#dcnu3#oln10#par84" name="Next Element (categorie piatto)_PASSING_KeyCondition10 [oid] [Categoria Piatto] [Target]" sourceLinkParameter="sv9#area47#opg1#lpu1#oln9#par83" target="sv9#area47#opg1#dcnu4#su18#kcond10.ent18#att62"/>
+        <LinkParameter id="sv9#area47#opg1#dcnu3#oln10#par85" name="Source oid [Piatto]_KeyCondition9 [oid] [Piatto] [Source]" source="sourceent1#att1" target="sv9#area47#opg1#dcnu4#su16#kcond9.ent1#att1"/>
+        <LinkParameter id="sv9#area47#opg1#dcnu3#oln10#par86" name="Next Element (allergeni)_PASSING" sourceLinkParameter="sv9#area47#opg1#lpu1#oln9#par82" passing="true"/>
+      </OKLink>
+    </DisconnectUnit>
+    <DisconnectUnit gr:x="285" gr:y="260" id="sv9#area47#opg1#dcnu4" name="Sconnetti da categorie piatto" relationship="rel15#role30">
+      <SourceSelector id="sv9#area47#opg1#dcnu4#su16" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area47#opg1#dcnu4#su16#kcond9" name="KeyCondition9" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv9#area47#opg1#dcnu4#su18" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area47#opg1#dcnu4#su18#kcond10" name="KeyCondition10" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv9#area47#opg1#dcnu4#oln11" name="OKFlow11" to="sv9#area47#opg1#dcnu6">
+        <LinkParameter id="sv9#area47#opg1#dcnu4#oln11#par87" name="Source oid [Piatto]_KeyCondition11 [oid] [Piatto] [Source]" source="sourceent1#att1" target="sv9#area47#opg1#dcnu6#su19#kcond11.ent1#att1"/>
+        <LinkParameter id="sv9#area47#opg1#dcnu4#oln11#par147" name="Next Element (allergeni)_PASSING_KeyCondition12 [oid] [Allergene] [Target]" sourceLinkParameter="sv9#area47#opg1#dcnu3#oln10#par86" target="sv9#area47#opg1#dcnu6#su20#kcond12.ent19#att55"/>
+      </OKLink>
+    </DisconnectUnit>
+    <DisconnectUnit gr:x="520" gr:y="270" id="sv9#area47#opg1#dcnu6" name="Sconnetti da allergeni" relationship="rel16#role31">
+      <SourceSelector id="sv9#area47#opg1#dcnu6#su19" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area47#opg1#dcnu6#su19#kcond11" name="KeyCondition11" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv9#area47#opg1#dcnu6#su20" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area47#opg1#dcnu6#su20#kcond12" name="KeyCondition12" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv9#area47#opg1#dcnu6#oln12" name="OKFlow12" to="sv9#area47#opg1#lpu1" automaticCoupling="true" gr:bendpoints="-105,-72,385,73;-346,-75,144,70"/>
+    </DisconnectUnit>
+    <DeleteUnit gr:x="425" gr:y="395" id="sv9#area47#opg1#dlu1" name="Rimuovi piatto" entity="ent1">
+      <Selector id="sv9#area47#opg1#dlu1#su21" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area47#opg1#dlu1#su21#kcond13" name="KeyCondition13" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv9#area47#opg1#dlu1#oln17" name="OKFlow17" to="sv9#area47#page183#alt1#page3" automaticCoupling="true" gr:bendpoints="-352,181,503,-549"/>
+    </DeleteUnit>
+    <IsNotNullUnit gr:x="225" gr:y="425" id="sv9#area47#opg1#inn1" name="Non &#232; null">
+      <KOLink id="sv9#area47#opg1#inn1#kln22" name="KOFlow22" to="sv9#area47#opg1#dlu1">
+        <LinkParameter id="sv9#area47#opg1#inn1#kln22#par152" name="Source oid [Piatto]_PASSING_KeyCondition13 [oid]" sourceLinkParameter="sv9#area47#opg1#seu8#oln14#par151" target="sv9#area47#opg1#dlu1#su21#kcond13.ent1#att1"/>
+      </KOLink>
+      <OKLink id="sv9#area47#opg1#inn1#oln15" name="OKFlow15" to="sv9#area47#page183#alt1#page3" automaticCoupling="true"/>
+    </IsNotNullUnit>
+    <SelectorUnit gr:x="25" gr:y="400" id="sv9#area47#opg1#seu8" name="Seleziona ordini" entity="ent3">
+      <OKLink id="sv9#area47#opg1#seu8#oln14" name="OKFlow14" to="sv9#area47#opg1#inn1">
+        <LinkParameter id="sv9#area47#opg1#seu8#oln14#par150" name="oid_Input" source="ent3#att8Array" target="sv9#area47#opg1#inn1.isnotnull"/>
+        <LinkParameter id="sv9#area47#opg1#seu8#oln14#par151" name="Source oid [Piatto]_PASSING" sourceLinkParameter="sv9#area47#opg1#lpu1#oln13#par149" passing="true"/>
+      </OKLink>
+      <Selector id="sv9#area47#opg1#seu8#su22" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv9#area47#opg1#seu8#su22#rcond20" name="piatto nell'ordine" predicate="in" implied="false" role="rel8#role16"/>
+      </Selector>
+    </SelectorUnit>
+  </OperationUnits>
+</OperationGroup>

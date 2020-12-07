@@ -1,6 +1,6 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5#area52" name="Ristorante" defaultPage="sv5#area52#page190" landmarks="sv5#area52#page190" landmark="true" gr:x="70" gr:y="915">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv5#area52" name="Ristorante" defaultPage="sv5#area52#page190" landmarks="sv5#area52#page190" landmark="true" gr:x="70" gr:y="905">
   <OperationUnits>
-    <ModuleInstanceUnit id="sv5#area52#miu38" gr:x="95" gr:y="270" moduleId="mov2#mpkg2#hym2">
+    <ModuleInstanceUnit id="sv5#area52#miu38" gr:x="95" gr:y="280" moduleId="mov2#mpkg2#hym2">
       <OKLink id="sv5#area52#miu38#oln136" name="Flow19" to="sv5#area52#page191#dau46" codeRef="mov2#mpkg2#hym2#okcu13" gr:bendpoints="166,-58,-474,-33">
         <LinkParameter id="sv5#area52#miu38#oln136#par1271" name="oid_Dettaglio ristorante [oid]" source="mov2#mpkg2#hym2#okcu13#ocp3" target="sv5#area52#page191#dau46#su391#kcond285.ent14#att40"/>
       </OKLink>

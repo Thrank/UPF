@@ -1,6 +1,14 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="440" id="sv5#area2#page32" name="Gestione attivit&#224;">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="755" id="sv5#area2#page32" name="Gestione attivit&#224;">
   <ContentUnits>
-    <ScrollerUnit gr:x="0" gr:y="0" id="sv5#area2#page32#scu21" name="Scorri attivit&#224;" useCountQuery="false" entity="ent21"/>
+    <ScrollerUnit gr:x="0" gr:y="10" id="sv5#area2#page32#scu21" name="Scorri attivit&#224;" useCountQuery="false" entity="ent21" linkOrder="sv5#area2#page32#scu21#ln31">
+      <Link id="sv5#area2#page32#scu21#ln31" name="Flow31" to="sv5#area2#page32#inu12" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
+    <IndexUnit gr:x="195" gr:y="0" id="sv5#area2#page32#inu12" name="Elenco attivit&#224; in attesa" entity="ent21" displayAttributes="ent21#att81 ent21#att9">
+      <Selector id="sv5#area2#page32#inu12#su25" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv5#area2#page32#inu12#su25#kcond16" name="KeyCondition16" predicate="in" implied="false"/>
+      </Selector>
+      <SortAttribute attribute="ent21#att81" order="ascending"/>
+    </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -11,6 +19,25 @@
           <layout:Link link="sv5#area2#page32#scu21Block"/>
           <layout:Link link="sv5#area2#page32#scu21Next"/>
           <layout:Link link="sv5#area2#page32#scu21Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area2#page32#inu12">
+          <layout:Attribute attribute="ent21#att81"/>
+          <layout:Attribute attribute="ent21#att9"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

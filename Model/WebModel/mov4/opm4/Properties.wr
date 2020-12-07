@@ -11,12 +11,16 @@
         <LinkParameter id="mov4#opm4#icu4#ln130#par439" name="utente_Switch" source="mov4#opm4#icu4#icp29" target="mov4#opm4#switch4.switch"/>
       </Link>
     </InputCollectorUnit>
-    <OKCollectorUnit gr:x="995" gr:y="350" id="mov4#opm4#okcu4" name="OK Port4"/>
+    <OKCollectorUnit gr:x="1025" gr:y="325" id="mov4#opm4#okcu4" name="OK Port4"/>
     <SwitchUnit gr:x="605" gr:y="345" id="mov4#opm4#switch4" name="Switch4">
       <Case value="Amministratore"/>
       <Case value="Moderatore"/>
-      <OKLink id="mov4#opm4#switch4#oln105" name="OKFlow105" to="mov4#opm4#opg15#dlu6" automaticCoupling="true" code="Moderatore"/>
-      <OKLink id="mov4#opm4#switch4#oln106" name="OKFlow106" to="mov4#opm4#opg15#dlu8" automaticCoupling="true" code="Amministratore"/>
+      <OKLink id="mov4#opm4#switch4#oln105" name="OKFlow105" to="mov4#opm4#opg15#dlu6" code="Moderatore">
+        <LinkParameter id="mov4#opm4#switch4#oln105#par156" name="Target oid [Utente]_PASSING_KeyCondition91 [oid]" sourceLinkParameter="mov4#opm4#opg15#dlu5#oln102#par155" target="mov4#opm4#opg15#dlu6#su124#kcond98.userOID"/>
+      </OKLink>
+      <OKLink id="mov4#opm4#switch4#oln106" name="OKFlow106" to="mov4#opm4#opg15#dlu8" code="Amministratore">
+        <LinkParameter id="mov4#opm4#switch4#oln106#par157" name="Target oid [Utente]_PASSING_KeyCondition99 [oid]" sourceLinkParameter="mov4#opm4#opg15#dlu5#oln102#par155" target="mov4#opm4#opg15#dlu8#su127#kcond99.userOID"/>
+      </OKLink>
     </SwitchUnit>
   </OperationUnits>
 </OperationModule>

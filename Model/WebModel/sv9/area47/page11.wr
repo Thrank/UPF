@@ -1,8 +1,9 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="220" gr:y="0" id="sv9#area47#page11" name="Elimina piatto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="220" gr:y="520" id="sv9#area47#page11" name="Elimina piatto">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv9#area47#page11#enu6" name="Conferma eliminazione piatto" linkOrder="sv9#area47#page11#enu6#ln72">
-      <Link id="sv9#area47#page11#enu6#ln72" name="Flow72" to="sv9#opg4#seu7" type="normal" validate="true">
-        <LinkParameter id="sv9#area47#page11#enu6#ln72#par218" name="oid_PASSING" sourceLinkParameter="sv9#area47#page183#alt1#page3#inu9#ln71#par217" passing="true"/>
+    <EntryUnit gr:x="0" gr:y="0" id="sv9#area47#page11#enu6" name="Conferma eliminazione piatto" linkOrder="sv9#area47#page11#enu6#ln16">
+      <Link id="sv9#area47#page11#enu6#ln16" name="Flow16" to="sv9#area47#opg1#seu3" type="normal" validate="true">
+        <LinkParameter id="sv9#area47#page11#enu6#ln16#par18" name="oid_PASSING_piatto del ristorante [oid]" sourceLinkParameter="sv9#area47#page183#alt1#page3#inu9#ln71#par217" target="sv9#area47#opg1#seu3#su8#rcond3.ent1#att1"/>
+        <LinkParameter id="sv9#area47#page11#enu6#ln16#par19" name="oid_PASSING" sourceLinkParameter="sv9#area47#page183#alt1#page3#inu9#ln71#par217" passing="true"/>
       </Link>
     </EntryUnit>
   </ContentUnits>
@@ -10,7 +11,7 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv9#area47#page11#enu6">
-          <layout:Link link="sv9#area47#page11#enu6#ln72"/>
+          <layout:Link link="sv9#area47#page11#enu6#ln16"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

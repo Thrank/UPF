@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="365" gr:y="0" id="sv5#area2#page36" name="Conferma rimozione utente">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="360" gr:y="0" id="sv5#area2#page36" name="Conferma rimozione utente">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -101,7 +101,7 @@
         </EntryUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="25" gr:y="215" id="sv5#area2#page36#alt7#page39" name="Moderatore">
+    <Page gr:x="0" gr:y="215" id="sv5#area2#page36#alt7#page39" name="Moderatore">
       <ContentUnits>
         <EntryUnit gr:x="0" gr:y="0" id="sv5#area2#page36#alt7#page39#enu11" name="Conferma rimozione moderatore" linkOrder="sv5#area2#page36#alt7#page39#enu11#ln128">
           <Link id="sv5#area2#page36#alt7#page39#enu11#ln128" name="Flow128" to="sv5#miu13" type="normal" validate="true">

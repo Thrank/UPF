@@ -1,0 +1,78 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov4#opm1#opg4" name="Aggiungi nuovo utente interno" transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <CreateUnit id="mov4#opm1#opg4#cru7" name="Aggiungi amministratore" gr:showAllParts="false" gr:x="185" gr:y="5" entity="ent12">
+      <OKLink id="mov4#opm1#opg4#cru7#oln24" name="OKFlow20" to="mov4#opm1#opg4#cru10">
+        <LinkParameter id="mov4#opm1#opg4#cru7#oln24#par196" name="CAP predefinito_CAP" target="mov4#opm1#opg4#cru10.ent16#att76" sourceValue="CAP predefinito"/>
+        <LinkParameter id="mov4#opm1#opg4#cru7#oln24#par197" name="numero civico predefinito_civico" target="mov4#opm1#opg4#cru10.ent16#att32" sourceValue="numero civico predefinito"/>
+        <LinkParameter id="mov4#opm1#opg4#cru7#oln24#par198" name="via/piazza/corso predefinito_via/piazza/corso" target="mov4#opm1#opg4#cru10.ent16#att31" sourceValue="via/piazza/corso predefinito"/>
+        <LinkParameter id="mov4#opm1#opg4#cru7#oln24#par199" name="oid_PASSING" source="userOIDArray" passing="true"/>
+      </OKLink>
+      <KOLink id="mov4#opm1#opg4#cru7#kln27" name="KOFlow27" to="mov4#opm1#kocu4" automaticCoupling="true" gr:bendpoints="-7,-54,-642,-114;454,-55,-181,-115"/>
+    </CreateUnit>
+    <SwitchUnit id="mov4#opm1#opg4#switch3" name="Ruolo" gr:x="0" gr:y="65">
+      <OKLink id="mov4#opm1#opg4#switch3#oln25" name="OKFlow2" to="mov4#opm1#opg4#cru7" code="amministratore">
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln25#par200" name="e-mail_PASSING_email" sourceLinkParameter="mov4#opm1#icu1#oln23#par179" target="mov4#opm1#opg4#cru7.email"/>
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln25#par201" name="password_PASSING_password" sourceLinkParameter="mov4#opm1#icu1#oln23#par180" target="mov4#opm1#opg4#cru7.password"/>
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln25#par202" name="username_PASSING_username" sourceLinkParameter="mov4#opm1#icu1#oln23#par181" target="mov4#opm1#opg4#cru7.userName"/>
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln25#par203" name="cognome predefinito_cognome" target="mov4#opm1#opg4#cru7.User#att6" sourceValue="cognome predefinito"/>
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln25#par208" name="nome predefinito_nome" target="mov4#opm1#opg4#cru7.User#att3" sourceValue="nome predefinito"/>
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln25#par209" name="numero di telefono predefinito_numero di telefono" target="mov4#opm1#opg4#cru7.User#att11" sourceValue="numero di telefono predefinito"/>
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln25#par210" name="false_ban" target="mov4#opm1#opg4#cru7.User#att17" sourceValue="false"/>
+      </OKLink>
+      <OKLink id="mov4#opm1#opg4#switch3#oln26" name="OKFlow3" to="mov4#opm1#opg4#cru8" code="moderatore">
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln26#par211" name="e-mail_PASSING_email" sourceLinkParameter="mov4#opm1#icu1#oln23#par179" target="mov4#opm1#opg4#cru8.email"/>
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln26#par213" name="password_PASSING_password" sourceLinkParameter="mov4#opm1#icu1#oln23#par180" target="mov4#opm1#opg4#cru8.password"/>
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln26#par214" name="username_PASSING_username" sourceLinkParameter="mov4#opm1#icu1#oln23#par181" target="mov4#opm1#opg4#cru8.userName"/>
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln26#par215" name="cognome predefinito_cognome" target="mov4#opm1#opg4#cru8.User#att6" sourceValue="cognome predefinito"/>
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln26#par216" name="nome predefinito_nome" target="mov4#opm1#opg4#cru8.User#att3" sourceValue="nome predefinito"/>
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln26#par218" name="numero di telefono predefinito_numero di telefono" target="mov4#opm1#opg4#cru8.User#att11" sourceValue="numero di telefono predefinito"/>
+        <LinkParameter id="mov4#opm1#opg4#switch3#oln26#par219" name="false_ban" target="mov4#opm1#opg4#cru8.User#att17" sourceValue="false"/>
+      </OKLink>
+      <Case value="amministratore"/>
+      <Case value="moderatore"/>
+    </SwitchUnit>
+    <CreateUnit id="mov4#opm1#opg4#cru8" name="Aggiungi moderatore" gr:x="190" gr:y="125" entity="ent13">
+      <OKLink id="mov4#opm1#opg4#cru8#oln27" name="OKFlow18" to="mov4#opm1#opg4#cru9">
+        <LinkParameter id="mov4#opm1#opg4#cru8#oln27#par220" name="CAP predefinito_CAP" target="mov4#opm1#opg4#cru9.ent16#att76" sourceValue="CAP predefinito"/>
+        <LinkParameter id="mov4#opm1#opg4#cru8#oln27#par221" name="numero civico predefinito_civico" target="mov4#opm1#opg4#cru9.ent16#att32" sourceValue="numero civico predefinito"/>
+        <LinkParameter id="mov4#opm1#opg4#cru8#oln27#par222" name="via/piazza/corso predefinito_via/piazza/corso" target="mov4#opm1#opg4#cru9.ent16#att31" sourceValue="via/piazza/corso predefinito"/>
+        <LinkParameter id="mov4#opm1#opg4#cru8#oln27#par223" name="oid_PASSING" source="userOIDArray" passing="true"/>
+      </OKLink>
+      <KOLink id="mov4#opm1#opg4#cru8#kln24" name="KOFlow24" to="mov4#opm1#kocu4" automaticCoupling="true" gr:bendpoints="1,70,-639,130;449,74,-191,134"/>
+    </CreateUnit>
+    <CreateUnit id="mov4#opm1#opg4#cru9" name="Aggiungi indirizzo" gr:x="400" gr:y="130" entity="ent16">
+      <OKLink id="mov4#opm1#opg4#cru9#oln28" name="OKFlow19" to="mov4#opm1#opg4#cnu4">
+        <LinkParameter id="mov4#opm1#opg4#cru9#oln28#par224" name="oid_KeyCondition17 [oid] [Indirizzo] [Target]" source="ent16#att64Array" target="mov4#opm1#opg4#cnu4#su30#kcond21.ent16#att64"/>
+        <LinkParameter id="mov4#opm1#opg4#cru9#oln28#par225" name="oid_PASSING_KeyCondition2 [oid] [Utente] [Source]" sourceLinkParameter="mov4#opm1#opg4#cru8#oln27#par223" target="mov4#opm1#opg4#cnu4#su29#kcond20.userOID"/>
+      </OKLink>
+      <KOLink id="mov4#opm1#opg4#cru9#kln25" name="KOFlow25" to="mov4#opm1#kocu4" automaticCoupling="true" gr:bendpoints="2,60,-438,125;243,65,-197,130"/>
+    </CreateUnit>
+    <ConnectUnit id="mov4#opm1#opg4#cnu4" name="Connetti a indirizzo" gr:x="580" gr:y="115" relationship="rel11#role21">
+      <SourceSelector id="mov4#opm1#opg4#cnu4#su29" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov4#opm1#opg4#cnu4#su29#kcond20" name="KeyCondition2" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov4#opm1#opg4#cnu4#su30" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov4#opm1#opg4#cnu4#su30#kcond21" name="KeyCondition17" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov4#opm1#opg4#cnu4#oln34" name="OKFlow34" to="mov4#opm1#okcu1" automaticCoupling="true"/>
+      <KOLink id="mov4#opm1#opg4#cnu4#kln31" name="KOFlow31" to="mov4#opm1#kocu5" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit id="mov4#opm1#opg4#cnu5" name="Connetti a indirizzo" gr:x="580" gr:y="0" relationship="rel11#role21">
+      <SourceSelector id="mov4#opm1#opg4#cnu5#su31" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov4#opm1#opg4#cnu5#su31#kcond22" name="KeyCondition18" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov4#opm1#opg4#cnu5#su32" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov4#opm1#opg4#cnu5#su32#kcond23" name="KeyCondition19" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov4#opm1#opg4#cnu5#oln30" name="OKFlow30" to="mov4#opm1#okcu1" automaticCoupling="true"/>
+      <KOLink id="mov4#opm1#opg4#cnu5#kln30" name="KOFlow30" to="mov4#opm1#kocu5" automaticCoupling="true"/>
+    </ConnectUnit>
+    <CreateUnit id="mov4#opm1#opg4#cru10" name="Aggiungi indirizzo" gr:x="400" gr:y="10" entity="ent16">
+      <OKLink id="mov4#opm1#opg4#cru10#oln29" name="OKFlow21" to="mov4#opm1#opg4#cnu5">
+        <LinkParameter id="mov4#opm1#opg4#cru10#oln29#par226" name="oid_PASSING_KeyCondition18 [oid] [Utente] [Source]" sourceLinkParameter="mov4#opm1#opg4#cru7#oln24#par199" target="mov4#opm1#opg4#cnu5#su31#kcond22.userOID"/>
+        <LinkParameter id="mov4#opm1#opg4#cru10#oln29#par227" name="oid_KeyCondition19 [oid] [Indirizzo] [Target]" source="ent16#att64Array" target="mov4#opm1#opg4#cnu5#su32#kcond23.ent16#att64"/>
+      </OKLink>
+      <KOLink id="mov4#opm1#opg4#cru10#kln26" name="KOFlow26" to="mov4#opm1#kocu4" automaticCoupling="true" gr:bendpoints="-2,-56,-442,-111;252,-54,-188,-109"/>
+    </CreateUnit>
+  </OperationUnits>
+</OperationGroup>

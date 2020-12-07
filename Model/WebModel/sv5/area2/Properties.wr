@@ -1,3 +1,9 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="75" gr:y="1545" id="sv5#area2" name="Gestione amministratore" landmark="true" defaultPage="sv5#area2#page27">
-  <OperationUnits/>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="80" gr:y="1545" id="sv5#area2" name="Gestione amministratore" landmark="true" defaultPage="sv5#area2#page27">
+  <OperationUnits>
+    <ModuleInstanceUnit gr:x="370" gr:y="455" id="sv5#area2#miu14" moduleId="mov4#opm1">
+      <OKLink id="sv5#area2#miu14#oln35" name="OKFlow35" to="sv5#area2#page27" automaticCoupling="true" gr:bendpoints="-160,-29,155,266"/>
+      <KOLink id="sv5#area2#miu14#kln28" name="KOFlow28" to="sv5#area2#page23#alt9#page43#mssu6" automaticCoupling="true" codeRef="mov4#opm1#kocu4" gr:bendpoints="167,65,92,-140"/>
+      <KOLink id="sv5#area2#miu14#kln29" name="KOFlow29" to="sv5#area2#page23#alt9#page49#mssu8" automaticCoupling="true" gr:bendpoints="-48,83,-123,-247;-47,206,-122,-124" codeRef="mov4#opm1#kocu5"/>
+    </ModuleInstanceUnit>
+  </OperationUnits>
 </Area>

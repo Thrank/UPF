@@ -1,0 +1,40 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="390" id="sv5#area2#page6" name="Aggiungi nuovo utente interno" linkOrder="sv5#area2#page6#ln88">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv5#area2#page6#enu18" name="Aggiungi nuovo utente" fieldOrder="sv5#area2#page6#enu18#fld71 sv5#area2#page6#enu18#fld72 sv5#area2#page6#enu18#fld76 sv5#area2#page6#enu18#sfld3" gr:showAllParts="true" linkOrder="sv5#area2#page6#enu18#ln94">
+      <Field id="sv5#area2#page6#enu18#fld71" name="username" type="string" modifiable="true"/>
+      <SelectionField id="sv5#area2#page6#enu18#sfld3" name="ruolo" type="string" modifiable="true" splitOutput="true"/>
+      <Field id="sv5#area2#page6#enu18#fld76" name="e-mail" type="string" modifiable="true"/>
+      <Field id="sv5#area2#page6#enu18#fld72" name="password" type="string" modifiable="true"/>
+      <Link id="sv5#area2#page6#enu18#ln94" name="Flow94" to="sv5#area2#miu14" type="normal" validate="true">
+        <LinkParameter id="sv5#area2#page6#enu18#ln94#par3" name="e-mail_PASSING" source="sv5#area2#page6#enu18#fld76" target="sv5#area2#miu14.mov4#opm1#icu1#icp3"/>
+        <LinkParameter id="sv5#area2#page6#enu18#ln94#par7" name="password_PASSING" source="sv5#area2#page6#enu18#fld72" target="sv5#area2#miu14.mov4#opm1#icu1#icp1"/>
+        <LinkParameter id="sv5#area2#page6#enu18#ln94#par17" name="username_PASSING" source="sv5#area2#page6#enu18#fld71" target="sv5#area2#miu14.mov4#opm1#icu1#icp2"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv5#area2#page6#enu18">
+          <layout:Field field="sv5#area2#page6#enu18#fld71"/>
+          <layout:Field field="sv5#area2#page6#enu18#fld72"/>
+          <layout:Field field="sv5#area2#page6#enu18#fld76"/>
+          <layout:Field field="sv5#area2#page6#enu18#sfld3"/>
+          <layout:Link link="sv5#area2#page6#enu18#ln94"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv5#area2#page6#ln88" name="Flow88" to="sv5#area2#page27" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="33,-113,-12,167"/>
+</Page>

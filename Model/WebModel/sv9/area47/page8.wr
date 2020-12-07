@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="705" gr:y="155" id="sv9#area47#page8" name="Aggiungi nuovo piatto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="705" gr:y="675" id="sv9#area47#page8" name="Aggiungi nuovo piatto">
   <ContentUnits>
     <EntryUnit gr:x="170" gr:y="0" id="sv9#area47#page8#enu2" name="Aggiungi piatto" fieldOrder="sv9#area47#page8#enu2#fld4 sv9#area47#page8#enu2#fld8 sv9#area47#page8#enu2#fld19 sv9#area47#page8#enu2#fld20" gr:showAllParts="true" linkOrder="sv9#area47#page8#enu2#ln26">
       <Field id="sv9#area47#page8#enu2#fld19" name="descrizione" type="string" modifiable="true"/>
