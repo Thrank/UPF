@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="765" gr:y="1200" id="sv9#area47#page9" name="Modifica piatto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="765" gr:y="680" id="sv9#area47#page9" name="Modifica piatto">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv9#area47#page9#enu4" name="Modifica piatto" gr:showAllParts="true" fieldOrder="sv9#area47#page9#enu4#fld38 sv9#area47#page9#enu4#fld53 sv9#area47#page9#enu4#fld54 sv9#area47#page9#enu4#fld59" linkOrder="sv9#area47#page9#enu4#ln67">
       <Field id="sv9#area47#page9#enu4#fld54" name="foto" type="blob" preloaded="true" modifiable="true"/>

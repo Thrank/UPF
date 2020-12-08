@@ -1,0 +1,14 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="500" id="mov1#opm11" name="Elimina piatto">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#opm11#icu15" name="Input Port">
+      <InputCollectorParameter id="mov1#opm11#icu15#icp8" name="piatto del ristorante [oid]"/>
+      <InputCollectorParameter id="mov1#opm11#icu15#icp9" name="oid_PASSING"/>
+      <OKLink id="mov1#opm11#icu15#oln94" to="mov1#opm11#opg18#seu1" validate="true" name="Flow16">
+        <LinkParameter id="mov1#opm11#icu15#oln94#par253" name="oid_PASSING_piatto del ristorante [oid]" target="mov1#opm11#opg18#seu1#su58#rcond33.ent1#att1" source="mov1#opm11#icu15#icp8"/>
+        <LinkParameter id="mov1#opm11#icu15#oln94#par254" name="oid_PASSING" passing="true" source="mov1#opm11#icu15#icp9"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="1185" gr:y="630" id="mov1#opm11#okcu7" name="OK Port7"/>
+    <KOCollectorUnit gr:x="1185" gr:y="285" id="mov1#opm11#kocu7" name="KO rimozione"/>
+  </OperationUnits>
+</OperationModule>
