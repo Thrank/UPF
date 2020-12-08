@@ -1,0 +1,63 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv8#area4#page50" name="Gestione utenti" landmark="true">
+  <ContentUnits>
+    <ScrollerUnit gr:x="0" gr:y="0" id="sv8#area4#page50#scu8" name="Scorri clienti" useCountQuery="false" entity="ent4" linkOrder="sv8#area4#page50#scu8#ln89">
+      <Link id="sv8#area4#page50#scu8#ln89" name="Flow89" to="sv8#area4#page50#inu13" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
+    <IndexUnit gr:x="125" gr:y="0" id="sv8#area4#page50#inu13" name="Clienti" entity="ent4" displayAttributes="User#att3 User#att17 ent4#att30" linkOrder="sv8#area4#page50#inu13#ln101 sv8#area4#page50#inu13#ln108">
+      <Link id="sv8#area4#page50#inu13#ln101" name="Aggiungi ban" to="sv8#area4#miu8" type="normal" validate="true" gr:bendpoints="139,-65,-216,-40">
+        <LinkParameter id="sv8#area4#page50#inu13#ln101#par153" name="1_Switch" sourceValue="1" target="sv8#area4#miu8.mov5#opm5#icu5#icp4"/>
+        <LinkParameter id="sv8#area4#page50#inu13#ln101#par159" name="oid_PASSING" source="data[].userOID" target="sv8#area4#miu8.mov5#opm5#icu5#icp5"/>
+      </Link>
+      <Link id="sv8#area4#page50#inu13#ln108" name="Rimuovi ban " to="sv8#area4#miu8" type="normal" validate="true" gr:bendpoints="176,43,-179,68">
+        <LinkParameter id="sv8#area4#page50#inu13#ln108#par154" name="0_Switch" sourceValue="0" target="sv8#area4#miu8.mov5#opm5#icu5#icp4"/>
+        <LinkParameter id="sv8#area4#page50#inu13#ln108#par158" name="oid_PASSING" source="data[].userOID" target="sv8#area4#miu8.mov5#opm5#icu5#icp6"/>
+      </Link>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv8#area4#page50#scu8">
+          <layout:Link link="sv8#area4#page50#scu8First"/>
+          <layout:Link link="sv8#area4#page50#scu8Previous"/>
+          <layout:Link link="sv8#area4#page50#scu8Block"/>
+          <layout:Link link="sv8#area4#page50#scu8Next"/>
+          <layout:Link link="sv8#area4#page50#scu8Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv8#area4#page50#inu13">
+          <layout:Attribute attribute="User#att3"/>
+          <layout:Attribute attribute="User#att17"/>
+          <layout:Attribute attribute="ent4#att30"/>
+          <layout:Link link="sv8#area4#page50#inu13#ln101"/>
+          <layout:Link link="sv8#area4#page50#inu13#ln108"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

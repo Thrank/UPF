@@ -15,6 +15,7 @@
         <LinkParameter id="mov3#mpkg5#opm12#opg31#tmu13#ln197#par1247" name="voto_PASSING_voto" sourceLinkParameter="mov3#mpkg5#opm12#icu18#oln200#par1239" target="mov3#mpkg5#opm12#opg31#cru15.ent15#att53"/>
         <LinkParameter id="mov3#mpkg5#opm12#opg31#tmu13#ln197#par1249" name="UserCtxParam.oid_PASSING" sourceLinkParameter="mov3#mpkg5#opm12#icu18#oln200#par1237" passing="true"/>
         <LinkParameter id="mov3#mpkg5#opm12#opg31#tmu13#ln197#par1250" name="oid_PASSING" sourceLinkParameter="mov3#mpkg5#opm12#icu18#oln200#par1240" passing="true"/>
+        <LinkParameter id="mov3#mpkg5#opm12#opg31#tmu13#ln197#par174" name="0_stato approvazione" sourceValue="0" target="mov3#mpkg5#opm12#opg31#cru15.ent15#att36"/>
       </Link>
     </TimeUnit>
     <ConnectUnit id="mov3#mpkg5#opm12#opg31#cnu44" name="Connetti a utente" gr:x="195" gr:y="120" relationship="rel3#role6">

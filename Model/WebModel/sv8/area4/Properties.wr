@@ -1,0 +1,8 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="50" gr:y="1495" id="sv8#area4" name="Gestione moderatore" landmark="true" defaultPage="sv8#area4#page50" landmarks="sv8#area4#page50 sv8#area4#page55">
+  <OperationUnits>
+    <ModuleInstanceUnit gr:x="430" gr:y="15" id="sv8#area4#miu8" moduleId="mov5#opm5">
+      <KOLink id="sv8#area4#miu8#kln37" to="sv8#page56#mssu9" name="KOFlow35" automaticCoupling="true"/>
+      <OKLink id="sv8#area4#miu8#oln20" to="sv8#area4#page50" name="OKFlow2" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+  </OperationUnits>
+</Area>

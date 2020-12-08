@@ -1,0 +1,27 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov5#opm5#opg7" name="Modifica il ban " transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <ModifyUnit id="mov5#opm5#opg7#mfu7" name="Aggiungi il ban" gr:x="115" gr:y="0" entity="ent4">
+      <Selector id="mov5#opm5#opg7#mfu7#su26" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov5#opm5#opg7#mfu7#su26#kcond17" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="mov5#opm5#opg7#mfu7#kln41" to="mov5#opm5#kocu3" name="KOFlow35"/>
+      <OKLink id="mov5#opm5#opg7#mfu7#oln37" to="mov5#opm5#okcu5" name="OKFlow2"/>
+    </ModifyUnit>
+    <CreateUnit id="mov5#opm5#opg7#cru4" name="Rimuovi il ban " gr:x="115" gr:y="110" entity="ent4">
+      <KOLink id="mov5#opm5#opg7#cru4#kln42" to="mov5#opm5#kocu3" name="KOFlow36" gr:bendpoints="0,-20"/>
+      <OKLink id="mov5#opm5#opg7#cru4#oln38" to="mov5#opm5#okcu5" name="OKFlow3" gr:bendpoints="0,-20"/>
+    </CreateUnit>
+    <SwitchUnit id="mov5#opm5#opg7#switch8" name="Ban" gr:x="0" gr:y="60">
+      <Case value="0"/>
+      <Case value="1"/>
+      <OKLink id="mov5#opm5#opg7#switch8#oln92" name="OKFlow92" to="mov5#opm5#opg7#mfu7" gr:bendpoints="62,-4,-68,36" code="1">
+        <LinkParameter id="mov5#opm5#opg7#switch8#oln92#par249" name="1_ban" sourceValue="1" target="mov5#opm5#opg7#mfu7.User#att17"/>
+        <LinkParameter id="mov5#opm5#opg7#switch8#oln92#par250" name="oid_PASSING_KeyCondition2 [oid]" sourceLinkParameter="mov5#opm5#icu5#oln18#par173" target="mov5#opm5#opg7#mfu7#su26#kcond17.userOID"/>
+      </OKLink>
+      <OKLink id="mov5#opm5#opg7#switch8#oln93" name="OKFlow93" to="mov5#opm5#opg7#cru4" gr:bendpoints="51,40,-79,-20" code="0">
+        <LinkParameter id="mov5#opm5#opg7#switch8#oln93#par251" name="0_ban" sourceValue="0" target="mov5#opm5#opg7#cru4.User#att17"/>
+        <LinkParameter id="mov5#opm5#opg7#switch8#oln93#par252" name="oid_PASSING_oid" sourceLinkParameter="mov5#opm5#icu5#oln18#par173" target="mov5#opm5#opg7#cru4.userOID"/>
+      </OKLink>
+    </SwitchUnit>
+  </OperationUnits>
+</OperationGroup>

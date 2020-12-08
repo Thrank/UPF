@@ -1,0 +1,12 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="95" gr:y="195" id="mov5#opm6" name="Modera valutazione">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov5#opm6#icu6" name="Input Port">
+      <InputCollectorParameter id="mov5#opm6#icu6#icp7" name="KeyCondition19 [oid]"/>
+      <OKLink id="mov5#opm6#icu6#oln46" to="mov5#opm6#opg17#mfu18" validate="true" name="Flow127">
+        <LinkParameter id="mov5#opm6#icu6#oln46#par232" name="oid_KeyCondition19 [oid]" source="mov5#opm6#icu6#icp7" target="mov5#opm6#opg17#mfu18#su41#kcond28.ent15#att41"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="880" gr:y="0" id="mov5#opm6#okcu6" name="OK moderazione effettuata"/>
+    <KOCollectorUnit gr:x="880" gr:y="420" id="mov5#opm6#kocu6" name="KO moederazione"/>
+  </OperationUnits>
+</OperationModule>

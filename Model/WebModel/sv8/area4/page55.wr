@@ -1,0 +1,68 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="170" id="sv8#area4#page55" name="Gestione valutazioni" landmark="true">
+  <ContentUnits>
+    <ScrollerUnit gr:x="0" gr:y="0" id="sv8#area4#page55#scu24" name="Scorri valutazioni" useCountQuery="false" entity="ent15" linkOrder="sv8#area4#page55#scu24#ln123">
+      <Selector id="sv8#area4#page55#scu24#su27" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv8#area4#page55#scu24#su27#acond21" name="AttCondition21" predicate="eq" booleanOperator="or" implied="false" attributes="ent15#att36" value="0"/>
+      </Selector>
+      <Link id="sv8#area4#page55#scu24#ln123" name="Flow123" to="sv8#area4#page55#inu14" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
+    <IndexUnit gr:x="255" gr:y="10" id="sv8#area4#page55#inu14" name="Elenco valutazioni da controllare" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4 rel2#role4.ent14#att42 rel3#role6.userName" linkOrder="sv8#area4#page55#inu14#ln126 sv8#area4#page55#inu14#ln127">
+      <SortAttribute attribute="ent15#att4" order="ascending"/>
+      <Link id="sv8#area4#page55#inu14#ln126" name="Flow126" to="sv8#opg14#mfu14" type="normal" validate="true">
+        <LinkParameter id="sv8#area4#page55#inu14#ln126#par176" name="oid_KeyCondition18 [oid]" source="data[].ent15#att41" target="sv8#opg14#mfu14#su28#kcond18.ent15#att41"/>
+        <LinkParameter id="sv8#area4#page55#inu14#ln126#par177" name="1_stato approvazione" sourceValue="1" target="sv8#opg14#mfu14.ent15#att36"/>
+      </Link>
+      <Link id="sv8#area4#page55#inu14#ln127" name="Flow127" to="sv8#miu16" type="normal" validate="true">
+        <LinkParameter id="sv8#area4#page55#inu14#ln127#par233" name="oid_KeyCondition19 [oid]" source="data[].ent15#att41" target="sv8#miu16.mov5#opm6#icu6#icp7"/>
+      </Link>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv8#area4#page55#scu24">
+          <layout:Link link="sv8#area4#page55#scu24First"/>
+          <layout:Link link="sv8#area4#page55#scu24Previous"/>
+          <layout:Link link="sv8#area4#page55#scu24Block"/>
+          <layout:Link link="sv8#area4#page55#scu24Next"/>
+          <layout:Link link="sv8#area4#page55#scu24Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv8#area4#page55#inu14">
+          <layout:Attribute attribute="ent15#att53"/>
+          <layout:Attribute attribute="ent15#att54"/>
+          <layout:Attribute attribute="ent15#att4"/>
+          <layout:Attribute attribute="rel2#role4.ent14#att42"/>
+          <layout:Attribute attribute="rel3#role6.userName"/>
+          <layout:Link link="sv8#area4#page55#inu14#ln126"/>
+          <layout:Link link="sv8#area4#page55#inu14#ln127"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

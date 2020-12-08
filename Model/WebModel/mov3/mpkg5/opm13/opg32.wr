@@ -13,6 +13,7 @@
         <LinkParameter id="mov3#mpkg5#opm13#opg32#tmu14#ln198#par1261" name="Current/Input Date_data" source="currentDate" target="mov3#mpkg5#opm13#opg32#mfu3.ent15#att4"/>
         <LinkParameter id="mov3#mpkg5#opm13#opg32#tmu14#ln198#par1262" name="oid_PASSING_KeyCondition68 [oid]" sourceLinkParameter="mov3#mpkg5#opm13#icu19#oln205#par1258" target="mov3#mpkg5#opm13#opg32#mfu3#su272#kcond217.ent15#att41"/>
         <LinkParameter id="mov3#mpkg5#opm13#opg32#tmu14#ln198#par1263" name="voto_PASSING_voto" sourceLinkParameter="mov3#mpkg5#opm13#icu19#oln205#par1259" target="mov3#mpkg5#opm13#opg32#mfu3.ent15#att53"/>
+        <LinkParameter id="mov3#mpkg5#opm13#opg32#tmu14#ln198#par175" name="0_stato approvazione" sourceValue="0" target="mov3#mpkg5#opm13#opg32#mfu3.ent15#att36"/>
       </Link>
     </TimeUnit>
   </OperationUnits>

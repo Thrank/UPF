@@ -1,0 +1,16 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="95" gr:y="95" id="mov5#opm5" name="Modifica ban cliente">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov5#opm5#icu5">
+      <InputCollectorParameter id="mov5#opm5#icu5#icp4" name="Switch"/>
+      <InputCollectorParameter id="mov5#opm5#icu5#icp5" name="oid_PASSING"/>
+      <OKLink id="mov5#opm5#icu5#oln18" to="mov5#opm5#opg7#switch8" validate="true" name="Start">
+        <LinkParameter id="mov5#opm5#icu5#oln18#par165" source="mov5#opm5#icu5#icp5" name="oid_PASSING" passing="true"/>
+        <LinkParameter id="mov5#opm5#icu5#oln18#par164" name="1_Switch" target="mov5#opm5#opg7#switch8.switch" source="mov5#opm5#icu5#icp4"/>
+        <LinkParameter id="mov5#opm5#icu5#oln18#par172" name="0_Switch" target="mov5#opm5#opg7#switch8.switch" source="mov5#opm5#icu5#icp4"/>
+        <LinkParameter id="mov5#opm5#icu5#oln18#par173" source="mov5#opm5#icu5#icp6" name="oid_PASSING" passing="true"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <KOCollectorUnit gr:x="695" gr:y="300" id="mov5#opm5#kocu3" name="KO modifica ban"/>
+    <OKCollectorUnit gr:x="695" gr:y="0" id="mov5#opm5#okcu5" name="OK modifica ban"/>
+  </OperationUnits>
+</OperationModule>

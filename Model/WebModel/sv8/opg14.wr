@@ -1,0 +1,11 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="745" gr:y="1705" id="sv8#opg14" name="Approva valutazione" transaction="true">
+  <OperationUnits>
+    <ModifyUnit gr:x="0" gr:y="0" id="sv8#opg14#mfu14" name="Approva valuatazione" entity="ent15">
+      <Selector id="sv8#opg14#mfu14#su28" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv8#opg14#mfu14#su28#kcond18" name="KeyCondition18" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv8#opg14#mfu14#kln43" name="KOFlow43" to="sv8#page57#alt10#page58#mssu10" automaticCoupling="true"/>
+      <OKLink id="sv8#opg14#mfu14#oln39" name="OKFlow39" to="sv8#area4#page55" automaticCoupling="true"/>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationGroup>
