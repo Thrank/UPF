@@ -1,18 +1,31 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="270" gr:y="660" id="sv9#area1#page25" name="Conferma rifiuto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="250" gr:y="660" id="sv9#area1#page25" name="Conferma rifiuto">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv9#area1#page25#enu1" name="Conferma rifiuto" linkOrder="sv9#area1#page25#enu1#ln80">
-      <Link id="sv9#area1#page25#enu1#ln80" name="Flow80" to="sv9#opg11#mfu13" type="normal" validate="true">
-        <LinkParameter id="sv9#area1#page25#enu1#ln80#par391" name="false_in attesa" sourceValue="false" target="sv9#opg11#mfu13.ent3#att33"/>
-        <LinkParameter id="sv9#area1#page25#enu1#ln80#par392" name="oid_PASSING_KeyCondition81 [oid]" sourceLinkParameter="sv9#area1#page16#inu2#ln76#par390" target="sv9#opg11#mfu13#su106#kcond81.ent3#att8"/>
-        <LinkParameter id="sv9#area1#page25#enu1#ln80#par393" name="false_stato" sourceValue="false" target="sv9#opg11#mfu13.ent3#att16"/>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv9#area1#page25#mssu21" name="Conferma rifiuto" linkOrder="sv9#area1#page25#mssu21#ln165">
+      <Link id="sv9#area1#page25#mssu21#ln165" name="Flow80" to="sv9#opg11#mfu13" type="normal" validate="true">
+        <LinkParameter id="sv9#area1#page25#mssu21#ln165#par87" name="false_in attesa" target="sv9#opg11#mfu13.ent3#att33" sourceValue="false"/>
+        <LinkParameter id="sv9#area1#page25#mssu21#ln165#par90" name="false_stato" target="sv9#opg11#mfu13.ent3#att16" sourceValue="false"/>
       </Link>
-    </EntryUnit>
+    </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv9#area1#page25#enu1">
-          <layout:Link link="sv9#area1#page25#enu1#ln80"/>
+        <layout:Unit unitId="sv9#area1#page25#mssu21">
+          <layout:Link link="sv9#area1#page25#mssu21#ln165"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

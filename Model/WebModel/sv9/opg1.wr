@@ -1,0 +1,16 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="950" gr:y="870" id="sv9#opg1" name="Il ristorante &#232; dell'utente?" transaction="true">
+  <OperationUnits>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv9#opg1#seu3" name="Seleziona ristoratore" entity="ent6">
+      <Selector id="sv9#opg1#seu3#su7" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#opg1#seu3#su7#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv9#opg1#seu3#su7#rcond3" name="RoleCondition3" predicate="in" implied="false" role="rel1#role2"/>
+      </Selector>
+      <OKLink id="sv9#opg1#seu3#oln5" name="OKFlow5" to="sv9#opg1#inn1" automaticCoupling="true"/>
+      <KOLink id="sv9#opg1#seu3#kln38" name="KOFlow38" to="sv9#page68#mssu22" automaticCoupling="true"/>
+    </SelectorUnit>
+    <IsNotNullUnit gr:x="195" gr:y="0" id="sv9#opg1#inn1" name="&#200; nullo">
+      <OKLink id="sv9#opg1#inn1#oln2" name="OKFlow2" to="sv9#area47#page61#scu25" automaticCoupling="true"/>
+      <KOLink id="sv9#opg1#inn1#kln22" name="KOFlow22" to="sv9#area47#page62#scu26" automaticCoupling="true"/>
+    </IsNotNullUnit>
+  </OperationUnits>
+</OperationGroup>

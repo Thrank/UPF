@@ -3,29 +3,26 @@
     <CreateUnit id="mov3#mpkg1#opm8#opg21#cru3" name="Inserisci ordine" gr:x="25" gr:y="130" entity="ent3">
       <OKLink id="mov3#mpkg1#opm8#opg21#cru3#oln152" name="OKFlow64" to="mov3#mpkg1#opm8#opg21#cnu36">
         <LinkParameter id="mov3#mpkg1#opm8#opg21#cru3#oln152#par913" name="oid_KeyCondition144 [oid] [Ordine] [Source]" source="ent3#att8Array" target="mov3#mpkg1#opm8#opg21#cnu36#su163#kcond132.ent3#att8"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cru3#oln152#par914" name="promozione_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#tmu9#ln40#par920" passing="true"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cru3#oln152#par915" name="Checked oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#tmu9#ln40#par927" passing="true"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cru3#oln152#par916" name="oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#tmu9#ln40#par928" passing="true"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cru3#oln152#par917" name="oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#tmu9#ln40#par929" passing="true"/>
       </OKLink>
       <KOLink id="mov3#mpkg1#opm8#opg21#cru3#kln102" to="mov3#mpkg1#opm8#kocu18" name="KOFlow68" gr:bendpoints="346,0,-224,-110"/>
     </CreateUnit>
     <TimeUnit id="mov3#mpkg1#opm8#opg21#tmu9" name="Data" gr:x="0" gr:y="0">
-      <Link id="mov3#mpkg1#opm8#opg21#tmu9#ln40" name="Flow230" to="mov3#mpkg1#opm8#opg21#cru3" type="transport" validate="true">
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par918" name="Current/Input Date_data" source="currentDate" target="mov3#mpkg1#opm8#opg21#cru3.ent3#att15"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par919" name="false_stato" target="mov3#mpkg1#opm8#opg21#cru3.ent3#att16" sourceValue="false"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par920" name="promozione_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par911" passing="true"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par921" name="metodo_PASSING_metodo di pagamento" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par908" target="mov3#mpkg1#opm8#opg21#cru3.ent3#att23"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par922" name="UserCtxParam.oid_PASSING_Cliente .oid(OrdineToCliente )" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par907" target="mov3#mpkg1#opm8#opg21#cru3.rel5#role10.userOID"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par923" name="oid_PASSING_Indirizzo.oid(OrdineToIndirizzo)" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par912" target="mov3#mpkg1#opm8#opg21#cru3.rel34#role68.ent16#att64"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par924" name="Checked oid_PASSING_Piatto.oid(OrdineToPiatto)" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par910" target="mov3#mpkg1#opm8#opg21#cru3.rel8#role15.ent1#att1"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par925" name="oid_PASSING_Ristorante.oid(OrdineToRistorante)" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par909" target="mov3#mpkg1#opm8#opg21#cru3.rel6#role11.ent14#att40"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par926" name="promozione_PASSING_Promozione.oid(OrdineToPromozione)" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par911" target="mov3#mpkg1#opm8#opg21#cru3.rel25#role49.ent25#att69"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par927" name="Checked oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par910" passing="true"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par928" name="oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par909" passing="true"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par929" name="oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par912" passing="true"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#ln40#par383" name="true_in attesa" sourceValue="true" target="mov3#mpkg1#opm8#opg21#cru3.ent3#att33"/>
-      </Link>
+      <OKLink id="mov3#mpkg1#opm8#opg21#tmu9#oln4" name="OKFlow4" to="mov3#mpkg1#opm8#opg21#cru3" gr:bendpoints="4,68,-36,-72">
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#oln4#par43" name="Current/Input Date_data" source="currentDate" target="mov3#mpkg1#opm8#opg21#cru3.ent3#att15"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#oln4#par44" name="metodo_PASSING_metodo di pagamento" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par908" target="mov3#mpkg1#opm8#opg21#cru3.ent3#att23"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#oln4#par56" name="oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par909" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#oln4#par68" name="oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par912" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#oln4#par69" name="promozione_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par911" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#oln4#par70" name="Checked oid_PASSING_Cliente .oid(OrdineToCliente )" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par907" target="mov3#mpkg1#opm8#opg21#cru3.rel5#role10.userOID"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#oln4#par71" name="true_in attesa" sourceValue="true" target="mov3#mpkg1#opm8#opg21#cru3.ent3#att33"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#oln4#par72" name="false_stato" sourceValue="false" target="mov3#mpkg1#opm8#opg21#cru3.ent3#att16"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#oln4#par73" name="Checked oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par910" passing="true"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#oln4#par74" name="promozione_PASSING_Promozione.oid(OrdineToPromozione)" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par911" target="mov3#mpkg1#opm8#opg21#cru3.rel25#role49.ent25#att69"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#oln4#par75" name="oid_PASSING_Indirizzo.oid(OrdineToIndirizzo)" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par912" target="mov3#mpkg1#opm8#opg21#cru3.rel34#role68.ent16#att64"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#oln4#par76" name="Checked oid_PASSING_Piatto.oid(OrdineToPiatto)" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par910" target="mov3#mpkg1#opm8#opg21#cru3.rel8#role15.ent1#att1"/>
+        <LinkParameter id="mov3#mpkg1#opm8#opg21#tmu9#oln4#par77" name="oid_PASSING_Ristorante.oid(OrdineToRistorante)" sourceLinkParameter="mov3#mpkg1#opm8#icu8#oln151#par909" target="mov3#mpkg1#opm8#opg21#cru3.rel6#role11.ent14#att40"/>
+      </OKLink>
+      <KOLink id="mov3#mpkg1#opm8#opg21#tmu9#kln36" name="KOFlow36" to="mov3#mpkg1#opm8#kocu18" automaticCoupling="true" gr:bendpoints="84,-29,-526,-279;379,-36,-231,-286"/>
     </TimeUnit>
     <ConnectUnit id="mov3#mpkg1#opm8#opg21#cnu36" name="Connetti a cliente" gr:x="165" gr:y="10" relationship="rel5#role10">
       <SourceSelector id="mov3#mpkg1#opm8#opg21#cnu36#su163" defaultPolicy="fill" booleanOperator="and">
@@ -36,10 +33,6 @@
       </TargetSelector>
       <OKLink id="mov3#mpkg1#opm8#opg21#cnu36#oln153" name="OKFlow65" to="mov3#mpkg1#opm8#opg21#cnu37">
         <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu36#oln153#par930" name="Source oid [Ordine]_KeyCondition148 [oid] [Ordine] [Source]" source="sourceent3#att8" target="mov3#mpkg1#opm8#opg21#cnu37#su165#kcond139.ent3#att8"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu36#oln153#par931" name="promozione_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cru3#oln152#par914" passing="true"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu36#oln153#par932" name="oid_PASSING_KeyCondition149 [oid] [Indirizzo] [Target]" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cru3#oln152#par917" target="mov3#mpkg1#opm8#opg21#cnu37#su166#kcond141.ent16#att64"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu36#oln153#par933" name="Checked oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cru3#oln152#par915" passing="true"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu36#oln153#par934" name="oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cru3#oln152#par916" passing="true"/>
       </OKLink>
       <KOLink id="mov3#mpkg1#opm8#opg21#cnu36#kln103" to="mov3#mpkg1#opm8#kocu18" name="KOFlow69" gr:bendpoints="199,22,-216,-193"/>
     </ConnectUnit>
@@ -52,9 +45,6 @@
       </TargetSelector>
       <OKLink id="mov3#mpkg1#opm8#opg21#cnu37#oln154" name="OKFlow66" to="mov3#mpkg1#opm8#opg21#cnu38">
         <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu37#oln154#par935" name="Source oid [Ordine]_KeyCondition150 [oid] [Ordine] [Source]" source="sourceent3#att8" target="mov3#mpkg1#opm8#opg21#cnu38#su167#kcond143.ent3#att8"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu37#oln154#par936" name="promozione_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu36#oln153#par931" passing="true"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu37#oln154#par937" name="oid_PASSING_KeyCondition151 [oid] [Ristorante] [Target]" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu36#oln153#par934" target="mov3#mpkg1#opm8#opg21#cnu38#su168#kcond144.ent14#att40"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu37#oln154#par938" name="Checked oid_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu36#oln153#par933" passing="true"/>
       </OKLink>
       <KOLink id="mov3#mpkg1#opm8#opg21#cnu37#kln104" to="mov3#mpkg1#opm8#kocu18" name="KOFlow70" gr:bendpoints="0,-20"/>
     </ConnectUnit>
@@ -66,8 +56,6 @@
         <KeyCondition id="mov3#mpkg1#opm8#opg21#cnu38#su168#kcond144" name="KeyCondition151" predicate="in" implied="false"/>
       </TargetSelector>
       <OKLink id="mov3#mpkg1#opm8#opg21#cnu38#oln155" name="OKFlow67" to="mov3#mpkg1#opm8#opg21#lpu6">
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu38#oln155#par940" name="promozione_PASSING" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu37#oln154#par936" passing="true"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu38#oln155#par2399" name="Checked oid_PASSING_Input Array" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu37#oln154#par938" target="mov3#mpkg1#opm8#opg21#lpu6.array"/>
         <LinkParameter id="mov3#mpkg1#opm8#opg21#cnu38#oln155#par2400" name="Source oid [Ordine]_PASSING" source="sourceent3#att8" passing="true"/>
       </OKLink>
       <KOLink id="mov3#mpkg1#opm8#opg21#cnu38#kln105" to="mov3#mpkg1#opm8#kocu18" name="KOFlow71" gr:bendpoints="205,-44,-370,41;352,-43,-223,42"/>
@@ -99,7 +87,6 @@
       </OKLink>
       <OKLink id="mov3#mpkg1#opm8#opg21#lpu6#oln310" name="OKFlow310" to="mov3#mpkg1#opm8#opg21#cnu40" code="end">
         <LinkParameter id="mov3#mpkg1#opm8#opg21#lpu6#oln310#par2403" name="Source oid [Ordine]_PASSING_KeyCondition154 [oid] [Ordine] [Source]" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu38#oln155#par2400" target="mov3#mpkg1#opm8#opg21#cnu40#su179#kcond147.ent3#att8"/>
-        <LinkParameter id="mov3#mpkg1#opm8#opg21#lpu6#oln310#par2404" name="promozione_PASSING_KeyCondition155 [oid] [Promozione] [Target]" sourceLinkParameter="mov3#mpkg1#opm8#opg21#cnu38#oln155#par940" target="mov3#mpkg1#opm8#opg21#cnu40#su180#kcond148.ent25#att69"/>
       </OKLink>
     </LoopUnit>
   </OperationUnits>

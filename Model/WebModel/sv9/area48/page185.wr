@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv9#area48#page185" name="Dettaglio ristorante" gr:x="435" gr:y="215">
   <ContentUnits>
-    <DataUnit id="sv9#area48#page185#dau44" name="Dettaglio ristorante" linkOrder="sv9#area48#page185#dau44#ln10 sv9#area48#page185#dau44#ln19" gr:x="145" gr:y="0" entity="ent14" displayAttributes="ent14#att42 ent14#att46 ent14#att44 ent14#att45 ent14#att52">
+    <DataUnit id="sv9#area48#page185#dau44" name="Dettaglio ristorante" linkOrder="sv9#area48#page185#dau44#ln10" gr:x="145" gr:y="0" entity="ent14" displayAttributes="ent14#att42 ent14#att46 ent14#att44 ent14#att45 ent14#att52">
       <Selector id="sv9#area48#page185#dau44#su377" defaultPolicy="fill" booleanOperator="or">
         <KeyCondition id="sv9#area48#page185#dau44#su377#kcond275" name="Dettaglio ristorante" predicate="in" implied="false"/>
         <RelationshipRoleCondition id="sv9#area48#page185#dau44#su377#rcond139" name="piatto to dettaglioRistorante" predicate="in" implied="true" role="rel4#role8"/>
@@ -9,8 +9,11 @@
       <Link id="sv9#area48#page185#dau44#ln497" name="dettaglio to valutazioni" to="sv9#area48#page185#mdu30" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv9#area48#page185#dau44#ln499" name="dettaglio to migliori valutazioni" to="sv9#area48#page185#mdu31" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv9#area48#page185#dau44#ln500" name="dettaglio to valutazioni" to="sv9#area48#page185#mdu30" type="transport" automaticCoupling="true" validate="true"/>
-      <Link id="sv9#area48#page185#dau44#ln10" name="Flow10" to="sv9#area47#page183#alt1#page2#scu4" type="normal" validate="true" automaticCoupling="true"/>
-      <Link id="sv9#area48#page185#dau44#ln19" name="Flow19" to="sv9#area47#page183#alt1#page3#scu7" type="normal" validate="true" automaticCoupling="true" gr:bendpoints="392,-362,-628,308"/>
+      <Link id="sv9#area48#page185#dau44#ln10" name="Flow10" to="sv9#opg1#seu3" type="normal" validate="true" gr:bendpoints="195,-98,-170,457">
+        <LinkParameter id="sv9#area48#page185#dau44#ln10#par92" name="UserCtxParam.oid_PASSING_KeyCondition6 [oid]" sourceLinkParameter="sv9#area48#page185#gtu9#ln166#par91" target="sv9#opg1#seu3#su7#kcond6.userOID"/>
+        <LinkParameter id="sv9#area48#page185#dau44#ln10#par93" name="oid_RoleCondition3 [oid]" source="data.ent14#att40" target="sv9#opg1#seu3#su7#rcond3.ent14#att40"/>
+        <LinkParameter id="sv9#area48#page185#dau44#ln10#par112" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv9#area48#page185#gtu9#ln166#par91" passing="true"/>
+      </Link>
     </DataUnit>
     <MultiDataUnit id="sv9#area48#page185#mdu30" name="Valutazioni" gr:showAllParts="true" gr:x="280" gr:y="170" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4">
       <SortAttribute attribute="ent15#att53" order="descending"/>
@@ -30,6 +33,11 @@
       <Comment xml:space="preserve">Qui mostro solo le 5 valutazioni con voti migliori. Anche se non ho previsto la relazione derivta nel modello dei dati posso farlo solo da qui avendo specificato un massimo numero di valutazioni da mostrare ed ordinandole in base al voto.</Comment>
       <Link id="sv9#area48#page185#mdu31#ln502" name="Flow38" to="sv9#area48#page185#mdu30" type="transport" automaticCoupling="true" validate="true"/>
     </MultiDataUnit>
+    <GetUnit gr:x="345" gr:y="25" id="sv9#area48#page185#gtu9" name="Recupera oid utente" contextParameters="UserCtxParam">
+      <Link id="sv9#area48#page185#gtu9#ln166" name="Flow166" to="sv9#area48#page185#dau44" type="transport" validate="true">
+        <LinkParameter id="sv9#area48#page185#gtu9#ln166#par91" name="UserCtxParam.oid_PASSING" source="sv9#area48#page185#gtu9.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -41,7 +49,6 @@
           <layout:Attribute attribute="ent14#att45"/>
           <layout:Attribute attribute="ent14#att52"/>
           <layout:Link link="sv9#area48#page185#dau44#ln10"/>
-          <layout:Link link="sv9#area48#page185#dau44#ln19"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

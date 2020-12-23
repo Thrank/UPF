@@ -160,9 +160,23 @@
         <layout:SubPage pageId="sv6#area25#page40#alt8#page70">
           <layout:Grid containerType="grid">
             <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv6#area25#page40#alt8#page70#enu19">
-                  <layout:Link link="sv6#area25#page40#alt8#page70#enu19#ln135"/>
+                <layout:Unit unitId="sv6#area25#page40#alt8#page70#mssu17">
+                  <layout:Link link="sv6#area25#page40#alt8#page70#mssu17#ln110"/>
                 </layout:Unit>
               </layout:Cell>
               <layout:Cell/>
@@ -197,9 +211,23 @@
         <layout:SubPage pageId="sv6#area25#page40#alt8#page71">
           <layout:Grid containerType="grid">
             <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv6#area25#page40#alt8#page71#enu26">
-                  <layout:Link link="sv6#area25#page40#alt8#page71#enu26#ln133"/>
+                <layout:Unit unitId="sv6#area25#page40#alt8#page71#mssu19">
+                  <layout:Link link="sv6#area25#page40#alt8#page71#mssu19#ln115"/>
                 </layout:Unit>
               </layout:Cell>
               <layout:Cell/>
@@ -230,25 +258,25 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Alternative gr:x="170" gr:y="0" id="sv6#area25#page40#alt8" name="Preferenza ristorante " defaultPage="sv6#area25#page40#alt8#page70">
+  <Alternative gr:x="165" gr:y="0" id="sv6#area25#page40#alt8" name="Preferenza ristorante " defaultPage="sv6#area25#page40#alt8#page70">
     <Page gr:x="0" gr:y="0" id="sv6#area25#page40#alt8#page70" name="Aggiungi">
       <ContentUnits>
-        <EntryUnit gr:x="0" gr:y="0" id="sv6#area25#page40#alt8#page70#enu19" name="Aggiungi preferenza" linkOrder="sv6#area25#page40#alt8#page70#enu19#ln135">
-          <Link id="sv6#area25#page40#alt8#page70#enu19#ln135" name="Flow135" to="sv6#area25#opg12#cnu1" type="normal" validate="true" gr:bendpoints="-33,-145,147,100">
-            <LinkParameter id="sv6#area25#page40#alt8#page70#enu19#ln135#par315" name="UserCtxParam.oid_PASSING_KeyCondition82 [oid] [Cliente ] [Source]" sourceLinkParameter="sv6#area25#opg13#seu39#kln32#par309" target="sv6#area25#opg12#cnu1#su108#kcond82.userOID"/>
-            <LinkParameter id="sv6#area25#page40#alt8#page70#enu19#ln135#par316" name="oid_PASSING_KeyCondition85 [oid] [Ristorante] [Target]" sourceLinkParameter="sv6#area25#opg13#seu39#kln32#par308" target="sv6#area25#opg12#cnu1#su109#kcond85.ent14#att40"/>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area25#page40#alt8#page70#mssu17" name="Aggiungi preferenza" linkOrder="sv6#area25#page40#alt8#page70#mssu17#ln110">
+          <Link id="sv6#area25#page40#alt8#page70#mssu17#ln110" name="Flow135" to="sv6#area25#opg12#cnu1" type="normal" validate="true" gr:bendpoints="-33,-145,147,100">
+            <LinkParameter id="sv6#area25#page40#alt8#page70#mssu17#ln110#par38" name="UserCtxParam.oid_PASSING_KeyCondition82 [oid] [Cliente ] [Source]" sourceLinkParameter="sv6#area25#opg13#seu39#kln32#par309" target="sv6#area25#opg12#cnu1#su108#kcond82.userOID"/>
+            <LinkParameter id="sv6#area25#page40#alt8#page70#mssu17#ln110#par39" name="oid_PASSING_KeyCondition85 [oid] [Ristorante] [Target]" sourceLinkParameter="sv6#area25#opg13#seu39#kln32#par308" target="sv6#area25#opg12#cnu1#su109#kcond85.ent14#att40"/>
           </Link>
-        </EntryUnit>
+        </MultiMessageUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="185" gr:y="0" id="sv6#area25#page40#alt8#page71" name="Rimuovi">
+    <Page gr:x="195" gr:y="5" id="sv6#area25#page40#alt8#page71" name="Rimuovi">
       <ContentUnits>
-        <EntryUnit gr:x="0" gr:y="0" id="sv6#area25#page40#alt8#page71#enu26" name="Rimuovi preferenza" linkOrder="sv6#area25#page40#alt8#page71#enu26#ln133">
-          <Link id="sv6#area25#page40#alt8#page71#enu26#ln133" name="Flow133" to="sv6#area25#opg12#dcnu5" type="normal" validate="true" gr:bendpoints="9,-125,114,120">
-            <LinkParameter id="sv6#area25#page40#alt8#page71#enu26#ln133#par313" name="UserCtxParam.oid_PASSING_KeyCondition92 [oid] [Cliente ] [Source]" sourceLinkParameter="sv6#area25#opg13#seu39#oln31#par310" target="sv6#area25#opg12#dcnu5#su110#kcond92.userOID"/>
-            <LinkParameter id="sv6#area25#page40#alt8#page71#enu26#ln133#par314" name="oid_PASSING_KeyCondition93 [oid] [Ristorante] [Target]" sourceLinkParameter="sv6#area25#opg13#seu39#oln31#par306" target="sv6#area25#opg12#dcnu5#su111#kcond93.ent14#att40"/>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv6#area25#page40#alt8#page71#mssu19" name="Rimuovi preferenza" linkOrder="sv6#area25#page40#alt8#page71#mssu19#ln115">
+          <Link id="sv6#area25#page40#alt8#page71#mssu19#ln115" name="Flow133" to="sv6#area25#opg12#dcnu5" type="normal" validate="true" gr:bendpoints="9,-125,114,120">
+            <LinkParameter id="sv6#area25#page40#alt8#page71#mssu19#ln115#par41" name="UserCtxParam.oid_PASSING_KeyCondition92 [oid] [Cliente ] [Source]" sourceLinkParameter="sv6#area25#opg13#seu39#oln31#par310" target="sv6#area25#opg12#dcnu5#su110#kcond92.userOID"/>
+            <LinkParameter id="sv6#area25#page40#alt8#page71#mssu19#ln115#par42" name="oid_PASSING_KeyCondition93 [oid] [Ristorante] [Target]" sourceLinkParameter="sv6#area25#opg13#seu39#oln31#par306" target="sv6#area25#opg12#dcnu5#su111#kcond93.ent14#att40"/>
           </Link>
-        </EntryUnit>
+        </MultiMessageUnit>
       </ContentUnits>
     </Page>
   </Alternative>

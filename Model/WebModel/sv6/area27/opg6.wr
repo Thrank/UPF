@@ -1,27 +1,14 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="625" gr:y="495" id="sv6#area27#opg6" name="Aggiorna preferenze" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="635" gr:y="575" id="sv6#area27#opg6" name="Aggiorna preferenze" transaction="true">
   <OperationUnits>
-    <ConnectUnit gr:x="0" gr:y="0" id="sv6#area27#opg6#cnu8" name="Aggiungi preferenza cucina" relationship="rel20#role39" gr:showAllParts="false">
-      <SourceSelector id="sv6#area27#opg6#cnu8#su93" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv6#area27#opg6#cnu8#su93#kcond79" name="KeyCondition79" predicate="in" implied="false"/>
+    <ReconnectUnit gr:x="0" gr:y="0" id="sv6#area27#opg6#rcnu1" name="Aggiorna preferenze cucina" relationship="rel20#role39">
+      <SourceSelector id="sv6#area27#opg6#rcnu1#su1" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area27#opg6#rcnu1#su1#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
       </SourceSelector>
-      <TargetSelector id="sv6#area27#opg6#cnu8#su94" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv6#area27#opg6#cnu8#su94#kcond80" name="KeyCondition80" predicate="in" implied="false"/>
+      <TargetSelector id="sv6#area27#opg6#rcnu1#su2" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv6#area27#opg6#rcnu1#su2#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv6#area27#opg6#cnu8#oln71" name="OKFlow71" to="sv6#area27#page42" automaticCoupling="true"/>
-      <KOLink id="sv6#area27#opg6#cnu8#kln74" name="KOFlow74" to="sv6#area27#page63#alt6#page52#mssu15" automaticCoupling="true"/>
-    </ConnectUnit>
-    <DisconnectUnit gr:x="5" gr:y="155" id="sv6#area27#opg6#dcnu2" name="Rimuovi preferenza cucina" relationship="rel20#role39">
-      <SourceSelector id="sv6#area27#opg6#dcnu2#su97" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv6#area27#opg6#dcnu2#su97#kcond83" name="KeyCondition83" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv6#area27#opg6#dcnu2#su98" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv6#area27#opg6#dcnu2#su98#kcond84" name="KeyCondition84" predicate="in" implied="false"/>
-      </TargetSelector>
-      <OKLink id="sv6#area27#opg6#dcnu2#oln70" name="OKFlow70" to="sv6#area27#opg6#cnu8">
-        <LinkParameter id="sv6#area27#opg6#dcnu2#oln70#par445" name="Checked oid_PASSING_KeyCondition79 [oid] [Cliente ] [Source]" sourceLinkParameter="sv6#area27#page42#mciu1#ln192#par441" target="sv6#area27#opg6#cnu8#su93#kcond79.userOID"/>
-        <LinkParameter id="sv6#area27#opg6#dcnu2#oln70#par447" name="Target oid [Tipologia Cucina]_KeyCondition80 [oid] [Tipologia Cucina] [Target]" target="sv6#area27#opg6#cnu8#su94#kcond80.ent10#att61" sourceLinkParameter="sv6#area27#page42#mciu1#ln192#par441"/>
-      </OKLink>
-      <KOLink id="sv6#area27#opg6#dcnu2#kln75" name="KOFlow75" to="sv6#area27#page63#alt6#page52#mssu15" automaticCoupling="true"/>
-    </DisconnectUnit>
+      <OKLink id="sv6#area27#opg6#rcnu1#oln3" name="OKFlow3" to="sv6#area27#page42" automaticCoupling="true"/>
+      <KOLink id="sv6#area27#opg6#rcnu1#kln35" name="KOFlow35" to="sv6#area27#page63#alt6#page52#mssu15" automaticCoupling="true"/>
+    </ReconnectUnit>
   </OperationUnits>
 </OperationGroup>

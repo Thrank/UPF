@@ -1,0 +1,29 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="655" id="sv9#area47#page61" name="Elenco piatti di ristorante di proprit&#224;">
+  <ContentUnits>
+    <ScrollerUnit gr:x="0" gr:y="0" id="sv9#area47#page61#scu25" name="Scorri piatti" useCountQuery="false" entity="ent1" gr:showAllParts="true" linkOrder="sv9#area47#page61#scu25#ln117">
+      <SortAttribute attribute="ent1#att2" order="ascending"/>
+      <Selector id="sv9#area47#page61#scu25#su8" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv9#area47#page61#scu25#su8#rcond4" name="piatti del ristorante" predicate="in" implied="false" role="rel4#role7"/>
+        <RelationshipRoleCondition id="sv9#area47#page61#scu25#su8#rcond9" name="ristorante dell'utente iscritto?" predicate="in" implied="false" role="rel1#role1.rel4#role7"/>
+      </Selector>
+      <Link id="sv9#area47#page61#scu25#ln117" name="Flow14" to="sv9#area47#page61#inu15" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
+    <IndexUnit gr:x="270" gr:y="0" id="sv9#area47#page61#inu15" name="Elenco piatti" entity="ent1" displayAttributes="ent1#att2 ent1#att7 ent1#att57 ent1#att58" gr:showAllParts="true" linkOrder="sv9#area47#page61#inu15#ln129 sv9#area47#page61#inu15#ln133">
+      <SortAttribute attribute="ent1#att2" order="ascending"/>
+      <Selector id="sv9#area47#page61#inu15#su9" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv9#area47#page61#inu15#su9#kcond7" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv9#area47#page61#inu15#ln129" name="Flow65" to="sv9#area47#page9#enu4" type="normal" validate="true">
+        <LinkParameter id="sv9#area47#page61#inu15#ln129#par78" name="descrizione breve_descrizione" source="data[].ent1#att57" target="sv9#area47#page9#enu4#fld59_slot"/>
+        <LinkParameter id="sv9#area47#page61#inu15#ln129#par79" name="foto_foto" source="data[].ent1#att58" target="sv9#area47#page9#enu4#fld54_slot"/>
+        <LinkParameter id="sv9#area47#page61#inu15#ln129#par80" name="nome_nome" source="data[].ent1#att2" target="sv9#area47#page9#enu4#fld38_slot"/>
+        <LinkParameter id="sv9#area47#page61#inu15#ln129#par81" name="prezzo_prezzo" source="data[].ent1#att7" target="sv9#area47#page9#enu4#fld53_slot"/>
+        <LinkParameter id="sv9#area47#page61#inu15#ln129#par82" name="oid_PASSING" source="data[].ent1#att1" passing="true"/>
+      </Link>
+      <Link id="sv9#area47#page61#inu15#ln133" name="Flow71" to="sv9#area47#page11#mssu20" type="normal" validate="true" gr:bendpoints="169,-61,269,429;169,-358,269,132">
+        <LinkParameter id="sv9#area47#page61#inu15#ln133#par83" name="oid_PASSING" source="data[].ent1#att1" passing="true"/>
+      </Link>
+    </IndexUnit>
+  </ContentUnits>
+  <Link id="sv9#area47#page61#ln137" name="Flow35" to="sv9#area47#page8#seu2" type="normal" automaticCoupling="true" validate="true"/>
+</Page>

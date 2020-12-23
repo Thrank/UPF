@@ -1,16 +1,28 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1170" gr:y="670" id="sv9#area48#page13" name="Conferma l'eliminazione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1170" gr:y="665" id="sv9#area48#page13" name="Conferma l'eliminazione">
   <ContentUnits>
-    <EntryUnit gr:x="0" gr:y="0" id="sv9#area48#page13#enu10" name="Confermare eliminazione" linkOrder="sv9#area48#page13#enu10#ln13">
-      <Link id="sv9#area48#page13#enu10#ln13" name="Flow13" to="sv9#area48#miu1" type="normal" validate="true">
-        <LinkParameter id="sv9#area48#page13#enu10#ln13#par10" name="oid_PASSING_KeyCondition220 [oid]" sourceLinkParameter="sv9#area48#page5#mdu1#ln8#par9" target="sv9#area48#miu1.mov1#mpkg4#hym6#icu13#icp63"/>
-      </Link>
-    </EntryUnit>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv9#area48#page13#mssu23" name="Conferma eliminazione" linkOrder="sv9#area48#page13#mssu23#ln167">
+      <Link id="sv9#area48#page13#mssu23#ln167" name="Flow13" to="sv9#area48#miu1" type="normal" validate="true"/>
+    </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv9#area48#page13#enu10">
-          <layout:Link link="sv9#area48#page13#enu10#ln13"/>
+        <layout:Unit unitId="sv9#area48#page13#mssu23">
+          <layout:Link link="sv9#area48#page13#mssu23#ln167"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

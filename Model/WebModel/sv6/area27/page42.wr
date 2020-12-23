@@ -114,13 +114,11 @@
         <LinkParameter id="sv6#area27#page42#seu30#ln102#par2656" name="oid_PASSING" source="ent22#att27Array" passing="true"/>
       </Link>
     </SelectorUnit>
-    <MultiChoiceIndexUnit gr:x="255" gr:y="640" id="sv6#area27#page42#mciu1" name="Preferenze tipologia cucina" entity="ent10" displayAttributes="ent10#att28" gr:showAllParts="true" linkOrder="sv6#area27#page42#mciu1#ln192">
+    <MultiChoiceIndexUnit gr:x="255" gr:y="640" id="sv6#area27#page42#mciu1" name="Preferenze tipologia cucina" entity="ent10" displayAttributes="ent10#att28" gr:showAllParts="true" linkOrder="sv6#area27#page42#mciu1#ln97">
       <SortAttribute attribute="ent10#att28" order="ascending"/>
-      <Link id="sv6#area27#page42#mciu1#ln192" name="Flow192" to="sv6#area27#opg6#dcnu2" type="normal" validate="true">
-        <LinkParameter id="sv6#area27#page42#mciu1#ln192#par441" name="Checked oid_PASSING" source="ent10#att61Checked" passing="true"/>
-        <LinkParameter id="sv6#area27#page42#mciu1#ln192#par443" name="UserCtxParam.oid_PASSING_KeyCondition83 [oid] [Cliente ] [Source]" sourceLinkParameter="sv6#area27#page42#gtu1#ln193#par435" target="sv6#area27#opg6#dcnu2#su97#kcond83.userOID"/>
-        <LinkParameter id="sv6#area27#page42#mciu1#ln192#par444" name="oid (Single Row)_KeyCondition84 [oid] [Tipologia Cucina] [Target]" source="data[].ent10#att61" target="sv6#area27#opg6#dcnu2#su98#kcond84.ent10#att61"/>
-        <LinkParameter id="sv6#area27#page42#mciu1#ln192#par448" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area27#page42#gtu1#ln193#par435" passing="true"/>
+      <Link id="sv6#area27#page42#mciu1#ln97" name="Flow97" to="sv6#area27#opg6#rcnu1" type="normal" validate="true">
+        <LinkParameter id="sv6#area27#page42#mciu1#ln97#par20" name="UserCtxParam.oid_PASSING_KeyCondition2 [oid] [Cliente ] [ConnectSource]" sourceLinkParameter="sv6#area27#page42#gtu1#ln193#par435" target="sv6#area27#opg6#rcnu1#su1#kcond2.userOID"/>
+        <LinkParameter id="sv6#area27#page42#mciu1#ln97#par22" name="Checked oid_KeyCondition5 [oid] [Tipologia Cucina] [ConnectTarget]" source="ent10#att61Checked" target="sv6#area27#opg6#rcnu1#su2#kcond5.ent10#att61"/>
       </Link>
     </MultiChoiceIndexUnit>
   </ContentUnits>
@@ -251,7 +249,7 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv6#area27#page42#mciu1">
           <layout:Attribute attribute="ent10#att28"/>
-          <layout:Link link="sv6#area27#page42#mciu1#ln192"/>
+          <layout:Link link="sv6#area27#page42#mciu1#ln97"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

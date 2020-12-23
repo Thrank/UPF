@@ -6,11 +6,11 @@
         <RelationshipRoleCondition id="sv6#area25#opg13#seu39#su112#rcond27" name="&#232; preferito dall'utente?" predicate="in" implied="false" role="rel19#role38"/>
         <KeyCondition id="sv6#area25#opg13#seu39#su112#kcond94" name="oid ristorante" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="sv6#area25#opg13#seu39#oln31" name="OKFlow31" to="sv6#area25#page40#alt8#page71#enu26" gr:bendpoints="650,19,-45,-116">
+      <OKLink id="sv6#area25#opg13#seu39#oln31" name="OKFlow31" to="sv6#area25#page40#alt8#page71#mssu19" gr:bendpoints="650,19,-45,-116">
         <LinkParameter id="sv6#area25#opg13#seu39#oln31#par306" name="oid_PASSING" source="ent14#att40Array" passing="true"/>
         <LinkParameter id="sv6#area25#opg13#seu39#oln31#par310" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area25#page40#dau15#ln132#par307" passing="true"/>
       </OKLink>
-      <KOLink id="sv6#area25#opg13#seu39#kln32" name="KOFlow32" to="sv6#area25#page40#alt8#page70#enu19" gr:bendpoints="313,21,-157,-74">
+      <KOLink id="sv6#area25#opg13#seu39#kln32" name="KOFlow32" to="sv6#area25#page40#alt8#page70#mssu17" gr:bendpoints="313,21,-157,-74">
         <LinkParameter id="sv6#area25#opg13#seu39#kln32#par308" name="oid_PASSING" source="ent14#att40Array" passing="true"/>
         <LinkParameter id="sv6#area25#opg13#seu39#kln32#par309" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area25#page40#dau15#ln132#par307" passing="true"/>
       </KOLink>

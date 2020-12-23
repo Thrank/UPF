@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="765" gr:y="680" id="sv9#area47#page9" name="Modifica piatto">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="735" gr:y="680" id="sv9#area47#page9" name="Modifica piatto">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv9#area47#page9#enu4" name="Modifica piatto" gr:showAllParts="true" fieldOrder="sv9#area47#page9#enu4#fld38 sv9#area47#page9#enu4#fld53 sv9#area47#page9#enu4#fld54 sv9#area47#page9#enu4#fld59" linkOrder="sv9#area47#page9#enu4#ln67">
       <Field id="sv9#area47#page9#enu4#fld54" name="foto" type="blob" preloaded="true" modifiable="true"/>
@@ -10,7 +10,7 @@
         <LinkParameter id="sv9#area47#page9#enu4#ln67#par95" name="foto_PASSING" source="sv9#area47#page9#enu4#fld54" passing="true"/>
         <LinkParameter id="sv9#area47#page9#enu4#ln67#par96" name="nome_PASSING" source="sv9#area47#page9#enu4#fld38" passing="true"/>
         <LinkParameter id="sv9#area47#page9#enu4#ln67#par97" name="prezzo_PASSING" source="sv9#area47#page9#enu4#fld53" passing="true"/>
-        <LinkParameter id="sv9#area47#page9#enu4#ln67#par113" name="oid_PASSING" sourceLinkParameter="sv9#area47#page183#alt1#page3#inu9#ln65#par112" passing="true"/>
+        <LinkParameter id="sv9#area47#page9#enu4#ln67#par113" name="oid_PASSING" sourceLinkParameter="sv9#area47#page61#inu15#ln129#par82" passing="true"/>
       </Link>
     </EntryUnit>
     <MultiChoiceIndexUnit gr:x="5" gr:y="155" id="sv9#area47#page9#mciu6" name="Lista tipologie cucina" entity="ent10" displayAttributes="ent10#att28" linkOrder="sv9#area47#page9#mciu6#ln68">

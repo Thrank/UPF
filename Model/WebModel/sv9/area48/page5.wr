@@ -32,10 +32,10 @@
         <LinkParameter id="sv9#area48#page5#mdu1#ln7#par104" name="nome_PASSING" source="ent14#att42Array" target="sv9#area48#miu2.mov1#mpkg3#hym5#icu11#icp56"/>
         <LinkParameter id="sv9#area48#page5#mdu1#ln7#par105" name="numero di telefono_PASSING" source="ent14#att44Array" target="sv9#area48#miu2.mov1#mpkg3#hym5#icu11#icp59"/>
       </Link>
-      <Link id="sv9#area48#page5#mdu1#ln8" name="Flow337" to="sv9#area48#page13#enu10" type="normal" validate="true">
+      <Link id="sv9#area48#page5#mdu1#ln8" name="Flow337" to="sv9#area48#page13#mssu23" type="normal" validate="true">
         <LinkParameter id="sv9#area48#page5#mdu1#ln8#par9" name="oid_PASSING" source="ent14#att40Array" passing="true"/>
       </Link>
-      <Link id="sv9#area48#page5#mdu1#ln11" name="Flow11" to="sv9#area47#page183#alt1#page3#scu7" type="normal" validate="true" automaticCoupling="true"/>
+      <Link id="sv9#area48#page5#mdu1#ln11" name="Flow11" to="sv9#area47#page61" type="normal" validate="true" automaticCoupling="true" gr:bendpoints="213,-312,-537,543"/>
     </MultiDataUnit>
     <SelectorUnit id="sv9#area48#page5#seu45" name="Ristoranti in attesa" gr:showAllParts="true" gr:x="370" gr:y="115" entity="ent14" distinctAttributes="ent14#att42">
       <Selector id="sv9#area48#page5#seu45#su129" defaultPolicy="fill" booleanOperator="and">
@@ -59,7 +59,7 @@
         <LinkParameter id="sv9#area48#page5#mdu5#ln161#par454" name="numero di telefono_numero di telefono_PASSING" source="ent14#att44Array" target="sv9#area48#miu2.mov1#mpkg3#hym5#icu11#icp59"/>
         <LinkParameter id="sv9#area48#page5#mdu5#ln161#par458" name="oid_RoleCondition98 [oid]" source="ent14#att40Array" target="sv9#area48#miu2.mov1#mpkg3#hym5#icu11#icp55"/>
       </Link>
-      <Link id="sv9#area48#page5#mdu5#ln162" name="Flow162" to="sv9#area48#page13#enu10" type="normal" validate="true">
+      <Link id="sv9#area48#page5#mdu5#ln162" name="Flow162" to="sv9#area48#page13#mssu23" type="normal" validate="true">
         <LinkParameter id="sv9#area48#page5#mdu5#ln162#par461" name="oid_PASSING" source="ent14#att40Array" passing="true"/>
       </Link>
     </MultiDataUnit>

@@ -1,15 +1,15 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv9#area47" name="Piatto" landmark="false" gr:x="1545" gr:y="105" defaultPage="sv9#area47#page183">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv9#area47" name="Piatto" landmark="false" gr:x="1575" gr:y="105">
   <OperationUnits>
-    <GetUnit gr:x="90" gr:y="490" id="sv9#area47#gtu3" name="Recupera oid utente" contextParameters="UserCtxParam" linkOrder="sv9#area47#gtu3#ln18 sv9#area47#gtu3#ln25">
-      <Link id="sv9#area47#gtu3#ln18" name="Flow18" to="sv9#area47#page183#alt1#page3#scu7" type="transport" validate="true">
-        <LinkParameter id="sv9#area47#gtu3#ln18#par1" name="UserCtxParam.oid_ristorante dell'utente iscritto? [oid]" source="sv9#area47#gtu3.UserCtxParam" target="sv9#area47#page183#alt1#page3#scu7#su5#rcond10.userOID"/>
+    <GetUnit gr:x="55" gr:y="530" id="sv9#area47#gtu3" name="Recupera oid utente" contextParameters="UserCtxParam" linkOrder="sv9#area47#gtu3#ln18 sv9#area47#gtu3#ln25">
+      <Link id="sv9#area47#gtu3#ln18" name="Flow18" to="sv9#area47#page61#scu25" type="transport" validate="true">
+        <LinkParameter id="sv9#area47#gtu3#ln18#par1" name="UserCtxParam.oid_ristorante dell'utente iscritto? [oid]" source="sv9#area47#gtu3.UserCtxParam" target="sv9#area47#page61#scu25#su8#rcond9.userOID"/>
       </Link>
-      <Link id="sv9#area47#gtu3#ln25" name="Flow25" to="sv9#area47#page183#alt1#page2#scu4" type="transport" validate="true">
-        <LinkParameter id="sv9#area47#gtu3#ln25#par2" name="UserCtxParam.oid_ristorante non dell'utente iscritto [oid]" source="sv9#area47#gtu3.UserCtxParam" target="sv9#area47#page183#alt1#page2#scu4#su3#rcond15.userOID"/>
+      <Link id="sv9#area47#gtu3#ln25" name="Flow25" to="sv9#area47#page62#scu26" type="transport" validate="true">
+        <LinkParameter id="sv9#area47#gtu3#ln25#par2" name="UserCtxParam.oid_ristorante non dell'utente iscritto [oid]" source="sv9#area47#gtu3.UserCtxParam" target="sv9#area47#page62#scu26#su11#rcond19.userOID"/>
       </Link>
     </GetUnit>
-    <ModuleInstanceUnit gr:x="525" gr:y="30" id="sv9#area47#miu25" moduleId="mov1#opm11">
-      <OKLink id="sv9#area47#miu25#oln96" to="sv9#area47#page183#alt1#page3" name="OKFlow17" gr:bendpoints="-4,678,346,-117"/>
+    <ModuleInstanceUnit gr:x="495" gr:y="30" id="sv9#area47#miu25" moduleId="mov1#opm11">
+      <OKLink id="sv9#area47#miu25#oln96" to="sv9#area47#page61" name="OKFlow17" gr:bendpoints="-4,678,346,-117"/>
     </ModuleInstanceUnit>
   </OperationUnits>
 </Area>
