@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv8#area37#page126" name="Benvenuto" landmark="false" gr:x="0" gr:y="0">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv8#area37#page126" name="Benvenuto" landmark="false" gr:x="0" gr:y="0" linkOrder="sv8#area37#page126#ln35">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -44,4 +44,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv8#area37#page126#ln35" name="Flow35" to="sv8#lou10" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="15,-108,15,102"/>
 </Page>
