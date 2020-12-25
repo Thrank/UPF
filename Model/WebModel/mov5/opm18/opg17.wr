@@ -1,0 +1,54 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov5#opm18#opg17" name="Respingi valutazione" transaction="true" gr:x="300" gr:y="0">
+  <OperationUnits>
+    <ConnectUnit id="mov5#opm18#opg17#cnu10" name="Connetti a valutazione" gr:x="320" gr:y="10" relationship="rel31#role61">
+      <SourceSelector id="mov5#opm18#opg17#cnu10#su21" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov5#opm18#opg17#cnu10#su21#kcond26" name="KeyCondition26" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov5#opm18#opg17#cnu10#su22" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov5#opm18#opg17#cnu10#su22#kcond27" name="KeyCondition27" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="mov5#opm18#opg17#cnu10#kln46" name="KOFlow46" to="mov5#opm18#kocu9" automaticCoupling="true"/>
+      <OKLink id="mov5#opm18#opg17#cnu10#oln36" name="OKFlow36" to="mov5#opm18#okcu8" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ModifyUnit id="mov5#opm18#opg17#mfu18" name="Respingi valutazione" gr:x="0" gr:y="0" entity="ent15">
+      <Selector id="mov5#opm18#opg17#mfu18#su33" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov5#opm18#opg17#mfu18#su33#kcond28" name="KeyCondition19" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov5#opm18#opg17#mfu18#oln15" name="OKFlow40" to="mov5#opm18#opg17#tmu4">
+        <LinkParameter id="mov5#opm18#opg17#mfu18#oln15#par391" name="oid_PASSING" source="ent15#att41Array" passing="true"/>
+        <LinkParameter id="mov5#opm18#opg17#mfu18#oln15#par392" name="UserCtxParam.oid_PASSING" sourceLinkParameter="mov5#opm18#icu16#oln14#par383" passing="true"/>
+      </OKLink>
+      <KOLink id="mov5#opm18#opg17#mfu18#kln47" name="KOFlow47" to="mov5#opm18#kocu9" automaticCoupling="true" gr:bendpoints="107,-54,-538,-139;445,-52,-200,-137"/>
+    </ModifyUnit>
+    <TimeUnit id="mov5#opm18#opg17#tmu4" name="Data attuale" gr:x="170" gr:y="30">
+      <OKLink id="mov5#opm18#opg17#tmu4#oln17" name="OKFlow41" to="mov5#opm18#opg17#cru6">
+        <LinkParameter id="mov5#opm18#opg17#tmu4#oln17#par393" name="Current/Input Date_data" source="currentDate" target="mov5#opm18#opg17#cru6.ent24#att80"/>
+        <LinkParameter id="mov5#opm18#opg17#tmu4#oln17#par441" name="oid_PASSING_Valutazione.oid(Moderazione EseguitaTovalutazione)" sourceLinkParameter="mov5#opm18#opg17#mfu18#oln15#par391" target="mov5#opm18#opg17#cru6.rel31#role61.ent15#att41"/>
+        <LinkParameter id="mov5#opm18#opg17#tmu4#oln17#par443" name="oid_PASSING" sourceLinkParameter="mov5#opm18#opg17#mfu18#oln15#par391" passing="true"/>
+        <LinkParameter id="mov5#opm18#opg17#tmu4#oln17#par444" name="UserCtxParam.oid_PASSING" sourceLinkParameter="mov5#opm18#opg17#mfu18#oln15#par392" passing="true"/>
+      </OKLink>
+      <KOLink id="mov5#opm18#opg17#tmu4#kln49" name="KOFlow49" to="mov5#opm18#kocu9" automaticCoupling="true" gr:bendpoints="71,65,-424,-10"/>
+    </TimeUnit>
+    <CreateUnit id="mov5#opm18#opg17#cru6" name="Moderazione eseguita sulla valutazione" gr:x="10" gr:y="160" entity="ent24">
+      <OKLink id="mov5#opm18#opg17#cru6#oln19" name="OKFlow43" to="mov5#opm18#opg17#cnu11">
+        <LinkParameter id="mov5#opm18#opg17#cru6#oln19#par445" name="oid_KeyCondition24 [oid] [Moderazione Eseguita] [Source]" source="ent24#att10Array" target="mov5#opm18#opg17#cnu11#su34#kcond31.ent24#att10"/>
+        <LinkParameter id="mov5#opm18#opg17#cru6#oln19#par447" name="oid_PASSING" sourceLinkParameter="mov5#opm18#opg17#tmu4#oln17#par443" passing="true"/>
+        <LinkParameter id="mov5#opm18#opg17#cru6#oln19#par448" name="UserCtxParam.oid_PASSING_KeyCondition25 [oid] [Moderatore] [Target]" sourceLinkParameter="mov5#opm18#opg17#tmu4#oln17#par444" target="mov5#opm18#opg17#cnu11#su35#kcond34.userOID"/>
+      </OKLink>
+      <KOLink id="mov5#opm18#opg17#cru6#kln48" name="KOFlow48" to="mov5#opm18#kocu9" automaticCoupling="true" gr:bendpoints="162,-62,-423,3"/>
+    </CreateUnit>
+    <ConnectUnit id="mov5#opm18#opg17#cnu11" name="Connetti a moderatore" gr:x="300" gr:y="160" relationship="rel30#role60">
+      <SourceSelector id="mov5#opm18#opg17#cnu11#su34" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov5#opm18#opg17#cnu11#su34#kcond31" name="KeyCondition24" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov5#opm18#opg17#cnu11#su35" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov5#opm18#opg17#cnu11#su35#kcond34" name="KeyCondition25" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov5#opm18#opg17#cnu11#oln21" name="OKFlow44" to="mov5#opm18#opg17#cnu10">
+        <LinkParameter id="mov5#opm18#opg17#cnu11#oln21#par477" name="Source oid [Moderazione Eseguita]_KeyCondition26 [oid] [Moderazione Eseguita] [Source]" source="sourceent24#att10" target="mov5#opm18#opg17#cnu10#su21#kcond26.ent24#att10"/>
+        <LinkParameter id="mov5#opm18#opg17#cnu11#oln21#par481" name="oid_PASSING_KeyCondition27 [oid] [Valutazione] [Target]" sourceLinkParameter="mov5#opm18#opg17#cru6#oln19#par447" target="mov5#opm18#opg17#cnu10#su22#kcond27.ent15#att41"/>
+      </OKLink>
+      <KOLink id="mov5#opm18#opg17#cnu11#kln39" name="KOFlow39" to="mov5#opm18#kocu9" automaticCoupling="true"/>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>

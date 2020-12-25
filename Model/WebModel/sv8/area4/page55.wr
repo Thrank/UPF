@@ -6,16 +6,22 @@
       </Selector>
       <Link id="sv8#area4#page55#scu24#ln123" name="Flow123" to="sv8#area4#page55#inu14" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
-    <IndexUnit gr:x="255" gr:y="10" id="sv8#area4#page55#inu14" name="Elenco valutazioni da controllare" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4 rel2#role4.ent14#att42 rel3#role6.userName" linkOrder="sv8#area4#page55#inu14#ln126 sv8#area4#page55#inu14#ln127">
+    <IndexUnit gr:x="255" gr:y="10" id="sv8#area4#page55#inu14" name="Elenco valutazioni da controllare" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4 rel2#role4.ent14#att42 rel3#role6.userName" linkOrder="sv8#area4#page55#inu14#ln126 sv8#area4#page55#inu14#ln14">
       <SortAttribute attribute="ent15#att4" order="ascending"/>
       <Link id="sv8#area4#page55#inu14#ln126" name="Flow126" to="sv8#opg14#mfu14" type="normal" validate="true">
         <LinkParameter id="sv8#area4#page55#inu14#ln126#par176" name="oid_KeyCondition18 [oid]" source="data[].ent15#att41" target="sv8#opg14#mfu14#su28#kcond18.ent15#att41"/>
         <LinkParameter id="sv8#area4#page55#inu14#ln126#par177" name="1_stato approvazione" sourceValue="1" target="sv8#opg14#mfu14.ent15#att36"/>
       </Link>
-      <Link id="sv8#area4#page55#inu14#ln127" name="Flow127" to="sv8#miu16" type="normal" validate="true">
-        <LinkParameter id="sv8#area4#page55#inu14#ln127#par233" name="oid_KeyCondition19 [oid]" source="data[].ent15#att41" target="sv8#miu16.mov5#opm6#icu6#icp7"/>
+      <Link id="sv8#area4#page55#inu14#ln14" name="Flow14" to="sv8#miu26" type="normal" validate="true">
+        <LinkParameter id="sv8#area4#page55#inu14#ln14#par230" name="oid_KeyCondition19 [oid]" source="data[].ent15#att41" target="sv8#miu26.mov5#opm18#icu16#icp6"/>
+        <LinkParameter id="sv8#area4#page55#inu14#ln14#par231" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv8#area4#page55#gtu14#ln13#par229" target="sv8#miu26.mov5#opm18#icu16#icp7"/>
       </Link>
     </IndexUnit>
+    <GetUnit gr:x="260" gr:y="120" id="sv8#area4#page55#gtu14" name="Recupera oid moderatore" contextParameters="UserCtxParam">
+      <Link id="sv8#area4#page55#gtu14#ln13" name="Flow13" to="sv8#area4#page55#inu14" type="transport" validate="true">
+        <LinkParameter id="sv8#area4#page55#gtu14#ln13#par229" name="UserCtxParam.oid_PASSING" source="sv8#area4#page55#gtu14.UserCtxParam" passing="true"/>
+      </Link>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -49,9 +55,23 @@
           <layout:Attribute attribute="rel2#role4.ent14#att42"/>
           <layout:Attribute attribute="rel3#role6.userName"/>
           <layout:Link link="sv8#area4#page55#inu14#ln126"/>
-          <layout:Link link="sv8#area4#page55#inu14#ln127"/>
+          <layout:Link link="sv8#area4#page55#inu14#ln14"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
