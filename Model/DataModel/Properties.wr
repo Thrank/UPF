@@ -169,10 +169,12 @@
     <Attribute id="ent24#att80" name="data" type="date"/>
     <Attribute id="ent24#att10" name="oid" key="true" type="integer"/>
   </Entity>
-  <Entity gr:x="820" gr:y="585" id="ent25" name="Promozione" duration="persistent" attributeOrder="ent25#att69 ent25#att70 ent25#att71">
+  <Entity gr:x="840" gr:y="640" id="ent25" name="Promozione" duration="persistent" attributeOrder="ent25#att69 ent25#att70 ent25#att71">
     <Attribute id="ent25#att69" key="true" name="oid" type="integer"/>
     <Attribute id="ent25#att70" name="codice" type="string"/>
     <Attribute id="ent25#att71" name="data scadenza" type="date"/>
+    <Attribute id="ent25#att37" name="%sconto" type="string"/>
+    <Attribute id="ent25#att38" name="consegna gratuita" type="boolean"/>
   </Entity>
   <Relationship id="rel28" name="Attivit&#224; Approvata_Amministratore" sourceEntity="ent21" targetEntity="ent12">
     <RelationshipRole1 id="rel28#role55" name="Attivit&#224; ApprovataToAmministratore" maxCard="1"/>
@@ -226,15 +228,6 @@
   <Relationship id="rel25" name="Ordine_Promozione" sourceEntity="ent3" targetEntity="ent25">
     <RelationshipRole1 id="rel25#role49" name="OrdineToPromozione" maxCard="1"/>
     <RelationshipRole2 id="rel25#role50" name="PromozioneToOrdine" maxCard="N"/>
-  </Relationship>
-  <Entity gr:x="780" gr:y="755" id="ent20" name="Tipologia Promozione" duration="persistent" attributeOrder="ent20#att24 ent20#att25 ent20#att26">
-    <Attribute id="ent20#att24" key="true" name="oid" type="integer"/>
-    <Attribute id="ent20#att25" name="%sconto" type="string"/>
-    <Attribute id="ent20#att26" name="consegna gratuita" type="boolean"/>
-  </Entity>
-  <Relationship id="rel26" name="Promozione_Tipologia Promozione" sourceEntity="ent25" targetEntity="ent20">
-    <RelationshipRole1 id="rel26#role51" name="PromozioneToTipologia Promozione" maxCard="N"/>
-    <RelationshipRole2 id="rel26#role52" name="Tipologia PromozioneToPromozione" maxCard="N"/>
   </Relationship>
   <Entity gr:x="1050" gr:y="435" id="ent22" name="Citt&#224;" duration="persistent" attributeOrder="ent22#att27 ent22#att29">
     <Attribute id="ent22#att27" key="true" name="oid" type="integer"/>
