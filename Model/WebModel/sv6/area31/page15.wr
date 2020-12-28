@@ -21,7 +21,12 @@
       </Link>
     </IndexUnit>
     <MultiMessageUnit gr:x="340" gr:y="20" id="sv6#area31#page15#mssu26" name="Conferma annullamento" linkOrder="sv6#area31#page15#mssu26#ln9">
-      <Link id="sv6#area31#page15#mssu26#ln9" name="Flow2" to="sv6#area31#miu4" type="normal" validate="true" gr:bendpoints="533,-29,488,886;533,-472,488,443;529,-802,484,113;222,-916,177,-1"/>
+      <Link id="sv6#area31#page15#mssu26#ln9" name="Flow2" to="sv6#area31#miu4" type="normal" validate="true" gr:bendpoints="533,-29,488,886;533,-472,488,443;529,-802,484,113;222,-916,177,-1">
+        <LinkParameter id="sv6#area31#page15#mssu26#ln9#par248" name="UserCtxParam.oid_PASSING_KeyCondition5 [oid] [Cliente ] [Source]" sourceLinkParameter="sv6#area31#page15#inu1#ln48#par873" target="sv6#area31#miu4.mov3#mpkg1#opm7#icu7#icp33"/>
+        <LinkParameter id="sv6#area31#page15#mssu26#ln9#par313" name="oid_PASSING_KeyCondition6 [oid] [Ordine] [Target]" sourceLinkParameter="sv6#area31#page15#inu1#ln48#par872" target="sv6#area31#miu4.mov3#mpkg1#opm7#icu7#icp34"/>
+        <LinkParameter id="sv6#area31#page15#mssu26#ln9#par314" name="oid_PASSING_oid_PASSING" sourceLinkParameter="sv6#area31#page15#inu1#ln48#par872" target="sv6#area31#miu4.mov3#mpkg1#opm7#icu7#icp36"/>
+        <LinkParameter id="sv6#area31#page15#mssu26#ln9#par315" name="UserCtxParam.oid_PASSING_UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#page15#inu1#ln48#par873" target="sv6#area31#miu4.mov3#mpkg1#opm7#icu7#icp35"/>
+      </Link>
     </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

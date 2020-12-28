@@ -12,7 +12,7 @@
         <LinkParameter id="mov3#mpkg5#hym10#page78#seu64#ln242#par1322" name="valutazioneToRistorante.oid_PASSING" source="rel2#role4_ent14#att40Array" passing="true"/>
       </Link>
     </SelectorUnit>
-    <DataUnit id="mov3#mpkg5#hym10#page78#dau10" name="Valutazione da eliminare" gr:x="15" gr:y="185" entity="ent15">
+    <DataUnit id="mov3#mpkg5#hym10#page78#dau10" name="Valutazione da eliminare" gr:x="15" gr:y="185" entity="ent15" displayAttributes="ent15#att53 ent15#att54 ent15#att4">
       <Selector id="mov3#mpkg5#hym10#page78#dau10#su288" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov3#mpkg5#hym10#page78#dau10#su288#kcond229" name="KeyCondition223" predicate="in" implied="false"/>
       </Selector>
@@ -26,7 +26,11 @@
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="mov3#mpkg5#hym10#page78#dau10"/>
+        <layout:Unit unitId="mov3#mpkg5#hym10#page78#dau10">
+          <layout:Attribute attribute="ent15#att53"/>
+          <layout:Attribute attribute="ent15#att54"/>
+          <layout:Attribute attribute="ent15#att4"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
