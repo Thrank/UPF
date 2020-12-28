@@ -6,7 +6,7 @@
       </Selector>
       <Link id="sv9#area1#page16#seu29#ln73" name="Flow73" to="sv9#area1#page16#scu10" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <ScrollerUnit gr:x="190" gr:y="10" id="sv9#area1#page16#scu10" name="Scorri ordini" useCountQuery="false" entity="ent3" linkOrder="sv9#area1#page16#scu10#ln74">
+    <ScrollerUnit gr:x="190" gr:y="10" id="sv9#area1#page16#scu10" name="Scorri ordini" useCountQuery="false" entity="ent3" linkOrder="sv9#area1#page16#scu10#ln74" blockFactor="15">
       <Link id="sv9#area1#page16#scu10#ln74" name="Flow74" to="sv9#area1#page16#inu2" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
     <IndexUnit gr:x="60" gr:y="150" id="sv9#area1#page16#inu2" name="Elenco ordini" entity="ent3" linkOrder="sv9#area1#page16#inu2#ln75 sv9#area1#page16#inu2#ln76" displayAttributes="ent3#att22 ent3#att23 rel5#role10.User#att3 rel5#role10.User#att6 rel5#role10.User#att11 rel34#role68.ent16#att31 rel34#role68.ent16#att32 rel34#role68.ent16#att76 rel34#role68.rel32#role63.ent22#att29 ent3#att15" gr:showAllParts="true">

@@ -6,11 +6,11 @@
         <KeyCondition id="sv9#area47#page62#inu16#su10#kcond8" name="KeyCondition3" predicate="in" implied="false"/>
       </Selector>
     </IndexUnit>
-    <ScrollerUnit gr:x="0" gr:y="0" id="sv9#area47#page62#scu26" name="Scorri piatti" useCountQuery="false" gr:showAllParts="true" entity="ent1" linkOrder="sv9#area47#page62#scu26#ln135">
+    <ScrollerUnit gr:x="0" gr:y="0" id="sv9#area47#page62#scu26" name="Scorri piatti" useCountQuery="false" gr:showAllParts="true" entity="ent1" linkOrder="sv9#area47#page62#scu26#ln135" blockFactor="20">
       <SortAttribute attribute="ent1#att2" order="ascending"/>
       <Selector id="sv9#area47#page62#scu26#su11" defaultPolicy="fill" booleanOperator="and" expression="NOT(sv9#area47#page62#scu26#su11#rcond19) AND sv9#area47#page62#scu26#su11#rcond10">
         <RelationshipRoleCondition id="sv9#area47#page62#scu26#su11#rcond10" name="piatti del ristorante" predicate="in" implied="false" role="rel4#role7"/>
-        <RelationshipRoleCondition id="sv9#area47#page62#scu26#su11#rcond19" name="ristorante non dell'utente iscritto" predicate="in" implied="false" role="rel1#role1.rel4#role7"/>
+        <RelationshipRoleCondition id="sv9#area47#page62#scu26#su11#rcond19" name="ristorante non dell'utente iscritto" predicate="notIn" implied="false" role="rel1#role1.rel4#role7"/>
       </Selector>
       <Link id="sv9#area47#page62#scu26#ln135" name="Flow9" to="sv9#area47#page62#inu16" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>

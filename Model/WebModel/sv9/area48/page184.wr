@@ -22,7 +22,7 @@
       <SortAttribute attribute="ent10#att28" order="ascending"/>
       <Link id="sv9#area48#page184#scu71#ln494" name="Flow41" to="sv9#area48#page184#inu82" type="automatic" automaticCoupling="true" validate="true"/>
     </ScrollerUnit>
-    <ScrollerUnit id="sv9#area48#page184#scu72" name="Scorri migliori ristoranti" linkOrder="sv9#area48#page184#scu72#ln495" gr:showAllParts="true" gr:x="410" gr:y="10" useCountQuery="false" entity="ent2" blockFactor="5">
+    <ScrollerUnit id="sv9#area48#page184#scu72" name="Scorri migliori ristoranti" linkOrder="sv9#area48#page184#scu72#ln495" gr:showAllParts="true" gr:x="410" gr:y="10" useCountQuery="false" entity="ent2" blockFactor="15">
       <Link id="sv9#area48#page184#scu72#ln495" name="Flow42" to="sv9#area48#page184#inu81" type="automatic" automaticCoupling="true" validate="true"/>
       <SortAttribute attribute="ent14#att52" order="descending"/>
     </ScrollerUnit>

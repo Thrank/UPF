@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="755" id="sv5#area2#page32" name="Gestione attivit&#224;">
   <ContentUnits>
-    <ScrollerUnit gr:x="0" gr:y="10" id="sv5#area2#page32#scu21" name="Scorri attivit&#224;" useCountQuery="false" entity="ent21" linkOrder="sv5#area2#page32#scu21#ln31">
+    <ScrollerUnit gr:x="0" gr:y="10" id="sv5#area2#page32#scu21" name="Scorri attivit&#224;" useCountQuery="false" entity="ent21" linkOrder="sv5#area2#page32#scu21#ln31" blockFactor="15">
       <Link id="sv5#area2#page32#scu21#ln31" name="Flow31" to="sv5#area2#page32#inu12" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
     <IndexUnit gr:x="195" gr:y="0" id="sv5#area2#page32#inu12" name="Elenco attivit&#224; in attesa" entity="ent21" displayAttributes="ent21#att81 ent21#att9">

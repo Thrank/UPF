@@ -1,12 +1,12 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="25" gr:y="845" id="sv6#area31#page15" name="I miei ordini" landmark="true">
   <ContentUnits>
-    <ScrollerUnit gr:x="0" gr:y="5" id="sv6#area31#page15#scu2" name="Scorri ordini" useCountQuery="false" entity="ent3" linkOrder="sv6#area31#page15#scu2#ln46">
+    <ScrollerUnit gr:x="0" gr:y="5" id="sv6#area31#page15#scu2" name="Scorri ordini" useCountQuery="false" entity="ent3" linkOrder="sv6#area31#page15#scu2#ln46" blockFactor="10">
       <Link id="sv6#area31#page15#scu2#ln46" name="Flow197" to="sv6#area31#page15#inu1" type="automatic" validate="true">
         <LinkParameter id="sv6#area31#page15#scu2#ln46#par870" name="oid_KeyCondition139 [oid]" source="ent3#att8Array" target="sv6#area31#page15#inu1#su126#kcond104.ent3#att8"/>
         <LinkParameter id="sv6#area31#page15#scu2#ln46#par871" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#gtu13#ln45#par869" passing="true"/>
       </Link>
       <Selector id="sv6#area31#page15#scu2#su125" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv6#area31#page15#scu2#su125#rcond1" name="ordini dell'utente" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv6#area31#page15#scu2#su125#rcond1" name="ordini dell'utente" predicate="in" implied="false" role="rel5#role9"/>
       </Selector>
       <SortAttribute attribute="ent3#att8" order="ascending"/>
     </ScrollerUnit>

@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="170" id="sv8#area4#page55" name="Gestione valutazioni" landmark="true">
   <ContentUnits>
-    <ScrollerUnit gr:x="0" gr:y="0" id="sv8#area4#page55#scu24" name="Scorri valutazioni" useCountQuery="false" entity="ent15" linkOrder="sv8#area4#page55#scu24#ln123">
+    <ScrollerUnit gr:x="0" gr:y="0" id="sv8#area4#page55#scu24" name="Scorri valutazioni" useCountQuery="false" entity="ent15" linkOrder="sv8#area4#page55#scu24#ln123" blockFactor="15">
       <Selector id="sv8#area4#page55#scu24#su27" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv8#area4#page55#scu24#su27#acond21" name="AttCondition21" predicate="eq" booleanOperator="or" implied="false" attributes="ent15#att36" value="0"/>
       </Selector>

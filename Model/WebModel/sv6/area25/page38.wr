@@ -21,7 +21,7 @@
       <SortAttribute attribute="ent10#att28" order="ascending"/>
       <Link id="sv6#area25#page38#scu14#ln32" name="Flow41" to="sv6#area25#page38#inu33" type="automatic" automaticCoupling="true" validate="true"/>
     </ScrollerUnit>
-    <ScrollerUnit id="sv6#area25#page38#scu15" name="Scorri migliori ristoranti" linkOrder="sv6#area25#page38#scu15#ln33" gr:showAllParts="true" gr:x="410" gr:y="10" useCountQuery="false" entity="ent2">
+    <ScrollerUnit id="sv6#area25#page38#scu15" name="Scorri migliori ristoranti" linkOrder="sv6#area25#page38#scu15#ln33" gr:showAllParts="true" gr:x="410" gr:y="10" useCountQuery="false" entity="ent2" blockFactor="10">
       <Link id="sv6#area25#page38#scu15#ln33" name="Flow42" to="sv6#area25#page38#inu32" type="automatic" automaticCoupling="true" validate="true"/>
       <SortAttribute attribute="ent14#att52" order="descending"/>
     </ScrollerUnit>

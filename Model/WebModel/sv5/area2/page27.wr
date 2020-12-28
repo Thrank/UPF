@@ -1,13 +1,13 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="60" id="sv5#area2#page27" name="Gestione dipendenti" linkOrder="sv5#area2#page27#ln72">
   <ContentUnits>
-    <ScrollerUnit gr:x="0" gr:y="10" id="sv5#area2#page27#scu17" name="Scorri amministratori" useCountQuery="false" entity="ent12" linkOrder="sv5#area2#page27#scu17#ln91">
+    <ScrollerUnit gr:x="0" gr:y="10" id="sv5#area2#page27#scu17" name="Scorri amministratori" useCountQuery="false" entity="ent12" linkOrder="sv5#area2#page27#scu17#ln91" blockFactor="15">
       <Link id="sv5#area2#page27#scu17#ln91" name="Flow91" to="sv5#area2#page27#inu11" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
-    <ScrollerUnit gr:x="5" gr:y="130" id="sv5#area2#page27#scu20" name="Scorri moderatori" useCountQuery="false" entity="ent13" linkOrder="sv5#area2#page27#scu20#ln92">
+    <ScrollerUnit gr:x="5" gr:y="130" id="sv5#area2#page27#scu20" name="Scorri moderatori" useCountQuery="false" entity="ent13" linkOrder="sv5#area2#page27#scu20#ln92" blockFactor="15">
       <Link id="sv5#area2#page27#scu20#ln92" name="Flow92" to="sv5#area2#page27#inu10" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
     <IndexUnit gr:x="165" gr:y="120" id="sv5#area2#page27#inu10" name="Elenco moderatori" entity="ent13" linkOrder="sv5#area2#page27#inu10#ln100" displayAttributes="userName User#att17">
-      <Link id="sv5#area2#page27#inu10#ln100" name="Flow100" to="sv5#area2#page36#alt7#page39#enu11" type="normal" validate="true">
+      <Link id="sv5#area2#page27#inu10#ln100" name="Flow100" to="sv5#area2#page36#alt7#page39#mssu33" type="normal" validate="true">
         <LinkParameter id="sv5#area2#page27#inu10#ln100#par395" name="oid_PASSING" source="data[].userOID" passing="true"/>
       </Link>
       <Selector id="sv5#area2#page27#inu10#su24" defaultPolicy="fill" booleanOperator="and">
@@ -16,7 +16,7 @@
       <SortAttribute attribute="userName" order="ascending"/>
     </IndexUnit>
     <IndexUnit gr:x="160" gr:y="0" id="sv5#area2#page27#inu11" name="Elenco amministratori" entity="ent12" linkOrder="sv5#area2#page27#inu11#ln98" displayAttributes="userName User#att17">
-      <Link id="sv5#area2#page27#inu11#ln98" name="Flow98" to="sv5#area2#page36#alt7#page37#enu9" type="normal" validate="true">
+      <Link id="sv5#area2#page27#inu11#ln98" name="Flow98" to="sv5#area2#page36#alt7#page37#mssu28" type="normal" validate="true">
         <LinkParameter id="sv5#area2#page27#inu11#ln98#par396" name="oid_PASSING" source="data[].userOID" passing="true"/>
       </Link>
       <Selector id="sv5#area2#page27#inu11#su23" defaultPolicy="fill" booleanOperator="and">

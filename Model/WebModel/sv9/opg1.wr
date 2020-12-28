@@ -5,12 +5,23 @@
         <KeyCondition id="sv9#opg1#seu3#su7#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
         <RelationshipRoleCondition id="sv9#opg1#seu3#su7#rcond3" name="RoleCondition3" predicate="in" implied="false" role="rel1#role2"/>
       </Selector>
-      <OKLink id="sv9#opg1#seu3#oln5" name="OKFlow5" to="sv9#opg1#inn1" automaticCoupling="true"/>
+      <OKLink id="sv9#opg1#seu3#oln5" name="OKFlow5" to="sv9#opg1#inn1">
+        <LinkParameter id="sv9#opg1#seu3#oln5#par150" name="oid_Input" source="userOIDArray" target="sv9#opg1#inn1.isnotnull"/>
+        <LinkParameter id="sv9#opg1#seu3#oln5#par158" name="oid_PASSING" source="userOIDArray" passing="true"/>
+        <LinkParameter id="sv9#opg1#seu3#oln5#par161" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv9#area48#page185#dau44#ln10#par112" passing="true"/>
+      </OKLink>
       <KOLink id="sv9#opg1#seu3#kln38" name="KOFlow38" to="sv9#page68#mssu22" automaticCoupling="true"/>
     </SelectorUnit>
     <IsNotNullUnit gr:x="195" gr:y="0" id="sv9#opg1#inn1" name="&#200; nullo">
-      <OKLink id="sv9#opg1#inn1#oln2" name="OKFlow2" to="sv9#area47#page61#scu25" automaticCoupling="true"/>
-      <KOLink id="sv9#opg1#inn1#kln22" name="KOFlow22" to="sv9#area47#page62#scu26" automaticCoupling="true"/>
+      <OKLink id="sv9#opg1#inn1#oln2" name="OKFlow2" to="sv9#area47#page61#scu25">
+        <LinkParameter id="sv9#opg1#inn1#oln2#par160" name="oid_PASSING_piatti del ristorante [oid]" sourceLinkParameter="sv9#opg1#seu3#oln5#par158" target="sv9#area47#page61#scu25#su8#rcond4.ent14#att40"/>
+        <LinkParameter id="sv9#opg1#inn1#oln2#par162" name="UserCtxParam.oid_PASSING_ristorante dell'utente iscritto? [oid]" sourceLinkParameter="sv9#opg1#seu3#oln5#par161" target="sv9#area47#page61#scu25#su8#rcond9.userOID"/>
+        <LinkParameter id="sv9#opg1#inn1#oln2#par168" name="oid_PASSING" sourceLinkParameter="sv9#opg1#seu3#oln5#par158" passing="true"/>
+      </OKLink>
+      <KOLink id="sv9#opg1#inn1#kln22" name="KOFlow22" to="sv9#area47#page62#scu26">
+        <LinkParameter id="sv9#opg1#inn1#kln22#par163" name="oid_PASSING_piatti del ristorante [oid]" sourceLinkParameter="sv9#opg1#seu3#oln5#par158" target="sv9#area47#page62#scu26#su11#rcond10.ent14#att40"/>
+        <LinkParameter id="sv9#opg1#inn1#kln22#par166" name="UserCtxParam.oid_PASSING_ristorante non dell'utente iscritto [oid]" sourceLinkParameter="sv9#opg1#seu3#oln5#par161" target="sv9#area47#page62#scu26#su11#rcond19.userOID"/>
+      </KOLink>
     </IsNotNullUnit>
   </OperationUnits>
 </OperationGroup>

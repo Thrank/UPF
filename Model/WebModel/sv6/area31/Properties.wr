@@ -19,8 +19,8 @@
     </ModuleInstanceUnit>
     <GetUnit gr:x="50" gr:y="1035" id="sv6#area31#gtu13" name="Recupera dati utenti" contextParameters="UserCtxParam">
       <Link id="sv6#area31#gtu13#ln45" name="Flow196" to="sv6#area31#page15#scu2" type="transport" validate="true">
-        <LinkParameter id="sv6#area31#gtu13#ln45#par868" name="UserCtxParam.oid_current oid" source="sv6#area31#gtu13.UserCtxParam" target="sv6#area31#page15#scu2.scroller.ent3#att8"/>
         <LinkParameter id="sv6#area31#gtu13#ln45#par869" name="UserCtxParam.oid_PASSING" source="sv6#area31#gtu13.UserCtxParam" passing="true"/>
+        <LinkParameter id="sv6#area31#gtu13#ln45#par19" name="UserCtxParam.oid_ordini dell'utente [oid]" source="sv6#area31#gtu13.UserCtxParam" target="sv6#area31#page15#scu2#su125#rcond1.userOID"/>
       </Link>
     </GetUnit>
   </OperationUnits>

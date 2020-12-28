@@ -16,7 +16,7 @@
       <Link id="sv9#area48#page5#seu5#ln5" name="Flow332" to="sv9#area48#page5#scu1" automaticCoupling="true" type="transport" validate="true"/>
       <SortAttribute attribute="ent14#att42" order="ascending"/>
     </SelectorUnit>
-    <ScrollerUnit gr:x="15" gr:y="285" id="sv9#area48#page5#scu1" name="Scorri ristoranti" useCountQuery="false" entity="ent14" gr:showAllParts="true" linkOrder="sv9#area48#page5#scu1#ln6">
+    <ScrollerUnit gr:x="15" gr:y="285" id="sv9#area48#page5#scu1" name="Scorri ristoranti" useCountQuery="false" entity="ent14" gr:showAllParts="true" linkOrder="sv9#area48#page5#scu1#ln6" blockFactor="10">
       <Link id="sv9#area48#page5#scu1#ln6" name="Flow333" to="sv9#area48#page5#mdu1" automaticCoupling="true" type="automatic" validate="true"/>
       <SortAttribute attribute="ent14#att42" order="ascending"/>
     </ScrollerUnit>
@@ -45,7 +45,7 @@
       <SortAttribute attribute="ent14#att42" order="ascending"/>
       <Link id="sv9#area48#page5#seu45#ln159" name="Flow159" to="sv9#area48#page5#scu23" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <ScrollerUnit gr:x="395" gr:y="295" id="sv9#area48#page5#scu23" name="Scorri ristoranti" useCountQuery="false" entity="ent14" linkOrder="sv9#area48#page5#scu23#ln160">
+    <ScrollerUnit gr:x="395" gr:y="295" id="sv9#area48#page5#scu23" name="Scorri ristoranti" useCountQuery="false" entity="ent14" linkOrder="sv9#area48#page5#scu23#ln160" blockFactor="10">
       <Link id="sv9#area48#page5#scu23#ln160" name="Flow160" to="sv9#area48#page5#mdu5" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
     <MultiDataUnit gr:x="385" gr:y="420" id="sv9#area48#page5#mdu5" name="Ristoranti in attesa" entity="ent14" displayAttributes="ent14#att42" linkOrder="sv9#area48#page5#mdu5#ln161 sv9#area48#page5#mdu5#ln162">

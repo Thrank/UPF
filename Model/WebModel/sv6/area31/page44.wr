@@ -39,6 +39,7 @@
         <LinkParameter id="sv6#area31#page44#enu49#ln201#par534" name="CAP_CAP" source="sv6#area31#page44#enu49#fld106" target="sv6#opg24#mfu15.ent16#att76"/>
         <LinkParameter id="sv6#area31#page44#enu49#ln201#par535" name="civico_civico" source="sv6#area31#page44#enu49#fld107" target="sv6#opg24#mfu15.ent16#att32"/>
         <LinkParameter id="sv6#area31#page44#enu49#ln201#par536" name="via/piazza/corso_via/piazza/corso" source="sv6#area31#page44#enu49#fld108" target="sv6#opg24#mfu15.ent16#att31"/>
+        <LinkParameter id="sv6#area31#page44#enu49#ln201#par18" name="oid_PASSING_KeyCondition113 [oid]" sourceLinkParameter="sv6#area31#page44#seu14#ln203#par10" target="sv6#opg24#mfu15#su144#kcond113.ent16#att64"/>
       </Link>
     </EntryUnit>
     <EntryUnit gr:x="205" gr:y="495" id="sv6#area31#page44#enu50" name="Inserisci metodo di pagamento" fieldOrder="sv6#area31#page44#enu50#sfld26 sv6#area31#page44#enu50#sfld27" gr:showAllParts="true" linkOrder="sv6#area31#page44#enu50#ln199">
@@ -48,9 +49,9 @@
         <LinkParameter id="sv6#area31#page44#enu50#ln199#par486" name="metodo_PASSING" source="sv6#area31#page44#enu50#sfld26" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp41"/>
         <LinkParameter id="sv6#area31#page44#enu50#ln199#par487" name="promozione_PASSING" source="sv6#area31#page44#enu50#sfld27" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp40"/>
         <LinkParameter id="sv6#area31#page44#enu50#ln199#par33" name="Checked oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu3#ln223#par442" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp39"/>
-        <LinkParameter id="sv6#area31#page44#enu50#ln199#par34" name="oid_PASSING" sourceLinkParameter="sv6#area31#page44#dau24#ln90#par31" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp37"/>
         <LinkParameter id="sv6#area31#page44#enu50#ln199#par35" name="oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu3#ln223#par460" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp38"/>
-        <LinkParameter id="sv6#area31#page44#enu50#ln199#par36" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#page44#dau24#ln90#par32" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp42"/>
+        <LinkParameter id="sv6#area31#page44#enu50#ln199#par217" name="oid_PASSING_oid_PASSING" sourceLinkParameter="sv6#area31#page44#mciu3#ln223#par460" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp37"/>
+        <LinkParameter id="sv6#area31#page44#enu50#ln199#par228" name="UserCtxParam.oid_PASSING_UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#page44#dau24#ln80#par178" target="sv6#area31#miu6.mov3#mpkg1#opm8#icu8#icp42"/>
       </Link>
     </EntryUnit>
     <SelectorUnit gr:x="430" gr:y="310" id="sv6#area31#page44#seu54" name="Promozioni" entity="ent25" gr:showAllParts="false">
@@ -64,15 +65,16 @@
       <Link id="sv6#area31#page44#seu14#ln203" name="Flow203" to="sv6#area31#page44#enu49" type="transport" validate="true">
         <LinkParameter id="sv6#area31#page44#seu14#ln203#par524" name="nome_citt&#224; [label]" source="ent22#att29Array" target="sv6#area31#page44#enu49#sfld25_label"/>
         <LinkParameter id="sv6#area31#page44#seu14#ln203#par525" name="oid_citt&#224; [output]" source="ent22#att27Array" target="sv6#area31#page44#enu49#sfld25_output"/>
+        <LinkParameter id="sv6#area31#page44#seu14#ln203#par10" name="oid_PASSING" source="ent22#att27Array" passing="true"/>
       </Link>
     </SelectorUnit>
     <DataUnit gr:x="60" gr:y="155" id="sv6#area31#page44#dau24" name="Indirizzo" entity="ent16">
       <Selector id="sv6#area31#page44#dau24#su146" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv6#area31#page44#dau24#su146#rcond57" name="indirizzo dell'utente" predicate="in" implied="false" role="rel11#role21"/>
       </Selector>
-      <Link id="sv6#area31#page44#dau24#ln90" name="Flow90" to="sv6#area31#page44#enu50" type="transport" validate="true">
-        <LinkParameter id="sv6#area31#page44#dau24#ln90#par31" name="oid_PASSING" source="data.ent16#att64" passing="true"/>
-        <LinkParameter id="sv6#area31#page44#dau24#ln90#par32" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#gtu5#ln39#par30" passing="true"/>
+      <Link id="sv6#area31#page44#dau24#ln80" name="Flow80" to="sv6#area31#page44#enu50" type="transport" validate="true">
+        <LinkParameter id="sv6#area31#page44#dau24#ln80#par178" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv6#area31#gtu5#ln39#par30" passing="true"/>
+        <LinkParameter id="sv6#area31#page44#dau24#ln80#par31" name="oid_PASSING" source="data.ent16#att64" passing="true"/>
       </Link>
     </DataUnit>
   </ContentUnits>

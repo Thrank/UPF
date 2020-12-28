@@ -22,6 +22,7 @@
         <LinkParameter id="sv9#area33#page103#dau26#ln213#par334" name="numero di telefono_numero di telefono" source="data.User#att11" target="sv9#area33#page103#enu40#fld14_slot"/>
         <LinkParameter id="sv9#area33#page103#dau26#ln213#par335" name="UserCtxParam.oid_PASSING" sourceLinkParameter="sv9#area33#page103#gtu16#ln209#par326" passing="true"/>
         <LinkParameter id="sv9#area33#page103#dau26#ln213#par2686" name="UtenteToIndirizzo.oid_PASSING" source="data.rel11#role21_ent16#att64" passing="true"/>
+        <LinkParameter id="sv9#area33#page103#dau26#ln213#par152" name="partita iva_partita IVA" source="data.ent6#att18" target="sv9#area33#page103#enu40#fld11_slot"/>
       </Link>
     </DataUnit>
     <SelectorUnit id="sv9#area33#page103#seu46" name="Seleziona indirizzo" gr:showAllParts="true" gr:x="10" gr:y="275" entity="ent16" distinctAttributes="ent16#att64 ent16#att31 ent16#att32 ent16#att76">

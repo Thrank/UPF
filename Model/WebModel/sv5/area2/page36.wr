@@ -20,9 +20,23 @@
         <layout:SubPage pageId="sv5#area2#page36#alt7#page37">
           <layout:Grid containerType="grid">
             <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv5#area2#page36#alt7#page37#enu9">
-                  <layout:Link link="sv5#area2#page36#alt7#page37#enu9#ln136"/>
+                <layout:Unit unitId="sv5#area2#page36#alt7#page37#mssu28">
+                  <layout:Link link="sv5#area2#page36#alt7#page37#mssu28#ln40"/>
                 </layout:Unit>
               </layout:Cell>
               <layout:Cell/>
@@ -57,9 +71,23 @@
         <layout:SubPage pageId="sv5#area2#page36#alt7#page39">
           <layout:Grid containerType="grid">
             <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv5#area2#page36#alt7#page39#enu11">
-                  <layout:Link link="sv5#area2#page36#alt7#page39#enu11#ln128"/>
+                <layout:Unit unitId="sv5#area2#page36#alt7#page39#mssu33">
+                  <layout:Link link="sv5#area2#page36#alt7#page39#mssu33#ln49"/>
                 </layout:Unit>
               </layout:Cell>
               <layout:Cell/>
@@ -93,22 +121,20 @@
   <Alternative gr:x="0" gr:y="0" id="sv5#area2#page36#alt7" name="Utente" defaultPage="sv5#area2#page36#alt7#page37">
     <Page gr:x="0" gr:y="0" id="sv5#area2#page36#alt7#page37" name="Amministratore">
       <ContentUnits>
-        <EntryUnit gr:x="0" gr:y="0" id="sv5#area2#page36#alt7#page37#enu9" name="Conferma rimozione amministratore" linkOrder="sv5#area2#page36#alt7#page37#enu9#ln136">
-          <Link id="sv5#area2#page36#alt7#page37#enu9#ln136" name="Flow136" to="sv5#miu13" type="normal" validate="true">
-            <LinkParameter id="sv5#area2#page36#alt7#page37#enu9#ln136#par446" name="oid_PASSING_oid_PASSING" sourceLinkParameter="sv5#area2#page27#inu11#ln98#par396" target="sv5#miu13.mov4#opm4#icu4#icp27"/>
-            <LinkParameter id="sv5#area2#page36#alt7#page37#enu9#ln136#par449" name="Amministratore_utente" sourceValue="Amministratore" target="sv5#miu13.mov4#opm4#icu4#icp29"/>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv5#area2#page36#alt7#page37#mssu28" name="Conferma rimozione amministratore" linkOrder="sv5#area2#page36#alt7#page37#mssu28#ln40">
+          <Link id="sv5#area2#page36#alt7#page37#mssu28#ln40" name="Flow136" to="sv5#miu13" type="normal" validate="true">
+            <LinkParameter id="sv5#area2#page36#alt7#page37#mssu28#ln40#par52" name="Amministratore_utente" target="sv5#miu13.mov4#opm4#icu4#icp29" sourceValue="Amministratore"/>
           </Link>
-        </EntryUnit>
+        </MultiMessageUnit>
       </ContentUnits>
     </Page>
-    <Page gr:x="0" gr:y="215" id="sv5#area2#page36#alt7#page39" name="Moderatore">
+    <Page gr:x="5" gr:y="185" id="sv5#area2#page36#alt7#page39" name="Moderatore">
       <ContentUnits>
-        <EntryUnit gr:x="0" gr:y="0" id="sv5#area2#page36#alt7#page39#enu11" name="Conferma rimozione moderatore" linkOrder="sv5#area2#page36#alt7#page39#enu11#ln128">
-          <Link id="sv5#area2#page36#alt7#page39#enu11#ln128" name="Flow128" to="sv5#miu13" type="normal" validate="true">
-            <LinkParameter id="sv5#area2#page36#alt7#page39#enu11#ln128#par416" name="oid_PASSING" sourceLinkParameter="sv5#area2#page27#inu10#ln100#par395" target="sv5#miu13.mov4#opm4#icu4#icp27"/>
-            <LinkParameter id="sv5#area2#page36#alt7#page39#enu11#ln128#par440" name="Moderatore_utente" sourceValue="Moderatore" target="sv5#miu13.mov4#opm4#icu4#icp29"/>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv5#area2#page36#alt7#page39#mssu33" name="Conferma rimozione moderatore" linkOrder="sv5#area2#page36#alt7#page39#mssu33#ln49">
+          <Link id="sv5#area2#page36#alt7#page39#mssu33#ln49" name="Flow128" to="sv5#miu13" type="normal" validate="true">
+            <LinkParameter id="sv5#area2#page36#alt7#page39#mssu33#ln49#par148" name="Moderatore_utente" target="sv5#miu13.mov4#opm4#icu4#icp29" sourceValue="Moderatore"/>
           </Link>
-        </EntryUnit>
+        </MultiMessageUnit>
       </ContentUnits>
     </Page>
   </Alternative>

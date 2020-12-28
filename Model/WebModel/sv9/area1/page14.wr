@@ -8,7 +8,7 @@
     </SelectorUnit>
     <GetUnit gr:x="0" gr:y="10" id="sv9#area1#page14#gtu4" name="Ristoratore connesso" contextParameters="UserCtxParam">
       <Link id="sv9#area1#page14#gtu4#ln1" name="Flow1" to="sv9#area1#page14#seu26" type="transport" validate="true">
-        <LinkParameter id="sv9#area1#page14#gtu4#ln1#par382" name="UserCtxParam.oid_RoleCondition29 [oid]" source="sv9#area1#page14#gtu4.UserCtxParam" target="sv9#area1#page14#seu26#su101#rcond29.ent14#att40"/>
+        <LinkParameter id="sv9#area1#page14#gtu4#ln1#par167" name="UserCtxParam.oid_RoleCondition29 [oid]" source="sv9#area1#page14#gtu4.UserCtxParam" target="sv9#area1#page14#seu26#su101#rcond29.userOID"/>
       </Link>
     </GetUnit>
     <MultiDataUnit gr:x="10" gr:y="145" id="sv9#area1#page14#mdu2" name="Ristoranti ristoratore" entity="ent14" displayAttributes="ent14#att42" linkOrder="sv9#area1#page14#mdu2#ln15">
@@ -17,7 +17,7 @@
       </Selector>
       <Link id="sv9#area1#page14#mdu2#ln15" name="Flow15" to="sv9#area1#page16#seu29" automaticCoupling="true" type="normal" validate="true"/>
     </MultiDataUnit>
-    <ScrollerUnit gr:x="210" gr:y="145" id="sv9#area1#page14#scu3" name="Scorri ristoranti" useCountQuery="false" entity="ent14" linkOrder="sv9#area1#page14#scu3#ln3">
+    <ScrollerUnit gr:x="210" gr:y="145" id="sv9#area1#page14#scu3" name="Scorri ristoranti" useCountQuery="false" entity="ent14" linkOrder="sv9#area1#page14#scu3#ln3" blockFactor="15">
       <Link id="sv9#area1#page14#scu3#ln3" name="Flow3" to="sv9#area1#page14#mdu2" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
   </ContentUnits>

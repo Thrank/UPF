@@ -1,7 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Warnings> 
-  <Warning error="false" xpath="id('sv7#area29#page29')" rootXPath="id('sv7')" key="" label="Ricerca Personalizzata"> 
-    <Message>Security Warning: the page 'Ricerca Personalizzata' is public but no captcha field is configured on its form component</Message> 
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#tmu9#oln4#par56')" rootXPath="id('mov3')" key="UNUSED_PASSING_PARAMETER" label="oid_PASSING"> 
+    <Message>The passing parameter 'oid_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'mov3#mpkg1#opm8#opg21#tmu9#oln4#par56'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#tmu9#oln4#par68')" rootXPath="id('mov3')" key="UNUSED_PASSING_PARAMETER" label="oid_PASSING"> 
+    <Message>The passing parameter 'oid_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'mov3#mpkg1#opm8#opg21#tmu9#oln4#par68'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#tmu9#oln4#par69')" rootXPath="id('mov3')" key="UNUSED_PASSING_PARAMETER" label="promozione_PASSING"> 
+    <Message>The passing parameter 'promozione_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'mov3#mpkg1#opm8#opg21#tmu9#oln4#par69'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#tmu9#oln4#par73')" rootXPath="id('mov3')" key="UNUSED_PASSING_PARAMETER" label="Checked oid_PASSING"> 
+    <Message>The passing parameter 'Checked oid_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'mov3#mpkg1#opm8#opg21#tmu9#oln4#par73'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#cnu39#oln311')" rootXPath="id('mov3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow311"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow311'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#tmu9#kln36')" rootXPath="id('mov3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow36"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow36'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov3#mpkg1#opm8#icu8#icp38')" rootXPath="id('mov3')" label="oid_PASSING" error="true"> 
+    <Message>The input port parameter 'oid_PASSING' is duplicated.</Message> 
+  </Warning>
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#tmu9#oln4#par70')" rootXPath="id('')" error="true" label="Checked oid_PASSING_Cliente .oid(OrdineToCliente )" key="UNMODIFIABLE_ATTR_ERROR"> 
+    <Message>The relationship role 'OrdineToCliente ' is not modifiable because the column '' is used as key column</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="target" value="mov3#mpkg1#opm8#opg21#cru3.ent3#att8">Use the input parameter 'oid' instead.</Resolution> 
+  </Warning>
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#tmu9#oln4#par74')" rootXPath="id('')" error="true" label="promozione_PASSING_Promozione.oid(OrdineToPromozione)" key="UNMODIFIABLE_ATTR_ERROR"> 
+    <Message>The relationship role 'OrdineToPromozione' is not modifiable because the column '' is used as key column</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="target" value="mov3#mpkg1#opm8#opg21#cru3.ent3#att8">Use the input parameter 'oid' instead.</Resolution> 
+  </Warning>
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#tmu9#oln4#par75')" rootXPath="id('')" error="true" label="oid_PASSING_Indirizzo.oid(OrdineToIndirizzo)" key="UNMODIFIABLE_ATTR_ERROR"> 
+    <Message>The relationship role 'OrdineToIndirizzo' is not modifiable because the column '' is used as key column</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="target" value="mov3#mpkg1#opm8#opg21#cru3.ent3#att8">Use the input parameter 'oid' instead.</Resolution> 
+  </Warning>
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#tmu9#oln4#par76')" rootXPath="id('')" error="true" label="Checked oid_PASSING_Piatto.oid(OrdineToPiatto)" key="UNMODIFIABLE_ATTR_ERROR"> 
+    <Message>The relationship role 'OrdineToPiatto' is not modifiable because the column '' is used as key column</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="target" value="mov3#mpkg1#opm8#opg21#cru3.ent3#att8">Use the input parameter 'oid' instead.</Resolution> 
+  </Warning>
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#tmu9#oln4#par77')" rootXPath="id('')" error="true" label="oid_PASSING_Ristorante.oid(OrdineToRistorante)" key="UNMODIFIABLE_ATTR_ERROR"> 
+    <Message>The relationship role 'OrdineToRistorante' is not modifiable because the column '' is used as key column</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="target" value="mov3#mpkg1#opm8#opg21#cru3.ent3#att8">Use the input parameter 'oid' instead.</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#cnu36')" rootXPath="id('mov3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Connetti a cliente"> 
+    <Message>The mandatory input parameter 'KeyCondition145 [oid] [Cliente ] [Target]' is not provided to the component 'Connetti a cliente'</Message> 
+  </Warning>  
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#cnu37')" rootXPath="id('mov3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Connetti a indirizzo"> 
+    <Message>The mandatory input parameter 'KeyCondition149 [oid] [Indirizzo] [Target]' is not provided to the component 'Connetti a indirizzo'</Message> 
+  </Warning>  
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#cnu38')" rootXPath="id('mov3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Connetti a ristorante"> 
+    <Message>The mandatory input parameter 'KeyCondition151 [oid] [Ristorante] [Target]' is not provided to the component 'Connetti a ristorante'</Message> 
+  </Warning>  
+  <Warning xpath="id('mov3#mpkg1#opm8#opg21#cnu40')" rootXPath="id('mov3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Connetti a promozione"> 
+    <Message>The mandatory input parameter 'KeyCondition155 [oid] [Promozione] [Target]' is not provided to the component 'Connetti a promozione'</Message> 
+  </Warning>  
+  <Warning error="true" xpath="id('mov3#mpkg1#opm8#opg21#lpu6')" rootXPath="id('mov3')" key="" label="Cicla piatti"> 
+    <Message>At least the 'Input Array' or 'Iteration Count' input parameter must be defined for the component 'Cicla piatti'</Message> 
   </Warning> 
 </Warnings>

@@ -1,14 +1,17 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="655" id="sv9#area47#page61" name="Elenco piatti di ristorante di proprit&#224;">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="645" id="sv9#area47#page61" name="Elenco piatti di ristorante di proprit&#224;">
   <ContentUnits>
-    <ScrollerUnit gr:x="0" gr:y="0" id="sv9#area47#page61#scu25" name="Scorri piatti" useCountQuery="false" entity="ent1" gr:showAllParts="true" linkOrder="sv9#area47#page61#scu25#ln117">
+    <ScrollerUnit gr:x="0" gr:y="75" id="sv9#area47#page61#scu25" name="Scorri piatti" useCountQuery="false" entity="ent1" gr:showAllParts="true" linkOrder="sv9#area47#page61#scu25#ln117 sv9#area47#page61#scu25#ln71" blockFactor="20">
       <SortAttribute attribute="ent1#att2" order="ascending"/>
       <Selector id="sv9#area47#page61#scu25#su8" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv9#area47#page61#scu25#su8#rcond4" name="piatti del ristorante" predicate="in" implied="false" role="rel4#role7"/>
         <RelationshipRoleCondition id="sv9#area47#page61#scu25#su8#rcond9" name="ristorante dell'utente iscritto?" predicate="in" implied="false" role="rel1#role1.rel4#role7"/>
       </Selector>
       <Link id="sv9#area47#page61#scu25#ln117" name="Flow14" to="sv9#area47#page61#inu15" automaticCoupling="true" type="automatic" validate="true"/>
+      <Link id="sv9#area47#page61#scu25#ln71" name="Flow71" to="sv9#area47#page61#mssu34" type="automatic" validate="true">
+        <LinkParameter id="sv9#area47#page61#scu25#ln71#par169" name="oid_PASSING" sourceLinkParameter="sv9#opg1#inn1#oln2#par168" passing="true"/>
+      </Link>
     </ScrollerUnit>
-    <IndexUnit gr:x="270" gr:y="0" id="sv9#area47#page61#inu15" name="Elenco piatti" entity="ent1" displayAttributes="ent1#att2 ent1#att7 ent1#att57 ent1#att58" gr:showAllParts="true" linkOrder="sv9#area47#page61#inu15#ln129 sv9#area47#page61#inu15#ln133">
+    <IndexUnit gr:x="270" gr:y="75" id="sv9#area47#page61#inu15" name="Elenco piatti" entity="ent1" displayAttributes="ent1#att2 ent1#att7 ent1#att57 ent1#att58" gr:showAllParts="true" linkOrder="sv9#area47#page61#inu15#ln129 sv9#area47#page61#inu15#ln133">
       <SortAttribute attribute="ent1#att2" order="ascending"/>
       <Selector id="sv9#area47#page61#inu15#su9" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv9#area47#page61#inu15#su9#kcond7" name="KeyCondition4" predicate="in" implied="false"/>
@@ -24,6 +27,10 @@
         <LinkParameter id="sv9#area47#page61#inu15#ln133#par83" name="oid_PASSING" source="data[].ent1#att1" passing="true"/>
       </Link>
     </IndexUnit>
+    <MultiMessageUnit gr:x="275" gr:y="0" id="sv9#area47#page61#mssu34" name="Aggiungi nuovo piatto" linkOrder="sv9#area47#page61#mssu34#ln65">
+      <Link id="sv9#area47#page61#mssu34#ln65" name="Flow35" to="sv9#area47#page8#seu2" type="normal" validate="true">
+        <LinkParameter id="sv9#area47#page61#mssu34#ln65#par170" name="oid_PASSING_piatto del ristorante [oid]" sourceLinkParameter="sv9#area47#page61#scu25#ln71#par169" target="sv9#area47#page8#seu2#su17#rcond16.ent1#att1"/>
+      </Link>
+    </MultiMessageUnit>
   </ContentUnits>
-  <Link id="sv9#area47#page61#ln137" name="Flow35" to="sv9#area47#page8#seu2" type="normal" automaticCoupling="true" validate="true"/>
 </Page>
