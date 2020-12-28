@@ -2,13 +2,14 @@
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv5#area2#page6#enu18" name="Aggiungi nuovo utente" fieldOrder="sv5#area2#page6#enu18#fld71 sv5#area2#page6#enu18#fld72 sv5#area2#page6#enu18#fld76 sv5#area2#page6#enu18#sfld3" gr:showAllParts="true" linkOrder="sv5#area2#page6#enu18#ln94">
       <Field id="sv5#area2#page6#enu18#fld71" name="username" type="string" modifiable="true"/>
-      <SelectionField id="sv5#area2#page6#enu18#sfld3" name="ruolo" type="string" modifiable="true" splitOutput="true"/>
+      <SelectionField id="sv5#area2#page6#enu18#sfld3" name="ruolo" type="string" modifiable="true"/>
       <Field id="sv5#area2#page6#enu18#fld76" name="e-mail" type="string" modifiable="true"/>
       <Field id="sv5#area2#page6#enu18#fld72" name="password" type="string" modifiable="true"/>
       <Link id="sv5#area2#page6#enu18#ln94" name="Flow94" to="sv5#area2#miu14" type="normal" validate="true">
         <LinkParameter id="sv5#area2#page6#enu18#ln94#par3" name="e-mail_PASSING" source="sv5#area2#page6#enu18#fld76" target="sv5#area2#miu14.mov4#opm1#icu1#icp3"/>
         <LinkParameter id="sv5#area2#page6#enu18#ln94#par7" name="password_PASSING" source="sv5#area2#page6#enu18#fld72" target="sv5#area2#miu14.mov4#opm1#icu1#icp1"/>
         <LinkParameter id="sv5#area2#page6#enu18#ln94#par17" name="username_PASSING" source="sv5#area2#page6#enu18#fld71" target="sv5#area2#miu14.mov4#opm1#icu1#icp2"/>
+        <LinkParameter id="sv5#area2#page6#enu18#ln94#par175" name="ruolo_ruolo" target="sv5#area2#miu14.mov4#opm1#icu1#icp28" source="sv5#area2#page6#enu18#sfld3"/>
       </Link>
     </EntryUnit>
   </ContentUnits>

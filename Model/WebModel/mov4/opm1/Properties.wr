@@ -1,6 +1,6 @@
 <OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="100" id="mov4#opm1" name="Aggiungi dipendente">
   <OperationUnits>
-    <InputCollectorUnit gr:x="0" gr:y="150" id="mov4#opm1#icu1" name="Input Port">
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov4#opm1#icu1">
       <InputCollectorParameter id="mov4#opm1#icu1#icp1" name="password_PASSING"/>
       <InputCollectorParameter id="mov4#opm1#icu1#icp2" name="username_PASSING"/>
       <InputCollectorParameter id="mov4#opm1#icu1#icp3" name="e-mail_PASSING"/>
@@ -8,7 +8,9 @@
         <LinkParameter id="mov4#opm1#icu1#oln23#par179" source="mov4#opm1#icu1#icp3" name="e-mail_PASSING" passing="true"/>
         <LinkParameter id="mov4#opm1#icu1#oln23#par180" source="mov4#opm1#icu1#icp1" name="password_PASSING" passing="true"/>
         <LinkParameter id="mov4#opm1#icu1#oln23#par181" source="mov4#opm1#icu1#icp2" name="username_PASSING" passing="true"/>
+        <LinkParameter id="mov4#opm1#icu1#oln23#par174" name="ruolo_Switch" source="mov4#opm1#icu1#icp28" target="mov4#opm1#opg4#switch3.switch"/>
       </OKLink>
+      <InputCollectorParameter id="mov4#opm1#icu1#icp28" name="ruolo"/>
     </InputCollectorUnit>
     <OKCollectorUnit gr:x="1105" gr:y="190" id="mov4#opm1#okcu1" name="OK Port1"/>
     <KOCollectorUnit gr:x="1105" gr:y="100" id="mov4#opm1#kocu4" name="Errore inserimento"/>

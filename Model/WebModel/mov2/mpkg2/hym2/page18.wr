@@ -3,7 +3,7 @@
     <EntryUnit id="mov2#mpkg2#hym2#page18#enu13" name="Filtro fascia prezzo" gr:showAllParts="true" gr:x="20" gr:y="515" fieldOrder="mov2#mpkg2#hym2#page18#enu13#sfld11">
       <SelectionField id="mov2#mpkg2#hym2#page18#enu13#sfld11" name="fascia prezzo" type="string"/>
       <Link id="mov2#mpkg2#hym2#page18#enu13#ln41" name="Flow2" to="mov2#mpkg2#hym2#page18#alt11#page20#scu6" type="transport" validate="true">
-        <LinkParameter id="mov2#mpkg2#hym2#page18#enu13#ln41#par945" name="fascia prezzo_AttCondition9" source="mov2#mpkg2#hym2#page18#enu13#sfld11" target="mov2#mpkg2#hym2#page18#alt11#page20#scu6#su371#acond9"/>
+        <LinkParameter id="mov2#mpkg2#hym2#page18#enu13#ln41#par382" name="fascia prezzo_PASSING" source="mov2#mpkg2#hym2#page18#enu13#sfld11" passing="true"/>
       </Link>
     </EntryUnit>
     <EntryUnit id="mov2#mpkg2#hym2#page18#enu14" name="Filtro citt&#224;" gr:showAllParts="true" gr:x="310" gr:y="560" fieldOrder="mov2#mpkg2#hym2#page18#enu14#sfld12">
