@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Warnings> 
-  <Warning xpath="id('mov2#mpkg7#opm15#opg39#cru50#oln315#par416')" rootXPath="id('')" error="true" label="oid_Utente.oid(IndirizzoToUtente)" key="UNMODIFIABLE_ATTR_ERROR"> 
-    <Message>The relationship role 'IndirizzoToUtente' is not modifiable because the column '' is used as key column</Message>  
-    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="target" value="mov2#mpkg7#opm15#opg39#cru51.ent16#att64">Use the input parameter 'oid' instead.</Resolution> 
-  </Warning>  
   <Warning error="false" xpath="id('mov2#mpkg7#opm15#opg39#seu68#su366#acond55')" rootXPath="id('mov2')" key="NOT_EQUAL_PREDICATE_WITH_OR" label="username presente?"> 
     <Message>Invalid combination of predicate 'Not Equal' and boolean operator 'Or' for the condition 'username presente?'</Message>  
     <Resolution message="Set boolean operator to 'and'" class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="booleanOperator" value="and">Set boolean operator to 'and'</Resolution> 

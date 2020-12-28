@@ -9,7 +9,6 @@
         <LinkParameter id="mov2#mpkg7#opm15#opg39#cru50#oln315#par2428" name="citt&#224;_PASSING" sourceLinkParameter="mov2#mpkg7#opm15#opg39#seu68#oln318#par2449" passing="true"/>
         <LinkParameter id="mov2#mpkg7#opm15#opg39#cru50#oln315#par2429" name="password_PASSING" sourceLinkParameter="mov2#mpkg7#opm15#opg39#seu68#oln318#par2450" passing="true"/>
         <LinkParameter id="mov2#mpkg7#opm15#opg39#cru50#oln315#par2430" name="username_PASSING" sourceLinkParameter="mov2#mpkg7#opm15#opg39#seu68#oln318#par2451" passing="true"/>
-        <LinkParameter id="mov2#mpkg7#opm15#opg39#cru50#oln315#par416" name="oid_Utente.oid(IndirizzoToUtente)" source="userOIDArray" target="mov2#mpkg7#opm15#opg39#cru51.rel11#role22.userOID"/>
       </OKLink>
       <KOLink id="mov2#mpkg7#opm15#opg39#cru50#kln188" to="mov2#mpkg7#opm15#kocu36" name="KOFlow11" gr:bendpoints="0,-20"/>
     </CreateUnit>
