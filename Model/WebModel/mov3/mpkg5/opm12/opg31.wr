@@ -10,7 +10,6 @@
     </CreateUnit>
     <TimeUnit id="mov3#mpkg5#opm12#opg31#tmu13" name="Recupera data corrente" gr:x="0" gr:y="20">
       <OKLink id="mov3#mpkg5#opm12#opg31#tmu13#oln6" name="OKFlow6" to="mov3#mpkg5#opm12#opg31#cru15">
-        <LinkParameter id="mov3#mpkg5#opm12#opg31#tmu13#oln6#par495" name="UserCtxParam.oid_PASSING_Cliente .oid(valutazioneToCliente registrato)" sourceLinkParameter="mov3#mpkg5#opm12#icu18#oln200#par1237" target="mov3#mpkg5#opm12#opg31#cru15.rel3#role6.userOID"/>
         <LinkParameter id="mov3#mpkg5#opm12#opg31#tmu13#oln6#par498" name="commento_PASSING_commento" sourceLinkParameter="mov3#mpkg5#opm12#icu18#oln200#par1238" target="mov3#mpkg5#opm12#opg31#cru15.ent15#att54"/>
         <LinkParameter id="mov3#mpkg5#opm12#opg31#tmu13#oln6#par503" name="Current/Input Date_data" source="currentDate" target="mov3#mpkg5#opm12#opg31#cru15.ent15#att4"/>
         <LinkParameter id="mov3#mpkg5#opm12#opg31#tmu13#oln6#par505" name="voto_PASSING_voto" sourceLinkParameter="mov3#mpkg5#opm12#icu18#oln200#par1239" target="mov3#mpkg5#opm12#opg31#cru15.ent15#att53"/>

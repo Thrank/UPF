@@ -1,0 +1,157 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#mpkg8#opm19#opg16" name="Elimina piatto" transaction="true" gr:x="305" gr:y="15">
+  <OperationUnits>
+    <LoopUnit id="mov1#mpkg8#opm19#opg16#lpu8" name="Ciclo sconnessioni" gr:x="40" gr:y="150">
+      <SecondaryArray id="mov1#mpkg8#opm19#opg16#lpu8#lsa7" name="categorie piatto"/>
+      <SecondaryArray id="mov1#mpkg8#opm19#opg16#lpu8#lsa8" name="allergeni"/>
+      <OKLink id="mov1#mpkg8#opm19#opg16#lpu8#oln76" name="OKFlow9" to="mov1#mpkg8#opm19#opg16#dcnu6" code="next">
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#lpu8#oln76#par612" name="Source oid [Piatto]_PASSING_KeyCondition7 [oid] [Piatto] [Source]" sourceLinkParameter="mov1#mpkg8#opm19#opg16#seu43#oln125#par635" target="mov1#mpkg8#opm19#opg16#dcnu6#su135#kcond101.ent1#att1"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#lpu8#oln76#par613" name="Next Element_KeyCondition8 [oid] [Tipologia Cucina] [Target]" source="next" target="mov1#mpkg8#opm19#opg16#dcnu6#su136#kcond102.ent10#att61"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#lpu8#oln76#par614" name="Next Element (allergeni)_PASSING" source="mov1#mpkg8#opm19#opg16#lpu8#lsa8" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#lpu8#oln76#par615" name="Next Element (categorie piatto)_PASSING" source="mov1#mpkg8#opm19#opg16#lpu8#lsa7" passing="true"/>
+      </OKLink>
+      <OKLink id="mov1#mpkg8#opm19#opg16#lpu8#oln91" name="OKFlow13" to="mov1#mpkg8#opm19#opg16#seu50" code="end" gr:bendpoints="-82,52,-62,-208;-84,179,-64,-81">
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#lpu8#oln91#par616" name="Source oid [Piatto]_PASSING_piatto nell'ordine [oid]" sourceLinkParameter="mov1#mpkg8#opm19#opg16#seu43#oln125#par635" target="mov1#mpkg8#opm19#opg16#seu50#su142#rcond63.ent1#att1"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#lpu8#oln91#par617" name="Source oid [Piatto]_PASSING" sourceLinkParameter="mov1#mpkg8#opm19#opg16#seu43#oln125#par635" passing="true"/>
+      </OKLink>
+    </LoopUnit>
+    <DisconnectUnit id="mov1#mpkg8#opm19#opg16#dcnu4" name="Sconnnetti da ristorante" gr:x="195" gr:y="0" relationship="rel4#role8">
+      <SourceSelector id="mov1#mpkg8#opm19#opg16#dcnu4#su94" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg8#opm19#opg16#dcnu4#su94#kcond84" name="KeyCondition5" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg8#opm19#opg16#dcnu4#su97" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg8#opm19#opg16#dcnu4#su97#kcond91" name="KeyCondition6" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg8#opm19#opg16#dcnu4#oln99" name="OKFlow5" to="mov1#mpkg8#opm19#opg16#seu37">
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#dcnu4#oln99#par618" name="Source oid [Piatto]_PASSING" source="sourceent1#att1" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#dcnu4#oln99#par673" name="Source oid [Piatto]_tipologie del piatto [oid]" source="sourceent1#att1" target="mov1#mpkg8#opm19#opg16#seu37#su132#rcond25.ent1#att1"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg8#opm19#opg16#dcnu4#kln80" name="KOFlow66" to="mov1#mpkg8#opm19#kocu8" automaticCoupling="true" gr:bendpoints="87,-77,-618,-297;418,-79,-287,-299"/>
+    </DisconnectUnit>
+    <SelectorUnit id="mov1#mpkg8#opm19#opg16#seu8" name="Seleziona ristorante" gr:x="0" gr:y="0" entity="ent14" distinctAttributes="ent14#att40">
+      <SortAttribute attribute="ent14#att40" order="ascending"/>
+      <Selector id="mov1#mpkg8#opm19#opg16#seu8#su98" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#mpkg8#opm19#opg16#seu8#su98#rcond20" name="piatto del ristorante" predicate="in" implied="false" role="rel4#role8"/>
+      </Selector>
+      <OKLink id="mov1#mpkg8#opm19#opg16#seu8#oln107" name="OKFlow4" to="mov1#mpkg8#opm19#opg16#dcnu4">
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu8#oln107#par619" name="oid_PASSING_KeyCondition5 [oid] [Piatto] [Source]" sourceLinkParameter="mov1#mpkg8#opm19#icu17#oln71#par611" target="mov1#mpkg8#opm19#opg16#dcnu4#su94#kcond84.ent1#att1"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu8#oln107#par620" name="oid_KeyCondition6 [oid] [Ristorante] [Target]" source="ent14#att40Array" target="mov1#mpkg8#opm19#opg16#dcnu4#su97#kcond91.ent14#att40"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu8#oln107#par621" name="oid_PASSING" sourceLinkParameter="mov1#mpkg8#opm19#icu17#oln71#par611" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg8#opm19#opg16#seu8#kln81" name="KOFlow65" to="mov1#mpkg8#opm19#kocu8" automaticCoupling="true" gr:bendpoints="204,-95,-706,-320;629,-95,-281,-320"/>
+    </SelectorUnit>
+    <SelectorUnit id="mov1#mpkg8#opm19#opg16#seu37" name="Seleziona tipologie cucina" gr:x="420" gr:y="10" entity="ent10" distinctAttributes="ent10#att28">
+      <Selector id="mov1#mpkg8#opm19#opg16#seu37#su132" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#mpkg8#opm19#opg16#seu37#su132#rcond25" name="tipologie del piatto" predicate="in" implied="false" role="rel13#role26"/>
+      </Selector>
+      <SortAttribute attribute="ent10#att28" order="ascending"/>
+      <OKLink id="mov1#mpkg8#opm19#opg16#seu37#oln120" name="OKFlow6" to="mov1#mpkg8#opm19#opg16#seu42">
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu37#oln120#par622" name="oid_PASSING" source="ent10#att61Array" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu37#oln120#par623" name="Source oid [Piatto]_PASSING" sourceLinkParameter="mov1#mpkg8#opm19#opg16#dcnu4#oln99#par618" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu37#oln120#par624" name="Source oid [Piatto]_PASSING_categorie del piatto [oid]" sourceLinkParameter="mov1#mpkg8#opm19#opg16#dcnu4#oln99#par618" target="mov1#mpkg8#opm19#opg16#seu42#su133#rcond32.ent1#att1"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg8#opm19#opg16#seu37#kln82" name="KOFlow67" to="mov1#mpkg8#opm19#kocu8" automaticCoupling="true"/>
+    </SelectorUnit>
+    <SelectorUnit id="mov1#mpkg8#opm19#opg16#seu42" name="Seleziona categorie piatto" gr:x="415" gr:y="145" entity="ent18" distinctAttributes="ent18#att51">
+      <SortAttribute attribute="ent18#att51" order="ascending"/>
+      <Selector id="mov1#mpkg8#opm19#opg16#seu42#su133" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#mpkg8#opm19#opg16#seu42#su133#rcond32" name="categorie del piatto" role="rel15#role30" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#mpkg8#opm19#opg16#seu42#oln122" name="OKFlow7" to="mov1#mpkg8#opm19#opg16#seu43">
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu42#oln122#par625" name="Source oid [Piatto]_PASSING_allergeni del piatto [oid]" sourceLinkParameter="mov1#mpkg8#opm19#opg16#seu37#oln120#par623" target="mov1#mpkg8#opm19#opg16#seu43#su134#rcond62.ent1#att1"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu42#oln122#par626" name="oid_PASSING" source="ent18#att62Array" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu42#oln122#par627" name="oid_PASSING" sourceLinkParameter="mov1#mpkg8#opm19#opg16#seu37#oln120#par622" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu42#oln122#par628" name="Source oid [Piatto]_PASSING" sourceLinkParameter="mov1#mpkg8#opm19#opg16#seu37#oln120#par623" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg8#opm19#opg16#seu42#kln83" name="KOFlow68" to="mov1#mpkg8#opm19#kocu8" automaticCoupling="true"/>
+    </SelectorUnit>
+    <SelectorUnit id="mov1#mpkg8#opm19#opg16#seu43" name="elezione allergeni" gr:x="255" gr:y="135" entity="ent19" distinctAttributes="ent19#att56">
+      <SortAttribute attribute="ent19#att56" order="ascending"/>
+      <Selector id="mov1#mpkg8#opm19#opg16#seu43#su134" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#mpkg8#opm19#opg16#seu43#su134#rcond62" name="allergeni del piatto" role="rel16#role31" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#mpkg8#opm19#opg16#seu43#oln125" name="OKFlow8" to="mov1#mpkg8#opm19#opg16#lpu8">
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu43#oln125#par629" name="oid_allergeni" source="ent19#att55Array" target="mov1#mpkg8#opm19#opg16#lpu8#lsa8"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu43#oln125#par630" name="oid_PASSING_categorie piatto" sourceLinkParameter="mov1#mpkg8#opm19#opg16#seu42#oln122#par627" target="mov1#mpkg8#opm19#opg16#lpu8#lsa7"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu43#oln125#par631" name="oid_PASSING_Input Array" sourceLinkParameter="mov1#mpkg8#opm19#opg16#seu42#oln122#par626" target="mov1#mpkg8#opm19#opg16#lpu8.array"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu43#oln125#par632" name="oid_PASSING" source="ent19#att55Array" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu43#oln125#par633" name="oid_PASSING" sourceLinkParameter="mov1#mpkg8#opm19#opg16#seu42#oln122#par626" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu43#oln125#par634" name="oid_PASSING" sourceLinkParameter="mov1#mpkg8#opm19#opg16#seu42#oln122#par627" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu43#oln125#par635" name="Source oid [Piatto]_PASSING" sourceLinkParameter="mov1#mpkg8#opm19#opg16#seu42#oln122#par628" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg8#opm19#opg16#seu43#kln86" name="KOFlow69" to="mov1#mpkg8#opm19#kocu8" automaticCoupling="true" gr:bendpoints="88,62,-572,-28;298,63,-362,-27"/>
+    </SelectorUnit>
+    <DisconnectUnit id="mov1#mpkg8#opm19#opg16#dcnu6" name="Sconnetti da tipologia cucina" gr:x="45" gr:y="245" relationship="rel13#role26">
+      <SourceSelector id="mov1#mpkg8#opm19#opg16#dcnu6#su135" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg8#opm19#opg16#dcnu6#su135#kcond101" name="KeyCondition7" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg8#opm19#opg16#dcnu6#su136" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg8#opm19#opg16#dcnu6#su136#kcond102" name="KeyCondition8" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg8#opm19#opg16#dcnu6#oln126" name="OKFlow10" to="mov1#mpkg8#opm19#opg16#dcnu24">
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#dcnu6#oln126#par636" name="Next Element (categorie piatto)_PASSING_KeyCondition10 [oid] [Categoria Piatto] [Target]" sourceLinkParameter="mov1#mpkg8#opm19#opg16#lpu8#oln76#par615" target="mov1#mpkg8#opm19#opg16#dcnu24#su138#kcond105.ent18#att62"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#dcnu6#oln126#par637" name="Source oid [Piatto]_KeyCondition9 [oid] [Piatto] [Source]" source="sourceent1#att1" target="mov1#mpkg8#opm19#opg16#dcnu24#su137#kcond103.ent1#att1"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#dcnu6#oln126#par638" name="Next Element (allergeni)_PASSING" sourceLinkParameter="mov1#mpkg8#opm19#opg16#lpu8#oln76#par614" passing="true"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg8#opm19#opg16#dcnu6#kln87" name="KOFlow70" to="mov1#mpkg8#opm19#kocu8" automaticCoupling="true" gr:bendpoints="176,126,-664,151;651,101,-189,126"/>
+    </DisconnectUnit>
+    <DisconnectUnit id="mov1#mpkg8#opm19#opg16#dcnu24" name="Sconnetti da categorie piatto" gr:x="285" gr:y="260" relationship="rel15#role30">
+      <SourceSelector id="mov1#mpkg8#opm19#opg16#dcnu24#su137" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg8#opm19#opg16#dcnu24#su137#kcond103" name="KeyCondition9" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg8#opm19#opg16#dcnu24#su138" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg8#opm19#opg16#dcnu24#su138#kcond105" name="KeyCondition10" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg8#opm19#opg16#dcnu24#oln127" name="OKFlow11" to="mov1#mpkg8#opm19#opg16#dcnu25">
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#dcnu24#oln127#par639" name="Source oid [Piatto]_KeyCondition11 [oid] [Piatto] [Source]" source="sourceent1#att1" target="mov1#mpkg8#opm19#opg16#dcnu25#su139#kcond106.ent1#att1"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#dcnu24#oln127#par640" name="Next Element (allergeni)_PASSING_KeyCondition12 [oid] [Allergene] [Target]" sourceLinkParameter="mov1#mpkg8#opm19#opg16#dcnu6#oln126#par638" target="mov1#mpkg8#opm19#opg16#dcnu25#su140#kcond107.ent19#att55"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg8#opm19#opg16#dcnu24#kln88" name="KOFlow71" to="mov1#mpkg8#opm19#kocu8" automaticCoupling="true" gr:bendpoints="243,88,-357,128;410,78,-190,118"/>
+    </DisconnectUnit>
+    <DisconnectUnit id="mov1#mpkg8#opm19#opg16#dcnu25" name="Sconnetti da allergeni" gr:x="640" gr:y="270" relationship="rel16#role31">
+      <SourceSelector id="mov1#mpkg8#opm19#opg16#dcnu25#su139" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg8#opm19#opg16#dcnu25#su139#kcond106" name="KeyCondition11" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg8#opm19#opg16#dcnu25#su140" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg8#opm19#opg16#dcnu25#su140#kcond107" name="KeyCondition12" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg8#opm19#opg16#dcnu25#oln128" name="OKFlow12" to="mov1#mpkg8#opm19#opg16#lpu8" automaticCoupling="true" gr:bendpoints="-105,-72,385,73;-346,-75,144,70"/>
+      <KOLink id="mov1#mpkg8#opm19#opg16#dcnu25#kln89" name="KOFlow73" to="mov1#mpkg8#opm19#kocu8" automaticCoupling="true"/>
+    </DisconnectUnit>
+    <DeleteUnit id="mov1#mpkg8#opm19#opg16#dlu1" name="Rimuovi piatto" gr:x="520" gr:y="455" entity="ent1">
+      <Selector id="mov1#mpkg8#opm19#opg16#dlu1#su141" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg8#opm19#opg16#dlu1#su141#kcond108" name="KeyCondition13" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#mpkg8#opm19#opg16#dlu1#oln129" to="mov1#mpkg8#opm19#okcu9" name="OKFlow17"/>
+      <KOLink id="mov1#mpkg8#opm19#opg16#dlu1#kln90" name="KOFlow62" to="mov1#mpkg8#opm19#kocu8" automaticCoupling="true" gr:bendpoints="210,-77,-195,153"/>
+    </DeleteUnit>
+    <SelectorUnit id="mov1#mpkg8#opm19#opg16#seu50" name="Seleziona ordini" gr:x="25" gr:y="400" entity="ent3">
+      <OKLink id="mov1#mpkg8#opm19#opg16#seu50#oln138" name="OKFlow14" to="mov1#mpkg8#opm19#opg16#lpu9">
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu50#oln138#par641" name="Source oid [Piatto]_PASSING" sourceLinkParameter="mov1#mpkg8#opm19#opg16#lpu8#oln91#par617" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#seu50#oln138#par674" name="data_Input Array" source="ent3#att15Array" target="mov1#mpkg8#opm19#opg16#lpu9.array"/>
+      </OKLink>
+      <Selector id="mov1#mpkg8#opm19#opg16#seu50#su142" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#mpkg8#opm19#opg16#seu50#su142#rcond63" name="piatto nell'ordine" predicate="in" implied="false" role="rel8#role16"/>
+      </Selector>
+      <KOLink id="mov1#mpkg8#opm19#opg16#seu50#kln91" name="KOFlow72" to="mov1#mpkg8#opm19#kocu8" automaticCoupling="true" gr:bendpoints="709,-45,-186,130"/>
+    </SelectorUnit>
+    <LoopUnit gr:x="295" gr:y="440" id="mov1#mpkg8#opm19#opg16#lpu9" name="Cicla ordini">
+      <OKLink id="mov1#mpkg8#opm19#opg16#lpu9#oln139" name="OKFlow121" to="mov1#mpkg8#opm19#opg16#dcnu31" code="next">
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#lpu9#oln139#par642" name="Next Element_KeyCondition89 [oid] [Ordine] [Source]" source="next" target="mov1#mpkg8#opm19#opg16#dcnu31#su143#kcond109.ent3#att8"/>
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#lpu9#oln139#par643" name="Source oid [Piatto]_PASSING_KeyCondition90 [oid] [Piatto] [Target]" sourceLinkParameter="mov1#mpkg8#opm19#opg16#seu50#oln138#par641" target="mov1#mpkg8#opm19#opg16#dcnu31#su145#kcond110.ent1#att1"/>
+      </OKLink>
+      <OKLink id="mov1#mpkg8#opm19#opg16#lpu9#oln156" name="OKFlow124" to="mov1#mpkg8#opm19#opg16#dlu1" code="end">
+        <LinkParameter id="mov1#mpkg8#opm19#opg16#lpu9#oln156#par644" name="Source oid [Piatto]_PASSING_KeyCondition13 [oid]" sourceLinkParameter="mov1#mpkg8#opm19#opg16#seu50#oln138#par641" target="mov1#mpkg8#opm19#opg16#dlu1#su141#kcond108.ent1#att1"/>
+      </OKLink>
+    </LoopUnit>
+    <DisconnectUnit gr:x="320" gr:y="540" id="mov1#mpkg8#opm19#opg16#dcnu31" name="Sconneti piatto da eliminare" relationship="rel8#role15">
+      <SourceSelector id="mov1#mpkg8#opm19#opg16#dcnu31#su143" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg8#opm19#opg16#dcnu31#su143#kcond109" name="KeyCondition89" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#mpkg8#opm19#opg16#dcnu31#su145" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg8#opm19#opg16#dcnu31#su145#kcond110" name="KeyCondition90" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov1#mpkg8#opm19#opg16#dcnu31#oln178" name="OKFlow123" to="mov1#mpkg8#opm19#opg16#lpu9" automaticCoupling="true" gr:bendpoints="-55,-69,15,56"/>
+      <KOLink id="mov1#mpkg8#opm19#opg16#dcnu31#kln92" name="KOFlow63" to="mov1#mpkg8#opm19#kocu8" automaticCoupling="true" gr:bendpoints="280,-6,-290,314"/>
+    </DisconnectUnit>
+  </OperationUnits>
+</OperationGroup>

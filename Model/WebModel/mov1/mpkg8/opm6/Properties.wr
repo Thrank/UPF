@@ -1,0 +1,28 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="54" gr:y="9" id="mov1#mpkg8#opm6" name="Modifica piatto">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#mpkg8#opm6#icu6">
+      <InputCollectorParameter id="mov1#mpkg8#opm6#icu6#icp30" name="prezzo"/>
+      <InputCollectorParameter id="mov1#mpkg8#opm6#icu6#icp31" name="foto"/>
+      <InputCollectorParameter id="mov1#mpkg8#opm6#icu6#icp32" name="descrizione breve"/>
+      <InputCollectorParameter id="mov1#mpkg8#opm6#icu6#icp35" name="KeyCondition13 [oid]"/>
+      <InputCollectorParameter id="mov1#mpkg8#opm6#icu6#icp36" name="Checked oid_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg8#opm6#icu6#icp65" name="Checked oid_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg8#opm6#icu6#icp66" name="Checked oid_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg8#opm6#icu6#icp67" name="oid_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg8#opm6#icu6#icp68" name="nome"/>
+      <OKLink id="mov1#mpkg8#opm6#icu6#oln11" to="mov1#mpkg8#opm6#opg2#mfu19" validate="true" name="Flow70">
+        <LinkParameter id="mov1#mpkg8#opm6#icu6#oln11#par554" source="mov1#mpkg8#opm6#icu6#icp66" name="Checked oid_PASSING" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm6#icu6#oln11#par555" name="oid_PASSING" passing="true" source="mov1#mpkg8#opm6#icu6#icp67"/>
+        <LinkParameter id="mov1#mpkg8#opm6#icu6#oln11#par556" name="descrizione_PASSING_descrizione breve" target="mov1#mpkg8#opm6#opg2#mfu19.ent1#att57" source="mov1#mpkg8#opm6#icu6#icp32"/>
+        <LinkParameter id="mov1#mpkg8#opm6#icu6#oln11#par557" name="oid_PASSING_KeyCondition13 [oid]" target="mov1#mpkg8#opm6#opg2#mfu19#su5#kcond9.ent1#att1" source="mov1#mpkg8#opm6#icu6#icp35"/>
+        <LinkParameter id="mov1#mpkg8#opm6#icu6#oln11#par558" name="foto_PASSING_foto" target="mov1#mpkg8#opm6#opg2#mfu19.ent1#att58" source="mov1#mpkg8#opm6#icu6#icp31"/>
+        <LinkParameter id="mov1#mpkg8#opm6#icu6#oln11#par559" name="prezzo_PASSING_prezzo" target="mov1#mpkg8#opm6#opg2#mfu19.ent1#att7" source="mov1#mpkg8#opm6#icu6#icp30"/>
+        <LinkParameter id="mov1#mpkg8#opm6#icu6#oln11#par560" name="Checked oid_PASSING" passing="true" source="mov1#mpkg8#opm6#icu6#icp65"/>
+        <LinkParameter id="mov1#mpkg8#opm6#icu6#oln11#par561" name="Checked oid_PASSING" passing="true" source="mov1#mpkg8#opm6#icu6#icp36"/>
+        <LinkParameter id="mov1#mpkg8#opm6#icu6#oln11#par562" name="nome_PASSING_nome" target="mov1#mpkg8#opm6#opg2#mfu19.ent1#att2" source="mov1#mpkg8#opm6#icu6#icp68"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="1005" gr:y="650" id="mov1#mpkg8#opm6#okcu6" name="OK modifica"/>
+    <KOCollectorUnit gr:x="1005" gr:y="285" id="mov1#mpkg8#opm6#kocu6" name="KO modifica"/>
+  </OperationUnits>
+</OperationModule>

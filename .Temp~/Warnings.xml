@@ -1,8 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Warnings> 
-  <Warning error="false" xpath="id('mov2#mpkg7#opm15#opg39#seu68#su366#acond55')" rootXPath="id('mov2')" key="NOT_EQUAL_PREDICATE_WITH_OR" label="username presente?"> 
-    <Message>Invalid combination of predicate 'Not Equal' and boolean operator 'Or' for the condition 'username presente?'</Message>  
-    <Resolution message="Set boolean operator to 'and'" class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="booleanOperator" value="and">Set boolean operator to 'and'</Resolution> 
+  <Warning xpath="id('mov1#mpkg8#opm6#opg2#dcnu3#oln47')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow24"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow24'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov1#mpkg8#opm6#opg2#cnu6#oln70')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow29"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow29'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov1#mpkg8#opm6#opg2#mfu19#kln56')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow11"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow11'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov1#mpkg8#opm6#opg2#seu4#kln57')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow9"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow9'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov1#mpkg8#opm6#opg2#seu6#kln58')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow10"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow10'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov1#mpkg8#opm6#opg2#seu7#kln60')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow8"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow8'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov1#mpkg8#opm6#opg2#dcnu1#kln61')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow7"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow7'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov1#mpkg8#opm6#opg2#dcnu2#kln74')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow4"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow4'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov1#mpkg8#opm6#opg2#dcnu3#kln75')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow6"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow6'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov1#mpkg8#opm6#opg2#cnu2#kln76')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow3"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow3'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov1#mpkg8#opm6#opg2#cnu3#kln78')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow2"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow2'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov1#mpkg8#opm6#opg2#cnu6#kln79')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow1"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow1'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('mov1#mpkg8#opm6#icu6#icp65')" rootXPath="id('mov1')" label="Checked oid_PASSING" error="true"> 
+    <Message>The input port parameter 'Checked oid_PASSING' is duplicated.</Message> 
+  </Warning>
+  <Warning xpath="id('mov1#mpkg8#opm6#icu6#icp66')" rootXPath="id('mov1')" label="Checked oid_PASSING" error="true"> 
+    <Message>The input port parameter 'Checked oid_PASSING' is duplicated.</Message> 
   </Warning> 
 </Warnings>

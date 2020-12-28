@@ -16,7 +16,7 @@
     </InputCollectorUnit>
     <ModuleInstanceUnit id="mov1#mpkg3#hym5#miu3" gr:x="300" gr:y="470" moduleId="mov1#mpkg3#opm9" action="true">
       <OKLink id="mov1#mpkg3#hym5#miu3#oln164" name="OKFlow109" to="mov1#mpkg3#hym5#okcu16" automaticCoupling="true"/>
-      <KOLink id="mov1#mpkg3#hym5#miu3#kln174" name="KOFlow174" to="mov1#mpkg3#hym5#kocu33" automaticCoupling="true"/>
+      <KOLink id="mov1#mpkg3#hym5#miu3#kln113" name="KOFlow113" to="mov1#mpkg3#hym5#kocu33" automaticCoupling="true" gr:bendpoints="353,37,-362,-8"/>
     </ModuleInstanceUnit>
     <OKCollectorUnit gr:x="1010" gr:y="270" id="mov1#mpkg3#hym5#okcu16" name="Modifica avvenuta con successo"/>
     <KOCollectorUnit gr:x="1010" gr:y="510" id="mov1#mpkg3#hym5#kocu33" name="KO modifica"/>

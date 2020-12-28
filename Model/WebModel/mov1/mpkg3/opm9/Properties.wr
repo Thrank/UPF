@@ -27,8 +27,6 @@
       <InputCollectorParameter id="mov1#mpkg3#opm9#icu10#icp54" name="citt&#224;_nuova"/>
     </InputCollectorUnit>
     <OKCollectorUnit gr:x="815" gr:y="175" id="mov1#mpkg3#opm9#okcu15" name="Modifica effettuata con successo"/>
-    <KOCollectorUnit gr:x="815" gr:y="305" id="mov1#mpkg3#opm9#kocu20" name="KO aggiornamento database"/>
-    <KOCollectorUnit gr:x="815" gr:y="450" id="mov1#mpkg3#opm9#kocu21" name="KO connessione"/>
-    <KOCollectorUnit gr:x="815" gr:y="390" id="mov1#mpkg3#opm9#kocu22" name="KO disconnessione"/>
+    <KOCollectorUnit gr:x="815" gr:y="305" id="mov1#mpkg3#opm9#kocu20" name="KO"/>
   </OperationUnits>
 </OperationModule>

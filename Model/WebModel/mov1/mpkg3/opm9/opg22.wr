@@ -36,7 +36,7 @@
         <LinkParameter id="mov1#mpkg3#opm9#opg22#dcnu17#oln161#par978" name="Target oid [Indirizzo]_KeyCondition230 [oid] [Indirizzo] [Source]" source="targetent16#att64" target="mov1#mpkg3#opm9#opg22#cnu41#su191#kcond155.ent16#att64"/>
         <LinkParameter id="mov1#mpkg3#opm9#opg22#dcnu17#oln161#par979" name="citt&#224;_nuova_PASSING_KeyCondition231 [oid] [Citt&#224;] [Target]" sourceLinkParameter="mov1#mpkg3#opm9#opg22#mfu2#oln160#par977" target="mov1#mpkg3#opm9#opg22#cnu41#su192#kcond156.ent22#att27"/>
       </OKLink>
-      <KOLink id="mov1#mpkg3#opm9#opg22#dcnu17#kln110" name="KOFlow88" to="mov1#mpkg3#opm9#kocu22" automaticCoupling="true" gr:bendpoints="105,50,-320,-20"/>
+      <KOLink id="mov1#mpkg3#opm9#opg22#dcnu17#kln110" name="KOFlow88" to="mov1#mpkg3#opm9#kocu20" automaticCoupling="true" gr:bendpoints="105,50,-320,-20"/>
     </DisconnectUnit>
     <ConnectUnit id="mov1#mpkg3#opm9#opg22#cnu41" name="Connetti a citt&#224;" gr:x="125" gr:y="285" relationship="rel32#role63">
       <SourceSelector id="mov1#mpkg3#opm9#opg22#cnu41#su191" defaultPolicy="fill" booleanOperator="and">
@@ -46,7 +46,7 @@
         <KeyCondition id="mov1#mpkg3#opm9#opg22#cnu41#su192#kcond156" name="KeyCondition231" predicate="in" implied="false"/>
       </TargetSelector>
       <OKLink id="mov1#mpkg3#opm9#opg22#cnu41#oln162" name="OKFlow86" to="mov1#mpkg3#opm9#okcu15" automaticCoupling="true"/>
-      <KOLink id="mov1#mpkg3#opm9#opg22#cnu41#kln111" name="KOFlow89" to="mov1#mpkg3#opm9#kocu21" automaticCoupling="true"/>
+      <KOLink id="mov1#mpkg3#opm9#opg22#cnu41#kln111" name="KOFlow89" to="mov1#mpkg3#opm9#kocu20" automaticCoupling="true"/>
     </ConnectUnit>
   </OperationUnits>
 </OperationGroup>

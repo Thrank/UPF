@@ -3,8 +3,8 @@
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv9#area47#page11#mssu20" name="Conferma eliminazione piatto" linkOrder="sv9#area47#page11#mssu20#ln163">
       <Link id="sv9#area47#page11#mssu20#ln163" name="Flow16" to="sv9#area47#miu25" type="normal" validate="true">
         <LinkParameter id="sv9#area47#page11#mssu20#ln163#par84" name="oid_PASSING" sourceLinkParameter="sv9#area47#page61#inu15#ln133#par83" passing="true"/>
-        <LinkParameter id="sv9#area47#page11#mssu20#ln163#par85" name="oid_PASSING_oid_PASSING" sourceLinkParameter="sv9#area47#page61#inu15#ln133#par83" target="sv9#area47#miu25.mov1#opm11#icu15#icp9"/>
-        <LinkParameter id="sv9#area47#page11#mssu20#ln163#par86" name="oid_PASSING_piatto del ristorante [oid]" sourceLinkParameter="sv9#area47#page61#inu15#ln133#par83" target="sv9#area47#miu25.mov1#opm11#icu15#icp8"/>
+        <LinkParameter id="sv9#area47#page11#mssu20#ln163#par85" name="oid_PASSING_oid_PASSING" sourceLinkParameter="sv9#area47#page61#inu15#ln133#par83" target="sv9#area47#miu25.mov1#mpkg8#opm19#icu17#icp70"/>
+        <LinkParameter id="sv9#area47#page11#mssu20#ln163#par86" name="oid_PASSING_piatto del ristorante [oid]" sourceLinkParameter="sv9#area47#page61#inu15#ln133#par83" target="sv9#area47#miu25.mov1#mpkg8#opm19#icu17#icp69"/>
       </Link>
     </MultiMessageUnit>
   </ContentUnits>

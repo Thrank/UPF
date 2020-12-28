@@ -1,11 +1,21 @@
 <OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov2#mpkg7#opm16#opg40" name="Iscrizione ristoratore" transaction="true" gr:x="370" gr:y="45">
   <OperationUnits>
     <CreateUnit id="mov2#mpkg7#opm16#opg40#cru52" name="Aggiungi indirizzo" gr:x="35" gr:y="210" entity="ent16">
-      <OKLink id="mov2#mpkg7#opm16#opg40#cru52#oln323" name="OKFlow12" to="mov2#mpkg7#opm16#opg40#cnu84" automaticCoupling="true"/>
+      <OKLink id="mov2#mpkg7#opm16#opg40#cru52#oln323" name="OKFlow12" to="mov2#mpkg7#opm16#opg40#cnu84">
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#cru52#oln323#par543" name="oid_PASSING_KeyCondition64 [oid] [Utente] [Source]" sourceLinkParameter="mov2#mpkg7#opm16#opg40#cru53#oln324#par542" target="mov2#mpkg7#opm16#opg40#cnu84#su367#kcond321.userOID"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#cru52#oln323#par544" name="oid_KeyCondition65 [oid] [Indirizzo] [Target]" source="ent16#att64Array" target="mov2#mpkg7#opm16#opg40#cnu84#su368#kcond322.ent16#att64"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#cru52#oln323#par545" name="citt&#224;_PASSING" sourceLinkParameter="mov2#mpkg7#opm16#opg40#cru53#oln324#par541" passing="true"/>
+      </OKLink>
       <KOLink id="mov2#mpkg7#opm16#opg40#cru52#kln200" to="mov2#mpkg7#opm16#kocu38" name="KOFlow12" gr:bendpoints="133,-48,-337,-58;306,-44,-164,-54"/>
     </CreateUnit>
     <CreateUnit id="mov2#mpkg7#opm16#opg40#cru53" name="Aggiungi ristoratore" gr:x="260" gr:y="35" entity="ent6">
-      <OKLink id="mov2#mpkg7#opm16#opg40#cru53#oln324" name="OKFlow11" to="mov2#mpkg7#opm16#opg40#cru52" automaticCoupling="true"/>
+      <OKLink id="mov2#mpkg7#opm16#opg40#cru53#oln324" name="OKFlow11" to="mov2#mpkg7#opm16#opg40#cru52">
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#cru53#oln324#par537" name="CAP_PASSING_CAP" sourceLinkParameter="mov2#mpkg7#opm16#opg40#seu69#oln326#par527" target="mov2#mpkg7#opm16#opg40#cru52.ent16#att76"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#cru53#oln324#par538" name="numero civico_PASSING_civico" sourceLinkParameter="mov2#mpkg7#opm16#opg40#seu69#oln326#par531" target="mov2#mpkg7#opm16#opg40#cru52.ent16#att32"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#cru53#oln324#par540" name="via/piazza/corso_PASSING_via/piazza/corso" sourceLinkParameter="mov2#mpkg7#opm16#opg40#seu69#oln326#par533" target="mov2#mpkg7#opm16#opg40#cru52.ent16#att31"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#cru53#oln324#par541" name="citt&#224;_PASSING" sourceLinkParameter="mov2#mpkg7#opm16#opg40#seu69#oln326#par530" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#cru53#oln324#par542" name="oid_PASSING" sourceLinkParameter="mov2#mpkg7#opm16#opg40#seu69#oln326#par532" passing="true"/>
+      </OKLink>
       <KOLink id="mov2#mpkg7#opm16#opg40#cru53#kln201" to="mov2#mpkg7#opm16#kocu38" name="KOFlow15"/>
     </CreateUnit>
     <ConnectUnit id="mov2#mpkg7#opm16#opg40#cnu84" name="Connetti a indirizzo" gr:x="245" gr:y="215" relationship="rel11#role21">
@@ -15,7 +25,10 @@
       <TargetSelector id="mov2#mpkg7#opm16#opg40#cnu84#su368" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov2#mpkg7#opm16#opg40#cnu84#su368#kcond322" name="KeyCondition65" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="mov2#mpkg7#opm16#opg40#cnu84#oln325" name="OKFlow13" to="mov2#mpkg7#opm16#opg40#cnu85" automaticCoupling="true"/>
+      <OKLink id="mov2#mpkg7#opm16#opg40#cnu84#oln325" name="OKFlow13" to="mov2#mpkg7#opm16#opg40#cnu85">
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#cnu84#oln325#par546" name="Target oid [Indirizzo]_KeyCondition66 [oid] [Indirizzo] [Source]" source="targetent16#att64" target="mov2#mpkg7#opm16#opg40#cnu85#su369#kcond323.ent16#att64"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#cnu84#oln325#par547" name="citt&#224;_PASSING_KeyCondition67 [oid] [Citt&#224;] [Target]" sourceLinkParameter="mov2#mpkg7#opm16#opg40#cru52#oln323#par545" target="mov2#mpkg7#opm16#opg40#cnu85#su370#kcond324.ent22#att27"/>
+      </OKLink>
       <KOLink id="mov2#mpkg7#opm16#opg40#cnu84#kln202" to="mov2#mpkg7#opm16#kocu38" name="KOFlow14"/>
     </ConnectUnit>
     <ConnectUnit id="mov2#mpkg7#opm16#opg40#cnu85" name="Connetti a citt&#224;" gr:x="70" gr:y="355" relationship="rel32#role63">
@@ -28,8 +41,22 @@
       <OKLink id="mov2#mpkg7#opm16#opg40#cnu85#oln327" to="mov2#mpkg7#opm16#okcu37" name="OKFlow14"/>
       <KOLink id="mov2#mpkg7#opm16#opg40#cnu85#kln203" to="mov2#mpkg7#opm16#kocu38" name="KOFlow13" gr:bendpoints="299,-57,-131,93"/>
     </ConnectUnit>
-    <SelectorUnit id="mov2#mpkg7#opm16#opg40#seu69" name="Seleziona utente" gr:x="0" gr:y="0" entity="User">
-      <OKLink id="mov2#mpkg7#opm16#opg40#seu69#oln326" name="OKFlow9" to="mov2#mpkg7#opm16#opg40#cru53"/>
+    <SelectorUnit id="mov2#mpkg7#opm16#opg40#seu69" name="Seleziona utente" gr:x="0" gr:y="0" entity="ent6">
+      <OKLink id="mov2#mpkg7#opm16#opg40#seu69#oln326" name="OKFlow9" to="mov2#mpkg7#opm16#opg40#cru53">
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#seu69#oln326#par416" name="ban_ban" target="mov2#mpkg7#opm16#opg40#cru53.User#att17" sourceValue="false"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#seu69#oln326#par446" name="cognome_cognome" target="mov2#mpkg7#opm16#opg40#cru53.User#att6" sourceLinkParameter="mov2#mpkg7#opm16#icu25#oln320#par2463"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#seu69#oln326#par518" name="email_email" target="mov2#mpkg7#opm16#opg40#cru53.email" sourceLinkParameter="mov2#mpkg7#opm16#icu25#oln320#par2464"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#seu69#oln326#par519" name="nome_nome" target="mov2#mpkg7#opm16#opg40#cru53.User#att3" sourceLinkParameter="mov2#mpkg7#opm16#icu25#oln320#par2465"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#seu69#oln326#par520" name="numero di telefono_numero di telefono" target="mov2#mpkg7#opm16#opg40#cru53.User#att11" sourceLinkParameter="mov2#mpkg7#opm16#icu25#oln320#par2466"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#seu69#oln326#par521" name="partita iva_PASSING_partita iva" sourceLinkParameter="mov2#mpkg7#opm16#icu25#oln320#par2467" target="mov2#mpkg7#opm16#opg40#cru53.ent6#att18"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#seu69#oln326#par522" name="password_PASSING_password" sourceLinkParameter="mov2#mpkg7#opm16#icu25#oln320#par2459" target="mov2#mpkg7#opm16#opg40#cru53.password"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#seu69#oln326#par526" name="username_PASSING_username" sourceLinkParameter="mov2#mpkg7#opm16#icu25#oln320#par2460" target="mov2#mpkg7#opm16#opg40#cru53.userName"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#seu69#oln326#par527" name="CAP_PASSING" sourceLinkParameter="mov2#mpkg7#opm16#icu25#oln320#par2456" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#seu69#oln326#par530" name="citt&#224;_PASSING" sourceLinkParameter="mov2#mpkg7#opm16#icu25#oln320#par2457" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#seu69#oln326#par531" name="numero civico_PASSING" sourceLinkParameter="mov2#mpkg7#opm16#icu25#oln320#par2458" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#seu69#oln326#par532" name="oid_PASSING" source="userOIDArray" passing="true"/>
+        <LinkParameter id="mov2#mpkg7#opm16#opg40#seu69#oln326#par533" name="via/piazza/corso_PASSING" sourceLinkParameter="mov2#mpkg7#opm16#icu25#oln320#par2461" passing="true"/>
+      </OKLink>
       <SortAttribute attribute="userOID" order="ascending"/>
       <Selector id="mov2#mpkg7#opm16#opg40#seu69#su371" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="mov2#mpkg7#opm16#opg40#seu69#su371#acond56" name="username presente?" predicate="neq" booleanOperator="or" implied="false" attributes="userName"/>
