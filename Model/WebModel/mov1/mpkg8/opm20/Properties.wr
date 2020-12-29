@@ -3,21 +3,21 @@
     <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#mpkg8#opm20#icu21">
       <InputCollectorParameter id="mov1#mpkg8#opm20#icu21#icp71" name="descrizione breve"/>
       <InputCollectorParameter id="mov1#mpkg8#opm20#icu21#icp72" name="foto"/>
-      <InputCollectorParameter id="mov1#mpkg8#opm20#icu21#icp154" name="Checked oid_PASSING"/>
-      <InputCollectorParameter id="mov1#mpkg8#opm20#icu21#icp155" name="Checked oid_PASSING"/>
-      <InputCollectorParameter id="mov1#mpkg8#opm20#icu21#icp156" name="Checked oid_PASSING"/>
+      <InputCollectorParameter id="mov1#mpkg8#opm20#icu21#icp154" name="Checked oid TipologiaCucina"/>
+      <InputCollectorParameter id="mov1#mpkg8#opm20#icu21#icp155" name="Checked oid Categoria"/>
+      <InputCollectorParameter id="mov1#mpkg8#opm20#icu21#icp156" name="Checked oid Allergene"/>
       <InputCollectorParameter id="mov1#mpkg8#opm20#icu21#icp157" name="prezzo"/>
       <InputCollectorParameter id="mov1#mpkg8#opm20#icu21#icp158" name="nome"/>
       <InputCollectorParameter id="mov1#mpkg8#opm20#icu21#icp159" name="oid_PASSING"/>
       <OKLink id="mov1#mpkg8#opm20#icu21#oln182" to="mov1#mpkg8#opm20#opg25#cru1" validate="true" name="Flow36">
         <LinkParameter id="mov1#mpkg8#opm20#icu21#oln182#par645" name="nome_PASSING_nome" target="mov1#mpkg8#opm20#opg25#cru1.ent1#att2" source="mov1#mpkg8#opm20#icu21#icp158"/>
         <LinkParameter id="mov1#mpkg8#opm20#icu21#oln182#par646" name="foto_PASSING_foto" target="mov1#mpkg8#opm20#opg25#cru1.ent1#att58" source="mov1#mpkg8#opm20#icu21#icp72"/>
-        <LinkParameter id="mov1#mpkg8#opm20#icu21#oln182#par647" name="Checked oid_PASSING" passing="true" source="mov1#mpkg8#opm20#icu21#icp156"/>
         <LinkParameter id="mov1#mpkg8#opm20#icu21#oln182#par648" name="oid_PASSING" passing="true" source="mov1#mpkg8#opm20#icu21#icp159"/>
-        <LinkParameter id="mov1#mpkg8#opm20#icu21#oln182#par649" source="mov1#mpkg8#opm20#icu21#icp154" name="Checked oid_PASSING" passing="true"/>
-        <LinkParameter id="mov1#mpkg8#opm20#icu21#oln182#par650" name="Checked oid_PASSING" passing="true" source="mov1#mpkg8#opm20#icu21#icp155"/>
         <LinkParameter id="mov1#mpkg8#opm20#icu21#oln182#par651" name="descrizione_PASSING_descrizione breve" target="mov1#mpkg8#opm20#opg25#cru1.ent1#att57" source="mov1#mpkg8#opm20#icu21#icp71"/>
         <LinkParameter id="mov1#mpkg8#opm20#icu21#oln182#par652" name="prezzo_PASSING_prezzo" target="mov1#mpkg8#opm20#opg25#cru1.ent1#att7" source="mov1#mpkg8#opm20#icu21#icp157"/>
+        <LinkParameter id="mov1#mpkg8#opm20#icu21#oln182#par263" name="Checked oid Allergene_PASSING" source="mov1#mpkg8#opm20#icu21#icp156" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm20#icu21#oln182#par264" name="Checked oid Categoria_PASSING" source="mov1#mpkg8#opm20#icu21#icp155" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm20#icu21#oln182#par269" name="Checked oid TipologiaCucina_PASSING" source="mov1#mpkg8#opm20#icu21#icp154" passing="true"/>
       </OKLink>
     </InputCollectorUnit>
     <OKCollectorUnit gr:x="895" gr:y="625" id="mov1#mpkg8#opm20#okcu10" name="OK inserimento"/>

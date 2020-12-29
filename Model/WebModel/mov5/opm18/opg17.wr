@@ -23,7 +23,6 @@
     <TimeUnit id="mov5#opm18#opg17#tmu4" name="Data attuale" gr:x="170" gr:y="30">
       <OKLink id="mov5#opm18#opg17#tmu4#oln17" name="OKFlow41" to="mov5#opm18#opg17#cru6">
         <LinkParameter id="mov5#opm18#opg17#tmu4#oln17#par393" name="Current/Input Date_data" source="currentDate" target="mov5#opm18#opg17#cru6.ent24#att80"/>
-        <LinkParameter id="mov5#opm18#opg17#tmu4#oln17#par441" name="oid_PASSING_Valutazione.oid(Moderazione EseguitaTovalutazione)" sourceLinkParameter="mov5#opm18#opg17#mfu18#oln15#par391" target="mov5#opm18#opg17#cru6.rel31#role61.ent15#att41"/>
         <LinkParameter id="mov5#opm18#opg17#tmu4#oln17#par443" name="oid_PASSING" sourceLinkParameter="mov5#opm18#opg17#mfu18#oln15#par391" passing="true"/>
         <LinkParameter id="mov5#opm18#opg17#tmu4#oln17#par444" name="UserCtxParam.oid_PASSING" sourceLinkParameter="mov5#opm18#opg17#mfu18#oln15#par392" passing="true"/>
       </OKLink>

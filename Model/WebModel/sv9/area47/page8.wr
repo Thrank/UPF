@@ -15,13 +15,13 @@
     </EntryUnit>
     <MultiChoiceIndexUnit gr:x="360" gr:y="5" id="sv9#area47#page8#mciu2" name="Lista tipologie cucina" entity="ent10" linkOrder="sv9#area47#page8#mciu2#ln27" displayAttributes="ent10#att28" gr:showAllParts="true">
       <Link id="sv9#area47#page8#mciu2#ln27" name="Flow27" to="sv9#area47#page8#mciu4" type="normal" validate="true">
-        <LinkParameter id="sv9#area47#page8#mciu2#ln27#par8" name="Checked oid_PASSING" source="ent10#att61Checked" passing="true"/>
         <LinkParameter id="sv9#area47#page8#mciu2#ln27#par14" name="descrizione_PASSING" sourceLinkParameter="sv9#area47#page8#enu2#ln26#par4" passing="true"/>
         <LinkParameter id="sv9#area47#page8#mciu2#ln27#par15" name="nome_PASSING" sourceLinkParameter="sv9#area47#page8#enu2#ln26#par5" passing="true"/>
         <LinkParameter id="sv9#area47#page8#mciu2#ln27#par16" name="prezzo_PASSING" sourceLinkParameter="sv9#area47#page8#enu2#ln26#par6" passing="true"/>
         <LinkParameter id="sv9#area47#page8#mciu2#ln27#par29" name="foto_PASSING" sourceLinkParameter="sv9#area47#page8#enu2#ln26#par28" passing="true"/>
         <LinkParameter id="sv9#area47#page8#mciu2#ln27#par51" name="oid (Single Row)_PASSING" source="data[].ent10#att61" passing="true"/>
         <LinkParameter id="sv9#area47#page8#mciu2#ln27#par64" name="oid_PASSING" sourceLinkParameter="sv9#area47#page8#enu2#ln26#par50" passing="true"/>
+        <LinkParameter id="sv9#area47#page8#mciu2#ln27#par261" name="Checked oid_PASSING" source="ent10#att61Checked" passing="true"/>
       </Link>
       <SortAttribute attribute="ent10#att28" order="ascending"/>
     </MultiChoiceIndexUnit>
@@ -29,12 +29,12 @@
       <SortAttribute attribute="ent18#att51" order="ascending"/>
       <Link id="sv9#area47#page8#mciu4#ln34" name="Flow34" to="sv9#area47#page8#mciu5" type="normal" validate="true">
         <LinkParameter id="sv9#area47#page8#mciu4#ln34#par23" name="Checked oid_PASSING" source="ent18#att62Checked" passing="true"/>
-        <LinkParameter id="sv9#area47#page8#mciu4#ln34#par24" name="Checked oid_PASSING" sourceLinkParameter="sv9#area47#page8#mciu2#ln27#par8" passing="true"/>
         <LinkParameter id="sv9#area47#page8#mciu4#ln34#par25" name="descrizione_PASSING" sourceLinkParameter="sv9#area47#page8#mciu2#ln27#par14" passing="true"/>
         <LinkParameter id="sv9#area47#page8#mciu4#ln34#par26" name="nome_PASSING" sourceLinkParameter="sv9#area47#page8#mciu2#ln27#par15" passing="true"/>
         <LinkParameter id="sv9#area47#page8#mciu4#ln34#par27" name="prezzo_PASSING" sourceLinkParameter="sv9#area47#page8#mciu2#ln27#par16" passing="true"/>
         <LinkParameter id="sv9#area47#page8#mciu4#ln34#par37" name="foto_PASSING" sourceLinkParameter="sv9#area47#page8#mciu2#ln27#par29" passing="true"/>
         <LinkParameter id="sv9#area47#page8#mciu4#ln34#par65" name="oid_PASSING" sourceLinkParameter="sv9#area47#page8#mciu2#ln27#par64" passing="true"/>
+        <LinkParameter id="sv9#area47#page8#mciu4#ln34#par262" name="Checked oid_PASSING" sourceLinkParameter="sv9#area47#page8#mciu2#ln27#par261" passing="true"/>
       </Link>
     </MultiChoiceIndexUnit>
     <MultiChoiceIndexUnit gr:x="220" gr:y="140" id="sv9#area47#page8#mciu5" name="Lista allergeni" entity="ent19" displayAttributes="ent19#att56" gr:showAllParts="true" linkOrder="sv9#area47#page8#mciu5#ln36">
@@ -44,9 +44,9 @@
         <LinkParameter id="sv9#area47#page8#mciu5#ln36#par46" name="foto_PASSING_foto" sourceLinkParameter="sv9#area47#page8#mciu4#ln34#par37" target="sv9#miu12.mov1#mpkg8#opm20#icu21#icp72"/>
         <LinkParameter id="sv9#area47#page8#mciu5#ln36#par47" name="nome_PASSING_nome" sourceLinkParameter="sv9#area47#page8#mciu4#ln34#par26" target="sv9#miu12.mov1#mpkg8#opm20#icu21#icp158"/>
         <LinkParameter id="sv9#area47#page8#mciu5#ln36#par48" name="prezzo_PASSING_prezzo" sourceLinkParameter="sv9#area47#page8#mciu4#ln34#par27" target="sv9#miu12.mov1#mpkg8#opm20#icu21#icp157"/>
-        <LinkParameter id="sv9#area47#page8#mciu5#ln36#par53" name="Checked oid_PASSING" source="ent19#att55Checked" target="sv9#miu12.mov1#mpkg8#opm20#icu21#icp154"/>
+        <LinkParameter id="sv9#area47#page8#mciu5#ln36#par53" name="Checked oid_PASSING" target="sv9#miu12.mov1#mpkg8#opm20#icu21#icp154" sourceLinkParameter="sv9#area47#page8#mciu4#ln34#par262"/>
         <LinkParameter id="sv9#area47#page8#mciu5#ln36#par54" name="Checked oid_PASSING" sourceLinkParameter="sv9#area47#page8#mciu4#ln34#par23" target="sv9#miu12.mov1#mpkg8#opm20#icu21#icp155"/>
-        <LinkParameter id="sv9#area47#page8#mciu5#ln36#par55" name="Checked oid_PASSING" sourceLinkParameter="sv9#area47#page8#mciu4#ln34#par24" target="sv9#miu12.mov1#mpkg8#opm20#icu21#icp156"/>
+        <LinkParameter id="sv9#area47#page8#mciu5#ln36#par55" name="Checked oid_PASSING" target="sv9#miu12.mov1#mpkg8#opm20#icu21#icp156" source="ent19#att55Checked"/>
         <LinkParameter id="sv9#area47#page8#mciu5#ln36#par67" name="oid_PASSING" sourceLinkParameter="sv9#area47#page8#mciu4#ln34#par65" target="sv9#miu12.mov1#mpkg8#opm20#icu21#icp159"/>
       </Link>
     </MultiChoiceIndexUnit>

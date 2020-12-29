@@ -7,6 +7,7 @@
       <OKLink id="mov4#opm4#opg15#seu44#oln100" name="OKFlow92" to="mov4#opm4#opg15#dcnu21">
         <LinkParameter id="mov4#opm4#opg15#seu44#oln100#par433" name="oid_KeyCondition88 [oid] [Indirizzo] [Source]" source="ent16#att64Array" target="mov4#opm4#opg15#dcnu21#su121#kcond95.ent16#att64"/>
         <LinkParameter id="mov4#opm4#opg15#seu44#oln100#par434" name="oid_PASSING_KeyCondition89 [oid] [Utente] [Target]" sourceLinkParameter="mov4#opm4#icu4#oln97#par432" target="mov4#opm4#opg15#dcnu21#su122#kcond96.userOID"/>
+        <LinkParameter id="mov4#opm4#opg15#seu44#oln100#par314" name="utente_PASSING" sourceLinkParameter="mov4#opm4#icu4#oln97#par312" passing="true"/>
       </OKLink>
     </SelectorUnit>
     <DisconnectUnit id="mov4#opm4#opg15#dcnu21" name="Disconnetti dipendente da indirizzo" gr:x="340" gr:y="0" relationship="rel11#role22">
@@ -19,6 +20,7 @@
       <OKLink id="mov4#opm4#opg15#dcnu21#oln101" name="OKFlow93" to="mov4#opm4#opg15#dlu5">
         <LinkParameter id="mov4#opm4#opg15#dcnu21#oln101#par436" name="Source oid [Indirizzo]_KeyCondition90 [oid]" source="sourceent16#att64" target="mov4#opm4#opg15#dlu5#su123#kcond97.ent16#att64"/>
         <LinkParameter id="mov4#opm4#opg15#dcnu21#oln101#par437" name="Target oid [Utente]_PASSING" source="targetuserOID" passing="true"/>
+        <LinkParameter id="mov4#opm4#opg15#dcnu21#oln101#par315" name="utente_PASSING" sourceLinkParameter="mov4#opm4#opg15#seu44#oln100#par314" passing="true"/>
       </OKLink>
     </DisconnectUnit>
     <DeleteUnit id="mov4#opm4#opg15#dlu5" name="Rimuovi indirizzo" gr:x="50" gr:y="205" entity="ent16">
@@ -27,6 +29,7 @@
       </Selector>
       <OKLink id="mov4#opm4#opg15#dlu5#oln102" name="OKFlow94" to="mov4#opm4#switch4">
         <LinkParameter id="mov4#opm4#opg15#dlu5#oln102#par155" name="Target oid [Utente]_PASSING" sourceLinkParameter="mov4#opm4#opg15#dcnu21#oln101#par437" passing="true"/>
+        <LinkParameter id="mov4#opm4#opg15#dlu5#oln102#par317" name="utente_PASSING_Switch" sourceLinkParameter="mov4#opm4#opg15#dcnu21#oln101#par315" target="mov4#opm4#switch4.switch"/>
       </OKLink>
     </DeleteUnit>
     <DeleteUnit id="mov4#opm4#opg15#dlu6" name="Rimuovi moderatore" gr:x="420" gr:y="150" entity="ent13">

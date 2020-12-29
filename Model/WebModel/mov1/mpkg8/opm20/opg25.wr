@@ -4,9 +4,9 @@
       <OKLink id="mov1#mpkg8#opm20#opg25#cru1#oln183" name="OKFlow2" to="mov1#mpkg8#opm20#opg25#cnu8">
         <LinkParameter id="mov1#mpkg8#opm20#opg25#cru1#oln183#par653" name="oid_KeyCondition7 [oid] [Piatto] [Source]" source="ent1#att1Array" target="mov1#mpkg8#opm20#opg25#cnu8#su149#kcond114.ent1#att1"/>
         <LinkParameter id="mov1#mpkg8#opm20#opg25#cru1#oln183#par654" name="oid_PASSING_KeyCondition8 [oid] [Ristorante] [Target]" sourceLinkParameter="mov1#mpkg8#opm20#icu21#oln182#par648" target="mov1#mpkg8#opm20#opg25#cnu8#su150#kcond115.ent14#att40"/>
-        <LinkParameter id="mov1#mpkg8#opm20#opg25#cru1#oln183#par655" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#icu21#oln182#par649" passing="true"/>
-        <LinkParameter id="mov1#mpkg8#opm20#opg25#cru1#oln183#par656" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#icu21#oln182#par650" passing="true"/>
-        <LinkParameter id="mov1#mpkg8#opm20#opg25#cru1#oln183#par657" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#icu21#oln182#par647" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm20#opg25#cru1#oln183#par270" name="Checked oid Allergene_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#icu21#oln182#par263" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm20#opg25#cru1#oln183#par271" name="Checked oid Categoria_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#icu21#oln182#par264" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm20#opg25#cru1#oln183#par272" name="Checked oid TipologiaCucina_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#icu21#oln182#par269" passing="true"/>
       </OKLink>
       <KOLink id="mov1#mpkg8#opm20#opg25#cru1#kln93" name="KOFlow13" to="mov1#mpkg8#opm20#kocu10" automaticCoupling="true" gr:bendpoints="82,-32,-533,-257;493,-31,-122,-256"/>
     </CreateUnit>
@@ -28,10 +28,10 @@
         <KeyCondition id="mov1#mpkg8#opm20#opg25#cnu8#su150#kcond115" name="KeyCondition8" predicate="in" implied="false"/>
       </TargetSelector>
       <OKLink id="mov1#mpkg8#opm20#opg25#cnu8#oln185" name="OKFlow3" to="mov1#mpkg8#opm20#opg25#lpu10">
-        <LinkParameter id="mov1#mpkg8#opm20#opg25#cnu8#oln185#par658" name="Checked oid_PASSING_Input Array" sourceLinkParameter="mov1#mpkg8#opm20#opg25#cru1#oln183#par655" target="mov1#mpkg8#opm20#opg25#lpu10.array"/>
-        <LinkParameter id="mov1#mpkg8#opm20#opg25#cnu8#oln185#par659" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#opg25#cru1#oln183#par656" passing="true"/>
-        <LinkParameter id="mov1#mpkg8#opm20#opg25#cnu8#oln185#par660" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#opg25#cru1#oln183#par657" passing="true"/>
         <LinkParameter id="mov1#mpkg8#opm20#opg25#cnu8#oln185#par661" name="Source oid [Piatto]_PASSING" source="sourceent1#att1" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm20#opg25#cnu8#oln185#par273" name="Checked oid TipologiaCucina_PASSING_Input Array" sourceLinkParameter="mov1#mpkg8#opm20#opg25#cru1#oln183#par272" target="mov1#mpkg8#opm20#opg25#lpu10.array"/>
+        <LinkParameter id="mov1#mpkg8#opm20#opg25#cnu8#oln185#par274" name="Checked oid Allergene_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#opg25#cru1#oln183#par270" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm20#opg25#cnu8#oln185#par277" name="Checked oid Categoria_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#opg25#cru1#oln183#par271" passing="true"/>
       </OKLink>
       <KOLink id="mov1#mpkg8#opm20#opg25#cnu8#kln95" name="KOFlow14" to="mov1#mpkg8#opm20#kocu10" automaticCoupling="true" gr:bendpoints="266,0,-179,-175"/>
     </ConnectUnit>
@@ -61,9 +61,9 @@
         <LinkParameter id="mov1#mpkg8#opm20#opg25#lpu10#oln188#par663" name="Next Element_KeyCondition6 [oid] [Tipologia Cucina] [Target]" source="next" target="mov1#mpkg8#opm20#opg25#cnu7#su148#kcond112.ent10#att61"/>
       </OKLink>
       <OKLink id="mov1#mpkg8#opm20#opg25#lpu10#oln189" name="OKFlow7" to="mov1#mpkg8#opm20#opg25#lpu11" code="end">
-        <LinkParameter id="mov1#mpkg8#opm20#opg25#lpu10#oln189#par664" name="Checked oid_PASSING_Input Array" sourceLinkParameter="mov1#mpkg8#opm20#opg25#cnu8#oln185#par659" target="mov1#mpkg8#opm20#opg25#lpu11.array"/>
-        <LinkParameter id="mov1#mpkg8#opm20#opg25#lpu10#oln189#par665" name="Checked oid_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#opg25#cnu8#oln185#par660" passing="true"/>
         <LinkParameter id="mov1#mpkg8#opm20#opg25#lpu10#oln189#par666" name="Source oid [Piatto]_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#opg25#cnu8#oln185#par661" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm20#opg25#lpu10#oln189#par279" name="Checked oid Categoria_PASSING_Input Array" sourceLinkParameter="mov1#mpkg8#opm20#opg25#cnu8#oln185#par277" target="mov1#mpkg8#opm20#opg25#lpu11.array"/>
+        <LinkParameter id="mov1#mpkg8#opm20#opg25#lpu10#oln189#par280" name="Checked oid Allergene_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#opg25#cnu8#oln185#par274" passing="true"/>
       </OKLink>
     </LoopUnit>
     <LoopUnit id="mov1#mpkg8#opm20#opg25#lpu11" name="Ciclo categorie" gr:x="75" gr:y="310">
@@ -72,8 +72,8 @@
         <LinkParameter id="mov1#mpkg8#opm20#opg25#lpu11#oln190#par668" name="Next Element_KeyCondition10 [oid] [Categoria Piatto] [Target]" source="next" target="mov1#mpkg8#opm20#opg25#cnu9#su202#kcond117.ent18#att62"/>
       </OKLink>
       <OKLink id="mov1#mpkg8#opm20#opg25#lpu11#oln191" name="OKFlow10" to="mov1#mpkg8#opm20#opg25#lpu17" code="end">
-        <LinkParameter id="mov1#mpkg8#opm20#opg25#lpu11#oln191#par669" name="Checked oid_PASSING_Input Array" sourceLinkParameter="mov1#mpkg8#opm20#opg25#lpu10#oln189#par665" target="mov1#mpkg8#opm20#opg25#lpu17.array"/>
         <LinkParameter id="mov1#mpkg8#opm20#opg25#lpu11#oln191#par670" name="Source oid [Piatto]_PASSING" sourceLinkParameter="mov1#mpkg8#opm20#opg25#lpu10#oln189#par666" passing="true"/>
+        <LinkParameter id="mov1#mpkg8#opm20#opg25#lpu11#oln191#par281" name="Checked oid Allergene_PASSING_Input Array" sourceLinkParameter="mov1#mpkg8#opm20#opg25#lpu10#oln189#par280" target="mov1#mpkg8#opm20#opg25#lpu17.array"/>
       </OKLink>
     </LoopUnit>
     <LoopUnit id="mov1#mpkg8#opm20#opg25#lpu17" name="Ciclo allergeni" gr:x="70" gr:y="430">
