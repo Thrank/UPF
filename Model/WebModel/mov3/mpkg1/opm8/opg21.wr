@@ -87,7 +87,7 @@
       <TargetSelector id="mov3#mpkg1#opm8#opg21#cnu40#su180" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov3#mpkg1#opm8#opg21#cnu40#su180#kcond148" name="KeyCondition155" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="mov3#mpkg1#opm8#opg21#cnu40#oln157" to="mov3#mpkg1#opm8#okcu12" name="OKFlow69" gr:bendpoints="372,0,-178,570;377,-256,-173,314"/>
+      <OKLink id="mov3#mpkg1#opm8#opg21#cnu40#oln157" to="mov3#mpkg1#opm8#okcu12" name="OKFlow69" gr:bendpoints="377,-256,-173,314"/>
       <KOLink id="mov3#mpkg1#opm8#opg21#cnu40#kln107" to="mov3#mpkg1#opm8#kocu18" name="KOFlow73" gr:bendpoints="360,-2,-170,313"/>
     </ConnectUnit>
     <LoopUnit gr:x="240" gr:y="345" id="mov3#mpkg1#opm8#opg21#lpu6" name="Cicla piatti">

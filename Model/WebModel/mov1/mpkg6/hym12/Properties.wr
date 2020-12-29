@@ -1,7 +1,7 @@
 <HybridModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="5" gr:y="0" id="mov1#mpkg6#hym12" name="Inserisci ristorante">
   <OperationUnits>
     <InputCollectorUnit gr:x="0" gr:y="150" id="mov1#mpkg6#hym12#icu22">
-      <OKLink id="mov1#mpkg6#hym12#icu22#oln255" to="mov1#mpkg6#hym12#page82" validate="true" name="Flow10"/>
+      <OKLink id="mov1#mpkg6#hym12#icu22#oln255" to="mov1#mpkg6#hym12#page82" validate="true" name="Flow10" automaticCoupling="true"/>
     </InputCollectorUnit>
     <OKCollectorUnit gr:x="1065" gr:y="0" id="mov1#mpkg6#hym12#okcu34" name="OK Port33"/>
     <ModuleInstanceUnit gr:x="745" gr:y="165" id="mov1#mpkg6#hym12#miu18" moduleId="mov1#mpkg6#opm14">

@@ -16,7 +16,7 @@
         <LinkParameter id="mov3#mpkg1#opm8#icu8#oln151#par34" name="oid_Ristorante_PASSING" source="mov3#mpkg1#opm8#icu8#icp37" passing="true"/>
       </OKLink>
     </InputCollectorUnit>
-    <KOCollectorUnit gr:x="825" gr:y="270" id="mov3#mpkg1#opm8#kocu18" name="KO inserimento"/>
-    <OKCollectorUnit gr:x="825" gr:y="730" id="mov3#mpkg1#opm8#okcu12" name="OK inserimento effettuato"/>
+    <KOCollectorUnit gr:x="815" gr:y="270" id="mov3#mpkg1#opm8#kocu18" name="KO inserimento"/>
+    <OKCollectorUnit gr:x="815" gr:y="630" id="mov3#mpkg1#opm8#okcu12" name="OK inserimento effettuato"/>
   </OperationUnits>
 </OperationModule>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Warnings> 
-  <Warning error="false" xpath="id('mov5#opm5#opg7#switch8')" rootXPath="id('mov5')" key="MISSING_NO_CODE_OK_LINK" label="Ban"> 
-    <Message>No default OK flow is specified for the component 'Ban'</Message> 
+  <Warning error="false" xpath="id('mov1#mpkg6#hym12#page82')" rootXPath="id('mov1')" key="" label="Aggiungi ristorante"> 
+    <Message>Security Warning: the page 'Aggiungi ristorante' is public but no captcha field is configured on its form component</Message> 
   </Warning> 
 </Warnings>
